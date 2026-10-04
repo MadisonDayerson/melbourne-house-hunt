@@ -18,6 +18,14 @@ Any change requested in this project should end up live on the website without a
 Never commit `site_config.json` secrets other than the Supabase anon key (the service_role key must never
 be in this repo), and never commit the large raw downloads listed in `.gitignore`.
 
+## Daily automatic update
+
+`.github/workflows/daily-update.yml` runs `scripts/daily_update.sh` on GitHub Actions at 17:00 UTC
+(about 4am Melbourne) and commits as github-actions[bot], so `git pull` before making changes here.
+The saved token can't change workflow files (no `workflow` scope): edits to that file go through the
+GitHub website. After a run, check `data/cav_unreviewed.json`: new Consumer Affairs matches need a hand
+check recorded in `data/cav_review.json` before they count.
+
 ## Data refresh
 
 See README.md. Shared votes on the website live in Supabase (`supabase/setup.sql`), not in this repo,
