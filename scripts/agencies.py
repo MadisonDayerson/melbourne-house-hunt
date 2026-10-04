@@ -161,7 +161,8 @@ def cav_matches(name, arts):
 
 
 def main():
-    listings = json.load(open(D / "listings_enriched.json"))
+    listings = [l for f in ("listings_enriched.json", "listings_enriched_solo.json") if (D / f).exists()
+                for l in json.load(open(D / f))]
     names = sorted({l["agency"].strip() for l in listings if l.get("agency")})
     log(f"{len(names)} agencies")
     arts = cav_articles()

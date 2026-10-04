@@ -4,10 +4,12 @@ import json, math, pathlib, datetime
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 D = ROOT / "data"
 listings = json.load(open(D / "listings_enriched.json"))
+solo_path = D / "listings_enriched_solo.json"
+solo = json.load(open(solo_path)) if solo_path.exists() else []
 base = json.load(open(D / "basemap.json"))
 
 # Map projection (equirectangular, scaled for Melbourne's latitude), padded around the listings
-lats = [l["lat"] for l in listings]; lngs = [l["lng"] for l in listings]
+lats = [l["lat"] for l in listings + solo]; lngs = [l["lng"] for l in listings + solo]
 pad = 0.012
 S, N = min(lats) - pad, max(lats) + pad
 W, E = min(lngs) - pad, max(lngs) + pad
@@ -39,10 +41,15 @@ KEEP = ["region", "lga", "id", "url", "type", "street", "suburb", "postcode", "r
         "lat", "lng", "available", "listed", "walk_score", "transit_score", "agency", "cbd_km", "near",
         "counts", "met", "twenty", "transit", "roads", "quiet", "noise_flags", "air", "air_flags",
         "safety", "crime"]
-data = [{k: l.get(k) for k in KEEP} for l in listings]
-for d in data:
-    d["id"] = str(d["id"])
-    d["near"] = {k: [v["m"], v["name"]] for k, v in d["near"].items()}
+def slim(rows):
+    out = [{k: l.get(k) for k in KEEP} for l in rows]
+    for d in out:
+        d["id"] = str(d["id"])
+        d["near"] = {k: [v["m"], v["name"]] for k, v in d["near"].items()}
+    return out
+
+
+data, solo_data = slim(listings), slim(solo)
 
 # ---- agency renter-friendliness + build age ----
 CAV_REVIEW = json.load(open(D / "cav_review.json")) if (D / "cav_review.json").exists() else {}
@@ -86,7 +93,7 @@ for name, a in agencies.items():
     ag_out[name] = {"score": agency_score(a, name), "cavKind": rec.get("kind"), "cavSummary": rec.get("summary"), "rvNote": NOT_RENTER_REVIEWS.get(name),
                     "rv": [rv["rating"], rv["reviews"], rv["level"], rv["name"], rv["slug"], rv["dist"]] if rv else None,
                     "cav": [{k: c[k] for k in ("url", "title", "date")} for c in (a.get("cav") or [])]}
-for d in data:
+for d in data + solo_data:
     d["agency"] = (d.get("agency") or "").strip()
     g = ages.get(d["id"])
     if g:
@@ -95,7 +102,7 @@ for d in data:
 payload = {
     "agencies": ag_out,
     "asOf": datetime.date.today().isoformat(),
-    "listings": data, "proj": proj, "stations": stations,
+    "listings": data, "solo": solo_data, "proj": proj, "stations": stations,
     "suburbs": [[x["suburb"], x["region"]] for x in json.load(open(D / "suburbs.json"))],
 }
 template = (ROOT / "app" / "template.html").read_text()
@@ -111,7 +118,7 @@ def render(payload):
 # 1. claude.ai artifact (the artifact viewer adds the document wrapper and provides shared storage)
 out = ROOT / "app" / "northside-house-hunt.html"  # file name kept so republishing updates the same artifact
 out.write_text(render(payload))
-print("wrote", out, f"{out.stat().st_size/1024:.0f} KB", len(data), "listings")
+print("wrote", out, f"{out.stat().st_size/1024:.0f} KB", len(data), "share-house +", len(solo_data), "solo listings")
 
 # 2. GitHub Pages: a complete document, with the Supabase project from site_config.json for shared votes
 cfg_path = ROOT / "site_config.json"

@@ -17,6 +17,12 @@ while true; do
     echo "   latest: $(grep '^\[' "$LOG" | tail -1)"
   fi
 
+  SLOG="$DATA/fetch_listings_solo.log"
+  if [[ -f $SLOG ]]; then
+    if grep -q '^saved' "$SLOG"; then echo "1b. Solo listings (studio-2 bed)   DONE  $(grep '^saved' "$SLOG" | awk '{print $2}') listings";
+    else n=$(grep -c '^\[' "$SLOG"); printf '1b. Solo listings (studio-2 bed)   '; bar ${n:-0} 539; echo; echo "   latest: $(grep '^\[' "$SLOG" | tail -1)"; fi
+  fi
+
   t=$(ls "$DATA"/osm_tiles/*.json 2>/dev/null | wc -l | tr -d ' ')
   if [[ $t -ge 32 && -s "$DATA/osm_roads.json" ]]; then
     echo "2. Map data (OpenStreetMap)        DONE"

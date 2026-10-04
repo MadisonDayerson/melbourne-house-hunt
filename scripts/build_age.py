@@ -102,7 +102,8 @@ def estimate(desc, byline, suburb):
 
 
 def main():
-    listings = json.load(open(D / "listings_enriched.json"))
+    listings = [l for f in ("listings_enriched.json", "listings_enriched_solo.json") if (D / f).exists()
+                for l in json.load(open(D / f))]
     out = {}
     for l in listings:
         f = D / "cache" / "details" / f"{l['id']}.json"

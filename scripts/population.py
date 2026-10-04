@@ -21,6 +21,11 @@ def parse(text):
     return int(m.group(1).replace(",", "")) if m else None
 
 
+# "Melbourne, Victoria" is the whole city's article; the CBD suburb's census figure is on its own page.
+OVERRIDES = {"Melbourne": 54941}  # 2021 Census, Melbourne CBD (Wikipedia "Melbourne city centre")
+out.update(OVERRIDES)
+todo = [n for n in names if not out.get(n)]
+
 for attempt in range(2):
     for i in range(0, len(todo), 40):
         batch = todo[i:i + 40]

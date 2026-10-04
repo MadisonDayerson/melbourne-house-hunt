@@ -14,9 +14,11 @@ Method notes (also shown in the app's "How scores work" panel):
 - Crime: Crime Statistics Agency Victoria, recorded offences year ending June 2026, by suburb,
   per 1,000 residents (2021 Census population). Victoria overall: 86.8 per 1,000.
 """
-import json, math, pathlib, collections, re
+import json, math, pathlib, collections, re, sys
 
 D = pathlib.Path(__file__).resolve().parent.parent / "data"
+SOLO = "--solo" in sys.argv  # studio-2 bed search for one person (see fetch_listings.py)
+RAW, OUT = ("listings_raw_solo.json", "listings_enriched_solo.json") if SOLO else ("listings_raw.json", "listings_enriched.json")
 DETOUR, WALK_M_PER_MIN = 1.3, 80
 VIC_RATE = 86.8  # offences per 1,000 residents, Victoria, year ending June 2026
 CBD = (-37.8183, 144.9671)  # Flinders Street Station
@@ -171,9 +173,11 @@ DAILY_NEEDS = [
 ]
 
 out, missing_pop = [], set()
-for L in json.load(open(D / "listings_raw.json")):
+for L in json.load(open(D / RAW)):
     meta = SUBURBS.get(re.sub(r"^saint ", "st ", L["suburb"].lower()))
-    if not meta or not L["lat"] or not (4 <= (L["beds"] or 0) <= 8) or L["rent"] < 350:
+    beds_ok = 0 <= (L["beds"] or 0) <= 2 if SOLO else 4 <= (L["beds"] or 0) <= 8
+    min_rent = 180 if SOLO else 350  # below this it's a parking space, storage or a single room
+    if not meta or not L["lat"] or not beds_ok or L["rent"] < min_rent:
         continue  # outside metro Melbourne, or a per-room/odd listing
     L["suburb"] = meta["suburb"]
     p = (L["lat"], L["lng"])
@@ -251,7 +255,9 @@ for L in json.load(open(D / "listings_raw.json")):
     })
 
 print("listings", len(out), "missing population:", sorted(missing_pop))
-json.dump(out, open(D / "listings_enriched.json", "w"), indent=1)
+json.dump(out, open(D / OUT, "w"), indent=1)
+if SOLO:
+    sys.exit()  # the basemap comes from the share-house run
 
 
 # ---------- basemap: simplified major roads + rail for the in-page map ----------
