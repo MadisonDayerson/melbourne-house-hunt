@@ -42,7 +42,7 @@
  "Ace Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 20
+  "listings": 21
  },
  "All Avenues Real Estate": {
   "reviews": null,
@@ -1129,7 +1129,7 @@
  "Change Real Estate - Camberwell": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 4
  },
  "Changing Places Real Estate": {
   "reviews": null,
@@ -1240,7 +1240,7 @@
  "Ease Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 3
  },
  "Edward Thomas Estate Agents": {
   "reviews": null,
@@ -2896,7 +2896,7 @@
  "No Agent Property": {
   "reviews": null,
   "cav": [],
-  "listings": 12
+  "listings": 13
  },
  "Noel Jones - Mitcham": {
   "reviews": {
@@ -4770,6 +4770,11 @@
   "cav": [],
   "listings": 1
  },
+ "URCHOICE REAL ESTATE": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
+ },
  "Universal Real Estate Craigieburn": {
   "reviews": null,
   "cav": [],
@@ -4909,7 +4914,7 @@
  "Wood n Bricks Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 4
  },
  "Woodards (South Eastern)": {
   "reviews": {
