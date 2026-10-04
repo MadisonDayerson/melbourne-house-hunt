@@ -15,9 +15,10 @@ Method notes (also shown in the app's "How scores work" panel):
   per 1,000 residents (2021 Census population). Victoria overall: 86.8 per 1,000.
 """
 import json, math, pathlib, collections, re, sys, gzip, datetime
+from zoneinfo import ZoneInfo
 
 D = pathlib.Path(__file__).resolve().parent.parent / "data"
-TODAY = datetime.date.today().isoformat()
+TODAY = datetime.datetime.now(ZoneInfo("Australia/Melbourne")).date().isoformat()  # GitHub runs on UTC
 KEEP_GONE_DAYS = 14  # listings that disappear stay (marked "no longer advertised") this long
 
 

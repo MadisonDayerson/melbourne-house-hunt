@@ -1,5 +1,6 @@
 """Build the shareable page: app/northside-house-hunt.html from app/template.html + data/*.json."""
 import json, math, pathlib, datetime
+from zoneinfo import ZoneInfo
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 D = ROOT / "data"
@@ -105,7 +106,7 @@ for d in data + solo_data:
 
 payload = {
     "agencies": ag_out,
-    "asOf": datetime.date.today().isoformat(),
+    "asOf": datetime.datetime.now(ZoneInfo("Australia/Melbourne")).date().isoformat(),  # GitHub runs on UTC
     "listings": data, "solo": solo_data, "proj": proj, "stations": stations,
     "suburbs": [[x["suburb"], x["region"]] for x in json.load(open(D / "suburbs.json"))],
 }
