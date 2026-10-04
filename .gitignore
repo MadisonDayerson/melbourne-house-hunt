@@ -5,11 +5,9 @@ data/osm_amenities.json
 data/osm_roads.json
 data/*.xlsx
 data/*.log
-data/listings_raw.json
 
 # claude.ai artifact build (the GitHub site is docs/index.html)
 app/northside-house-hunt.html
 
 .DS_Store
 __pycache__/
-data/listings_raw_solo.json

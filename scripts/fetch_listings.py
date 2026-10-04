@@ -6,7 +6,7 @@
 Reads the listing data embedded in public search result pages (allowed by the site's robots.txt),
 politely, one request every few seconds. Suburbs come from data/suburbs.json (built by crime.py). Each suburb's results are cached in
 data/cache/ for the day, so an interrupted run picks up where it stopped.
-Output: data/listings_raw.json
+Output: data/cache/listings_raw.json (or listings_raw_solo.json)
 """
 import json, re, sys, time, urllib.request, pathlib
 
@@ -14,17 +14,18 @@ SUBURBS_FILE = pathlib.Path(__file__).resolve().parent.parent / "data" / "suburb
 # Two searches: the share house (4+ bedrooms for 5 people) and a place on your own (studio to 2 bedrooms).
 PROFILES = {
     "group": {"query": "bedrooms=4", "max_pages": 3, "min_beds": 4, "max_beds": 99, "max_rent": 1900,
-              "out": "listings_raw.json"},
+              "out": "listings_raw.json", "published": "listings_enriched.json"},
     # surrounding_suburbs=0 keeps each search to its own suburb; rent_high is the site's max-rent filter.
     # $700 is a stretch above the ~$575 (30% of a $100k salary) budget so near-misses show up.
     "solo": {"query": "surrounding_suburbs=0&rent_high=700", "max_pages": 12, "min_beds": 0, "max_beds": 2,
-             "max_rent": 700, "out": "listings_raw_solo.json"},
+             "max_rent": 700, "out": "listings_raw_solo.json", "published": "listings_enriched_solo.json"},
 }
 PROFILE = PROFILES["solo" if "--solo" in sys.argv else "group"]
 MAX_PAGES = PROFILE["max_pages"]
 MAX_RENT = PROFILE["max_rent"]
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36"
-OUT = pathlib.Path(__file__).resolve().parent.parent / "data" / PROFILE["out"]
+DATA = pathlib.Path(__file__).resolve().parent.parent / "data"
+OUT = DATA / "cache" / PROFILE["out"]  # raw downloads stay out of git; the scored file is what's published
 
 
 def get(url):
@@ -74,7 +75,7 @@ def row(p):
 
 
 def main():
-    cache = OUT.parent / "cache" / (time.strftime("%Y-%m-%d") + ("-solo" if PROFILE is PROFILES["solo"] else ""))
+    cache = DATA / "cache" / (time.strftime("%Y-%m-%d") + ("-solo" if PROFILE is PROFILES["solo"] else ""))
     cache.mkdir(parents=True, exist_ok=True)
     suburbs = json.load(open(SUBURBS_FILE))
     for i, s in enumerate(suburbs):
@@ -103,8 +104,9 @@ def main():
             and r["rent"] and r["rent"] <= MAX_RENT and (r["type"] or "").lower() not in ("share", "room", "share house")]
     # Safety check: a big drop usually means the site was down or refused us, not that half of
     # Melbourne's rentals were leased overnight. Stop rather than wipe listings from the website.
-    if OUT.exists() and "--force" not in sys.argv:
-        before = len(json.loads(OUT.read_text()))
+    published = DATA / PROFILE["published"]  # compare with what the website shows (raw files aren't kept on GitHub)
+    if published.exists() and "--force" not in sys.argv:
+        before = sum(1 for l in json.loads(published.read_text()) if not l.get("gone"))
         if before and len(rows) < 0.7 * before:
             print(f"ABORT: only {len(rows)} listings today vs {before} last time; keeping the old file")
             sys.exit(1)

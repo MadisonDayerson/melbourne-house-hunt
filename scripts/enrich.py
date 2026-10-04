@@ -1,6 +1,6 @@
 """Score each listing's location across metropolitan Melbourne: walkability, transit, noise, air, safety.
 
-Inputs (data/): listings_raw.json, osm_amenities.json, osm_roads.json,
+Inputs (data/): cache/listings_raw.json, osm_amenities.json, osm_roads.json,
 crime_suburb_jun2026.json, suburb_population.json
 Outputs: data/listings_enriched.json, data/basemap.json
 
@@ -183,7 +183,7 @@ DAILY_NEEDS = [
 ]
 
 out, missing_pop = [], set()
-for L in json.load(open(D / RAW)):
+for L in json.load(open(D / "cache" / RAW)):
     meta = SUBURBS.get(re.sub(r"^saint ", "st ", L["suburb"].lower()))
     beds_ok = 0 <= (L["beds"] or 0) <= 2 if SOLO else 4 <= (L["beds"] or 0) <= 8
     min_rent = 180 if SOLO else 350  # below this it's a parking space, storage or a single room
