@@ -83,7 +83,8 @@ def pr_search(query):
         full, text, dist, n, r = m.groups()
         slugs = re.findall(r'"slug":"([a-z0-9-]+)"', h[max(0, m.start() - 2500):m.start()])
         slug = slugs[-1] if slugs else ""
-        if not re.search(r"real estate|property|agent|rental|leasing", text + " " + full, re.I):
+        # "leasing" alone also matches car-leasing firms, so require a property term
+        if not re.search(r"real estate|property|propert|estate agent|rental|property manag", text + " " + full, re.I):
             continue
         hits.append({"slug": slug, "name": H.unescape(full), "reviews": int(n),
                      "rating": float(r) if r != "null" else None,

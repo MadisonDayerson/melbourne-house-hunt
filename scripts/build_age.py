@@ -87,7 +87,7 @@ def estimate(desc, byline, suburb):
     m = re.search(r"brand[- ]new\b(?!\s+(?:kitchen|carpets?|flooring|floors|paint|appliances|bathrooms?|ensuite|oven|cooktop|dishwasher|blinds|curtains|heating|cooling|split|fence|deck|hot water|fixtures|fittings|vanit|tiles|benchtops?|light|window))", tl)
     if m:
         return {"year": NOW, "era": "Brand new", "bucket": "new", "confidence": "stated", "evidence": snip(m)}
-    m = re.search(r"\b(?:near|nearly|almost|as[- ]new|virtually)[- ]new\b", tl)
+    m = re.search(r"\b(?:near|nearly|almost|as[- ]new|virtually)[- ]new\b(?![\s,:–-]{0,4}(?:\w+[\s,]+){0,2}(?:carpets?|paint|renovat|kitchen|appliances|flooring|bathroom))", tl)
     if m:
         return {"year": NOW - 3, "era": "Near new (about 1–5 years)", "bucket": "new", "confidence": "stated", "evidence": snip(m)}
     # 2. style

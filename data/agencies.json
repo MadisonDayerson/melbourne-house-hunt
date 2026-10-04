@@ -1,4 +1,9 @@
 {
+ "1st Choice Property International Pty Ltd": {
+  "reviews": null,
+  "cav": [],
+  "listings": 4
+ },
  "361 Degrees Real Estate": {
   "reviews": null,
   "cav": [],
@@ -9,10 +14,25 @@
   "cav": [],
   "listings": 6
  },
+ "A Dot Realty - VIC": {
+  "reviews": null,
+  "cav": [],
+  "listings": 2
+ },
+ "AMI Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 2
+ },
+ "ASK Property Partners Pty Ltd": {
+  "reviews": null,
+  "cav": [],
+  "listings": 5
+ },
  "AZeta Property Management": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 3
  },
  "Absolute Agents": {
   "reviews": null,
@@ -22,37 +42,42 @@
  "Ace Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 19
+  "listings": 20
  },
  "All Avenues Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 5
+  "listings": 6
  },
  "Alliance Estate Agents North": {
   "reviews": null,
   "cav": [],
   "listings": 4
  },
- "Anton Real Estate Pty Ltd": {
-  "reviews": null,
-  "cav": [],
-  "listings": 7
- },
- "Aquire Real Estate - Frankston": {
+ "Amity Property Group": {
   "reviews": null,
   "cav": [],
   "listings": 2
  },
+ "Anton Real Estate Pty Ltd": {
+  "reviews": null,
+  "cav": [],
+  "listings": 11
+ },
+ "Aquire Real Estate - Frankston": {
+  "reviews": null,
+  "cav": [],
+  "listings": 16
+ },
  "Area Specialist - Keysborough": {
   "reviews": null,
   "cav": [],
-  "listings": 13
+  "listings": 20
  },
  "Area Specialist Casey": {
   "reviews": null,
   "cav": [],
-  "listings": 6
+  "listings": 7
  },
  "Area Specialist Melton": {
   "reviews": null,
@@ -67,7 +92,7 @@
  "Ash Marton Realty": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 4
  },
  "AusInvesta Property Advisors": {
   "reviews": null,
@@ -77,22 +102,32 @@
  "Ausky Investment": {
   "reviews": null,
   "cav": [],
-  "listings": 5
+  "listings": 6
+ },
+ "Aussie Dragon Pty Ltd": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
  },
  "Australia Property Group": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 3
  },
  "Australian Property Management Alliance": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 3
  },
  "Austrump - Glen": {
   "reviews": null,
   "cav": [],
-  "listings": 6
+  "listings": 14
+ },
+ "Ausview Group": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
  },
  "Avenue West Real Estate": {
   "reviews": null,
@@ -103,6 +138,11 @@
   "reviews": null,
   "cav": [],
   "listings": 2
+ },
+ "Barbounis Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 5
  },
  "Barry Plant - Croydon": {
   "reviews": {
@@ -120,7 +160,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 4
+  "listings": 7
  },
  "Barry Plant - Eastern Group Rentals": {
   "reviews": {
@@ -138,7 +178,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 25
+  "listings": 63
  },
  "Barry Plant Berwick": {
   "reviews": {
@@ -174,7 +214,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 12
+  "listings": 16
  },
  "Barry Plant Glen Waverley/Wheelers Hill": {
   "reviews": {
@@ -192,7 +232,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 4
+  "listings": 7
  },
  "Barry Plant Glenroy": {
   "reviews": {
@@ -210,7 +250,43 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 6
+  "listings": 11
+ },
+ "Barry Plant Heathmont": {
+  "reviews": {
+   "slug": "barry-plant-real-estate",
+   "name": "Barry Plant",
+   "reviews": 810,
+   "rating": 3.2,
+   "dist": [
+    269,
+    29,
+    4,
+    34,
+    474
+   ],
+   "level": "brand"
+  },
+  "cav": [],
+  "listings": 2
+ },
+ "Barry Plant Inner City Group": {
+  "reviews": {
+   "slug": "barry-plant-real-estate",
+   "name": "Barry Plant",
+   "reviews": 810,
+   "rating": 3.2,
+   "dist": [
+    269,
+    29,
+    4,
+    34,
+    474
+   ],
+   "level": "brand"
+  },
+  "cav": [],
+  "listings": 11
  },
  "Barry Plant Keilor East": {
   "reviews": {
@@ -228,7 +304,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 12
+  "listings": 25
  },
  "Barry Plant Melton": {
   "reviews": {
@@ -264,7 +340,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 5
+  "listings": 9
  },
  "Barry Plant Pakenham": {
   "reviews": {
@@ -282,7 +358,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 19
+  "listings": 20
  },
  "Barry Plant Reservoir": {
   "reviews": {
@@ -313,7 +389,7 @@
     "context": "parate bank accounts not attached to the legitimate claimants kontossis was employed as an agent by national real estate aust pty ltd acn 005 500 541 trading as barry plant reservoir when the alleged conduct occurred it is not suggested that his employer was aware of these actions and the agency has since repaid the funds consumer affairs victoria has commen"
    }
   ],
-  "listings": 2
+  "listings": 12
  },
  "Barry Plant Rowville": {
   "reviews": {
@@ -349,7 +425,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 6
+  "listings": 10
  },
  "Barry Plant Taylors Lake": {
   "reviews": {
@@ -367,7 +443,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 5
+  "listings": 7
  },
  "Barry Plant Thomastown": {
   "reviews": {
@@ -385,7 +461,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 3
  },
  "Barry Plant Yarraville": {
   "reviews": {
@@ -403,19 +479,24 @@
    "level": "brand"
   },
   "cav": [],
+  "listings": 5
+ },
+ "Basso Real Estate": {
+  "reviews": null,
+  "cav": [],
   "listings": 1
  },
  "Bekdon Richards Estate Agents": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 4
  },
  "Bell Real Estate Montrose": {
   "reviews": null,
   "cav": [],
   "listings": 1
  },
- "Belle Property Mentone": {
+ "Belle Property Armadale": {
   "reviews": {
    "slug": "belle-property",
    "name": "Belle Property",
@@ -431,9 +512,9 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 13
  },
- "Belle Property Mt Waverley": {
+ "Belle Property Blairgowrie": {
   "reviews": {
    "slug": "belle-property",
    "name": "Belle Property",
@@ -451,6 +532,60 @@
   "cav": [],
   "listings": 3
  },
+ "Belle Property Mentone": {
+  "reviews": {
+   "slug": "belle-property",
+   "name": "Belle Property",
+   "reviews": 180,
+   "rating": 1.6,
+   "dist": [
+    145,
+    8,
+    1,
+    2,
+    24
+   ],
+   "level": "brand"
+  },
+  "cav": [],
+  "listings": 2
+ },
+ "Belle Property Mornington | Mount Eliza": {
+  "reviews": {
+   "slug": "belle-property",
+   "name": "Belle Property",
+   "reviews": 180,
+   "rating": 1.6,
+   "dist": [
+    145,
+    8,
+    1,
+    2,
+    24
+   ],
+   "level": "brand"
+  },
+  "cav": [],
+  "listings": 2
+ },
+ "Belle Property Mt Waverley": {
+  "reviews": {
+   "slug": "belle-property",
+   "name": "Belle Property",
+   "reviews": 180,
+   "rating": 1.6,
+   "dist": [
+    145,
+    8,
+    1,
+    2,
+    24
+   ],
+   "level": "brand"
+  },
+  "cav": [],
+  "listings": 5
+ },
  "Belle Property Richmond": {
   "reviews": {
    "slug": "belle-property",
@@ -467,7 +602,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 13
  },
  "Belle Property Sandringham": {
   "reviews": {
@@ -485,7 +620,25 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 2
+  "listings": 6
+ },
+ "Belle Property South Yarra": {
+  "reviews": {
+   "slug": "belle-property",
+   "name": "Belle Property",
+   "reviews": 180,
+   "rating": 1.6,
+   "dist": [
+    145,
+    8,
+    1,
+    2,
+    24
+   ],
+   "level": "brand"
+  },
+  "cav": [],
+  "listings": 18
  },
  "Belle Property St Kilda": {
   "reviews": {
@@ -503,7 +656,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 49
  },
  "Bennetts Real Estate": {
   "reviews": null,
@@ -513,22 +666,47 @@
  "Besser & Co. Estate Agents": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 14
+ },
+ "Biggin & Scott - Richmond": {
+  "reviews": null,
+  "cav": [],
+  "listings": 19
+ },
+ "Biggin & Scott - St Kilda / Elwood": {
+  "reviews": null,
+  "cav": [],
+  "listings": 15
  },
  "Biggin & Scott Boroondara": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 6
  },
  "Biggin & Scott Glen Waverley": {
   "reviews": null,
   "cav": [],
-  "listings": 11
+  "listings": 20
  },
  "Biggin & Scott Inner North - Brunswick": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 5
+ },
+ "Biggin & Scott Mitcham": {
+  "reviews": null,
+  "cav": [],
+  "listings": 5
+ },
+ "Biggin & Scott Prahran": {
+  "reviews": null,
+  "cav": [],
+  "listings": 5
+ },
+ "Biggin Scott Elsternwick": {
+  "reviews": null,
+  "cav": [],
+  "listings": 6
  },
  "Bill Schlink First National": {
   "reviews": null,
@@ -540,25 +718,73 @@
   "cav": [],
   "listings": 2
  },
+ "Bio Real Estate Group Pty Ltd": {
+  "reviews": null,
+  "cav": [],
+  "listings": 8
+ },
  "Blue Sapphire Real Estate": {
   "reviews": null,
   "cav": [],
   "listings": 1
  },
+ "Blue Square Property": {
+  "reviews": null,
+  "cav": [],
+  "listings": 3
+ },
  "Bold Property Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 3
  },
  "Bombay Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 44
+  "listings": 49
+ },
+ "Bow Residential South Melbourne": {
+  "reviews": null,
+  "cav": [],
+  "listings": 8
+ },
+ "Brady Residential": {
+  "reviews": {
+   "slug": "brady-residential",
+   "name": "Brady Residential",
+   "reviews": 3,
+   "rating": 1.8,
+   "dist": [
+    2,
+    0,
+    0,
+    0,
+    1
+   ],
+   "level": "office"
+  },
+  "cav": [],
+  "listings": 17
  },
  "Bricks & Mortar RE": {
   "reviews": null,
   "cav": [],
+  "listings": 6
+ },
+ "Buckingham & Company Estate Agents Diamond Valley": {
+  "reviews": null,
+  "cav": [],
   "listings": 1
+ },
+ "Burne Property": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
+ },
+ "Burnham Real Estate - Footscray, Seddon & Deer Park": {
+  "reviews": null,
+  "cav": [],
+  "listings": 11
  },
  "Buxton - Dingley Village": {
   "reviews": {
@@ -594,7 +820,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 5
+  "listings": 9
  },
  "Buxton Brighton": {
   "reviews": {
@@ -612,7 +838,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 5
+  "listings": 12
  },
  "Buxton Camberwell": {
   "reviews": {
@@ -630,7 +856,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 4
+  "listings": 11
  },
  "Buxton Chelsea": {
   "reviews": {
@@ -648,7 +874,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 4
+  "listings": 5
  },
  "Buxton Mentone": {
   "reviews": {
@@ -666,7 +892,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 7
  },
  "Buxton Mornington Peninsula - Sorrento/Blairgowrie": {
   "reviews": {
@@ -684,7 +910,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 3
+  "listings": 4
  },
  "Buxton Mornington Peninsula \u00e2\u0080\u0093 Flinders": {
   "reviews": {
@@ -720,7 +946,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 5
+  "listings": 7
  },
  "Buxton Sandringham": {
   "reviews": {
@@ -738,22 +964,72 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 2
+  "listings": 3
+ },
+ "Buxton Stonnington": {
+  "reviews": {
+   "slug": "buxton-real-estate",
+   "name": "Buxton",
+   "reviews": 107,
+   "rating": 1.7,
+   "dist": [
+    83,
+    4,
+    0,
+    2,
+    18
+   ],
+   "level": "brand"
+  },
+  "cav": [],
+  "listings": 8
  },
  "C Square Real Estate": {
   "reviews": null,
   "cav": [],
   "listings": 5
  },
- "Care Property Management": {
+ "CAN Estate Agents": {
+  "reviews": null,
+  "cav": [
+   {
+    "url": "https://www.consumer.vic.gov.au/latest-news/agency-fined-for-breaching-rental-advertising-laws",
+    "title": "Agency fined for breaching rental advertising laws",
+    "date": "10 November 2025",
+    "context": "west melbourne estate agency which admitted to breaching victoria s renting laws by advertising a rental property without a fixed price as part of the agreement can estate agents pty ltd acn 602 104 361 must pay a 2 035 penalty and implement strict compliance measures to prevent future breaches under victoria s renting laws all rental properties must be adve"
+   }
+  ],
+  "listings": 1
+ },
+ "CT Real Estate": {
   "reviews": null,
   "cav": [],
   "listings": 6
  },
- "Caviar Realty": {
+ "Care Property Management": {
+  "reviews": null,
+  "cav": [],
+  "listings": 9
+ },
+ "Carrick Real Estate": {
   "reviews": null,
   "cav": [],
   "listings": 1
+ },
+ "Cassimaty Property Group": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
+ },
+ "Caviar Realty": {
+  "reviews": null,
+  "cav": [],
+  "listings": 3
+ },
+ "Cedar Elm Property": {
+  "reviews": null,
+  "cav": [],
+  "listings": 6
  },
  "Century 21 Hulstaert Estate Agents": {
   "reviews": {
@@ -771,7 +1047,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 2
+  "listings": 5
  },
  "Century 21 Paramount Realtors CS": {
   "reviews": {
@@ -807,7 +1083,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 3
+  "listings": 10
  },
  "Century 21 Theresa Huynh": {
   "reviews": {
@@ -825,7 +1101,12 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 3
+ },
+ "Cercle Property": {
+  "reviews": null,
+  "cav": [],
+  "listings": 2
  },
  "Certainty Property": {
   "reviews": {
@@ -843,7 +1124,7 @@
    "level": "office"
   },
   "cav": [],
-  "listings": 1
+  "listings": 3
  },
  "Change Real Estate - Camberwell": {
   "reviews": null,
@@ -853,37 +1134,47 @@
  "Changing Places Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 5
+  "listings": 8
+ },
+ "Compass Estate Agents - Inner West": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
  },
  "Compton Green Geelong": {
   "reviews": null,
   "cav": [],
-  "listings": 4
+  "listings": 5
  },
  "Compton Green Real Estate - Williamstown & Yarraville": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 5
  },
  "Converge Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 3
  },
  "Cooper Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 4
+ },
+ "Core Realty - MELBOURNE": {
+  "reviews": null,
+  "cav": [],
+  "listings": 8
  },
  "Crane Real Estate Caroline Springs": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "Create Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 11
  },
  "Cubbi": {
   "reviews": {
@@ -901,14 +1192,24 @@
    "level": "office"
   },
   "cav": [],
-  "listings": 4
+  "listings": 15
  },
- "DPG Property Group": {
+ "DMS Enterprises Pty Ltd": {
   "reviews": null,
   "cav": [],
   "listings": 1
  },
+ "DPG Property Group": {
+  "reviews": null,
+  "cav": [],
+  "listings": 3
+ },
  "Diamond Property Management": {
+  "reviews": null,
+  "cav": [],
+  "listings": 11
+ },
+ "Douglas Kay Real Estate": {
   "reviews": null,
   "cav": [],
   "listings": 3
@@ -929,14 +1230,19 @@
    "level": "office"
   },
   "cav": [],
-  "listings": 3
+  "listings": 21
  },
  "ETHOS Property Group - POINT COOK": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 4
  },
  "Ease Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 2
+ },
+ "Edward Thomas Estate Agents": {
   "reviews": null,
   "cav": [],
   "listings": 1
@@ -944,12 +1250,12 @@
  "Eighth Quarter Box Hill": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 7
  },
  "Elders Delaney Koo Wee Rup": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "Element Estate Agents": {
   "reviews": null,
@@ -959,12 +1265,17 @@
  "Eleven North": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 8
  },
  "Elite Agents & Partners": {
   "reviews": null,
   "cav": [],
   "listings": 2
+ },
+ "Elite Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 18
  },
  "Eliza Gold Property": {
   "reviews": null,
@@ -992,17 +1303,17 @@
    "level": "office"
   },
   "cav": [],
-  "listings": 19
+  "listings": 20
  },
  "Eton Property Group": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 8
  },
  "Everywhere Real Estate (Metro)": {
   "reviews": null,
   "cav": [],
-  "listings": 5
+  "listings": 9
  },
  "Eview Group - C+M Residential": {
   "reviews": {
@@ -1020,17 +1331,53 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 3
+  "listings": 7
  },
  "FUSION PROPERTY INVESTMENT CORPORATION": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "Ferraro Real Estate": {
   "reviews": null,
   "cav": [],
+  "listings": 2
+ },
+ "First National Avant - BOX HILL": {
+  "reviews": {
+   "slug": "first-national",
+   "name": "First National Real Estate",
+   "reviews": 210,
+   "rating": 1.9,
+   "dist": [
+    162,
+    5,
+    0,
+    3,
+    40
+   ],
+   "level": "brand"
+  },
+  "cav": [],
   "listings": 1
+ },
+ "First National Avant - MELBOURNE": {
+  "reviews": {
+   "slug": "first-national",
+   "name": "First National Real Estate",
+   "reviews": 210,
+   "rating": 1.9,
+   "dist": [
+    162,
+    5,
+    0,
+    3,
+    40
+   ],
+   "level": "brand"
+  },
+  "cav": [],
+  "listings": 6
  },
  "First National Burwood": {
   "reviews": {
@@ -1048,7 +1395,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 4
  },
  "First National Lakra - POINT COOK": {
   "reviews": {
@@ -1084,7 +1431,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 2
+  "listings": 5
  },
  "First National Real Estate JXRE": {
   "reviews": {
@@ -1102,7 +1449,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 11
+  "listings": 25
  },
  "First National Real Estate Melton": {
   "reviews": {
@@ -1138,7 +1485,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 9
+  "listings": 12
  },
  "First National Real Estate Rayner": {
   "reviews": {
@@ -1174,7 +1521,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 12
+  "listings": 23
  },
  "Flare Real Estate": {
   "reviews": {
@@ -1192,7 +1539,7 @@
    "level": "office"
   },
   "cav": [],
-  "listings": 4
+  "listings": 20
  },
  "Fletchers  - Yarra Ranges": {
   "reviews": {
@@ -1210,7 +1557,12 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 2
+  "listings": 3
+ },
+ "Fonde Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
  },
  "For Sale By Owner": {
   "reviews": {
@@ -1228,34 +1580,49 @@
    "level": "office"
   },
   "cav": [],
-  "listings": 7
+  "listings": 19
  },
  "Forge Group Australia": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 9
  },
  "Four Pillars Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "Frank Dowling Pty Ltd": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 14
  },
- "G&H Property Group - Elsternwick": {
+ "Fresh Property Management Group": {
+  "reviews": null,
+  "cav": [],
+  "listings": 2
+ },
+ "Frog Property Sales & Management": {
   "reviews": null,
   "cav": [],
   "listings": 1
  },
+ "G&H Property Group - Elsternwick": {
+  "reviews": null,
+  "cav": [],
+  "listings": 2
+ },
  "G&S Real Estate Group": {
+  "reviews": null,
+  "cav": [],
+  "listings": 8
+ },
+ "GA Realty - MELBOURNE": {
   "reviews": null,
   "cav": [],
   "listings": 3
  },
- "GA Realty - MELBOURNE": {
+ "GBE Property Investments": {
   "reviews": null,
   "cav": [],
   "listings": 2
@@ -1263,14 +1630,24 @@
  "GHB Realestate": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "GREVILLE PABST REAL ESTATE PTY LTD": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 3
+ },
+ "Galldon Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 4
  },
  "Geoff Nixon Real Estate - Caulfield South": {
+  "reviews": null,
+  "cav": [],
+  "listings": 5
+ },
+ "Gerard Collins Real Estate - Pakenham": {
   "reviews": null,
   "cav": [],
   "listings": 1
@@ -1278,7 +1655,25 @@
  "Gibson Land": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
+ },
+ "Goldfish Real Estate": {
+  "reviews": {
+   "slug": "goldfish-real-estate",
+   "name": "Goldfish Real Estate",
+   "reviews": 1,
+   "rating": 5.0,
+   "dist": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "level": "office"
+  },
+  "cav": [],
+  "listings": 2
  },
  "Greenfields Real Estate": {
   "reviews": null,
@@ -1288,19 +1683,29 @@
  "Ground Property Group": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 6
  },
- "HOLLAND PRICE REAL ESTATE": {
+ "H&E Real Estate": {
   "reviews": null,
   "cav": [],
   "listings": 1
  },
- "HPG Estate Agents": {
+ "HOLLAND PRICE REAL ESTATE": {
   "reviews": null,
   "cav": [],
   "listings": 5
  },
+ "HPG Estate Agents": {
+  "reviews": null,
+  "cav": [],
+  "listings": 7
+ },
  "Haim Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
+ },
+ "Halfapercent Real Estate": {
   "reviews": null,
   "cav": [],
   "listings": 1
@@ -1308,12 +1713,17 @@
  "Hall & Partners First National": {
   "reviews": null,
   "cav": [],
-  "listings": 5
+  "listings": 55
+ },
+ "Hallmarc Asset Management": {
+  "reviews": null,
+  "cav": [],
+  "listings": 2
  },
  "Ham Kerr Property - Balwyn": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 7
  },
  "Harcourts - Rata & Co - Thomastown": {
   "reviews": {
@@ -1331,7 +1741,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 29
+  "listings": 51
  },
  "Harcourts Berwick": {
   "reviews": {
@@ -1349,7 +1759,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 4
+  "listings": 5
  },
  "Harcourts Carrum Downs": {
   "reviews": {
@@ -1367,7 +1777,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 3
+  "listings": 5
  },
  "Harcourts Craigieburn": {
   "reviews": {
@@ -1403,7 +1813,43 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 8
+  "listings": 18
+ },
+ "Harcourts Manningham": {
+  "reviews": {
+   "slug": "harcourts",
+   "name": "Harcourts",
+   "reviews": 734,
+   "rating": 3.6,
+   "dist": [
+    347,
+    18,
+    7,
+    18,
+    344
+   ],
+   "level": "brand"
+  },
+  "cav": [],
+  "listings": 2
+ },
+ "Harcourts Melbourne City": {
+  "reviews": {
+   "slug": "harcourts",
+   "name": "Harcourts",
+   "reviews": 734,
+   "rating": 3.6,
+   "dist": [
+    347,
+    18,
+    7,
+    18,
+    344
+   ],
+   "level": "brand"
+  },
+  "cav": [],
+  "listings": 14
  },
  "Harcourts Move": {
   "reviews": {
@@ -1439,39 +1885,67 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 8
+  "listings": 11
+ },
+ "Harris Leech Property": {
+  "reviews": {
+   "slug": "harris-leech",
+   "name": "Harris Leech",
+   "reviews": 89,
+   "rating": 3.8,
+   "dist": [
+    29,
+    0,
+    0,
+    4,
+    56
+   ],
+   "level": "office"
+  },
+  "cav": [],
+  "listings": 3
  },
  "Hartrick Property Services - Eview": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 3
  },
  "Harvest Realty": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 4
  },
  "Haughton Stotts - Ivanhoe & Preston": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 7
  },
- "Hockingstuart Melton": {
+ "Haven Agents": {
   "reviews": null,
   "cav": [],
   "listings": 4
  },
- "Hockingstuart Preston": {
-  "reviews": null,
-  "cav": [],
-  "listings": 2
- },
- "Hockingstuart Werribee": {
+ "Hockingstuart Melton": {
   "reviews": null,
   "cav": [],
   "listings": 5
  },
+ "Hockingstuart Preston": {
+  "reviews": null,
+  "cav": [],
+  "listings": 7
+ },
+ "Hockingstuart Werribee": {
+  "reviews": null,
+  "cav": [],
+  "listings": 7
+ },
  "Hockingstuart Williamstown": {
+  "reviews": null,
+  "cav": [],
+  "listings": 3
+ },
+ "Hodges - Beaumaris": {
   "reviews": null,
   "cav": [],
   "listings": 1
@@ -1479,27 +1953,37 @@
  "Hodges - Brighton": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 5
+ },
+ "Hodges Bentleigh": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
  },
  "Hodges Mentone": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 5
+ },
+ "Hodges Real Estate Prahran": {
+  "reviews": null,
+  "cav": [],
+  "listings": 7
  },
  "Hodges Rye": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "Hodges South Melbourne": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 3
  },
  "Home Run Realty": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "Hoskins": {
   "reviews": null,
@@ -1509,7 +1993,7 @@
  "House N Keys Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 5
+  "listings": 8
  },
  "Housemark": {
   "reviews": null,
@@ -1526,17 +2010,17 @@
     "context": "ce hocking stuart frankston pty ltd trading as fosterfroling real estate was fined 11 855 and leader properties pty ltd trading as leader real estate agency and hudson bond were each fined 7 500 fixed price advertising means renters can be sure about how much a home will cost and not have to bid with others to secure the property rental reforms introduced in"
    }
   ],
-  "listings": 10
+  "listings": 14
  },
  "Hunter French Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 4
  },
  "IPC ASSET MANAGEMENT": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 4
  },
  "Independent Estate Agents": {
   "reviews": null,
@@ -1559,12 +2043,22 @@
    "level": "office"
   },
   "cav": [],
-  "listings": 5
+  "listings": 6
+ },
+ "Infolio Property Advisors": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
  },
  "Investate International PTY LTD": {
   "reviews": null,
   "cav": [],
-  "listings": 5
+  "listings": 6
+ },
+ "Invida Property Management": {
+  "reviews": null,
+  "cav": [],
+  "listings": 85
  },
  "Ironfish Real Estate": {
   "reviews": {
@@ -1582,7 +2076,7 @@
    "level": "office"
   },
   "cav": [],
-  "listings": 8
+  "listings": 38
  },
  "JK Estate Agents": {
   "reviews": null,
@@ -1597,27 +2091,37 @@
  "JWC Property Group": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 4
  },
  "Jacobs & Lowe": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 4
  },
- "Jalin Realty Australia Pty Ltd": {
+ "Jacotine Property Group Pty Ltd": {
   "reviews": null,
   "cav": [],
   "listings": 1
  },
+ "Jalin Realty Australia Pty Ltd": {
+  "reviews": null,
+  "cav": [],
+  "listings": 13
+ },
  "James Perry Property Group": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 5
  },
  "Jas Stephens Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 4
+  "listings": 26
+ },
+ "Jeena & Saacs Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
  },
  "Jellis Craig Inner West": {
   "reviews": {
@@ -1635,17 +2139,32 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 7
+  "listings": 11
  },
- "Just Rentals Real Estate": {
+ "Joy Realty": {
   "reviews": null,
   "cav": [],
   "listings": 1
  },
+ "Just Rentals Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 5
+ },
+ "K R Peters Pty Ltd - Wantirna South": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
+ },
+ "KIN Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 4
+ },
  "Kathmandu Properties": {
   "reviews": null,
   "cav": [],
-  "listings": 8
+  "listings": 10
  },
  "Kaye Charles Real Estate": {
   "reviews": {
@@ -1670,15 +2189,35 @@
   "cav": [],
   "listings": 6
  },
+ "Kelly & Shiel - Carlton": {
+  "reviews": null,
+  "cav": [],
+  "listings": 2
+ },
  "Kelly Real Estate Group": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
+ },
+ "Keystone Real Estate - MELBOURNE": {
+  "reviews": null,
+  "cav": [],
+  "listings": 2
  },
  "Kincaid Properties Pty Ltd": {
   "reviews": null,
   "cav": [],
-  "listings": 10
+  "listings": 11
+ },
+ "Kingsford Property": {
+  "reviews": null,
+  "cav": [],
+  "listings": 6
+ },
+ "L Real Estate (Melbourne)": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
  },
  "L&J Real Estate": {
   "reviews": null,
@@ -1688,7 +2227,7 @@
  "LEWIS ASSET MANAGEMENT PTY LTD": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 9
  },
  "LJ Hooker City Residential": {
   "reviews": {
@@ -1706,7 +2245,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 6
+  "listings": 14
  },
  "LJ Hooker Craigieburn": {
   "reviews": {
@@ -1742,7 +2281,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 8
+  "listings": 9
  },
  "LJ Hooker Hampton Park": {
   "reviews": {
@@ -1760,7 +2299,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 10
+  "listings": 19
  },
  "LJ Hooker Pakenham": {
   "reviews": {
@@ -1778,7 +2317,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 3
+  "listings": 4
  },
  "LJ Hooker Point Cook": {
   "reviews": {
@@ -1796,7 +2335,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 19
+  "listings": 23
  },
  "LJ Hooker Rowville": {
   "reviews": {
@@ -1814,7 +2353,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 3
+  "listings": 4
  },
  "LJ Hooker Springvale": {
   "reviews": {
@@ -1832,22 +2371,32 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 7
  },
  "LLC Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 5
+ },
+ "LOCAL: Residential": {
+  "reviews": null,
+  "cav": [],
+  "listings": 5
+ },
+ "Landmark Realty - Melbourne CBD": {
+  "reviews": null,
+  "cav": [],
+  "listings": 6
  },
  "Langwell Harper": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 6
  },
  "Lazogas Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 4
  },
  "Leader Real Estate Agency": {
   "reviews": null,
@@ -1861,17 +2410,32 @@
   ],
   "listings": 1
  },
+ "Leaders Real Estate Group": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
+ },
  "Leading Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 6
+  "listings": 9
  },
  "Leap Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 19
+  "listings": 20
  },
  "Lease a Property": {
+  "reviews": null,
+  "cav": [],
+  "listings": 5
+ },
+ "Leifield": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
+ },
+ "Letsell Real Estate Pty Ltd": {
   "reviews": null,
   "cav": [],
   "listings": 1
@@ -1879,57 +2443,103 @@
  "Leyton Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 7
  },
  "Linage Pty Ltd": {
   "reviews": null,
   "cav": [],
   "listings": 3
  },
- "Living Prospect Real Estate": {
+ "Liv Munro": {
   "reviews": null,
   "cav": [],
   "listings": 1
+ },
+ "Living Melbourne Property": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
+ },
+ "Living Prospect Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 12
  },
  "LongView Property Managers & Advisors": {
   "reviews": null,
   "cav": [],
-  "listings": 25
+  "listings": 41
  },
  "Love & Co  - Mill Park": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 3
  },
  "Love & Co - Epping": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "Love & Co - Reservoir": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 32
  },
  "Love & Co - Thomastown": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 4
  },
  "Loyalventure Property": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
+ },
+ "Lucas Real Estate": {
+  "reviews": {
+   "slug": "lucas-real-estate",
+   "name": "Lucas Real Estate",
+   "reviews": 5,
+   "rating": 2.3,
+   "dist": [
+    3,
+    0,
+    0,
+    0,
+    2
+   ],
+   "level": "office"
+  },
+  "cav": [],
+  "listings": 13
  },
  "Luxe Property Group": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 21
+ },
+ "MICM": {
+  "reviews": {
+   "slug": "micm",
+   "name": "MICM",
+   "reviews": 1071,
+   "rating": 4.5,
+   "dist": [
+    127,
+    6,
+    11,
+    103,
+    824
+   ],
+   "level": "office"
+  },
+  "cav": [],
+  "listings": 131
  },
  "MJ Docking": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 5
  },
  "MK Realty": {
   "reviews": null,
@@ -1952,7 +2562,7 @@
    "level": "office"
   },
   "cav": [],
-  "listings": 2
+  "listings": 3
  },
  "MRE": {
   "reviews": {
@@ -1970,27 +2580,32 @@
    "level": "office"
   },
   "cav": [],
-  "listings": 1
+  "listings": 86
+ },
+ "Maddison Estate Agents": {
+  "reviews": null,
+  "cav": [],
+  "listings": 4
  },
  "Maison Aust": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 5
  },
  "Maison Real Estate Agents": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 4
  },
  "Malaga Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "Mandy Lee Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 12
  },
  "Mann Estate Agents": {
   "reviews": null,
@@ -2013,19 +2628,60 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 7
+  "listings": 21
  },
  "Marvelli Town & Associates": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 3
  },
  "Matthew Iaco & Associates Pty Ltd": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 4
+ },
+ "Maxion Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 7
+ },
+ "McDonald Upton Real Estate": {
+  "reviews": {
+   "slug": "sheryl-upton-property",
+   "name": "McDonald Upton",
+   "reviews": 3,
+   "rating": 1.0,
+   "dist": [
+    3,
+    0,
+    0,
+    0,
+    0
+   ],
+   "level": "office"
+  },
+  "cav": [],
+  "listings": 12
  },
  "McGrath - Coburg - Brunswick": {
+  "reviews": {
+   "slug": "mcgrath",
+   "name": "McGrath",
+   "reviews": 384,
+   "rating": 1.9,
+   "dist": [
+    305,
+    10,
+    4,
+    7,
+    58
+   ],
+   "level": "brand"
+  },
+  "cav": [],
+  "listings": 1
+ },
+ "McGrath - Croydon": {
   "reviews": {
    "slug": "mcgrath",
    "name": "McGrath",
@@ -2059,22 +2715,70 @@
    "level": "brand"
   },
   "cav": [],
+  "listings": 17
+ },
+ "Meadows Property Group": {
+  "reviews": null,
+  "cav": [],
   "listings": 6
  },
- "Melbourne Residential Real Estate Pty Ltd": {
+ "Megadu Real Estate - BOX HILL SOUTH": {
   "reviews": null,
   "cav": [],
   "listings": 1
  },
- "Melplex Real Estate Pty Ltd": {
+ "Melbourne Realty Group": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
+ },
+ "Melbourne Residential Property - ESSENDON": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
+ },
+ "Melbourne Residential Real Estate Pty Ltd": {
+  "reviews": null,
+  "cav": [],
+  "listings": 4
+ },
+ "Melbourne Square Property": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
+ },
+ "Melcorp Real Estate": {
+  "reviews": {
+   "slug": "melcorp-real-estate",
+   "name": "Melcorp Real Estate",
+   "reviews": 7,
+   "rating": 2.7,
+   "dist": [
+    3,
+    1,
+    0,
+    0,
+    3
+   ],
+   "level": "office"
+  },
+  "cav": [],
+  "listings": 8
+ },
+ "Melo Real Estate": {
   "reviews": null,
   "cav": [],
   "listings": 3
  },
+ "Melplex Real Estate Pty Ltd": {
+  "reviews": null,
+  "cav": [],
+  "listings": 11
+ },
  "Merri Bek Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 4
  },
  "Metro Property Management": {
   "reviews": {
@@ -2092,22 +2796,22 @@
    "level": "office"
   },
   "cav": [],
-  "listings": 10
+  "listings": 24
  },
  "Metropole Properties Melbourne Pty Ltd": {
   "reviews": null,
   "cav": [],
-  "listings": 6
+  "listings": 16
  },
  "Milrose Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 8
  },
  "Minus The Agent": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 4
  },
  "Mira Group Real Estate": {
   "reviews": null,
@@ -2117,7 +2821,7 @@
  "Moment Group": {
   "reviews": null,
   "cav": [],
-  "listings": 6
+  "listings": 8
  },
  "Mornington Peninsula Rentals": {
   "reviews": null,
@@ -2127,27 +2831,37 @@
  "Morrison Kleeman Estate Agents": {
   "reviews": null,
   "cav": [],
-  "listings": 6
+  "listings": 13
+ },
+ "Moss Estate Agents": {
+  "reviews": null,
+  "cav": [],
+  "listings": 2
  },
  "Motion Property": {
   "reviews": null,
   "cav": [],
-  "listings": 12
+  "listings": 55
  },
  "My Agent Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 10
+ },
+ "My Rental": {
+  "reviews": null,
+  "cav": [],
+  "listings": 3
  },
  "N7 Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 3
  },
  "Nest & Co Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 9
+  "listings": 10
  },
  "Nestique Real Estate": {
   "reviews": null,
@@ -2157,22 +2871,32 @@
  "New Aumeca Group": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "Nexa Real Estate": {
   "reviews": null,
   "cav": [],
   "listings": 8
  },
+ "Next Level Asset Management": {
+  "reviews": null,
+  "cav": [],
+  "listings": 4
+ },
+ "Nicholas Scott Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 9
+ },
  "Nick Johnstone Real Estate - Brighton": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "No Agent Property": {
   "reviews": null,
   "cav": [],
-  "listings": 4
+  "listings": 12
  },
  "Noel Jones - Mitcham": {
   "reviews": {
@@ -2190,7 +2914,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 4
+  "listings": 11
  },
  "Noel Jones Carrum Downs": {
   "reviews": {
@@ -2208,7 +2932,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 2
+  "listings": 3
  },
  "Noel Jones Doncaster": {
   "reviews": {
@@ -2226,12 +2950,12 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 4
  },
  "O'Brien Real Estate - Berwick": {
   "reviews": null,
   "cav": [],
-  "listings": 6
+  "listings": 9
  },
  "O'Brien Real Estate - Narre Warren": {
   "reviews": null,
@@ -2241,22 +2965,27 @@
  "O'Brien Real Estate Chelsea": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 3
  },
  "O'Brien Real Estate Frankston": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 7
+ },
+ "O'Brien Real Estate Preston Reservoir": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
  },
  "O'Brien Real Estate Pty Ltd": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 3
  },
  "O'Brien Real Estate Sydenham": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 3
  },
  "OBrien Real Estate Bentleigh": {
   "reviews": {
@@ -2274,7 +3003,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 2
+  "listings": 5
  },
  "OBrien Real Estate Blackburn": {
   "reviews": {
@@ -2292,7 +3021,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 2
+  "listings": 6
  },
  "OBrien Real Estate Melton": {
   "reviews": {
@@ -2310,7 +3039,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 4
+  "listings": 6
  },
  "OBrien Real Estate Oakleigh": {
   "reviews": {
@@ -2328,7 +3057,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 4
+  "listings": 9
  },
  "OBrien Real Estate Ringwood": {
   "reviews": {
@@ -2346,7 +3075,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 3
  },
  "OBrien Real Estate Wantirna": {
   "reviews": {
@@ -2364,7 +3093,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 3
+  "listings": 4
  },
  "OBrien Real Estate Werribee": {
   "reviews": {
@@ -2382,7 +3111,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 3
+  "listings": 7
  },
  "OKAS Property Group - Truganina": {
   "reviews": null,
@@ -2397,12 +3126,17 @@
  "One Agency Zhu Property": {
   "reviews": null,
   "cav": [],
-  "listings": 11
+  "listings": 13
+ },
+ "Online Property Services": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
  },
  "Only Estate Agents - NARRE WARREN": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 3
  },
  "OpenCorp Property Management VIC": {
   "reviews": {
@@ -2420,27 +3154,42 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 39
+  "listings": 45
  },
- "O\u00e2\u0080\u0099Brien Real Estate St Albans/Sunshine": {
+ "Outlook Property Group - BRUNSWICK": {
   "reviews": null,
   "cav": [],
   "listings": 2
  },
+ "O\u00e2\u0080\u0099Brien Real Estate Mornington": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
+ },
+ "O\u00e2\u0080\u0099Brien Real Estate St Albans/Sunshine": {
+  "reviews": null,
+  "cav": [],
+  "listings": 6
+ },
  "P Di Natale Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 7
+  "listings": 15
  },
  "PROTIQUE Realty": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 6
+ },
+ "Pagan Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 13
  },
  "Paragon Real Estate Pty Ltd": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "Peake Real Estate": {
   "reviews": null,
@@ -2457,10 +3206,20 @@
   "cav": [],
   "listings": 2
  },
+ "Platinum Property Management Group": {
+  "reviews": null,
+  "cav": [],
+  "listings": 5
+ },
+ "Precinct Estate Agents - CARLTON": {
+  "reviews": null,
+  "cav": [],
+  "listings": 3
+ },
  "Prime Residential Property Management": {
   "reviews": null,
   "cav": [],
-  "listings": 8
+  "listings": 9
  },
  "Professionals - Taylors Lakes": {
   "reviews": {
@@ -2478,7 +3237,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 11
+  "listings": 12
  },
  "Professionals A E Gibson & Co": {
   "reviews": {
@@ -2496,7 +3255,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 3
  },
  "Professionals First & Co": {
   "reviews": {
@@ -2514,7 +3273,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 8
+  "listings": 18
  },
  "Professionals Ryder Real Estate": {
   "reviews": {
@@ -2532,27 +3291,32 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 3
+  "listings": 4
  },
  "Property Listings": {
   "reviews": null,
   "cav": [],
-  "listings": 4
+  "listings": 9
  },
  "Property Manager Plus": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 4
+ },
+ "Property Solutions Estate Agents": {
+  "reviews": null,
+  "cav": [],
+  "listings": 2
  },
  "PropertyNow": {
   "reviews": null,
   "cav": [],
-  "listings": 6
+  "listings": 22
  },
  "RAM International": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "RE/MAX ACPA": {
   "reviews": {
@@ -2570,7 +3334,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "REMAX Diamond": {
   "reviews": null,
@@ -2582,10 +3346,25 @@
   "cav": [],
   "listings": 4
  },
+ "RT Edgar Elwood": {
+  "reviews": null,
+  "cav": [],
+  "listings": 3
+ },
+ "RT Edgar Toorak Pty ltd": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
+ },
+ "Rabbitree Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
+ },
  "Raeon international": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 4
  },
  "Raine & Horne - Springvale": {
   "reviews": {
@@ -2603,7 +3382,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 2
+  "listings": 3
  },
  "Raine & Horne - Sunbury": {
   "reviews": {
@@ -2621,7 +3400,25 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 6
+  "listings": 7
+ },
+ "Raine & Horne - Williamstown": {
+  "reviews": {
+   "slug": "raine-horne",
+   "name": "Raine & Horne",
+   "reviews": 369,
+   "rating": 1.8,
+   "dist": [
+    302,
+    11,
+    2,
+    6,
+    48
+   ],
+   "level": "brand"
+  },
+  "cav": [],
+  "listings": 1
  },
  "Raine & Horne Ascot Vale": {
   "reviews": {
@@ -2639,7 +3436,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 4
  },
  "Raine & Horne Blackburn": {
   "reviews": {
@@ -2675,7 +3472,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 2
+  "listings": 10
  },
  "Raine & Horne Caroline Springs": {
   "reviews": {
@@ -2693,7 +3490,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 2
+  "listings": 3
  },
  "Raine & Horne Craigieburn": {
   "reviews": {
@@ -2731,7 +3528,7 @@
   "cav": [],
   "listings": 1
  },
- "Raine & Horne Hallam": {
+ "Raine & Horne Gisborne": {
   "reviews": {
    "slug": "raine-horne",
    "name": "Raine & Horne",
@@ -2749,6 +3546,24 @@
   "cav": [],
   "listings": 1
  },
+ "Raine & Horne Hallam": {
+  "reviews": {
+   "slug": "raine-horne",
+   "name": "Raine & Horne",
+   "reviews": 369,
+   "rating": 1.8,
+   "dist": [
+    302,
+    11,
+    2,
+    6,
+    48
+   ],
+   "level": "brand"
+  },
+  "cav": [],
+  "listings": 2
+ },
  "Raine & Horne Melton": {
   "reviews": {
    "slug": "raine-horne",
@@ -2765,7 +3580,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 3
+  "listings": 6
  },
  "Raine & Horne Point Cook - Williams Landing": {
   "reviews": {
@@ -2783,7 +3598,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 6
+  "listings": 7
  },
  "Raine & Horne Point Cook / Werribee": {
   "reviews": {
@@ -2837,7 +3652,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 2
+  "listings": 4
  },
  "Raine & Horne TGR Glenroy": {
   "reviews": {
@@ -2855,14 +3670,19 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 3
+  "listings": 6
  },
  "Ranges First National": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 3
  },
  "Ray Biner Real Estate - Eview": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
+ },
+ "Ray Mascaro & Co. P/L": {
   "reviews": null,
   "cav": [],
   "listings": 1
@@ -2883,7 +3703,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 14
+  "listings": 25
  },
  "Ray White - Carnegie": {
   "reviews": {
@@ -2901,7 +3721,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 10
+  "listings": 34
  },
  "Ray White - Carrum Downs": {
   "reviews": {
@@ -2919,7 +3739,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "Ray White - Craigieburn": {
   "reviews": {
@@ -2937,7 +3757,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 8
+  "listings": 10
  },
  "Ray White - Langwarrin": {
   "reviews": {
@@ -2973,7 +3793,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 15
  },
  "Ray White - Sunbury": {
   "reviews": {
@@ -2991,7 +3811,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 15
+  "listings": 18
  },
  "Ray White - Wantirna": {
   "reviews": {
@@ -3009,7 +3829,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 9
+  "listings": 14
  },
  "Ray White Altona": {
   "reviews": {
@@ -3027,7 +3847,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 6
  },
  "Ray White Balwyn": {
   "reviews": {
@@ -3045,7 +3865,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 3
+  "listings": 6
  },
  "Ray White Bundoora": {
   "reviews": {
@@ -3063,7 +3883,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 5
+  "listings": 22
  },
  "Ray White Burwood VIC.": {
   "reviews": {
@@ -3081,7 +3901,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 15
+  "listings": 21
  },
  "Ray White Cheltenham": {
   "reviews": {
@@ -3099,7 +3919,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 11
+  "listings": 20
  },
  "Ray White Coburg": {
   "reviews": {
@@ -3117,7 +3937,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 5
+  "listings": 10
  },
  "Ray White Cranbourne": {
   "reviews": {
@@ -3135,7 +3955,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 47
+  "listings": 49
  },
  "Ray White Dandenong": {
   "reviews": {
@@ -3171,7 +3991,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 18
+  "listings": 34
  },
  "Ray White Frankston": {
   "reviews": {
@@ -3189,7 +4009,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 6
+  "listings": 12
  },
  "Ray White Macleod": {
   "reviews": {
@@ -3207,7 +4027,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 6
+  "listings": 7
  },
  "Ray White Melton": {
   "reviews": {
@@ -3225,7 +4045,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 15
+  "listings": 16
  },
  "Ray White Mernda": {
   "reviews": {
@@ -3243,7 +4063,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 8
+  "listings": 11
  },
  "Ray White Mill Park": {
   "reviews": {
@@ -3261,7 +4081,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 8
+  "listings": 13
  },
  "Ray White Noble Park/Springvale Rentals": {
   "reviews": {
@@ -3279,7 +4099,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 10
  },
  "Ray White Northcote": {
   "reviews": {
@@ -3297,7 +4117,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 8
  },
  "Ray White Oakleigh": {
   "reviews": {
@@ -3315,7 +4135,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 8
+  "listings": 20
  },
  "Ray White Pakenham": {
   "reviews": {
@@ -3333,7 +4153,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 25
+  "listings": 28
  },
  "Ray White Preston": {
   "reviews": {
@@ -3351,7 +4171,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 5
+  "listings": 13
  },
  "Ray White Ringwood": {
   "reviews": {
@@ -3405,7 +4225,25 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 4
+  "listings": 7
+ },
+ "Ray White Southbank": {
+  "reviews": {
+   "slug": "ray-white",
+   "name": "Ray White",
+   "reviews": 1797,
+   "rating": 2.7,
+   "dist": [
+    830,
+    53,
+    8,
+    88,
+    818
+   ],
+   "level": "brand"
+  },
+  "cav": [],
+  "listings": 31
  },
  "Ray White Tarneit": {
   "reviews": {
@@ -3423,7 +4261,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 23
+  "listings": 24
  },
  "Ray White Taylors Lakes": {
   "reviews": {
@@ -3441,7 +4279,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 6
+  "listings": 7
  },
  "Ray White Thomastown": {
   "reviews": {
@@ -3459,7 +4297,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 4
  },
  "Ray White Truganina": {
   "reviews": {
@@ -3477,7 +4315,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 21
+  "listings": 23
  },
  "Ray White Werribee": {
   "reviews": {
@@ -3495,17 +4333,22 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 19
+  "listings": 26
  },
  "Real Alliance Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "Real Estate Services by Mirvac - VIC": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 7
+ },
+ "RealRenta": {
+  "reviews": null,
+  "cav": [],
+  "listings": 3
  },
  "Realtory": {
   "reviews": null,
@@ -3515,7 +4358,7 @@
  "Realty Finder Group": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 4
  },
  "Reliance Real Estate - Point Cook": {
   "reviews": {
@@ -3533,7 +4376,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 10
+  "listings": 18
  },
  "Reliance Real Estate Melton": {
   "reviews": {
@@ -3569,9 +4412,14 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 15
+  "listings": 19
  },
  "Reliance Sunbury": {
+  "reviews": null,
+  "cav": [],
+  "listings": 5
+ },
+ "Rendina Real Estate": {
   "reviews": null,
   "cav": [],
   "listings": 5
@@ -3592,9 +4440,14 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 21
+  "listings": 53
  },
  "Richardson Property Group": {
+  "reviews": null,
+  "cav": [],
+  "listings": 2
+ },
+ "Rickdale Real Estate": {
   "reviews": null,
   "cav": [],
   "listings": 1
@@ -3602,9 +4455,24 @@
  "Ritz Property Management": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 4
+ },
+ "River Edge Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 6
+ },
+ "Rodney Morley VIC Pty Ltd": {
+  "reviews": null,
+  "cav": [],
+  "listings": 4
  },
  "Roger Davis Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 5
+ },
+ "Rosin Smyth and Partners Pty Ltd": {
   "reviews": null,
   "cav": [],
   "listings": 3
@@ -3612,7 +4480,7 @@
  "Ross Hunt - Surrey Hills": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 5
  },
  "S A Thomson Nerys": {
   "reviews": null,
@@ -3622,22 +4490,37 @@
  "SaleByHomeOwner.com.au - AUSTRALIA WIDE": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
+ },
+ "Samma Property Group": {
+  "reviews": null,
+  "cav": [],
+  "listings": 4
  },
  "Schroeder & Wallis": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 3
+ },
+ "Scott Banks Real Estate Group - TOORAK": {
+  "reviews": null,
+  "cav": [],
+  "listings": 15
  },
  "SeaScape RE": {
   "reviews": null,
   "cav": [],
-  "listings": 6
+  "listings": 9
  },
  "Seachange Property": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
+ },
+ "Shape Property": {
+  "reviews": null,
+  "cav": [],
+  "listings": 5
  },
  "Shelter Real Estate": {
   "reviews": {
@@ -3655,17 +4538,22 @@
    "level": "office"
   },
   "cav": [],
-  "listings": 3
+  "listings": 4
  },
  "Shine Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 5
  },
  "Sisira Real Estate - South Morang": {
   "reviews": null,
   "cav": [],
   "listings": 2
+ },
+ "Smart Property Manager": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
  },
  "Stellar Estate Agents": {
   "reviews": null,
@@ -3688,7 +4576,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 17
+  "listings": 18
  },
  "Stockdale & Leggo Dandenong": {
   "reviews": {
@@ -3706,7 +4594,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 2
+  "listings": 5
  },
  "Stockdale & Leggo Glenroy": {
   "reviews": {
@@ -3724,7 +4612,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 2
+  "listings": 4
  },
  "Stockdale & Leggo Laverton / Altona / Point Cook": {
   "reviews": {
@@ -3742,7 +4630,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 6
+  "listings": 7
  },
  "Stockdale & Leggo Rye": {
   "reviews": {
@@ -3760,42 +4648,82 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 3
+  "listings": 7
  },
  "Stone Real Estate - Whittlesea": {
   "reviews": null,
   "cav": [],
-  "listings": 9
+  "listings": 12
+ },
+ "Student Housing Australia": {
+  "reviews": null,
+  "cav": [],
+  "listings": 188
  },
  "Surreal Property Group - Bayswater": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 3
  },
  "Sweeney Altona": {
   "reviews": null,
   "cav": [],
-  "listings": 9
+  "listings": 13
+ },
+ "Sweeney Estate Agents - Sunshine": {
+  "reviews": null,
+  "cav": [],
+  "listings": 2
  },
  "Sweeney Estate Agents Caroline Springs": {
   "reviews": null,
   "cav": [],
   "listings": 6
  },
- "Tallon Estate Agents - Eview": {
+ "THE BISI AGENT": {
+  "reviews": null,
+  "cav": [],
+  "listings": 5
+ },
+ "THE CO-LIVING EXPERTS": {
+  "reviews": null,
+  "cav": [],
+  "listings": 14
+ },
+ "TIGA Residential": {
+  "reviews": null,
+  "cav": [],
+  "listings": 3
+ },
+ "TLH Real Estate": {
   "reviews": null,
   "cav": [],
   "listings": 1
+ },
+ "TWIG Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 7
+ },
+ "Tallon Estate Agents - Eview": {
+  "reviews": null,
+  "cav": [],
+  "listings": 2
  },
  "The ARK 7 Real Estate": {
   "reviews": null,
   "cav": [],
   "listings": 6
  },
+ "The Agency Albert Park": {
+  "reviews": null,
+  "cav": [],
+  "listings": 7
+ },
  "The Agents Excellence In Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 10
+  "listings": 16
  },
  "The Avenue Property Co": {
   "reviews": null,
@@ -3805,7 +4733,17 @@
  "The Hopkins Group - MELBOURNE": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 53
+ },
+ "The Neighbourhood": {
+  "reviews": null,
+  "cav": [],
+  "listings": 6
+ },
+ "The Onsite Manager": {
+  "reviews": null,
+  "cav": [],
+  "listings": 3
  },
  "The Real Estate Business - Epping": {
   "reviews": null,
@@ -3815,12 +4753,17 @@
  "The Realest Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 3
+ },
+ "Thomas Wong Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 5
  },
  "Tran Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 4
  },
  "Turn Key Realty": {
   "reviews": null,
@@ -3835,37 +4778,57 @@
  "VICPROP Point Cook & Williams Landing": {
   "reviews": null,
   "cav": [],
-  "listings": 11
+  "listings": 14
  },
  "Vantage Point Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 7
  },
  "VicHomes Real Estate Group Pty Ltd": {
   "reviews": null,
   "cav": [],
+  "listings": 3
+ },
+ "Vicprop - Melbourne": {
+  "reviews": null,
+  "cav": [],
+  "listings": 12
+ },
+ "Village Real Estate Newport": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
+ },
+ "Visser Estate Agents": {
+  "reviews": null,
+  "cav": [],
   "listings": 2
+ },
+ "W. B. Simpson & Son": {
+  "reviews": null,
+  "cav": [],
+  "listings": 4
  },
  "Walker Real Estate International": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 7
  },
  "Walshe & Whitelock": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 28
  },
  "Warlimont & Nutt Real Estate - Mt Martha": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 3
  },
  "Waterfront Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 3
  },
  "WeSell REAL ESTATE": {
   "reviews": null,
@@ -3875,12 +4838,12 @@
  "Westside Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 7
  },
  "White Knight Estate Agents": {
   "reviews": null,
   "cav": [],
-  "listings": 7
+  "listings": 8
  },
  "White Lotus Property Group - TRUGANINA": {
   "reviews": null,
@@ -3916,32 +4879,32 @@
    "level": "office"
   },
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "Wilson Agents - Glen Eira": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 15
  },
  "Winex Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "Wise Earth Property Group": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "Wise Group Pty Ltd": {
   "reviews": null,
   "cav": [],
-  "listings": 13
+  "listings": 17
  },
  "Wood Property": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 24
  },
  "Wood n Bricks Real Estate": {
   "reviews": null,
@@ -3964,7 +4927,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 2
+  "listings": 5
  },
  "Woodards - Ascot Vale": {
   "reviews": {
@@ -3982,7 +4945,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 3
+  "listings": 20
  },
  "Woodards - Manningham": {
   "reviews": {
@@ -4000,7 +4963,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 4
+  "listings": 8
  },
  "Woodards Blackburn": {
   "reviews": {
@@ -4018,7 +4981,25 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 3
+  "listings": 14
+ },
+ "Woodards Carlton North": {
+  "reviews": {
+   "slug": "woodards",
+   "name": "Woodards",
+   "reviews": 205,
+   "rating": 3.4,
+   "dist": [
+    61,
+    3,
+    0,
+    16,
+    125
+   ],
+   "level": "brand"
+  },
+  "cav": [],
+  "listings": 36
  },
  "Woodards Elsternwick": {
   "reviews": {
@@ -4036,7 +5017,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 9
  },
  "Woodards Northcote": {
   "reviews": {
@@ -4054,7 +5035,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 1
+  "listings": 5
  },
  "Xynergy Realty - Altona": {
   "reviews": null,
@@ -4064,7 +5045,25 @@
  "Xynergy Realty - Oakleigh": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 9
+ },
+ "Xynergy Realty - South Yarra": {
+  "reviews": {
+   "slug": "xynergy-realty-south-yarra",
+   "name": "Xynergy Realty South Yarra",
+   "reviews": 2,
+   "rating": 3.1,
+   "dist": [
+    1,
+    0,
+    0,
+    0,
+    1
+   ],
+   "level": "office"
+  },
+  "cav": [],
+  "listings": 18
  },
  "YPA Caroline Springs": {
   "reviews": {
@@ -4082,7 +5081,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 3
+  "listings": 4
  },
  "YPA Craigieburn-Mickleham": {
   "reviews": {
@@ -4136,7 +5135,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 6
+  "listings": 9
  },
  "YPA Estate Agents - Melton": {
   "reviews": {
@@ -4154,7 +5153,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 9
+  "listings": 11
  },
  "YPA Estate Agents - Sunbury": {
   "reviews": {
@@ -4172,7 +5171,25 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 8
+  "listings": 10
+ },
+ "YPA Estate Agents St Albans": {
+  "reviews": {
+   "slug": "ypa-estate-agents",
+   "name": "YPA Estate Agents",
+   "reviews": 231,
+   "rating": 3.6,
+   "dist": [
+    73,
+    2,
+    0,
+    13,
+    143
+   ],
+   "level": "brand"
+  },
+  "cav": [],
+  "listings": 1
  },
  "YPA Estate Agents Sydenham": {
   "reviews": {
@@ -4190,7 +5207,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 3
+  "listings": 5
  },
  "YPA Estate Agents Wyndham City": {
   "reviews": {
@@ -4226,7 +5243,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 5
+  "listings": 9
  },
  "YPA Tarneit - Truganina": {
   "reviews": {
@@ -4244,17 +5261,17 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 7
+  "listings": 8
  },
  "Yarra Valley Rentals Pty Ltd": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 3
  },
  "Your Local Real Estate Agency": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "Your Realtors Werribee": {
   "reviews": null,
@@ -4276,27 +5293,32 @@
     "context": "before the victorian civil and administrative tribunal criminal proceedings against two other agencies are also underway nasheet enterprises pty ltd trading as zed real estate allegedly failed to lodge 37 bonds valued at 142 000 on time with some up to 11 months late m k investment solutions allegedly failed to lodge 35 bonds within the required timeframe o"
    }
   ],
-  "listings": 4
+  "listings": 7
  },
  "Zenith Australia Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
+ },
+ "Zervas and Co Real Estate Agents": {
+  "reviews": null,
+  "cav": [],
+  "listings": 15
  },
  "iAgency": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 3
  },
  "iCare Property": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 6
  },
  "iHomes Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 5
  },
  "iProperty Melbourne": {
   "reviews": null,
