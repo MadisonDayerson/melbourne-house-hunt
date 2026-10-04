@@ -52,9 +52,9 @@ def brand_of(name):
     return None
 
 
-def cached_get(url, key):
+def cached_get(url, key, fresh=False):
     f = CACHE / (re.sub(r"[^a-z0-9]+", "_", key.lower())[:120] + ".html")
-    if f.exists():
+    if f.exists() and not fresh:
         return f.read_text()
     for attempt in range(5):
         try:
@@ -115,7 +115,8 @@ TITLE_RE = re.compile(r"estate|agen|rent|bond|landlord|vcat|trust account|proper
 def cav_articles(max_pages=45):
     arts, seen = [], set()
     for pg in range(1, max_pages + 1):
-        h = cached_get(f"https://www.consumer.vic.gov.au/latest-news?pg={pg}", f"cav_list_{pg}")
+        # the first few pages change as news is published, so always re-read them
+        h = cached_get(f"https://www.consumer.vic.gov.au/latest-news?pg={pg}", f"cav_list_{pg}", fresh=pg <= 3)
         links = re.findall(r'href="(/latest-news/[a-z0-9-]+)"[^>]*>(.*?)</a>', h, re.S)
         new = [(u, re.sub(r"<[^>]+>", "", t).strip()) for u, t in links if u not in seen and not u.endswith(("/events", "/email-updates"))]
         if not new:
@@ -165,13 +166,14 @@ def main():
     listings = [l for f in ("listings_enriched.json", "listings_enriched_solo.json") if (D / f).exists()
                 for l in json.load(open(D / f))]
     names = sorted({l["agency"].strip() for l in listings if l.get("agency")})
-    log(f"{len(names)} agencies")
+    old = json.load(open(D / "agencies.json")) if "--incremental" in sys.argv and (D / "agencies.json").exists() else {}
+    log(f"{len(names)} agencies, {sum(1 for n in names if n not in old)} new")
     arts = cav_articles()
     log(f"CAV: {len(arts)} enforcement-related stories read")
     out = {}
     for i, n in enumerate(names):
         try:
-            rv = reviews_for(n)
+            rv = old[n]["reviews"] if n in old else reviews_for(n)
         except Exception as e:
             log("ERR", n, e); rv = None
         out[n] = {"reviews": rv, "cav": cav_matches(n, arts),

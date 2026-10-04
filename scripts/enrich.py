@@ -14,9 +14,19 @@ Method notes (also shown in the app's "How scores work" panel):
 - Crime: Crime Statistics Agency Victoria, recorded offences year ending June 2026, by suburb,
   per 1,000 residents (2021 Census population). Victoria overall: 86.8 per 1,000.
 """
-import json, math, pathlib, collections, re, sys
+import json, math, pathlib, collections, re, sys, gzip, datetime
 
 D = pathlib.Path(__file__).resolve().parent.parent / "data"
+TODAY = datetime.date.today().isoformat()
+KEEP_GONE_DAYS = 14  # listings that disappear stay (marked "no longer advertised") this long
+
+
+def load_json(name):
+    """Read data/<name>, or its .gz copy (the compressed OSM files are what's kept in git)."""
+    if (D / name).exists():
+        return json.load(open(D / name))
+    with gzip.open(D / (name + ".gz"), "rt") as f:
+        return json.load(f)
 SOLO = "--solo" in sys.argv  # studio-2 bed search for one person (see fetch_listings.py)
 RAW, OUT = ("listings_raw_solo.json", "listings_enriched_solo.json") if SOLO else ("listings_raw.json", "listings_enriched.json")
 DETOUR, WALK_M_PER_MIN = 1.3, 80
@@ -80,7 +90,7 @@ def cell(lat, lng):
 
 
 amen = collections.defaultdict(list)
-for e in json.load(open(D / "osm_amenities.json"))["elements"]:
+for e in load_json("osm_amenities.json")["elements"]:
     c = category(e.get("tags", {}))
     if not c:
         continue
@@ -100,7 +110,7 @@ for c, items in amen.items():
 # ---------- roads & rail ----------
 roads = {"motorway": {}, "major": {}, "rail": {}}  # grid cell -> segments
 basemap = {"motorway": [], "major": [], "rail": []}
-for w in json.load(open(D / "osm_roads.json"))["elements"]:
+for w in load_json("osm_roads.json")["elements"]:
     g = w.get("geometry")
     if not g:
         continue
@@ -255,6 +265,25 @@ for L in json.load(open(D / RAW)):
     })
 
 print("listings", len(out), "missing population:", sorted(missing_pop))
+# ---------- history: first seen / no longer advertised ----------
+prev = {str(l["id"]): l for l in json.load(open(D / OUT))} if (D / OUT).exists() else {}
+seen = set()
+for l in out:
+    k = str(l["id"]); seen.add(k)
+    if k in prev:   # known listing: keep its date (older files have none, so use the advertised date)
+        l["first_seen"] = prev[k].get("first_seen") or prev[k].get("listed") or TODAY
+    else:           # new since the last run (on the very first run, use the advertised date)
+        l["first_seen"] = TODAY if prev else (l.get("listed") or TODAY)
+    l.pop("gone", None)
+kept_gone = 0
+for k, l in prev.items():
+    if k in seen:
+        continue
+    gone = l.get("gone") or TODAY
+    if (datetime.date.fromisoformat(TODAY) - datetime.date.fromisoformat(gone)).days <= KEEP_GONE_DAYS:
+        l["gone"] = gone; out.append(l); kept_gone += 1
+new = sum(1 for l in out if l.get("first_seen") == TODAY and not l.get("gone"))
+print(f"history: {new} new today, {kept_gone} no longer advertised (kept {KEEP_GONE_DAYS} days)")
 json.dump(out, open(D / OUT, "w"), indent=1)
 if SOLO:
     sys.exit()  # the basemap comes from the share-house run

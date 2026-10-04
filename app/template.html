@@ -243,6 +243,7 @@ a { color: var(--accent); }
           <div class="field"><span class="label">When built</span><div class="subs" id="ages"></div></div>
           <label class="check"><input type="checkbox" id="f-pets"> Pets allowed</label>
           <label class="check"><input type="checkbox" id="f-now"> Available now</label>
+          <label class="check"><input type="checkbox" id="f-fresh"> New in the last 2 days</label>
         </div>
       </details>
       <details open>
@@ -569,7 +570,8 @@ function applyMode() {
   document.querySelectorAll("#group [data-for]").forEach(el => el.hidden = el.dataset.for !== MODE);
   $("#mode").closest(".field").hidden = !(P.solo || []).length;
   $("#lede").textContent = LEDE[MODE];
-  $("#asof").textContent = "Listings collected " + new Date(P.asOf + "T00:00").toLocaleDateString("en-AU", { day: "numeric", month: "long", year: "numeric" }) + " · " + L.length + " places";
+  const live = L.filter(l => !l.gone), fresh = live.filter(isNew).length;
+  $("#asof").textContent = "Updated " + new Date(P.asOf + "T00:00").toLocaleDateString("en-AU", { day: "numeric", month: "long", year: "numeric" }) + " · " + live.length.toLocaleString() + " places" + (fresh ? ` · ${fresh} new` : "");
   document.querySelectorAll(".seg[data-f]").forEach(el => {
     el.innerHTML = SEGS[MODE][el.dataset.f].map(([v, t]) => `<button type="button" data-v="${v}">${t}</button>`).join("");
   });
@@ -595,7 +597,7 @@ function syncInputs() {
   $("#f-ppmax").value = F.ppmax; $("#v-ppmax").textContent = money(F.ppmax);
   $("#f-ppmin").value = F.ppmin; $("#v-ppmin").textContent = F.ppmin ? money(F.ppmin) : "None";
   $("#f-cbd").value = F.cbd; $("#v-cbd").textContent = F.cbd >= 60 ? "Any" : F.cbd + " km";
-  $("#f-pets").checked = F.pets; $("#f-now").checked = F.now; $("#f-hidenope").checked = F.hidenope; $("#f-unvoted").checked = F.unvoted;
+  $("#f-pets").checked = F.pets; $("#f-now").checked = F.now; $("#f-fresh").checked = !!F.fresh; $("#f-hidenope").checked = F.hidenope; $("#f-unvoted").checked = F.unvoted;
   $("#sort").value = F.sort;
   document.querySelectorAll(".seg[data-f]").forEach(el => el.querySelectorAll("button").forEach(b =>
     b.setAttribute("aria-pressed", String(b.dataset.v === String(F[el.dataset.f])))));
@@ -617,6 +619,7 @@ $("#rail").addEventListener("input", e => {
   else if (id === "f-cbd") F.cbd = +e.target.value;
   else if (id === "f-pets") F.pets = e.target.checked;
   else if (id === "f-now") F.now = e.target.checked;
+  else if (id === "f-fresh") F.fresh = e.target.checked;
   else if (id === "f-hidenope") F.hidenope = e.target.checked;
   else if (id === "f-nocav") F.nocav = e.target.checked;
   else if (id === "f-unvoted") F.unvoted = e.target.checked;
@@ -687,6 +690,8 @@ function toast(msg) { const t = $("#toast"); t.textContent = msg; t.hidden = fal
 
 /* ---------- filtering ---------- */
 function passes(l) {
+  if (l.gone) { const t = tally(l.id); if (!t.love.length && !t.maybe.length) return false; }  // keep leased places only if voted for
+  if (F.fresh && !isNew(l)) return false;
   const sh = shares(l.rent);
   if (sh.max > F.ppmax + 0.5 || sh.max < F.ppmin - 0.5) return false;
   if (F.beds && l.beds < F.beds) return false;
@@ -725,7 +730,9 @@ const open = new Set();
 
 function chipsFor(l) {
   const c = [];
-  if (l.twenty == null) return `<span class="chip warn">Location not analysed yet</span>`;
+  if (l.gone) c.push(["bad", `No longer advertised since ${fmtDay(l.gone)}`]);
+  else if (isNew(l)) c.push(["good", "New"]);
+  if (l.twenty == null) return c.map(([t, s]) => `<span class="chip ${t}">${s}</span>`).join("") + `<span class="chip warn">Location not analysed yet</span>`;
   const tr = l.near.train[0], tm = l.near.tram[0];
   if (tr <= 1200) c.push([tr <= 800 ? "good" : "", `${esc(l.near.train[1] || "Station")} station ${walkMin(tr)} min`]);
   if (tm <= 600) c.push(["good", `Tram ${walkMin(tm)} min`]);
@@ -747,6 +754,9 @@ function chipsFor(l) {
 }
 
 const starTxt = r => r == null ? "" : `★ ${r.toFixed(1)}`;
+const daysAgo = d => d ? Math.round((Date.parse(P.asOf) - Date.parse(d)) / 864e5) : 99;
+const isNew = l => !l.gone && daysAgo(l.first_seen) <= 1;
+const fmtDay = d => new Date(d + "T00:00").toLocaleDateString("en-AU", { day: "numeric", month: "short" });
 function agencyLine(l) {
   if (!l.agency) return "";
   const a = agOf(l);
@@ -764,7 +774,7 @@ function agencyDetail(l) {
       ${a.rvNote ? `<p style="color:var(--warn)">${esc(a.rvNote)} They don't count towards the renter score.</p>` : `<p class="src">Reviewers include renters, landlords, buyers and sellers.</p>`}
       <div class="dist">${[5, 4, 3, 2, 1].map(st => `<div><span>${st}★</span><i style="width:${(dist[st - 1] / tot * 100).toFixed(1)}%"></i><span class="num">${Math.round(dist[st - 1] / tot * 100)}%</span></div>`).join("")}</div>`;
   } else h += `<p class="src">No public reviews found for this agency or its network.</p>`;
-  if (a?.cav?.length) h += `<p style="color:var(${a.cavKind === "staff" ? "--warn" : "--bad"})"><b>Consumer Affairs Victoria:</b> ${esc(a.cavSummary || "named in enforcement news")}${a.cavKind === "staff" ? ". Not counted against the agency." : ""}</p><ul>${a.cav.map(c =>
+  if (a?.cav?.length) h += `<p style="color:var(${a.cavKind === "agency" || a.cavKind === "alleged" ? "--bad" : "--warn"})"><b>Consumer Affairs Victoria:</b> ${esc(a.cavSummary || "named in a news story that hasn't been checked by hand yet, so it doesn't count against the agency")}${a.cavKind === "staff" ? ". Not counted against the agency." : ""}</p><ul>${a.cav.map(c =>
       `<li><span class="tick n">!</span><span><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)}</a></span><span class="num">${esc(c.date || "")}</span></li>`).join("")}</ul>`;
   else h += `<p class="src">Not named in Consumer Affairs Victoria enforcement news since ${CAV_FROM}.</p>`;
   return h;

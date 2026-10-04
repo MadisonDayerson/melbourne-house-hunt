@@ -12,3 +12,4 @@ app/northside-house-hunt.html
 
 .DS_Store
 __pycache__/
+data/listings_raw_solo.json

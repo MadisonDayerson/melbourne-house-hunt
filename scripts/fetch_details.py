@@ -46,7 +46,9 @@ def parse(html):
 def main():
     listings = [l for f in ("listings_enriched.json", "listings_enriched_solo.json") if (D / f).exists()
                 for l in json.load(open(D / f))]
-    todo = [l for l in listings if not (CACHE / f"{l['id']}.json").exists()]
+    known = json.load(open(D / "build_age.json")) if (D / "build_age.json").exists() else {}
+    todo = [l for l in listings if not (CACHE / f"{l['id']}.json").exists()
+            and not known.get(str(l["id"]), {}).get("has_text") and not l.get("gone")]
     if "--reverse" in sys.argv:  # a second worker can run from the other end
         todo.reverse()
     print(len(listings), "listings,", len(todo), "to fetch", flush=True)

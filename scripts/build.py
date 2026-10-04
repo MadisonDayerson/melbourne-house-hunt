@@ -40,7 +40,7 @@ stations = [{"x": px(a, b)[0], "y": px(a, b)[1], "n": n} for a, b, n in base["st
 KEEP = ["region", "lga", "id", "url", "type", "street", "suburb", "postcode", "rent", "beds", "baths", "cars", "pets",
         "lat", "lng", "available", "listed", "walk_score", "transit_score", "agency", "cbd_km", "near",
         "counts", "met", "twenty", "transit", "roads", "quiet", "noise_flags", "air", "air_flags",
-        "safety", "crime"]
+        "safety", "crime", "first_seen", "gone"]
 def slim(rows):
     out = [{k: l.get(k) for k in KEEP} for l in rows]
     for d in out:
@@ -87,6 +87,10 @@ agencies_path, age_path = D / "agencies.json", D / "build_age.json"
 agencies = json.load(open(agencies_path)) if agencies_path.exists() else {}
 ages = json.load(open(age_path)) if age_path.exists() else {}
 ag_out = {}
+unreviewed = sorted(n for n, a in agencies.items() if a.get("cav") and n not in CAV_REVIEW)
+if unreviewed:
+    print("CAV matches to check by hand (add to data/cav_review.json):", unreviewed)
+(D / "cav_unreviewed.json").write_text(json.dumps(unreviewed, indent=1))
 for name, a in agencies.items():
     rv = a.get("reviews")
     rec = CAV_REVIEW.get(name) or {}

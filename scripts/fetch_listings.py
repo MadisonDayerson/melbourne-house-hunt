@@ -101,6 +101,13 @@ def main():
             rows[r["id"]] = r
     rows = [r for r in rows.values() if PROFILE["min_beds"] <= (r["beds"] or 0) <= PROFILE["max_beds"]
             and r["rent"] and r["rent"] <= MAX_RENT and (r["type"] or "").lower() not in ("share", "room", "share house")]
+    # Safety check: a big drop usually means the site was down or refused us, not that half of
+    # Melbourne's rentals were leased overnight. Stop rather than wipe listings from the website.
+    if OUT.exists() and "--force" not in sys.argv:
+        before = len(json.loads(OUT.read_text()))
+        if before and len(rows) < 0.7 * before:
+            print(f"ABORT: only {len(rows)} listings today vs {before} last time; keeping the old file")
+            sys.exit(1)
     OUT.write_text(json.dumps(rows, indent=1))
     print("saved", len(rows), "to", OUT)
 
