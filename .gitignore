@@ -1,0 +1,14 @@
+# Large raw downloads: recreate with the scripts in README.md
+data/cache/
+data/osm_tiles/
+data/osm_amenities.json
+data/osm_roads.json
+data/*.xlsx
+data/*.log
+data/listings_raw.json
+
+# claude.ai artifact build (the GitHub site is docs/index.html)
+app/northside-house-hunt.html
+
+.DS_Store
+__pycache__/

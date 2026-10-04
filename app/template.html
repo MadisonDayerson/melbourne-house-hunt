@@ -1,0 +1,1063 @@
+<title>Melbourne House Hunt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: street-directory working sheet — filter rail on the left, listing cards on the right, map drawn from our own road data. */
+:root {
+  --paper: #F1F3F0;
+  --surface: #FFFFFF;
+  --sunk: #E6EAE5;
+  --ink: #1D2327;
+  --muted: #5A6670;
+  --line: #D3D9D3;
+  --accent: #1E6B57;      /* eucalypt */
+  --accent-soft: #DCEDE6;
+  --accent-ink: #FFFFFF;
+  --road: #C9A35B;        /* arterial ochre on the map */
+  --fwy: #B4552D;         /* freeway brick */
+  --rail: #46525B;
+  --good: #2C7A4B;
+  --warn: #A86B12;
+  --bad: #B23A3A;
+  --good-soft: #DFF0E5;
+  --warn-soft: #F6EAD3;
+  --bad-soft: #F6DEDC;
+  --display: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --r: 10px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #13181A; --surface: #1B2225; --sunk: #232B2F; --ink: #E4E9E6; --muted: #9AA7AE; --line: #2F393E;
+  --accent: #5CC09D; --accent-soft: #1D3A31; --accent-ink: #0E1A16; --road: #8F7440; --fwy: #C9714B; --rail: #8D9AA2;
+  --good: #63C98A; --warn: #E2AE55; --bad: #EE7D7D; --good-soft: #1C3426; --warn-soft: #3A2E18; --bad-soft: #3D2222;
+  color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --paper: #13181A; --surface: #1B2225; --sunk: #232B2F; --ink: #E4E9E6; --muted: #9AA7AE; --line: #2F393E;
+  --accent: #5CC09D; --accent-soft: #1D3A31; --accent-ink: #0E1A16; --road: #8F7440; --fwy: #C9714B; --rail: #8D9AA2;
+  --good: #63C98A; --warn: #E2AE55; --bad: #EE7D7D; --good-soft: #1C3426; --warn-soft: #3A2E18; --bad-soft: #3D2222;
+  color-scheme: dark; }
+
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font: 15px/1.5 var(--body); margin: 0; }
+.wrap { max-width: 1320px; margin: 0 auto; padding-inline: 20px; padding-block: 20px 60px; }
+@media (max-width: 560px) { .wrap { padding-inline: 16px; } }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; }
+button, input, select, textarea { font: inherit; color: inherit; }
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.label { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+
+/* Masthead */
+.mast { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 16px 32px; align-items: end; padding-bottom: 18px; border-bottom: 2px solid var(--ink); }
+.mast h1 { font-size: clamp(30px, 5vw, 50px); font-weight: 800; font-stretch: 72%; letter-spacing: -.01em; line-height: .95; text-transform: uppercase; }
+.mast p { margin: 8px 0 0; color: var(--muted); max-width: 62ch; }
+.group { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: end; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 10px 14px; }
+.group label { display: grid; gap: 2px; }
+.group input[type=number] { width: 64px; }
+.group select, .group input { background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 4px 6px; }
+@media (max-width: 860px) { .mast { grid-template-columns: 1fr; } }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 18px 0 14px; flex-wrap: wrap; }
+.tab { background: none; border: 1px solid transparent; border-radius: 999px; padding: 6px 14px; cursor: pointer; font-weight: 500; color: var(--muted); }
+.tab[aria-selected=true] { background: var(--ink); color: var(--paper); }
+.tab .count { font-family: var(--mono); font-size: 12px; margin-left: 6px; opacity: .8; }
+
+.layout { display: grid; grid-template-columns: 270px minmax(0,1fr); gap: 24px; align-items: start; }
+@media (max-width: 900px) { .layout { grid-template-columns: minmax(0,1fr); } }
+
+/* Filter rail */
+.rail { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 12px); display: grid; gap: 14px; max-height: calc(100vh - 24px); overflow: auto; padding-right: 4px; }
+@media (max-width: 900px) { .rail { position: static; max-height: none; } }
+.rail details { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 12px 14px; }
+.rail summary { cursor: pointer; font-family: var(--display); font-weight: 700; font-stretch: 85%; font-size: 15px; text-transform: uppercase; letter-spacing: .03em; }
+.rail .fields { display: grid; gap: 12px; margin-top: 12px; }
+.field { display: grid; gap: 4px; }
+.field .row { display: flex; justify-content: space-between; gap: 8px; font-size: 13px; }
+.field input[type=range] { width: 100%; accent-color: var(--accent); }
+.seg { display: flex; flex-wrap: wrap; gap: 4px; }
+.seg button { border: 1px solid var(--line); background: var(--paper); border-radius: 6px; padding: 3px 9px; cursor: pointer; font-size: 13px; }
+.seg button[aria-pressed=true] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.check { display: flex; gap: 8px; align-items: center; font-size: 13px; }
+.subs { display: flex; flex-wrap: wrap; gap: 4px; max-height: 190px; overflow: auto; }
+.subs button { border: 1px solid var(--line); background: var(--paper); border-radius: 999px; padding: 2px 9px; font-size: 12px; cursor: pointer; }
+.subs button[aria-pressed=true] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.linkbtn { background: none; border: 0; color: var(--accent); cursor: pointer; padding: 0; font-size: 13px; text-decoration: underline; }
+
+/* Results bar */
+.bar { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.bar select { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 5px 8px; }
+.notice { background: var(--warn-soft); border: 1px solid var(--line); border-radius: var(--r); padding: 10px 14px; font-size: 13px; margin-bottom: 12px; }
+
+/* Cards */
+.cards { display: grid; gap: 12px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); display: grid; grid-template-columns: 76px minmax(0,1fr); gap: 0; overflow: hidden; }
+.card.hl { outline: 2px solid var(--accent); }
+.score { display: grid; place-items: center; align-content: center; gap: 2px; border-right: 1px solid var(--line); background: var(--sunk); padding: 12px 4px; }
+.score b { font-family: var(--display); font-size: 30px; font-weight: 800; font-stretch: 75%; line-height: 1; }
+.score span { font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.cbody { padding: 12px 16px; display: grid; gap: 10px; min-width: 0; }
+.ctop { display: flex; flex-wrap: wrap; gap: 6px 16px; justify-content: space-between; align-items: baseline; }
+.addr { font-family: var(--display); font-weight: 700; font-stretch: 90%; font-size: 19px; line-height: 1.2; }
+.addr small { display: block; font-family: var(--body); font-weight: 500; font-size: 13px; color: var(--muted); font-stretch: 100%; }
+.price { text-align: right; }
+.price .pp { font-family: var(--display); font-weight: 800; font-stretch: 80%; font-size: 24px; line-height: 1; }
+.price .pp em { font-style: normal; font-size: 13px; font-weight: 500; color: var(--muted); }
+.price .tot { font-size: 12px; color: var(--muted); }
+.facts { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13px; color: var(--muted); }
+.facts b { color: var(--ink); font-weight: 600; }
+.meters { display: grid; grid-template-columns: repeat(7, minmax(0,1fr)); gap: 8px; }
+@media (max-width: 760px) { .meters { grid-template-columns: repeat(4, minmax(0,1fr)); } }
+.meter { display: grid; gap: 3px; font-size: 11px; }
+.meter .mt { display: flex; justify-content: space-between; color: var(--muted); }
+.meter .mt b { color: var(--ink); font-family: var(--mono); font-weight: 500; }
+.meter i { display: block; height: 5px; border-radius: 3px; background: var(--sunk); position: relative; overflow: hidden; }
+.meter i::after { content: ""; position: absolute; inset: 0 auto 0 0; width: var(--v); background: var(--c); border-radius: 3px; }
+.chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.chip { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--sunk); color: var(--ink); white-space: nowrap; }
+.chip.good { background: var(--good-soft); color: var(--good); }
+.chip.warn { background: var(--warn-soft); color: var(--warn); }
+.chip.bad { background: var(--bad-soft); color: var(--bad); }
+.cfoot { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; justify-content: space-between; border-top: 1px dashed var(--line); padding-top: 10px; }
+.votes { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.vote { border: 1px solid var(--line); background: var(--paper); border-radius: 999px; padding: 3px 11px; cursor: pointer; font-size: 13px; font-weight: 500; }
+.vote[aria-pressed=true][data-v=love] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.vote[aria-pressed=true][data-v=maybe] { background: var(--warn-soft); color: var(--warn); border-color: var(--warn); }
+.vote[aria-pressed=true][data-v=nope] { background: var(--bad-soft); color: var(--bad); border-color: var(--bad); }
+.vote:disabled { opacity: .5; cursor: not-allowed; }
+.who { display: flex; gap: 4px; align-items: center; font-size: 12px; color: var(--muted); flex-wrap: wrap; }
+.av { width: 22px; height: 22px; border-radius: 50%; border: 2px solid var(--c, var(--line)); object-fit: cover; }
+.agency { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; font-size: 13px; color: var(--muted); }
+.agency b { color: var(--ink); font-weight: 600; }
+.stars { font-family: var(--mono); color: var(--ink); }
+.dist { display: grid; gap: 2px; font-size: 12px; margin: 4px 0 6px; }
+.dist div { display: grid; grid-template-columns: 22px minmax(0,1fr) 44px; gap: 6px; align-items: center; }
+.dist i { display: block; height: 6px; border-radius: 3px; background: var(--accent); }
+.links { display: flex; gap: 12px; font-size: 13px; flex-wrap: wrap; }
+.more { background: none; border: 0; color: var(--accent); cursor: pointer; font-size: 13px; font-weight: 600; padding: 0; }
+
+/* Detail */
+.detail { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px 22px; border-top: 1px solid var(--line); padding-top: 12px; }
+.detail h3 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; font-stretch: 85%; margin-bottom: 6px; }
+.detail ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 3px; font-size: 13px; }
+.detail li { display: grid; grid-template-columns: 16px minmax(0,1fr) auto; gap: 6px; align-items: baseline; }
+.detail li .nm { color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tick { font-weight: 700; }
+.tick.y { color: var(--good); } .tick.n { color: var(--bad); }
+.detail p { margin: 0 0 6px; font-size: 13px; }
+.notes { grid-column: 1 / -1; display: grid; gap: 6px; }
+.note { font-size: 13px; background: var(--sunk); border-radius: 8px; padding: 6px 10px; display: flex; gap: 8px; align-items: flex-start; }
+.note .t { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.note form { display: flex; gap: 6px; }
+.notes form { display: flex; gap: 6px; }
+.notes input { flex: 1; min-width: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 5px 8px; }
+.btn { background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 6px; padding: 6px 12px; font-weight: 600; cursor: pointer; }
+.btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+.x { background: none; border: 0; color: var(--muted); cursor: pointer; font-size: 12px; }
+
+/* Map */
+.mapbox { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; }
+.mapbox svg { display: block; width: 100%; height: auto; max-height: 78vh; background: var(--sunk); }
+.m-major, .m-mwy, .m-rail, .m-stn, .m-dot { vector-effect: non-scaling-stroke; }
+.m-major { stroke: var(--road); stroke-width: 1.2; fill: none; opacity: .75; }
+.m-mwy { stroke: var(--fwy); stroke-width: 3; fill: none; opacity: .8; }
+.m-rail { stroke: var(--rail); stroke-width: 1.4; fill: none; stroke-dasharray: 5 3; opacity: .8; }
+.m-stn { fill: var(--surface); stroke: var(--rail); stroke-width: 1.3; }
+.m-stn-l { font-family: var(--body); font-weight: 500; fill: var(--muted); }
+.mapbar { display: flex; gap: 8px; align-items: center; padding: 8px 12px; border-bottom: 1px solid var(--line); font-size: 13px; color: var(--muted); flex-wrap: wrap; }
+.m-dot { stroke: var(--surface); stroke-width: 1.5; cursor: pointer; }
+.m-dot:hover, .m-dot.on { stroke: var(--ink); stroke-width: 2.5; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 18px; padding: 10px 14px; font-size: 12px; color: var(--muted); align-items: center; border-top: 1px solid var(--line); }
+.legend svg { width: 26px; height: 10px; background: none; }
+.sw { display: inline-block; width: 11px; height: 11px; border-radius: 50%; vertical-align: -1px; margin-right: 4px; }
+.mapcard { padding: 12px; border-top: 1px solid var(--line); }
+
+/* Shortlist board */
+.board table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.board .tw { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); }
+.board th, .board td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: middle; white-space: nowrap; }
+.board th { font-size: 11px; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); font-weight: 600; background: var(--sunk); }
+.board td.r, .board th.r { text-align: right; }
+.board tr:last-child td { border-bottom: 0; }
+.board .rk { font-family: var(--display); font-weight: 800; font-size: 20px; font-stretch: 75%; }
+.empty { background: var(--surface); border: 1px dashed var(--line); border-radius: var(--r); padding: 28px; text-align: center; color: var(--muted); }
+
+/* Add form + method */
+.formgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 16px; }
+.formgrid label { display: grid; gap: 4px; font-size: 13px; }
+.formgrid input, .formgrid select, .formgrid textarea { background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; min-width: 0; }
+.formgrid .wide { grid-column: 1 / -1; }
+.prose { max-width: 72ch; display: grid; gap: 14px; }
+.prose h2 { font-size: 24px; font-weight: 800; font-stretch: 80%; text-transform: uppercase; margin-top: 10px; }
+.prose h3 { font-size: 17px; font-weight: 700; font-stretch: 90%; }
+.prose p, .prose li { margin: 0; }
+.prose ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.prose table { border-collapse: collapse; font-size: 13px; width: 100%; }
+.prose td, .prose th { border-bottom: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; }
+.src { font-size: 13px; color: var(--muted); }
+.toast { position: fixed; left: 50%; bottom: calc(env(safe-area-inset-bottom, 0px) + 18px); transform: translateX(-50%); background: var(--ink); color: var(--paper); padding: 8px 16px; border-radius: 999px; font-size: 13px; z-index: 9; }
+@media (prefers-reduced-motion: no-preference) { .card { transition: outline-color .2s; } }
+</style>
+
+<div class="wrap">
+  <header class="mast">
+    <div>
+      <div class="label" id="asof"></div>
+      <h1>Melbourne House Hunt</h1>
+      <p>Every 4+ bedroom rental we could find across Melbourne, from the inner city to the outer suburbs, scored on what it's like to live there: daily needs within a 10-minute walk, trains and trams, traffic noise and fumes, and recorded crime. Vote, shortlist and leave notes together.</p>
+    </div>
+    <form class="group" id="group" aria-label="Household settings">
+      <label><span class="label">People</span><input id="g-people" type="number" min="1" max="12" value="5"></label>
+      <label><span class="label">Couples</span><input id="g-couples" type="number" min="0" max="6" value="1"></label>
+      <label><span class="label">Split rent</span>
+        <select id="g-split"><option value="equal">Equally per person</option><option value="room">By bedroom</option></select></label>
+      <div class="num" id="g-sum" style="font-size:13px;color:var(--muted)"></div>
+    </form>
+  </header>
+
+  <nav class="tabs" role="tablist" id="tabs">
+    <button class="tab" role="tab" data-tab="list" aria-selected="true">Listings<span class="count" id="c-list"></span></button>
+    <button class="tab" role="tab" data-tab="map" aria-selected="false">Map</button>
+    <button class="tab" role="tab" data-tab="short" aria-selected="false">Shortlist<span class="count" id="c-short"></span></button>
+    <button class="tab" role="tab" data-tab="add" aria-selected="false">Add a listing</button>
+    <button class="tab" role="tab" data-tab="how" aria-selected="false">How scores work</button>
+  </nav>
+
+  <div class="layout">
+    <aside class="rail" id="rail">
+      <details open>
+        <summary>Budget &amp; size</summary>
+        <div class="fields">
+          <div class="field"><div class="row"><span>Max per person</span><b class="num" id="v-ppmax"></b></div><input type="range" id="f-ppmax" min="150" max="450" step="10" value="350"></div>
+          <div class="field"><div class="row"><span>Min per person</span><b class="num" id="v-ppmin"></b></div><input type="range" id="f-ppmin" min="0" max="400" step="10" value="0"></div>
+          <div class="field"><span class="label">Bedrooms</span><div class="seg" data-f="beds"></div></div>
+          <div class="field"><span class="label">Bathrooms</span><div class="seg" data-f="baths"></div></div>
+          <div class="field"><span class="label">Car spaces</span><div class="seg" data-f="cars"></div></div>
+          <div class="field"><span class="label">Type</span><div class="seg" data-f="type"></div></div>
+          <div class="field"><span class="label">When built</span><div class="subs" id="ages"></div></div>
+          <label class="check"><input type="checkbox" id="f-pets"> Pets allowed</label>
+          <label class="check"><input type="checkbox" id="f-now"> Available now</label>
+        </div>
+      </details>
+      <details open>
+        <summary>Location</summary>
+        <div class="fields">
+          <div class="field"><span class="label">Region</span><div class="subs" id="regions"></div></div>
+          <div class="field"><div class="row"><span>Max to CBD</span><b class="num" id="v-cbd"></b></div><input type="range" id="f-cbd" min="3" max="60" step="1" value="60"></div>
+          <div class="field"><div class="row"><span class="label">Suburbs</span><button type="button" class="linkbtn" id="subs-clear">All</button></div>
+            <input id="sub-search" list="sub-options" placeholder="Type a suburb and press Enter" autocomplete="off" style="background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:5px 8px;min-width:0">
+            <datalist id="sub-options"></datalist>
+            <div class="subs" id="subs"></div></div>
+        </div>
+      </details>
+      <details>
+        <summary>Minimum scores</summary>
+        <div class="fields" id="minscores"></div>
+      </details>
+      <details>
+        <summary>What matters to us</summary>
+        <div class="fields" id="weights"></div>
+        <p class="src" style="margin:10px 0 0">Weights set the overall score. They're saved in your browser only.</p>
+      </details>
+      <details open>
+        <summary>Votes</summary>
+        <div class="fields">
+          <label class="check"><input type="checkbox" id="f-nocav"> Hide agencies with regulator action</label>
+          <label class="check"><input type="checkbox" id="f-hidenope"> Hide places anyone voted Nope</label>
+          <label class="check"><input type="checkbox" id="f-unvoted"> Only places I haven't voted on</label>
+          <button type="button" class="linkbtn" id="reset">Reset all filters</button>
+        </div>
+      </details>
+    </aside>
+
+    <main id="main" style="min-width:0">
+      <form id="join" class="formgrid" hidden style="margin-bottom:12px">
+        <div class="wide"><b>Join your house's shortlist</b><p class="src" style="margin:4px 0 0">Use the same house code as your housemates. Your name is shown next to your votes and notes. Both are remembered on this device.</p></div>
+        <label>Your name<input id="j-name" maxlength="30" required autocomplete="given-name"></label>
+        <label>House code<input id="j-code" minlength="6" maxlength="60" required autocomplete="off" placeholder="from whoever set this up"></label>
+        <div class="wide" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><button class="btn" type="submit">Join</button><button class="btn ghost" type="button" id="j-cancel">Not now</button><span id="j-msg" class="src"></span></div>
+      </form>
+      <div id="sync" class="notice" hidden></div>
+      <section data-panel="list">
+        <div class="bar">
+          <div id="rcount" class="num" style="font-size:13px;color:var(--muted)"></div>
+          <label style="font-size:13px">Sort by
+            <select id="sort">
+              <option value="score">Best overall match</option>
+              <option value="pp">Cheapest per person</option>
+              <option value="walk">Walkability</option>
+              <option value="transit">Public transport</option>
+              <option value="quiet">Quietest</option>
+              <option value="air">Cleanest air</option>
+              <option value="safety">Safest suburb</option>
+              <option value="agency">Best-rated agency</option>
+              <option value="built">Newest build</option>
+              <option value="cbd">Closest to CBD</option>
+              <option value="new">Newest listing</option>
+              <option value="group">Group favourites</option>
+            </select></label>
+        </div>
+        <div class="cards" id="cards"></div>
+        <div style="text-align:center;margin-top:14px"><button class="btn ghost" id="more" hidden>Show more</button></div>
+      </section>
+
+      <section data-panel="map" hidden>
+        <div class="mapbox">
+          <div class="mapbar"><span id="mapinfo"></span><button type="button" class="btn ghost" id="mapfit" style="padding:3px 10px">Fit to results</button><button type="button" class="btn ghost" id="mapall" style="padding:3px 10px">Whole city</button><span>Drag to pan, scroll or pinch buttons to zoom.</span><button type="button" class="btn ghost" id="zin" style="padding:3px 10px" aria-label="Zoom in">+</button><button type="button" class="btn ghost" id="zout" style="padding:3px 10px" aria-label="Zoom out">−</button></div>
+          <svg id="map" viewBox="0 0 __MAP_W__ __MAP_H__" role="img" aria-label="Map of listings with freeways, main roads and railway lines">
+            <path class="m-major" d="__PATH_MAJOR__"/>
+            <path class="m-rail" d="__PATH_RAIL__"/>
+            <path class="m-mwy" d="__PATH_MOTORWAY__"/>
+            <g id="m-stations"></g>
+            <g id="m-dots"></g>
+          </svg>
+          <div class="legend">
+            <span><svg viewBox="0 0 26 10"><path d="M0 5H26" class="m-mwy"/></svg> Freeway</span>
+            <span><svg viewBox="0 0 26 10"><path d="M0 5H26" class="m-major"/></svg> Main road</span>
+            <span><svg viewBox="0 0 26 10"><path d="M0 5H26" class="m-rail"/></svg> Train line</span>
+            <span><span class="sw" style="background:var(--good)"></span>Score 70+</span>
+            <span><span class="sw" style="background:var(--warn)"></span>50–69</span>
+            <span><span class="sw" style="background:var(--bad)"></span>Under 50</span>
+            <span>Larger dot = on the shortlist. Shows listings that pass your filters; station names appear when you zoom in.</span>
+          </div>
+          <div class="mapcard" id="mapcard"><p class="src" style="margin:0">Select a dot to see the listing.</p></div>
+        </div>
+      </section>
+
+      <section data-panel="short" hidden class="board" id="board"></section>
+
+      <section data-panel="add" hidden>
+        <div class="prose" style="margin-bottom:14px">
+          <p>Found a place on realestate.com.au, Domain or an agent's site? Add it here so everyone can vote on it. Location scores are worked out separately: ask Claude to "analyse the new listings" and it will fill them in.</p>
+        </div>
+        <form class="formgrid" id="addform">
+          <label class="wide">Street address<input id="a-street" required placeholder="e.g. 14 Example Street"></label>
+          <label>Suburb<input id="a-suburb" required list="suburb-list"></label>
+          <label>Weekly rent ($)<input id="a-rent" type="number" min="100" max="5000" required></label>
+          <label>Bedrooms<input id="a-beds" type="number" min="1" max="10" value="4" required></label>
+          <label>Bathrooms<input id="a-baths" type="number" min="1" max="6" value="2"></label>
+          <label>Car spaces<input id="a-cars" type="number" min="0" max="6" value="1"></label>
+          <label>Type<select id="a-type"><option>House</option><option>Townhouse</option><option>Apartment</option><option>Unit</option></select></label>
+          <label class="wide">Listing link<input id="a-url" type="url" placeholder="https://"></label>
+          <div class="wide" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><button class="btn" type="submit" id="a-submit">Add listing</button><span id="a-msg" class="src"></span></div>
+        </form>
+        <datalist id="suburb-list"></datalist>
+        <h2 style="font-size:18px;font-weight:800;font-stretch:80%;text-transform:uppercase;margin:22px 0 10px">Added by the group</h2>
+        <div class="cards" id="added"></div>
+      </section>
+
+      <section data-panel="how" hidden>
+        <div class="prose">
+          <p>Each listing gets seven scores out of 100. The overall score is a weighted average you control under <b>What matters to us</b>. Distances are measured from the listing's map pin. Walking distance is estimated as straight-line distance × 1.3, a typical detour factor for Melbourne's grid streets, at 80 m per minute.</p>
+
+          <h2>Walkability</h2>
+          <p>Based on Plan Melbourne's <b>20-minute neighbourhood</b>: you should be able to meet most daily needs within an 800 m walk, 10 minutes there and 10 back. We check nine needs: supermarket, fresh food (greengrocer, butcher or bakery), pharmacy, GP, café or restaurant, park, gym or pool, library or community centre, and a train within 800 m or a tram within 600 m. The walkability score is half the share of needs met and half the listing's Walk Score®.</p>
+
+          <h2>Public transport</h2>
+          <p>Uses the walking-distance standards in Victoria's planning rules for new neighbourhoods (Clause 56.04-1): a bus stop within 400 m, a tram stop within 600 m and a train station within 800 m. Trains count most, then trams, then buses, because they run more often and carry more people. Blended 50/50 with the listing's Transit Score®. Bus <i>frequency</i> isn't captured, so check the PTV timetable for your actual routes.</p>
+
+          <h2>Quiet</h2>
+          <p>Australian noise maps aren't published per address, so distance to the main noise sources stands in for decibels. The World Health Organization's environmental noise guidelines (2018) name road traffic, rail and aircraft as the sources most linked to sleep disturbance and health effects. Points come off for:</p>
+          <table>
+            <tr><th>Source</th><th>Distance</th><th>Points off</th></tr>
+            <tr><td>Freeway (CityLink, Ring Road, Monash, Eastern, Western, Peninsula Link…)</td><td>&lt;100 m / 100–300 m / 300–500 m</td><td>45 / 25 / 10</td></tr>
+            <tr><td>Main road (e.g. Sydney Rd, Nepean Hwy, Princes Hwy, Maroondah Hwy)</td><td>&lt;50 m / 50–150 m</td><td>30 / 15</td></tr>
+            <tr><td>Railway line</td><td>&lt;100 m / 100–250 m</td><td>20 / 8</td></tr>
+            <tr><td>Pubs and bars</td><td>within 150 m</td><td>5 each, up to 15</td></tr>
+            <tr><td>Essendon Fields airport</td><td>&lt;3 km / 3–5 km</td><td>15 / 6</td></tr>
+            <tr><td>Melbourne Airport (Tullamarine)</td><td>&lt;8 km</td><td>10</td></tr>
+            <tr><td>Moorabbin airport (light aircraft, flight training)</td><td>&lt;3 km</td><td>10</td></tr>
+            <tr><td>Avalon Airport</td><td>&lt;8 km</td><td>8</td></tr>
+          </table>
+
+          <h2>Clean air</h2>
+          <p>Traffic-related air pollution (fine particles, NO₂) is highest beside busy roads and falls off sharply over the first 150–300 m. Living within about 100 m of a major road is linked to asthma in children, worse lung function and heart disease. Victoria has no buffer rule for homes, so we use the 150 m guideline that California applies to schools. Points come off for a freeway within 150 m (40), 150–300 m (20) or 300–500 m (8), and a main road within 50 m (25) or 50–150 m (12). This score doesn't cover wood-heater smoke in winter or bushfire smoke, which affect the whole region. Outer suburbs in the hills and valleys (Yarra Ranges, parts of Casey and Cardinia) can trap wood smoke on still winter nights. Check <a href="https://www.epa.vic.gov.au/EPA-AirWatch" target="_blank" rel="noopener">EPA AirWatch</a> for live readings from the nearest EPA monitoring station.</p>
+
+          <h2>Safety</h2>
+          <p>Recorded offences per 1,000 residents in the suburb, from the Crime Statistics Agency Victoria (year ending June 2026), divided by the suburb's 2021 Census population. Victoria overall is 86.8 per 1,000. The score is 75 at the state average, 100 at half of it and 25 at double it. Things to keep in mind:</p>
+          <ul>
+            <li>Suburbs with big shopping centres, hospitals, nightlife or a police station record more offences (for example Melbourne CBD, Dandenong, Frankston, Ringwood, Preston with Northland, and Heidelberg with the Austin). Shoplifting and incidents at those sites inflate the rate without making the streets less safe for residents.</li>
+            <li>Population is from 2021, so fast-growing suburbs (Wyndham, Melton, Casey, Hume and Whittlesea growth areas) look worse than they are.</li>
+            <li>Suburbs with fewer than 1,000 residents, mostly industrial or rural, get no safety score: their rates swing too much to compare.</li>
+            <li>Burglary per 1,000 (shown in each listing's details) is the figure most relevant to a household.</li>
+          </ul>
+
+          <h2>Agency</h2>
+          <p>How the agency managing the place treats renters, from two public sources:</p>
+          <ul>
+            <li><b>Reviews</b> on <a href="https://www.productreview.com.au/c/real-estate-agents" target="_blank" rel="noopener">ProductReview.com.au</a>. Most offices don't have their own page, so franchise offices (Ray White, Barry Plant, Harcourts, LJ Hooker…) get their network's rating and are labelled that way. Reviews come from renters, landlords, buyers and sellers. Review sites draw unhappy customers, so 2–3 stars is typical.</li>
+            <li><b>Consumer Affairs Victoria</b> news releases and court outcomes since 2010 about enforcement against estate agents: bond and trust-account offences, rental-law breaches, bans and VCAT or court action. We search those stories for each agency's name, and each match was checked by hand. Records about an individual employee, where CAV says the agency wasn't aware, are shown but not counted.</li>
+          </ul>
+          <p>Score: the star rating mapped from 1★ = 0 to 5★ = 100, pulled towards 2.5★ when there are few reviews, so one glowing review can't top the table. An agency fined or convicted by CAV loses 30 points; one facing proceedings that haven't been decided loses 15. Agencies with neither reviews nor CAV records get no score, and the overall score leaves this part out for them. Before signing, it's still worth looking up the specific office on Google and asking friends who've rented through it.</p>
+
+          <h2>When it was built</h2>
+          <p>Listings don't include a build year, so we read each listing's description. In order: a stated year ("built in 2016"), phrases like "brand new" or "only 4 years old", then the style described (Victorian, Edwardian, Californian bungalow, art deco, 1960s brick). If the description says nothing and the suburb is almost entirely post-2000 estates (Tarneit, Clyde North, Mickleham…), it's marked as a guess. Otherwise it's Unknown. Hover over the build year on a card to see the words it came from. Age isn't part of the overall score, but older homes are often draughty and harder to heat, so check heating and insulation at the inspection.</p>
+
+          <h2>Price</h2>
+          <p>100 at your minimum per-person budget, falling to 0 at your maximum. With "By bedroom" splitting, each bedroom costs the same and the couple shares one, so singles pay more than the couple each. Filters use the highest share anyone in the group would pay.</p>
+
+          <h2>Where the data comes from</h2>
+          <ul class="src">
+            <li>Listings: rent.com.au public search results for 539 suburbs in Melbourne's 31 metropolitan councils, 4+ bedrooms up to $1,900 a week, collected on the date shown at the top. Places listed only on realestate.com.au or Domain won't appear unless you add them.</li>
+            <li>Walk Score® and Transit Score®: supplied with each listing by rent.com.au.</li>
+            <li>Build age and features: the listing's own description on rent.com.au.</li>
+            <li>Agency reviews: ProductReview.com.au. Regulator records: <a href="https://www.consumer.vic.gov.au/latest-news" target="_blank" rel="noopener">Consumer Affairs Victoria news</a>.</li>
+            <li>Shops, services, parks, stops, roads and rail: © OpenStreetMap contributors (ODbL). Some places may be missing or out of date.</li>
+            <li>Crime: <a href="https://www.crimestatistics.vic.gov.au" target="_blank" rel="noopener">Crime Statistics Agency Victoria</a>, recorded offences by suburb, year ending June 2026.</li>
+            <li>Regions: Inner city (Melbourne, Yarra, Port Phillip, Stonnington), North (Merri-bek, Darebin, Banyule, Moonee Valley, Hume, Whittlesea, Nillumbik), West (Maribyrnong, Hobsons Bay, Brimbank, Wyndham, Melton), East (Boroondara, Manningham, Whitehorse, Maroondah, Knox, Yarra Ranges), South-east (Monash, Glen Eira, Greater Dandenong, Casey, Cardinia), Bayside &amp; peninsula (Bayside, Kingston, Frankston, Mornington Peninsula).</li>
+            <li>Population: ABS Census 2021.</li>
+            <li>Planning standards: Plan Melbourne 2017–2050 (Direction 5, 20-minute neighbourhoods); Victoria Planning Provisions Clause 56.04-1; WHO Environmental Noise Guidelines for the European Region (2018).</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script type="application/json" id="payload">__DATA__</script>
+<script>
+(() => {
+"use strict";
+const P = JSON.parse(document.getElementById("payload").textContent);
+const L = P.listings;
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const money = n => "$" + Math.round(n).toLocaleString("en-AU");
+const walkMin = m => Math.max(1, Math.round(m / 80));
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("nhh:" + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem("nhh:" + k, JSON.stringify(v)); } catch {} },
+};
+
+$("#asof").textContent = "Listings collected " + new Date(P.asOf + "T00:00").toLocaleDateString("en-AU", { day: "numeric", month: "long", year: "numeric" }) + " · " + L.length + " places";
+
+/* ---------- household ---------- */
+const G = Object.assign({ people: 5, couples: 1, split: "equal" }, store.get("group", {}));
+$("#g-people").value = G.people; $("#g-couples").value = G.couples; $("#g-split").value = G.split;
+const rooms = () => Math.max(1, G.people - G.couples);
+function shares(rent) {
+  if (G.split === "room") { const r = rent / rooms(); return { max: r, single: r, couple: r / 2 }; }
+  const e = rent / G.people; return { max: e, single: e, couple: e };
+}
+function groupSummary() {
+  const f = F;
+  $("#g-sum").innerHTML = `Needs <b>${rooms()}</b> bedrooms<br>Budget ${money(f.ppmin)}–${money(f.ppmax)} each`;
+}
+$("#group").addEventListener("input", () => {
+  G.people = Math.max(1, +$("#g-people").value || 1);
+  G.couples = Math.min(Math.floor(G.people / 2), Math.max(0, +$("#g-couples").value || 0));
+  G.split = $("#g-split").value;
+  store.set("group", G); render();
+});
+$("#group").addEventListener("submit", e => e.preventDefault());
+
+/* ---------- filters ---------- */
+const DEF = { ppmax: 350, ppmin: 0, beds: 0, baths: 0, cars: 0, type: "any", pets: false, now: false, cbd: 60, subs: [], regions: [],
+  min: { walk: 0, transit: 0, quiet: 0, air: 0, safety: 0, agency: 0 }, ages: [], nocav: false, hidenope: false, unvoted: false, sort: "score" };
+const F = Object.assign(structuredClone(DEF), store.get("filters", {}));
+if (!Array.isArray(F.regions)) F.regions = [];
+if (!Array.isArray(F.ages)) F.ages = [];
+if (F.min.agency == null) F.min.agency = 0;
+if (F.cbd === 20) F.cbd = 60;  // the old "Any" value from the north-only version
+const DIMS = [
+  ["walk", "Walkability"], ["transit", "Public transport"], ["quiet", "Quiet"], ["air", "Clean air"], ["safety", "Safety"], ["agency", "Agency"], ["price", "Price"],
+];
+const W = Object.assign({ walk: 25, transit: 20, quiet: 15, air: 10, safety: 15, agency: 10, price: 10 }, store.get("weights", {}));
+const AG = P.agencies || {};
+const agOf = l => AG[l.agency] || null;
+const AGES = [["new", "2020+"], ["modern", "2000–19"], ["late", "1945–99"], ["period", "Pre-1945"], ["unknown", "Unknown"]];
+const ageBucket = l => l.age ? l.age[1] : "unknown";
+
+const segDefs = {
+  beds: [[0, "Any"], [4, "4+"], [5, "5+"]],
+  baths: [[0, "Any"], [2, "2+"], [3, "3+"]],
+  cars: [[0, "Any"], [1, "1+"], [2, "2+"]],
+  type: [["any", "Any"], ["House", "House"], ["Townhouse", "Townhouse"]],
+};
+document.querySelectorAll(".seg[data-f]").forEach(el => {
+  const f = el.dataset.f;
+  el.innerHTML = segDefs[f].map(([v, t]) => `<button type="button" data-v="${v}">${t}</button>`).join("");
+  el.addEventListener("click", e => {
+    const b = e.target.closest("button"); if (!b) return;
+    F[f] = f === "type" ? b.dataset.v : +b.dataset.v; saveF(); render();
+  });
+});
+const suburbs = [...new Set(L.map(l => l.suburb))].sort();
+const subCount = {}; L.forEach(l => subCount[l.suburb] = (subCount[l.suburb] || 0) + 1);
+$("#sub-options").innerHTML = suburbs.map(s => `<option value="${esc(s)}">${subCount[s]} listing${subCount[s] > 1 ? "s" : ""}</option>`).join("");
+function drawSubs() {
+  $("#subs").innerHTML = F.subs.map(s => `<button type="button" data-s="${esc(s)}" aria-pressed="true" title="Remove">${esc(s)} ✕</button>`).join("")
+    || `<span class="src">All suburbs in the selected regions.</span>`;
+}
+function addSub() {
+  const v = $("#sub-search").value.trim().toLowerCase();
+  const hit = suburbs.find(s => s.toLowerCase() === v) || suburbs.find(s => s.toLowerCase().startsWith(v));
+  if (v && hit && !F.subs.includes(hit)) { F.subs = [...F.subs, hit]; saveF(); render(); }
+  $("#sub-search").value = "";
+}
+$("#sub-search").addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); addSub(); } });
+$("#sub-search").addEventListener("change", () => { if (suburbs.some(s => s === $("#sub-search").value)) addSub(); });
+$("#ages").innerHTML = AGES.map(([k, t]) => `<button type="button" data-a="${k}">${t} <span class="num">${L.filter(l => ageBucket(l) === k).length}</span></button>`).join("");
+$("#ages").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  const a = b.dataset.a; F.ages = F.ages.includes(a) ? F.ages.filter(x => x !== a) : [...F.ages, a]; saveF(); render();
+});
+const REGIONS = ["Inner city", "North", "West", "East", "South-east", "Bayside & peninsula"];
+$("#regions").innerHTML = REGIONS.map(r => `<button type="button" data-r="${esc(r)}">${esc(r)} <span class="num">${L.filter(l => l.region === r).length}</span></button>`).join("");
+$("#regions").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  const r = b.dataset.r; F.regions = F.regions.includes(r) ? F.regions.filter(x => x !== r) : [...F.regions, r]; saveF(); render();
+});
+$("#suburb-list").innerHTML = P.suburbs.map(s => `<option value="${esc(s[0])}">`).join("");
+$("#subs").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  const s = b.dataset.s; F.subs = F.subs.includes(s) ? F.subs.filter(x => x !== s) : [...F.subs, s]; saveF(); render();
+});
+$("#subs-clear").onclick = () => { F.subs = []; saveF(); render(); };
+$("#minscores").innerHTML = DIMS.filter(d => d[0] !== "price").map(([k, t]) =>
+  `<div class="field"><div class="row"><span>${t}</span><b class="num" id="v-min-${k}"></b></div><input type="range" id="f-min-${k}" min="0" max="90" step="5"></div>`).join("");
+$("#weights").innerHTML = DIMS.map(([k, t]) =>
+  `<div class="field"><div class="row"><span>${t}</span><b class="num" id="v-w-${k}"></b></div><input type="range" id="w-${k}" min="0" max="50" step="5"></div>`).join("");
+
+function syncInputs() {
+  $("#f-ppmax").value = F.ppmax; $("#v-ppmax").textContent = money(F.ppmax);
+  $("#f-ppmin").value = F.ppmin; $("#v-ppmin").textContent = F.ppmin ? money(F.ppmin) : "None";
+  $("#f-cbd").value = F.cbd; $("#v-cbd").textContent = F.cbd >= 60 ? "Any" : F.cbd + " km";
+  $("#f-pets").checked = F.pets; $("#f-now").checked = F.now; $("#f-hidenope").checked = F.hidenope; $("#f-unvoted").checked = F.unvoted;
+  $("#sort").value = F.sort;
+  document.querySelectorAll(".seg[data-f]").forEach(el => el.querySelectorAll("button").forEach(b =>
+    b.setAttribute("aria-pressed", String(b.dataset.v === String(F[el.dataset.f])))));
+  drawSubs();
+  document.querySelectorAll("#ages button").forEach(b => b.setAttribute("aria-pressed", String(F.ages.includes(b.dataset.a))));
+  $("#f-nocav").checked = F.nocav;
+  document.querySelectorAll("#regions button").forEach(b => b.setAttribute("aria-pressed", String(F.regions.includes(b.dataset.r))));
+  $("#subs-clear").textContent = F.subs.length ? "Clear (" + F.subs.length + ")" : "All suburbs";
+  for (const [k] of DIMS) {
+    if (k !== "price") { $("#f-min-" + k).value = F.min[k]; $("#v-min-" + k).textContent = F.min[k] || "Any"; }
+    $("#w-" + k).value = W[k]; $("#v-w-" + k).textContent = W[k] ? W[k] + "%" : "off";
+  }
+}
+function saveF() { store.set("filters", F); }
+$("#rail").addEventListener("input", e => {
+  const id = e.target.id;
+  if (id === "f-ppmax") F.ppmax = +e.target.value;
+  else if (id === "f-ppmin") F.ppmin = +e.target.value;
+  else if (id === "f-cbd") F.cbd = +e.target.value;
+  else if (id === "f-pets") F.pets = e.target.checked;
+  else if (id === "f-now") F.now = e.target.checked;
+  else if (id === "f-hidenope") F.hidenope = e.target.checked;
+  else if (id === "f-nocav") F.nocav = e.target.checked;
+  else if (id === "f-unvoted") F.unvoted = e.target.checked;
+  else if (id.startsWith("f-min-")) F.min[id.slice(6)] = +e.target.value;
+  else if (id.startsWith("w-")) { W[id.slice(2)] = +e.target.value; store.set("weights", W); }
+  else return;
+  if (F.ppmin > F.ppmax) F.ppmin = F.ppmax;
+  saveF(); render();
+});
+$("#sort").onchange = e => { F.sort = e.target.value; saveF(); render(); };
+$("#reset").onclick = () => { Object.assign(F, structuredClone(DEF)); saveF(); render(); };
+
+/* ---------- scoring ---------- */
+const avg2 = (a, b) => b == null ? a : Math.round((a + b) / 2);
+function dims(l) {
+  if (l.twenty == null) return null;
+  const pp = shares(l.rent).max;
+  const span = Math.max(20, F.ppmax - F.ppmin);
+  return {
+    walk: avg2(l.twenty, l.walk_score), transit: avg2(l.transit, l.transit_score),
+    quiet: l.quiet, air: l.air, safety: l.safety ?? null, agency: agOf(l)?.score ?? null,
+    price: Math.max(0, Math.min(100, Math.round(100 * (F.ppmax - pp) / span))),
+  };
+}
+function overall(d) {
+  if (!d) return null;
+  let s = 0, w = 0; for (const [k] of DIMS) { if (d[k] == null) continue; s += d[k] * W[k]; w += W[k]; }
+  return w ? Math.round(s / w) : 0;
+}
+const tone = v => v == null ? "" : v >= 70 ? "good" : v >= 50 ? "warn" : "bad";
+const toneVar = v => `var(--${tone(v) || "muted"})`;
+
+/* ---------- shared state (db) ---------- */
+// Shared storage: the claude.ai database when the page runs as an artifact, Supabase when it is
+// hosted elsewhere (GitHub Pages) and configured, otherwise votes stay in this browser.
+let db = null, user = null, me = null, myId = null, canWrite = true, remote = null;
+let votes = {};       // uid -> {listingId: "love"|"maybe"|"nope"}
+let notes = [];       // [{id, listing, by, text, at}]
+let added = [];       // user-added listings
+let profiles = {};
+const localMode = () => !remote;
+
+function myVotes() { return votes[myId || "local"] || {}; }
+function tally(id) {
+  const t = { love: [], maybe: [], nope: [] };
+  for (const [uid, picks] of Object.entries(votes)) { const v = picks?.[id]; if (t[v]) t[v].push(uid); }
+  return t;
+}
+async function refreshProfiles() {
+  if (!user) return;
+  const ids = new Set(Object.keys(votes)); notes.forEach(n => ids.add(n.by)); added.forEach(a => a.by && ids.add(a.by));
+  ids.delete("local");
+  if (!ids.size) return;
+  profiles = await user.profiles([...ids]);
+}
+const nameOf = uid => uid === myId ? "You" : remote?.kind === "supabase" ? uid : (profiles[uid]?.name || "Someone");
+
+async function castVote(id, v) {
+  const mine = { ...myVotes() };
+  if (mine[id] === v) delete mine[id]; else mine[id] = v;
+  if (localMode()) { votes.local = mine; store.set("localVotes", mine); render(); return; }
+  votes[myId] = mine; render();
+  try { await remote.setVote(id, mine[id] || null, mine); }
+  catch (e) { toast(e.code === "invalid_argument" ? "You have view-only access, so your vote wasn't saved." : "Couldn't save your vote. Try again."); }
+}
+
+function toast(msg) { const t = $("#toast"); t.textContent = msg; t.hidden = false; clearTimeout(toast.h); toast.h = setTimeout(() => t.hidden = true, 3200); }
+
+/* ---------- filtering ---------- */
+function passes(l) {
+  const sh = shares(l.rent);
+  if (sh.max > F.ppmax + 0.5 || sh.max < F.ppmin - 0.5) return false;
+  if (F.beds && l.beds < F.beds) return false;
+  if (F.baths && (l.baths || 0) < F.baths) return false;
+  if (F.cars && (l.cars || 0) < F.cars) return false;
+  if (F.type !== "any" && l.type !== F.type) return false;
+  if (F.pets && !l.pets) return false;
+  if (F.now && l.available !== "now") return false;
+  if (F.cbd < 60 && l.cbd_km != null && l.cbd_km > F.cbd) return false;
+  if (F.regions.length && l.region && !F.regions.includes(l.region)) return false;
+  if (F.subs.length && !F.subs.includes(l.suburb)) return false;
+  const d = dims(l);
+  if (d) for (const k in F.min) if (F.min[k] && (d[k] == null || d[k] < F.min[k])) return false;
+  if (F.ages.length && !F.ages.includes(ageBucket(l))) return false;
+  if (F.nocav && ["agency", "alleged"].includes(agOf(l)?.cavKind)) return false;
+  const t = tally(l.id);
+  if (F.hidenope && t.nope.length) return false;
+  if (F.unvoted && myVotes()[l.id]) return false;
+  return true;
+}
+function sorted(list) {
+  const key = {
+    score: l => -(overall(dims(l)) ?? -1), pp: l => l.rent, cbd: l => l.cbd_km ?? 99,
+    new: l => -(Date.parse(l.listed || 0) || 0),
+    agency: l => -(agOf(l)?.score ?? -1),
+    built: l => -({ new: 4, modern: 3, late: 2, period: 1 }[ageBucket(l)] || 0),
+    group: l => { const t = tally(l.id); return -(t.love.length * 2 + t.maybe.length - t.nope.length * 2); },
+  }[F.sort] || (l => -((dims(l) || {})[F.sort] ?? -1));
+  return [...list].sort((a, b) => key(a) - key(b) || a.rent - b.rent);
+}
+
+/* ---------- card ---------- */
+const NEEDS = [["supermarket", "Supermarket"], ["fresh", "Fresh food"], ["pharmacy", "Pharmacy"], ["gp", "GP / clinic"],
+  ["cafe", "Café / restaurant"], ["park", "Park"], ["gym", "Gym / pool"], ["library", "Library / community"]];
+const open = new Set();
+
+function chipsFor(l) {
+  const c = [];
+  if (l.twenty == null) return `<span class="chip warn">Location not analysed yet</span>`;
+  const tr = l.near.train[0], tm = l.near.tram[0];
+  if (tr <= 1200) c.push([tr <= 800 ? "good" : "", `${esc(l.near.train[1] || "Station")} station ${walkMin(tr)} min`]);
+  if (tm <= 600) c.push(["good", `Tram ${walkMin(tm)} min`]);
+  if (l.near.supermarket[0] <= 800) c.push(["good", `${esc(l.near.supermarket[1] || "Supermarket")} ${walkMin(l.near.supermarket[0])} min`]);
+  else c.push(["warn", `Supermarket ${walkMin(l.near.supermarket[0])} min walk`]);
+  for (const f of l.noise_flags.slice(0, 2)) c.push([/Freeway|beside|Airport \d|airport [0-2]\./.test(f) ? "bad" : "warn", esc(f)]);
+  if (l.crime && l.crime.rate > 130) c.push(["bad", `Crime ${Math.round(l.crime.rate / 86.8 * 100)}% of Vic avg`]);
+  else if (l.crime && l.crime.rate < 60) c.push(["good", `Low recorded crime`]);
+  if (l.pets) c.push(["", "Pets OK"]);
+  const ak = agOf(l)?.cavKind;
+  if (ak === "agency") c.push(["bad", "Agency fined or convicted by Consumer Affairs"]);
+  else if (ak === "alleged") c.push(["warn", "Agency facing Consumer Affairs action"]);
+  if (l.age && l.age[4]) c.push(["", "Renovated"]);
+  return c.map(([t, s]) => `<span class="chip ${t}">${s}</span>`).join("");
+}
+
+const starTxt = r => r == null ? "" : `★ ${r.toFixed(1)}`;
+function agencyLine(l) {
+  if (!l.agency) return "";
+  const a = agOf(l);
+  let rv = `<span>No public reviews found</span>`;
+  if (a?.rv) rv = `<span class="stars">${starTxt(a.rv[0])}</span><span>${a.rv[1].toLocaleString()} review${a.rv[1] === 1 ? "" : "s"}${a.rv[2] === "brand" ? ` for ${esc(a.rv[3])} overall` : ""}</span>`;
+  return `<div class="agency"><span>Agency <b>${esc(l.agency)}</b></span>${rv}${a?.score != null ? `<span>Renter score <b style="color:${toneVar(a.score)}">${a.score}</b></span>` : ""}</div>`;
+}
+function agencyDetail(l) {
+  const a = agOf(l);
+  if (!l.agency) return `<p class="src">No agency listed.</p>`;
+  let h = `<p><b>${esc(l.agency)}</b></p>`;
+  if (a?.rv) {
+    const [r, n, lvl, nm, slug, dist] = a.rv, tot = dist.reduce((x, y) => x + y, 0) || 1;
+    h += `<p><span class="stars">${starTxt(r)}</span> from ${n.toLocaleString()} reviews on <a href="https://www.productreview.com.au/listings/${esc(slug)}" target="_blank" rel="noopener">ProductReview</a>${lvl === "brand" ? `, for the whole ${esc(nm)} network (this office has no page of its own)` : ""}.</p>
+      ${a.rvNote ? `<p style="color:var(--warn)">${esc(a.rvNote)} They don't count towards the renter score.</p>` : `<p class="src">Reviewers include renters, landlords, buyers and sellers.</p>`}
+      <div class="dist">${[5, 4, 3, 2, 1].map(st => `<div><span>${st}★</span><i style="width:${(dist[st - 1] / tot * 100).toFixed(1)}%"></i><span class="num">${Math.round(dist[st - 1] / tot * 100)}%</span></div>`).join("")}</div>`;
+  } else h += `<p class="src">No public reviews found for this agency or its network.</p>`;
+  if (a?.cav?.length) h += `<p style="color:var(${a.cavKind === "staff" ? "--warn" : "--bad"})"><b>Consumer Affairs Victoria:</b> ${esc(a.cavSummary || "named in enforcement news")}${a.cavKind === "staff" ? ". Not counted against the agency." : ""}</p><ul>${a.cav.map(c =>
+      `<li><span class="tick n">!</span><span><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)}</a></span><span class="num">${esc(c.date || "")}</span></li>`).join("")}</ul>`;
+  else h += `<p class="src">Not named in Consumer Affairs Victoria enforcement news since ${CAV_FROM}.</p>`;
+  return h;
+}
+const CAV_FROM = "2010";
+function ageDetail(l) {
+  if (!l.age) return `<p class="src">Not checked yet.</p>`;
+  const [era, , conf, ev, reno, comfort] = l.age;
+  const how = { stated: "The listing says so", style: "Based on the style the listing describes", "suburb guess": "A guess: the listing doesn't say, and this suburb is almost all post-2000 estates" }[conf] || "The listing doesn't say when it was built";
+  return `<p><b>${esc(era)}</b>${reno ? " · renovated" : ""}</p><p class="src">${how}${ev ? `: <i>${esc(ev)}</i>` : "."}</p>
+    ${comfort.length ? `<div class="chips" style="margin-top:6px">${comfort.map(c => `<span class="chip">${esc(c)}</span>`).join("")}</div>` : ""}
+    <p class="src" style="margin-top:6px">Homes built before about 2005 often lack wall insulation and double glazing, so they can be cold in winter and costly to heat.</p>`;
+}
+
+function votersHtml(t) {
+  const all = [...t.love.map(u => [u, "love"]), ...t.maybe.map(u => [u, "maybe"]), ...t.nope.map(u => [u, "nope"])];
+  if (!all.length) return "";
+  return `<span class="who">` + all.map(([u, v]) => {
+    const p = profiles[u];
+    const lbl = `${nameOf(u)}: ${v === "love" ? "Love it" : v === "maybe" ? "Maybe" : "Nope"}`;
+    return p ? `<img class="av" src="${esc(p.avatarUrl)}" alt="${esc(lbl)}" title="${esc(lbl)}" style="--c:${v === "love" ? "var(--accent)" : v === "maybe" ? "var(--warn)" : "var(--bad)"}">`
+             : `<span class="chip">${esc(lbl)}</span>`;
+  }).join("") + `</span>`;
+}
+
+function card(l) {
+  const d = dims(l), o = overall(d), sh = shares(l.rent), mv = myVotes()[l.id], t = tally(l.id);
+  const ppTxt = G.split === "room" && G.couples
+    ? `${money(sh.single)}<em> single · ${money(sh.couple)} couple ea.</em>` : `${money(sh.max)}<em> pp/wk</em>`;
+  const nNotes = notes.filter(n => n.listing === l.id).length;
+  const meters = d ? DIMS.map(([k, n]) =>
+    `<div class="meter"><div class="mt"><span>${n}</span><b>${d[k] ?? "–"}</b></div><i style="--v:${d[k] ?? 0}%;--c:${toneVar(d[k])}"></i></div>`).join("") : "";
+  const gmaps = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((l.street || "") + ", " + l.suburb + " VIC")}`;
+  const ro = !localMode() && !canWrite;
+  return `<article class="card" id="card-${esc(l.id)}">
+    <div class="score" title="Overall score with your weights"><b style="color:${toneVar(o)}">${o ?? "–"}</b><span>score</span></div>
+    <div class="cbody">
+      <div class="ctop">
+        <div class="addr">${esc(l.street)}<small>${esc(l.suburb)} ${esc(l.postcode || "")}${l.region ? ` · ${esc(l.region)}` : ""}${l.cbd_km != null ? ` · ${l.cbd_km} km to CBD` : ""}</small></div>
+        <div class="price"><div class="pp">${ppTxt}</div><div class="tot num">${money(l.rent)} per week total</div></div>
+      </div>
+      <div class="facts"><span><b>${l.beds}</b> bed</span><span><b>${l.baths ?? "?"}</b> bath</span><span><b>${l.cars ?? 0}</b> car</span><span>${esc(l.type || "")}</span>
+        ${l.age && l.age[1] !== "unknown" ? `<span title="${esc(l.age[3] || (l.age[2] === "suburb guess" ? "Guess from the suburb: no age in the listing" : ""))}">Built <b>${esc(l.age[0].replace(/^Built /, ""))}</b>${l.age[2] === "suburb guess" ? " (guess)" : ""}</span>` : ""}
+        <span>Available <b>${l.available === "now" ? "now" : esc(l.available || "?")}</b></span>${l.listed ? `<span>Listed ${new Date(l.listed + "T00:00").toLocaleDateString("en-AU", { day: "numeric", month: "short" })}</span>` : ""}</div>
+      ${meters ? `<div class="meters">${meters}</div>` : ""}
+      <div class="chips">${chipsFor(l)}</div>
+      ${agencyLine(l)}
+      <div class="cfoot">
+        <div class="votes" role="group" aria-label="Your vote">
+          ${[["love", "Love it"], ["maybe", "Maybe"], ["nope", "Nope"]].map(([v, txt]) =>
+            `<button class="vote" data-vote="${v}" data-id="${esc(l.id)}" data-v="${v}" aria-pressed="${mv === v}" ${ro ? "disabled" : ""}>${txt}${t[v].length ? ` <span class="num">${t[v].length}</span>` : ""}</button>`).join("")}
+          ${votersHtml(t)}
+        </div>
+        <div class="links">
+          ${l.url ? `<a href="${esc(l.url)}" target="_blank" rel="noopener">View listing</a>` : ""}
+          <a href="${gmaps}" target="_blank" rel="noopener">Google Maps</a>
+          <button class="more" data-more="${esc(l.id)}" aria-expanded="${open.has(l.id)}">${open.has(l.id) ? "Hide details" : "Details"}${nNotes ? ` · ${nNotes} note${nNotes > 1 ? "s" : ""}` : ""}</button>
+        </div>
+      </div>
+      ${open.has(l.id) ? detail(l) : ""}
+    </div>
+  </article>`;
+}
+
+function detail(l) {
+  const ro = !localMode() && !canWrite;
+  const ns = notes.filter(n => n.listing === l.id).sort((a, b) => a.at - b.at);
+  const notesHtml = `<div class="notes"><h3>Group notes</h3>
+    ${ns.map(n => `<div class="note"><b>${esc(nameOf(n.by))}</b><span class="t">${esc(n.text)}</span>${n.by === myId ? `<button class="x" data-delnote="${esc(n.id)}" aria-label="Delete note">Delete</button>` : ""}</div>`).join("") || `<p class="src">No notes yet. Inspection thoughts, questions for the agent, who's going to look at it…</p>`}
+    ${localMode() ? `<p class="src">${esc(joinHint())}</p>` : ro ? "" :
+      `<form data-noteform="${esc(l.id)}"><input maxlength="500" placeholder="Add a note for the group" aria-label="Add a note"><button class="btn" type="submit">Post</button></form>`}
+  </div>`;
+  if (l.twenty == null) return `<div class="detail"><p class="src">Ask Claude to analyse new listings to get walkability, transport, noise, air and safety details for this one.</p>${notesHtml}</div>`;
+  const met = new Set(l.met);
+  const needRows = NEEDS.map(([k, n]) => {
+    const [m, nm] = l.near[k]; const ok = m <= 800;
+    return `<li><span class="tick ${ok ? "y" : "n"}">${ok ? "✓" : "✕"}</span><span>${n} <span class="nm">${esc(nm)}</span></span><span class="num">${walkMin(m)} min</span></li>`;
+  }).join("");
+  const ptRow = (k, n, std) => { const [m, nm] = l.near[k]; const ok = m <= std;
+    return `<li><span class="tick ${ok ? "y" : "n"}">${ok ? "✓" : "✕"}</span><span>${n} <span class="nm">${esc(nm)}</span></span><span class="num">${m >= 5000 ? "5 km+" : walkMin(m) + " min"}</span></li>`; };
+  const c = l.crime;
+  return `<div class="detail">
+    <div><h3>20-minute neighbourhood · ${met.size}/9</h3><ul>${needRows}</ul>
+      <p class="src" style="margin-top:6px">${l.counts.cafe} cafés &amp; restaurants and ${l.counts.bar} pubs/bars within 800 m. Walk Score ${l.walk_score ?? "n/a"}.</p></div>
+    <div><h3>Getting around</h3><ul>
+      ${ptRow("train", "Train", 800)}${ptRow("tram", "Tram", 600)}${ptRow("bus", "Bus stop", 400)}</ul>
+      <p class="src" style="margin-top:6px">Ticks show Victoria's planning standard: train 800 m, tram 600 m, bus 400 m. ${l.counts.bus} bus stops within 400 m. Transit Score ${l.transit_score ?? "n/a"}. ${l.cbd_km} km to Flinders St.</p></div>
+    <div><h3>Noise &amp; air</h3>
+      <p>Nearest freeway <b class="num">${fmtM(l.roads.motorway)}</b>, main road <b class="num">${fmtM(l.roads.major)}</b>${l.roads.major_name ? ` (${esc(l.roads.major_name)})` : ""}, railway <b class="num">${fmtM(l.roads.rail)}</b>.</p>
+      ${l.noise_flags.length ? `<ul>${l.noise_flags.map(f => `<li><span class="tick n">!</span><span>${esc(f)}</span><span></span></li>`).join("")}</ul>` : `<p>No major noise sources nearby.</p>`}
+      <p class="src" style="margin-top:6px">${l.air >= 90 ? "Away from heavy traffic, so traffic fumes should be low." : "Closer than 150–300 m to heavy traffic, where fine particles and NO₂ are highest. Bedrooms facing away from the road help."}</p></div>
+    <div><h3>Safety · ${esc(l.suburb)}</h3>
+      ${c ? `<p><b class="num">${c.rate}</b> recorded offences per 1,000 residents (Victoria: 86.8).</p>
+      <ul><li><span></span><span>Burglary / break-in</span><span class="num">${c.burglary} /1k</span></li>
+      <li><span></span><span>Assault</span><span class="num">${c.assault} /1k</span></li>
+      <li><span></span><span>Offences recorded</span><span class="num">${c.offences.toLocaleString()}</span></li></ul>
+      <p class="src" style="margin-top:6px">Year to June 2026, whole suburb. Shopping centres and hospitals push totals up.</p>` : `<p class="src">No suburb figures.</p>`}</div>
+    <div><h3>Agency</h3>${agencyDetail(l)}</div>
+    <div><h3>The building</h3>${ageDetail(l)}</div>
+    ${notesHtml}
+  </div>`;
+}
+const fmtM = m => m >= 5000 ? "5 km+" : m >= 1000 ? (m / 1000).toFixed(1) + " km" : m + " m";
+
+/* ---------- render ---------- */
+let tab = store.get("tab", "list");
+const PAGE = 40; let shown = PAGE, lastSig = "";
+$("#more").onclick = () => { shown += PAGE; render(); };
+function allListings() { return [...L, ...added]; }
+function render() {
+  syncInputs(); groupSummary();
+  const list = sorted(allListings().filter(passes));
+  $("#c-list").textContent = list.length;
+  $("#rcount").textContent = `${list.length} of ${allListings().length} places match`;
+  const sig = JSON.stringify([F, G, W]);
+  if (sig !== lastSig) { shown = PAGE; lastSig = sig; }
+  $("#cards").innerHTML = list.length ? list.slice(0, shown).map(card).join("")
+    : `<div class="empty">No places match these filters. Try raising the budget or clearing the minimum scores.</div>`;
+  $("#more").hidden = list.length <= shown;
+  $("#more").textContent = `Show ${Math.min(PAGE, list.length - shown)} more of ${list.length - shown}`;
+  renderShort(); renderMap(list); renderAdded();
+  const s = $("#sync");
+  if (localMode()) { s.hidden = false; s.innerHTML = esc("Votes are saved on this device only. " + joinHint()) + (P.supabase ? ` <button class="linkbtn" data-join>Join the house</button>` : ""); }
+  else if (remote.kind === "supabase") { s.hidden = false; s.innerHTML = `Sharing votes as <b>${esc(myId)}</b>. <button class="linkbtn" data-join>Change name or house</button>`; }
+  else if (!canWrite) { s.hidden = false; s.textContent = "You have view-only access. Ask the owner to invite you as an editor so you can vote and leave notes."; }
+  else s.hidden = true;
+}
+
+function renderShort() {
+  const rows = allListings().map(l => ({ l, t: tally(l.id) }))
+    .filter(r => r.t.love.length || r.t.maybe.length)
+    .sort((a, b) => (b.t.love.length * 2 + b.t.maybe.length - b.t.nope.length * 2) - (a.t.love.length * 2 + a.t.maybe.length - a.t.nope.length * 2) || a.l.rent - b.l.rent);
+  $("#c-short").textContent = rows.length || "";
+  const el = $("#board");
+  if (!rows.length) { el.innerHTML = `<div class="empty">Nothing shortlisted yet. Vote <b>Love it</b> or <b>Maybe</b> on a listing and it appears here, ranked by the whole group's votes.</div>`; return; }
+  el.innerHTML = `<div class="tw"><table><thead><tr><th>#</th><th>Place</th><th class="r">Per person</th><th class="r">Score</th><th>Votes</th><th class="r">Beds</th><th class="r">Train</th><th class="r">Safety</th><th>Built</th><th>Agency</th><th></th></tr></thead><tbody>
+    ${rows.map((r, i) => { const l = r.l, d = dims(l), o = overall(d);
+      return `<tr><td class="rk">${i + 1}</td><td><b>${esc(l.street)}</b><br><span class="src">${esc(l.suburb)} · ${money(l.rent)}/wk</span></td>
+      <td class="r num">${money(shares(l.rent).max)}</td><td class="r num" style="color:${toneVar(o)}">${o ?? "–"}</td>
+      <td>${votersHtml(r.t) || "–"}</td><td class="r num">${l.beds}/${l.baths ?? "?"}/${l.cars ?? 0}</td>
+      <td class="r num">${l.near ? walkMin(l.near.train[0]) + " min" : "–"}</td><td class="r num">${d?.safety ?? "–"}</td>
+      <td>${l.age && l.age[1] !== "unknown" ? esc(l.age[0].replace(/^Built /, "")) : "–"}</td>
+      <td>${l.agency ? esc(l.agency) : "–"}${agOf(l)?.rv ? ` <span class="stars">${starTxt(agOf(l).rv[0])}</span>` : ""}${["agency", "alleged"].includes(agOf(l)?.cavKind) ? ` <span class="chip bad">CAV</span>` : ""}</td>
+      <td><button class="more" data-goto="${esc(l.id)}">Open</button></td></tr>`; }).join("")}
+  </tbody></table></div><p class="src">Ranked by Love it ×2 + Maybe − Nope ×2. Beds/baths/cars.</p>`;
+}
+
+const proj = P.proj;
+const pt = (lat, lng) => [(lng - proj.W) / (proj.E - proj.W) * proj.w, (proj.N - lat) / (proj.N - proj.S) * proj.h];
+const svg = $("#map");
+let vb = { x: 0, y: 0, w: proj.w, h: proj.h }, mapSel = null, fitted = false, lastList = [];
+function setVB(v) {
+  const minW = 40, ar = proj.h / proj.w;
+  v.w = Math.max(minW, Math.min(proj.w * 1.2, v.w)); v.h = v.w * ar;
+  vb = v; svg.setAttribute("viewBox", `${v.x.toFixed(1)} ${v.y.toFixed(1)} ${v.w.toFixed(1)} ${v.h.toFixed(1)}`);
+  drawMapMarks();
+}
+function fitTo(list) {
+  const ps = list.filter(l => l.lat).map(l => pt(l.lat, l.lng));
+  if (!ps.length) return setVB({ x: 0, y: 0, w: proj.w, h: proj.h });
+  const xs = ps.map(p => p[0]), ys = ps.map(p => p[1]);
+  const x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
+  const ar = proj.h / proj.w;
+  let w = Math.max(60, (x1 - x0) * 1.15, (y1 - y0) * 1.15 / ar);
+  setVB({ x: (x0 + x1) / 2 - w / 2, y: (y0 + y1) / 2 - w * ar / 2, w, h: w * ar });
+}
+function zoom(f, cx = vb.x + vb.w / 2, cy = vb.y + vb.h / 2) {
+  const w = vb.w * f; setVB({ x: cx - (cx - vb.x) * f, y: cy - (cy - vb.y) * f, w, h: 0 });
+}
+$("#zin").onclick = () => zoom(0.6); $("#zout").onclick = () => zoom(1 / 0.6);
+$("#mapfit").onclick = () => fitTo(lastList);
+$("#mapall").onclick = () => setVB({ x: 0, y: 0, w: proj.w, h: proj.h });
+function svgPoint(e) { const r = svg.getBoundingClientRect(); return [vb.x + (e.clientX - r.left) / r.width * vb.w, vb.y + (e.clientY - r.top) / r.height * vb.h]; }
+svg.addEventListener("wheel", e => { e.preventDefault(); const [x, y] = svgPoint(e); zoom(e.deltaY > 0 ? 1.2 : 1 / 1.2, x, y); }, { passive: false });
+let drag = null;
+svg.addEventListener("pointerdown", e => { if (e.target.closest("[data-dot]")) return; drag = { sx: e.clientX, sy: e.clientY, x: vb.x, y: vb.y }; svg.setPointerCapture(e.pointerId); });
+svg.addEventListener("pointermove", e => {
+  if (!drag) return; const r = svg.getBoundingClientRect();
+  setVB({ ...vb, x: drag.x - (e.clientX - drag.sx) / r.width * vb.w, y: drag.y - (e.clientY - drag.sy) / r.height * vb.h });
+});
+svg.addEventListener("pointerup", () => drag = null);
+svg.addEventListener("pointercancel", () => drag = null);
+svg.style.touchAction = "none"; svg.style.cursor = "grab";
+
+function drawMapMarks() {
+  const k = vb.w / proj.w;  // 1 = whole city; smaller = zoomed in
+  const short = new Set(allListings().filter(l => { const t = tally(l.id); return t.love.length || t.maybe.length; }).map(l => l.id));
+  const inView = (x, y) => x >= vb.x - 20 && x <= vb.x + vb.w + 20 && y >= vb.y - 20 && y <= vb.y + vb.h + 20;
+  const showLabels = k < 0.3, fs = 11 * k * 1.4;
+  $("#m-stations").innerHTML = P.stations.filter(s => inView(s.x, s.y)).map(s =>
+    `<circle class="m-stn" cx="${s.x}" cy="${s.y}" r="${(3 * k * 1.3).toFixed(2)}"><title>${esc(s.n)}</title></circle>` +
+    (showLabels ? `<text class="m-stn-l" x="${(s.x + 5 * k * 1.3).toFixed(1)}" y="${(s.y + 3.5 * k * 1.3).toFixed(1)}" font-size="${fs.toFixed(2)}">${esc(s.n)}</text>` : "")).join("");
+  const rr = Math.max(0.35, k) * 1.25;
+  $("#m-dots").innerHTML = lastList.filter(l => l.lat).map(l => {
+    const [x, y] = pt(l.lat, l.lng), o = overall(dims(l));
+    return `<circle class="m-dot ${mapSel === l.id ? "on" : ""}" data-dot="${esc(l.id)}" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${((short.has(l.id) ? 7.5 : 4.5) * rr).toFixed(2)}" fill="${toneVar(o)}"><title>${esc(l.street)}, ${esc(l.suburb)}: ${money(l.rent)}/wk, score ${o}</title></circle>`;
+  }).join("");
+}
+function renderMap(list) {
+  const changed = list.length !== lastList.length || list.some((l, i) => l !== lastList[i]);
+  lastList = list;
+  $("#mapinfo").textContent = `${list.length} places`;
+  if (!fitted || changed && tab === "map") { fitted = true; fitTo(list); } else drawMapMarks();
+  const sel = list.find(l => l.id === mapSel);
+  $("#mapcard").innerHTML = sel ? `<div class="cards">${card(sel)}</div>` : `<p class="src" style="margin:0">Select a dot to see the listing.</p>`;
+}
+
+function renderAdded() {
+  $("#added").innerHTML = added.length ? added.map(card).join("") : `<div class="empty">No added listings yet.</div>`;
+}
+
+/* ---------- events ---------- */
+function setTab(t) {
+  tab = t; store.set("tab", t);
+  document.querySelectorAll("#tabs .tab").forEach(b => b.setAttribute("aria-selected", String(b.dataset.tab === t)));
+  document.querySelectorAll("[data-panel]").forEach(p => p.hidden = p.dataset.panel !== t);
+}
+$("#tabs").addEventListener("click", e => { const b = e.target.closest(".tab"); if (b) { setTab(b.dataset.tab); if (b.dataset.tab === "map") fitTo(lastList); } });
+document.addEventListener("click", e => {
+  const v = e.target.closest("[data-vote]"); if (v) { castVote(v.dataset.id, v.dataset.vote); return; }
+  const m = e.target.closest("[data-more]"); if (m) { const id = m.dataset.more; open.has(id) ? open.delete(id) : open.add(id); render(); return; }
+  const d = e.target.closest("[data-dot]"); if (d) { mapSel = d.dataset.dot; render(); return; }
+  const g = e.target.closest("[data-goto]"); if (g) {
+    const id = g.dataset.goto; const inAdded = added.some(a => a.id === id);
+    open.add(id); setTab(inAdded ? "add" : "list");
+    if (!inAdded && !$("#card-" + CSS.escape(id))) { Object.assign(F, structuredClone(DEF)); saveF(); }
+    render();
+    if (!inAdded && !$("#card-" + CSS.escape(id))) { const all = sorted(allListings().filter(passes)); const i = all.findIndex(l => l.id === id); if (i >= 0) { shown = Math.ceil((i + 1) / PAGE) * PAGE; render(); } } const el = $("#card-" + CSS.escape(id)); if (el) { el.scrollIntoView({ block: "start" }); el.classList.add("hl"); setTimeout(() => el.classList.remove("hl"), 2000); }
+    return;
+  }
+  const dn = e.target.closest("[data-delnote]"); if (dn && remote) { remote.delNote(dn.dataset.delnote).catch(() => toast("Couldn't delete that note.")); }
+  if (e.target.closest("[data-join]")) showJoin(true);
+});
+document.addEventListener("submit", async e => {
+  const f = e.target.closest("[data-noteform]"); if (!f) return;
+  e.preventDefault();
+  const id = f.dataset.noteform, inp = f.querySelector("input"), text = inp.value.trim();
+  if (!text || !remote) return;
+  inp.value = "";
+  try { await remote.addNote(id, text); }
+  catch (err) { inp.value = text; toast(err.code === "invalid_argument" ? "You have view-only access, so notes can't be posted." : "Couldn't post the note. Try again."); }
+});
+$("#addform").addEventListener("submit", async e => {
+  e.preventDefault();
+  const msg = $("#a-msg");
+  if (localMode()) { msg.textContent = joinHint(); return; }
+  const rec = {
+    street: $("#a-street").value.trim(), suburb: $("#a-suburb").value.trim(), rent: +$("#a-rent").value,
+    beds: +$("#a-beds").value, baths: +$("#a-baths").value || null, cars: +$("#a-cars").value || 0,
+    type: $("#a-type").value, url: $("#a-url").value.trim() || null, available: "?", by: myId, at: Date.now(), status: "pending",
+  };
+  if (rec.url && !/^https:\/\//.test(rec.url)) { msg.textContent = "The link needs to start with https://"; return; }
+  $("#a-submit").disabled = true;
+  try { await remote.addListing(rec); msg.textContent = "Added. Ask Claude to analyse it to get location scores."; e.target.reset(); }
+  catch (err) { msg.textContent = err.code === "invalid_argument" ? "You have view-only access, so you can't add listings." : "Couldn't add the listing. Try again."; }
+  $("#a-submit").disabled = false;
+});
+
+/* ---------- boot ---------- */
+if (matchMedia("(max-width: 900px)").matches) document.querySelectorAll("#rail details").forEach(d => d.open = false);
+votes.local = store.get("localVotes", {});
+setTab(tab);
+render();
+
+function joinHint() {
+  if (P.supabase && !window.claude?.use) return "Join with your name and the house code to share votes and notes with your housemates.";
+  return "Open this page signed in to Claude to share votes and notes with the group.";
+}
+function showJoin(on) {
+  const f = $("#join"); f.hidden = !on;
+  if (on) { const id = store.get("house", {}); $("#j-name").value = id.name || ""; $("#j-code").value = id.code || ""; $("#j-name").focus(); }
+}
+$("#j-cancel").onclick = () => showJoin(false);
+$("#join").addEventListener("submit", async e => {
+  e.preventDefault();
+  const name = $("#j-name").value.trim().replace(/\s+/g, " "), code = $("#j-code").value.trim();
+  if (!name || code.length < 6) { $("#j-msg").textContent = "Enter your name and a house code of at least 6 characters."; return; }
+  store.set("house", { name, code });
+  $("#j-msg").textContent = "Connecting…";
+  if (await startSupabase()) showJoin(false); else $("#j-msg").textContent = "Couldn't reach the shared database. Check your connection and try again.";
+});
+
+/* Supabase: every call goes through database functions that take the house code, so the
+   public key alone can't read or change anything (see supabase/setup.sql). */
+async function rpc(fn, args) {
+  const r = await fetch(P.supabase.url.replace(/\/$/, "") + "/rest/v1/rpc/" + fn, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", apikey: P.supabase.key, Authorization: "Bearer " + P.supabase.key },
+    body: JSON.stringify(args),
+  });
+  if (!r.ok) throw Object.assign(new Error(await r.text()), { code: r.status });
+  const t = await r.text(); return t ? JSON.parse(t) : null;
+}
+let pollTimer = null;
+async function startSupabase() {
+  const id = store.get("house", {});
+  if (!P.supabase || !id.name || !id.code) return false;
+  const h = id.code;
+  const load = async () => {
+    const st = await rpc("house_state", { p_house: h });
+    const v = {};
+    for (const r of st.votes || []) (v[r.person] = v[r.person] || {})[r.listing_id] = r.vote;
+    votes = v;
+    notes = (st.notes || []).map(n => ({ id: n.id, listing: n.listing_id, by: n.person, text: n.body, at: Date.parse(n.created_at) }));
+    added = (st.added || []).map(a => { const b = a.data || {};
+      return { ...b, id: "a_" + a.id, by: a.person, rent: +b.rent || 0, beds: +b.beds || 0, suburb: String(b.suburb || ""), street: String(b.street || ""),
+        url: /^https:\/\//.test(b.url || "") ? b.url : null, noise_flags: b.noise_flags || [], air_flags: b.air_flags || [] }; });
+    render();
+  };
+  try { await load(); } catch { return false; }
+  myId = id.name;
+  remote = {
+    kind: "supabase",
+    setVote: async (listing, v) => { await rpc("set_vote", { p_house: h, p_person: myId, p_listing: listing, p_vote: v }); },
+    addNote: async (listing, text) => { await rpc("add_note", { p_house: h, p_person: myId, p_listing: listing, p_body: text }); await load(); },
+    delNote: async nid => { await rpc("delete_note", { p_house: h, p_person: myId, p_id: nid }); await load(); },
+    addListing: async rec => { delete rec.by; await rpc("add_listing", { p_house: h, p_person: myId, p_data: rec }); await load(); },
+  };
+  votes[myId] = votes[myId] || {};
+  const local = store.get("localVotes", {});  // carry over votes made before joining
+  for (const [k, v] of Object.entries(local)) if (!votes[myId][k]) { votes[myId][k] = v; remote.setVote(k, v).catch(() => {}); }
+  store.set("localVotes", {}); delete votes.local;
+  render();
+  clearInterval(pollTimer);
+  pollTimer = setInterval(() => { if (document.visibilityState !== "hidden") load().catch(() => {}); }, 15000);
+  return true;
+}
+
+(async () => {
+  if (!window.claude?.use) {
+    if (!(await startSupabase()) && P.supabase && !store.get("house", {}).code) showJoin(true);
+    return;
+  }
+  [db, user] = await Promise.all([claude.use("db"), claude.use("user")]);
+  if (!db) return;
+  myId = user ? await user.id() : null;
+  if (!myId) { db = null; return; }
+  remote = {
+    kind: "claude",
+    setVote: (listing, v, mine) => db.doc("votes/" + myId).set({ picks: mine, at: Date.now() }),
+    addNote: (listing, text) => db.collection("notes").add({ listing, by: myId, text, at: Date.now() }),
+    delNote: nid => db.doc("notes/" + nid).delete(),
+    addListing: rec => db.collection("added").add(rec),
+  };
+  const cw = await user.can("data.write");
+  delete votes.local;
+  render();
+  const onErr = () => toast("Lost connection to the shared list. Reload the page to reconnect.");
+  db.collection("votes").onSnapshot(async snap => {
+    const v = {}; snap.docs.forEach(d => { const b = d.data(); if (b && b.picks) v[d.id] = b.picks; });
+    votes = v; await refreshProfiles(); render();
+  }, onErr);
+  db.collection("notes").onSnapshot(async snap => {
+    notes = snap.docs.map(d => ({ id: d.id, ...d.data() })).filter(n => typeof n.text === "string");
+    await refreshProfiles(); render();
+  }, onErr);
+  db.collection("added").onSnapshot(async snap => {
+    added = snap.docs.map(d => {
+      const b = d.data();
+      return { ...b, id: "a_" + d.id, rent: +b.rent || 0, beds: +b.beds || 0, suburb: String(b.suburb || ""), street: String(b.street || ""),
+        url: /^https:\/\//.test(b.url || "") ? b.url : null, noise_flags: b.noise_flags || [], air_flags: b.air_flags || [] };
+    });
+    await refreshProfiles(); render();
+  }, onErr);
+  if (cw === false) { canWrite = false; render(); }
+})();
+})();
+</script>

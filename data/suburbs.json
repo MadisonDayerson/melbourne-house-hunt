@@ -1,0 +1,3236 @@
+[
+ {
+  "suburb": "Abbotsford",
+  "postcode": "3067",
+  "lga": "Yarra",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Aberfeldie",
+  "postcode": "3040",
+  "lga": "Moonee Valley",
+  "region": "North"
+ },
+ {
+  "suburb": "Aintree",
+  "postcode": "3336",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Airport West",
+  "postcode": "3042",
+  "lga": "Moonee Valley",
+  "region": "North"
+ },
+ {
+  "suburb": "Albanvale",
+  "postcode": "3021",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "Albert Park",
+  "postcode": "3206",
+  "lga": "Port Phillip",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Albion",
+  "postcode": "3020",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "Alphington",
+  "postcode": "3078",
+  "lga": "Darebin",
+  "region": "North"
+ },
+ {
+  "suburb": "Altona",
+  "postcode": "3018",
+  "lga": "Hobsons Bay",
+  "region": "West"
+ },
+ {
+  "suburb": "Altona Meadows",
+  "postcode": "3028",
+  "lga": "Hobsons Bay",
+  "region": "West"
+ },
+ {
+  "suburb": "Altona North",
+  "postcode": "3025",
+  "lga": "Hobsons Bay",
+  "region": "West"
+ },
+ {
+  "suburb": "Ardeer",
+  "postcode": "3022",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "Armadale",
+  "postcode": "3143",
+  "lga": "Stonnington",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Arthurs Creek",
+  "postcode": "3099",
+  "lga": "Nillumbik",
+  "region": "North"
+ },
+ {
+  "suburb": "Arthurs Seat",
+  "postcode": "3936",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Ascot Vale",
+  "postcode": "3032",
+  "lga": "Moonee Valley",
+  "region": "North"
+ },
+ {
+  "suburb": "Ashburton",
+  "postcode": "3147",
+  "lga": "Boroondara",
+  "region": "East"
+ },
+ {
+  "suburb": "Ashwood",
+  "postcode": "3147",
+  "lga": "Monash",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Aspendale",
+  "postcode": "3195",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Aspendale Gardens",
+  "postcode": "3195",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Attwood",
+  "postcode": "3049",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Avondale Heights",
+  "postcode": "3034",
+  "lga": "Moonee Valley",
+  "region": "North"
+ },
+ {
+  "suburb": "Avonsleigh",
+  "postcode": "3782",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Badger Creek",
+  "postcode": "3777",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Balaclava",
+  "postcode": "3183",
+  "lga": "Port Phillip",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Balnarring",
+  "postcode": "3926",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Balnarring Beach",
+  "postcode": "3926",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Balwyn",
+  "postcode": "3103",
+  "lga": "Boroondara",
+  "region": "East"
+ },
+ {
+  "suburb": "Balwyn North",
+  "postcode": "3104",
+  "lga": "Boroondara",
+  "region": "East"
+ },
+ {
+  "suburb": "Bangholme",
+  "postcode": "3175",
+  "lga": "Greater Dandenong",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Baxter",
+  "postcode": "3911",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Bayles",
+  "postcode": "3981",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Bayswater",
+  "postcode": "3153",
+  "lga": "Knox",
+  "region": "East"
+ },
+ {
+  "suburb": "Bayswater North",
+  "postcode": "3153",
+  "lga": "Maroondah",
+  "region": "East"
+ },
+ {
+  "suburb": "Beaconsfield",
+  "postcode": "3807",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Beaconsfield Upper",
+  "postcode": "3808",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Beaumaris",
+  "postcode": "3193",
+  "lga": "Bayside",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Beenak",
+  "postcode": "3139",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Belgrave",
+  "postcode": "3160",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Belgrave Heights",
+  "postcode": "3160",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Belgrave South",
+  "postcode": "3160",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Bellfield",
+  "postcode": "3081",
+  "lga": "Banyule",
+  "region": "North"
+ },
+ {
+  "suburb": "Bentleigh",
+  "postcode": "3204",
+  "lga": "Glen Eira",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Bentleigh East",
+  "postcode": "3165",
+  "lga": "Glen Eira",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Berwick",
+  "postcode": "3806",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Beveridge",
+  "postcode": "3753",
+  "lga": "Whittlesea",
+  "region": "North"
+ },
+ {
+  "suburb": "Big Pats Creek",
+  "postcode": "3799",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Bittern",
+  "postcode": "3918",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Black Rock",
+  "postcode": "3193",
+  "lga": "Bayside",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Blackburn",
+  "postcode": "3130",
+  "lga": "Whitehorse",
+  "region": "East"
+ },
+ {
+  "suburb": "Blackburn North",
+  "postcode": "3130",
+  "lga": "Whitehorse",
+  "region": "East"
+ },
+ {
+  "suburb": "Blackburn South",
+  "postcode": "3130",
+  "lga": "Whitehorse",
+  "region": "East"
+ },
+ {
+  "suburb": "Blairgowrie",
+  "postcode": "3942",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Blind Bight",
+  "postcode": "3980",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Bonbeach",
+  "postcode": "3196",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Boneo",
+  "postcode": "3939",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Bonnie Brook",
+  "postcode": "3335",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Boronia",
+  "postcode": "3155",
+  "lga": "Knox",
+  "region": "East"
+ },
+ {
+  "suburb": "Botanic Ridge",
+  "postcode": "3977",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Box Hill",
+  "postcode": "3128",
+  "lga": "Whitehorse",
+  "region": "East"
+ },
+ {
+  "suburb": "Box Hill North",
+  "postcode": "3129",
+  "lga": "Whitehorse",
+  "region": "East"
+ },
+ {
+  "suburb": "Box Hill South",
+  "postcode": "3128",
+  "lga": "Whitehorse",
+  "region": "East"
+ },
+ {
+  "suburb": "Braeside",
+  "postcode": "3195",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Braybrook",
+  "postcode": "3019",
+  "lga": "Maribyrnong",
+  "region": "West"
+ },
+ {
+  "suburb": "Briar Hill",
+  "postcode": "3088",
+  "lga": "Banyule",
+  "region": "North"
+ },
+ {
+  "suburb": "Brighton",
+  "postcode": "3186",
+  "lga": "Bayside",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Brighton East",
+  "postcode": "3187",
+  "lga": "Bayside",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Broadmeadows",
+  "postcode": "3047",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Brookfield",
+  "postcode": "3338",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Brooklyn",
+  "postcode": "3012",
+  "lga": "Hobsons Bay",
+  "region": "West"
+ },
+ {
+  "suburb": "Brunswick",
+  "postcode": "3056",
+  "lga": "Merri-bek",
+  "region": "North"
+ },
+ {
+  "suburb": "Brunswick East",
+  "postcode": "3057",
+  "lga": "Merri-bek",
+  "region": "North"
+ },
+ {
+  "suburb": "Brunswick West",
+  "postcode": "3055",
+  "lga": "Merri-bek",
+  "region": "North"
+ },
+ {
+  "suburb": "Bulla",
+  "postcode": "3428",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Bulleen",
+  "postcode": "3105",
+  "lga": "Manningham",
+  "region": "East"
+ },
+ {
+  "suburb": "Bundoora",
+  "postcode": "3083",
+  "lga": "Whittlesea",
+  "region": "North"
+ },
+ {
+  "suburb": "Bunyip",
+  "postcode": "3815",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Bunyip North",
+  "postcode": "3815",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Burnley",
+  "postcode": "3121",
+  "lga": "Yarra",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Burnside",
+  "postcode": "3023",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Burnside Heights",
+  "postcode": "3023",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Burwood",
+  "postcode": "3125",
+  "lga": "Whitehorse",
+  "region": "East"
+ },
+ {
+  "suburb": "Burwood East",
+  "postcode": "3151",
+  "lga": "Whitehorse",
+  "region": "East"
+ },
+ {
+  "suburb": "Cairnlea",
+  "postcode": "3023",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "Calder Park",
+  "postcode": "3037",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "Caldermeade",
+  "postcode": "3984",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Cambarville",
+  "postcode": "3779",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Camberwell",
+  "postcode": "3124",
+  "lga": "Boroondara",
+  "region": "East"
+ },
+ {
+  "suburb": "Campbellfield",
+  "postcode": "3061",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Cannons Creek",
+  "postcode": "3977",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Canterbury",
+  "postcode": "3126",
+  "lga": "Boroondara",
+  "region": "East"
+ },
+ {
+  "suburb": "Cape Schanck",
+  "postcode": "3939",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Capel Sound",
+  "postcode": "3940",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Cardinia",
+  "postcode": "3978",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Carlton",
+  "postcode": "3053",
+  "lga": "Melbourne",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Carlton North",
+  "postcode": "3054",
+  "lga": "Yarra",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Carnegie",
+  "postcode": "3163",
+  "lga": "Glen Eira",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Caroline Springs",
+  "postcode": "3023",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Carrum",
+  "postcode": "3197",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Carrum Downs",
+  "postcode": "3201",
+  "lga": "Frankston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Catani",
+  "postcode": "3981",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Caulfield",
+  "postcode": "3162",
+  "lga": "Glen Eira",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Caulfield East",
+  "postcode": "3145",
+  "lga": "Glen Eira",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Caulfield North",
+  "postcode": "3161",
+  "lga": "Glen Eira",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Caulfield South",
+  "postcode": "3162",
+  "lga": "Glen Eira",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Chadstone",
+  "postcode": "3148",
+  "lga": "Monash",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Chelsea",
+  "postcode": "3196",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Chelsea Heights",
+  "postcode": "3196",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Cheltenham",
+  "postcode": "3192",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Chirnside Park",
+  "postcode": "3116",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Christmas Hills",
+  "postcode": "3775",
+  "lga": "Nillumbik",
+  "region": "North"
+ },
+ {
+  "suburb": "Chum Creek",
+  "postcode": "3777",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Clarinda",
+  "postcode": "3169",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Clarkefield",
+  "postcode": "3430",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Clayton",
+  "postcode": "3168",
+  "lga": "Monash",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Clayton South",
+  "postcode": "3169",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Clematis",
+  "postcode": "3782",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Clifton Hill",
+  "postcode": "3068",
+  "lga": "Yarra",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Clyde",
+  "postcode": "3978",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Clyde North",
+  "postcode": "3978",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Cobblebank",
+  "postcode": "3338",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Coburg",
+  "postcode": "3058",
+  "lga": "Merri-bek",
+  "region": "North"
+ },
+ {
+  "suburb": "Coburg North",
+  "postcode": "3058",
+  "lga": "Merri-bek",
+  "region": "North"
+ },
+ {
+  "suburb": "Cockatoo",
+  "postcode": "3781",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Cocoroc",
+  "postcode": "3030",
+  "lga": "Wyndham",
+  "region": "West"
+ },
+ {
+  "suburb": "Coldstream",
+  "postcode": "3770",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Collingwood",
+  "postcode": "3066",
+  "lga": "Yarra",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Coolaroo",
+  "postcode": "3048",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Cora Lynn",
+  "postcode": "3814",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Cottles Bridge",
+  "postcode": "3099",
+  "lga": "Nillumbik",
+  "region": "North"
+ },
+ {
+  "suburb": "Craigieburn",
+  "postcode": "3064",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Cranbourne",
+  "postcode": "3977",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Cranbourne East",
+  "postcode": "3977",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Cranbourne North",
+  "postcode": "3977",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Cranbourne South",
+  "postcode": "3977",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Cranbourne West",
+  "postcode": "3977",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Cremorne",
+  "postcode": "3121",
+  "lga": "Yarra",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Crib Point",
+  "postcode": "3919",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Croydon",
+  "postcode": "3136",
+  "lga": "Maroondah",
+  "region": "East"
+ },
+ {
+  "suburb": "Croydon Hills",
+  "postcode": "3136",
+  "lga": "Maroondah",
+  "region": "East"
+ },
+ {
+  "suburb": "Croydon North",
+  "postcode": "3136",
+  "lga": "Maroondah",
+  "region": "East"
+ },
+ {
+  "suburb": "Croydon South",
+  "postcode": "3136",
+  "lga": "Maroondah",
+  "region": "East"
+ },
+ {
+  "suburb": "Dallas",
+  "postcode": "3047",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Dalmore",
+  "postcode": "3981",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Dandenong",
+  "postcode": "3175",
+  "lga": "Greater Dandenong",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Dandenong North",
+  "postcode": "3175",
+  "lga": "Greater Dandenong",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Dandenong South",
+  "postcode": "3175",
+  "lga": "Greater Dandenong",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Deanside",
+  "postcode": "3336",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Deepdene",
+  "postcode": "3103",
+  "lga": "Boroondara",
+  "region": "East"
+ },
+ {
+  "suburb": "Deer Park",
+  "postcode": "3023",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "Delahey",
+  "postcode": "3037",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "Derrimut",
+  "postcode": "3026",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "Devon Meadows",
+  "postcode": "3977",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Dewhurst",
+  "postcode": "3808",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Diamond Creek",
+  "postcode": "3089",
+  "lga": "Nillumbik",
+  "region": "North"
+ },
+ {
+  "suburb": "Diggers Rest",
+  "postcode": "3427",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Dingley Village",
+  "postcode": "3172",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Dixons Creek",
+  "postcode": "3775",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Docklands",
+  "postcode": "3008",
+  "lga": "Melbourne",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Don Valley",
+  "postcode": "3139",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Doncaster",
+  "postcode": "3108",
+  "lga": "Manningham",
+  "region": "East"
+ },
+ {
+  "suburb": "Doncaster East",
+  "postcode": "3109",
+  "lga": "Manningham",
+  "region": "East"
+ },
+ {
+  "suburb": "Donnybrook",
+  "postcode": "3064",
+  "lga": "Whittlesea",
+  "region": "North"
+ },
+ {
+  "suburb": "Donvale",
+  "postcode": "3111",
+  "lga": "Manningham",
+  "region": "East"
+ },
+ {
+  "suburb": "Doreen",
+  "postcode": "3754",
+  "lga": "Whittlesea",
+  "region": "North"
+ },
+ {
+  "suburb": "Doveton",
+  "postcode": "3177",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Dromana",
+  "postcode": "3936",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Eaglemont",
+  "postcode": "3084",
+  "lga": "Banyule",
+  "region": "North"
+ },
+ {
+  "suburb": "East Melbourne",
+  "postcode": "3002",
+  "lga": "Melbourne",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "East Warburton",
+  "postcode": "3799",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Eden Park",
+  "postcode": "3757",
+  "lga": "Whittlesea",
+  "region": "North"
+ },
+ {
+  "suburb": "Edithvale",
+  "postcode": "3196",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Elsternwick",
+  "postcode": "3185",
+  "lga": "Glen Eira",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Eltham",
+  "postcode": "3095",
+  "lga": "Nillumbik",
+  "region": "North"
+ },
+ {
+  "suburb": "Eltham North",
+  "postcode": "3095",
+  "lga": "Nillumbik",
+  "region": "North"
+ },
+ {
+  "suburb": "Elwood",
+  "postcode": "3184",
+  "lga": "Port Phillip",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Emerald",
+  "postcode": "3782",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Endeavour Hills",
+  "postcode": "3802",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Epping",
+  "postcode": "3076",
+  "lga": "Whittlesea",
+  "region": "North"
+ },
+ {
+  "suburb": "Essendon",
+  "postcode": "3040",
+  "lga": "Moonee Valley",
+  "region": "North"
+ },
+ {
+  "suburb": "Essendon Fields",
+  "postcode": "3041",
+  "lga": "Moonee Valley",
+  "region": "North"
+ },
+ {
+  "suburb": "Essendon North",
+  "postcode": "3041",
+  "lga": "Moonee Valley",
+  "region": "North"
+ },
+ {
+  "suburb": "Essendon West",
+  "postcode": "3040",
+  "lga": "Moonee Valley",
+  "region": "North"
+ },
+ {
+  "suburb": "Eumemmerring",
+  "postcode": "3177",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Exford",
+  "postcode": "3338",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Eynesbury",
+  "postcode": "3338",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Fairfield",
+  "postcode": "3078",
+  "lga": "Darebin",
+  "region": "North"
+ },
+ {
+  "suburb": "Fawkner",
+  "postcode": "3060",
+  "lga": "Merri-bek",
+  "region": "North"
+ },
+ {
+  "suburb": "Fernshaw",
+  "postcode": "3778",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Ferntree Gully",
+  "postcode": "3156",
+  "lga": "Knox",
+  "region": "East"
+ },
+ {
+  "suburb": "Ferny Creek",
+  "postcode": "3786",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Fingal",
+  "postcode": "3939",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Fitzroy",
+  "postcode": "3065",
+  "lga": "Yarra",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Fitzroy North",
+  "postcode": "3068",
+  "lga": "Yarra",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Flemington",
+  "postcode": "3031",
+  "lga": "Moonee Valley",
+  "region": "North"
+ },
+ {
+  "suburb": "Flinders",
+  "postcode": "3929",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Footscray",
+  "postcode": "3011",
+  "lga": "Maribyrnong",
+  "region": "West"
+ },
+ {
+  "suburb": "Forest Hill",
+  "postcode": "3131",
+  "lga": "Whitehorse",
+  "region": "East"
+ },
+ {
+  "suburb": "Frankston",
+  "postcode": "3199",
+  "lga": "Frankston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Frankston North",
+  "postcode": "3200",
+  "lga": "Frankston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Frankston South",
+  "postcode": "3199",
+  "lga": "Frankston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Fraser Rise",
+  "postcode": "3336",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Gardenvale",
+  "postcode": "3185",
+  "lga": "Glen Eira",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Garfield",
+  "postcode": "3814",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Garfield North",
+  "postcode": "3814",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Gembrook",
+  "postcode": "3783",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Gladstone Park",
+  "postcode": "3043",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Gladysdale",
+  "postcode": "3797",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Glen Huntly",
+  "postcode": "3163",
+  "lga": "Glen Eira",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Glen Iris",
+  "postcode": "3146",
+  "lga": "Boroondara",
+  "region": "East"
+ },
+ {
+  "suburb": "Glen Waverley",
+  "postcode": "3150",
+  "lga": "Monash",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Glenroy",
+  "postcode": "3046",
+  "lga": "Merri-bek",
+  "region": "North"
+ },
+ {
+  "suburb": "Gowanbrae",
+  "postcode": "3043",
+  "lga": "Merri-bek",
+  "region": "North"
+ },
+ {
+  "suburb": "Grangefields",
+  "postcode": "3335",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Greensborough",
+  "postcode": "3088",
+  "lga": "Banyule",
+  "region": "North"
+ },
+ {
+  "suburb": "Greenvale",
+  "postcode": "3059",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Gruyere",
+  "postcode": "3770",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Guys Hill",
+  "postcode": "3807",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Hadfield",
+  "postcode": "3046",
+  "lga": "Merri-bek",
+  "region": "North"
+ },
+ {
+  "suburb": "Hallam",
+  "postcode": "3803",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Hampton",
+  "postcode": "3188",
+  "lga": "Bayside",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Hampton East",
+  "postcode": "3188",
+  "lga": "Bayside",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Hampton Park",
+  "postcode": "3976",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Harkaway",
+  "postcode": "3806",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Harkness",
+  "postcode": "3337",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Hastings",
+  "postcode": "3915",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Hawthorn",
+  "postcode": "3122",
+  "lga": "Boroondara",
+  "region": "East"
+ },
+ {
+  "suburb": "Hawthorn East",
+  "postcode": "3123",
+  "lga": "Boroondara",
+  "region": "East"
+ },
+ {
+  "suburb": "Healesville",
+  "postcode": "3777",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Heath Hill",
+  "postcode": "3981",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Heatherton",
+  "postcode": "3202",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Heathmont",
+  "postcode": "3135",
+  "lga": "Maroondah",
+  "region": "East"
+ },
+ {
+  "suburb": "Heidelberg",
+  "postcode": "3084",
+  "lga": "Banyule",
+  "region": "North"
+ },
+ {
+  "suburb": "Heidelberg Heights",
+  "postcode": "3081",
+  "lga": "Banyule",
+  "region": "North"
+ },
+ {
+  "suburb": "Heidelberg West",
+  "postcode": "3081",
+  "lga": "Banyule",
+  "region": "North"
+ },
+ {
+  "suburb": "Highett",
+  "postcode": "3190",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Hillside",
+  "postcode": "3037",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Hmas Cerberus",
+  "postcode": "3920",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Hoddles Creek",
+  "postcode": "3139",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Hoppers Crossing",
+  "postcode": "3029",
+  "lga": "Wyndham",
+  "region": "West"
+ },
+ {
+  "suburb": "Hughesdale",
+  "postcode": "3166",
+  "lga": "Monash",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Humevale",
+  "postcode": "3757",
+  "lga": "Whittlesea",
+  "region": "North"
+ },
+ {
+  "suburb": "Huntingdale",
+  "postcode": "3166",
+  "lga": "Monash",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Hurstbridge",
+  "postcode": "3099",
+  "lga": "Nillumbik",
+  "region": "North"
+ },
+ {
+  "suburb": "Iona",
+  "postcode": "3815",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Ivanhoe",
+  "postcode": "3079",
+  "lga": "Banyule",
+  "region": "North"
+ },
+ {
+  "suburb": "Ivanhoe East",
+  "postcode": "3079",
+  "lga": "Banyule",
+  "region": "North"
+ },
+ {
+  "suburb": "Jacana",
+  "postcode": "3047",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Junction Village",
+  "postcode": "3977",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Kalkallo",
+  "postcode": "3064",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Kallista",
+  "postcode": "3791",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Kalorama",
+  "postcode": "3766",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Kangaroo Ground",
+  "postcode": "3097",
+  "lga": "Nillumbik",
+  "region": "North"
+ },
+ {
+  "suburb": "Kealba",
+  "postcode": "3021",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "Keilor",
+  "postcode": "3036",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "Keilor Downs",
+  "postcode": "3038",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "Keilor East",
+  "postcode": "3033",
+  "lga": "Moonee Valley",
+  "region": "North"
+ },
+ {
+  "suburb": "Keilor Lodge",
+  "postcode": "3038",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "Keilor North",
+  "postcode": "3036",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "Keilor Park",
+  "postcode": "3042",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "Kensington",
+  "postcode": "3031",
+  "lga": "Melbourne",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Kew",
+  "postcode": "3101",
+  "lga": "Boroondara",
+  "region": "East"
+ },
+ {
+  "suburb": "Kew East",
+  "postcode": "3102",
+  "lga": "Boroondara",
+  "region": "East"
+ },
+ {
+  "suburb": "Keysborough",
+  "postcode": "3173",
+  "lga": "Greater Dandenong",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Kilsyth",
+  "postcode": "3137",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Kilsyth South",
+  "postcode": "3137",
+  "lga": "Maroondah",
+  "region": "East"
+ },
+ {
+  "suburb": "Kinglake",
+  "postcode": "3763",
+  "lga": "Nillumbik",
+  "region": "North"
+ },
+ {
+  "suburb": "Kinglake West",
+  "postcode": "3757",
+  "lga": "Whittlesea",
+  "region": "North"
+ },
+ {
+  "suburb": "Kings Park",
+  "postcode": "3021",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "Kingsbury",
+  "postcode": "3083",
+  "lga": "Darebin",
+  "region": "North"
+ },
+ {
+  "suburb": "Kingsville",
+  "postcode": "3012",
+  "lga": "Maribyrnong",
+  "region": "West"
+ },
+ {
+  "suburb": "Knoxfield",
+  "postcode": "3180",
+  "lga": "Knox",
+  "region": "East"
+ },
+ {
+  "suburb": "Koo Wee Rup",
+  "postcode": "3981",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Koo Wee Rup North",
+  "postcode": "3981",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Kooyong",
+  "postcode": "3144",
+  "lga": "Stonnington",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Kurunjang",
+  "postcode": "3337",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Lalor",
+  "postcode": "3075",
+  "lga": "Whittlesea",
+  "region": "North"
+ },
+ {
+  "suburb": "Lang Lang",
+  "postcode": "3984",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Lang Lang East",
+  "postcode": "3984",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Langwarrin",
+  "postcode": "3910",
+  "lga": "Frankston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Langwarrin South",
+  "postcode": "3911",
+  "lga": "Frankston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Launching Place",
+  "postcode": "3139",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Laverton",
+  "postcode": "3028",
+  "lga": "Hobsons Bay",
+  "region": "West"
+ },
+ {
+  "suburb": "Laverton North",
+  "postcode": "3026",
+  "lga": "Wyndham",
+  "region": "West"
+ },
+ {
+  "suburb": "Lilydale",
+  "postcode": "3140",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Little River",
+  "postcode": "3211",
+  "lga": "Wyndham",
+  "region": "West"
+ },
+ {
+  "suburb": "Longwarry",
+  "postcode": "3816",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Lower Plenty",
+  "postcode": "3093",
+  "lga": "Banyule",
+  "region": "North"
+ },
+ {
+  "suburb": "Lynbrook",
+  "postcode": "3975",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Lyndhurst",
+  "postcode": "3975",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Lysterfield",
+  "postcode": "3156",
+  "lga": "Knox",
+  "region": "East"
+ },
+ {
+  "suburb": "Lysterfield South",
+  "postcode": "3156",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Macclesfield",
+  "postcode": "3782",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Macleod",
+  "postcode": "3085",
+  "lga": "Banyule",
+  "region": "North"
+ },
+ {
+  "suburb": "Maidstone",
+  "postcode": "3012",
+  "lga": "Maribyrnong",
+  "region": "West"
+ },
+ {
+  "suburb": "Main Ridge",
+  "postcode": "3928",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Malvern",
+  "postcode": "3144",
+  "lga": "Stonnington",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Malvern East",
+  "postcode": "3145",
+  "lga": "Stonnington",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Mambourin",
+  "postcode": "3024",
+  "lga": "Wyndham",
+  "region": "West"
+ },
+ {
+  "suburb": "Manor Lakes",
+  "postcode": "3024",
+  "lga": "Wyndham",
+  "region": "West"
+ },
+ {
+  "suburb": "Maribyrnong",
+  "postcode": "3032",
+  "lga": "Maribyrnong",
+  "region": "West"
+ },
+ {
+  "suburb": "Maryknoll",
+  "postcode": "3812",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Matlock",
+  "postcode": "3723",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "McCrae",
+  "postcode": "3938",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "McKinnon",
+  "postcode": "3204",
+  "lga": "Glen Eira",
+  "region": "South-east"
+ },
+ {
+  "suburb": "McMahons Creek",
+  "postcode": "3799",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Meadow Heights",
+  "postcode": "3048",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Melbourne",
+  "postcode": "3000",
+  "lga": "Melbourne",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Melbourne Airport",
+  "postcode": "3045",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Melton",
+  "postcode": "3337",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Melton South",
+  "postcode": "3338",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Melton West",
+  "postcode": "3337",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Mentone",
+  "postcode": "3194",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Menzies Creek",
+  "postcode": "3159",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Mernda",
+  "postcode": "3754",
+  "lga": "Whittlesea",
+  "region": "North"
+ },
+ {
+  "suburb": "Merricks",
+  "postcode": "3916",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Merricks Beach",
+  "postcode": "3926",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Merricks North",
+  "postcode": "3926",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Mickleham",
+  "postcode": "3064",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Middle Park",
+  "postcode": "3206",
+  "lga": "Port Phillip",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Mill Park",
+  "postcode": "3082",
+  "lga": "Whittlesea",
+  "region": "North"
+ },
+ {
+  "suburb": "Millgrove",
+  "postcode": "3799",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Mitcham",
+  "postcode": "3132",
+  "lga": "Whitehorse",
+  "region": "East"
+ },
+ {
+  "suburb": "Modella",
+  "postcode": "3816",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Monbulk",
+  "postcode": "3793",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Monomeith",
+  "postcode": "3984",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Mont Albert",
+  "postcode": "3127",
+  "lga": "Whitehorse",
+  "region": "East"
+ },
+ {
+  "suburb": "Mont Albert North",
+  "postcode": "3129",
+  "lga": "Whitehorse",
+  "region": "East"
+ },
+ {
+  "suburb": "Montmorency",
+  "postcode": "3094",
+  "lga": "Banyule",
+  "region": "North"
+ },
+ {
+  "suburb": "Montrose",
+  "postcode": "3765",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Moonee Ponds",
+  "postcode": "3039",
+  "lga": "Moonee Valley",
+  "region": "North"
+ },
+ {
+  "suburb": "Moorabbin",
+  "postcode": "3189",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Moorabbin Airport",
+  "postcode": "3194",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Moorooduc",
+  "postcode": "3933",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Mooroolbark",
+  "postcode": "3138",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Mordialloc",
+  "postcode": "3195",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Mornington",
+  "postcode": "3931",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Mount Burnett",
+  "postcode": "3781",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Mount Cottrell",
+  "postcode": "3024",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Mount Dandenong",
+  "postcode": "3767",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Mount Eliza",
+  "postcode": "3930",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Mount Evelyn",
+  "postcode": "3796",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Mount Martha",
+  "postcode": "3934",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Mount Toolebewong",
+  "postcode": "3777",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Mount Waverley",
+  "postcode": "3149",
+  "lga": "Monash",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Mulgrave",
+  "postcode": "3170",
+  "lga": "Monash",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Murrumbeena",
+  "postcode": "3163",
+  "lga": "Glen Eira",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Nangana",
+  "postcode": "3781",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Nar Nar Goon",
+  "postcode": "3812",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Nar Nar Goon North",
+  "postcode": "3812",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Narre Warren",
+  "postcode": "3805",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Narre Warren East",
+  "postcode": "3804",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Narre Warren North",
+  "postcode": "3804",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Narre Warren South",
+  "postcode": "3805",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Newport",
+  "postcode": "3015",
+  "lga": "Hobsons Bay",
+  "region": "West"
+ },
+ {
+  "suburb": "Niddrie",
+  "postcode": "3042",
+  "lga": "Moonee Valley",
+  "region": "North"
+ },
+ {
+  "suburb": "Noble Park",
+  "postcode": "3174",
+  "lga": "Greater Dandenong",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Noble Park North",
+  "postcode": "3174",
+  "lga": "Greater Dandenong",
+  "region": "South-east"
+ },
+ {
+  "suburb": "North Melbourne",
+  "postcode": "3051",
+  "lga": "Melbourne",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "North Warrandyte",
+  "postcode": "3113",
+  "lga": "Nillumbik",
+  "region": "North"
+ },
+ {
+  "suburb": "Northcote",
+  "postcode": "3070",
+  "lga": "Darebin",
+  "region": "North"
+ },
+ {
+  "suburb": "Notting Hill",
+  "postcode": "3168",
+  "lga": "Monash",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Nunawading",
+  "postcode": "3131",
+  "lga": "Whitehorse",
+  "region": "East"
+ },
+ {
+  "suburb": "Nutfield",
+  "postcode": "3099",
+  "lga": "Nillumbik",
+  "region": "North"
+ },
+ {
+  "suburb": "Nyora",
+  "postcode": "3987",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Oak Park",
+  "postcode": "3046",
+  "lga": "Merri-bek",
+  "region": "North"
+ },
+ {
+  "suburb": "Oaklands Junction",
+  "postcode": "3063",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Oakleigh",
+  "postcode": "3166",
+  "lga": "Monash",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Oakleigh East",
+  "postcode": "3166",
+  "lga": "Monash",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Oakleigh South",
+  "postcode": "3167",
+  "lga": "Monash",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Officer",
+  "postcode": "3809",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Officer South",
+  "postcode": "3809",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Olinda",
+  "postcode": "3788",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Ormond",
+  "postcode": "3204",
+  "lga": "Glen Eira",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Pakenham",
+  "postcode": "3810",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Pakenham South",
+  "postcode": "3810",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Pakenham Upper",
+  "postcode": "3810",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Panton Hill",
+  "postcode": "3759",
+  "lga": "Nillumbik",
+  "region": "North"
+ },
+ {
+  "suburb": "Park Orchards",
+  "postcode": "3114",
+  "lga": "Manningham",
+  "region": "East"
+ },
+ {
+  "suburb": "Parkdale",
+  "postcode": "3195",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Parkville",
+  "postcode": "3052",
+  "lga": "Melbourne",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Parwan",
+  "postcode": "3340",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Pascoe Vale",
+  "postcode": "3044",
+  "lga": "Merri-bek",
+  "region": "North"
+ },
+ {
+  "suburb": "Pascoe Vale South",
+  "postcode": "3044",
+  "lga": "Merri-bek",
+  "region": "North"
+ },
+ {
+  "suburb": "Patterson Lakes",
+  "postcode": "3197",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Pearcedale",
+  "postcode": "3912",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Plenty",
+  "postcode": "3090",
+  "lga": "Nillumbik",
+  "region": "North"
+ },
+ {
+  "suburb": "Plumpton",
+  "postcode": "3335",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Point Cook",
+  "postcode": "3030",
+  "lga": "Wyndham",
+  "region": "West"
+ },
+ {
+  "suburb": "Point Leo",
+  "postcode": "3916",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Port Melbourne",
+  "postcode": "3207",
+  "lga": "Port Phillip",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Portsea",
+  "postcode": "3944",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Powelltown",
+  "postcode": "3797",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Prahran",
+  "postcode": "3181",
+  "lga": "Stonnington",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Preston",
+  "postcode": "3072",
+  "lga": "Darebin",
+  "region": "North"
+ },
+ {
+  "suburb": "Princes Hill",
+  "postcode": "3054",
+  "lga": "Yarra",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Quandong",
+  "postcode": "3030",
+  "lga": "Wyndham",
+  "region": "West"
+ },
+ {
+  "suburb": "Ravenhall",
+  "postcode": "3023",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Red Hill",
+  "postcode": "3937",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Red Hill South",
+  "postcode": "3937",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Reefton",
+  "postcode": "3799",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Research",
+  "postcode": "3095",
+  "lga": "Nillumbik",
+  "region": "North"
+ },
+ {
+  "suburb": "Reservoir",
+  "postcode": "3073",
+  "lga": "Darebin",
+  "region": "North"
+ },
+ {
+  "suburb": "Richmond",
+  "postcode": "3121",
+  "lga": "Yarra",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Ringwood",
+  "postcode": "3134",
+  "lga": "Maroondah",
+  "region": "East"
+ },
+ {
+  "suburb": "Ringwood East",
+  "postcode": "3135",
+  "lga": "Maroondah",
+  "region": "East"
+ },
+ {
+  "suburb": "Ringwood North",
+  "postcode": "3134",
+  "lga": "Maroondah",
+  "region": "East"
+ },
+ {
+  "suburb": "Ripponlea",
+  "postcode": "3185",
+  "lga": "Port Phillip",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Rockbank",
+  "postcode": "3335",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Rosanna",
+  "postcode": "3084",
+  "lga": "Banyule",
+  "region": "North"
+ },
+ {
+  "suburb": "Rosebud",
+  "postcode": "3939",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Rowville",
+  "postcode": "3178",
+  "lga": "Knox",
+  "region": "East"
+ },
+ {
+  "suburb": "Roxburgh Park",
+  "postcode": "3064",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Rye",
+  "postcode": "3941",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Rythdale",
+  "postcode": "3810",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Safety Beach",
+  "postcode": "3936",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Sandhurst",
+  "postcode": "3977",
+  "lga": "Frankston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Sandringham",
+  "postcode": "3191",
+  "lga": "Bayside",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Sassafras",
+  "postcode": "3787",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Scoresby",
+  "postcode": "3179",
+  "lga": "Knox",
+  "region": "East"
+ },
+ {
+  "suburb": "Seabrook",
+  "postcode": "3028",
+  "lga": "Hobsons Bay",
+  "region": "West"
+ },
+ {
+  "suburb": "Seaford",
+  "postcode": "3198",
+  "lga": "Frankston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Seaholme",
+  "postcode": "3018",
+  "lga": "Hobsons Bay",
+  "region": "West"
+ },
+ {
+  "suburb": "Seddon",
+  "postcode": "3011",
+  "lga": "Maribyrnong",
+  "region": "West"
+ },
+ {
+  "suburb": "Selby",
+  "postcode": "3159",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Seville",
+  "postcode": "3139",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Seville East",
+  "postcode": "3139",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Sherbrooke",
+  "postcode": "3789",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Shoreham",
+  "postcode": "3916",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Silvan",
+  "postcode": "3795",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Skye",
+  "postcode": "3977",
+  "lga": "Frankston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Smiths Gully",
+  "postcode": "3760",
+  "lga": "Nillumbik",
+  "region": "North"
+ },
+ {
+  "suburb": "Somers",
+  "postcode": "3927",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Somerton",
+  "postcode": "3062",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Somerville",
+  "postcode": "3912",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Sorrento",
+  "postcode": "3943",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "South Kingsville",
+  "postcode": "3015",
+  "lga": "Hobsons Bay",
+  "region": "West"
+ },
+ {
+  "suburb": "South Melbourne",
+  "postcode": "3205",
+  "lga": "Port Phillip",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "South Morang",
+  "postcode": "3752",
+  "lga": "Whittlesea",
+  "region": "North"
+ },
+ {
+  "suburb": "South Wharf",
+  "postcode": "3006",
+  "lga": "Melbourne",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "South Yarra",
+  "postcode": "3141",
+  "lga": "Stonnington",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Southbank",
+  "postcode": "3006",
+  "lga": "Melbourne",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Spotswood",
+  "postcode": "3015",
+  "lga": "Hobsons Bay",
+  "region": "West"
+ },
+ {
+  "suburb": "Springvale",
+  "postcode": "3171",
+  "lga": "Greater Dandenong",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Springvale South",
+  "postcode": "3172",
+  "lga": "Greater Dandenong",
+  "region": "South-east"
+ },
+ {
+  "suburb": "St Albans",
+  "postcode": "3021",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "St Andrews",
+  "postcode": "3761",
+  "lga": "Nillumbik",
+  "region": "North"
+ },
+ {
+  "suburb": "St Andrews Beach",
+  "postcode": "3941",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "St Helena",
+  "postcode": "3088",
+  "lga": "Banyule",
+  "region": "North"
+ },
+ {
+  "suburb": "St Kilda",
+  "postcode": "3182",
+  "lga": "Port Phillip",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "St Kilda East",
+  "postcode": "3183",
+  "lga": "Port Phillip",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "St Kilda West",
+  "postcode": "3182",
+  "lga": "Port Phillip",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Steels Creek",
+  "postcode": "3775",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Strathewen",
+  "postcode": "3099",
+  "lga": "Nillumbik",
+  "region": "North"
+ },
+ {
+  "suburb": "Strathmore",
+  "postcode": "3041",
+  "lga": "Moonee Valley",
+  "region": "North"
+ },
+ {
+  "suburb": "Strathmore Heights",
+  "postcode": "3041",
+  "lga": "Moonee Valley",
+  "region": "North"
+ },
+ {
+  "suburb": "Strathtulloh",
+  "postcode": "3338",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Sunbury",
+  "postcode": "3429",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Sunshine",
+  "postcode": "3020",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "Sunshine North",
+  "postcode": "3020",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "Sunshine West",
+  "postcode": "3020",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "Surrey Hills",
+  "postcode": "3127",
+  "lga": "Boroondara",
+  "region": "East"
+ },
+ {
+  "suburb": "Sydenham",
+  "postcode": "3037",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "Tarneit",
+  "postcode": "3029",
+  "lga": "Wyndham",
+  "region": "West"
+ },
+ {
+  "suburb": "Tarrawarra",
+  "postcode": "3775",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Taylors Hill",
+  "postcode": "3037",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Taylors Lakes",
+  "postcode": "3038",
+  "lga": "Brimbank",
+  "region": "West"
+ },
+ {
+  "suburb": "Tecoma",
+  "postcode": "3160",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Templestowe",
+  "postcode": "3106",
+  "lga": "Manningham",
+  "region": "East"
+ },
+ {
+  "suburb": "Templestowe Lower",
+  "postcode": "3107",
+  "lga": "Manningham",
+  "region": "East"
+ },
+ {
+  "suburb": "The Basin",
+  "postcode": "3154",
+  "lga": "Knox",
+  "region": "East"
+ },
+ {
+  "suburb": "The Patch",
+  "postcode": "3792",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Thomastown",
+  "postcode": "3074",
+  "lga": "Whittlesea",
+  "region": "North"
+ },
+ {
+  "suburb": "Thornbury",
+  "postcode": "3071",
+  "lga": "Darebin",
+  "region": "North"
+ },
+ {
+  "suburb": "Thornhill Park",
+  "postcode": "3335",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Three Bridges",
+  "postcode": "3797",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Toolangi",
+  "postcode": "3777",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Toolern Vale",
+  "postcode": "3337",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Tooradin",
+  "postcode": "3980",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Toorak",
+  "postcode": "3142",
+  "lga": "Stonnington",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Tootgarook",
+  "postcode": "3941",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Tottenham",
+  "postcode": "3012",
+  "lga": "Maribyrnong",
+  "region": "West"
+ },
+ {
+  "suburb": "Travancore",
+  "postcode": "3032",
+  "lga": "Moonee Valley",
+  "region": "North"
+ },
+ {
+  "suburb": "Tremont",
+  "postcode": "3785",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Truganina",
+  "postcode": "3029",
+  "lga": "Wyndham",
+  "region": "West"
+ },
+ {
+  "suburb": "Tuerong",
+  "postcode": "3915",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Tullamarine",
+  "postcode": "3043",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Tyabb",
+  "postcode": "3913",
+  "lga": "Mornington Peninsula",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Tynong",
+  "postcode": "3813",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Tynong North",
+  "postcode": "3813",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Upper Ferntree Gully",
+  "postcode": "3156",
+  "lga": "Knox",
+  "region": "East"
+ },
+ {
+  "suburb": "Upwey",
+  "postcode": "3158",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Vermont",
+  "postcode": "3133",
+  "lga": "Whitehorse",
+  "region": "East"
+ },
+ {
+  "suburb": "Vermont South",
+  "postcode": "3133",
+  "lga": "Whitehorse",
+  "region": "East"
+ },
+ {
+  "suburb": "Vervale",
+  "postcode": "3814",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Viewbank",
+  "postcode": "3084",
+  "lga": "Banyule",
+  "region": "North"
+ },
+ {
+  "suburb": "Wandin East",
+  "postcode": "3139",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Wandin North",
+  "postcode": "3139",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Wantirna",
+  "postcode": "3152",
+  "lga": "Knox",
+  "region": "East"
+ },
+ {
+  "suburb": "Wantirna South",
+  "postcode": "3152",
+  "lga": "Knox",
+  "region": "East"
+ },
+ {
+  "suburb": "Warburton",
+  "postcode": "3799",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Warneet",
+  "postcode": "3980",
+  "lga": "Casey",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Warrandyte",
+  "postcode": "3113",
+  "lga": "Manningham",
+  "region": "East"
+ },
+ {
+  "suburb": "Warrandyte South",
+  "postcode": "3134",
+  "lga": "Manningham",
+  "region": "East"
+ },
+ {
+  "suburb": "Warranwood",
+  "postcode": "3134",
+  "lga": "Maroondah",
+  "region": "East"
+ },
+ {
+  "suburb": "Waterways",
+  "postcode": "3195",
+  "lga": "Kingston",
+  "region": "Bayside & peninsula"
+ },
+ {
+  "suburb": "Watsonia",
+  "postcode": "3087",
+  "lga": "Banyule",
+  "region": "North"
+ },
+ {
+  "suburb": "Watsonia North",
+  "postcode": "3087",
+  "lga": "Banyule",
+  "region": "North"
+ },
+ {
+  "suburb": "Watsons Creek",
+  "postcode": "3097",
+  "lga": "Nillumbik",
+  "region": "North"
+ },
+ {
+  "suburb": "Wattle Glen",
+  "postcode": "3096",
+  "lga": "Nillumbik",
+  "region": "North"
+ },
+ {
+  "suburb": "Weir Views",
+  "postcode": "3338",
+  "lga": "Melton",
+  "region": "West"
+ },
+ {
+  "suburb": "Werribee",
+  "postcode": "3030",
+  "lga": "Wyndham",
+  "region": "West"
+ },
+ {
+  "suburb": "Werribee South",
+  "postcode": "3030",
+  "lga": "Wyndham",
+  "region": "West"
+ },
+ {
+  "suburb": "Wesburn",
+  "postcode": "3799",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "West Footscray",
+  "postcode": "3012",
+  "lga": "Maribyrnong",
+  "region": "West"
+ },
+ {
+  "suburb": "West Melbourne",
+  "postcode": "3003",
+  "lga": "Melbourne",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Westmeadows",
+  "postcode": "3049",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Wheelers Hill",
+  "postcode": "3150",
+  "lga": "Monash",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Whittlesea",
+  "postcode": "3757",
+  "lga": "Whittlesea",
+  "region": "North"
+ },
+ {
+  "suburb": "Wildwood",
+  "postcode": "3429",
+  "lga": "Hume",
+  "region": "North"
+ },
+ {
+  "suburb": "Williams Landing",
+  "postcode": "3027",
+  "lga": "Wyndham",
+  "region": "West"
+ },
+ {
+  "suburb": "Williamstown",
+  "postcode": "3016",
+  "lga": "Hobsons Bay",
+  "region": "West"
+ },
+ {
+  "suburb": "Williamstown North",
+  "postcode": "3016",
+  "lga": "Hobsons Bay",
+  "region": "West"
+ },
+ {
+  "suburb": "Windsor",
+  "postcode": "3181",
+  "lga": "Stonnington",
+  "region": "Inner city"
+ },
+ {
+  "suburb": "Wollert",
+  "postcode": "3750",
+  "lga": "Whittlesea",
+  "region": "North"
+ },
+ {
+  "suburb": "Wonga Park",
+  "postcode": "3115",
+  "lga": "Manningham",
+  "region": "East"
+ },
+ {
+  "suburb": "Woodstock",
+  "postcode": "3751",
+  "lga": "Whittlesea",
+  "region": "North"
+ },
+ {
+  "suburb": "Woori Yallock",
+  "postcode": "3139",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Wyndham Vale",
+  "postcode": "3024",
+  "lga": "Wyndham",
+  "region": "West"
+ },
+ {
+  "suburb": "Yallambie",
+  "postcode": "3085",
+  "lga": "Banyule",
+  "region": "North"
+ },
+ {
+  "suburb": "Yan Yean",
+  "postcode": "3755",
+  "lga": "Whittlesea",
+  "region": "North"
+ },
+ {
+  "suburb": "Yannathan",
+  "postcode": "3981",
+  "lga": "Cardinia",
+  "region": "South-east"
+ },
+ {
+  "suburb": "Yarra Glen",
+  "postcode": "3775",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Yarra Junction",
+  "postcode": "3797",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Yarrambat",
+  "postcode": "3091",
+  "lga": "Nillumbik",
+  "region": "North"
+ },
+ {
+  "suburb": "Yarraville",
+  "postcode": "3013",
+  "lga": "Maribyrnong",
+  "region": "West"
+ },
+ {
+  "suburb": "Yellingbo",
+  "postcode": "3139",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Yering",
+  "postcode": "3770",
+  "lga": "Yarra Ranges",
+  "region": "East"
+ },
+ {
+  "suburb": "Yuroke",
+  "postcode": "3063",
+  "lga": "Hume",
+  "region": "North"
+ }
+]

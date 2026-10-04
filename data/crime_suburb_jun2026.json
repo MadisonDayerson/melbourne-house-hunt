@@ -1,0 +1,5253 @@
+{
+ "lga": {
+  "Melbourne": [
+   44694,
+   22860
+  ],
+  "Yarra": [
+   15823,
+   15518
+  ],
+  "Port Phillip": [
+   16196,
+   14100
+  ],
+  "Stonnington": [
+   13090,
+   11322
+  ],
+  "Merri-bek": [
+   14100,
+   7461
+  ],
+  "Darebin": [
+   16174,
+   9941
+  ],
+  "Banyule": [
+   10632,
+   7978
+  ],
+  "Moonee Valley": [
+   9942,
+   7615
+  ],
+  "Hume": [
+   23691,
+   8169
+  ],
+  "Whittlesea": [
+   17709,
+   6579
+  ],
+  "Nillumbik": [
+   2537,
+   3969
+  ],
+  "Maribyrnong": [
+   12371,
+   12909
+  ],
+  "Hobsons Bay": [
+   7785,
+   7959
+  ],
+  "Brimbank": [
+   18704,
+   9403
+  ],
+  "Wyndham": [
+   23923,
+   6554
+  ],
+  "Melton": [
+   17101,
+   6515
+  ],
+  "Boroondara": [
+   10051,
+   5626
+  ],
+  "Manningham": [
+   5275,
+   3967
+  ],
+  "Whitehorse": [
+   11698,
+   6296
+  ],
+  "Maroondah": [
+   9237,
+   7660
+  ],
+  "Knox": [
+   10589,
+   6454
+  ],
+  "Yarra Ranges": [
+   8180,
+   5069
+  ],
+  "Monash": [
+   15050,
+   7087
+  ],
+  "Glen Eira": [
+   7544,
+   4616
+  ],
+  "Greater Dandenong": [
+   21880,
+   12994
+  ],
+  "Casey": [
+   31583,
+   7327
+  ],
+  "Cardinia": [
+   9129,
+   6683
+  ],
+  "Bayside": [
+   4935,
+   4584
+  ],
+  "Kingston": [
+   11597,
+   6894
+  ],
+  "Frankston": [
+   16840,
+   11587
+  ],
+  "Mornington Peninsula": [
+   11410,
+   6615
+  ]
+ },
+ "suburb": {
+  "Ivanhoe": {
+   "total": 1204,
+   "assault": 77,
+   "robbery": 3,
+   "burglary": 146,
+   "theft": 515
+  },
+  "Ivanhoe East": {
+   "total": 150,
+   "assault": 1,
+   "burglary": 34,
+   "theft": 60
+  },
+  "Bellfield": {
+   "total": 159,
+   "assault": 11,
+   "burglary": 9,
+   "theft": 60
+  },
+  "Heidelberg Heights": {
+   "total": 725,
+   "assault": 76,
+   "robbery": 1,
+   "burglary": 38,
+   "theft": 270
+  },
+  "Heidelberg West": {
+   "total": 1433,
+   "assault": 105,
+   "robbery": 13,
+   "burglary": 113,
+   "theft": 495
+  },
+  "Bundoora": {
+   "total": 2456,
+   "assault": 153,
+   "robbery": 10,
+   "burglary": 189,
+   "theft": 1290
+  },
+  "Eaglemont": {
+   "total": 163,
+   "assault": 13,
+   "burglary": 24,
+   "theft": 79
+  },
+  "Heidelberg": {
+   "total": 2743,
+   "assault": 81,
+   "robbery": 6,
+   "burglary": 36,
+   "theft": 414
+  },
+  "Rosanna": {
+   "total": 434,
+   "assault": 21,
+   "robbery": 2,
+   "burglary": 50,
+   "theft": 153
+  },
+  "Viewbank": {
+   "total": 200,
+   "assault": 18,
+   "burglary": 20,
+   "theft": 52
+  },
+  "Macleod": {
+   "total": 390,
+   "assault": 17,
+   "robbery": 4,
+   "burglary": 39,
+   "theft": 123
+  },
+  "Yallambie": {
+   "total": 87,
+   "assault": 10,
+   "robbery": 1,
+   "burglary": 12,
+   "theft": 17
+  },
+  "Watsonia": {
+   "total": 431,
+   "assault": 24,
+   "burglary": 38,
+   "theft": 149
+  },
+  "Watsonia North": {
+   "total": 160,
+   "assault": 8,
+   "burglary": 22,
+   "theft": 57
+  },
+  "Briar Hill": {
+   "total": 100,
+   "assault": 10,
+   "burglary": 3,
+   "theft": 25
+  },
+  "Greensborough": {
+   "total": 1353,
+   "assault": 97,
+   "robbery": 10,
+   "burglary": 83,
+   "theft": 482
+  },
+  "St Helena": {
+   "total": 107,
+   "assault": 14,
+   "burglary": 7,
+   "theft": 64
+  },
+  "Lower Plenty": {
+   "total": 144,
+   "assault": 15,
+   "burglary": 24,
+   "theft": 46
+  },
+  "Montmorency": {
+   "total": 190,
+   "assault": 16,
+   "burglary": 15,
+   "theft": 57
+  },
+  "Eltham": {
+   "total": 1047,
+   "burglary": 53,
+   "assault": 66,
+   "robbery": 4,
+   "theft": 328
+  },
+  "Eltham North": {
+   "total": 115,
+   "assault": 12,
+   "burglary": 11,
+   "theft": 29
+  },
+  "Brighton": {
+   "total": 1483,
+   "assault": 82,
+   "robbery": 12,
+   "burglary": 175,
+   "theft": 643
+  },
+  "Brighton East": {
+   "total": 669,
+   "assault": 43,
+   "robbery": 3,
+   "burglary": 78,
+   "theft": 288
+  },
+  "Hampton": {
+   "total": 614,
+   "assault": 39,
+   "robbery": 4,
+   "burglary": 63,
+   "theft": 283
+  },
+  "Hampton East": {
+   "total": 454,
+   "assault": 35,
+   "robbery": 1,
+   "burglary": 49,
+   "theft": 161
+  },
+  "Highett": {
+   "total": 937,
+   "assault": 49,
+   "burglary": 65,
+   "theft": 337,
+   "robbery": 3
+  },
+  "Sandringham": {
+   "total": 544,
+   "assault": 37,
+   "robbery": 3,
+   "burglary": 37,
+   "theft": 214
+  },
+  "Beaumaris": {
+   "total": 379,
+   "theft": 157,
+   "assault": 21,
+   "robbery": 1,
+   "burglary": 40
+  },
+  "Cheltenham": {
+   "total": 2429,
+   "assault": 165,
+   "burglary": 162,
+   "theft": 1207,
+   "robbery": 18
+  },
+  "Black Rock": {
+   "total": 158,
+   "assault": 12,
+   "burglary": 15,
+   "theft": 64
+  },
+  "Kew": {
+   "total": 1678,
+   "assault": 95,
+   "robbery": 5,
+   "burglary": 192,
+   "theft": 822
+  },
+  "Kew East": {
+   "total": 289,
+   "assault": 11,
+   "robbery": 2,
+   "burglary": 42,
+   "theft": 115
+  },
+  "Balwyn": {
+   "total": 752,
+   "assault": 36,
+   "robbery": 2,
+   "burglary": 109,
+   "theft": 390
+  },
+  "Canterbury": {
+   "total": 298,
+   "theft": 110,
+   "assault": 18,
+   "burglary": 62
+  },
+  "Deepdene": {
+   "total": 102,
+   "assault": 5,
+   "burglary": 20,
+   "theft": 40
+  },
+  "Balwyn North": {
+   "total": 770,
+   "assault": 55,
+   "burglary": 163,
+   "theft": 302
+  },
+  "Hawthorn": {
+   "total": 1954,
+   "assault": 131,
+   "robbery": 12,
+   "burglary": 196,
+   "theft": 877
+  },
+  "Hawthorn East": {
+   "total": 1063,
+   "assault": 55,
+   "robbery": 5,
+   "burglary": 118,
+   "theft": 628
+  },
+  "Camberwell": {
+   "total": 1522,
+   "assault": 101,
+   "robbery": 10,
+   "burglary": 173,
+   "theft": 666
+  },
+  "Mont Albert": {
+   "total": 402,
+   "burglary": 38,
+   "theft": 216,
+   "assault": 23,
+   "robbery": 2
+  },
+  "Surrey Hills": {
+   "total": 586,
+   "assault": 25,
+   "burglary": 60,
+   "theft": 324
+  },
+  "Glen Iris": {
+   "total": 1198,
+   "assault": 61,
+   "robbery": 3,
+   "burglary": 171,
+   "theft": 614
+  },
+  "Ashburton": {
+   "total": 618,
+   "assault": 39,
+   "robbery": 3,
+   "burglary": 57,
+   "theft": 267
+  },
+  "Brooklyn": {
+   "total": 455,
+   "assault": 19,
+   "robbery": 1,
+   "burglary": 48,
+   "theft": 215
+  },
+  "Albion": {
+   "total": 565,
+   "assault": 35,
+   "robbery": 8,
+   "burglary": 51,
+   "theft": 219
+  },
+  "St Albans": {
+   "total": 3935,
+   "theft": 1581,
+   "assault": 396,
+   "robbery": 23,
+   "burglary": 284
+  },
+  "Sunshine": {
+   "total": 3407,
+   "assault": 242,
+   "robbery": 34,
+   "burglary": 163,
+   "theft": 1076
+  },
+  "Sunshine North": {
+   "total": 1385,
+   "assault": 76,
+   "robbery": 5,
+   "burglary": 120,
+   "theft": 639
+  },
+  "Sunshine West": {
+   "total": 1235,
+   "assault": 89,
+   "robbery": 8,
+   "burglary": 110,
+   "theft": 577
+  },
+  "Albanvale": {
+   "total": 260,
+   "assault": 33,
+   "robbery": 1,
+   "burglary": 15,
+   "theft": 93
+  },
+  "Kealba": {
+   "total": 300,
+   "assault": 28,
+   "robbery": 3,
+   "burglary": 23,
+   "theft": 110
+  },
+  "Kings Park": {
+   "total": 407,
+   "assault": 38,
+   "robbery": 5,
+   "burglary": 18,
+   "theft": 132
+  },
+  "Ardeer": {
+   "total": 348,
+   "assault": 31,
+   "burglary": 28,
+   "theft": 135
+  },
+  "Cairnlea": {
+   "total": 446,
+   "assault": 27,
+   "robbery": 2,
+   "burglary": 34,
+   "theft": 190
+  },
+  "Deer Park": {
+   "total": 1564,
+   "assault": 157,
+   "robbery": 15,
+   "burglary": 92,
+   "theft": 606
+  },
+  "Derrimut": {
+   "total": 821,
+   "assault": 47,
+   "robbery": 6,
+   "burglary": 100,
+   "theft": 402
+  },
+  "Keilor East": {
+   "total": 640,
+   "assault": 44,
+   "burglary": 42,
+   "theft": 255,
+   "robbery": 2
+  },
+  "Keilor": {
+   "total": 245,
+   "assault": 16,
+   "burglary": 26,
+   "theft": 82
+  },
+  "Keilor North": {
+   "total": 55,
+   "assault": 1,
+   "burglary": 1,
+   "theft": 43
+  },
+  "Calder Park": {
+   "total": 52,
+   "assault": 5,
+   "theft": 38
+  },
+  "Delahey": {
+   "total": 300,
+   "assault": 31,
+   "robbery": 2,
+   "burglary": 7,
+   "theft": 83
+  },
+  "Hillside": {
+   "total": 566,
+   "assault": 46,
+   "burglary": 26,
+   "theft": 214,
+   "robbery": 1
+  },
+  "Sydenham": {
+   "total": 504,
+   "assault": 43,
+   "robbery": 1,
+   "burglary": 18,
+   "theft": 192
+  },
+  "Keilor Downs": {
+   "total": 546,
+   "assault": 49,
+   "robbery": 5,
+   "burglary": 27,
+   "theft": 221
+  },
+  "Keilor Lodge": {
+   "total": 36,
+   "assault": 5,
+   "burglary": 1,
+   "theft": 13
+  },
+  "Taylors Lakes": {
+   "total": 1465,
+   "assault": 79,
+   "robbery": 10,
+   "burglary": 32,
+   "theft": 872
+  },
+  "Keilor Park": {
+   "total": 244,
+   "assault": 18,
+   "burglary": 22,
+   "theft": 86
+  },
+  "Tullamarine": {
+   "total": 1012,
+   "assault": 40,
+   "burglary": 65,
+   "theft": 520
+  },
+  "Menzies Creek": {
+   "total": 25,
+   "assault": 2,
+   "burglary": 1,
+   "theft": 1
+  },
+  "Cockatoo": {
+   "total": 182,
+   "assault": 28,
+   "robbery": 1,
+   "burglary": 20,
+   "theft": 30
+  },
+  "Mount Burnett": {
+   "total": 7,
+   "burglary": 3,
+   "theft": 3
+  },
+  "Nangana": {
+   "total": 2
+  },
+  "Avonsleigh": {
+   "total": 3,
+   "burglary": 1
+  },
+  "Clematis": {
+   "total": 27,
+   "assault": 4,
+   "theft": 10
+  },
+  "Emerald": {
+   "total": 220,
+   "assault": 26,
+   "burglary": 19,
+   "theft": 67
+  },
+  "Gembrook": {
+   "total": 315,
+   "assault": 11,
+   "robbery": 2,
+   "burglary": 11,
+   "theft": 34
+  },
+  "Beaconsfield": {
+   "total": 576,
+   "assault": 39,
+   "robbery": 6,
+   "burglary": 44,
+   "theft": 257
+  },
+  "Guys Hill": {
+   "total": 19,
+   "assault": 4,
+   "burglary": 1,
+   "theft": 4
+  },
+  "Beaconsfield Upper": {
+   "total": 74,
+   "assault": 11,
+   "burglary": 6,
+   "theft": 9
+  },
+  "Dewhurst": {
+   "total": 5,
+   "assault": 1,
+   "burglary": 1
+  },
+  "Officer": {
+   "total": 1502,
+   "assault": 142,
+   "robbery": 12,
+   "burglary": 131,
+   "theft": 620
+  },
+  "Officer South": {
+   "total": 57,
+   "assault": 7,
+   "burglary": 2,
+   "theft": 21
+  },
+  "Pakenham": {
+   "total": 4912,
+   "assault": 492,
+   "robbery": 46,
+   "burglary": 209,
+   "theft": 1674
+  },
+  "Pakenham South": {
+   "total": 8,
+   "assault": 1,
+   "burglary": 3,
+   "theft": 2
+  },
+  "Pakenham Upper": {
+   "total": 36,
+   "assault": 1,
+   "burglary": 2,
+   "theft": 19
+  },
+  "Rythdale": {
+   "total": 1,
+   "theft": 1
+  },
+  "Maryknoll": {
+   "total": 13,
+   "assault": 2,
+   "theft": 1
+  },
+  "Nar Nar Goon": {
+   "total": 68,
+   "assault": 5,
+   "robbery": 1,
+   "burglary": 14,
+   "theft": 23
+  },
+  "Nar Nar Goon North": {
+   "total": 78,
+   "assault": 5,
+   "burglary": 3,
+   "theft": 30
+  },
+  "Tynong": {
+   "total": 37,
+   "assault": 2,
+   "burglary": 2,
+   "theft": 6
+  },
+  "Tynong North": {
+   "total": 48,
+   "assault": 1,
+   "burglary": 3,
+   "theft": 25
+  },
+  "Cora Lynn": {
+   "total": 8,
+   "burglary": 2,
+   "theft": 3
+  },
+  "Garfield": {
+   "total": 96,
+   "assault": 13,
+   "burglary": 14,
+   "theft": 27
+  },
+  "Garfield North": {
+   "total": 12,
+   "assault": 1,
+   "theft": 2
+  },
+  "Vervale": {
+   "total": 9,
+   "theft": 2
+  },
+  "Bunyip": {
+   "total": 121,
+   "assault": 10,
+   "burglary": 18,
+   "theft": 30
+  },
+  "Bunyip North": {
+   "total": 11,
+   "theft": 2
+  },
+  "Iona": {
+   "total": 3
+  },
+  "Longwarry": {
+   "total": 5,
+   "assault": 1,
+   "burglary": 1
+  },
+  "Modella": {
+   "total": 1,
+   "theft": 1
+  },
+  "Cardinia": {
+   "total": 54,
+   "assault": 3,
+   "burglary": 3,
+   "theft": 14
+  },
+  "Bayles": {
+   "total": 30,
+   "assault": 2,
+   "burglary": 6,
+   "theft": 10
+  },
+  "Catani": {
+   "total": 10,
+   "assault": 2,
+   "theft": 2
+  },
+  "Dalmore": {
+   "total": 15,
+   "assault": 2,
+   "burglary": 1,
+   "theft": 9
+  },
+  "Heath Hill": {
+   "total": 7,
+   "theft": 5
+  },
+  "Koo Wee Rup": {
+   "total": 344,
+   "assault": 28,
+   "robbery": 1,
+   "burglary": 20,
+   "theft": 126
+  },
+  "Koo Wee Rup North": {
+   "total": 1
+  },
+  "Yannathan": {
+   "total": 10,
+   "assault": 1,
+   "burglary": 2,
+   "theft": 3
+  },
+  "Caldermeade": {
+   "total": 33,
+   "assault": 1,
+   "burglary": 1,
+   "theft": 20
+  },
+  "Lang Lang": {
+   "total": 179,
+   "assault": 14,
+   "robbery": 1,
+   "burglary": 8,
+   "theft": 35
+  },
+  "Lang Lang East": {
+   "total": 2,
+   "burglary": 1
+  },
+  "Monomeith": {
+   "total": 6,
+   "burglary": 1,
+   "theft": 3
+  },
+  "Nyora": {
+   "total": 3,
+   "burglary": 1,
+   "theft": 2
+  },
+  "Lysterfield South": {
+   "total": 42,
+   "assault": 6,
+   "robbery": 4,
+   "burglary": 1,
+   "theft": 13
+  },
+  "Doveton": {
+   "total": 1712,
+   "assault": 174,
+   "robbery": 13,
+   "burglary": 106,
+   "theft": 662
+  },
+  "Eumemmerring": {
+   "total": 371,
+   "assault": 39,
+   "robbery": 4,
+   "burglary": 19,
+   "theft": 189
+  },
+  "Endeavour Hills": {
+   "total": 1549,
+   "assault": 169,
+   "robbery": 13,
+   "burglary": 80,
+   "theft": 574
+  },
+  "Hallam": {
+   "total": 1679,
+   "assault": 118,
+   "robbery": 14,
+   "burglary": 142,
+   "theft": 773
+  },
+  "Narre Warren North": {
+   "total": 349,
+   "assault": 22,
+   "robbery": 4,
+   "burglary": 39,
+   "theft": 153
+  },
+  "Narre Warren": {
+   "total": 4037,
+   "assault": 316,
+   "robbery": 30,
+   "burglary": 192,
+   "theft": 2127
+  },
+  "Narre Warren South": {
+   "total": 1230,
+   "assault": 175,
+   "robbery": 12,
+   "burglary": 69,
+   "theft": 439
+  },
+  "Berwick": {
+   "total": 3477,
+   "assault": 299,
+   "robbery": 13,
+   "burglary": 363,
+   "theft": 1484
+  },
+  "Harkaway": {
+   "total": 28,
+   "assault": 2,
+   "burglary": 5,
+   "theft": 11
+  },
+  "Pearcedale": {
+   "total": 148,
+   "assault": 14,
+   "burglary": 10,
+   "theft": 53
+  },
+  "Lynbrook": {
+   "total": 719,
+   "assault": 76,
+   "robbery": 7,
+   "burglary": 55,
+   "theft": 308
+  },
+  "Lyndhurst": {
+   "total": 431,
+   "assault": 41,
+   "robbery": 7,
+   "burglary": 45,
+   "theft": 209
+  },
+  "Hampton Park": {
+   "total": 1664,
+   "assault": 219,
+   "robbery": 12,
+   "burglary": 83,
+   "theft": 483
+  },
+  "Botanic Ridge": {
+   "total": 304,
+   "assault": 29,
+   "burglary": 24,
+   "theft": 99
+  },
+  "Cannons Creek": {
+   "total": 45,
+   "assault": 6,
+   "burglary": 4,
+   "theft": 15
+  },
+  "Cranbourne": {
+   "total": 4464,
+   "assault": 442,
+   "robbery": 30,
+   "burglary": 196,
+   "theft": 1617
+  },
+  "Cranbourne East": {
+   "total": 1638,
+   "assault": 225,
+   "robbery": 8,
+   "burglary": 79,
+   "theft": 490
+  },
+  "Cranbourne North": {
+   "total": 1667,
+   "assault": 180,
+   "robbery": 6,
+   "burglary": 89,
+   "theft": 525
+  },
+  "Cranbourne South": {
+   "total": 243,
+   "assault": 30,
+   "burglary": 19,
+   "theft": 84
+  },
+  "Cranbourne West": {
+   "total": 1508,
+   "assault": 175,
+   "robbery": 3,
+   "burglary": 107,
+   "theft": 596
+  },
+  "Devon Meadows": {
+   "total": 98,
+   "assault": 16,
+   "robbery": 1,
+   "burglary": 9,
+   "theft": 25
+  },
+  "Junction Village": {
+   "total": 85,
+   "assault": 12,
+   "burglary": 3,
+   "theft": 21
+  },
+  "Clyde": {
+   "total": 1166,
+   "assault": 145,
+   "robbery": 7,
+   "burglary": 84,
+   "theft": 371
+  },
+  "Clyde North": {
+   "total": 2760,
+   "assault": 336,
+   "robbery": 9,
+   "burglary": 188,
+   "theft": 1015
+  },
+  "Blind Bight": {
+   "total": 18,
+   "assault": 1,
+   "theft": 10
+  },
+  "Tooradin": {
+   "total": 159,
+   "assault": 12,
+   "burglary": 20,
+   "theft": 35
+  },
+  "Warneet": {
+   "total": 34,
+   "assault": 1,
+   "burglary": 2,
+   "theft": 6
+  },
+  "Northcote": {
+   "total": 1798,
+   "assault": 80,
+   "robbery": 9,
+   "burglary": 161,
+   "theft": 959
+  },
+  "Thornbury": {
+   "total": 1368,
+   "assault": 70,
+   "robbery": 4,
+   "burglary": 91,
+   "theft": 637
+  },
+  "Preston": {
+   "total": 5954,
+   "assault": 356,
+   "robbery": 31,
+   "burglary": 304,
+   "theft": 2844
+  },
+  "Reservoir": {
+   "total": 5043,
+   "assault": 378,
+   "robbery": 20,
+   "burglary": 384,
+   "theft": 1963
+  },
+  "Alphington": {
+   "total": 453,
+   "assault": 13,
+   "robbery": 1,
+   "burglary": 36,
+   "theft": 296
+  },
+  "Fairfield": {
+   "total": 472,
+   "assault": 30,
+   "robbery": 2,
+   "burglary": 46,
+   "theft": 257
+  },
+  "Kingsbury": {
+   "total": 495,
+   "assault": 33,
+   "robbery": 5,
+   "burglary": 34,
+   "theft": 251
+  },
+  "Seaford": {
+   "total": 2346,
+   "assault": 168,
+   "robbery": 5,
+   "burglary": 146,
+   "theft": 837
+  },
+  "Frankston": {
+   "total": 9015,
+   "assault": 656,
+   "robbery": 38,
+   "burglary": 381,
+   "theft": 2849
+  },
+  "Frankston South": {
+   "total": 736,
+   "assault": 42,
+   "robbery": 2,
+   "burglary": 48,
+   "theft": 281
+  },
+  "Frankston North": {
+   "total": 704,
+   "assault": 82,
+   "robbery": 3,
+   "burglary": 35,
+   "theft": 142
+  },
+  "Carrum Downs": {
+   "total": 2287,
+   "assault": 186,
+   "robbery": 7,
+   "burglary": 110,
+   "theft": 878
+  },
+  "Langwarrin": {
+   "total": 979,
+   "assault": 81,
+   "robbery": 1,
+   "burglary": 56,
+   "theft": 317
+  },
+  "Langwarrin South": {
+   "total": 65,
+   "assault": 6,
+   "robbery": 1,
+   "burglary": 6,
+   "theft": 22
+  },
+  "Sandhurst": {
+   "total": 159,
+   "assault": 24,
+   "burglary": 12,
+   "theft": 38
+  },
+  "Skye": {
+   "total": 549,
+   "assault": 43,
+   "burglary": 16,
+   "theft": 193
+  },
+  "Caulfield East": {
+   "total": 338,
+   "assault": 36,
+   "robbery": 3,
+   "burglary": 18,
+   "theft": 127
+  },
+  "Caulfield North": {
+   "total": 953,
+   "assault": 56,
+   "robbery": 2,
+   "burglary": 119,
+   "theft": 456
+  },
+  "Caulfield": {
+   "total": 407,
+   "assault": 32,
+   "burglary": 28,
+   "theft": 144
+  },
+  "Caulfield South": {
+   "total": 503,
+   "assault": 37,
+   "robbery": 1,
+   "burglary": 45,
+   "theft": 201
+  },
+  "Carnegie": {
+   "total": 974,
+   "assault": 87,
+   "robbery": 5,
+   "burglary": 92,
+   "theft": 476
+  },
+  "Glen Huntly": {
+   "total": 283,
+   "assault": 19,
+   "burglary": 22,
+   "theft": 122
+  },
+  "Murrumbeena": {
+   "total": 537,
+   "assault": 41,
+   "burglary": 41,
+   "theft": 263
+  },
+  "Bentleigh East": {
+   "total": 1129,
+   "assault": 114,
+   "robbery": 6,
+   "burglary": 84,
+   "theft": 415
+  },
+  "St Kilda East": {
+   "total": 724,
+   "assault": 55,
+   "burglary": 51,
+   "theft": 314,
+   "robbery": 2
+  },
+  "Elsternwick": {
+   "total": 733,
+   "assault": 64,
+   "robbery": 5,
+   "burglary": 73,
+   "theft": 356
+  },
+  "Gardenvale": {
+   "total": 62,
+   "assault": 4,
+   "burglary": 3,
+   "theft": 31
+  },
+  "Bentleigh": {
+   "total": 882,
+   "assault": 72,
+   "robbery": 8,
+   "burglary": 59,
+   "theft": 410
+  },
+  "McKinnon": {
+   "total": 249,
+   "assault": 33,
+   "robbery": 4,
+   "burglary": 28,
+   "theft": 101
+  },
+  "Ormond": {
+   "total": 304,
+   "assault": 25,
+   "robbery": 6,
+   "burglary": 22,
+   "theft": 112
+  },
+  "Springvale": {
+   "total": 3122,
+   "assault": 220,
+   "robbery": 25,
+   "burglary": 179,
+   "theft": 1323
+  },
+  "Springvale South": {
+   "total": 743,
+   "assault": 68,
+   "robbery": 3,
+   "burglary": 32,
+   "theft": 271
+  },
+  "Keysborough": {
+   "total": 1809,
+   "assault": 131,
+   "robbery": 11,
+   "burglary": 121,
+   "theft": 885
+  },
+  "Noble Park": {
+   "total": 2891,
+   "assault": 292,
+   "robbery": 20,
+   "burglary": 158,
+   "theft": 946
+  },
+  "Noble Park North": {
+   "total": 602,
+   "assault": 55,
+   "robbery": 2,
+   "burglary": 62,
+   "theft": 269
+  },
+  "Bangholme": {
+   "total": 83,
+   "assault": 5,
+   "burglary": 6,
+   "theft": 35
+  },
+  "Dandenong": {
+   "total": 9212,
+   "assault": 832,
+   "robbery": 72,
+   "burglary": 433,
+   "theft": 2921
+  },
+  "Dandenong North": {
+   "total": 1758,
+   "assault": 148,
+   "robbery": 5,
+   "burglary": 105,
+   "theft": 506
+  },
+  "Dandenong South": {
+   "total": 1606,
+   "assault": 58,
+   "robbery": 3,
+   "burglary": 189,
+   "theft": 935
+  },
+  "Newport": {
+   "total": 820,
+   "assault": 73,
+   "robbery": 6,
+   "burglary": 41,
+   "theft": 376
+  },
+  "South Kingsville": {
+   "total": 106,
+   "assault": 6,
+   "robbery": 1,
+   "burglary": 11,
+   "theft": 45
+  },
+  "Spotswood": {
+   "total": 568,
+   "assault": 13,
+   "burglary": 57,
+   "theft": 344
+  },
+  "Williamstown": {
+   "total": 1152,
+   "assault": 84,
+   "robbery": 2,
+   "burglary": 103,
+   "theft": 474
+  },
+  "Williamstown North": {
+   "total": 251,
+   "assault": 16,
+   "burglary": 35,
+   "theft": 129
+  },
+  "Altona": {
+   "total": 974,
+   "assault": 85,
+   "robbery": 3,
+   "burglary": 59,
+   "theft": 372
+  },
+  "Seaholme": {
+   "total": 111,
+   "assault": 5,
+   "robbery": 1,
+   "burglary": 10,
+   "theft": 59
+  },
+  "Altona North": {
+   "total": 1522,
+   "assault": 84,
+   "robbery": 8,
+   "burglary": 102,
+   "theft": 816
+  },
+  "Altona Meadows": {
+   "total": 1043,
+   "assault": 88,
+   "robbery": 10,
+   "burglary": 54,
+   "theft": 421
+  },
+  "Laverton": {
+   "total": 847,
+   "assault": 77,
+   "robbery": 8,
+   "burglary": 58,
+   "theft": 326
+  },
+  "Seabrook": {
+   "total": 155,
+   "assault": 14,
+   "robbery": 1,
+   "burglary": 14,
+   "theft": 74
+  },
+  "Gladstone Park": {
+   "total": 594,
+   "assault": 54,
+   "robbery": 1,
+   "burglary": 18,
+   "theft": 226
+  },
+  "Melbourne Airport": {
+   "total": 1279,
+   "assault": 52,
+   "robbery": 1,
+   "burglary": 12,
+   "theft": 867
+  },
+  "Broadmeadows": {
+   "total": 3897,
+   "assault": 328,
+   "robbery": 21,
+   "burglary": 101,
+   "theft": 1161
+  },
+  "Dallas": {
+   "total": 536,
+   "assault": 49,
+   "robbery": 5,
+   "burglary": 22,
+   "theft": 152
+  },
+  "Jacana": {
+   "total": 208,
+   "assault": 22,
+   "burglary": 4,
+   "theft": 46
+  },
+  "Coolaroo": {
+   "total": 743,
+   "assault": 44,
+   "robbery": 5,
+   "burglary": 27,
+   "theft": 309
+  },
+  "Meadow Heights": {
+   "total": 1041,
+   "assault": 138,
+   "robbery": 5,
+   "burglary": 36,
+   "theft": 255
+  },
+  "Attwood": {
+   "total": 176,
+   "assault": 8,
+   "burglary": 5,
+   "theft": 68
+  },
+  "Westmeadows": {
+   "total": 425,
+   "assault": 39,
+   "robbery": 2,
+   "burglary": 26,
+   "theft": 170
+  },
+  "Greenvale": {
+   "total": 1014,
+   "assault": 109,
+   "robbery": 4,
+   "burglary": 56,
+   "theft": 332
+  },
+  "Fawkner": {
+   "total": 961,
+   "assault": 110,
+   "robbery": 10,
+   "burglary": 34,
+   "theft": 295
+  },
+  "Campbellfield": {
+   "total": 1454,
+   "assault": 91,
+   "robbery": 4,
+   "burglary": 89,
+   "theft": 705
+  },
+  "Somerton": {
+   "total": 345,
+   "assault": 11,
+   "robbery": 3,
+   "burglary": 15,
+   "theft": 232
+  },
+  "Oaklands Junction": {
+   "total": 52,
+   "robbery": 1,
+   "burglary": 4,
+   "theft": 33
+  },
+  "Yuroke": {
+   "total": 26,
+   "assault": 2,
+   "burglary": 1,
+   "theft": 15
+  },
+  "Craigieburn": {
+   "total": 4479,
+   "assault": 473,
+   "robbery": 38,
+   "burglary": 157,
+   "theft": 1751
+  },
+  "Kalkallo": {
+   "total": 673,
+   "assault": 92,
+   "robbery": 9,
+   "burglary": 44,
+   "theft": 272
+  },
+  "Mickleham": {
+   "total": 1400,
+   "assault": 185,
+   "robbery": 6,
+   "burglary": 90,
+   "theft": 506
+  },
+  "Roxburgh Park": {
+   "total": 1335,
+   "assault": 181,
+   "robbery": 11,
+   "burglary": 46,
+   "theft": 447
+  },
+  "Diggers Rest": {
+   "total": 411,
+   "assault": 28,
+   "burglary": 29,
+   "theft": 170,
+   "robbery": 1
+  },
+  "Bulla": {
+   "total": 122,
+   "assault": 6,
+   "robbery": 1,
+   "burglary": 3,
+   "theft": 66
+  },
+  "Sunbury": {
+   "total": 2860,
+   "assault": 273,
+   "robbery": 15,
+   "burglary": 169,
+   "theft": 988
+  },
+  "Wildwood": {
+   "total": 83,
+   "assault": 1,
+   "burglary": 5,
+   "theft": 46
+  },
+  "Clarkefield": {
+   "total": 9,
+   "assault": 2,
+   "theft": 4
+  },
+  "Oakleigh South": {
+   "total": 657,
+   "assault": 47,
+   "burglary": 58,
+   "theft": 300
+  },
+  "Clarinda": {
+   "total": 294,
+   "assault": 27,
+   "robbery": 1,
+   "burglary": 22,
+   "theft": 110
+  },
+  "Clayton South": {
+   "total": 1044,
+   "assault": 73,
+   "robbery": 5,
+   "burglary": 86,
+   "theft": 542
+  },
+  "Dingley Village": {
+   "total": 553,
+   "assault": 26,
+   "robbery": 2,
+   "burglary": 38,
+   "theft": 295
+  },
+  "Moorabbin": {
+   "total": 1501,
+   "assault": 70,
+   "robbery": 5,
+   "burglary": 75,
+   "theft": 396
+  },
+  "Mentone": {
+   "total": 982,
+   "assault": 66,
+   "robbery": 4,
+   "burglary": 53,
+   "theft": 452
+  },
+  "Moorabbin Airport": {
+   "total": 162,
+   "assault": 9,
+   "burglary": 14,
+   "theft": 112
+  },
+  "Aspendale": {
+   "total": 337,
+   "assault": 30,
+   "robbery": 2,
+   "burglary": 18,
+   "theft": 109
+  },
+  "Aspendale Gardens": {
+   "total": 136,
+   "assault": 14,
+   "robbery": 1,
+   "burglary": 1,
+   "theft": 55
+  },
+  "Braeside": {
+   "total": 266,
+   "assault": 5,
+   "robbery": 4,
+   "burglary": 40,
+   "theft": 140
+  },
+  "Mordialloc": {
+   "total": 679,
+   "assault": 47,
+   "robbery": 5,
+   "burglary": 51,
+   "theft": 199
+  },
+  "Parkdale": {
+   "total": 406,
+   "assault": 29,
+   "robbery": 2,
+   "burglary": 32,
+   "theft": 162
+  },
+  "Waterways": {
+   "total": 71,
+   "assault": 11,
+   "burglary": 11,
+   "theft": 14
+  },
+  "Bonbeach": {
+   "total": 265,
+   "assault": 26,
+   "robbery": 1,
+   "burglary": 19,
+   "theft": 88
+  },
+  "Chelsea": {
+   "total": 558,
+   "assault": 58,
+   "robbery": 5,
+   "burglary": 27,
+   "theft": 222
+  },
+  "Chelsea Heights": {
+   "total": 286,
+   "assault": 21,
+   "robbery": 3,
+   "burglary": 12,
+   "theft": 122
+  },
+  "Edithvale": {
+   "total": 191,
+   "assault": 30,
+   "burglary": 6,
+   "theft": 59
+  },
+  "Carrum": {
+   "total": 267,
+   "assault": 24,
+   "robbery": 5,
+   "burglary": 11,
+   "theft": 108
+  },
+  "Patterson Lakes": {
+   "total": 443,
+   "assault": 39,
+   "robbery": 1,
+   "burglary": 32,
+   "theft": 192
+  },
+  "Heatherton": {
+   "total": 238,
+   "assault": 18,
+   "burglary": 6,
+   "theft": 109
+  },
+  "Wantirna": {
+   "total": 798,
+   "assault": 57,
+   "robbery": 3,
+   "burglary": 37,
+   "theft": 318
+  },
+  "Wantirna South": {
+   "total": 1797,
+   "assault": 108,
+   "robbery": 12,
+   "burglary": 95,
+   "theft": 900
+  },
+  "Bayswater": {
+   "total": 1152,
+   "assault": 95,
+   "robbery": 2,
+   "burglary": 60,
+   "theft": 504
+  },
+  "The Basin": {
+   "total": 219,
+   "assault": 23,
+   "burglary": 15,
+   "theft": 69
+  },
+  "Boronia": {
+   "total": 2028,
+   "assault": 186,
+   "robbery": 8,
+   "burglary": 114,
+   "theft": 707
+  },
+  "Ferntree Gully": {
+   "total": 1679,
+   "assault": 152,
+   "robbery": 4,
+   "burglary": 85,
+   "theft": 771
+  },
+  "Lysterfield": {
+   "total": 186,
+   "assault": 21,
+   "robbery": 1,
+   "burglary": 21,
+   "theft": 76
+  },
+  "Upper Ferntree Gully": {
+   "total": 248,
+   "assault": 25,
+   "robbery": 1,
+   "burglary": 13,
+   "theft": 81
+  },
+  "Rowville": {
+   "total": 1596,
+   "assault": 113,
+   "robbery": 6,
+   "burglary": 84,
+   "theft": 670
+  },
+  "Scoresby": {
+   "total": 549,
+   "assault": 29,
+   "robbery": 5,
+   "burglary": 39,
+   "theft": 262
+  },
+  "Knoxfield": {
+   "total": 397,
+   "assault": 30,
+   "robbery": 1,
+   "burglary": 39,
+   "theft": 155
+  },
+  "Bulleen": {
+   "total": 576,
+   "assault": 35,
+   "robbery": 2,
+   "burglary": 52,
+   "theft": 290
+  },
+  "Templestowe": {
+   "total": 516,
+   "assault": 54,
+   "robbery": 4,
+   "burglary": 78,
+   "theft": 151
+  },
+  "Doncaster": {
+   "total": 2129,
+   "assault": 144,
+   "theft": 1031,
+   "robbery": 11,
+   "burglary": 162
+  },
+  "Templestowe Lower": {
+   "total": 421,
+   "assault": 49,
+   "robbery": 1,
+   "burglary": 45,
+   "theft": 161
+  },
+  "Doncaster East": {
+   "total": 990,
+   "assault": 88,
+   "robbery": 6,
+   "burglary": 105,
+   "theft": 400
+  },
+  "Donvale": {
+   "total": 338,
+   "assault": 20,
+   "burglary": 31,
+   "theft": 110
+  },
+  "Warrandyte": {
+   "total": 165,
+   "assault": 15,
+   "burglary": 17,
+   "theft": 50
+  },
+  "Park Orchards": {
+   "total": 84,
+   "assault": 6,
+   "burglary": 17,
+   "theft": 23
+  },
+  "Wonga Park": {
+   "total": 39,
+   "assault": 5,
+   "robbery": 1,
+   "burglary": 6,
+   "theft": 15
+  },
+  "Nunawading": {
+   "total": 1213,
+   "burglary": 87,
+   "theft": 325,
+   "assault": 54,
+   "robbery": 2
+  },
+  "Ringwood North": {
+   "total": 286,
+   "burglary": 26,
+   "assault": 15,
+   "robbery": 1,
+   "theft": 108
+  },
+  "Warrandyte South": {
+   "total": 6,
+   "burglary": 1,
+   "theft": 1
+  },
+  "Footscray": {
+   "total": 4397,
+   "assault": 352,
+   "robbery": 50,
+   "burglary": 289,
+   "theft": 1997
+  },
+  "Seddon": {
+   "total": 438,
+   "assault": 34,
+   "robbery": 1,
+   "burglary": 27,
+   "theft": 208
+  },
+  "Kingsville": {
+   "total": 227,
+   "assault": 6,
+   "robbery": 1,
+   "burglary": 10,
+   "theft": 144
+  },
+  "Maidstone": {
+   "total": 991,
+   "assault": 61,
+   "robbery": 1,
+   "burglary": 66,
+   "theft": 497
+  },
+  "Tottenham": {
+   "total": 199,
+   "assault": 7,
+   "robbery": 2,
+   "burglary": 21,
+   "theft": 87
+  },
+  "West Footscray": {
+   "total": 902,
+   "assault": 43,
+   "robbery": 1,
+   "burglary": 69,
+   "theft": 529
+  },
+  "Yarraville": {
+   "total": 1138,
+   "assault": 71,
+   "robbery": 7,
+   "burglary": 77,
+   "theft": 618
+  },
+  "Braybrook": {
+   "total": 1645,
+   "assault": 88,
+   "robbery": 17,
+   "burglary": 120,
+   "theft": 782
+  },
+  "Maribyrnong": {
+   "total": 2434,
+   "assault": 104,
+   "robbery": 17,
+   "burglary": 147,
+   "theft": 1453
+  },
+  "Vermont": {
+   "total": 381,
+   "assault": 27,
+   "theft": 146,
+   "burglary": 44
+  },
+  "Ringwood": {
+   "total": 4061,
+   "assault": 270,
+   "robbery": 20,
+   "burglary": 90,
+   "theft": 1368
+  },
+  "Warranwood": {
+   "total": 74,
+   "assault": 12,
+   "burglary": 7,
+   "theft": 16
+  },
+  "Heathmont": {
+   "total": 343,
+   "assault": 37,
+   "burglary": 37,
+   "theft": 108
+  },
+  "Ringwood East": {
+   "total": 636,
+   "assault": 89,
+   "robbery": 9,
+   "burglary": 56,
+   "theft": 203
+  },
+  "Croydon": {
+   "total": 2258,
+   "assault": 277,
+   "robbery": 16,
+   "burglary": 115,
+   "theft": 693
+  },
+  "Croydon Hills": {
+   "total": 83,
+   "assault": 14,
+   "robbery": 1,
+   "burglary": 4,
+   "theft": 17
+  },
+  "Croydon North": {
+   "total": 236,
+   "assault": 47,
+   "robbery": 2,
+   "burglary": 9,
+   "theft": 60
+  },
+  "Croydon South": {
+   "total": 217,
+   "assault": 24,
+   "burglary": 7,
+   "theft": 56
+  },
+  "Kilsyth": {
+   "total": 665,
+   "assault": 69,
+   "burglary": 31,
+   "theft": 198
+  },
+  "Kilsyth South": {
+   "total": 132,
+   "assault": 11,
+   "burglary": 19,
+   "theft": 38
+  },
+  "Bayswater North": {
+   "total": 864,
+   "assault": 90,
+   "robbery": 3,
+   "burglary": 34,
+   "theft": 370
+  },
+  "Carlton": {
+   "total": 3174,
+   "assault": 196,
+   "burglary": 268,
+   "theft": 1610,
+   "robbery": 28
+  },
+  "Melbourne": {
+   "total": 25139,
+   "assault": 2407,
+   "robbery": 211,
+   "burglary": 1170,
+   "theft": 9416
+  },
+  "East Melbourne": {
+   "total": 1149,
+   "assault": 70,
+   "robbery": 4,
+   "burglary": 96,
+   "theft": 563
+  },
+  "West Melbourne": {
+   "total": 1607,
+   "assault": 118,
+   "robbery": 10,
+   "burglary": 138,
+   "theft": 633
+  },
+  "South Wharf": {
+   "total": 370,
+   "assault": 22,
+   "robbery": 1,
+   "burglary": 22,
+   "theft": 260
+  },
+  "Southbank": {
+   "total": 4612,
+   "assault": 360,
+   "robbery": 28,
+   "burglary": 223,
+   "theft": 2411
+  },
+  "Docklands": {
+   "total": 4011,
+   "assault": 424,
+   "robbery": 46,
+   "burglary": 204,
+   "theft": 1573
+  },
+  "Flemington": {
+   "total": 1454,
+   "assault": 128,
+   "robbery": 8,
+   "burglary": 45,
+   "theft": 677
+  },
+  "Kensington": {
+   "total": 1376,
+   "assault": 80,
+   "burglary": 102,
+   "theft": 733
+  },
+  "North Melbourne": {
+   "total": 2471,
+   "assault": 158,
+   "robbery": 11,
+   "burglary": 192,
+   "theft": 1242
+  },
+  "Parkville": {
+   "total": 1106,
+   "assault": 62,
+   "robbery": 2,
+   "burglary": 67,
+   "theft": 593
+  },
+  "Carlton North": {
+   "total": 479,
+   "assault": 14,
+   "theft": 264,
+   "robbery": 1,
+   "burglary": 57
+  },
+  "South Yarra": {
+   "total": 3312,
+   "assault": 242,
+   "robbery": 17,
+   "burglary": 317,
+   "theft": 1562
+  },
+  "Port Melbourne": {
+   "total": 2908,
+   "assault": 158,
+   "burglary": 228,
+   "theft": 1417,
+   "robbery": 20
+  },
+  "Burnside": {
+   "total": 349,
+   "assault": 13,
+   "robbery": 1,
+   "burglary": 26,
+   "theft": 215
+  },
+  "Burnside Heights": {
+   "total": 161,
+   "assault": 19,
+   "burglary": 6,
+   "theft": 56
+  },
+  "Caroline Springs": {
+   "total": 1270,
+   "assault": 140,
+   "robbery": 10,
+   "burglary": 55,
+   "theft": 504
+  },
+  "Ravenhall": {
+   "total": 724,
+   "assault": 15,
+   "robbery": 2,
+   "burglary": 52,
+   "theft": 425
+  },
+  "Mount Cottrell": {
+   "total": 224,
+   "robbery": 1,
+   "burglary": 10,
+   "theft": 127,
+   "assault": 5
+  },
+  "Truganina": {
+   "total": 3196,
+   "assault": 229,
+   "robbery": 9,
+   "burglary": 282,
+   "theft": 1605
+  },
+  "Taylors Hill": {
+   "total": 505,
+   "assault": 34,
+   "robbery": 5,
+   "burglary": 16,
+   "theft": 152
+  },
+  "Bonnie Brook": {
+   "total": 485,
+   "assault": 49,
+   "robbery": 3,
+   "burglary": 49,
+   "theft": 182
+  },
+  "Grangefields": {
+   "total": 435,
+   "burglary": 3,
+   "theft": 420
+  },
+  "Plumpton": {
+   "total": 17,
+   "assault": 1,
+   "burglary": 1,
+   "theft": 6
+  },
+  "Rockbank": {
+   "total": 767,
+   "assault": 57,
+   "robbery": 1,
+   "burglary": 37,
+   "theft": 458
+  },
+  "Thornhill Park": {
+   "total": 672,
+   "assault": 51,
+   "robbery": 3,
+   "burglary": 33,
+   "theft": 375
+  },
+  "Aintree": {
+   "total": 422,
+   "assault": 45,
+   "robbery": 1,
+   "burglary": 35,
+   "theft": 178
+  },
+  "Deanside": {
+   "total": 361,
+   "assault": 36,
+   "robbery": 1,
+   "burglary": 37,
+   "theft": 181
+  },
+  "Fraser Rise": {
+   "total": 695,
+   "assault": 58,
+   "robbery": 2,
+   "burglary": 52,
+   "theft": 302
+  },
+  "Harkness": {
+   "total": 623,
+   "assault": 81,
+   "robbery": 2,
+   "burglary": 27,
+   "theft": 127
+  },
+  "Kurunjang": {
+   "total": 590,
+   "assault": 75,
+   "robbery": 3,
+   "burglary": 33,
+   "theft": 128
+  },
+  "Melton": {
+   "total": 2082,
+   "assault": 154,
+   "robbery": 15,
+   "burglary": 108,
+   "theft": 718
+  },
+  "Melton West": {
+   "total": 1131,
+   "assault": 115,
+   "robbery": 15,
+   "burglary": 54,
+   "theft": 441
+  },
+  "Toolern Vale": {
+   "total": 98,
+   "assault": 6,
+   "burglary": 7,
+   "theft": 39
+  },
+  "Brookfield": {
+   "total": 500,
+   "assault": 57,
+   "robbery": 1,
+   "burglary": 23,
+   "theft": 115
+  },
+  "Cobblebank": {
+   "total": 276,
+   "assault": 27,
+   "robbery": 2,
+   "burglary": 9,
+   "theft": 105
+  },
+  "Exford": {
+   "total": 24,
+   "assault": 3,
+   "burglary": 2,
+   "theft": 8
+  },
+  "Eynesbury": {
+   "total": 434,
+   "assault": 20,
+   "burglary": 30,
+   "theft": 192
+  },
+  "Melton South": {
+   "total": 1501,
+   "assault": 201,
+   "robbery": 14,
+   "burglary": 104,
+   "theft": 456
+  },
+  "Strathtulloh": {
+   "total": 489,
+   "assault": 54,
+   "robbery": 3,
+   "burglary": 36,
+   "theft": 237
+  },
+  "Weir Views": {
+   "total": 508,
+   "assault": 55,
+   "robbery": 2,
+   "burglary": 24,
+   "theft": 211
+  },
+  "Parwan": {
+   "total": 8,
+   "burglary": 1,
+   "theft": 7
+  },
+  "Gowanbrae": {
+   "total": 65,
+   "assault": 3,
+   "robbery": 1,
+   "theft": 28
+  },
+  "Pascoe Vale": {
+   "total": 1076,
+   "assault": 70,
+   "robbery": 6,
+   "burglary": 94,
+   "theft": 462
+  },
+  "Pascoe Vale South": {
+   "total": 549,
+   "assault": 43,
+   "burglary": 49,
+   "theft": 287
+  },
+  "Glenroy": {
+   "total": 2202,
+   "assault": 211,
+   "robbery": 9,
+   "burglary": 121,
+   "theft": 841
+  },
+  "Hadfield": {
+   "total": 581,
+   "assault": 44,
+   "robbery": 2,
+   "burglary": 21,
+   "theft": 209
+  },
+  "Oak Park": {
+   "total": 316,
+   "assault": 28,
+   "robbery": 1,
+   "burglary": 13,
+   "theft": 133
+  },
+  "Brunswick West": {
+   "total": 1320,
+   "assault": 78,
+   "burglary": 94,
+   "theft": 694
+  },
+  "Brunswick": {
+   "total": 2611,
+   "assault": 189,
+   "robbery": 11,
+   "burglary": 212,
+   "theft": 1314
+  },
+  "Brunswick East": {
+   "total": 1037,
+   "theft": 592,
+   "assault": 52,
+   "robbery": 3,
+   "burglary": 125
+  },
+  "Coburg": {
+   "total": 2339,
+   "assault": 178,
+   "robbery": 10,
+   "burglary": 175,
+   "theft": 1142
+  },
+  "Coburg North": {
+   "total": 1066,
+   "assault": 85,
+   "robbery": 7,
+   "burglary": 114,
+   "theft": 454
+  },
+  "Fitzroy North": {
+   "total": 1271,
+   "assault": 48,
+   "burglary": 142,
+   "theft": 652,
+   "robbery": 10
+  },
+  "Burwood": {
+   "total": 968,
+   "assault": 64,
+   "robbery": 11,
+   "burglary": 92,
+   "theft": 422
+  },
+  "Ashwood": {
+   "total": 664,
+   "assault": 40,
+   "robbery": 5,
+   "burglary": 39,
+   "theft": 290
+  },
+  "Chadstone": {
+   "total": 1159,
+   "assault": 64,
+   "robbery": 9,
+   "burglary": 55,
+   "theft": 537
+  },
+  "Mount Waverley": {
+   "total": 1847,
+   "assault": 116,
+   "robbery": 8,
+   "burglary": 175,
+   "theft": 859
+  },
+  "Glen Waverley": {
+   "total": 2870,
+   "assault": 206,
+   "robbery": 24,
+   "burglary": 253,
+   "theft": 1388
+  },
+  "Wheelers Hill": {
+   "total": 785,
+   "assault": 54,
+   "burglary": 87,
+   "theft": 308
+  },
+  "Hughesdale": {
+   "total": 390,
+   "assault": 31,
+   "robbery": 7,
+   "burglary": 34,
+   "theft": 184
+  },
+  "Huntingdale": {
+   "total": 196,
+   "assault": 13,
+   "robbery": 1,
+   "burglary": 19,
+   "theft": 94
+  },
+  "Oakleigh": {
+   "total": 1971,
+   "assault": 118,
+   "robbery": 15,
+   "burglary": 103,
+   "theft": 863
+  },
+  "Oakleigh East": {
+   "total": 343,
+   "assault": 26,
+   "burglary": 21,
+   "theft": 158
+  },
+  "Clayton": {
+   "total": 2298,
+   "assault": 121,
+   "robbery": 8,
+   "burglary": 147,
+   "theft": 1347
+  },
+  "Notting Hill": {
+   "total": 285,
+   "assault": 21,
+   "robbery": 3,
+   "burglary": 17,
+   "theft": 155
+  },
+  "Mulgrave": {
+   "total": 1629,
+   "assault": 85,
+   "robbery": 5,
+   "burglary": 120,
+   "theft": 841
+  },
+  "Ascot Vale": {
+   "total": 1923,
+   "assault": 141,
+   "robbery": 9,
+   "burglary": 97,
+   "theft": 936
+  },
+  "Travancore": {
+   "total": 162,
+   "assault": 6,
+   "burglary": 16,
+   "theft": 100
+  },
+  "Avondale Heights": {
+   "total": 539,
+   "assault": 39,
+   "burglary": 22,
+   "theft": 160
+  },
+  "Moonee Ponds": {
+   "total": 1601,
+   "assault": 85,
+   "robbery": 4,
+   "burglary": 134,
+   "theft": 812
+  },
+  "Aberfeldie": {
+   "total": 176,
+   "assault": 5,
+   "burglary": 16,
+   "theft": 74
+  },
+  "Essendon": {
+   "total": 1365,
+   "assault": 80,
+   "robbery": 7,
+   "burglary": 84,
+   "theft": 673
+  },
+  "Essendon West": {
+   "total": 62,
+   "assault": 2,
+   "burglary": 4,
+   "theft": 26
+  },
+  "Essendon Fields": {
+   "total": 311,
+   "assault": 10,
+   "robbery": 1,
+   "burglary": 9,
+   "theft": 226
+  },
+  "Essendon North": {
+   "total": 322,
+   "assault": 23,
+   "robbery": 2,
+   "burglary": 12,
+   "theft": 93
+  },
+  "Strathmore": {
+   "total": 374,
+   "assault": 25,
+   "robbery": 1,
+   "burglary": 20,
+   "theft": 174
+  },
+  "Strathmore Heights": {
+   "total": 33,
+   "assault": 4,
+   "burglary": 3,
+   "theft": 12
+  },
+  "Airport West": {
+   "total": 1090,
+   "assault": 63,
+   "robbery": 3,
+   "burglary": 37,
+   "theft": 583
+  },
+  "Niddrie": {
+   "total": 260,
+   "assault": 18,
+   "robbery": 5,
+   "burglary": 16,
+   "theft": 110
+  },
+  "Baxter": {
+   "total": 351,
+   "assault": 25,
+   "burglary": 14,
+   "theft": 162
+  },
+  "Somerville": {
+   "total": 594,
+   "assault": 52,
+   "robbery": 6,
+   "burglary": 33,
+   "theft": 218
+  },
+  "Tyabb": {
+   "total": 168,
+   "assault": 14,
+   "burglary": 12,
+   "theft": 47
+  },
+  "Hastings": {
+   "total": 1698,
+   "assault": 143,
+   "robbery": 8,
+   "burglary": 111,
+   "theft": 574
+  },
+  "Tuerong": {
+   "total": 32,
+   "assault": 3,
+   "burglary": 3,
+   "theft": 21
+  },
+  "Merricks": {
+   "total": 4,
+   "burglary": 2,
+   "theft": 1
+  },
+  "Point Leo": {
+   "total": 6,
+   "assault": 3,
+   "burglary": 1,
+   "theft": 2
+  },
+  "Shoreham": {
+   "total": 15,
+   "assault": 1,
+   "burglary": 2,
+   "theft": 7
+  },
+  "Bittern": {
+   "total": 169,
+   "assault": 10,
+   "burglary": 12,
+   "theft": 43
+  },
+  "Crib Point": {
+   "total": 221,
+   "assault": 35,
+   "burglary": 4,
+   "theft": 49
+  },
+  "Hmas Cerberus": {
+   "total": 12,
+   "assault": 1,
+   "burglary": 1,
+   "theft": 1
+  },
+  "Balnarring": {
+   "total": 119,
+   "assault": 1,
+   "burglary": 12,
+   "theft": 77
+  },
+  "Balnarring Beach": {
+   "total": 16,
+   "assault": 1,
+   "burglary": 3,
+   "theft": 12
+  },
+  "Merricks Beach": {
+   "total": 12,
+   "assault": 1,
+   "burglary": 3,
+   "theft": 6
+  },
+  "Merricks North": {
+   "total": 29,
+   "assault": 2,
+   "burglary": 3,
+   "theft": 10
+  },
+  "Somers": {
+   "total": 69,
+   "assault": 2,
+   "burglary": 9,
+   "theft": 35
+  },
+  "Main Ridge": {
+   "total": 14,
+   "burglary": 8,
+   "theft": 4
+  },
+  "Flinders": {
+   "total": 69,
+   "assault": 2,
+   "burglary": 10,
+   "theft": 47
+  },
+  "Mount Eliza": {
+   "total": 504,
+   "assault": 21,
+   "robbery": 1,
+   "burglary": 55,
+   "theft": 221
+  },
+  "Mornington": {
+   "total": 1659,
+   "assault": 163,
+   "robbery": 9,
+   "burglary": 119,
+   "theft": 606
+  },
+  "Moorooduc": {
+   "total": 114,
+   "assault": 6,
+   "robbery": 1,
+   "burglary": 8,
+   "theft": 33
+  },
+  "Mount Martha": {
+   "total": 424,
+   "assault": 31,
+   "robbery": 1,
+   "burglary": 41,
+   "theft": 129
+  },
+  "Arthurs Seat": {
+   "total": 22,
+   "burglary": 13,
+   "theft": 4
+  },
+  "Dromana": {
+   "total": 723,
+   "assault": 46,
+   "robbery": 2,
+   "burglary": 85,
+   "theft": 174
+  },
+  "Safety Beach": {
+   "total": 361,
+   "assault": 32,
+   "burglary": 23,
+   "theft": 114
+  },
+  "Red Hill": {
+   "total": 29,
+   "assault": 5,
+   "burglary": 4,
+   "theft": 7
+  },
+  "Red Hill South": {
+   "total": 11,
+   "burglary": 7,
+   "theft": 3
+  },
+  "McCrae": {
+   "total": 212,
+   "assault": 14,
+   "burglary": 33,
+   "theft": 78
+  },
+  "Boneo": {
+   "total": 28,
+   "assault": 4,
+   "burglary": 1,
+   "theft": 6
+  },
+  "Cape Schanck": {
+   "total": 7,
+   "assault": 1,
+   "burglary": 2
+  },
+  "Fingal": {
+   "total": 23,
+   "assault": 4,
+   "burglary": 4,
+   "theft": 6
+  },
+  "Rosebud": {
+   "total": 2054,
+   "assault": 141,
+   "robbery": 3,
+   "burglary": 126,
+   "theft": 666
+  },
+  "Capel Sound": {
+   "total": 485,
+   "assault": 44,
+   "robbery": 1,
+   "burglary": 35,
+   "theft": 55
+  },
+  "Rye": {
+   "total": 632,
+   "assault": 72,
+   "robbery": 2,
+   "burglary": 52,
+   "theft": 134
+  },
+  "St Andrews Beach": {
+   "total": 12,
+   "assault": 1,
+   "burglary": 2,
+   "theft": 4
+  },
+  "Tootgarook": {
+   "total": 228,
+   "assault": 21,
+   "burglary": 26,
+   "theft": 47
+  },
+  "Blairgowrie": {
+   "total": 100,
+   "assault": 13,
+   "burglary": 12,
+   "theft": 23
+  },
+  "Sorrento": {
+   "total": 142,
+   "assault": 19,
+   "robbery": 1,
+   "burglary": 24,
+   "theft": 42
+  },
+  "Portsea": {
+   "total": 38,
+   "assault": 7,
+   "burglary": 7,
+   "theft": 10
+  },
+  "Diamond Creek": {
+   "total": 493,
+   "assault": 41,
+   "robbery": 1,
+   "burglary": 44,
+   "theft": 162
+  },
+  "Plenty": {
+   "total": 126,
+   "assault": 6,
+   "robbery": 1,
+   "burglary": 19,
+   "theft": 59
+  },
+  "Yarrambat": {
+   "total": 101,
+   "assault": 6,
+   "burglary": 9,
+   "theft": 17
+  },
+  "Research": {
+   "total": 67,
+   "assault": 7,
+   "burglary": 7,
+   "theft": 23
+  },
+  "Wattle Glen": {
+   "total": 26,
+   "assault": 1,
+   "theft": 7
+  },
+  "Kangaroo Ground": {
+   "total": 65,
+   "assault": 5,
+   "robbery": 1,
+   "burglary": 8,
+   "theft": 21
+  },
+  "Watsons Creek": {
+   "total": 12,
+   "burglary": 1,
+   "theft": 4
+  },
+  "Arthurs Creek": {
+   "total": 9,
+   "assault": 2,
+   "burglary": 1,
+   "theft": 2
+  },
+  "Cottles Bridge": {
+   "total": 9,
+   "theft": 3
+  },
+  "Hurstbridge": {
+   "total": 64,
+   "assault": 7,
+   "burglary": 8,
+   "theft": 19
+  },
+  "Nutfield": {
+   "total": 9,
+   "assault": 2
+  },
+  "Strathewen": {
+   "total": 4,
+   "assault": 1,
+   "theft": 1
+  },
+  "North Warrandyte": {
+   "total": 45,
+   "assault": 3,
+   "burglary": 4,
+   "theft": 12
+  },
+  "Doreen": {
+   "total": 1132,
+   "assault": 106,
+   "burglary": 35,
+   "theft": 299,
+   "robbery": 5
+  },
+  "Kinglake West": {
+   "total": 5,
+   "theft": 2,
+   "assault": 1
+  },
+  "Panton Hill": {
+   "total": 24,
+   "assault": 3,
+   "burglary": 4,
+   "theft": 7
+  },
+  "Smiths Gully": {
+   "total": 6,
+   "burglary": 2,
+   "theft": 1
+  },
+  "St Andrews": {
+   "total": 16,
+   "assault": 2,
+   "burglary": 1,
+   "theft": 3
+  },
+  "Kinglake": {
+   "total": 6,
+   "burglary": 1,
+   "theft": 4
+  },
+  "Christmas Hills": {
+   "total": 19,
+   "assault": 2,
+   "theft": 3
+  },
+  "Windsor": {
+   "total": 1463,
+   "assault": 133,
+   "robbery": 5,
+   "burglary": 126,
+   "theft": 627
+  },
+  "St Kilda": {
+   "total": 4638,
+   "assault": 414,
+   "robbery": 32,
+   "burglary": 368,
+   "theft": 1869
+  },
+  "St Kilda West": {
+   "total": 250,
+   "assault": 8,
+   "robbery": 2,
+   "burglary": 19,
+   "theft": 111
+  },
+  "Balaclava": {
+   "total": 1057,
+   "assault": 63,
+   "robbery": 2,
+   "burglary": 45,
+   "theft": 682
+  },
+  "Elwood": {
+   "total": 1060,
+   "assault": 66,
+   "robbery": 2,
+   "burglary": 91,
+   "theft": 580
+  },
+  "Ripponlea": {
+   "total": 97,
+   "assault": 5,
+   "burglary": 8,
+   "theft": 50
+  },
+  "South Melbourne": {
+   "total": 3577,
+   "assault": 250,
+   "robbery": 18,
+   "burglary": 246,
+   "theft": 1796
+  },
+  "Albert Park": {
+   "total": 676,
+   "assault": 30,
+   "robbery": 1,
+   "burglary": 67,
+   "theft": 391
+  },
+  "Middle Park": {
+   "total": 304,
+   "assault": 10,
+   "robbery": 2,
+   "burglary": 34,
+   "theft": 199
+  },
+  "Toorak": {
+   "total": 972,
+   "assault": 54,
+   "robbery": 1,
+   "burglary": 117,
+   "theft": 520
+  },
+  "Armadale": {
+   "total": 758,
+   "assault": 35,
+   "burglary": 111,
+   "theft": 398
+  },
+  "Malvern": {
+   "total": 779,
+   "assault": 53,
+   "theft": 402,
+   "robbery": 4,
+   "burglary": 91
+  },
+  "Kooyong": {
+   "total": 78,
+   "assault": 4,
+   "burglary": 4,
+   "theft": 29
+  },
+  "Malvern East": {
+   "total": 2803,
+   "assault": 133,
+   "robbery": 17,
+   "burglary": 172,
+   "theft": 1683
+  },
+  "Prahran": {
+   "total": 2844,
+   "assault": 208,
+   "robbery": 15,
+   "burglary": 247,
+   "theft": 1302
+  },
+  "Box Hill": {
+   "total": 2530,
+   "assault": 191,
+   "robbery": 17,
+   "burglary": 150,
+   "theft": 1066
+  },
+  "Box Hill South": {
+   "total": 659,
+   "assault": 44,
+   "robbery": 1,
+   "burglary": 65,
+   "theft": 317
+  },
+  "Box Hill North": {
+   "total": 384,
+   "assault": 29,
+   "robbery": 3,
+   "burglary": 53,
+   "theft": 161
+  },
+  "Mont Albert North": {
+   "total": 197,
+   "assault": 18,
+   "burglary": 39,
+   "theft": 64
+  },
+  "Blackburn": {
+   "total": 925,
+   "assault": 68,
+   "robbery": 3,
+   "burglary": 95,
+   "theft": 419
+  },
+  "Blackburn North": {
+   "total": 235,
+   "assault": 19,
+   "burglary": 30,
+   "theft": 109
+  },
+  "Blackburn South": {
+   "total": 407,
+   "assault": 31,
+   "burglary": 30,
+   "theft": 197
+  },
+  "Forest Hill": {
+   "total": 872,
+   "assault": 62,
+   "robbery": 3,
+   "burglary": 57,
+   "theft": 428
+  },
+  "Mitcham": {
+   "total": 891,
+   "assault": 68,
+   "robbery": 2,
+   "burglary": 75,
+   "theft": 455
+  },
+  "Vermont South": {
+   "total": 693,
+   "assault": 53,
+   "burglary": 46,
+   "theft": 316
+  },
+  "Burwood East": {
+   "total": 877,
+   "assault": 58,
+   "robbery": 2,
+   "burglary": 78,
+   "theft": 451
+  },
+  "Donnybrook": {
+   "total": 629,
+   "assault": 71,
+   "robbery": 2,
+   "burglary": 45,
+   "theft": 259
+  },
+  "Thomastown": {
+   "total": 2361,
+   "assault": 165,
+   "robbery": 7,
+   "burglary": 158,
+   "theft": 1047
+  },
+  "Lalor": {
+   "total": 1661,
+   "assault": 120,
+   "robbery": 6,
+   "burglary": 116,
+   "theft": 622
+  },
+  "Epping": {
+   "total": 4334,
+   "assault": 337,
+   "robbery": 19,
+   "burglary": 182,
+   "theft": 2018
+  },
+  "Mill Park": {
+   "total": 1969,
+   "assault": 133,
+   "robbery": 6,
+   "burglary": 98,
+   "theft": 684
+  },
+  "Wollert": {
+   "total": 1429,
+   "assault": 143,
+   "robbery": 1,
+   "burglary": 110,
+   "theft": 550
+  },
+  "Woodstock": {
+   "total": 27,
+   "burglary": 3,
+   "theft": 9
+  },
+  "South Morang": {
+   "total": 1265,
+   "assault": 117,
+   "robbery": 13,
+   "burglary": 68,
+   "theft": 512
+  },
+  "Beveridge": {
+   "total": 40,
+   "assault": 4,
+   "burglary": 1,
+   "theft": 13
+  },
+  "Mernda": {
+   "total": 1480,
+   "assault": 141,
+   "robbery": 6,
+   "burglary": 45,
+   "theft": 511
+  },
+  "Yan Yean": {
+   "total": 42,
+   "assault": 1,
+   "robbery": 1,
+   "burglary": 6,
+   "theft": 9
+  },
+  "Eden Park": {
+   "total": 22,
+   "assault": 1,
+   "burglary": 3,
+   "theft": 10
+  },
+  "Humevale": {
+   "total": 6,
+   "burglary": 1,
+   "theft": 2
+  },
+  "Whittlesea": {
+   "total": 399,
+   "assault": 39,
+   "robbery": 1,
+   "burglary": 25,
+   "theft": 83
+  },
+  "Mambourin": {
+   "total": 358,
+   "assault": 34,
+   "robbery": 2,
+   "burglary": 35,
+   "theft": 207
+  },
+  "Manor Lakes": {
+   "total": 944,
+   "assault": 85,
+   "robbery": 7,
+   "burglary": 51,
+   "theft": 447
+  },
+  "Wyndham Vale": {
+   "total": 1751,
+   "assault": 191,
+   "robbery": 12,
+   "burglary": 136,
+   "theft": 568
+  },
+  "Laverton North": {
+   "total": 881,
+   "assault": 25,
+   "robbery": 5,
+   "burglary": 80,
+   "theft": 599
+  },
+  "Williams Landing": {
+   "total": 661,
+   "assault": 39,
+   "robbery": 4,
+   "burglary": 47,
+   "theft": 364
+  },
+  "Hoppers Crossing": {
+   "total": 3903,
+   "assault": 286,
+   "robbery": 16,
+   "burglary": 231,
+   "theft": 2025
+  },
+  "Tarneit": {
+   "total": 4707,
+   "assault": 413,
+   "robbery": 41,
+   "burglary": 347,
+   "theft": 2316
+  },
+  "Cocoroc": {
+   "total": 23,
+   "assault": 1,
+   "burglary": 5,
+   "theft": 8
+  },
+  "Point Cook": {
+   "total": 2706,
+   "assault": 226,
+   "robbery": 33,
+   "burglary": 244,
+   "theft": 1186
+  },
+  "Quandong": {
+   "total": 9,
+   "burglary": 1,
+   "theft": 6
+  },
+  "Werribee": {
+   "total": 5348,
+   "assault": 505,
+   "robbery": 26,
+   "burglary": 378,
+   "theft": 1824
+  },
+  "Werribee South": {
+   "total": 248,
+   "assault": 20,
+   "robbery": 1,
+   "burglary": 14,
+   "theft": 106
+  },
+  "Little River": {
+   "total": 70,
+   "assault": 10,
+   "burglary": 6,
+   "theft": 28
+  },
+  "Princes Hill": {
+   "total": 252,
+   "assault": 18,
+   "robbery": 4,
+   "burglary": 17,
+   "theft": 132
+  },
+  "Fitzroy": {
+   "total": 2958,
+   "assault": 266,
+   "robbery": 16,
+   "burglary": 215,
+   "theft": 1369
+  },
+  "Clifton Hill": {
+   "total": 628,
+   "theft": 383,
+   "assault": 28,
+   "robbery": 2,
+   "burglary": 48
+  },
+  "Collingwood": {
+   "total": 2667,
+   "assault": 239,
+   "robbery": 19,
+   "burglary": 212,
+   "theft": 1134
+  },
+  "Abbotsford": {
+   "total": 1676,
+   "assault": 89,
+   "robbery": 9,
+   "burglary": 152,
+   "theft": 812
+  },
+  "Burnley": {
+   "total": 217,
+   "assault": 17,
+   "burglary": 12,
+   "theft": 78
+  },
+  "Cremorne": {
+   "total": 494,
+   "assault": 13,
+   "robbery": 2,
+   "burglary": 54,
+   "theft": 209
+  },
+  "Richmond": {
+   "total": 5039,
+   "assault": 377,
+   "robbery": 22,
+   "burglary": 447,
+   "theft": 2355
+  },
+  "Chirnside Park": {
+   "total": 852,
+   "assault": 85,
+   "robbery": 4,
+   "burglary": 24,
+   "theft": 425
+  },
+  "Mooroolbark": {
+   "total": 1073,
+   "assault": 166,
+   "robbery": 11,
+   "burglary": 46,
+   "theft": 268
+  },
+  "Beenak": {
+   "total": 1,
+   "theft": 1
+  },
+  "Don Valley": {
+   "total": 29,
+   "assault": 3,
+   "theft": 3
+  },
+  "Hoddles Creek": {
+   "total": 31,
+   "assault": 2,
+   "burglary": 3,
+   "theft": 1
+  },
+  "Launching Place": {
+   "total": 132,
+   "assault": 17,
+   "burglary": 6,
+   "theft": 23
+  },
+  "Seville": {
+   "total": 129,
+   "assault": 7,
+   "burglary": 3,
+   "theft": 50
+  },
+  "Seville East": {
+   "total": 17,
+   "assault": 1,
+   "burglary": 1,
+   "theft": 5
+  },
+  "Wandin East": {
+   "total": 9,
+   "burglary": 2,
+   "theft": 3
+  },
+  "Wandin North": {
+   "total": 115,
+   "assault": 10,
+   "burglary": 9,
+   "theft": 38
+  },
+  "Woori Yallock": {
+   "total": 112,
+   "assault": 14,
+   "burglary": 3,
+   "theft": 30
+  },
+  "Yellingbo": {
+   "total": 14,
+   "assault": 2,
+   "burglary": 3,
+   "theft": 6
+  },
+  "Lilydale": {
+   "total": 1551,
+   "assault": 150,
+   "robbery": 19,
+   "burglary": 57,
+   "theft": 548
+  },
+  "Upwey": {
+   "total": 183,
+   "assault": 19,
+   "burglary": 7,
+   "theft": 87
+  },
+  "Selby": {
+   "total": 42,
+   "assault": 5,
+   "burglary": 3,
+   "theft": 7
+  },
+  "Belgrave": {
+   "total": 257,
+   "assault": 18,
+   "burglary": 11,
+   "theft": 90
+  },
+  "Belgrave Heights": {
+   "total": 28,
+   "assault": 4,
+   "burglary": 2,
+   "theft": 5
+  },
+  "Belgrave South": {
+   "total": 64,
+   "assault": 6,
+   "burglary": 6,
+   "theft": 14
+  },
+  "Tecoma": {
+   "total": 59,
+   "assault": 5,
+   "burglary": 1,
+   "theft": 28
+  },
+  "Matlock": {
+   "total": 1,
+   "burglary": 1
+  },
+  "Montrose": {
+   "total": 297,
+   "assault": 25,
+   "burglary": 10,
+   "theft": 79
+  },
+  "Kalorama": {
+   "total": 41,
+   "assault": 4,
+   "burglary": 4,
+   "theft": 14
+  },
+  "Mount Dandenong": {
+   "total": 46,
+   "assault": 4,
+   "burglary": 9,
+   "theft": 8
+  },
+  "Coldstream": {
+   "total": 123,
+   "assault": 14,
+   "robbery": 1,
+   "burglary": 4,
+   "theft": 35
+  },
+  "Gruyere": {
+   "total": 48,
+   "assault": 1,
+   "burglary": 5,
+   "theft": 10
+  },
+  "Yering": {
+   "total": 10,
+   "assault": 1,
+   "burglary": 1
+  },
+  "Dixons Creek": {
+   "total": 9,
+   "assault": 2,
+   "theft": 1
+  },
+  "Steels Creek": {
+   "total": 6,
+   "theft": 1
+  },
+  "Tarrawarra": {
+   "total": 2
+  },
+  "Yarra Glen": {
+   "total": 110,
+   "assault": 12,
+   "burglary": 9,
+   "theft": 40
+  },
+  "Badger Creek": {
+   "total": 79,
+   "assault": 16,
+   "burglary": 1,
+   "theft": 10
+  },
+  "Chum Creek": {
+   "total": 16,
+   "assault": 1,
+   "burglary": 2
+  },
+  "Healesville": {
+   "total": 449,
+   "assault": 59,
+   "burglary": 20,
+   "theft": 128
+  },
+  "Mount Toolebewong": {
+   "total": 2,
+   "assault": 1,
+   "theft": 1
+  },
+  "Toolangi": {
+   "total": 2,
+   "theft": 2
+  },
+  "Fernshaw": {
+   "total": 2,
+   "theft": 1
+  },
+  "Cambarville": {
+   "total": 8,
+   "assault": 1,
+   "burglary": 1,
+   "theft": 3
+  },
+  "Macclesfield": {
+   "total": 8,
+   "burglary": 2
+  },
+  "Tremont": {
+   "total": 6,
+   "burglary": 1,
+   "theft": 3
+  },
+  "Ferny Creek": {
+   "total": 65,
+   "assault": 2,
+   "burglary": 5,
+   "theft": 11
+  },
+  "Sassafras": {
+   "total": 36,
+   "assault": 2,
+   "burglary": 5,
+   "theft": 5
+  },
+  "Olinda": {
+   "total": 97,
+   "assault": 5,
+   "burglary": 20,
+   "theft": 27
+  },
+  "Sherbrooke": {
+   "total": 21,
+   "burglary": 2,
+   "theft": 7
+  },
+  "Kallista": {
+   "total": 41,
+   "assault": 1,
+   "burglary": 5,
+   "theft": 11
+  },
+  "The Patch": {
+   "total": 12,
+   "assault": 3,
+   "burglary": 1,
+   "theft": 2
+  },
+  "Monbulk": {
+   "total": 125,
+   "assault": 13,
+   "burglary": 9,
+   "theft": 32
+  },
+  "Silvan": {
+   "total": 50,
+   "assault": 10,
+   "burglary": 1,
+   "theft": 7
+  },
+  "Mount Evelyn": {
+   "total": 316,
+   "assault": 34,
+   "robbery": 3,
+   "burglary": 14,
+   "theft": 66
+  },
+  "Gladysdale": {
+   "total": 17,
+   "assault": 3,
+   "theft": 5
+  },
+  "Powelltown": {
+   "total": 9,
+   "assault": 3
+  },
+  "Three Bridges": {
+   "total": 14,
+   "assault": 2,
+   "theft": 3
+  },
+  "Yarra Junction": {
+   "total": 179,
+   "assault": 27,
+   "burglary": 3,
+   "theft": 24
+  },
+  "Big Pats Creek": {
+   "total": 3
+  },
+  "East Warburton": {
+   "total": 54,
+   "assault": 7,
+   "burglary": 2,
+   "theft": 7
+  },
+  "McMahons Creek": {
+   "total": 13,
+   "assault": 2,
+   "burglary": 1
+  },
+  "Millgrove": {
+   "total": 271,
+   "assault": 14,
+   "burglary": 9,
+   "theft": 86
+  },
+  "Reefton": {
+   "total": 10,
+   "assault": 2,
+   "burglary": 4,
+   "theft": 1
+  },
+  "Warburton": {
+   "total": 117,
+   "assault": 10,
+   "burglary": 9,
+   "theft": 41
+  },
+  "Wesburn": {
+   "total": 27,
+   "assault": 6,
+   "burglary": 4,
+   "theft": 2
+  },
+  "Narre Warren East": {
+   "total": 34,
+   "assault": 2,
+   "burglary": 6,
+   "theft": 5
+  }
+ },
+ "lga_of": {
+  "Ivanhoe": [
+   "Banyule"
+  ],
+  "Ivanhoe East": [
+   "Banyule"
+  ],
+  "Bellfield": [
+   "Banyule"
+  ],
+  "Heidelberg Heights": [
+   "Banyule"
+  ],
+  "Heidelberg West": [
+   "Banyule"
+  ],
+  "Bundoora": [
+   "Whittlesea",
+   "Darebin",
+   "Banyule"
+  ],
+  "Eaglemont": [
+   "Banyule"
+  ],
+  "Heidelberg": [
+   "Banyule"
+  ],
+  "Rosanna": [
+   "Banyule"
+  ],
+  "Viewbank": [
+   "Banyule"
+  ],
+  "Macleod": [
+   "Banyule",
+   "Darebin"
+  ],
+  "Yallambie": [
+   "Banyule"
+  ],
+  "Watsonia": [
+   "Banyule"
+  ],
+  "Watsonia North": [
+   "Banyule"
+  ],
+  "Briar Hill": [
+   "Banyule"
+  ],
+  "Greensborough": [
+   "Banyule",
+   "Nillumbik"
+  ],
+  "St Helena": [
+   "Banyule"
+  ],
+  "Lower Plenty": [
+   "Banyule"
+  ],
+  "Montmorency": [
+   "Banyule"
+  ],
+  "Eltham": [
+   "Nillumbik",
+   "Banyule"
+  ],
+  "Eltham North": [
+   "Nillumbik",
+   "Banyule"
+  ],
+  "Brighton": [
+   "Bayside"
+  ],
+  "Brighton East": [
+   "Bayside",
+   "Glen Eira"
+  ],
+  "Hampton": [
+   "Bayside"
+  ],
+  "Hampton East": [
+   "Bayside"
+  ],
+  "Highett": [
+   "Kingston",
+   "Bayside"
+  ],
+  "Sandringham": [
+   "Bayside"
+  ],
+  "Beaumaris": [
+   "Bayside"
+  ],
+  "Cheltenham": [
+   "Kingston",
+   "Bayside"
+  ],
+  "Black Rock": [
+   "Bayside"
+  ],
+  "Kew": [
+   "Boroondara"
+  ],
+  "Kew East": [
+   "Boroondara"
+  ],
+  "Balwyn": [
+   "Boroondara"
+  ],
+  "Canterbury": [
+   "Boroondara"
+  ],
+  "Deepdene": [
+   "Boroondara"
+  ],
+  "Balwyn North": [
+   "Boroondara",
+   "Whitehorse"
+  ],
+  "Hawthorn": [
+   "Boroondara"
+  ],
+  "Hawthorn East": [
+   "Boroondara"
+  ],
+  "Camberwell": [
+   "Boroondara"
+  ],
+  "Mont Albert": [
+   "Whitehorse",
+   "Boroondara"
+  ],
+  "Surrey Hills": [
+   "Boroondara",
+   "Whitehorse"
+  ],
+  "Glen Iris": [
+   "Boroondara",
+   "Stonnington"
+  ],
+  "Ashburton": [
+   "Boroondara"
+  ],
+  "Brooklyn": [
+   "Hobsons Bay",
+   "Brimbank"
+  ],
+  "Albion": [
+   "Brimbank"
+  ],
+  "St Albans": [
+   "Brimbank"
+  ],
+  "Sunshine": [
+   "Brimbank"
+  ],
+  "Sunshine North": [
+   "Brimbank"
+  ],
+  "Sunshine West": [
+   "Brimbank"
+  ],
+  "Albanvale": [
+   "Brimbank"
+  ],
+  "Kealba": [
+   "Brimbank"
+  ],
+  "Kings Park": [
+   "Brimbank"
+  ],
+  "Ardeer": [
+   "Brimbank"
+  ],
+  "Cairnlea": [
+   "Brimbank"
+  ],
+  "Deer Park": [
+   "Brimbank"
+  ],
+  "Derrimut": [
+   "Brimbank"
+  ],
+  "Keilor East": [
+   "Moonee Valley",
+   "Brimbank"
+  ],
+  "Keilor": [
+   "Brimbank",
+   "Hume"
+  ],
+  "Keilor North": [
+   "Brimbank"
+  ],
+  "Calder Park": [
+   "Brimbank"
+  ],
+  "Delahey": [
+   "Brimbank"
+  ],
+  "Hillside": [
+   "Melton",
+   "Brimbank"
+  ],
+  "Sydenham": [
+   "Brimbank"
+  ],
+  "Keilor Downs": [
+   "Brimbank"
+  ],
+  "Keilor Lodge": [
+   "Brimbank"
+  ],
+  "Taylors Lakes": [
+   "Brimbank"
+  ],
+  "Keilor Park": [
+   "Brimbank"
+  ],
+  "Tullamarine": [
+   "Hume",
+   "Brimbank",
+   "Merri-bek"
+  ],
+  "Menzies Creek": [
+   "Yarra Ranges",
+   "Cardinia"
+  ],
+  "Cockatoo": [
+   "Cardinia"
+  ],
+  "Mount Burnett": [
+   "Cardinia"
+  ],
+  "Nangana": [
+   "Cardinia"
+  ],
+  "Avonsleigh": [
+   "Cardinia"
+  ],
+  "Clematis": [
+   "Cardinia"
+  ],
+  "Emerald": [
+   "Cardinia",
+   "Yarra Ranges"
+  ],
+  "Gembrook": [
+   "Cardinia"
+  ],
+  "Beaconsfield": [
+   "Cardinia",
+   "Casey"
+  ],
+  "Guys Hill": [
+   "Cardinia"
+  ],
+  "Beaconsfield Upper": [
+   "Cardinia"
+  ],
+  "Dewhurst": [
+   "Cardinia"
+  ],
+  "Officer": [
+   "Cardinia"
+  ],
+  "Officer South": [
+   "Cardinia"
+  ],
+  "Pakenham": [
+   "Cardinia"
+  ],
+  "Pakenham South": [
+   "Cardinia"
+  ],
+  "Pakenham Upper": [
+   "Cardinia"
+  ],
+  "Rythdale": [
+   "Cardinia"
+  ],
+  "Maryknoll": [
+   "Cardinia"
+  ],
+  "Nar Nar Goon": [
+   "Cardinia"
+  ],
+  "Nar Nar Goon North": [
+   "Cardinia"
+  ],
+  "Tynong": [
+   "Cardinia"
+  ],
+  "Tynong North": [
+   "Cardinia"
+  ],
+  "Cora Lynn": [
+   "Cardinia"
+  ],
+  "Garfield": [
+   "Cardinia"
+  ],
+  "Garfield North": [
+   "Cardinia"
+  ],
+  "Vervale": [
+   "Cardinia"
+  ],
+  "Bunyip": [
+   "Cardinia"
+  ],
+  "Bunyip North": [
+   "Cardinia"
+  ],
+  "Iona": [
+   "Cardinia"
+  ],
+  "Longwarry": [
+   "Cardinia"
+  ],
+  "Modella": [
+   "Cardinia"
+  ],
+  "Cardinia": [
+   "Cardinia"
+  ],
+  "Bayles": [
+   "Cardinia"
+  ],
+  "Catani": [
+   "Cardinia"
+  ],
+  "Dalmore": [
+   "Cardinia"
+  ],
+  "Heath Hill": [
+   "Cardinia"
+  ],
+  "Koo Wee Rup": [
+   "Cardinia"
+  ],
+  "Koo Wee Rup North": [
+   "Cardinia"
+  ],
+  "Yannathan": [
+   "Cardinia"
+  ],
+  "Caldermeade": [
+   "Cardinia"
+  ],
+  "Lang Lang": [
+   "Cardinia"
+  ],
+  "Lang Lang East": [
+   "Cardinia"
+  ],
+  "Monomeith": [
+   "Cardinia"
+  ],
+  "Nyora": [
+   "Cardinia"
+  ],
+  "Lysterfield South": [
+   "Casey"
+  ],
+  "Doveton": [
+   "Casey"
+  ],
+  "Eumemmerring": [
+   "Casey"
+  ],
+  "Endeavour Hills": [
+   "Casey"
+  ],
+  "Hallam": [
+   "Casey"
+  ],
+  "Narre Warren North": [
+   "Casey"
+  ],
+  "Narre Warren": [
+   "Casey"
+  ],
+  "Narre Warren South": [
+   "Casey"
+  ],
+  "Berwick": [
+   "Casey"
+  ],
+  "Harkaway": [
+   "Casey"
+  ],
+  "Pearcedale": [
+   "Casey",
+   "Mornington Peninsula"
+  ],
+  "Lynbrook": [
+   "Casey"
+  ],
+  "Lyndhurst": [
+   "Casey",
+   "Greater Dandenong"
+  ],
+  "Hampton Park": [
+   "Casey"
+  ],
+  "Botanic Ridge": [
+   "Casey"
+  ],
+  "Cannons Creek": [
+   "Casey"
+  ],
+  "Cranbourne": [
+   "Casey"
+  ],
+  "Cranbourne East": [
+   "Casey"
+  ],
+  "Cranbourne North": [
+   "Casey"
+  ],
+  "Cranbourne South": [
+   "Casey"
+  ],
+  "Cranbourne West": [
+   "Casey"
+  ],
+  "Devon Meadows": [
+   "Casey"
+  ],
+  "Junction Village": [
+   "Casey"
+  ],
+  "Clyde": [
+   "Casey"
+  ],
+  "Clyde North": [
+   "Casey"
+  ],
+  "Blind Bight": [
+   "Casey"
+  ],
+  "Tooradin": [
+   "Casey"
+  ],
+  "Warneet": [
+   "Casey"
+  ],
+  "Northcote": [
+   "Darebin"
+  ],
+  "Thornbury": [
+   "Darebin"
+  ],
+  "Preston": [
+   "Darebin"
+  ],
+  "Reservoir": [
+   "Darebin"
+  ],
+  "Alphington": [
+   "Darebin",
+   "Yarra"
+  ],
+  "Fairfield": [
+   "Darebin",
+   "Yarra"
+  ],
+  "Kingsbury": [
+   "Darebin"
+  ],
+  "Seaford": [
+   "Frankston"
+  ],
+  "Frankston": [
+   "Frankston"
+  ],
+  "Frankston South": [
+   "Frankston"
+  ],
+  "Frankston North": [
+   "Frankston"
+  ],
+  "Carrum Downs": [
+   "Frankston"
+  ],
+  "Langwarrin": [
+   "Frankston"
+  ],
+  "Langwarrin South": [
+   "Frankston"
+  ],
+  "Sandhurst": [
+   "Frankston"
+  ],
+  "Skye": [
+   "Frankston"
+  ],
+  "Caulfield East": [
+   "Glen Eira"
+  ],
+  "Caulfield North": [
+   "Glen Eira"
+  ],
+  "Caulfield": [
+   "Glen Eira"
+  ],
+  "Caulfield South": [
+   "Glen Eira"
+  ],
+  "Carnegie": [
+   "Glen Eira"
+  ],
+  "Glen Huntly": [
+   "Glen Eira"
+  ],
+  "Murrumbeena": [
+   "Glen Eira"
+  ],
+  "Bentleigh East": [
+   "Glen Eira"
+  ],
+  "St Kilda East": [
+   "Port Phillip",
+   "Glen Eira"
+  ],
+  "Elsternwick": [
+   "Glen Eira"
+  ],
+  "Gardenvale": [
+   "Glen Eira"
+  ],
+  "Bentleigh": [
+   "Glen Eira"
+  ],
+  "McKinnon": [
+   "Glen Eira"
+  ],
+  "Ormond": [
+   "Glen Eira"
+  ],
+  "Springvale": [
+   "Greater Dandenong"
+  ],
+  "Springvale South": [
+   "Greater Dandenong"
+  ],
+  "Keysborough": [
+   "Greater Dandenong"
+  ],
+  "Noble Park": [
+   "Greater Dandenong"
+  ],
+  "Noble Park North": [
+   "Greater Dandenong"
+  ],
+  "Bangholme": [
+   "Greater Dandenong"
+  ],
+  "Dandenong": [
+   "Greater Dandenong"
+  ],
+  "Dandenong North": [
+   "Greater Dandenong"
+  ],
+  "Dandenong South": [
+   "Greater Dandenong"
+  ],
+  "Newport": [
+   "Hobsons Bay"
+  ],
+  "South Kingsville": [
+   "Hobsons Bay"
+  ],
+  "Spotswood": [
+   "Hobsons Bay"
+  ],
+  "Williamstown": [
+   "Hobsons Bay"
+  ],
+  "Williamstown North": [
+   "Hobsons Bay"
+  ],
+  "Altona": [
+   "Hobsons Bay"
+  ],
+  "Seaholme": [
+   "Hobsons Bay"
+  ],
+  "Altona North": [
+   "Hobsons Bay"
+  ],
+  "Altona Meadows": [
+   "Hobsons Bay"
+  ],
+  "Laverton": [
+   "Hobsons Bay",
+   "Wyndham"
+  ],
+  "Seabrook": [
+   "Hobsons Bay"
+  ],
+  "Gladstone Park": [
+   "Hume"
+  ],
+  "Melbourne Airport": [
+   "Hume"
+  ],
+  "Broadmeadows": [
+   "Hume"
+  ],
+  "Dallas": [
+   "Hume"
+  ],
+  "Jacana": [
+   "Hume"
+  ],
+  "Coolaroo": [
+   "Hume"
+  ],
+  "Meadow Heights": [
+   "Hume"
+  ],
+  "Attwood": [
+   "Hume"
+  ],
+  "Westmeadows": [
+   "Hume"
+  ],
+  "Greenvale": [
+   "Hume"
+  ],
+  "Fawkner": [
+   "Merri-bek",
+   "Hume"
+  ],
+  "Campbellfield": [
+   "Hume"
+  ],
+  "Somerton": [
+   "Hume"
+  ],
+  "Oaklands Junction": [
+   "Hume"
+  ],
+  "Yuroke": [
+   "Hume"
+  ],
+  "Craigieburn": [
+   "Hume"
+  ],
+  "Kalkallo": [
+   "Hume"
+  ],
+  "Mickleham": [
+   "Hume"
+  ],
+  "Roxburgh Park": [
+   "Hume"
+  ],
+  "Diggers Rest": [
+   "Melton",
+   "Hume"
+  ],
+  "Bulla": [
+   "Hume"
+  ],
+  "Sunbury": [
+   "Hume"
+  ],
+  "Wildwood": [
+   "Hume"
+  ],
+  "Clarkefield": [
+   "Hume"
+  ],
+  "Oakleigh South": [
+   "Monash",
+   "Kingston"
+  ],
+  "Clarinda": [
+   "Kingston"
+  ],
+  "Clayton South": [
+   "Kingston"
+  ],
+  "Dingley Village": [
+   "Kingston"
+  ],
+  "Moorabbin": [
+   "Kingston"
+  ],
+  "Mentone": [
+   "Kingston"
+  ],
+  "Moorabbin Airport": [
+   "Kingston"
+  ],
+  "Aspendale": [
+   "Kingston"
+  ],
+  "Aspendale Gardens": [
+   "Kingston"
+  ],
+  "Braeside": [
+   "Kingston"
+  ],
+  "Mordialloc": [
+   "Kingston"
+  ],
+  "Parkdale": [
+   "Kingston"
+  ],
+  "Waterways": [
+   "Kingston"
+  ],
+  "Bonbeach": [
+   "Kingston"
+  ],
+  "Chelsea": [
+   "Kingston"
+  ],
+  "Chelsea Heights": [
+   "Kingston"
+  ],
+  "Edithvale": [
+   "Kingston"
+  ],
+  "Carrum": [
+   "Kingston"
+  ],
+  "Patterson Lakes": [
+   "Kingston"
+  ],
+  "Heatherton": [
+   "Kingston"
+  ],
+  "Wantirna": [
+   "Knox"
+  ],
+  "Wantirna South": [
+   "Knox"
+  ],
+  "Bayswater": [
+   "Knox"
+  ],
+  "The Basin": [
+   "Knox"
+  ],
+  "Boronia": [
+   "Knox"
+  ],
+  "Ferntree Gully": [
+   "Knox"
+  ],
+  "Lysterfield": [
+   "Knox",
+   "Yarra Ranges"
+  ],
+  "Upper Ferntree Gully": [
+   "Knox",
+   "Yarra Ranges"
+  ],
+  "Rowville": [
+   "Knox"
+  ],
+  "Scoresby": [
+   "Knox"
+  ],
+  "Knoxfield": [
+   "Knox"
+  ],
+  "Bulleen": [
+   "Manningham"
+  ],
+  "Templestowe": [
+   "Manningham"
+  ],
+  "Doncaster": [
+   "Manningham"
+  ],
+  "Templestowe Lower": [
+   "Manningham"
+  ],
+  "Doncaster East": [
+   "Manningham"
+  ],
+  "Donvale": [
+   "Manningham"
+  ],
+  "Warrandyte": [
+   "Manningham"
+  ],
+  "Park Orchards": [
+   "Manningham"
+  ],
+  "Wonga Park": [
+   "Manningham"
+  ],
+  "Nunawading": [
+   "Whitehorse",
+   "Manningham"
+  ],
+  "Ringwood North": [
+   "Maroondah",
+   "Manningham"
+  ],
+  "Warrandyte South": [
+   "Manningham"
+  ],
+  "Footscray": [
+   "Maribyrnong"
+  ],
+  "Seddon": [
+   "Maribyrnong"
+  ],
+  "Kingsville": [
+   "Maribyrnong"
+  ],
+  "Maidstone": [
+   "Maribyrnong"
+  ],
+  "Tottenham": [
+   "Maribyrnong"
+  ],
+  "West Footscray": [
+   "Maribyrnong"
+  ],
+  "Yarraville": [
+   "Maribyrnong"
+  ],
+  "Braybrook": [
+   "Maribyrnong"
+  ],
+  "Maribyrnong": [
+   "Maribyrnong"
+  ],
+  "Vermont": [
+   "Whitehorse",
+   "Maroondah"
+  ],
+  "Ringwood": [
+   "Maroondah"
+  ],
+  "Warranwood": [
+   "Maroondah"
+  ],
+  "Heathmont": [
+   "Maroondah"
+  ],
+  "Ringwood East": [
+   "Maroondah"
+  ],
+  "Croydon": [
+   "Maroondah"
+  ],
+  "Croydon Hills": [
+   "Maroondah"
+  ],
+  "Croydon North": [
+   "Maroondah"
+  ],
+  "Croydon South": [
+   "Maroondah"
+  ],
+  "Kilsyth": [
+   "Yarra Ranges",
+   "Maroondah"
+  ],
+  "Kilsyth South": [
+   "Maroondah"
+  ],
+  "Bayswater North": [
+   "Maroondah"
+  ],
+  "Carlton": [
+   "Melbourne"
+  ],
+  "Melbourne": [
+   "Melbourne",
+   "Port Phillip"
+  ],
+  "East Melbourne": [
+   "Melbourne"
+  ],
+  "West Melbourne": [
+   "Melbourne"
+  ],
+  "South Wharf": [
+   "Melbourne"
+  ],
+  "Southbank": [
+   "Melbourne",
+   "Port Phillip"
+  ],
+  "Docklands": [
+   "Melbourne"
+  ],
+  "Flemington": [
+   "Moonee Valley",
+   "Melbourne"
+  ],
+  "Kensington": [
+   "Melbourne",
+   "Moonee Valley"
+  ],
+  "North Melbourne": [
+   "Melbourne"
+  ],
+  "Parkville": [
+   "Melbourne"
+  ],
+  "Carlton North": [
+   "Yarra",
+   "Melbourne"
+  ],
+  "South Yarra": [
+   "Stonnington",
+   "Melbourne"
+  ],
+  "Port Melbourne": [
+   "Port Phillip",
+   "Melbourne"
+  ],
+  "Burnside": [
+   "Melton"
+  ],
+  "Burnside Heights": [
+   "Melton"
+  ],
+  "Caroline Springs": [
+   "Melton"
+  ],
+  "Ravenhall": [
+   "Melton"
+  ],
+  "Mount Cottrell": [
+   "Melton",
+   "Wyndham"
+  ],
+  "Truganina": [
+   "Wyndham",
+   "Melton"
+  ],
+  "Taylors Hill": [
+   "Melton"
+  ],
+  "Bonnie Brook": [
+   "Melton"
+  ],
+  "Grangefields": [
+   "Melton"
+  ],
+  "Plumpton": [
+   "Melton"
+  ],
+  "Rockbank": [
+   "Melton"
+  ],
+  "Thornhill Park": [
+   "Melton"
+  ],
+  "Aintree": [
+   "Melton"
+  ],
+  "Deanside": [
+   "Melton"
+  ],
+  "Fraser Rise": [
+   "Melton"
+  ],
+  "Harkness": [
+   "Melton"
+  ],
+  "Kurunjang": [
+   "Melton"
+  ],
+  "Melton": [
+   "Melton"
+  ],
+  "Melton West": [
+   "Melton"
+  ],
+  "Toolern Vale": [
+   "Melton"
+  ],
+  "Brookfield": [
+   "Melton"
+  ],
+  "Cobblebank": [
+   "Melton"
+  ],
+  "Exford": [
+   "Melton"
+  ],
+  "Eynesbury": [
+   "Melton",
+   "Wyndham"
+  ],
+  "Melton South": [
+   "Melton"
+  ],
+  "Strathtulloh": [
+   "Melton"
+  ],
+  "Weir Views": [
+   "Melton"
+  ],
+  "Parwan": [
+   "Melton"
+  ],
+  "Gowanbrae": [
+   "Merri-bek"
+  ],
+  "Pascoe Vale": [
+   "Merri-bek"
+  ],
+  "Pascoe Vale South": [
+   "Merri-bek"
+  ],
+  "Glenroy": [
+   "Merri-bek"
+  ],
+  "Hadfield": [
+   "Merri-bek"
+  ],
+  "Oak Park": [
+   "Merri-bek"
+  ],
+  "Brunswick West": [
+   "Merri-bek"
+  ],
+  "Brunswick": [
+   "Merri-bek"
+  ],
+  "Brunswick East": [
+   "Merri-bek"
+  ],
+  "Coburg": [
+   "Merri-bek"
+  ],
+  "Coburg North": [
+   "Merri-bek"
+  ],
+  "Fitzroy North": [
+   "Yarra",
+   "Merri-bek"
+  ],
+  "Burwood": [
+   "Whitehorse",
+   "Monash"
+  ],
+  "Ashwood": [
+   "Monash"
+  ],
+  "Chadstone": [
+   "Monash"
+  ],
+  "Mount Waverley": [
+   "Monash"
+  ],
+  "Glen Waverley": [
+   "Monash"
+  ],
+  "Wheelers Hill": [
+   "Monash"
+  ],
+  "Hughesdale": [
+   "Monash"
+  ],
+  "Huntingdale": [
+   "Monash"
+  ],
+  "Oakleigh": [
+   "Monash"
+  ],
+  "Oakleigh East": [
+   "Monash"
+  ],
+  "Clayton": [
+   "Monash"
+  ],
+  "Notting Hill": [
+   "Monash"
+  ],
+  "Mulgrave": [
+   "Monash"
+  ],
+  "Ascot Vale": [
+   "Moonee Valley"
+  ],
+  "Travancore": [
+   "Moonee Valley"
+  ],
+  "Avondale Heights": [
+   "Moonee Valley"
+  ],
+  "Moonee Ponds": [
+   "Moonee Valley"
+  ],
+  "Aberfeldie": [
+   "Moonee Valley"
+  ],
+  "Essendon": [
+   "Moonee Valley"
+  ],
+  "Essendon West": [
+   "Moonee Valley"
+  ],
+  "Essendon Fields": [
+   "Moonee Valley"
+  ],
+  "Essendon North": [
+   "Moonee Valley"
+  ],
+  "Strathmore": [
+   "Moonee Valley"
+  ],
+  "Strathmore Heights": [
+   "Moonee Valley"
+  ],
+  "Airport West": [
+   "Moonee Valley"
+  ],
+  "Niddrie": [
+   "Moonee Valley"
+  ],
+  "Baxter": [
+   "Mornington Peninsula"
+  ],
+  "Somerville": [
+   "Mornington Peninsula"
+  ],
+  "Tyabb": [
+   "Mornington Peninsula"
+  ],
+  "Hastings": [
+   "Mornington Peninsula"
+  ],
+  "Tuerong": [
+   "Mornington Peninsula"
+  ],
+  "Merricks": [
+   "Mornington Peninsula"
+  ],
+  "Point Leo": [
+   "Mornington Peninsula"
+  ],
+  "Shoreham": [
+   "Mornington Peninsula"
+  ],
+  "Bittern": [
+   "Mornington Peninsula"
+  ],
+  "Crib Point": [
+   "Mornington Peninsula"
+  ],
+  "Hmas Cerberus": [
+   "Mornington Peninsula"
+  ],
+  "Balnarring": [
+   "Mornington Peninsula"
+  ],
+  "Balnarring Beach": [
+   "Mornington Peninsula"
+  ],
+  "Merricks Beach": [
+   "Mornington Peninsula"
+  ],
+  "Merricks North": [
+   "Mornington Peninsula"
+  ],
+  "Somers": [
+   "Mornington Peninsula"
+  ],
+  "Main Ridge": [
+   "Mornington Peninsula"
+  ],
+  "Flinders": [
+   "Mornington Peninsula"
+  ],
+  "Mount Eliza": [
+   "Mornington Peninsula"
+  ],
+  "Mornington": [
+   "Mornington Peninsula"
+  ],
+  "Moorooduc": [
+   "Mornington Peninsula"
+  ],
+  "Mount Martha": [
+   "Mornington Peninsula"
+  ],
+  "Arthurs Seat": [
+   "Mornington Peninsula"
+  ],
+  "Dromana": [
+   "Mornington Peninsula"
+  ],
+  "Safety Beach": [
+   "Mornington Peninsula"
+  ],
+  "Red Hill": [
+   "Mornington Peninsula"
+  ],
+  "Red Hill South": [
+   "Mornington Peninsula"
+  ],
+  "McCrae": [
+   "Mornington Peninsula"
+  ],
+  "Boneo": [
+   "Mornington Peninsula"
+  ],
+  "Cape Schanck": [
+   "Mornington Peninsula"
+  ],
+  "Fingal": [
+   "Mornington Peninsula"
+  ],
+  "Rosebud": [
+   "Mornington Peninsula"
+  ],
+  "Capel Sound": [
+   "Mornington Peninsula"
+  ],
+  "Rye": [
+   "Mornington Peninsula"
+  ],
+  "St Andrews Beach": [
+   "Mornington Peninsula"
+  ],
+  "Tootgarook": [
+   "Mornington Peninsula"
+  ],
+  "Blairgowrie": [
+   "Mornington Peninsula"
+  ],
+  "Sorrento": [
+   "Mornington Peninsula"
+  ],
+  "Portsea": [
+   "Mornington Peninsula"
+  ],
+  "Diamond Creek": [
+   "Nillumbik"
+  ],
+  "Plenty": [
+   "Nillumbik"
+  ],
+  "Yarrambat": [
+   "Nillumbik"
+  ],
+  "Research": [
+   "Nillumbik"
+  ],
+  "Wattle Glen": [
+   "Nillumbik"
+  ],
+  "Kangaroo Ground": [
+   "Nillumbik"
+  ],
+  "Watsons Creek": [
+   "Nillumbik"
+  ],
+  "Arthurs Creek": [
+   "Nillumbik"
+  ],
+  "Cottles Bridge": [
+   "Nillumbik"
+  ],
+  "Hurstbridge": [
+   "Nillumbik"
+  ],
+  "Nutfield": [
+   "Nillumbik"
+  ],
+  "Strathewen": [
+   "Nillumbik"
+  ],
+  "North Warrandyte": [
+   "Nillumbik"
+  ],
+  "Doreen": [
+   "Whittlesea",
+   "Nillumbik"
+  ],
+  "Kinglake West": [
+   "Whittlesea",
+   "Nillumbik"
+  ],
+  "Panton Hill": [
+   "Nillumbik"
+  ],
+  "Smiths Gully": [
+   "Nillumbik"
+  ],
+  "St Andrews": [
+   "Nillumbik"
+  ],
+  "Kinglake": [
+   "Nillumbik"
+  ],
+  "Christmas Hills": [
+   "Nillumbik"
+  ],
+  "Windsor": [
+   "Stonnington",
+   "Port Phillip"
+  ],
+  "St Kilda": [
+   "Port Phillip"
+  ],
+  "St Kilda West": [
+   "Port Phillip"
+  ],
+  "Balaclava": [
+   "Port Phillip"
+  ],
+  "Elwood": [
+   "Port Phillip"
+  ],
+  "Ripponlea": [
+   "Port Phillip"
+  ],
+  "South Melbourne": [
+   "Port Phillip"
+  ],
+  "Albert Park": [
+   "Port Phillip"
+  ],
+  "Middle Park": [
+   "Port Phillip"
+  ],
+  "Toorak": [
+   "Stonnington"
+  ],
+  "Armadale": [
+   "Stonnington"
+  ],
+  "Malvern": [
+   "Stonnington"
+  ],
+  "Kooyong": [
+   "Stonnington"
+  ],
+  "Malvern East": [
+   "Stonnington"
+  ],
+  "Prahran": [
+   "Stonnington"
+  ],
+  "Box Hill": [
+   "Whitehorse"
+  ],
+  "Box Hill South": [
+   "Whitehorse"
+  ],
+  "Box Hill North": [
+   "Whitehorse"
+  ],
+  "Mont Albert North": [
+   "Whitehorse"
+  ],
+  "Blackburn": [
+   "Whitehorse"
+  ],
+  "Blackburn North": [
+   "Whitehorse"
+  ],
+  "Blackburn South": [
+   "Whitehorse"
+  ],
+  "Forest Hill": [
+   "Whitehorse"
+  ],
+  "Mitcham": [
+   "Whitehorse"
+  ],
+  "Vermont South": [
+   "Whitehorse"
+  ],
+  "Burwood East": [
+   "Whitehorse"
+  ],
+  "Donnybrook": [
+   "Whittlesea"
+  ],
+  "Thomastown": [
+   "Whittlesea"
+  ],
+  "Lalor": [
+   "Whittlesea"
+  ],
+  "Epping": [
+   "Whittlesea"
+  ],
+  "Mill Park": [
+   "Whittlesea"
+  ],
+  "Wollert": [
+   "Whittlesea"
+  ],
+  "Woodstock": [
+   "Whittlesea"
+  ],
+  "South Morang": [
+   "Whittlesea"
+  ],
+  "Beveridge": [
+   "Whittlesea"
+  ],
+  "Mernda": [
+   "Whittlesea"
+  ],
+  "Yan Yean": [
+   "Whittlesea"
+  ],
+  "Eden Park": [
+   "Whittlesea"
+  ],
+  "Humevale": [
+   "Whittlesea"
+  ],
+  "Whittlesea": [
+   "Whittlesea"
+  ],
+  "Mambourin": [
+   "Wyndham"
+  ],
+  "Manor Lakes": [
+   "Wyndham"
+  ],
+  "Wyndham Vale": [
+   "Wyndham"
+  ],
+  "Laverton North": [
+   "Wyndham"
+  ],
+  "Williams Landing": [
+   "Wyndham"
+  ],
+  "Hoppers Crossing": [
+   "Wyndham"
+  ],
+  "Tarneit": [
+   "Wyndham"
+  ],
+  "Cocoroc": [
+   "Wyndham"
+  ],
+  "Point Cook": [
+   "Wyndham"
+  ],
+  "Quandong": [
+   "Wyndham"
+  ],
+  "Werribee": [
+   "Wyndham"
+  ],
+  "Werribee South": [
+   "Wyndham"
+  ],
+  "Little River": [
+   "Wyndham"
+  ],
+  "Princes Hill": [
+   "Yarra"
+  ],
+  "Fitzroy": [
+   "Yarra"
+  ],
+  "Clifton Hill": [
+   "Yarra"
+  ],
+  "Collingwood": [
+   "Yarra"
+  ],
+  "Abbotsford": [
+   "Yarra"
+  ],
+  "Burnley": [
+   "Yarra"
+  ],
+  "Cremorne": [
+   "Yarra"
+  ],
+  "Richmond": [
+   "Yarra"
+  ],
+  "Chirnside Park": [
+   "Yarra Ranges"
+  ],
+  "Mooroolbark": [
+   "Yarra Ranges"
+  ],
+  "Beenak": [
+   "Yarra Ranges"
+  ],
+  "Don Valley": [
+   "Yarra Ranges"
+  ],
+  "Hoddles Creek": [
+   "Yarra Ranges"
+  ],
+  "Launching Place": [
+   "Yarra Ranges"
+  ],
+  "Seville": [
+   "Yarra Ranges"
+  ],
+  "Seville East": [
+   "Yarra Ranges"
+  ],
+  "Wandin East": [
+   "Yarra Ranges"
+  ],
+  "Wandin North": [
+   "Yarra Ranges"
+  ],
+  "Woori Yallock": [
+   "Yarra Ranges"
+  ],
+  "Yellingbo": [
+   "Yarra Ranges"
+  ],
+  "Lilydale": [
+   "Yarra Ranges"
+  ],
+  "Upwey": [
+   "Yarra Ranges"
+  ],
+  "Selby": [
+   "Yarra Ranges"
+  ],
+  "Belgrave": [
+   "Yarra Ranges"
+  ],
+  "Belgrave Heights": [
+   "Yarra Ranges"
+  ],
+  "Belgrave South": [
+   "Yarra Ranges"
+  ],
+  "Tecoma": [
+   "Yarra Ranges"
+  ],
+  "Matlock": [
+   "Yarra Ranges"
+  ],
+  "Montrose": [
+   "Yarra Ranges"
+  ],
+  "Kalorama": [
+   "Yarra Ranges"
+  ],
+  "Mount Dandenong": [
+   "Yarra Ranges"
+  ],
+  "Coldstream": [
+   "Yarra Ranges"
+  ],
+  "Gruyere": [
+   "Yarra Ranges"
+  ],
+  "Yering": [
+   "Yarra Ranges"
+  ],
+  "Dixons Creek": [
+   "Yarra Ranges"
+  ],
+  "Steels Creek": [
+   "Yarra Ranges"
+  ],
+  "Tarrawarra": [
+   "Yarra Ranges"
+  ],
+  "Yarra Glen": [
+   "Yarra Ranges"
+  ],
+  "Badger Creek": [
+   "Yarra Ranges"
+  ],
+  "Chum Creek": [
+   "Yarra Ranges"
+  ],
+  "Healesville": [
+   "Yarra Ranges"
+  ],
+  "Mount Toolebewong": [
+   "Yarra Ranges"
+  ],
+  "Toolangi": [
+   "Yarra Ranges"
+  ],
+  "Fernshaw": [
+   "Yarra Ranges"
+  ],
+  "Cambarville": [
+   "Yarra Ranges"
+  ],
+  "Macclesfield": [
+   "Yarra Ranges"
+  ],
+  "Tremont": [
+   "Yarra Ranges"
+  ],
+  "Ferny Creek": [
+   "Yarra Ranges"
+  ],
+  "Sassafras": [
+   "Yarra Ranges"
+  ],
+  "Olinda": [
+   "Yarra Ranges"
+  ],
+  "Sherbrooke": [
+   "Yarra Ranges"
+  ],
+  "Kallista": [
+   "Yarra Ranges"
+  ],
+  "The Patch": [
+   "Yarra Ranges"
+  ],
+  "Monbulk": [
+   "Yarra Ranges"
+  ],
+  "Silvan": [
+   "Yarra Ranges"
+  ],
+  "Mount Evelyn": [
+   "Yarra Ranges"
+  ],
+  "Gladysdale": [
+   "Yarra Ranges"
+  ],
+  "Powelltown": [
+   "Yarra Ranges"
+  ],
+  "Three Bridges": [
+   "Yarra Ranges"
+  ],
+  "Yarra Junction": [
+   "Yarra Ranges"
+  ],
+  "Big Pats Creek": [
+   "Yarra Ranges"
+  ],
+  "East Warburton": [
+   "Yarra Ranges"
+  ],
+  "McMahons Creek": [
+   "Yarra Ranges"
+  ],
+  "Millgrove": [
+   "Yarra Ranges"
+  ],
+  "Reefton": [
+   "Yarra Ranges"
+  ],
+  "Warburton": [
+   "Yarra Ranges"
+  ],
+  "Wesburn": [
+   "Yarra Ranges"
+  ],
+  "Narre Warren East": [
+   "Yarra Ranges"
+  ]
+ }
+}

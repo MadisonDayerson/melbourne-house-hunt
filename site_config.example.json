@@ -1,0 +1,6 @@
+{
+  "supabase": {
+    "url": "https://YOUR-PROJECT-REF.supabase.co",
+    "anon_key": "the 'anon public' key from Supabase > Project Settings > API"
+  }
+}

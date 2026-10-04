@@ -1,0 +1,8 @@
+{
+  "_about": "Manual review of each Consumer Affairs Victoria story matched to an agency (2026-10-04). kind: agency = the agency itself was fined, charged or found in breach; alleged = proceedings underway, not yet decided; staff = an individual employee, with CAV stating the agency was not aware. Only agency and alleged records lower the score.",
+  "Hudson Bond": {"kind": "agency", "summary": "Fined $7,500 by CAV's Renting Taskforce (July 2026)"},
+  "Leader Real Estate Agency": {"kind": "agency", "summary": "Fined $7,500 by CAV's Renting Taskforce (July 2026)"},
+  "White Lotus Property Group - TRUGANINA": {"kind": "agency", "summary": "Pleaded guilty to breaking renting laws over rental bidding (2025)"},
+  "Zed Real Estate": {"kind": "alleged", "summary": "Criminal proceedings underway over 37 bonds allegedly lodged late (Sept 2026)"},
+  "Barry Plant Reservoir": {"kind": "staff", "summary": "A former employee was banned over rental bond theft; CAV says the agency wasn't aware and has repaid the funds (2024)"}
+}
