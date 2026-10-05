@@ -141,6 +141,56 @@ doc = ("<!doctype html>\n<html lang=\"en-AU\">\n<head>\n<meta charset=\"utf-8\">
        + body + "\n</body>\n</html>\n")
 docs = ROOT / "docs"
 docs.mkdir(exist_ok=True)
+
+
+# 3. geo.json: everything the page needs to score a listing someone adds (same method as enrich.py)
+def export_geo():
+    import sys as _sys, math as _m
+    _sys.path.insert(0, str(ROOT / "scripts"))
+    argv, _sys.argv = _sys.argv, [argv0 for argv0 in _sys.argv[:1]]
+    import enrich as E
+    _sys.argv = argv
+
+    def simp(pts, tol=0.0001):  # ~10 m: keeps road distances within a few metres of enrich.py
+        if len(pts) < 3:
+            return pts
+        (y1, x1), (y2, x2) = pts[0], pts[-1]
+        dmax, idx = 0, 0
+        for i in range(1, len(pts) - 1):
+            y, x = pts[i]
+            d = abs((y2 - y1) * x - (x2 - x1) * y + x2 * y1 - y2 * x1) / (_m.hypot(y2 - y1, x2 - x1) or 1e-12)
+            if d > dmax:
+                dmax, idx = d, i
+        return simp(pts[:idx + 1], tol)[:-1] + simp(pts[idx:], tol) if dmax > tol else [pts[0], pts[-1]]
+
+    lines = {"motorway": [], "major": [], "rail": []}
+    for w in E.load_json("osm_roads.json")["elements"]:
+        g, t = w.get("geometry"), w["tags"]
+        if not g:
+            continue
+        if t.get("railway") == "rail":
+            if t.get("service") in ("yard", "siding", "spur"):
+                continue
+            k = "rail"
+        elif t.get("highway") in ("motorway", "motorway_link"):
+            k = "motorway"
+        else:
+            k = "major"
+        pts = simp([(q["lat"], q["lon"]) for q in g])
+        lines[k].append([t.get("name") or t.get("ref") or ""] + [v for q in pts for v in (round(q[0] * 1e5), round(q[1] * 1e5))])
+    amen = {c: [[round(a * 1e5), round(b * 1e5), n if c not in ("bus", "park", "gym") else ""] for a, b, n in v]
+            for c, v in E.amen.items()}
+    crime = {k: [c["total"], c.get("burglary", 0), c.get("assault", 0), E.pop.get(k)] for k, c in E.crime["suburb"].items()}
+    subs = {k: [v["suburb"], v["region"], v["lga"]] for k, v in E.SUBURBS.items()}
+    geo = {"amen": amen, "lines": lines, "crime": crime, "suburbs": subs,
+           "const": {"detour": E.DETOUR, "vicRate": E.VIC_RATE, "minPop": E.MIN_POP, "lat0": E.LAT0,
+                     "cbd": E.CBD, "essendon": E.ESSENDON_FIELDS, "tullamarine": E.MELB_AIRPORT,
+                     "moorabbin": E.MOORABBIN_AIRPORT, "avalon": E.AVALON_AIRPORT}}
+    (docs / "geo.json").write_text(json.dumps(geo, separators=(",", ":"), ensure_ascii=False))
+    print("wrote", docs / "geo.json", f"{(docs / 'geo.json').stat().st_size / 1024:.0f} KB")
+
+
+export_geo()
 (docs / "index.html").write_text(doc)
 (docs / ".nojekyll").write_text("")
 print("wrote", docs / "index.html", "shared votes:", "Supabase" if gh_payload["supabase"] else "off (no site_config.json)")

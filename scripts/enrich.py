@@ -183,14 +183,8 @@ DAILY_NEEDS = [
     ("library", "Library or community centre"),
 ]
 
-out, missing_pop = [], set()
-for L in json.load(open(D / "cache" / RAW)):
-    meta = SUBURBS.get(re.sub(r"^saint ", "st ", L["suburb"].lower()))
-    beds_ok = 0 <= (L["beds"] or 0) <= 2 if SOLO else 4 <= (L["beds"] or 0) <= 8
-    min_rent = 180 if SOLO else 350  # below this it's a parking space, storage or a single room
-    if not meta or not L["lat"] or not beds_ok or L["rent"] < min_rent:
-        continue  # outside metro Melbourne, or a per-room/odd listing
-    L["suburb"] = meta["suburb"]
+def score_location(L, meta):
+    """All location scores for one listing (needs lat, lng and suburb). Also used for listings people add."""
     p = (L["lat"], L["lng"])
     near = {c: nearest(p, c) for c, _ in DAILY_NEEDS}
     for c in ("train", "tram", "bus", "bar", "cinema"):
@@ -254,9 +248,9 @@ for L in json.load(open(D / "cache" / RAW)):
         crime_info = {"rate": round(rate, 1), "burglary": round(burg, 1), "assault": round(assault, 1),
                       "offences": c["total"], "population": ppl}
     else:
-        missing_pop.add(sub); safety, crime_info = None, None
+        safety, crime_info = None, None
 
-    out.append({**L, "region": meta["region"], "lga": meta["lga"],
+    return ({**L, "region": meta["region"], "lga": meta["lga"],
         "cbd_km": round(dist(p, CBD) / 1000, 1),
         "near": {k: {"m": v[0], "name": v[1]} for k, v in near.items()},
         "counts": counts, "met": met, "twenty": twenty, "transit": transit,
@@ -265,50 +259,69 @@ for L in json.load(open(D / "cache" / RAW)):
         "safety": safety, "crime": crime_info,
     })
 
-print("listings", len(out), "missing population:", sorted(missing_pop))
-# ---------- history: first seen / no longer advertised ----------
-prev = {str(l["id"]): l for l in json.load(open(D / OUT))} if (D / OUT).exists() else {}
-seen = set()
-for l in out:
-    k = str(l["id"]); seen.add(k)
-    if k in prev:   # known listing: keep its date (older files have none, so use the advertised date)
-        l["first_seen"] = prev[k].get("first_seen") or prev[k].get("listed") or TODAY
-    else:           # new since the last run (on the very first run, use the advertised date)
-        l["first_seen"] = TODAY if prev else (l.get("listed") or TODAY)
-    l.pop("gone", None)
-kept_gone = 0
-for k, l in prev.items():
-    if k in seen:
-        continue
-    gone = l.get("gone") or TODAY
-    if (datetime.date.fromisoformat(TODAY) - datetime.date.fromisoformat(gone)).days <= KEEP_GONE_DAYS:
-        l["gone"] = gone; out.append(l); kept_gone += 1
-new = sum(1 for l in out if l.get("first_seen") == TODAY and not l.get("gone"))
-print(f"history: {new} new today, {kept_gone} no longer advertised (kept {KEEP_GONE_DAYS} days)")
-json.dump(out, open(D / OUT, "w"), indent=1)
-if SOLO:
-    sys.exit()  # the basemap comes from the share-house run
+
+def main():
+    out, missing_pop = [], set()
+    for L in json.load(open(D / "cache" / RAW)):
+        meta = SUBURBS.get(re.sub(r"^saint ", "st ", L["suburb"].lower()))
+        beds_ok = 0 <= (L["beds"] or 0) <= 2 if SOLO else 4 <= (L["beds"] or 0) <= 8
+        min_rent = 180 if SOLO else 350  # below this it's a parking space, storage or a single room
+        if not meta or not L["lat"] or not beds_ok or L["rent"] < min_rent:
+            continue  # outside metro Melbourne, or a per-room/odd listing
+        L["suburb"] = meta["suburb"]
+        out.append(score_location(L, meta))
+        if out[-1]["safety"] is None:
+            missing_pop.add(L["suburb"])
 
 
-# ---------- basemap: simplified major roads + rail for the in-page map ----------
-def simplify(pts, tol=0.0012):
-    if len(pts) < 3:
-        return pts
-    (y1, x1), (y2, x2) = pts[0], pts[-1]
-    dmax, idx = 0, 0
-    for i in range(1, len(pts) - 1):
-        y, x = pts[i]
-        num = abs((y2 - y1) * x - (x2 - x1) * y + x2 * y1 - y2 * x1)
-        den = math.hypot(y2 - y1, x2 - x1) or 1e-12
-        if num / den > dmax:
-            dmax, idx = num / den, i
-    if dmax > tol:
-        return simplify(pts[: idx + 1], tol)[:-1] + simplify(pts[idx:], tol)
-    return [pts[0], pts[-1]]
+    print("listings", len(out), "missing population:", sorted(missing_pop))
+    # ---------- history: first seen / no longer advertised ----------
+    prev = {str(l["id"]): l for l in json.load(open(D / OUT))} if (D / OUT).exists() else {}
+    seen = set()
+    for l in out:
+        k = str(l["id"]); seen.add(k)
+        if k in prev:   # known listing: keep its date (older files have none, so use the advertised date)
+            l["first_seen"] = prev[k].get("first_seen") or prev[k].get("listed") or TODAY
+        else:           # new since the last run (on the very first run, use the advertised date)
+            l["first_seen"] = TODAY if prev else (l.get("listed") or TODAY)
+        l.pop("gone", None)
+    kept_gone = 0
+    for k, l in prev.items():
+        if k in seen:
+            continue
+        gone = l.get("gone") or TODAY
+        if (datetime.date.fromisoformat(TODAY) - datetime.date.fromisoformat(gone)).days <= KEEP_GONE_DAYS:
+            l["gone"] = gone; out.append(l); kept_gone += 1
+    new = sum(1 for l in out if l.get("first_seen") == TODAY and not l.get("gone"))
+    print(f"history: {new} new today, {kept_gone} no longer advertised (kept {KEEP_GONE_DAYS} days)")
+    json.dump(out, open(D / OUT, "w"), indent=1)
+    if SOLO:
+        sys.exit()  # the basemap comes from the share-house run
 
 
-bm = {k: [simplify(l) for l in v] for k, v in basemap.items()}
-stations = [(round(a, 4), round(b, 4), n.replace(" Station", "").replace(" Railway", ""))
-            for a, b, n in amen["train"] if n]
-json.dump({"lines": bm, "stations": stations}, open(D / "basemap.json", "w"), separators=(",", ":"))
-print("basemap points", sum(len(l) for v in bm.values() for l in v))
+    # ---------- basemap: simplified major roads + rail for the in-page map ----------
+    def simplify(pts, tol=0.0012):
+        if len(pts) < 3:
+            return pts
+        (y1, x1), (y2, x2) = pts[0], pts[-1]
+        dmax, idx = 0, 0
+        for i in range(1, len(pts) - 1):
+            y, x = pts[i]
+            num = abs((y2 - y1) * x - (x2 - x1) * y + x2 * y1 - y2 * x1)
+            den = math.hypot(y2 - y1, x2 - x1) or 1e-12
+            if num / den > dmax:
+                dmax, idx = num / den, i
+        if dmax > tol:
+            return simplify(pts[: idx + 1], tol)[:-1] + simplify(pts[idx:], tol)
+        return [pts[0], pts[-1]]
+
+
+    bm = {k: [simplify(l) for l in v] for k, v in basemap.items()}
+    stations = [(round(a, 4), round(b, 4), n.replace(" Station", "").replace(" Railway", ""))
+                for a, b, n in amen["train"] if n]
+    json.dump({"lines": bm, "stations": stations}, open(D / "basemap.json", "w"), separators=(",", ":"))
+    print("basemap points", sum(len(l) for v in bm.values() for l in v))
+
+
+if __name__ == "__main__":
+    main()

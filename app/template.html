@@ -335,7 +335,7 @@ a { color: var(--accent); }
 
       <section data-panel="add" hidden>
         <div class="prose" style="margin-bottom:14px">
-          <p>Found a place on realestate.com.au, Domain or an agent's site? Add it here so everyone can vote on it. Location scores are worked out separately: ask Claude to "analyse the new listings" and it will fill them in.</p>
+          <p>Found a place on realestate.com.au, Domain or an agent's site? Add it here so everyone can vote on it. The page finds the address on the map and works out its walkability, transport, noise, air and safety scores straight away.</p>
         </div>
         <form class="formgrid" id="addform">
           <label class="wide">Street address<input id="a-street" required placeholder="e.g. 14 Example Street"></label>
@@ -345,10 +345,12 @@ a { color: var(--accent); }
           <label>Bathrooms<input id="a-baths" type="number" min="1" max="6" value="2"></label>
           <label>Car spaces<input id="a-cars" type="number" min="0" max="6" value="1"></label>
           <label>Type<select id="a-type"><option>House</option><option>Townhouse</option><option>Apartment</option><option>Unit</option></select></label>
+          <label>Agency (optional)<input id="a-agency" list="agency-list" placeholder="e.g. Ray White Coburg"></label>
           <label class="wide">Listing link<input id="a-url" type="url" placeholder="https://"></label>
           <div class="wide" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><button class="btn" type="submit" id="a-submit">Add listing</button><span id="a-msg" class="src"></span></div>
         </form>
         <datalist id="suburb-list"></datalist>
+        <datalist id="agency-list"></datalist>
         <h2 style="font-size:18px;font-weight:800;font-stretch:80%;text-transform:uppercase;margin:22px 0 10px">Added by the group</h2>
         <div class="cards" id="added"></div>
       </section>
@@ -551,6 +553,7 @@ $("#regions").addEventListener("click", e => {
   const b = e.target.closest("button"); if (!b) return;
   const r = b.dataset.r; F.regions = F.regions.includes(r) ? F.regions.filter(x => x !== r) : [...F.regions, r]; saveF(); render();
 });
+$("#agency-list").innerHTML = Object.keys(P.agencies || {}).sort().map(n => `<option value="${esc(n)}">`).join("");
 $("#suburb-list").innerHTML = P.suburbs.map(s => `<option value="${esc(s[0])}">`).join("");
 $("#subs").addEventListener("click", e => {
   const b = e.target.closest("button"); if (!b) return;
@@ -687,6 +690,125 @@ async function castVote(id, v) {
 }
 
 function toast(msg) { const t = $("#toast"); t.textContent = msg; t.hidden = false; clearTimeout(toast.h); toast.h = setTimeout(() => t.hidden = true, 3200); }
+
+/* ---------- scoring listings people add (same method as scripts/enrich.py) ---------- */
+let geoPromise = null;
+function loadGeo() {
+  geoPromise = geoPromise || fetch("geo.json").then(r => { if (!r.ok) throw new Error("no geo"); return r.json(); }).then(prepGeo);
+  return geoPromise;
+}
+function prepGeo(G) {
+  const C = G.const, CELL = 0.01, KX = 111320 * Math.cos(C.lat0 * Math.PI / 180), KY = 110540;
+  const xy = (lat, lng) => [lng * KX, lat * KY];
+  const cell = (lat, lng) => Math.floor(lat / CELL) + ":" + Math.floor(lng / CELL);
+  const grid = {};
+  for (const [c, pts] of Object.entries(G.amen)) {
+    const g = grid[c] = new Map();
+    for (const [a, b, n] of pts) { const lat = a / 1e5, lng = b / 1e5, k = cell(lat, lng); if (!g.has(k)) g.set(k, []); g.get(k).push([lat, lng, n]); }
+  }
+  const segs = {};
+  for (const [kind, ls] of Object.entries(G.lines)) {
+    const g = segs[kind] = new Map();
+    for (const line of ls) {
+      const name = line[0];
+      for (let i = 1; i + 3 < line.length; i += 2) {
+        const a = [line[i] / 1e5, line[i + 1] / 1e5], b = [line[i + 2] / 1e5, line[i + 3] / 1e5];
+        const seg = [xy(...a), xy(...b), name];
+        for (const k of new Set([cell(...a), cell(...b)])) { if (!g.has(k)) g.set(k, []); g.get(k).push(seg); }
+      }
+    }
+  }
+  return { G, C, CELL, xy, cell, grid, segs };
+}
+function scoreLocation(geo, lat, lng, suburbKey) {
+  const { G, C, CELL, xy, grid, segs } = geo;
+  const p = [lat, lng];
+  const dist = (a, b) => { const A = xy(...a), B = xy(...b); return Math.hypot(A[0] - B[0], A[1] - B[1]); };
+  const around = rings => { const ci = Math.floor(lat / CELL), cj = Math.floor(lng / CELL), out = [];
+    for (let i = -rings; i <= rings; i++) for (let j = -rings; j <= rings; j++) out.push((ci + i) + ":" + (cj + j)); return out; };
+  const nearest = c => { let best = 1e9, nm = "";
+    for (const k of around(4)) for (const [a, b, n] of grid[c].get(k) || []) { const d = dist(p, [a, b]); if (d < best) { best = d; nm = n; } }
+    return [Math.round(Math.min(best * C.detour, 9999)), nm]; };
+  const countWithin = (c, walk) => { const r = walk / C.detour; let n = 0;
+    for (const k of around(1)) for (const [a, b] of grid[c].get(k) || []) if (dist(p, [a, b]) <= r) n++; return n; };
+  const segDist = (P, A, B) => { const dx = B[0] - A[0], dy = B[1] - A[1];
+    if (!dx && !dy) return Math.hypot(P[0] - A[0], P[1] - A[1]);
+    const t = Math.max(0, Math.min(1, ((P[0] - A[0]) * dx + (P[1] - A[1]) * dy) / (dx * dx + dy * dy)));
+    return Math.hypot(P[0] - A[0] - t * dx, P[1] - A[1] - t * dy); };
+  const nearestLine = kind => { let best = 1e9, nm = ""; const P = xy(...p);
+    for (const k of around(6)) for (const [A, B, n] of segs[kind].get(k) || []) { const d = segDist(P, A, B); if (d < best) { best = d; nm = n; } }
+    return [Math.round(Math.min(best, 9999)), nm]; };
+  const clamp = v => Math.max(0, Math.min(100, Math.round(v)));
+  const NEEDS = ["supermarket", "fresh", "pharmacy", "gp", "cafe", "park", "gym", "library"];
+  const near = {};
+  for (const c of [...NEEDS, "train", "tram", "bus", "bar", "cinema"]) near[c] = nearest(c);
+  const counts = { cafe: countWithin("cafe", 800), bar: countWithin("bar", 800), bus: countWithin("bus", 400), tram: countWithin("tram", 600),
+    shops: countWithin("supermarket", 800) + countWithin("fresh", 800) + countWithin("pharmacy", 800) };
+  const ptOk = near.train[0] <= 800 || near.tram[0] <= 600;
+  const met = [...NEEDS.filter(c => near[c][0] <= 800), ...(ptOk ? ["pt"] : [])];
+  const twenty = Math.round(100 * met.length / (NEEDS.length + 1));
+  let tr = 0;
+  tr += near.train[0] <= 800 ? 45 : near.train[0] <= 1200 ? 30 : near.train[0] <= 2000 ? 15 : 0;
+  tr += near.tram[0] <= 600 ? 35 : near.tram[0] <= 1000 ? 18 : 0;
+  tr += near.bus[0] <= 400 ? 20 : near.bus[0] <= 800 ? 10 : 0;
+  const [mw, mwName] = nearestLine("motorway"), [mj, mjName] = nearestLine("major"), [rl] = nearestLine("rail");
+  const km = d => (d / 1000).toFixed(1);
+  const ef = Math.round(dist(p, C.essendon)), ma = Math.round(dist(p, C.tullamarine)), mo = Math.round(dist(p, C.moorabbin)), av = Math.round(dist(p, C.avalon));
+  let barsClose = 0; for (const k of around(1)) for (const [a, b] of grid.bar.get(k) || []) if (dist(p, [a, b]) <= 150) barsClose++;
+  const noise = []; let n = 100;
+  if (mw < 100) { n -= 45; noise.push(`Freeway ${mw} m away (${mwName})`); } else if (mw < 300) { n -= 25; noise.push(`Freeway ${mw} m away (${mwName})`); } else if (mw < 500) { n -= 10; noise.push(`Freeway within 500 m (${mwName})`); }
+  if (mj < 50) { n -= 30; noise.push(`On or beside a main road (${mjName}, ${mj} m)`); } else if (mj < 150) { n -= 15; noise.push(`Main road ${mj} m away (${mjName})`); }
+  if (rl < 100) { n -= 20; noise.push(`Railway line ${rl} m away`); } else if (rl < 250) { n -= 8; noise.push(`Railway line ${rl} m away`); }
+  if (barsClose) { n -= Math.min(15, 5 * barsClose); noise.push(`${barsClose} pub/bar within 150 m`); }
+  if (ef < 3000) { n -= 15; noise.push(`Essendon Fields airport ${km(ef)} km away`); } else if (ef < 5000) { n -= 6; noise.push(`Essendon Fields airport ${km(ef)} km away`); }
+  if (ma < 8000) { n -= 10; noise.push(`Melbourne Airport ${km(ma)} km away (flight paths)`); }
+  if (mo < 3000) { n -= 10; noise.push(`Moorabbin airport ${km(mo)} km away (light aircraft)`); }
+  if (av < 8000) { n -= 8; noise.push(`Avalon Airport ${km(av)} km away`); }
+  const airF = []; let a = 100;
+  if (mw < 150) { a -= 40; airF.push(`Within 150 m of a freeway (${mwName})`); } else if (mw < 300) { a -= 20; airF.push(`Freeway ${mw} m away (${mwName})`); } else if (mw < 500) { a -= 8; airF.push(`Freeway ${mw} m away`); }
+  if (mj < 50) { a -= 25; airF.push(`Fronts a main road (${mjName})`); } else if (mj < 150) { a -= 12; airF.push(`Main road ${mj} m away (${mjName})`); }
+  const [subName, region, lga] = G.suburbs[suburbKey] || [null, null, null];
+  const cr = subName && G.crime[subName];
+  let safety = null, crime = null;
+  if (cr && cr[3] && cr[3] >= C.minPop) {
+    const [tot, burg, ass, ppl] = cr, rate = 1000 * tot / ppl, r1 = x => Math.round(x * 10) / 10;
+    safety = clamp(100 - 50 * (rate / C.vicRate - 0.5));
+    crime = { rate: r1(rate), burglary: r1(1000 * burg / ppl), assault: r1(1000 * ass / ppl), offences: tot, population: ppl };
+  }
+  return { lat, lng, region, lga, cbd_km: Math.round(dist(p, C.cbd) / 100) / 10, near, counts, met, twenty, transit: clamp(tr),
+    roads: { motorway: mw, motorway_name: mwName, major: mj, major_name: mjName, rail: rl },
+    quiet: clamp(n), noise_flags: noise, air: clamp(a), air_flags: airF, safety, crime };
+}
+// Find an address with OpenStreetMap's geocoder (one request per added listing, within its usage policy)
+async function geocode(street, suburb) {
+  const q = new URLSearchParams({ street: street.replace(/,.*$/, ""), city: suburb, state: "Victoria", country: "Australia", format: "jsonv2", limit: "1" });
+  const r = await fetch("https://nominatim.openstreetmap.org/search?" + q, { headers: { "Accept-Language": "en" } });
+  const d = await r.json();
+  if (!d.length) throw new Error("not found");
+  const lat = +d[0].lat, lng = +d[0].lon;
+  if (lat < -38.6 || lat > -37.3 || lng < 144.3 || lng > 145.9) throw new Error("outside Melbourne");
+  return [lat, lng];
+}
+async function analyseListing(rec) {
+  const key = String(rec.suburb || "").trim().toLowerCase().replace(/^saint /, "st ");
+  const geo = await loadGeo();
+  if (!geo.G.suburbs[key]) throw new Error("suburb");
+  const [lat, lng] = await geocode(rec.street, rec.suburb);
+  const sc = scoreLocation(geo, lat, lng, key);
+  return { ...sc, suburb: geo.G.suburbs[key][0], status: "analysed" };
+}
+// Anyone who opens the page finishes off listings that were added without scores
+const analysing = new Set();
+async function analysePending() {
+  if (!remote?.updateListing) return;
+  for (const a of added) {
+    if (a.twenty != null || a.analyse_failed || analysing.has(a.id)) continue;
+    analysing.add(a.id);
+    try { await remote.updateListing(a.dbId, await analyseListing(a)); }
+    catch (e) { if (e.message !== "no geo") remote.updateListing(a.dbId, { analyse_failed: true }).catch(() => {}); }
+    await new Promise(r => setTimeout(r, 1100));  // OpenStreetMap asks for at most one lookup a second
+  }
+}
 
 /* ---------- filtering ---------- */
 function passes(l) {
@@ -1028,8 +1150,19 @@ $("#addform").addEventListener("submit", async e => {
     type: $("#a-type").value, url: $("#a-url").value.trim() || null, available: "?", by: myId, at: Date.now(), status: "pending", mode: MODE,
   };
   if (rec.url && !/^https:\/\//.test(rec.url)) { msg.textContent = "The link needs to start with https://"; return; }
+  rec.agency = $("#a-agency").value.trim() || null;
   $("#a-submit").disabled = true;
-  try { await remote.addListing(rec); msg.textContent = "Added. Ask Claude to analyse it to get location scores."; e.target.reset(); }
+  msg.textContent = "Finding the address and working out its scores…";
+  try { Object.assign(rec, await analyseListing(rec)); }
+  catch (err) {
+    rec.analyse_failed = err.message !== "no geo";
+    msg.textContent = err.message === "suburb" ? "That suburb isn't in metropolitan Melbourne, so it can't be scored." : "Couldn't find that address on the map, so it's saved without scores.";
+  }
+  try {
+    await remote.addListing(rec);
+    msg.textContent = rec.twenty != null ? "Added with scores. It's in the list below and in the Listings tab." : msg.textContent + " Added.";
+    e.target.reset(); $("#a-beds").value = MODE === "solo" ? 1 : 4;
+  }
   catch (err) { msg.textContent = err.code === "invalid_argument" ? "You have view-only access, so you can't add listings." : "Couldn't add the listing. Try again."; }
   $("#a-submit").disabled = false;
 });
@@ -1082,9 +1215,10 @@ async function startSupabase() {
     votes = v;
     notes = (st.notes || []).map(n => ({ id: n.id, listing: n.listing_id, by: n.person, text: n.body, at: Date.parse(n.created_at) }));
     added = (st.added || []).map(a => { const b = a.data || {};
-      return { ...b, id: "a_" + a.id, by: a.person, rent: +b.rent || 0, beds: +b.beds || 0, suburb: String(b.suburb || ""), street: String(b.street || ""),
+      return { ...b, id: "a_" + a.id, dbId: a.id, by: a.person, rent: +b.rent || 0, beds: +b.beds || 0, suburb: String(b.suburb || ""), street: String(b.street || ""),
         url: /^https:\/\//.test(b.url || "") ? b.url : null, noise_flags: b.noise_flags || [], air_flags: b.air_flags || [] }; });
     render();
+    analysePending();
   };
   try { await load(); } catch { return false; }
   myId = id.name;
@@ -1094,6 +1228,7 @@ async function startSupabase() {
     addNote: async (listing, text) => { await rpc("add_note", { p_house: h, p_person: myId, p_listing: listing, p_body: text }); await load(); },
     delNote: async nid => { await rpc("delete_note", { p_house: h, p_person: myId, p_id: nid }); await load(); },
     addListing: async rec => { delete rec.by; await rpc("add_listing", { p_house: h, p_person: myId, p_data: rec }); await load(); },
+    updateListing: async (dbId, fields) => { await rpc("update_listing", { p_house: h, p_id: dbId, p_data: fields }); await load(); },
   };
   votes[myId] = votes[myId] || {};
   const local = store.get("localVotes", {});  // carry over votes made before joining
@@ -1120,6 +1255,7 @@ async function startSupabase() {
     addNote: (listing, text) => db.collection("notes").add({ listing, by: myId, text, at: Date.now() }),
     delNote: nid => db.doc("notes/" + nid).delete(),
     addListing: rec => db.collection("added").add(rec),
+    updateListing: (dbId, fields) => db.doc("added/" + dbId).update(fields),
   };
   const cw = await user.can("data.write");
   delete votes.local;
@@ -1136,10 +1272,10 @@ async function startSupabase() {
   db.collection("added").onSnapshot(async snap => {
     added = snap.docs.map(d => {
       const b = d.data();
-      return { ...b, id: "a_" + d.id, rent: +b.rent || 0, beds: +b.beds || 0, suburb: String(b.suburb || ""), street: String(b.street || ""),
+      return { ...b, id: "a_" + d.id, dbId: d.id, rent: +b.rent || 0, beds: +b.beds || 0, suburb: String(b.suburb || ""), street: String(b.street || ""),
         url: /^https:\/\//.test(b.url || "") ? b.url : null, noise_flags: b.noise_flags || [], air_flags: b.air_flags || [] };
     });
-    await refreshProfiles(); render();
+    await refreshProfiles(); render(); analysePending();
   }, onErr);
   if (cw === false) { canWrite = false; render(); }
 })();
