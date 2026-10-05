@@ -274,7 +274,7 @@ a { color: var(--accent); }
       <details>
         <summary>What matters to us</summary>
         <div class="fields" id="weights"></div>
-        <p class="src" style="margin:10px 0 0">Weights set the overall score. They're saved in your browser only.</p>
+        <p class="src" style="margin:10px 0 0">How much each score counts towards the overall score. ×2 counts twice as much as ×1; ×0 leaves it out. Saved in your browser only.</p>
       </details>
       <details open>
         <summary>Votes</summary>
@@ -367,7 +367,7 @@ a { color: var(--accent); }
 
       <section data-panel="how" hidden>
         <div class="prose">
-          <p>Each listing gets seven scores out of 100. The overall score is a weighted average you control under <b>What matters to us</b>. Distances are measured from the listing's map pin. Walking distance is estimated as straight-line distance × 1.3, a typical detour factor for Melbourne's grid streets, at 80 m per minute.</p>
+          <p>Each listing gets seven scores out of 100. The overall score is an average you control under <b>What matters to us</b>: each score is multiplied by its setting (×0 to ×5) before averaging, so ×2 counts twice as much as ×1 and ×0 leaves a score out. Distances are measured from the listing's map pin. Walking distance is estimated as straight-line distance × 1.3, a typical detour factor for Melbourne's grid streets, at 80 m per minute.</p>
 
           <h2>Walkability</h2>
           <p>Based on Plan Melbourne's <b>20-minute neighbourhood</b>: you should be able to meet most daily needs within an 800 m walk, 10 minutes there and 10 back. We check nine needs: supermarket, fresh food (greengrocer, butcher or bakery), pharmacy, GP, café or restaurant, park, gym or pool, library or community centre, and a train within 800 m or a tram within 600 m. The walkability score is half the share of needs met and half the listing's Walk Score®.</p>
@@ -514,7 +514,9 @@ loadF();
 const DIMS = [
   ["walk", "Walkability"], ["transit", "Public transport"], ["quiet", "Quiet"], ["air", "Clean air"], ["safety", "Safety"], ["agency", "Agency"], ["price", "Price"],
 ];
-const W = Object.assign({ walk: 25, transit: 20, quiet: 15, air: 10, safety: 15, agency: 10, price: 10 }, store.get("weights", {}));
+// Multipliers: the overall score is the average of the scores, each counted this many times.
+const W = Object.assign({ walk: 2.5, transit: 2, quiet: 1.5, air: 1, safety: 1.5, agency: 1, price: 1 },
+  store.get("mult", null) || Object.fromEntries(Object.entries(store.get("weights", {})).map(([k, v]) => [k, Math.min(5, Math.round(v / 5) / 2)])));  // older 0–50 weights
 const AG = P.agencies || {};
 const agOf = l => AG[l.agency] || null;
 const AGES = [["new", "2020+"], ["modern", "2000–19"], ["late", "1945–99"], ["period", "Pre-1945"], ["unknown", "Unknown"]];
@@ -573,7 +575,7 @@ $("#subs-clear").onclick = () => { F.subs = []; saveF(); render(); };
 $("#minscores").innerHTML = DIMS.filter(d => d[0] !== "price").map(([k, t]) =>
   `<div class="field"><div class="row"><span>${t}</span><b class="num" id="v-min-${k}"></b></div><input type="range" id="f-min-${k}" min="0" max="90" step="5"></div>`).join("");
 $("#weights").innerHTML = DIMS.map(([k, t]) =>
-  `<div class="field"><div class="row"><span>${t}</span><b class="num" id="v-w-${k}"></b></div><input type="range" id="w-${k}" min="0" max="50" step="5"></div>`).join("");
+  `<div class="field"><div class="row"><span>${t}</span><b class="num" id="v-w-${k}"></b></div><input type="range" id="w-${k}" min="0" max="5" step="0.5"></div>`).join("");
 
 // Everything that depends on which search is showing
 function applyMode() {
@@ -621,7 +623,7 @@ function syncInputs() {
   $("#subs-clear").textContent = F.subs.length ? "Clear (" + F.subs.length + ")" : "All suburbs";
   for (const [k] of DIMS) {
     if (k !== "price") { $("#f-min-" + k).value = F.min[k]; $("#v-min-" + k).textContent = F.min[k] || "Any"; }
-    $("#w-" + k).value = W[k]; $("#v-w-" + k).textContent = W[k] ? W[k] + "%" : "off";
+    $("#w-" + k).value = W[k]; $("#v-w-" + k).textContent = W[k] ? "×" + W[k] : "off";
   }
 }
 function saveF() { store.set(filterKey(), F); }
@@ -637,7 +639,7 @@ $("#rail").addEventListener("input", e => {
   else if (id === "f-nocav") F.nocav = e.target.checked;
   else if (id === "f-unvoted") F.unvoted = e.target.checked;
   else if (id.startsWith("f-min-")) F.min[id.slice(6)] = +e.target.value;
-  else if (id.startsWith("w-")) { W[id.slice(2)] = +e.target.value; store.set("weights", W); }
+  else if (id.startsWith("w-")) { W[id.slice(2)] = +e.target.value; store.set("mult", W); }
   else return;
   if (F.ppmin > F.ppmax) F.ppmin = F.ppmax;
   saveF(); render();
