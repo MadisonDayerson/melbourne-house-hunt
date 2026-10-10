@@ -127,7 +127,7 @@
  "Ausview Group": {
   "reviews": null,
   "cav": [],
-  "listings": 1
+  "listings": 2
  },
  "Avenue West Real Estate": {
   "reviews": null,
@@ -711,7 +711,7 @@
  "Bill Schlink First National": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 3
  },
  "Bill Wyndham & Co - Bairnsdale": {
   "reviews": null,
@@ -1164,7 +1164,7 @@
  "Converge Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 4
  },
  "Cooper Real Estate": {
   "reviews": null,
@@ -1678,7 +1678,7 @@
  "Geoff Nixon Real Estate - Caulfield South": {
   "reviews": null,
   "cav": [],
-  "listings": 7
+  "listings": 8
  },
  "Gerard Collins Real Estate - Pakenham": {
   "reviews": null,
@@ -3443,7 +3443,7 @@
  "PropertyNow": {
   "reviews": null,
   "cav": [],
-  "listings": 26
+  "listings": 27
  },
  "RAM International": {
   "reviews": null,
@@ -4572,7 +4572,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 62
+  "listings": 63
  },
  "Richardson Property Group": {
   "reviews": null,
@@ -5212,6 +5212,24 @@
   "cav": [],
   "listings": 23
  },
+ "YPA Brunswick": {
+  "reviews": {
+   "slug": "ypa-estate-agents",
+   "name": "YPA Estate Agents",
+   "reviews": 231,
+   "rating": 3.6,
+   "dist": [
+    73,
+    2,
+    0,
+    13,
+    143
+   ],
+   "level": "brand"
+  },
+  "cav": [],
+  "listings": 1
+ },
  "YPA Caroline Springs": {
   "reviews": {
    "slug": "ypa-estate-agents",
@@ -5246,7 +5264,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 4
+  "listings": 5
  },
  "YPA Estate Agents - Dromana": {
   "reviews": {
