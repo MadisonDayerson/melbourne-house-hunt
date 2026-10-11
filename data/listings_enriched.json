@@ -6,8 +6,8 @@
   "street": "31 Winston Road",
   "suburb": "Viewbank",
   "postcode": "3084",
-  "rent_text": "$935 pw",
-  "rent": 935,
+  "rent_text": "$920 pw",
+  "rent": 920,
   "beds": 5,
   "baths": 3,
   "cars": 3,
@@ -2047,8 +2047,8 @@
   "street": "5 Amberley Court",
   "suburb": "Bulleen",
   "postcode": "3105",
-  "rent_text": "$780 pw",
-  "rent": 780,
+  "rent_text": "$750 pw",
+  "rent": 750,
   "beds": 5,
   "baths": 3,
   "cars": 2,
@@ -7772,121 +7772,6 @@
    "population": 18503
   },
   "first_seen": "2026-08-27"
- },
- {
-  "id": 4837000,
-  "url": "https://www.rent.com.au/property/11-verve-dr-officer-vic-3809-4837000",
-  "type": "House",
-  "street": "11 Verve Drive",
-  "suburb": "Officer",
-  "postcode": "3809",
-  "rent_text": "$600 pw",
-  "rent": 600,
-  "beds": 4,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -38.075853,
-  "lng": 145.428593,
-  "available": "now",
-  "listed": "2026-07-30",
-  "walk_score": 20,
-  "transit_score": 0,
-  "agency": "Ray White Cranbourne",
-  "region": "South-east",
-  "lga": "Cardinia",
-  "cbd_km": 49.6,
-  "near": {
-   "supermarket": {
-    "m": 1089,
-    "name": "Woolworths"
-   },
-   "fresh": {
-    "m": 3384,
-    "name": "Pie and Mighty"
-   },
-   "pharmacy": {
-    "m": 4071,
-    "name": "TerryWhite Chemmart"
-   },
-   "gp": {
-    "m": 1796,
-    "name": "Officer Medical Centre"
-   },
-   "cafe": {
-    "m": 569,
-    "name": "Club Officer"
-   },
-   "park": {
-    "m": 101,
-    "name": ""
-   },
-   "gym": {
-    "m": 1461,
-    "name": "Comely Banks Recreation Reserve"
-   },
-   "library": {
-    "m": 3026,
-    "name": "Konewark Child and Family Centre"
-   },
-   "train": {
-    "m": 9999,
-    "name": ""
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 176,
-    "name": "Verve Dr/Bridge Rd"
-   },
-   "bar": {
-    "m": 3316,
-    "name": "Copper & Fox"
-   },
-   "cinema": {
-    "m": 9999,
-    "name": ""
-   }
-  },
-  "counts": {
-   "cafe": 1,
-   "bar": 0,
-   "bus": 2,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "cafe",
-   "park"
-  ],
-  "twenty": 22,
-  "transit": 20,
-  "roads": {
-   "motorway": 250,
-   "motorway_name": "Princes Freeway",
-   "major": 1205,
-   "major_name": "Princes Highway",
-   "rail": 680
-  },
-  "quiet": 75,
-  "noise_flags": [
-   "Freeway 250 m away (Princes Freeway)"
-  ],
-  "air": 80,
-  "air_flags": [
-   "Freeway 250 m away (Princes Freeway)"
-  ],
-  "safety": 78,
-  "crime": {
-   "rate": 81.2,
-   "burglary": 7.1,
-   "assault": 7.7,
-   "offences": 1502,
-   "population": 18503
-  },
-  "first_seen": "2026-07-30"
  },
  {
   "id": 4938731,
@@ -13692,6 +13577,114 @@
    "assault": 5.9,
    "offences": 3477,
    "population": 50298
+  },
+  "first_seen": "2026-09-24"
+ },
+ {
+  "id": 5102307,
+  "url": "https://www.rent.com.au/property/7-niseko-cres-pakenham-vic-3810-5102307",
+  "type": "House",
+  "street": "7 Niseko Crescent",
+  "suburb": "Pakenham",
+  "postcode": "3810",
+  "rent_text": "$625 pw",
+  "rent": 625,
+  "beds": 4,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -38.052461,
+  "lng": 145.458732,
+  "available": "now",
+  "listed": "2026-09-24",
+  "walk_score": 75,
+  "transit_score": 0,
+  "agency": "Ray White Cranbourne",
+  "region": "South-east",
+  "lga": "Cardinia",
+  "cbd_km": 50.4,
+  "near": {
+   "supermarket": {
+    "m": 1604,
+    "name": "Coles"
+   },
+   "fresh": {
+    "m": 1345,
+    "name": "The Cheesecake Shop"
+   },
+   "pharmacy": {
+    "m": 4690,
+    "name": "Chemist Warehouse"
+   },
+   "gp": {
+    "m": 2477,
+    "name": "Cardinia Medical Centre"
+   },
+   "cafe": {
+    "m": 955,
+    "name": "Nancy Eatery"
+   },
+   "park": {
+    "m": 851,
+    "name": ""
+   },
+   "gym": {
+    "m": 1327,
+    "name": "Jetts Fitness"
+   },
+   "library": {
+    "m": 4121,
+    "name": "Living and Learning in Cardinia"
+   },
+   "train": {
+    "m": 5131,
+    "name": "Pakenham"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 1383,
+    "name": "Michael St/Princes Hwy"
+   },
+   "bar": {
+    "m": 1799,
+    "name": "Castellos"
+   },
+   "cinema": {
+    "m": 9999,
+    "name": ""
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [],
+  "twenty": 0,
+  "transit": 0,
+  "roads": {
+   "motorway": 3468,
+   "motorway_name": "Princes Freeway On Ramp",
+   "major": 1071,
+   "major_name": "Princes Highway",
+   "rail": 2449
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 73,
+  "crime": {
+   "rate": 90.8,
+   "burglary": 3.9,
+   "assault": 9.1,
+   "offences": 4912,
+   "population": 54118
   },
   "first_seen": "2026-09-24"
  },
@@ -24483,7 +24476,7 @@
   "pets": null,
   "lat": -37.870061,
   "lng": 145.054554,
-  "available": "11th October 2026",
+  "available": "now",
   "listed": "2026-09-08",
   "walk_score": 68,
   "transit_score": 67,
@@ -57375,8 +57368,8 @@
   "street": "20 Rainbow Place",
   "suburb": "Mornington",
   "postcode": "3931",
-  "rent_text": "$850pw / $3,693pcm",
-  "rent": 850,
+  "rent_text": "$825pw / $3,585pcm",
+  "rent": 825,
   "beds": 4,
   "baths": 3,
   "cars": 1,
@@ -61974,6 +61967,117 @@
   "first_seen": "2026-03-17"
  },
  {
+  "id": 6511181,
+  "url": "https://www.rent.com.au/property/5-tephra-cres-craigieburn-vic-3064-6511181",
+  "type": "House",
+  "street": "5 Tephra Crescent",
+  "suburb": "Craigieburn",
+  "postcode": "3064",
+  "rent_text": "$680 P/Week",
+  "rent": 680,
+  "beds": 4,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -37.604431,
+  "lng": 144.902983,
+  "available": "now",
+  "listed": "2026-10-11",
+  "walk_score": 68,
+  "transit_score": 49,
+  "agency": "YPA Craigieburn-Mickleham",
+  "region": "North",
+  "lga": "Hume",
+  "cbd_km": 24.3,
+  "near": {
+   "supermarket": {
+    "m": 1918,
+    "name": "Aldi"
+   },
+   "fresh": {
+    "m": 2046,
+    "name": "Bigfields"
+   },
+   "pharmacy": {
+    "m": 2123,
+    "name": "Priceline Pharmacy"
+   },
+   "gp": {
+    "m": 2271,
+    "name": "Primary Medical Centre - Craigieburn"
+   },
+   "cafe": {
+    "m": 1812,
+    "name": "iSpice Thai"
+   },
+   "park": {
+    "m": 366,
+    "name": "Rhyolite Drive Reserve"
+   },
+   "gym": {
+    "m": 1383,
+    "name": ""
+   },
+   "library": {
+    "m": 346,
+    "name": "Aitken Hill Integrated Community Centre"
+   },
+   "train": {
+    "m": 4593,
+    "name": "Craigieburn"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 475,
+    "name": "Waterview Boulevard/Elevation Boulevard"
+   },
+   "bar": {
+    "m": 6112,
+    "name": "Roxburgh Park Hotel"
+   },
+   "cinema": {
+    "m": 1986,
+    "name": "United Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "park",
+   "library"
+  ],
+  "twenty": 22,
+  "transit": 10,
+  "roads": {
+   "motorway": 4098,
+   "motorway_name": "Hume Highway",
+   "major": 1258,
+   "major_name": "Craigieburn Road",
+   "rail": 3410
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 85,
+  "crime": {
+   "rate": 68.7,
+   "burglary": 2.4,
+   "assault": 7.3,
+   "offences": 4479,
+   "population": 65178
+  },
+  "first_seen": "2026-10-12"
+ },
+ {
   "id": 6510785,
   "url": "https://www.rent.com.au/property/6-portswood-dr-donnybrook-vic-3064-6510785",
   "type": "House",
@@ -66405,116 +66509,6 @@
    "major": 3662,
    "major_name": "Craigieburn Road",
    "rail": 6326
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 79,
-  "crime": {
-   "rate": 80.2,
-   "burglary": 5.2,
-   "assault": 10.6,
-   "offences": 1400,
-   "population": 17452
-  },
-  "first_seen": "2026-09-30"
- },
- {
-  "id": 6254867,
-  "url": "https://www.rent.com.au/property/10-tellicherry-rd-mickleham-vic-3064-6254867",
-  "type": "House",
-  "street": "10 Tellicherry Road",
-  "suburb": "Mickleham",
-  "postcode": "3064",
-  "rent_text": "$580 pw",
-  "rent": 580,
-  "beds": 4,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -37.560377,
-  "lng": 144.883646,
-  "available": "30th October 2026",
-  "listed": "2026-09-30",
-  "walk_score": 2,
-  "transit_score": 0,
-  "agency": "Stockdale & Leggo Craigieburn / Mickleham",
-  "region": "North",
-  "lga": "Hume",
-  "cbd_km": 29.4,
-  "near": {
-   "supermarket": {
-    "m": 2526,
-    "name": "Coles"
-   },
-   "fresh": {
-    "m": 5483,
-    "name": "Ferguson Plarre's Bakehouse"
-   },
-   "pharmacy": {
-    "m": 2580,
-    "name": "PharmaSave"
-   },
-   "gp": {
-    "m": 5169,
-    "name": ""
-   },
-   "cafe": {
-    "m": 2540,
-    "name": "Earl of Brew"
-   },
-   "park": {
-    "m": 102,
-    "name": ""
-   },
-   "gym": {
-    "m": 1433,
-    "name": ""
-   },
-   "library": {
-    "m": 1397,
-    "name": ""
-   },
-   "train": {
-    "m": 9999,
-    "name": ""
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 1180,
-    "name": "Trillium Boulevard/Mount Ridley Road"
-   },
-   "bar": {
-    "m": 9999,
-    "name": ""
-   },
-   "cinema": {
-    "m": 5800,
-    "name": "United Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "park"
-  ],
-  "twenty": 11,
-  "transit": 0,
-  "roads": {
-   "motorway": 5086,
-   "motorway_name": "Hume Freeway Onramp",
-   "major": 3275,
-   "major_name": "Craigieburn Road",
-   "rail": 6455
   },
   "quiet": 100,
   "noise_flags": [],
@@ -72557,117 +72551,6 @@
   "first_seen": "2026-10-02"
  },
  {
-  "id": 5892082,
-  "url": "https://www.rent.com.au/property/4-catherine-walk-wollert-vic-3750-5892082",
-  "type": "House",
-  "street": "4 Catherine Walk",
-  "suburb": "Wollert",
-  "postcode": "3750",
-  "rent_text": "$575 pw",
-  "rent": 575,
-  "beds": 4,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -37.613717,
-  "lng": 145.008008,
-  "available": "19th October 2026",
-  "listed": "2026-10-02",
-  "walk_score": 0,
-  "transit_score": 0,
-  "agency": "GREVILLE PABST REAL ESTATE PTY LTD",
-  "region": "North",
-  "lga": "Whittlesea",
-  "cbd_km": 22.9,
-  "near": {
-   "supermarket": {
-    "m": 1109,
-    "name": "Coles"
-   },
-   "fresh": {
-    "m": 5908,
-    "name": ""
-   },
-   "pharmacy": {
-    "m": 5842,
-    "name": "Priceline Pharmacy"
-   },
-   "gp": {
-    "m": 4697,
-    "name": "Epping Clinic"
-   },
-   "cafe": {
-    "m": 723,
-    "name": "Staple Pizza"
-   },
-   "park": {
-    "m": 155,
-    "name": ""
-   },
-   "gym": {
-    "m": 2001,
-    "name": ""
-   },
-   "library": {
-    "m": 1275,
-    "name": "Galada Community Centre"
-   },
-   "train": {
-    "m": 9999,
-    "name": ""
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 260,
-    "name": "Steen Avenue/Edgars Road"
-   },
-   "bar": {
-    "m": 5859,
-    "name": "Epping Plaza Hotel"
-   },
-   "cinema": {
-    "m": 5786,
-    "name": "Reading Epping Cinema"
-   }
-  },
-  "counts": {
-   "cafe": 3,
-   "bar": 0,
-   "bus": 2,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "cafe",
-   "park"
-  ],
-  "twenty": 22,
-  "transit": 20,
-  "roads": {
-   "motorway": 1609,
-   "motorway_name": "Hume Freeway",
-   "major": 1950,
-   "major_name": "Epping Road",
-   "rail": 4688
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 91,
-  "crime": {
-   "rate": 58.5,
-   "burglary": 4.5,
-   "assault": 5.9,
-   "offences": 1429,
-   "population": 24407
-  },
-  "first_seen": "2026-10-02"
- },
- {
   "id": 6504113,
   "url": "https://www.rent.com.au/property/7-echidna-dr-beveridge-vic-3753-6504113",
   "type": "House",
@@ -76228,6 +76111,116 @@
    "population": 4642
   },
   "first_seen": "2026-09-18"
+ },
+ {
+  "id": 5731582,
+  "url": "https://www.rent.com.au/property/7-audreys-walk-wollert-vic-3750-5731582",
+  "type": "Townhouse",
+  "street": "7 Audreys Walk",
+  "suburb": "Wollert",
+  "postcode": "3750",
+  "rent_text": "$540 pw",
+  "rent": 540,
+  "beds": 4,
+  "baths": 2,
+  "cars": 2,
+  "pets": true,
+  "lat": -37.622167,
+  "lng": 145.03766,
+  "available": "now",
+  "listed": "2026-09-17",
+  "walk_score": 0,
+  "transit_score": 0,
+  "agency": "Leap Real Estate",
+  "region": "North",
+  "lga": "Whittlesea",
+  "cbd_km": 22.6,
+  "near": {
+   "supermarket": {
+    "m": 1424,
+    "name": "Woolworths"
+   },
+   "fresh": {
+    "m": 5074,
+    "name": ""
+   },
+   "pharmacy": {
+    "m": 4082,
+    "name": "TerryWhite Chemmart"
+   },
+   "gp": {
+    "m": 3203,
+    "name": "Epping Clinic"
+   },
+   "cafe": {
+    "m": 3028,
+    "name": "Aurora Cafe"
+   },
+   "park": {
+    "m": 59,
+    "name": ""
+   },
+   "gym": {
+    "m": 3196,
+    "name": ""
+   },
+   "library": {
+    "m": 3562,
+    "name": "Galada Community Centre"
+   },
+   "train": {
+    "m": 6695,
+    "name": "Lalor"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 441,
+    "name": ""
+   },
+   "bar": {
+    "m": 4989,
+    "name": "Epping Plaza Hotel"
+   },
+   "cinema": {
+    "m": 4834,
+    "name": "Reading Epping Cinema"
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "park"
+  ],
+  "twenty": 11,
+  "transit": 10,
+  "roads": {
+   "motorway": 3875,
+   "motorway_name": "Hume Freeway",
+   "major": 743,
+   "major_name": "Epping Road",
+   "rail": 3295
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 91,
+  "crime": {
+   "rate": 58.5,
+   "burglary": 4.5,
+   "assault": 5.9,
+   "offences": 1429,
+   "population": 24407
+  },
+  "first_seen": "2026-09-17"
  },
  {
   "id": 6507370,
@@ -100137,114 +100130,6 @@
    "population": 1023
   },
   "first_seen": "2026-09-14"
- },
- {
-  "id": 5102307,
-  "url": "https://www.rent.com.au/property/7-niseko-cres-pakenham-vic-3810-5102307",
-  "type": "House",
-  "street": "7 Niseko Crescent",
-  "suburb": "Pakenham",
-  "postcode": "3810",
-  "rent_text": "$625 pw",
-  "rent": 625,
-  "beds": 4,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -38.052461,
-  "lng": 145.458732,
-  "available": "now",
-  "listed": "2026-09-24",
-  "walk_score": 75,
-  "transit_score": 0,
-  "agency": "Ray White Cranbourne",
-  "region": "South-east",
-  "lga": "Cardinia",
-  "cbd_km": 50.4,
-  "near": {
-   "supermarket": {
-    "m": 1604,
-    "name": "Coles"
-   },
-   "fresh": {
-    "m": 1345,
-    "name": "The Cheesecake Shop"
-   },
-   "pharmacy": {
-    "m": 4690,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 2477,
-    "name": "Cardinia Medical Centre"
-   },
-   "cafe": {
-    "m": 955,
-    "name": "Nancy Eatery"
-   },
-   "park": {
-    "m": 851,
-    "name": ""
-   },
-   "gym": {
-    "m": 1327,
-    "name": "Jetts Fitness"
-   },
-   "library": {
-    "m": 4121,
-    "name": "Living and Learning in Cardinia"
-   },
-   "train": {
-    "m": 5131,
-    "name": "Pakenham"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 1383,
-    "name": "Michael St/Princes Hwy"
-   },
-   "bar": {
-    "m": 1799,
-    "name": "Castellos"
-   },
-   "cinema": {
-    "m": 9999,
-    "name": ""
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [],
-  "twenty": 0,
-  "transit": 0,
-  "roads": {
-   "motorway": 3468,
-   "motorway_name": "Princes Freeway On Ramp",
-   "major": 1071,
-   "major_name": "Princes Highway",
-   "rail": 2449
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 73,
-  "crime": {
-   "rate": 90.8,
-   "burglary": 3.9,
-   "assault": 9.1,
-   "offences": 4912,
-   "population": 54118
-  },
-  "first_seen": "2026-09-24"
  },
  {
   "id": 6497437,
@@ -130489,122 +130374,6 @@
   "first_seen": "2026-09-10"
  },
  {
-  "id": 6484616,
-  "url": "https://www.rent.com.au/property/3-grove-rd-craigieburn-vic-3064-6484616",
-  "type": "House",
-  "street": "3 Grove Road",
-  "suburb": "Craigieburn",
-  "postcode": "3064",
-  "rent_text": "$680 P/Week",
-  "rent": 680,
-  "beds": 4,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -37.594193,
-  "lng": 144.905808,
-  "available": "now",
-  "listed": "2026-09-09",
-  "walk_score": 36,
-  "transit_score": 40,
-  "agency": "YPA Craigieburn-Mickleham",
-  "region": "North",
-  "lga": "Hume",
-  "cbd_km": 25.4,
-  "near": {
-   "supermarket": {
-    "m": 983,
-    "name": "Aldi"
-   },
-   "fresh": {
-    "m": 1049,
-    "name": "Bigfields"
-   },
-   "pharmacy": {
-    "m": 1072,
-    "name": "Priceline Pharmacy"
-   },
-   "gp": {
-    "m": 815,
-    "name": ""
-   },
-   "cafe": {
-    "m": 377,
-    "name": "Waterside Cafe"
-   },
-   "park": {
-    "m": 94,
-    "name": ""
-   },
-   "gym": {
-    "m": 971,
-    "name": "Splash Aqua Park and Leisure Centre"
-   },
-   "library": {
-    "m": 690,
-    "name": ""
-   },
-   "train": {
-    "m": 4415,
-    "name": "Craigieburn"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 177,
-    "name": "Waterview Boulevard/Craigieburn Road"
-   },
-   "bar": {
-    "m": 9999,
-    "name": ""
-   },
-   "cinema": {
-    "m": 850,
-    "name": "United Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 2,
-   "bar": 0,
-   "bus": 3,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "cafe",
-   "park",
-   "library"
-  ],
-  "twenty": 33,
-  "transit": 20,
-  "roads": {
-   "motorway": 3297,
-   "motorway_name": "Hume Highway",
-   "major": 101,
-   "major_name": "Craigieburn Road",
-   "rail": 3397
-  },
-  "quiet": 85,
-  "noise_flags": [
-   "Main road 101 m away (Craigieburn Road)"
-  ],
-  "air": 88,
-  "air_flags": [
-   "Main road 101 m away (Craigieburn Road)"
-  ],
-  "safety": 85,
-  "crime": {
-   "rate": 68.7,
-   "burglary": 2.4,
-   "assault": 7.3,
-   "offences": 4479,
-   "population": 65178
-  },
-  "first_seen": "2026-09-09"
- },
- {
   "id": 6484048,
   "url": "https://www.rent.com.au/property/10-command-rd-craigieburn-vic-3064-6484048",
   "type": "House",
@@ -136918,117 +136687,6 @@
   "first_seen": "2026-09-23"
  },
  {
-  "id": 6496385,
-  "url": "https://www.rent.com.au/property/17-parkgate-dr-clyde-north-vic-3978-6496385",
-  "type": "House",
-  "street": "17 Parkgate Drive",
-  "suburb": "Clyde North",
-  "postcode": "3978",
-  "rent_text": "$625 pw",
-  "rent": 625,
-  "beds": 4,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -38.105667,
-  "lng": 145.334121,
-  "available": "now",
-  "listed": "2026-09-23",
-  "walk_score": 10,
-  "transit_score": 30,
-  "agency": "Ray White Cranbourne",
-  "region": "South-east",
-  "lga": "Casey",
-  "cbd_km": 45.3,
-  "near": {
-   "supermarket": {
-    "m": 1114,
-    "name": "Woolworths"
-   },
-   "fresh": {
-    "m": 3615,
-    "name": "The Cheesecake Shop"
-   },
-   "pharmacy": {
-    "m": 3384,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 3834,
-    "name": "Valetta Street Medical Centre"
-   },
-   "cafe": {
-    "m": 595,
-    "name": "Deoro & Co"
-   },
-   "park": {
-    "m": 240,
-    "name": ""
-   },
-   "gym": {
-    "m": 1878,
-    "name": ""
-   },
-   "library": {
-    "m": 973,
-    "name": "Selandra Community Hub"
-   },
-   "train": {
-    "m": 9999,
-    "name": ""
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 231,
-    "name": "Parkgate Dr/Hardys Rd"
-   },
-   "bar": {
-    "m": 9999,
-    "name": ""
-   },
-   "cinema": {
-    "m": 9999,
-    "name": ""
-   }
-  },
-  "counts": {
-   "cafe": 1,
-   "bar": 0,
-   "bus": 2,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "cafe",
-   "park"
-  ],
-  "twenty": 22,
-  "transit": 20,
-  "roads": {
-   "motorway": 5630,
-   "motorway_name": "O'Shea Road Offramp",
-   "major": 1772,
-   "major_name": "C407",
-   "rail": 4585
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 75,
-  "crime": {
-   "rate": 87.1,
-   "burglary": 5.9,
-   "assault": 10.6,
-   "offences": 2760,
-   "population": 31681
-  },
-  "first_seen": "2026-09-23"
- },
- {
   "id": 6496261,
   "url": "https://www.rent.com.au/property/11-fiorin-st-clyde-north-vic-3978-6496261",
   "type": "House",
@@ -137568,118 +137226,6 @@
    "major": 2690,
    "major_name": "Narre Warren Road",
    "rail": 3772
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 75,
-  "crime": {
-   "rate": 87.1,
-   "burglary": 5.9,
-   "assault": 10.6,
-   "offences": 2760,
-   "population": 31681
-  },
-  "first_seen": "2026-09-17"
- },
- {
-  "id": 6491263,
-  "url": "https://www.rent.com.au/property/18-karabair-st-clyde-north-vic-3978-6491263",
-  "type": "House",
-  "street": "18 Karabair Street",
-  "suburb": "Clyde North",
-  "postcode": "3978",
-  "rent_text": "$630 pw",
-  "rent": 630,
-  "beds": 4,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -38.106332,
-  "lng": 145.326452,
-  "available": "now",
-  "listed": "2026-09-17",
-  "walk_score": 27,
-  "transit_score": 33,
-  "agency": "Ray White Cranbourne",
-  "region": "South-east",
-  "lga": "Casey",
-  "cbd_km": 44.8,
-  "near": {
-   "supermarket": {
-    "m": 438,
-    "name": "Woolworths"
-   },
-   "fresh": {
-    "m": 4459,
-    "name": "The Cheesecake Shop"
-   },
-   "pharmacy": {
-    "m": 3051,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 3673,
-    "name": "Valetta Street Medical Centre"
-   },
-   "cafe": {
-    "m": 1189,
-    "name": "Deoro & Co"
-   },
-   "park": {
-    "m": 315,
-    "name": ""
-   },
-   "gym": {
-    "m": 1577,
-    "name": ""
-   },
-   "library": {
-    "m": 278,
-    "name": "Selandra Community Hub"
-   },
-   "train": {
-    "m": 5311,
-    "name": "Cranbourne"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 213,
-    "name": "Blackforest Way/Selandra Bvd"
-   },
-   "bar": {
-    "m": 4980,
-    "name": "Kelly's"
-   },
-   "cinema": {
-    "m": 9999,
-    "name": ""
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 5,
-   "tram": 0,
-   "shops": 1
-  },
-  "met": [
-   "supermarket",
-   "park",
-   "library"
-  ],
-  "twenty": 33,
-  "transit": 20,
-  "roads": {
-   "motorway": 6070,
-   "motorway_name": "O'Shea Road Offramp",
-   "major": 1923,
-   "major_name": "C407",
-   "rail": 3928
   },
   "quiet": 100,
   "noise_flags": [],
@@ -142016,8 +141562,8 @@
   "street": "1/6 Boronia Grove",
   "suburb": "Doncaster East",
   "postcode": "3109",
-  "rent_text": "$900 pw",
-  "rent": 900,
+  "rent_text": "$899 pw",
+  "rent": 899,
   "beds": 4,
   "baths": 3,
   "cars": 2,
@@ -143356,6 +142902,116 @@
    "population": 12644
   },
   "first_seen": "2026-03-16"
+ },
+ {
+  "id": 6254867,
+  "url": "https://www.rent.com.au/property/10-tellicherry-rd-mickleham-vic-3064-6254867",
+  "type": "House",
+  "street": "10 Tellicherry Road",
+  "suburb": "Mickleham",
+  "postcode": "3064",
+  "rent_text": "$580 pw",
+  "rent": 580,
+  "beds": 4,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -37.560377,
+  "lng": 144.883646,
+  "available": "30th October 2026",
+  "listed": "2026-09-30",
+  "walk_score": 2,
+  "transit_score": 0,
+  "agency": "Stockdale & Leggo Craigieburn / Mickleham",
+  "region": "North",
+  "lga": "Hume",
+  "cbd_km": 29.4,
+  "near": {
+   "supermarket": {
+    "m": 2526,
+    "name": "Coles"
+   },
+   "fresh": {
+    "m": 5483,
+    "name": "Ferguson Plarre's Bakehouse"
+   },
+   "pharmacy": {
+    "m": 2580,
+    "name": "PharmaSave"
+   },
+   "gp": {
+    "m": 5169,
+    "name": ""
+   },
+   "cafe": {
+    "m": 2540,
+    "name": "Earl of Brew"
+   },
+   "park": {
+    "m": 102,
+    "name": ""
+   },
+   "gym": {
+    "m": 1433,
+    "name": ""
+   },
+   "library": {
+    "m": 1397,
+    "name": ""
+   },
+   "train": {
+    "m": 9999,
+    "name": ""
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 1180,
+    "name": "Trillium Boulevard/Mount Ridley Road"
+   },
+   "bar": {
+    "m": 9999,
+    "name": ""
+   },
+   "cinema": {
+    "m": 5800,
+    "name": "United Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "park"
+  ],
+  "twenty": 11,
+  "transit": 0,
+  "roads": {
+   "motorway": 5086,
+   "motorway_name": "Hume Freeway Onramp",
+   "major": 3275,
+   "major_name": "Craigieburn Road",
+   "rail": 6455
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 79,
+  "crime": {
+   "rate": 80.2,
+   "burglary": 5.2,
+   "assault": 10.6,
+   "offences": 1400,
+   "population": 17452
+  },
+  "first_seen": "2026-09-30"
  },
  {
   "id": 6500962,
@@ -186727,6 +186383,226 @@
   "first_seen": "2026-08-21"
  },
  {
+  "id": 6464168,
+  "url": "https://www.rent.com.au/property/2-booroolong-lane-clyde-north-vic-3978-6464168",
+  "type": "House",
+  "street": "2 Booroolong Lane",
+  "suburb": "Clyde North",
+  "postcode": "3978",
+  "rent_text": "$620 pw",
+  "rent": 620,
+  "beds": 4,
+  "baths": 2,
+  "cars": 0,
+  "pets": false,
+  "lat": -38.108602,
+  "lng": 145.343675,
+  "available": "now",
+  "listed": "2026-08-18",
+  "walk_score": 16,
+  "transit_score": 0,
+  "agency": "Area Specialist - Keysborough",
+  "region": "South-east",
+  "lga": "Casey",
+  "cbd_km": 46.1,
+  "near": {
+   "supermarket": {
+    "m": 1306,
+    "name": "Woolworths"
+   },
+   "fresh": {
+    "m": 2925,
+    "name": "The Cheesecake Shop"
+   },
+   "pharmacy": {
+    "m": 2859,
+    "name": "Priceline Pharmacy"
+   },
+   "gp": {
+    "m": 3803,
+    "name": "Valetta Street Medical Centre"
+   },
+   "cafe": {
+    "m": 880,
+    "name": "Deoro & Co"
+   },
+   "park": {
+    "m": 113,
+    "name": ""
+   },
+   "gym": {
+    "m": 858,
+    "name": ""
+   },
+   "library": {
+    "m": 2134,
+    "name": "Selandra Community Hub"
+   },
+   "train": {
+    "m": 9999,
+    "name": ""
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 440,
+    "name": "Khan Bvd/Hardys Rd"
+   },
+   "bar": {
+    "m": 9999,
+    "name": ""
+   },
+   "cinema": {
+    "m": 9999,
+    "name": ""
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "park"
+  ],
+  "twenty": 11,
+  "transit": 10,
+  "roads": {
+   "motorway": 5480,
+   "motorway_name": "Princes Freeway",
+   "major": 2299,
+   "major_name": "C407",
+   "rail": 5462
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 75,
+  "crime": {
+   "rate": 87.1,
+   "burglary": 5.9,
+   "assault": 10.6,
+   "offences": 2760,
+   "population": 31681
+  },
+  "first_seen": "2026-08-18"
+ },
+ {
+  "id": 6462670,
+  "url": "https://www.rent.com.au/property/12-foxfort-st-clyde-north-vic-3978-6462670",
+  "type": "House",
+  "street": "12 Foxfort Street",
+  "suburb": "Clyde North",
+  "postcode": "3978",
+  "rent_text": "$620 pw",
+  "rent": 620,
+  "beds": 4,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -38.105812,
+  "lng": 145.396394,
+  "available": "now",
+  "listed": "2026-08-17",
+  "walk_score": 0,
+  "transit_score": 0,
+  "agency": "Ray White Ferntree Gully",
+  "region": "South-east",
+  "lga": "Casey",
+  "cbd_km": 49.3,
+  "near": {
+   "supermarket": {
+    "m": 4003,
+    "name": "Coles"
+   },
+   "fresh": {
+    "m": 4133,
+    "name": "The Cheesecake Shop"
+   },
+   "pharmacy": {
+    "m": 4182,
+    "name": "Priceline Pharmacy"
+   },
+   "gp": {
+    "m": 5473,
+    "name": "Trident Medical Centre"
+   },
+   "cafe": {
+    "m": 1095,
+    "name": "Humble Merchant at Smiths Lane (kiosk)"
+   },
+   "park": {
+    "m": 303,
+    "name": ""
+   },
+   "gym": {
+    "m": 4225,
+    "name": "Ayr Hill Equestrian Centre"
+   },
+   "library": {
+    "m": 5309,
+    "name": "Konewark Child and Family Centre"
+   },
+   "train": {
+    "m": 9999,
+    "name": ""
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 440,
+    "name": "Homely Ave/Burnbank Pde"
+   },
+   "bar": {
+    "m": 9999,
+    "name": ""
+   },
+   "cinema": {
+    "m": 9999,
+    "name": ""
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "park"
+  ],
+  "twenty": 11,
+  "transit": 10,
+  "roads": {
+   "motorway": 3415,
+   "motorway_name": "Princes Freeway On Ramp",
+   "major": 5138,
+   "major_name": "Princes Highway",
+   "rail": 4561
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 75,
+  "crime": {
+   "rate": 87.1,
+   "burglary": 5.9,
+   "assault": 10.6,
+   "offences": 2760,
+   "population": 31681
+  },
+  "first_seen": "2026-08-17"
+ },
+ {
   "id": 6510847,
   "url": "https://www.rent.com.au/property/241-jells-rd-wheelers-hill-vic-3150-6510847",
   "type": "House",
@@ -187664,226 +187540,6 @@
    "population": 20652
   },
   "first_seen": "2026-08-21"
- },
- {
-  "id": 6464168,
-  "url": "https://www.rent.com.au/property/2-booroolong-lane-clyde-north-vic-3978-6464168",
-  "type": "House",
-  "street": "2 Booroolong Lane",
-  "suburb": "Clyde North",
-  "postcode": "3978",
-  "rent_text": "$620 pw",
-  "rent": 620,
-  "beds": 4,
-  "baths": 2,
-  "cars": 0,
-  "pets": false,
-  "lat": -38.108602,
-  "lng": 145.343675,
-  "available": "now",
-  "listed": "2026-08-18",
-  "walk_score": 16,
-  "transit_score": 0,
-  "agency": "Area Specialist - Keysborough",
-  "region": "South-east",
-  "lga": "Casey",
-  "cbd_km": 46.1,
-  "near": {
-   "supermarket": {
-    "m": 1306,
-    "name": "Woolworths"
-   },
-   "fresh": {
-    "m": 2925,
-    "name": "The Cheesecake Shop"
-   },
-   "pharmacy": {
-    "m": 2859,
-    "name": "Priceline Pharmacy"
-   },
-   "gp": {
-    "m": 3803,
-    "name": "Valetta Street Medical Centre"
-   },
-   "cafe": {
-    "m": 880,
-    "name": "Deoro & Co"
-   },
-   "park": {
-    "m": 113,
-    "name": ""
-   },
-   "gym": {
-    "m": 858,
-    "name": ""
-   },
-   "library": {
-    "m": 2134,
-    "name": "Selandra Community Hub"
-   },
-   "train": {
-    "m": 9999,
-    "name": ""
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 440,
-    "name": "Khan Bvd/Hardys Rd"
-   },
-   "bar": {
-    "m": 9999,
-    "name": ""
-   },
-   "cinema": {
-    "m": 9999,
-    "name": ""
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "park"
-  ],
-  "twenty": 11,
-  "transit": 10,
-  "roads": {
-   "motorway": 5480,
-   "motorway_name": "Princes Freeway",
-   "major": 2299,
-   "major_name": "C407",
-   "rail": 5462
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 75,
-  "crime": {
-   "rate": 87.1,
-   "burglary": 5.9,
-   "assault": 10.6,
-   "offences": 2760,
-   "population": 31681
-  },
-  "first_seen": "2026-08-18"
- },
- {
-  "id": 6462670,
-  "url": "https://www.rent.com.au/property/12-foxfort-st-clyde-north-vic-3978-6462670",
-  "type": "House",
-  "street": "12 Foxfort Street",
-  "suburb": "Clyde North",
-  "postcode": "3978",
-  "rent_text": "$620 pw",
-  "rent": 620,
-  "beds": 4,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -38.105812,
-  "lng": 145.396394,
-  "available": "now",
-  "listed": "2026-08-17",
-  "walk_score": 0,
-  "transit_score": 0,
-  "agency": "Ray White Ferntree Gully",
-  "region": "South-east",
-  "lga": "Casey",
-  "cbd_km": 49.3,
-  "near": {
-   "supermarket": {
-    "m": 4003,
-    "name": "Coles"
-   },
-   "fresh": {
-    "m": 4133,
-    "name": "The Cheesecake Shop"
-   },
-   "pharmacy": {
-    "m": 4182,
-    "name": "Priceline Pharmacy"
-   },
-   "gp": {
-    "m": 5473,
-    "name": "Trident Medical Centre"
-   },
-   "cafe": {
-    "m": 1095,
-    "name": "Humble Merchant at Smiths Lane (kiosk)"
-   },
-   "park": {
-    "m": 303,
-    "name": ""
-   },
-   "gym": {
-    "m": 4225,
-    "name": "Ayr Hill Equestrian Centre"
-   },
-   "library": {
-    "m": 5309,
-    "name": "Konewark Child and Family Centre"
-   },
-   "train": {
-    "m": 9999,
-    "name": ""
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 440,
-    "name": "Homely Ave/Burnbank Pde"
-   },
-   "bar": {
-    "m": 9999,
-    "name": ""
-   },
-   "cinema": {
-    "m": 9999,
-    "name": ""
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "park"
-  ],
-  "twenty": 11,
-  "transit": 10,
-  "roads": {
-   "motorway": 3415,
-   "motorway_name": "Princes Freeway On Ramp",
-   "major": 5138,
-   "major_name": "Princes Highway",
-   "rail": 4561
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 75,
-  "crime": {
-   "rate": 87.1,
-   "burglary": 5.9,
-   "assault": 10.6,
-   "offences": 2760,
-   "population": 31681
-  },
-  "first_seen": "2026-08-17"
  },
  {
   "id": 6457883,
@@ -199699,116 +199355,6 @@
    "population": 23369
   },
   "first_seen": "2026-06-24"
- },
- {
-  "id": 5731582,
-  "url": "https://www.rent.com.au/property/7-audreys-walk-wollert-vic-3750-5731582",
-  "type": "Townhouse",
-  "street": "7 Audreys Walk",
-  "suburb": "Wollert",
-  "postcode": "3750",
-  "rent_text": "$540 pw",
-  "rent": 540,
-  "beds": 4,
-  "baths": 2,
-  "cars": 2,
-  "pets": true,
-  "lat": -37.622167,
-  "lng": 145.03766,
-  "available": "now",
-  "listed": "2026-09-17",
-  "walk_score": 0,
-  "transit_score": 0,
-  "agency": "Leap Real Estate",
-  "region": "North",
-  "lga": "Whittlesea",
-  "cbd_km": 22.6,
-  "near": {
-   "supermarket": {
-    "m": 1424,
-    "name": "Woolworths"
-   },
-   "fresh": {
-    "m": 5074,
-    "name": ""
-   },
-   "pharmacy": {
-    "m": 4082,
-    "name": "TerryWhite Chemmart"
-   },
-   "gp": {
-    "m": 3203,
-    "name": "Epping Clinic"
-   },
-   "cafe": {
-    "m": 3028,
-    "name": "Aurora Cafe"
-   },
-   "park": {
-    "m": 59,
-    "name": ""
-   },
-   "gym": {
-    "m": 3196,
-    "name": ""
-   },
-   "library": {
-    "m": 3562,
-    "name": "Galada Community Centre"
-   },
-   "train": {
-    "m": 6695,
-    "name": "Lalor"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 441,
-    "name": ""
-   },
-   "bar": {
-    "m": 4989,
-    "name": "Epping Plaza Hotel"
-   },
-   "cinema": {
-    "m": 4834,
-    "name": "Reading Epping Cinema"
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "park"
-  ],
-  "twenty": 11,
-  "transit": 10,
-  "roads": {
-   "motorway": 3875,
-   "motorway_name": "Hume Freeway",
-   "major": 743,
-   "major_name": "Epping Road",
-   "rail": 3295
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 91,
-  "crime": {
-   "rate": 58.5,
-   "burglary": 4.5,
-   "assault": 5.9,
-   "offences": 1429,
-   "population": 24407
-  },
-  "first_seen": "2026-09-17"
  },
  {
   "id": 6491377,
@@ -212840,6 +212386,576 @@
    "population": 36305
   },
   "first_seen": "2026-05-08"
+ },
+ {
+  "id": 4837000,
+  "url": "https://www.rent.com.au/property/11-verve-dr-officer-vic-3809-4837000",
+  "type": "House",
+  "street": "11 Verve Drive",
+  "suburb": "Officer",
+  "postcode": "3809",
+  "rent_text": "$600 pw",
+  "rent": 600,
+  "beds": 4,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -38.075853,
+  "lng": 145.428593,
+  "available": "now",
+  "listed": "2026-07-30",
+  "walk_score": 20,
+  "transit_score": 0,
+  "agency": "Ray White Cranbourne",
+  "region": "South-east",
+  "lga": "Cardinia",
+  "cbd_km": 49.6,
+  "near": {
+   "supermarket": {
+    "m": 1089,
+    "name": "Woolworths"
+   },
+   "fresh": {
+    "m": 3384,
+    "name": "Pie and Mighty"
+   },
+   "pharmacy": {
+    "m": 4071,
+    "name": "TerryWhite Chemmart"
+   },
+   "gp": {
+    "m": 1796,
+    "name": "Officer Medical Centre"
+   },
+   "cafe": {
+    "m": 569,
+    "name": "Club Officer"
+   },
+   "park": {
+    "m": 101,
+    "name": ""
+   },
+   "gym": {
+    "m": 1461,
+    "name": "Comely Banks Recreation Reserve"
+   },
+   "library": {
+    "m": 3026,
+    "name": "Konewark Child and Family Centre"
+   },
+   "train": {
+    "m": 9999,
+    "name": ""
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 176,
+    "name": "Verve Dr/Bridge Rd"
+   },
+   "bar": {
+    "m": 3316,
+    "name": "Copper & Fox"
+   },
+   "cinema": {
+    "m": 9999,
+    "name": ""
+   }
+  },
+  "counts": {
+   "cafe": 1,
+   "bar": 0,
+   "bus": 2,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "cafe",
+   "park"
+  ],
+  "twenty": 22,
+  "transit": 20,
+  "roads": {
+   "motorway": 250,
+   "motorway_name": "Princes Freeway",
+   "major": 1205,
+   "major_name": "Princes Highway",
+   "rail": 680
+  },
+  "quiet": 75,
+  "noise_flags": [
+   "Freeway 250 m away (Princes Freeway)"
+  ],
+  "air": 80,
+  "air_flags": [
+   "Freeway 250 m away (Princes Freeway)"
+  ],
+  "safety": 78,
+  "crime": {
+   "rate": 81.2,
+   "burglary": 7.1,
+   "assault": 7.7,
+   "offences": 1502,
+   "population": 18503
+  },
+  "first_seen": "2026-07-30",
+  "gone": "2026-10-12"
+ },
+ {
+  "id": 5892082,
+  "url": "https://www.rent.com.au/property/4-catherine-walk-wollert-vic-3750-5892082",
+  "type": "House",
+  "street": "4 Catherine Walk",
+  "suburb": "Wollert",
+  "postcode": "3750",
+  "rent_text": "$575 pw",
+  "rent": 575,
+  "beds": 4,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -37.613717,
+  "lng": 145.008008,
+  "available": "19th October 2026",
+  "listed": "2026-10-02",
+  "walk_score": 0,
+  "transit_score": 0,
+  "agency": "GREVILLE PABST REAL ESTATE PTY LTD",
+  "region": "North",
+  "lga": "Whittlesea",
+  "cbd_km": 22.9,
+  "near": {
+   "supermarket": {
+    "m": 1109,
+    "name": "Coles"
+   },
+   "fresh": {
+    "m": 5908,
+    "name": ""
+   },
+   "pharmacy": {
+    "m": 5842,
+    "name": "Priceline Pharmacy"
+   },
+   "gp": {
+    "m": 4697,
+    "name": "Epping Clinic"
+   },
+   "cafe": {
+    "m": 723,
+    "name": "Staple Pizza"
+   },
+   "park": {
+    "m": 155,
+    "name": ""
+   },
+   "gym": {
+    "m": 2001,
+    "name": ""
+   },
+   "library": {
+    "m": 1275,
+    "name": "Galada Community Centre"
+   },
+   "train": {
+    "m": 9999,
+    "name": ""
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 260,
+    "name": "Steen Avenue/Edgars Road"
+   },
+   "bar": {
+    "m": 5859,
+    "name": "Epping Plaza Hotel"
+   },
+   "cinema": {
+    "m": 5786,
+    "name": "Reading Epping Cinema"
+   }
+  },
+  "counts": {
+   "cafe": 3,
+   "bar": 0,
+   "bus": 2,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "cafe",
+   "park"
+  ],
+  "twenty": 22,
+  "transit": 20,
+  "roads": {
+   "motorway": 1609,
+   "motorway_name": "Hume Freeway",
+   "major": 1950,
+   "major_name": "Epping Road",
+   "rail": 4688
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 91,
+  "crime": {
+   "rate": 58.5,
+   "burglary": 4.5,
+   "assault": 5.9,
+   "offences": 1429,
+   "population": 24407
+  },
+  "first_seen": "2026-10-02",
+  "gone": "2026-10-12"
+ },
+ {
+  "id": 6484616,
+  "url": "https://www.rent.com.au/property/3-grove-rd-craigieburn-vic-3064-6484616",
+  "type": "House",
+  "street": "3 Grove Road",
+  "suburb": "Craigieburn",
+  "postcode": "3064",
+  "rent_text": "$680 P/Week",
+  "rent": 680,
+  "beds": 4,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -37.594193,
+  "lng": 144.905808,
+  "available": "now",
+  "listed": "2026-09-09",
+  "walk_score": 36,
+  "transit_score": 40,
+  "agency": "YPA Craigieburn-Mickleham",
+  "region": "North",
+  "lga": "Hume",
+  "cbd_km": 25.4,
+  "near": {
+   "supermarket": {
+    "m": 983,
+    "name": "Aldi"
+   },
+   "fresh": {
+    "m": 1049,
+    "name": "Bigfields"
+   },
+   "pharmacy": {
+    "m": 1072,
+    "name": "Priceline Pharmacy"
+   },
+   "gp": {
+    "m": 815,
+    "name": ""
+   },
+   "cafe": {
+    "m": 377,
+    "name": "Waterside Cafe"
+   },
+   "park": {
+    "m": 94,
+    "name": ""
+   },
+   "gym": {
+    "m": 971,
+    "name": "Splash Aqua Park and Leisure Centre"
+   },
+   "library": {
+    "m": 690,
+    "name": ""
+   },
+   "train": {
+    "m": 4415,
+    "name": "Craigieburn"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 177,
+    "name": "Waterview Boulevard/Craigieburn Road"
+   },
+   "bar": {
+    "m": 9999,
+    "name": ""
+   },
+   "cinema": {
+    "m": 850,
+    "name": "United Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 2,
+   "bar": 0,
+   "bus": 3,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "cafe",
+   "park",
+   "library"
+  ],
+  "twenty": 33,
+  "transit": 20,
+  "roads": {
+   "motorway": 3297,
+   "motorway_name": "Hume Highway",
+   "major": 101,
+   "major_name": "Craigieburn Road",
+   "rail": 3397
+  },
+  "quiet": 85,
+  "noise_flags": [
+   "Main road 101 m away (Craigieburn Road)"
+  ],
+  "air": 88,
+  "air_flags": [
+   "Main road 101 m away (Craigieburn Road)"
+  ],
+  "safety": 85,
+  "crime": {
+   "rate": 68.7,
+   "burglary": 2.4,
+   "assault": 7.3,
+   "offences": 4479,
+   "population": 65178
+  },
+  "first_seen": "2026-09-09",
+  "gone": "2026-10-12"
+ },
+ {
+  "id": 6496385,
+  "url": "https://www.rent.com.au/property/17-parkgate-dr-clyde-north-vic-3978-6496385",
+  "type": "House",
+  "street": "17 Parkgate Drive",
+  "suburb": "Clyde North",
+  "postcode": "3978",
+  "rent_text": "$625 pw",
+  "rent": 625,
+  "beds": 4,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -38.105667,
+  "lng": 145.334121,
+  "available": "now",
+  "listed": "2026-09-23",
+  "walk_score": 10,
+  "transit_score": 30,
+  "agency": "Ray White Cranbourne",
+  "region": "South-east",
+  "lga": "Casey",
+  "cbd_km": 45.3,
+  "near": {
+   "supermarket": {
+    "m": 1114,
+    "name": "Woolworths"
+   },
+   "fresh": {
+    "m": 3615,
+    "name": "The Cheesecake Shop"
+   },
+   "pharmacy": {
+    "m": 3384,
+    "name": "Chemist Warehouse"
+   },
+   "gp": {
+    "m": 3834,
+    "name": "Valetta Street Medical Centre"
+   },
+   "cafe": {
+    "m": 595,
+    "name": "Deoro & Co"
+   },
+   "park": {
+    "m": 240,
+    "name": ""
+   },
+   "gym": {
+    "m": 1878,
+    "name": ""
+   },
+   "library": {
+    "m": 973,
+    "name": "Selandra Community Hub"
+   },
+   "train": {
+    "m": 9999,
+    "name": ""
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 231,
+    "name": "Parkgate Dr/Hardys Rd"
+   },
+   "bar": {
+    "m": 9999,
+    "name": ""
+   },
+   "cinema": {
+    "m": 9999,
+    "name": ""
+   }
+  },
+  "counts": {
+   "cafe": 1,
+   "bar": 0,
+   "bus": 2,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "cafe",
+   "park"
+  ],
+  "twenty": 22,
+  "transit": 20,
+  "roads": {
+   "motorway": 5630,
+   "motorway_name": "O'Shea Road Offramp",
+   "major": 1772,
+   "major_name": "C407",
+   "rail": 4585
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 75,
+  "crime": {
+   "rate": 87.1,
+   "burglary": 5.9,
+   "assault": 10.6,
+   "offences": 2760,
+   "population": 31681
+  },
+  "first_seen": "2026-09-23",
+  "gone": "2026-10-12"
+ },
+ {
+  "id": 6491263,
+  "url": "https://www.rent.com.au/property/18-karabair-st-clyde-north-vic-3978-6491263",
+  "type": "House",
+  "street": "18 Karabair Street",
+  "suburb": "Clyde North",
+  "postcode": "3978",
+  "rent_text": "$630 pw",
+  "rent": 630,
+  "beds": 4,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -38.106332,
+  "lng": 145.326452,
+  "available": "now",
+  "listed": "2026-09-17",
+  "walk_score": 27,
+  "transit_score": 33,
+  "agency": "Ray White Cranbourne",
+  "region": "South-east",
+  "lga": "Casey",
+  "cbd_km": 44.8,
+  "near": {
+   "supermarket": {
+    "m": 438,
+    "name": "Woolworths"
+   },
+   "fresh": {
+    "m": 4459,
+    "name": "The Cheesecake Shop"
+   },
+   "pharmacy": {
+    "m": 3051,
+    "name": "Chemist Warehouse"
+   },
+   "gp": {
+    "m": 3673,
+    "name": "Valetta Street Medical Centre"
+   },
+   "cafe": {
+    "m": 1189,
+    "name": "Deoro & Co"
+   },
+   "park": {
+    "m": 315,
+    "name": ""
+   },
+   "gym": {
+    "m": 1577,
+    "name": ""
+   },
+   "library": {
+    "m": 278,
+    "name": "Selandra Community Hub"
+   },
+   "train": {
+    "m": 5311,
+    "name": "Cranbourne"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 213,
+    "name": "Blackforest Way/Selandra Bvd"
+   },
+   "bar": {
+    "m": 4980,
+    "name": "Kelly's"
+   },
+   "cinema": {
+    "m": 9999,
+    "name": ""
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 5,
+   "tram": 0,
+   "shops": 1
+  },
+  "met": [
+   "supermarket",
+   "park",
+   "library"
+  ],
+  "twenty": 33,
+  "transit": 20,
+  "roads": {
+   "motorway": 6070,
+   "motorway_name": "O'Shea Road Offramp",
+   "major": 1923,
+   "major_name": "C407",
+   "rail": 3928
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 75,
+  "crime": {
+   "rate": 87.1,
+   "burglary": 5.9,
+   "assault": 10.6,
+   "offences": 2760,
+   "population": 31681
+  },
+  "first_seen": "2026-09-17",
+  "gone": "2026-10-12"
  },
  {
   "id": 6467248,

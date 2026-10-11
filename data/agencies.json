@@ -2803,6 +2803,11 @@
   "cav": [],
   "listings": 2
  },
+ "Melbourne City Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
+ },
  "Melbourne Realty Group": {
   "reviews": null,
   "cav": [],
@@ -2811,7 +2816,7 @@
  "Melbourne Residential Property - ESSENDON": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 4
  },
  "Melbourne Residential Real Estate Pty Ltd": {
   "reviews": null,
@@ -3443,7 +3448,7 @@
  "PropertyNow": {
   "reviews": null,
   "cav": [],
-  "listings": 27
+  "listings": 28
  },
  "RAM International": {
   "reviews": null,
@@ -4141,7 +4146,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 13
+  "listings": 14
  },
  "Ray White Macleod": {
   "reviews": {
@@ -5264,7 +5269,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 5
+  "listings": 7
  },
  "YPA Estate Agents - Dromana": {
   "reviews": {
