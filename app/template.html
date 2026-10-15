@@ -198,6 +198,23 @@ a { color: var(--accent); }
 .prose table { border-collapse: collapse; font-size: 13px; width: 100%; }
 .prose td, .prose th { border-bottom: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; }
 .src { font-size: 13px; color: var(--muted); }
+/* Hunt tabs + settings */
+.hunts { display: flex; gap: 6px; flex-wrap: wrap; align-items: flex-end; margin-top: 16px; border-bottom: 1px solid var(--ink); }
+.hunt { border: 1px solid var(--line); border-bottom: 0; background: var(--sunk); color: var(--muted); border-radius: 8px 8px 0 0; padding: 7px 14px;
+  cursor: pointer; font-family: var(--display); font-weight: 700; font-stretch: 88%; font-size: 15px; margin-bottom: -1px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hunt[aria-pressed=true] { background: var(--paper); color: var(--ink); border-color: var(--ink); border-bottom: 1px solid var(--paper); }
+.hunt.add { background: none; border-style: dashed; font-weight: 500; font-stretch: 100%; font-family: var(--body); font-size: 14px; }
+.hsum { display: grid; gap: 4px; font-size: 13px; min-width: 0; max-width: 440px; }
+.hsum .hs-top { font-size: 15px; }
+.hsum .hs-top b { font-family: var(--display); font-stretch: 88%; font-size: 17px; }
+.hsum .hs-btns { display: flex; gap: 8px; margin-top: 4px; flex-wrap: wrap; }
+.hsum .btn { padding: 4px 12px; font-size: 13px; }
+.panel { margin-top: 14px; }
+.prows { display: grid; gap: 6px; grid-column: 1 / -1; }
+.prow { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr) 76px minmax(0, 1.1fr) 30px; gap: 6px; align-items: center; }
+.prow.head { font-size: 11px; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+@media (max-width: 560px) { .prow { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 64px; } .prow > :nth-child(4), .prow > :nth-child(5) { grid-column: span 1; } .prow.head > :nth-child(4), .prow.head > :nth-child(5) { display: none; } }
+.formgrid input:disabled { opacity: .6; }
 .toast { position: fixed; left: 50%; bottom: calc(env(safe-area-inset-bottom, 0px) + 18px); transform: translateX(-50%); background: var(--ink); color: var(--paper); padding: 8px 16px; border-radius: 999px; font-size: 13px; z-index: 9; }
 @media (prefers-reduced-motion: no-preference) { .card { transition: outline-color .2s; } }
 </style>
@@ -209,17 +226,44 @@ a { color: var(--accent); }
       <h1>Melbourne House Hunt</h1>
       <p id="lede"></p>
     </div>
-    <form class="group" id="group" aria-label="Who's moving">
-      <div class="field" style="flex-basis:100%"><span class="label">Searching for</span>
-        <div class="seg" id="mode"><button type="button" data-m="group">Share house</button><button type="button" data-m="solo">Just me</button></div></div>
-      <label data-for="group"><span class="label">People</span><input id="g-people" type="number" min="1" max="12" value="5"></label>
-      <label data-for="group"><span class="label">Couples</span><input id="g-couples" type="number" min="0" max="6" value="1"></label>
-      <label data-for="group"><span class="label">Split rent</span>
-        <select id="g-split"><option value="equal">Equally per person</option><option value="room">By bedroom</option></select></label>
-      <label data-for="solo"><span class="label">Salary before tax ($/yr)</span><input id="g-salary" type="number" min="20000" max="500000" step="1000" value="100000" style="width:110px"></label>
-      <div class="num" id="g-sum" style="font-size:13px;color:var(--muted)"></div>
-    </form>
+    <div class="group hsum" id="hsum" aria-live="polite"></div>
   </header>
+  <nav class="hunts" id="hunts" aria-label="Your hunts"></nav>
+
+  <form id="hset" class="formgrid panel" hidden aria-label="Hunt settings">
+    <div class="wide"><b>Settings for this hunt</b><p class="src" style="margin:4px 0 0">Everyone in the hunt sees and shares these. Salary is optional: if you add it, listings show that person's share as a percentage of their pay.</p></div>
+    <label class="wide">Hunt name<input id="s-name" maxlength="40" required></label>
+    <div class="prows">
+      <div class="prow head"><span>Who's paying</span><span>People</span><span>Share %</span><span>Salary ($/yr)</span><span></span></div>
+      <div id="s-rows" class="prows"></div>
+      <div><button type="button" class="linkbtn" id="s-add">+ Add a person or couple</button></div>
+    </div>
+    <label>How to split the rent<select id="s-split"><option value="person">Equally per person</option><option value="room">Equally per bedroom</option><option value="custom">Custom percentages</option></select></label>
+    <label>Max rent ($/wk, whole place)<input id="s-max" type="number" min="100" max="5000" step="10" required></label>
+    <label>Min rent ($/wk)<input id="s-min" type="number" min="0" max="5000" step="10" value="0"></label>
+    <label>Bedrooms, at least<input id="s-bmin" type="number" min="0" max="8"></label>
+    <label>Bedrooms, at most<input id="s-bmax" type="number" min="0" max="8" placeholder="no limit"></label>
+    <div class="wide" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><button class="btn" type="submit">Save for everyone</button><button class="btn ghost" type="button" id="s-cancel">Cancel</button><span id="s-msg" class="src"></span><span style="flex:1"></span><button type="button" class="linkbtn" id="s-leave">Leave this hunt</button></div>
+  </form>
+
+  <div id="invite" class="formgrid panel" hidden></div>
+
+  <form id="hnew" class="formgrid panel" hidden aria-label="Start or join a hunt">
+    <div class="wide" id="hnew-intro"><b>Start a new hunt</b><p class="src" style="margin:4px 0 0">Each hunt has its own people, budget, votes and notes. You can invite others once it's set up.</p></div>
+    <div class="wide" id="hnew-start" style="display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+      <label>Hunt name<input id="n-name" maxlength="40" placeholder="e.g. Brunswick share house"></label>
+      <label>Who's looking<select id="n-kind"><option value="house">A share house</option><option value="pair">Two people (a couple or friends)</option><option value="solo">Just me</option></select></label>
+      <label>Your name<input id="n-me" maxlength="30" autocomplete="given-name"></label>
+      <div style="display:flex;align-items:end"><button class="btn" type="button" id="n-create">Create hunt</button></div>
+    </div>
+    <div class="wide" id="hnew-join" style="display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border-top:1px dashed var(--line);padding-top:12px">
+      <div style="grid-column:1/-1"><b id="j-title">Got an invite?</b><p class="src" style="margin:4px 0 0" id="j-help">Paste the invite link or code someone sent you.</p></div>
+      <label>Invite link or code<input id="j-code" maxlength="200" autocomplete="off"></label>
+      <label>Your name<input id="j-me" maxlength="30" autocomplete="given-name"></label>
+      <div style="display:flex;align-items:end"><button class="btn" type="button" id="j-join">Join hunt</button></div>
+    </div>
+    <div class="wide" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><button class="btn ghost" type="button" id="n-cancel">Close</button><span id="n-msg" class="src"></span></div>
+  </form>
 
   <nav class="tabs" role="tablist" id="tabs">
     <button class="tab" role="tab" data-tab="list" aria-selected="true">Listings<span class="count" id="c-list"></span></button>
@@ -241,6 +285,7 @@ a { color: var(--accent); }
           <div class="field"><span class="label">Car spaces</span><div class="seg" data-f="cars"></div></div>
           <div class="field"><span class="label">Type</span><div class="seg" data-f="type"></div></div>
           <div class="field"><span class="label">When built</span><div class="subs" id="ages"></div></div>
+          <label class="check"><input type="checkbox" id="f-lodging"> Hide rooming houses &amp; student accommodation</label>
           <label class="check"><input type="checkbox" id="f-pets"> Pets allowed</label>
           <label class="check"><input type="checkbox" id="f-now"> Available now</label>
           <label class="check"><input type="checkbox" id="f-fresh"> New in the last 2 days</label>
@@ -278,12 +323,6 @@ a { color: var(--accent); }
     </aside>
 
     <main id="main" style="min-width:0">
-      <form id="join" class="formgrid" hidden style="margin-bottom:12px">
-        <div class="wide"><b>Join your house's shortlist</b><p class="src" style="margin:4px 0 0">Use the same house code as your housemates. Your name is shown next to your votes and notes. Both are remembered on this device.</p></div>
-        <label>Your name<input id="j-name" maxlength="30" required autocomplete="given-name"></label>
-        <label>House code<input id="j-code" minlength="6" maxlength="60" required autocomplete="off" placeholder="from whoever set this up"></label>
-        <div class="wide" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><button class="btn" type="submit">Join</button><button class="btn ghost" type="button" id="j-cancel">Not now</button><span id="j-msg" class="src"></span></div>
-      </form>
       <div id="sync" class="notice" hidden></div>
       <section data-panel="list">
         <div class="bar">
@@ -403,14 +442,23 @@ a { color: var(--accent); }
           <p>Listings don't include a build year, so we read each listing's description. In order: a stated year ("built in 2016"), phrases like "brand new" or "only 4 years old", then the style described (Victorian, Edwardian, Californian bungalow, art deco, 1960s brick). If the description says nothing and the suburb is almost entirely post-2000 estates (Tarneit, Clyde North, Mickleham…), it's marked as a guess. Otherwise it's Unknown. Hover over the build year on a card to see the words it came from. Age isn't part of the overall score, but older homes are often draughty and harder to heat, so check heating and insulation at the inspection.</p>
 
           <h2>Price</h2>
-          <p>100 at your minimum per-person budget, falling to 0 at your maximum. With "By bedroom" splitting, each bedroom costs the same and the couple shares one, so singles pay more than the couple each. Filters use the highest share anyone in the group would pay.</p>
+          <p>100 at the hunt's minimum weekly rent, falling to 0 at its maximum. The rent range in the filters starts from the hunt's budget; you can narrow it for yourself without changing it for everyone.</p>
 
-          <h2>Budget on your own</h2>
-          <p>In <b>Just me</b> mode the maximum rent starts at 30% of your salary before tax, the usual line for "rental stress" in Australia. On $100,000 a year that's about $580 a week. Each listing also shows the rent as a share of your take-home pay, estimated with 2026–27 income tax rates and the 2% Medicare levy. That estimate leaves out HELP repayments, tax offsets and salary sacrifice, so check it against your payslip. Listings go up to $700 a week so places a little over budget still show.</p>
+          <h2>Hunts, budgets and splitting the rent</h2>
+          <p>Each hunt has its own people, budget, bedrooms, votes and notes, shared by everyone in it. Under <b>Settings</b>:</p>
+          <ul>
+            <li><b>Who's paying.</b> One row per person, or per couple sharing a room. Each row needs a bedroom, so the minimum bedrooms follows the number of rows unless you change it.</li>
+            <li><b>The split.</b> <i>Equally per person</i>: a couple pays for two. <i>Equally per bedroom</i>: a couple shares one room's cost. <i>Custom</i>: any percentages, scaled to add up to 100%.</li>
+            <li><b>Salary</b> (optional). Listings show that person's share as a percentage of their pay. 30% of pre-tax pay is the usual line for "rental stress" in Australia; on $100,000 a year that's about $580 a week. Take-home pay is estimated with 2026–27 income tax rates and the 2% Medicare levy, leaving out HELP repayments, offsets and salary sacrifice.</li>
+          </ul>
+          <p>If your name in the hunt matches a row, listings show <b>your share</b>; otherwise they show the range per person.</p>
+
+          <h2>Rooming houses and student accommodation</h2>
+          <p>Some listings are a single room rather than a whole home. These are hidden unless you untick <b>Hide rooming houses &amp; student accommodation</b>. A listing counts as one when its description says it's a rooming or boarding house, student accommodation (or is run by a student-housing operator such as UniLodge, Scape, Iglu, Urbanest or Yugo), or a room in a shared house ("room for rent", "private room", "furnished room", "co-living"). Hover over the red label on a card to see the words it came from. Listings that don't say so in their description can slip through.</p>
 
           <h2>Where the data comes from</h2>
           <ul class="src">
-            <li>Listings: rent.com.au public search results for 539 suburbs in Melbourne's 31 metropolitan councils, 4+ bedrooms up to $1,900 a week, collected on the date shown at the top. Places listed only on realestate.com.au or Domain won't appear unless you add them.</li>
+            <li>Listings: rent.com.au public search results for 539 suburbs in Melbourne's 31 metropolitan councils, refreshed every morning: studios to 2 bedrooms up to $900 a week, 3 bedrooms up to $1,400 and 4+ bedrooms up to $1,900. Places listed only on realestate.com.au or Domain won't appear unless you add them.</li>
             <li>Walk Score® and Transit Score®: supplied with each listing by rent.com.au.</li>
             <li>Build age and features: the listing's own description on rent.com.au.</li>
             <li>Agency reviews: ProductReview.com.au. Regulator records: <a href="https://www.consumer.vic.gov.au/latest-news" target="_blank" rel="noopener">Consumer Affairs Victoria news</a>.</li>
@@ -441,14 +489,10 @@ const store = {
   set(k, v) { try { localStorage.setItem("nhh:" + k, JSON.stringify(v)); } catch {} },
 };
 
-// Two searches share one page: "group" (4+ bed share house) and "solo" (studio–2 bed for one person)
-let MODE = (P.solo || []).length ? store.get("mode", "group") : "group";
-let L = MODE === "solo" ? P.solo : P.listings;
-const LEDE = {
-  group: "Every 4+ bedroom rental we could find across Melbourne, from the inner city to the outer suburbs, scored on what it's like to live there: daily needs within a 10-minute walk, trains and trams, traffic noise and fumes, and recorded crime. Vote, shortlist and leave notes together.",
-  solo: "Studios, 1 and 2 bedroom places across Melbourne you could rent on your own, with your budget set by your salary. Scored on daily needs within a 10-minute walk, trains and trams, traffic noise and fumes, recorded crime and the agency's track record.",
-};
-
+/* ---------- hunts ----------
+   A hunt is a shared space identified by a code: its settings (who's paying, the split, budget,
+   bedrooms), votes, notes and added listings all live in Supabase under that code. This browser
+   remembers which hunts you've joined and the name you use in each. */
 // Australian resident income tax for 2026–27 (15% bracket from 1 July 2026) plus the 2% Medicare levy.
 // Approximate: ignores offsets, HELP repayments and salary sacrifice.
 function takeHome(gross) {
@@ -457,44 +501,101 @@ function takeHome(gross) {
   for (const [lim, rate] of brackets) { if (gross > prev) tax += (Math.min(gross, lim) - prev) * rate; prev = lim; }
   return gross - tax - gross * 0.02;
 }
-
-/* ---------- household ---------- */
-const G = Object.assign({ people: 5, couples: 1, split: "equal", salary: 100000 }, store.get("group", {}));
-$("#g-people").value = G.people; $("#g-couples").value = G.couples; $("#g-split").value = G.split; $("#g-salary").value = G.salary;
-const budget30 = () => Math.round(G.salary * 0.3 / 52 / 10) * 10;  // the 30%-of-income rental stress line
-const rooms = () => Math.max(1, G.people - G.couples);
+const POOLS = { small: [0, 2], three: [3, 3], large: [4, 99] };  // bedroom range of each listing file
+const TEMPLATES = {
+  house: me => ({ name: "Share house", split: "person", budgetMax: 1400, budgetMin: 0, bedsMin: 4, bedsMax: 99,
+    rows: [{ name: me || "Person 1", people: 1 }, { name: "Person 2", people: 1 }, { name: "Person 3", people: 1 }, { name: "Person 4", people: 1 }] }),
+  pair: me => ({ name: "The two of us", split: "person", budgetMax: 900, budgetMin: 0, bedsMin: 2, bedsMax: 3,
+    rows: [{ name: me || "Person 1", people: 1 }, { name: "Person 2", people: 1 }] }),
+  solo: me => ({ name: "Just me", split: "person", budgetMax: 580, budgetMin: 0, bedsMin: 0, bedsMax: 2,
+    rows: [{ name: me || "Me", people: 1, salary: 100000 }] }),
+  // the original share house (before hunts existed): five people, one couple, $250–350 each
+  legacy: () => ({ name: "Share house", split: "person", budgetMax: 1750, budgetMin: 0, bedsMin: 4, bedsMax: 99,
+    rows: [{ name: "Couple", people: 2 }, { name: "Person 3", people: 1 }, { name: "Person 4", people: 1 }, { name: "Person 5", people: 1 }] }),
+};
+function cleanSettings(x) {
+  const d = TEMPLATES.house("");
+  const s = Object.assign({}, d, x || {});
+  s.name = String(s.name || d.name).slice(0, 40);
+  s.split = ["person", "room", "custom"].includes(s.split) ? s.split : "person";
+  s.rows = (Array.isArray(s.rows) && s.rows.length ? s.rows : d.rows).slice(0, 12).map((r, i) => ({
+    name: String(r.name || `Person ${i + 1}`).slice(0, 30), people: +r.people === 2 ? 2 : 1,
+    share: Math.max(0, +r.share || 0), salary: Math.max(0, +r.salary || 0) }));
+  s.budgetMax = Math.max(100, +s.budgetMax || 1000); s.budgetMin = Math.min(s.budgetMax, Math.max(0, +s.budgetMin || 0));
+  s.bedsMin = Math.max(0, Math.min(8, Math.round(+s.bedsMin || 0)));
+  s.bedsMax = s.bedsMax == null || +s.bedsMax >= 8 ? 99 : Math.max(s.bedsMin, Math.round(+s.bedsMax));
+  return s;
+}
+// Each row is one payer (a person, or a couple sharing a room). Returns each row's fraction of the rent.
+function fractions(S) {
+  const w = S.rows.map(r => S.split === "room" ? 1 : S.split === "custom" ? Math.max(0, +r.share || 0) : (r.people || 1));
+  const t = w.reduce((a, b) => a + b, 0) || 1;
+  return w.map(x => x / t);
+}
+let hunts = store.get("hunts", null);
+if (!hunts) {  // first visit since hunts were added: carry over the old single house code
+  const old = store.get("house", {});
+  hunts = old.code ? [{ code: old.code, me: old.name, name: "Share house" }] : [];
+  store.set("hunts", hunts);
+}
+let active = store.get("activeHunt", hunts[0]?.code || null);
+if (!hunts.some(h => h.code === active)) active = hunts[0]?.code || null;
+const huntEntry = () => hunts.find(h => h.code === active) || null;
+let HS = cleanSettings(active ? store.get("hs:" + active, null) || (active === "House_Hunt" ? TEMPLATES.legacy() : TEMPLATES.house(huntEntry()?.me)) : TEMPLATES.house(""));
+let L = [], listingsLoading = true;
+const people = () => HS.rows.reduce((a, r) => a + (r.people || 1), 0);
+function bedsLabel(S = HS) {
+  if (S.bedsMax >= 8) return S.bedsMin === 0 ? "Any size" : `${S.bedsMin}+ bedrooms`;
+  if (S.bedsMin === S.bedsMax) return S.bedsMin === 0 ? "Studios" : `${S.bedsMin} bedroom${S.bedsMin === 1 ? "" : "s"}`;
+  return `${S.bedsMin === 0 ? "Studio" : S.bedsMin}–${S.bedsMax} bedrooms`;
+}
 function shares(rent) {
-  if (MODE === "solo") return { max: rent, single: rent, couple: rent };
-  if (G.split === "room") { const r = rent / rooms(); return { max: r, single: r, couple: r / 2 }; }
-  const e = rent / G.people; return { max: e, single: e, couple: e };
+  const fr = fractions(HS);
+  const rows = HS.rows.map((r, i) => ({ name: r.name, people: r.people || 1, salary: r.salary || 0, amt: rent * fr[i], each: rent * fr[i] / (r.people || 1) }));
+  const me = String(myId || huntEntry()?.me || "").trim().toLowerCase();
+  const mine = rows.find(r => me && r.name.trim().toLowerCase() === me) || (rows.length === 1 ? rows[0] : null);
+  return { rows, mine, maxEach: Math.max(...rows.map(r => r.each)), minEach: Math.min(...rows.map(r => r.each)) };
 }
+const splitText = () => ({ person: "Split equally per person, so a couple pays for two.", room: "Split equally per bedroom; a couple shares theirs.", custom: "Custom split set in this hunt's settings." }[HS.split]);
 function groupSummary() {
-  const f = F;
-  if (MODE === "solo") {
-    $("#g-sum").innerHTML = `30% of pre-tax pay: <b>${money(budget30())}</b>/wk<br>Take-home ≈ ${money(takeHome(G.salary) / 52)}/wk`;
-    return;
-  }
-  $("#g-sum").innerHTML = `Needs <b>${rooms()}</b> bedrooms<br>Budget ${money(f.ppmin)}–${money(f.ppmax)} each`;
+  const fr = fractions(HS), e = huntEntry();
+  $("#hsum").innerHTML = `<div class="hs-top"><b>${esc(HS.name)}</b> · ${people()} ${people() === 1 ? "person" : "people"} · ${esc(bedsLabel())}</div>
+    <div>Budget ${HS.budgetMin ? money(HS.budgetMin) + "–" : "up to "}${money(HS.budgetMax)} a week for the whole place</div>
+    <div class="src">${HS.rows.map((r, i) => `${esc(r.name)}${r.people > 1 && !/couple/i.test(r.name) ? " (couple)" : ""} ${Math.round(fr[i] * 100)}%`).join(" · ")}</div>
+    <div class="hs-btns"><button type="button" class="btn ghost" data-act="settings">Settings</button>${e && remote ? `<button type="button" class="btn ghost" data-act="invite">Invite people</button>` : ""}${!e ? `<button type="button" class="btn" data-act="new">Start or join a hunt</button>` : ""}</div>`;
+  $("#hunts").innerHTML = hunts.map(h => `<button type="button" class="hunt" data-hunt="${esc(h.code)}" aria-pressed="${h.code === active}">${esc(h.name || "Hunt")}</button>`).join("")
+    + `<button type="button" class="hunt add" data-act="new">+ New hunt</button>`;
 }
-$("#group").addEventListener("input", () => {
-  G.people = Math.max(1, +$("#g-people").value || 1);
-  G.couples = Math.min(Math.floor(G.people / 2), Math.max(0, +$("#g-couples").value || 0));
-  G.split = $("#g-split").value;
-  const sal = +$("#g-salary").value;
-  if (sal >= 20000 && sal !== G.salary) { const was = budget30(); G.salary = sal; if (MODE === "solo" && F.ppmax === was) F.ppmax = budget30(); saveF(); }
-  store.set("group", G); render();
-});
-$("#group").addEventListener("submit", e => e.preventDefault());
+
+// Listings come in three files by bedroom count; fetch only the ones this hunt's bedroom range needs.
+const poolCache = {};
+const loadPool = k => poolCache[k] = poolCache[k] || fetch(`data/${k}.json`).then(r => { if (!r.ok) throw new Error(k); return r.json(); });
+let loadSeq = 0;
+async function loadListings() {
+  const seq = ++loadSeq, S = HS;
+  const need = Object.entries(POOLS).filter(([, [a, b]]) => b >= S.bedsMin && a <= S.bedsMax).map(([k]) => k);
+  listingsLoading = true; render();
+  try {
+    const parts = await Promise.all(need.map(loadPool));
+    if (seq !== loadSeq) return;
+    L = parts.flat().filter(l => l.beds >= S.bedsMin && l.beds <= S.bedsMax);
+  } catch { if (seq === loadSeq) toast("Couldn't load the listings. Check your connection and reload."); }
+  listingsLoading = false; applyHunt(); render();
+}
 
 /* ---------- filters ---------- */
-const DEF = { ppmax: 350, ppmin: 0, beds: 0, baths: 0, cars: 0, type: "any", pets: false, now: false, cbd: 60, subs: [], regions: [],
-  min: { walk: 0, transit: 0, quiet: 0, air: 0, safety: 0, agency: 0 }, ages: [], nocav: false, hidenope: false, unvoted: false, sort: "score" };
-const filterKey = () => MODE === "solo" ? "filters-solo" : "filters";
-const defaults = () => MODE === "solo" ? { ...structuredClone(DEF), ppmax: budget30() } : structuredClone(DEF);
+const DEF = { ppmax: 1000, ppmin: 0, beds: 0, baths: 0, cars: 0, type: "any", pets: false, now: false, cbd: 60, subs: [], regions: [],
+  min: { walk: 0, transit: 0, quiet: 0, air: 0, safety: 0, agency: 0 }, ages: [], nocav: false, nolodging: true, hidenope: false, unvoted: false, sort: "score" };
+// Filters are per hunt and per person; the rent range starts from the hunt's budget and resets when it changes.
+const filterKey = () => "filters:" + (active || "preview");
+const budgetSig = () => HS.budgetMin + "-" + HS.budgetMax;
+const defaults = () => ({ ...structuredClone(DEF), ppmax: HS.budgetMax, ppmin: HS.budgetMin, budget: budgetSig() });
 const F = {};
 function loadF() {
   for (const k of Object.keys(F)) delete F[k];
-  Object.assign(F, defaults(), store.get(filterKey(), {}));
+  const saved = store.get(filterKey(), {});
+  Object.assign(F, defaults(), saved);
+  if (saved.budget !== budgetSig()) Object.assign(F, { ppmax: HS.budgetMax, ppmin: HS.budgetMin, budget: budgetSig() });
   if (!Array.isArray(F.regions)) F.regions = [];
   if (!Array.isArray(F.ages)) F.ages = [];
   if (F.min.agency == null) F.min.agency = 0;
@@ -512,20 +613,14 @@ const agOf = l => AG[l.agency] || null;
 const AGES = [["new", "2020+"], ["modern", "2000–19"], ["late", "1945–99"], ["period", "Pre-1945"], ["unknown", "Unknown"]];
 const ageBucket = l => l.age ? l.age[1] : "unknown";
 
-const SEGS = {
-  group: {
-    beds: [[0, "Any"], [4, "4+"], [5, "5+"]],
-    baths: [[0, "Any"], [2, "2+"], [3, "3+"]],
-    cars: [[0, "Any"], [1, "1+"], [2, "2+"]],
-    type: [["any", "Any"], ["House", "House"], ["Townhouse", "Townhouse"]],
-  },
-  solo: {
-    beds: [[0, "Any"], [1, "1+"], [2, "2"]],
-    baths: [[0, "Any"], [2, "2"]],
-    cars: [[0, "Any"], [1, "1+"]],
-    type: [["any", "Any"], ["Apartment", "Apartment"], ["Unit", "Unit"], ["Studio", "Studio"], ["Townhouse", "Townhouse"], ["House", "House"]],
-  },
-};
+function segsFor() {
+  const lo = HS.bedsMin, hi = Math.min(HS.bedsMax, lo + 3), beds = [[0, "Any"]];
+  for (let n = lo + 1; n <= hi; n++) beds.push([n, n + "+"]);  // the hunt's own minimum is already "Any"
+  return {
+    beds, baths: [[0, "Any"], [2, "2+"], [3, "3+"]], cars: [[0, "Any"], [1, "1+"], [2, "2+"]],
+    type: [["any", "Any"], ["House", "House"], ["Townhouse", "Townhouse"], ["Apartment", "Apartment"], ["Unit", "Unit"], ["Studio", "Studio"]],
+  };
+}
 document.querySelectorAll(".seg[data-f]").forEach(el => {
   const f = el.dataset.f;
   el.addEventListener("click", e => {
@@ -567,42 +662,33 @@ $("#minscores").innerHTML = DIMS.filter(d => d[0] !== "price").map(([k, t]) =>
 $("#weights").innerHTML = DIMS.map(([k, t]) =>
   `<div class="field"><div class="row"><span>${t}</span><b class="num" id="v-w-${k}"></b></div><input type="range" id="w-${k}" min="0" max="5" step="0.5"></div>`).join("");
 
-// Everything that depends on which search is showing
-function applyMode() {
-  L = MODE === "solo" ? P.solo : P.listings;
+// Everything that depends on the active hunt and its listings
+function applyHunt() {
   loadF();
-  document.querySelectorAll("#mode button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.m === MODE)));
-  document.querySelectorAll("#group [data-for]").forEach(el => el.hidden = el.dataset.for !== MODE);
-  $("#mode").closest(".field").hidden = !(P.solo || []).length;
-  $("#lede").textContent = LEDE[MODE];
+  $("#lede").textContent = `Rentals across Melbourne sized for ${HS.name}: ${bedsLabel().toLowerCase()}, up to ${money(HS.budgetMax)} a week. Each place is scored on daily needs within a 10-minute walk, trains and trams, traffic noise and fumes, recorded crime and the agency's track record.`;
   const live = L.filter(l => !l.gone), fresh = live.filter(isNew).length;
-  $("#asof").textContent = "Updated " + new Date(P.asOf + "T00:00").toLocaleDateString("en-AU", { day: "numeric", month: "long", year: "numeric" }) + " · " + live.length.toLocaleString() + " places" + (fresh ? ` · ${fresh} new` : "");
+  $("#asof").textContent = "Updated " + new Date(P.asOf + "T00:00").toLocaleDateString("en-AU", { day: "numeric", month: "long", year: "numeric" }) + (listingsLoading ? "" : " · " + live.length.toLocaleString() + " places" + (fresh ? ` · ${fresh} new` : ""));
+  const SG = segsFor();
   document.querySelectorAll(".seg[data-f]").forEach(el => {
-    el.innerHTML = SEGS[MODE][el.dataset.f].map(([v, t]) => `<button type="button" data-v="${v}">${t}</button>`).join("");
+    el.innerHTML = SG[el.dataset.f].map(([v, t]) => `<button type="button" data-v="${v}">${t}</button>`).join("");
   });
-  const solo = MODE === "solo";
-  $("#l-ppmax").textContent = solo ? "Max rent per week" : "Max per person";
-  $("#l-ppmin").textContent = solo ? "Min rent per week" : "Min per person";
-  Object.assign($("#f-ppmax"), solo ? { min: 200, max: 1000 } : { min: 150, max: 450 });
-  Object.assign($("#f-ppmin"), solo ? { min: 0, max: 900 } : { min: 0, max: 400 });
+  const top = Math.max(1000, Math.ceil(HS.budgetMax * 1.6 / 50) * 50);
+  $("#l-ppmax").textContent = "Max rent per week"; $("#l-ppmin").textContent = "Min rent per week";
+  Object.assign($("#f-ppmax"), { min: 100, max: top, step: 10 }); Object.assign($("#f-ppmin"), { min: 0, max: top, step: 10 });
   suburbs = [...new Set(L.map(l => l.suburb))].sort();
   const subCount = {}; L.forEach(l => subCount[l.suburb] = (subCount[l.suburb] || 0) + 1);
   $("#sub-options").innerHTML = suburbs.map(s => `<option value="${esc(s)}">${subCount[s]} listing${subCount[s] > 1 ? "s" : ""}</option>`).join("");
   $("#ages").innerHTML = AGES.map(([k, t]) => `<button type="button" data-a="${k}">${t} <span class="num">${L.filter(l => ageBucket(l) === k).length}</span></button>`).join("");
   $("#regions").innerHTML = REGIONS.map(r => `<button type="button" data-r="${esc(r)}">${esc(r)} <span class="num">${L.filter(l => l.region === r).length}</span></button>`).join("");
-  $("#a-beds").value = solo ? 1 : 4;
+  $("#a-beds").value = Math.max(1, HS.bedsMin);
   fitted = false; mapSel = null;
 }
-$("#mode").addEventListener("click", e => {
-  const b = e.target.closest("button"); if (!b || b.dataset.m === MODE) return;
-  MODE = b.dataset.m; store.set("mode", MODE); applyMode(); render();
-});
 
 function syncInputs() {
-  $("#f-ppmax").value = F.ppmax; $("#v-ppmax").textContent = money(F.ppmax);
+  $("#f-ppmax").value = F.ppmax; $("#v-ppmax").textContent = money(F.ppmax) + "/wk";
   $("#f-ppmin").value = F.ppmin; $("#v-ppmin").textContent = F.ppmin ? money(F.ppmin) : "None";
   $("#f-cbd").value = F.cbd; $("#v-cbd").textContent = F.cbd >= 60 ? "Any" : F.cbd + " km";
-  $("#f-pets").checked = F.pets; $("#f-now").checked = F.now; $("#f-fresh").checked = !!F.fresh; $("#f-hidenope").checked = F.hidenope; $("#f-unvoted").checked = F.unvoted;
+  $("#f-pets").checked = F.pets; $("#f-now").checked = F.now; $("#f-fresh").checked = !!F.fresh; $("#f-lodging").checked = F.nolodging !== false; $("#f-hidenope").checked = F.hidenope; $("#f-unvoted").checked = F.unvoted;
   $("#sort").value = F.sort;
   document.querySelectorAll(".seg[data-f]").forEach(el => el.querySelectorAll("button").forEach(b =>
     b.setAttribute("aria-pressed", String(b.dataset.v === String(F[el.dataset.f])))));
@@ -625,6 +711,7 @@ $("#rail").addEventListener("input", e => {
   else if (id === "f-pets") F.pets = e.target.checked;
   else if (id === "f-now") F.now = e.target.checked;
   else if (id === "f-fresh") F.fresh = e.target.checked;
+  else if (id === "f-lodging") F.nolodging = e.target.checked;
   else if (id === "f-hidenope") F.hidenope = e.target.checked;
   else if (id === "f-nocav") F.nocav = e.target.checked;
   else if (id === "f-unvoted") F.unvoted = e.target.checked;
@@ -635,18 +722,17 @@ $("#rail").addEventListener("input", e => {
   saveF(); render();
 });
 $("#sort").onchange = e => { F.sort = e.target.value; saveF(); render(); };
-$("#reset").onclick = () => { Object.assign(F, structuredClone(DEF)); saveF(); render(); };
+$("#reset").onclick = () => { Object.assign(F, defaults()); saveF(); render(); };
 
 /* ---------- scoring ---------- */
 const avg2 = (a, b) => b == null ? a : Math.round((a + b) / 2);
 function dims(l) {
   if (l.twenty == null) return null;
-  const pp = shares(l.rent).max;
-  const span = Math.max(20, F.ppmax - F.ppmin);
+  const span = Math.max(50, F.ppmax - F.ppmin);
   return {
     walk: avg2(l.twenty, l.walk_score), transit: avg2(l.transit, l.transit_score),
     quiet: l.quiet, air: l.air, safety: l.safety ?? null, agency: agOf(l)?.score ?? null,
-    price: Math.max(0, Math.min(100, Math.round(100 * (F.ppmax - pp) / span))),
+    price: Math.max(0, Math.min(100, Math.round(100 * (F.ppmax - l.rent) / span))),
   };
 }
 function overall(d) {
@@ -658,13 +744,12 @@ const tone = v => v == null ? "" : v >= 70 ? "good" : v >= 50 ? "warn" : "bad";
 const toneVar = v => `var(--${tone(v) || "muted"})`;
 
 /* ---------- shared state (db) ---------- */
-// Shared storage: the claude.ai database when the page runs as an artifact, Supabase when it is
-// hosted elsewhere (GitHub Pages) and configured, otherwise votes stay in this browser.
-let db = null, user = null, me = null, myId = null, canWrite = true, remote = null;
+// Shared storage is the active hunt in Supabase (see connect()); with no hunt, votes stay in this browser.
+let myId = null, canWrite = true, remote = null;
 let votes = {};       // uid -> {listingId: "love"|"maybe"|"nope"}
 let notes = [];       // [{id, listing, by, text, at}]
 let added = [];       // user-added listings
-let profiles = {};
+const profiles = {};
 const localMode = () => !remote;
 
 function myVotes() { return votes[myId || "local"] || {}; }
@@ -673,14 +758,7 @@ function tally(id) {
   for (const [uid, picks] of Object.entries(votes)) { const v = picks?.[id]; if (t[v]) t[v].push(uid); }
   return t;
 }
-async function refreshProfiles() {
-  if (!user) return;
-  const ids = new Set(Object.keys(votes)); notes.forEach(n => ids.add(n.by)); added.forEach(a => a.by && ids.add(a.by));
-  ids.delete("local");
-  if (!ids.size) return;
-  profiles = await user.profiles([...ids]);
-}
-const nameOf = uid => uid === myId ? "You" : remote?.kind === "supabase" ? uid : (profiles[uid]?.name || "Someone");
+const nameOf = uid => uid === myId ? "You" : uid === "local" ? "You" : uid;
 
 async function castVote(id, v) {
   const mine = { ...myVotes() };
@@ -816,8 +894,8 @@ async function analysePending() {
 function passes(l) {
   if (l.gone) { const t = tally(l.id); if (!t.love.length && !t.maybe.length) return false; }  // keep leased places only if voted for
   if (F.fresh && !isNew(l)) return false;
-  const sh = shares(l.rent);
-  if (sh.max > F.ppmax + 0.5 || sh.max < F.ppmin - 0.5) return false;
+  if (F.nolodging !== false && l.lodging) return false;  // rooming houses, student accommodation, single rooms
+  if (l.rent > F.ppmax + 0.5 || l.rent < F.ppmin - 0.5) return false;
   if (F.beds && l.beds < F.beds) return false;
   if (F.baths && (l.baths || 0) < F.baths) return false;
   if (F.cars && (l.cars || 0) < F.cars) return false;
@@ -855,6 +933,7 @@ const open = new Set();
 function chipsFor(l) {
   const c = [];
   if (l.gone) c.push(["bad", `No longer advertised since ${fmtDay(l.gone)}`]);
+  if (l.lodging) c.push(["bad", `<span title="${esc(l.lodging[2])}">${esc(l.lodging[1])}</span>`]);
   else if (isNew(l)) c.push(["good", "New"]);
   if (l.twenty == null) return c.map(([t, s]) => `<span class="chip ${t}">${s}</span>`).join("") + `<span class="chip warn">Location not analysed yet</span>`;
   const tr = l.near.train[0], tm = l.near.tram[0];
@@ -865,9 +944,10 @@ function chipsFor(l) {
   for (const f of l.noise_flags.slice(0, 2)) c.push([/Freeway|beside|Airport \d|airport [0-2]\./.test(f) ? "bad" : "warn", esc(f)]);
   if (l.crime && l.crime.rate > 130) c.push(["bad", `Crime ${Math.round(l.crime.rate / 86.8 * 100)}% of Vic avg`]);
   else if (l.crime && l.crime.rate < 60) c.push(["good", `Low recorded crime`]);
-  if (MODE === "solo") {
-    const pct = l.rent * 52 / G.salary * 100, net = l.rent / (takeHome(G.salary) / 52) * 100;
-    c.unshift([pct <= 30 ? "good" : pct <= 35 ? "warn" : "bad", `${Math.round(net)}% of take-home pay`]);
+  const sh = shares(l.rent), aff = sh.mine && sh.mine.salary ? sh.mine : null;
+  if (aff) {  // the viewer's own share against their pay (30% of pre-tax pay is the rental-stress line)
+    const pct = aff.amt * 52 / aff.salary * 100, net = aff.amt / (takeHome(aff.salary) / 52) * 100;
+    c.unshift([pct <= 30 ? "good" : pct <= 35 ? "warn" : "bad", `${Math.round(net)}% of your take-home pay`]);
   }
   if (l.pets) c.push(["", "Pets OK"]);
   const ak = agOf(l)?.cavKind;
@@ -926,8 +1006,12 @@ function votersHtml(t) {
 
 function card(l) {
   const d = dims(l), o = overall(d), sh = shares(l.rent), mv = myVotes()[l.id], t = tally(l.id);
-  const ppTxt = MODE === "solo" ? `${money(l.rent)}<em> per week</em>` : G.split === "room" && G.couples
-    ? `${money(sh.single)}<em> single · ${money(sh.couple)} couple ea.</em>` : `${money(sh.max)}<em> pp/wk</em>`;
+  const one = sh.rows.length === 1 && sh.rows[0].people === 1;
+  const ppTxt = one ? `${money(l.rent)}<em> per week</em>`
+    : sh.mine ? `${money(sh.mine.amt)}<em> your share/wk</em>`
+    : Math.round(sh.maxEach) === Math.round(sh.minEach) ? `${money(sh.maxEach)}<em> pp/wk</em>` : `${money(sh.minEach)}–${money(sh.maxEach)}<em> pp/wk</em>`;
+  const totTxt = one ? (sh.rows[0].salary ? `${Math.round(l.rent * 52 / sh.rows[0].salary * 100)}% of ${sh.mine ? "your" : esc(sh.rows[0].name) + "'s"} pre-tax pay` : "")
+    : `${money(l.rent)} per week total`;
   const nNotes = notes.filter(n => n.listing === l.id).length;
   const meters = d ? DIMS.map(([k, n]) =>
     `<div class="meter"><div class="mt"><span>${n}</span><b>${d[k] ?? "–"}</b></div><i style="--v:${d[k] ?? 0}%;--c:${toneVar(d[k])}"></i></div>`).join("") : "";
@@ -938,7 +1022,7 @@ function card(l) {
     <div class="cbody">
       <div class="ctop">
         <div class="addr">${esc(l.street)}<small>${esc(l.suburb)} ${esc(l.postcode || "")}${l.region ? ` · ${esc(l.region)}` : ""}${l.cbd_km != null ? ` · ${l.cbd_km} km to CBD` : ""}</small></div>
-        <div class="price"><div class="pp">${ppTxt}</div><div class="tot num">${MODE === "solo" ? `${Math.round(l.rent * 52 / G.salary * 100)}% of your pre-tax pay` : `${money(l.rent)} per week total`}</div></div>
+        <div class="price"><div class="pp">${ppTxt}</div><div class="tot num">${totTxt}</div></div>
       </div>
       <div class="facts"><span><b>${l.beds}</b> bed</span><span><b>${l.baths ?? "?"}</b> bath</span><span><b>${l.cars ?? 0}</b> car</span><span>${esc(l.type || "")}</span>
         ${l.age && l.age[1] !== "unknown" ? `<span title="${esc(l.age[3] || (l.age[2] === "suburb guess" ? "Guess from the suburb: no age in the listing" : ""))}">Built <b>${esc(l.age[0].replace(/^Built /, ""))}</b>${l.age[2] === "suburb guess" ? " (guess)" : ""}</span>` : ""}
@@ -968,10 +1052,10 @@ function detail(l) {
   const ns = notes.filter(n => n.listing === l.id).sort((a, b) => a.at - b.at);
   const notesHtml = `<div class="notes"><h3>Group notes</h3>
     ${ns.map(n => `<div class="note"><b>${esc(nameOf(n.by))}</b><span class="t">${esc(n.text)}</span>${n.by === myId ? `<button class="x" data-delnote="${esc(n.id)}" aria-label="Delete note">Delete</button>` : ""}</div>`).join("") || `<p class="src">No notes yet. Inspection thoughts, questions for the agent, who's going to look at it…</p>`}
-    ${localMode() ? `<p class="src">${esc(joinHint())}</p>` : ro ? "" :
+    ${localMode() ? `<p class="src">Notes are shared once you're in a hunt.</p>` : ro ? "" :
       `<form data-noteform="${esc(l.id)}"><input maxlength="500" placeholder="Add a note for the group" aria-label="Add a note"><button class="btn" type="submit">Post</button></form>`}
   </div>`;
-  if (l.twenty == null) return `<div class="detail"><p class="src">Ask Claude to analyse new listings to get walkability, transport, noise, air and safety details for this one.</p>${notesHtml}</div>`;
+  if (l.twenty == null) return `<div class="detail"><p class="src">This address couldn't be found on the map, so there are no location scores. Ask Claude to look it up.</p>${notesHtml}</div>`;
   const met = new Set(l.met);
   const needRows = NEEDS.map(([k, n]) => {
     const [m, nm] = l.near[k]; const ok = m <= 800;
@@ -996,10 +1080,16 @@ function detail(l) {
       <li><span></span><span>Assault</span><span class="num">${c.assault} /1k</span></li>
       <li><span></span><span>Offences recorded</span><span class="num">${c.offences.toLocaleString()}</span></li></ul>
       <p class="src" style="margin-top:6px">Year to June 2026, whole suburb. Shopping centres and hospitals push totals up.</p>` : `<p class="src">No suburb figures.</p>`}</div>
+    <div><h3>Who pays what</h3>${payDetail(l)}</div>
     <div><h3>Agency</h3>${agencyDetail(l)}</div>
     <div><h3>The building</h3>${ageDetail(l)}</div>
     ${notesHtml}
   </div>`;
+}
+function payDetail(l) {
+  const sh = shares(l.rent);
+  return `<ul>${sh.rows.map(r => `<li><span></span><span>${esc(r.name)}${r.people > 1 && !/couple/i.test(r.name) ? " (couple)" : ""}${r.salary ? ` <span class="nm">· ${Math.round(r.amt * 52 / r.salary * 100)}% of pre-tax pay</span>` : ""}</span><span class="num">${money(r.amt)}/wk</span></li>`).join("")}</ul>
+    <p class="src" style="margin-top:6px">${money(l.rent)} a week in total. ${splitText()}</p>`;
 }
 const fmtM = m => m >= 5000 ? "5 km+" : m >= 1000 ? (m / 1000).toFixed(1) + " km" : m + " m";
 
@@ -1007,24 +1097,22 @@ const fmtM = m => m >= 5000 ? "5 km+" : m >= 1000 ? (m / 1000).toFixed(1) + " km
 let tab = store.get("tab", "list");
 const PAGE = 40; let shown = PAGE, lastSig = "";
 $("#more").onclick = () => { shown += PAGE; render(); };
-function allListings() { return [...L, ...added.filter(a => (a.mode || "group") === MODE)]; }
+function allListings() { return [...L, ...added]; }
 function render() {
   syncInputs(); groupSummary();
   const list = sorted(allListings().filter(passes));
   $("#c-list").textContent = list.length;
   $("#rcount").textContent = `${list.length} of ${allListings().length} places match`;
-  const sig = JSON.stringify([F, G, W]);
+  const sig = JSON.stringify([F, HS, W, active]);
   if (sig !== lastSig) { shown = PAGE; lastSig = sig; }
-  $("#cards").innerHTML = list.length ? list.slice(0, shown).map(card).join("")
+  $("#cards").innerHTML = listingsLoading && !L.length ? `<div class="empty">Loading listings…</div>` : list.length ? list.slice(0, shown).map(card).join("")
     : `<div class="empty">No places match these filters. Try raising the budget or clearing the minimum scores.</div>`;
   $("#more").hidden = list.length <= shown;
   $("#more").textContent = `Show ${Math.min(PAGE, list.length - shown)} more of ${list.length - shown}`;
   renderShort(); renderMap(list); renderAdded();
   const s = $("#sync");
-  if (localMode()) { s.hidden = false; s.innerHTML = esc("Votes are saved on this device only. " + joinHint()) + (P.supabase ? ` <button class="linkbtn" data-join>Join the house</button>` : ""); }
-  else if (remote.kind === "supabase") { s.hidden = false; s.innerHTML = `Sharing votes as <b>${esc(myId)}</b>. <button class="linkbtn" data-join>Change name or house</button>`; }
-  else if (!canWrite) { s.hidden = false; s.textContent = "You have view-only access. Ask the owner to invite you as an editor so you can vote and leave notes."; }
-  else s.hidden = true;
+  if (localMode()) { s.hidden = false; s.innerHTML = active ? `Can't reach the shared database right now, so votes are saved on this device only.` : `This is a preview: votes stay on this device. <button class="linkbtn" data-act="new">Start or join a hunt</button> to share them.`; }
+  else { s.hidden = false; s.innerHTML = `You're in <b>${esc(HS.name)}</b> as <b>${esc(myId)}</b>. <button class="linkbtn" data-act="rename">Change your name</button>`; }
 }
 
 function renderShort() {
@@ -1034,10 +1122,10 @@ function renderShort() {
   $("#c-short").textContent = rows.length || "";
   const el = $("#board");
   if (!rows.length) { el.innerHTML = `<div class="empty">Nothing shortlisted yet. Vote <b>Love it</b> or <b>Maybe</b> on a listing and it appears here, ranked by the whole group's votes.</div>`; return; }
-  el.innerHTML = `<div class="tw"><table><thead><tr><th>#</th><th>Place</th><th class="r">${MODE === "solo" ? "Rent" : "Per person"}</th><th class="r">Score</th><th>Votes</th><th class="r">Beds</th><th class="r">Train</th><th class="r">Safety</th><th>Built</th><th>Agency</th><th></th></tr></thead><tbody>
+  el.innerHTML = `<div class="tw"><table><thead><tr><th>#</th><th>Place</th><th class="r">Rent</th><th class="r">${shares(0).mine ? "Your share" : "Per person"}</th><th class="r">Score</th><th>Votes</th><th class="r">Beds</th><th class="r">Train</th><th class="r">Safety</th><th>Built</th><th>Agency</th><th></th></tr></thead><tbody>
     ${rows.map((r, i) => { const l = r.l, d = dims(l), o = overall(d);
-      return `<tr><td class="rk">${i + 1}</td><td><b>${esc(l.street)}</b><br><span class="src">${esc(l.suburb)} · ${money(l.rent)}/wk</span></td>
-      <td class="r num">${money(shares(l.rent).max)}</td><td class="r num" style="color:${toneVar(o)}">${o ?? "–"}</td>
+      return `<tr><td class="rk">${i + 1}</td><td><b>${esc(l.street)}</b><br><span class="src">${esc(l.suburb)}</span></td>
+      <td class="r num">${money(l.rent)}</td><td class="r num">${money(shares(l.rent).mine ? shares(l.rent).mine.amt : shares(l.rent).maxEach)}</td><td class="r num" style="color:${toneVar(o)}">${o ?? "–"}</td>
       <td>${votersHtml(r.t) || "–"}</td><td class="r num">${l.beds}/${l.baths ?? "?"}/${l.cars ?? 0}</td>
       <td class="r num">${l.near ? walkMin(l.near.train[0]) + " min" : "–"}</td><td class="r num">${d?.safety ?? "–"}</td>
       <td>${l.age && l.age[1] !== "unknown" ? esc(l.age[0].replace(/^Built /, "")) : "–"}</td>
@@ -1107,8 +1195,7 @@ function renderMap(list) {
 }
 
 function renderAdded() {
-  const mine = added.filter(a => (a.mode || "group") === MODE);
-  $("#added").innerHTML = mine.length ? mine.map(card).join("") : `<div class="empty">No added listings yet.</div>`;
+  $("#added").innerHTML = added.length ? added.map(card).join("") : `<div class="empty">No added listings yet.</div>`;
 }
 
 /* ---------- events ---------- */
@@ -1131,7 +1218,8 @@ document.addEventListener("click", e => {
     return;
   }
   const dn = e.target.closest("[data-delnote]"); if (dn && remote) { remote.delNote(dn.dataset.delnote).catch(() => toast("Couldn't delete that note.")); }
-  if (e.target.closest("[data-join]")) showJoin(true);
+  const act = e.target.closest("[data-act]"); if (act) { huntAction(act.dataset.act); return; }
+  const hb = e.target.closest("[data-hunt]"); if (hb) { if (hb.dataset.hunt !== active) activate(hb.dataset.hunt); return; }
 });
 document.addEventListener("submit", async e => {
   const f = e.target.closest("[data-noteform]"); if (!f) return;
@@ -1145,11 +1233,11 @@ document.addEventListener("submit", async e => {
 $("#addform").addEventListener("submit", async e => {
   e.preventDefault();
   const msg = $("#a-msg");
-  if (localMode()) { msg.textContent = joinHint(); return; }
+  if (localMode()) { msg.textContent = "Start or join a hunt first, so the listing is shared."; return; }
   const rec = {
     street: $("#a-street").value.trim(), suburb: $("#a-suburb").value.trim(), rent: +$("#a-rent").value,
     beds: +$("#a-beds").value, baths: +$("#a-baths").value || null, cars: +$("#a-cars").value || 0,
-    type: $("#a-type").value, url: $("#a-url").value.trim() || null, available: "?", by: myId, at: Date.now(), status: "pending", mode: MODE,
+    type: $("#a-type").value, url: $("#a-url").value.trim() || null, available: "?", by: myId, at: Date.now(), status: "pending",
   };
   if (rec.url && !/^https:\/\//.test(rec.url)) { msg.textContent = "The link needs to start with https://"; return; }
   rec.agency = $("#a-agency").value.trim() || null;
@@ -1163,39 +1251,15 @@ $("#addform").addEventListener("submit", async e => {
   try {
     await remote.addListing(rec);
     msg.textContent = rec.twenty != null ? "Added with scores. It's in the list below and in the Listings tab." : msg.textContent + " Added.";
-    e.target.reset(); $("#a-beds").value = MODE === "solo" ? 1 : 4;
+    e.target.reset(); $("#a-beds").value = Math.max(1, HS.bedsMin);
   }
   catch (err) { msg.textContent = err.code === "invalid_argument" ? "You have view-only access, so you can't add listings." : "Couldn't add the listing. Try again."; }
   $("#a-submit").disabled = false;
 });
 
-/* ---------- boot ---------- */
-if (matchMedia("(max-width: 900px)").matches) document.querySelectorAll("#rail details").forEach(d => d.open = false);
-votes.local = store.get("localVotes", {});
-applyMode();
-setTab(tab);
-render();
-
-function joinHint() {
-  if (P.supabase && !window.claude?.use) return "Join with your name and the house code to share votes and notes with your housemates.";
-  return "Open this page signed in to Claude to share votes and notes with the group.";
-}
-function showJoin(on) {
-  const f = $("#join"); f.hidden = !on;
-  if (on) { const id = store.get("house", {}); $("#j-name").value = id.name || ""; $("#j-code").value = id.code || ""; $("#j-name").focus(); }
-}
-$("#j-cancel").onclick = () => showJoin(false);
-$("#join").addEventListener("submit", async e => {
-  e.preventDefault();
-  const name = $("#j-name").value.trim().replace(/\s+/g, " "), code = $("#j-code").value.trim();
-  if (!name || code.length < 6) { $("#j-msg").textContent = "Enter your name and a house code of at least 6 characters."; return; }
-  store.set("house", { name, code });
-  $("#j-msg").textContent = "Connecting…";
-  if (await startSupabase()) showJoin(false); else $("#j-msg").textContent = "Couldn't reach the shared database. Check your connection and try again.";
-});
-
-/* Supabase: every call goes through database functions that take the house code, so the
-   public key alone can't read or change anything (see supabase/setup.sql). */
+/* ---------- shared database (Supabase) ----------
+   Every call goes through database functions that take the hunt's code, so the public key alone
+   can't read or change anything (see supabase/setup.sql and supabase/002_hunts.sql). */
 async function rpc(fn, args) {
   const r = await fetch(P.supabase.url.replace(/\/$/, "") + "/rest/v1/rpc/" + fn, {
     method: "POST",
@@ -1205,25 +1269,39 @@ async function rpc(fn, args) {
   if (!r.ok) throw Object.assign(new Error(await r.text()), { code: r.status });
   const t = await r.text(); return t ? JSON.parse(t) : null;
 }
-let pollTimer = null;
-async function startSupabase() {
-  const id = store.get("house", {});
-  if (!P.supabase || !id.name || !id.code) return false;
-  const h = id.code;
+let pollTimer = null, connectSeq = 0;
+function applySettings(next) {
+  const old = HS; HS = cleanSettings(next);
+  if (active) store.set("hs:" + active, HS);
+  const e = huntEntry(); if (e && e.name !== HS.name) { e.name = HS.name; store.set("hunts", hunts); }
+  return old.bedsMin !== HS.bedsMin || old.bedsMax !== HS.bedsMax;
+}
+async function connect() {
+  const seq = ++connectSeq, e = huntEntry();
+  clearInterval(pollTimer); remote = null; votes = { local: store.get("localVotes", {}) }; notes = []; added = [];
+  myId = e ? e.me : null;
+  if (!P.supabase || !e) { render(); return false; }
+  const h = e.code;
   const load = async () => {
     const st = await rpc("house_state", { p_house: h });
+    if (seq !== connectSeq) return;
     const v = {};
     for (const r of st.votes || []) (v[r.person] = v[r.person] || {})[r.listing_id] = r.vote;
-    votes = v;
+    votes = v; votes[myId] = votes[myId] || {};
     notes = (st.notes || []).map(n => ({ id: n.id, listing: n.listing_id, by: n.person, text: n.body, at: Date.parse(n.created_at) }));
     added = (st.added || []).map(a => { const b = a.data || {};
       return { ...b, id: "a_" + a.id, dbId: a.id, by: a.person, rent: +b.rent || 0, beds: +b.beds || 0, suburb: String(b.suburb || ""), street: String(b.street || ""),
         url: /^https:\/\//.test(b.url || "") ? b.url : null, noise_flags: b.noise_flags || [], air_flags: b.air_flags || [] }; });
+    if (st.settings && JSON.stringify(cleanSettings(st.settings)) !== JSON.stringify(HS)) {
+      if (applySettings(st.settings)) loadListings(); else applyHunt();
+    } else if (!st.settings && "settings" in st) {
+      rpc("save_settings", { p_house: h, p_settings: HS }).catch(() => {});  // first person in: share the starting settings
+    }
     render();
     analysePending();
   };
-  try { await load(); } catch { return false; }
-  myId = id.name;
+  try { await load(); } catch { if (seq === connectSeq) render(); return false; }
+  if (seq !== connectSeq) return false;
   remote = {
     kind: "supabase",
     setVote: async (listing, v) => { await rpc("set_vote", { p_house: h, p_person: myId, p_listing: listing, p_vote: v }); },
@@ -1231,55 +1309,182 @@ async function startSupabase() {
     delNote: async nid => { await rpc("delete_note", { p_house: h, p_person: myId, p_id: nid }); await load(); },
     addListing: async rec => { delete rec.by; await rpc("add_listing", { p_house: h, p_person: myId, p_data: rec }); await load(); },
     updateListing: async (dbId, fields) => { await rpc("update_listing", { p_house: h, p_id: dbId, p_data: fields }); await load(); },
+    saveSettings: async st => { await rpc("save_settings", { p_house: h, p_settings: st }); },
   };
-  votes[myId] = votes[myId] || {};
-  const local = store.get("localVotes", {});  // carry over votes made before joining
+  const local = store.get("localVotes", {});  // votes made before joining any hunt move into it
   for (const [k, v] of Object.entries(local)) if (!votes[myId][k]) { votes[myId][k] = v; remote.setVote(k, v).catch(() => {}); }
   store.set("localVotes", {}); delete votes.local;
   render();
-  clearInterval(pollTimer);
   pollTimer = setInterval(() => { if (document.visibilityState !== "hidden") load().catch(() => {}); }, 15000);
   return true;
 }
+async function activate(code) {
+  active = code; store.set("activeHunt", code);
+  const e = huntEntry();
+  applySettings(store.get("hs:" + code, null) || (code === "House_Hunt" ? TEMPLATES.legacy() : TEMPLATES.house(e?.me)));
+  closePanels(); applyHunt(); loadListings();
+  await connect();
+}
 
-(async () => {
-  if (!window.claude?.use) {
-    if (!(await startSupabase()) && P.supabase && !store.get("house", {}).code) showJoin(true);
+/* ---------- hunt panels: settings, invite, start/join ---------- */
+function closePanels() { ["#hset", "#invite", "#hnew"].forEach(id => $(id).hidden = true); }
+function huntAction(a) {
+  if (a === "settings") openSettings();
+  else if (a === "invite") openInvite();
+  else if (a === "new") openNew();
+  else if (a === "rename") renameMe();
+}
+// Settings
+let draft = null;
+function openSettings() { closePanels(); draft = structuredClone(HS); drawSettings(); $("#hset").hidden = false; $("#s-name").focus(); }
+function drawSettings() {
+  const fr = fractions(draft), custom = draft.split === "custom";
+  $("#s-name").value = draft.name; $("#s-split").value = draft.split;
+  $("#s-max").value = draft.budgetMax; $("#s-min").value = draft.budgetMin || 0;
+  $("#s-bmin").value = draft.bedsMin; $("#s-bmax").value = draft.bedsMax >= 8 ? "" : draft.bedsMax;
+  $("#s-rows").innerHTML = draft.rows.map((r, i) => `<div class="prow" data-i="${i}">
+    <input data-k="name" value="${esc(r.name)}" maxlength="30" aria-label="Name">
+    <select data-k="people" aria-label="People"><option value="1"${r.people === 1 ? " selected" : ""}>1 person</option><option value="2"${r.people === 2 ? " selected" : ""}>Couple</option></select>
+    <input data-k="share" type="number" min="0" max="100" step="1" value="${custom ? (r.share || 0) : Math.round(fr[i] * 100)}" ${custom ? "" : "disabled"} aria-label="Share %">
+    <input data-k="salary" type="number" min="0" step="1000" value="${r.salary || ""}" placeholder="optional" aria-label="Salary">
+    <button type="button" class="x" data-rmrow="${i}" aria-label="Remove ${esc(r.name)}" ${draft.rows.length === 1 ? "disabled" : ""}>✕</button></div>`).join("");
+  settingsNote();
+}
+function settingsNote() {
+  const tot = draft.rows.reduce((a, r) => a + (+r.share || 0), 0);
+  $("#s-msg").textContent = draft.split === "custom" && Math.round(tot) !== 100 ? `Shares add up to ${Math.round(tot)}%. They'll be scaled to 100% when you save.` : "";
+}
+function rowsChanged(before) {  // keep "bedrooms, at least" in step with one bedroom per person or couple
+  if (draft.bedsMin === before) draft.bedsMin = draft.rows.length;
+  if (draft.bedsMax < 8 && draft.bedsMax < draft.bedsMin) draft.bedsMax = draft.bedsMin + 1;
+}
+$("#hset").addEventListener("input", e => {
+  const t = e.target, row = t.closest(".prow");
+  if (row) {
+    const r = draft.rows[+row.dataset.i], k = t.dataset.k;
+    if (k === "name") r.name = t.value;
+    else if (k === "people") { r.people = +t.value; drawSettings(); }
+    else if (k === "share") { r.share = +t.value; settingsNote(); }
+    else if (k === "salary") r.salary = +t.value || 0;
     return;
   }
-  [db, user] = await Promise.all([claude.use("db"), claude.use("user")]);
-  if (!db) return;
-  myId = user ? await user.id() : null;
-  if (!myId) { db = null; return; }
-  remote = {
-    kind: "claude",
-    setVote: (listing, v, mine) => db.doc("votes/" + myId).set({ picks: mine, at: Date.now() }),
-    addNote: (listing, text) => db.collection("notes").add({ listing, by: myId, text, at: Date.now() }),
-    delNote: nid => db.doc("notes/" + nid).delete(),
-    addListing: rec => db.collection("added").add(rec),
-    updateListing: (dbId, fields) => db.doc("added/" + dbId).update(fields),
-  };
-  const cw = await user.can("data.write");
-  delete votes.local;
-  render();
-  const onErr = () => toast("Lost connection to the shared list. Reload the page to reconnect.");
-  db.collection("votes").onSnapshot(async snap => {
-    const v = {}; snap.docs.forEach(d => { const b = d.data(); if (b && b.picks) v[d.id] = b.picks; });
-    votes = v; await refreshProfiles(); render();
-  }, onErr);
-  db.collection("notes").onSnapshot(async snap => {
-    notes = snap.docs.map(d => ({ id: d.id, ...d.data() })).filter(n => typeof n.text === "string");
-    await refreshProfiles(); render();
-  }, onErr);
-  db.collection("added").onSnapshot(async snap => {
-    added = snap.docs.map(d => {
-      const b = d.data();
-      return { ...b, id: "a_" + d.id, dbId: d.id, rent: +b.rent || 0, beds: +b.beds || 0, suburb: String(b.suburb || ""), street: String(b.street || ""),
-        url: /^https:\/\//.test(b.url || "") ? b.url : null, noise_flags: b.noise_flags || [], air_flags: b.air_flags || [] };
-    });
-    await refreshProfiles(); render(); analysePending();
-  }, onErr);
-  if (cw === false) { canWrite = false; render(); }
-})();
+  if (t.id === "s-split") {
+    if (t.value === "custom" && draft.split !== "custom") { const fr = fractions(draft); draft.rows.forEach((r, i) => r.share = Math.round(fr[i] * 100)); }
+    draft.split = t.value; drawSettings();
+  }
+  else if (t.id === "s-name") draft.name = t.value;
+  else if (t.id === "s-max") draft.budgetMax = +t.value;
+  else if (t.id === "s-min") draft.budgetMin = +t.value;
+  else if (t.id === "s-bmin") draft.bedsMin = +t.value;
+  else if (t.id === "s-bmax") draft.bedsMax = t.value === "" ? 99 : +t.value;
+});
+$("#hset").addEventListener("click", e => {
+  const rm = e.target.closest("[data-rmrow]");
+  if (rm) { const before = draft.rows.length; draft.rows.splice(+rm.dataset.rmrow, 1); rowsChanged(before); drawSettings(); }
+});
+$("#s-add").onclick = () => {
+  const before = draft.rows.length;
+  draft.rows.push({ name: `Person ${before + 1}`, people: 1, share: 0, salary: 0 }); rowsChanged(before); drawSettings();
+  $(`#s-rows .prow[data-i="${before}"] input`).select();
+};
+$("#s-cancel").onclick = () => { draft = null; closePanels(); };
+$("#hset").addEventListener("submit", async e => {
+  e.preventDefault();
+  if (draft.split === "custom") {  // scale custom shares to 100%
+    const tot = draft.rows.reduce((a, r) => a + (+r.share || 0), 0) || 1;
+    draft.rows.forEach(r => r.share = Math.round((+r.share || 0) / tot * 1000) / 10);
+  }
+  if (draft.bedsMax < draft.bedsMin) draft.bedsMax = draft.bedsMin;
+  const bedsChanged = applySettings(draft);
+  closePanels(); applyHunt(); if (bedsChanged) loadListings(); else render();
+  if (remote?.saveSettings) {
+    try { await remote.saveSettings(HS); toast("Saved for everyone in " + HS.name); }
+    catch { toast("Saved on this device only. The shared database needs its update (supabase/002_hunts.sql)."); }
+  } else toast("Saved on this device.");
+});
+$("#s-leave").onclick = () => {
+  if (!active) return;
+  const name = HS.name;
+  hunts = hunts.filter(h => h.code !== active); store.set("hunts", hunts);
+  toast(`Left ${name}. It's still there for the others, and the invite link brings it back.`);
+  if (hunts.length) activate(hunts[0].code);
+  else { active = null; store.set("activeHunt", null); applySettings(TEMPLATES.house("")); closePanels(); applyHunt(); loadListings(); connect(); }
+};
+// Invite
+function inviteLink() { return location.origin + location.pathname + "?join=" + encodeURIComponent(active); }
+function openInvite() {
+  closePanels();
+  const link = inviteLink();
+  $("#invite").innerHTML = `<div class="wide"><b>Invite people to ${esc(HS.name)}</b><p class="src" style="margin:4px 0 0">Send this link to the people you're hunting with. When they open it, they type their name and ${esc(HS.name)} appears as a tab for them. Anyone with the link can see and change this hunt, so only send it to them.</p></div>
+    <label class="wide">Invite link<input id="inv-link" readonly value="${esc(link)}"></label>
+    <div class="wide" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><button type="button" class="btn" id="inv-copy">Copy link</button><button type="button" class="btn ghost" id="inv-close">Done</button><span class="src" id="inv-msg"></span></div>`;
+  $("#invite").hidden = false;
+  $("#inv-copy").onclick = () => navigator.clipboard.writeText(link).then(() => $("#inv-msg").textContent = "Copied. Paste it into a message to send it.")
+    .catch(() => { $("#inv-link").select(); $("#inv-msg").textContent = "Press ⌘C (or Ctrl+C) to copy."; });
+  $("#inv-close").onclick = closePanels;
+}
+// Start or join
+function codeFrom(text) {
+  const t = String(text || "").trim(), m = t.match(/[?&]join=([^&#\s]+)/);
+  return m ? decodeURIComponent(m[1]) : t;
+}
+function newCode() {  // unguessable: 10 random characters, e.g. hunt-k3x9q-7wmpe
+  const a = "abcdefghjkmnpqrstuvwxyz23456789", r = crypto.getRandomValues(new Uint8Array(10));
+  const c = [...r].map(x => a[x % a.length]).join("");
+  return `hunt-${c.slice(0, 5)}-${c.slice(5)}`;
+}
+function openNew(inviteCode) {
+  closePanels();
+  const me = huntEntry()?.me || hunts[0]?.me || "";
+  $("#n-me").value = me; $("#j-me").value = me;
+  $("#n-msg").textContent = "";
+  const inv = !!inviteCode;
+  $("#hnew-intro").hidden = inv; $("#hnew-start").hidden = inv;
+  $("#j-title").textContent = inv ? "You've been invited to a house hunt" : "Got an invite?";
+  $("#j-help").textContent = inv ? "Type your name to join. It's shown next to your votes and notes." : "Paste the invite link or code someone sent you.";
+  $("#j-code").value = inviteCode || "";
+  $("#hnew").hidden = false;
+  (inv ? $("#j-me") : $("#n-name")).focus();
+}
+$("#n-cancel").onclick = closePanels;
+$("#n-create").onclick = async () => {
+  const me = $("#n-me").value.trim().replace(/\s+/g, " "), kind = $("#n-kind").value;
+  if (!me) { $("#n-msg").textContent = "Type your name first."; return; }
+  const code = newCode(), st = cleanSettings(Object.assign(TEMPLATES[kind](me), { name: $("#n-name").value.trim() || TEMPLATES[kind](me).name }));
+  hunts.push({ code, me, name: st.name }); store.set("hunts", hunts);
+  store.set("hs:" + code, st);
+  $("#n-msg").textContent = "Creating…";
+  await activate(code);
+  if (remote?.saveSettings) remote.saveSettings(HS).catch(() => toast("Couldn't share the settings yet. The shared database needs its update."));
+  openSettings();
+  toast(`${HS.name} created. Check the people and budget, then use Invite people to share it.`);
+};
+$("#j-join").onclick = async () => {
+  const code = codeFrom($("#j-code").value), me = $("#j-me").value.trim().replace(/\s+/g, " ");
+  if (code.length < 6) { $("#n-msg").textContent = "That invite code looks too short. Paste the whole link."; return; }
+  if (!me) { $("#n-msg").textContent = "Type your name first."; return; }
+  const e = hunts.find(h => h.code === code);
+  if (e) e.me = me; else hunts.push({ code, me, name: "Hunt" });
+  store.set("hunts", hunts);
+  $("#n-msg").textContent = "Joining…";
+  await activate(code);
+  if (!remote) toast("Couldn't reach the shared database. Check your connection and try again.");
+};
+function renameMe() {
+  closePanels(); const e = huntEntry(); if (!e) return;
+  openNew(e.code); $("#j-title").textContent = "Change your name in " + HS.name;
+  $("#j-help").textContent = "Votes and notes you've already made stay under your old name.";
+}
+
+/* ---------- boot ---------- */
+if (matchMedia("(max-width: 900px)").matches) document.querySelectorAll("#rail details").forEach(d => d.open = false);
+votes.local = store.get("localVotes", {});
+const invited = new URLSearchParams(location.search).get("join");
+if (invited) history.replaceState(null, "", location.pathname);
+setTab(tab);
+applyHunt(); render();
+if (invited && !hunts.some(h => h.code === invited)) { loadListings(); connect(); openNew(invited); }
+else if (invited) activate(invited);
+else { loadListings(); connect().then(() => { if (!active) openNew(); }); }
 })();
 </script>

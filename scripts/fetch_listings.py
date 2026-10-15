@@ -1,26 +1,30 @@
 """Collect current rental listings across metropolitan Melbourne from rent.com.au search pages.
 
-  python3 scripts/fetch_listings.py          share house: 4+ bedrooms up to $1,900/wk
-  python3 scripts/fetch_listings.py --solo   on your own: studio to 2 bedrooms up to $700/wk
+Three pools, so a hunt for any household size has listings to choose from:
+  python3 scripts/fetch_listings.py --pool large   4+ bedrooms up to $1,900/wk (the default)
+  python3 scripts/fetch_listings.py --pool three   3 bedrooms up to $1,400/wk
+  python3 scripts/fetch_listings.py --pool small   studio to 2 bedrooms up to $900/wk (--solo also works)
 
 Reads the listing data embedded in public search result pages (allowed by the site's robots.txt),
 politely, one request every few seconds. Suburbs come from data/suburbs.json (built by crime.py). Each suburb's results are cached in
 data/cache/ for the day, so an interrupted run picks up where it stopped.
-Output: data/cache/listings_raw.json (or listings_raw_solo.json)
+Output: data/cache/listings_raw_<pool>.json
 """
 import json, re, sys, time, urllib.request, pathlib
 
 SUBURBS_FILE = pathlib.Path(__file__).resolve().parent.parent / "data" / "suburbs.json"
-# Two searches: the share house (4+ bedrooms for 5 people) and a place on your own (studio to 2 bedrooms).
+# surrounding_suburbs=0 keeps each search to its own suburb; rent_high is the site's max-rent filter;
+# bedrooms=N means N or more; max_pages is high for small places because the CBD alone has 500+. Rent caps sit a little above realistic budgets so near-misses show up.
 PROFILES = {
-    "group": {"query": "bedrooms=4", "max_pages": 3, "min_beds": 4, "max_beds": 99, "max_rent": 1900,
+    "large": {"query": "bedrooms=4", "max_pages": 3, "min_beds": 4, "max_beds": 99, "max_rent": 1900,
               "out": "listings_raw.json", "published": "listings_enriched.json"},
-    # surrounding_suburbs=0 keeps each search to its own suburb; rent_high is the site's max-rent filter.
-    # $700 is a stretch above the ~$575 (30% of a $100k salary) budget so near-misses show up.
-    "solo": {"query": "surrounding_suburbs=0&rent_high=700", "max_pages": 12, "min_beds": 0, "max_beds": 2,
-             "max_rent": 700, "out": "listings_raw_solo.json", "published": "listings_enriched_solo.json"},
+    "three": {"query": "surrounding_suburbs=0&bedrooms=3&rent_high=1400", "max_pages": 20, "min_beds": 3, "max_beds": 3,
+              "max_rent": 1400, "out": "listings_raw_three.json", "published": "listings_enriched_three.json"},
+    "small": {"query": "surrounding_suburbs=0&rent_high=900", "max_pages": 40, "min_beds": 0, "max_beds": 2,
+              "max_rent": 900, "out": "listings_raw_solo.json", "published": "listings_enriched_solo.json"},
 }
-PROFILE = PROFILES["solo" if "--solo" in sys.argv else "group"]
+POOL = "small" if "--solo" in sys.argv else (sys.argv[sys.argv.index("--pool") + 1] if "--pool" in sys.argv else "large")
+PROFILE = PROFILES[POOL]
 MAX_PAGES = PROFILE["max_pages"]
 MAX_RENT = PROFILE["max_rent"]
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36"
@@ -75,7 +79,7 @@ def row(p):
 
 
 def main():
-    cache = DATA / "cache" / (time.strftime("%Y-%m-%d") + ("-solo" if PROFILE is PROFILES["solo"] else ""))
+    cache = DATA / "cache" / (time.strftime("%Y-%m-%d") + ("" if POOL == "large" else "-" + POOL))
     cache.mkdir(parents=True, exist_ok=True)
     suburbs = json.load(open(SUBURBS_FILE))
     for i, s in enumerate(suburbs):

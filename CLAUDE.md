@@ -1,14 +1,16 @@
 # Melbourne House Hunt
 
-Rental search site for a group of 5 housemates (one couple), live at
-https://madisondayerson.github.io/melbourne-house-hunt/ (GitHub Pages, served from `docs/`).
+Rental search site with multiple "hunts" (shared spaces: people, rent split, budget, bedrooms, votes, notes),
+live at https://madisondayerson.github.io/melbourne-house-hunt/ (GitHub Pages, served from `docs/`).
+Listings are split into three pools by bedrooms (`docs/data/large|three|small.json`); the page loads only
+the pools a hunt's bedroom range needs. The claude.ai artifact copy is retired (not built any more).
 
 ## Publishing changes (standing instruction from the owner)
 
 Any change requested in this project should end up live on the website without asking:
 
 1. Edit the source (`app/template.html`, `scripts/*.py`, `data/*.json`), never `docs/index.html` directly.
-2. Rebuild: `python3 scripts/build.py` (writes `docs/index.html` and the claude.ai artifact copy).
+2. Rebuild: `python3 scripts/build.py` (writes `docs/index.html`, `docs/data/*.json`, `docs/geo.json`).
 3. Check the page script still parses before committing.
 4. Commit with a short message describing the change, then `git push`. GitHub Pages redeploys in about a minute.
 5. Tell the owner what changed and that the site is updated. If the push fails with an authentication error,
@@ -29,4 +31,6 @@ check recorded in `data/cav_review.json` before they count.
 ## Data refresh
 
 See README.md. Shared votes on the website live in Supabase (`supabase/setup.sql`), not in this repo,
-so rebuilding and pushing never touches them.
+so rebuilding and pushing never touches them. Hunt settings need `supabase/002_hunts.sql` (already run).
+Before committing local data runs, `git fetch` and keep GitHub's version of any data file the daily run
+changed that you didn't regenerate; never let git line-merge the big JSON files.

@@ -45,6 +45,34 @@ STYLE = [  # pattern, approx year, era label
     (r"1980s|1990s", 1990, "1980s–90s"),
 ]
 
+# Not a whole home: rooming houses, student accommodation and single rooms in shared houses
+LODGING = [
+    (r"\brooming house\b|\bboarding house\b|registered rooming|rooming[- ]house", "rooming", "Rooming house"),
+    (r"student accommodation|student living|student housing|students only|student apartments?\b|\bpbsa\b|student residence"
+     r"|purpose[- ]built student|accommodation for students|suit(?:s|able for) (?:uni(?:versity)? )?students only", "student", "Student accommodation"),
+    (r"\broom (?:for rent|for lease|available|to rent)\b|(?<!semi )(?<!semi-)\bprivate room\b|\bsingle room\b|\bfurnished room\b"
+     r"|\broom in (?:a|our|the|this) (?:share|shared)|\bco-?living\b|\brooms? for lease\b|\broom[^.]{0,40}\bshared house\b"
+     r"|\bhousemates? wanted\b|\bflatmates? wanted\b", "room", "Room in a shared house"),
+]
+OPERATORS = r"unilodge|uni lodge|\bscape\b|\biglu\b|urbanest|\byugo\b|campus living|journal student|student living|\batira\b|\bcampus\b"
+
+
+def lodging(desc, byline, agency):
+    t = " " + (byline or "") + " . " + (desc or "") + " "
+    tl = t.lower()
+    if re.search(OPERATORS, (agency or "").lower()):
+        return ["student", "Student accommodation", f"Managed by {agency}"]
+    for pat, kind, label in LODGING:
+        for m in re.finditer(pat, tl):
+            before = tl[max(0, m.start() - 60):m.start()]
+            # "moving out of student accommodation", "suits a share house, student accommodation or family", "every single room"
+            if re.search(r"\b(?:out of|leaving|moving from|suit(?:s|ed|able)?|ideal(?:ly)?|perfect for|great for|every)\b[^.]{0,45}$", before):
+                continue
+            a, b = max(0, m.start() - 50), min(len(t), m.end() + 50)
+            return [kind, label, "…" + re.sub(r"\s+", " ", t[a:b].replace("\\r", " ").replace("\\n", " ")).strip() + "…"]
+    return None
+
+
 COMFORT = [
     (r"double[- ]glaz", "Double glazing"), (r"\bsolar (?:panels|power|system|hot water)|\bsolar\b", "Solar"),
     (r"ducted (?:gas )?heating|ducted heat", "Ducted heating"), (r"refrigerated cooling|ducted (?:refrigerated )?(?:cooling|air|reverse)", "Ducted cooling"),
@@ -102,14 +130,14 @@ def estimate(desc, byline, suburb):
 
 
 def main():
-    listings = [l for f in ("listings_enriched.json", "listings_enriched_solo.json") if (D / f).exists()
+    listings = [l for f in ("listings_enriched.json", "listings_enriched_three.json", "listings_enriched_solo.json") if (D / f).exists()
                 for l in json.load(open(D / f))]
     old = json.load(open(D / "build_age.json")) if (D / "build_age.json").exists() else {}
     out = {}
     for l in listings:
         f = D / "cache" / "details" / f"{l['id']}.json"
-        if not f.exists() and str(l["id"]) in old:   # already worked out on an earlier run
-            out[str(l["id"])] = old[str(l["id"])]
+        if not f.exists() and str(l["id"]) in old:   # worked out on an earlier run (and its page isn't cached here)
+            out[str(l["id"])] = {"lodging": None, **old[str(l["id"])]}
             continue
         det = json.loads(f.read_text()) if f.exists() else {}
         desc, by = det.get("description", ""), det.get("byline", "")
@@ -130,6 +158,7 @@ def main():
                     comfort.append(lab)
         r["comfort"] = comfort[:6]
         r["has_text"] = bool(desc)
+        r["lodging"] = lodging(desc, by, l.get("agency"))
         out[str(l["id"])] = r
     json.dump(out, open(D / "build_age.json", "w"), indent=1)
     from collections import Counter

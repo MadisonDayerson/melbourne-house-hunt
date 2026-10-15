@@ -163,7 +163,7 @@ def cav_matches(name, arts):
 
 
 def main():
-    listings = [l for f in ("listings_enriched.json", "listings_enriched_solo.json") if (D / f).exists()
+    listings = [l for f in ("listings_enriched.json", "listings_enriched_three.json", "listings_enriched_solo.json") if (D / f).exists()
                 for l in json.load(open(D / f))]
     names = sorted({l["agency"].strip() for l in listings if l.get("agency")})
     old = json.load(open(D / "agencies.json")) if "--incremental" in sys.argv and (D / "agencies.json").exists() else {}

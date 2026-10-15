@@ -1,16 +1,17 @@
-"""Build the shareable page: app/northside-house-hunt.html from app/template.html + data/*.json."""
+"""Build the website: docs/index.html from app/template.html, plus docs/data/<pool>.json listing files
+(downloaded by the page only for the bedroom range a hunt needs) and docs/geo.json (for scoring added listings)."""
 import json, math, pathlib, datetime
 from zoneinfo import ZoneInfo
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 D = ROOT / "data"
-listings = json.load(open(D / "listings_enriched.json"))
-solo_path = D / "listings_enriched_solo.json"
-solo = json.load(open(solo_path)) if solo_path.exists() else []
+POOL_FILES = {"large": "listings_enriched.json", "three": "listings_enriched_three.json", "small": "listings_enriched_solo.json"}
+pools = {k: json.load(open(D / f)) if (D / f).exists() else [] for k, f in POOL_FILES.items()}
+everything = [l for rows in pools.values() for l in rows]
 base = json.load(open(D / "basemap.json"))
 
 # Map projection (equirectangular, scaled for Melbourne's latitude), padded around the listings
-lats = [l["lat"] for l in listings + solo]; lngs = [l["lng"] for l in listings + solo]
+lats = [l["lat"] for l in everything]; lngs = [l["lng"] for l in everything]
 pad = 0.012
 S, N = min(lats) - pad, max(lats) + pad
 W, E = min(lngs) - pad, max(lngs) + pad
@@ -50,7 +51,7 @@ def slim(rows):
     return out
 
 
-data, solo_data = slim(listings), slim(solo)
+slimmed = {k: slim(rows) for k, rows in pools.items()}
 
 # ---- agency renter-friendliness + build age ----
 CAV_REVIEW = json.load(open(D / "cav_review.json")) if (D / "cav_review.json").exists() else {}
@@ -98,16 +99,18 @@ for name, a in agencies.items():
     ag_out[name] = {"score": agency_score(a, name), "cavKind": rec.get("kind"), "cavSummary": rec.get("summary"), "rvNote": NOT_RENTER_REVIEWS.get(name),
                     "rv": [rv["rating"], rv["reviews"], rv["level"], rv["name"], rv["slug"], rv["dist"]] if rv else None,
                     "cav": [{k: c[k] for k in ("url", "title", "date")} for c in (a.get("cav") or [])]}
-for d in data + solo_data:
+for d in (d for rows in slimmed.values() for d in rows):
     d["agency"] = (d.get("agency") or "").strip()
     g = ages.get(d["id"])
     if g:
         d["age"] = [g["era"], g["bucket"], g["confidence"], g["evidence"], g["renovated"], g["comfort"]]
+        if g.get("lodging"):
+            d["lodging"] = g["lodging"]  # [kind, label, evidence]: rooming house, student accommodation, single room
 
 payload = {
     "agencies": ag_out,
     "asOf": datetime.datetime.now(ZoneInfo("Australia/Melbourne")).date().isoformat(),  # GitHub runs on UTC
-    "listings": data, "solo": solo_data, "proj": proj, "stations": stations,
+    "pools": {k: sum(1 for d in rows if not d.get("gone")) for k, rows in slimmed.items()}, "proj": proj, "stations": stations,
     "suburbs": [[x["suburb"], x["region"]] for x in json.load(open(D / "suburbs.json"))],
 }
 template = (ROOT / "app" / "template.html").read_text()
@@ -120,10 +123,12 @@ def render(payload):
     return html.replace("__MAP_W__", str(WIDTH)).replace("__MAP_H__", str(HEIGHT))
 
 
-# 1. claude.ai artifact (the artifact viewer adds the document wrapper and provides shared storage)
-out = ROOT / "app" / "northside-house-hunt.html"  # file name kept so republishing updates the same artifact
-out.write_text(render(payload))
-print("wrote", out, f"{out.stat().st_size/1024:.0f} KB", len(data), "share-house +", len(solo_data), "solo listings")
+# 1. Listing files, one per pool (the claude.ai artifact copy was retired on 2026-10-15)
+(ROOT / "docs" / "data").mkdir(parents=True, exist_ok=True)
+for k, rows in slimmed.items():
+    f = ROOT / "docs" / "data" / f"{k}.json"
+    f.write_text(json.dumps(rows, separators=(",", ":"), ensure_ascii=False))
+    print("wrote", f, f"{f.stat().st_size / 1024:.0f} KB", len(rows), "listings")
 
 # 2. GitHub Pages: a complete document, with the Supabase project from site_config.json for shared votes
 cfg_path = ROOT / "site_config.json"
@@ -135,7 +140,7 @@ title = body[body.index("<title>"):body.index("</title>") + 8]
 body = body.replace(title, "", 1)
 doc = ("<!doctype html>\n<html lang=\"en-AU\">\n<head>\n<meta charset=\"utf-8\">\n"
        "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1,viewport-fit=cover\">\n"
-       f"{title}\n<meta name=\"description\" content=\"4+ bedroom rentals across Melbourne, scored for walkability, transport, noise, air, safety and agency track record.\">\n"
+       f"{title}\n<meta name=\"description\" content=\"Rentals across Melbourne for any household, scored for walkability, transport, noise, air, safety and agency track record.\">\n"
        "<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}"
        "body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>\n</head>\n<body>\n"
        + body + "\n</body>\n</html>\n")

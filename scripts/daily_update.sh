@@ -4,10 +4,11 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-echo "== Share-house listings";            python3 scripts/fetch_listings.py
-echo "== Just-me listings";                python3 scripts/fetch_listings.py --solo
-echo "== Location scores";                 python3 scripts/enrich.py
-python3 scripts/enrich.py --solo
+for pool in large three small; do
+  echo "== Listings: $pool";              python3 scripts/fetch_listings.py --pool $pool
+done
+echo "== Location scores"
+for pool in large three small; do python3 scripts/enrich.py --pool $pool; done
 echo "== Details for new listings";        python3 scripts/fetch_details.py
 echo "== Build age";                       python3 scripts/build_age.py
 echo "== Agencies (new ones only)";        python3 scripts/agencies.py --incremental > /dev/null

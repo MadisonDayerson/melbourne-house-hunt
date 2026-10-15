@@ -1,31 +1,32 @@
 # Melbourne House Hunt
 
-4+ bedroom rentals across Melbourne, scored for walkability, public transport, noise, air quality, safety and agency track record, with a shared shortlist for housemates.
+Rentals across Melbourne for any household, scored for walkability, public transport, noise, air quality, safety and agency track record. Each **hunt** (a tab on the site) has its own people, rent split, budget, bedrooms, votes and notes, and can be shared with an invite link.
 
-- Website (GitHub Pages): `docs/index.html`
-- claude.ai version: https://claude.ai/artifact/W8Nyo9htpZm7Un8Fp81kWb
+- Website: https://madisondayerson.github.io/melbourne-house-hunt/ (built into `docs/`)
+- The earlier claude.ai copy (https://claude.ai/artifact/W8Nyo9htpZm7Un8Fp81kWb) was retired on 2026-10-15 and no longer updates.
 
 ## Hosting on GitHub Pages
 
-1. **Shared votes (Supabase, free):** create a project at supabase.com, open SQL Editor, paste `supabase/setup.sql` and press Run. Copy `site_config.example.json` to `site_config.json` and fill in the Project URL and the `anon` public key (Project Settings > API). The anon key is meant to be public; the database functions only answer to the right house code.
+1. **Shared hunts (Supabase, free):** create a project at supabase.com, open SQL Editor, paste `supabase/setup.sql` and press Run, then do the same with `supabase/002_hunts.sql`. Copy `site_config.example.json` to `site_config.json` and fill in the Project URL and the `anon` public key (Project Settings > API). The anon key is meant to be public; the database functions only answer to the right house code.
 2. `python3 scripts/build.py` writes `docs/index.html` with that config.
 3. Push to GitHub, then in the repository's Settings > Pages choose "Deploy from a branch", branch `main`, folder `/docs`.
-4. Housemates open the site, enter their name and the house code you choose (6+ characters, keep it among yourselves).
+4. On the site, **+ New hunt** creates a hunt; **Invite people** gives a link to send.
 
 ## Refresh the listings
 
 ```bash
 cd ~/Downloads/Personal/Rentals
-python3 scripts/fetch_listings.py   # 4+ bed rentals in 539 metro suburbs from rent.com.au (~35 min, resumable)
+./scripts/daily_update.sh           # everything below in order (this is what runs on GitHub every morning)
+python3 scripts/fetch_listings.py --pool large|three|small   # rent.com.au: 4+ bed / 3 bed / studio-2 bed
 ./data/fetch_osm.sh                 # OpenStreetMap shops, services, stops, roads, rail (16 tiles, ~30 min)
-python3 scripts/enrich.py           # location scores
+python3 scripts/enrich.py --pool large|three|small           # location scores
 python3 scripts/fetch_details.py    # listing descriptions (~1 hr; run a 2nd copy with --reverse to halve it)
-python3 scripts/build_age.py        # build age + comfort features from descriptions
+python3 scripts/build_age.py        # build age, comfort features, rooming house / student flags
 python3 scripts/agencies.py         # agency reviews (ProductReview) + Consumer Affairs Victoria records (~30 min)
-python3 scripts/build.py            # writes app/northside-house-hunt.html
+python3 scripts/build.py            # writes docs/index.html, docs/data/<pool>.json, docs/geo.json
 ```
 
-Then commit and push `docs/index.html` to update the website (and/or republish `app/northside-house-hunt.html` to the artifact). Votes, notes and added listings live in the artifact's database, so they survive republishing.
+Then commit and push `docs/` to update the website. Hunts, votes, notes and added listings live in Supabase, so they survive rebuilds.
 
 `./scripts/progress.sh` shows live progress of the two downloads.
 

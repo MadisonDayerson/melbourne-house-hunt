@@ -28,8 +28,14 @@ def load_json(name):
         return json.load(open(D / name))
     with gzip.open(D / (name + ".gz"), "rt") as f:
         return json.load(f)
-SOLO = "--solo" in sys.argv  # studio-2 bed search for one person (see fetch_listings.py)
-RAW, OUT = ("listings_raw_solo.json", "listings_enriched_solo.json") if SOLO else ("listings_raw.json", "listings_enriched.json")
+# Listing pools (see fetch_listings.py): raw file, scored file, bedroom range, minimum believable rent
+POOLS = {
+    "large": ("listings_raw.json", "listings_enriched.json", 4, 8, 350),
+    "three": ("listings_raw_three.json", "listings_enriched_three.json", 3, 3, 300),
+    "small": ("listings_raw_solo.json", "listings_enriched_solo.json", 0, 2, 180),  # below min rent: parking, storage, a room
+}
+POOL = "small" if "--solo" in sys.argv else (sys.argv[sys.argv.index("--pool") + 1] if "--pool" in sys.argv else "large")
+RAW, OUT, MIN_BEDS, MAX_BEDS, MIN_RENT = POOLS[POOL]
 DETOUR, WALK_M_PER_MIN = 1.3, 80
 VIC_RATE = 86.8  # offences per 1,000 residents, Victoria, year ending June 2026
 CBD = (-37.8183, 144.9671)  # Flinders Street Station
@@ -264,8 +270,8 @@ def main():
     out, missing_pop = [], set()
     for L in json.load(open(D / "cache" / RAW)):
         meta = SUBURBS.get(re.sub(r"^saint ", "st ", L["suburb"].lower()))
-        beds_ok = 0 <= (L["beds"] or 0) <= 2 if SOLO else 4 <= (L["beds"] or 0) <= 8
-        min_rent = 180 if SOLO else 350  # below this it's a parking space, storage or a single room
+        beds_ok = MIN_BEDS <= (L["beds"] or 0) <= MAX_BEDS
+        min_rent = MIN_RENT
         if not meta or not L["lat"] or not beds_ok or L["rent"] < min_rent:
             continue  # outside metro Melbourne, or a per-room/odd listing
         L["suburb"] = meta["suburb"]
@@ -295,7 +301,7 @@ def main():
     new = sum(1 for l in out if l.get("first_seen") == TODAY and not l.get("gone"))
     print(f"history: {new} new today, {kept_gone} no longer advertised (kept {KEEP_GONE_DAYS} days)")
     json.dump(out, open(D / OUT, "w"), indent=1)
-    if SOLO:
+    if POOL != "large":
         sys.exit()  # the basemap comes from the share-house run
 
 
