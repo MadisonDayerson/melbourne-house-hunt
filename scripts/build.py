@@ -42,7 +42,7 @@ stations = [{"x": px(a, b)[0], "y": px(a, b)[1], "n": n} for a, b, n in base["st
 KEEP = ["region", "lga", "id", "url", "type", "street", "suburb", "postcode", "rent", "beds", "baths", "cars", "pets",
         "lat", "lng", "available", "listed", "walk_score", "transit_score", "agency", "cbd_km", "near",
         "counts", "met", "twenty", "transit", "roads", "quiet", "noise_flags", "air", "air_flags",
-        "safety", "crime", "first_seen", "gone"]
+        "safety", "crime", "first_seen", "gone", "photos"]
 def slim(rows):
     out = [{k: l.get(k) for k in KEEP} for l in rows]
     for d in out:

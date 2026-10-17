@@ -75,7 +75,24 @@ def row(p):
         "walk_score": (p.get("walkability_score") or {}).get("walk_score"),
         "transit_score": (p.get("walkability_score") or {}).get("transit_score"),
         "agency": ((p.get("contact") or {}).get("company") or {}).get("trading_name"),
+        "photos": photo_paths(p),
     }
+
+
+PHOTO_BASE = "https://cdn.rent.com.au/photos/images/"
+
+
+def photo_paths(p, n=4):
+    """First few photos, stored without the CDN prefix and cache-busting query to keep the data small.
+    The page puts PHOTO_BASE back on and shows them straight from rent.com.au's image server."""
+    out = []
+    for g in (p.get("gallery") or []):
+        u = (g or {}).get("url") or ""
+        if g.get("gallery_type", "photo") == "photo" and u.startswith(PHOTO_BASE):
+            out.append(u[len(PHOTO_BASE):].split("?")[0])
+        if len(out) == n:
+            break
+    return out
 
 
 def main():

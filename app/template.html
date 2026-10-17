@@ -94,7 +94,25 @@ a { color: var(--accent); }
 
 /* Cards */
 .cards { display: grid; gap: 12px; }
-.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); display: grid; grid-template-columns: 76px minmax(0,1fr); gap: 0; overflow: hidden; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); display: grid; grid-template-columns: 240px minmax(0,1fr); gap: 0; overflow: hidden; }
+/* Photo preview: first few listing photos, shown straight from rent.com.au's image server */
+.media { position: relative; background: var(--sunk); border-right: 1px solid var(--line); min-height: 190px; }
+.media .ph { position: absolute; inset: 0; display: block; }
+.media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.media .none, .media.broken .ph { display: grid; place-items: center; color: var(--muted); font-size: 12px; }
+.media.broken img { display: none; }
+.media.broken .ph::after { content: "Photo unavailable"; }
+.score-badge { position: absolute; top: 8px; left: 8px; z-index: 1; display: grid; place-items: center; gap: 1px; padding: 5px 9px 4px;
+  background: var(--surface); border-radius: 8px; box-shadow: 0 1px 4px rgb(0 0 0 / .28); }
+.score-badge b { font-family: var(--display); font-size: 26px; font-weight: 800; font-stretch: 75%; line-height: 1; }
+.score-badge span { font-size: 9px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.phnav { position: absolute; top: 50%; transform: translateY(-50%); z-index: 1; width: 32px; height: 32px; border-radius: 50%; border: 0;
+  background: rgb(0 0 0 / .5); color: #fff; font-size: 20px; line-height: 1; cursor: pointer; display: grid; place-items: center; }
+.phnav:hover { background: rgb(0 0 0 / .72); }
+.phnav.prev { left: 6px; } .phnav.next { right: 6px; }
+.phcount { position: absolute; bottom: 7px; right: 8px; z-index: 1; background: rgb(0 0 0 / .55); color: #fff; font: 500 11px var(--mono); padding: 1px 7px; border-radius: 999px; }
+.thumb { width: 64px; height: 44px; object-fit: cover; border-radius: 6px; display: block; background: var(--sunk); }
+@media (max-width: 640px) { .card { grid-template-columns: minmax(0,1fr); } .media { border-right: 0; border-bottom: 1px solid var(--line); min-height: 0; aspect-ratio: 3 / 2; } }
 .card.hl { outline: 2px solid var(--accent); }
 .score { display: grid; place-items: center; align-content: center; gap: 2px; border-right: 1px solid var(--line); background: var(--sunk); padding: 12px 4px; }
 .score b { font-family: var(--display); font-size: 30px; font-weight: 800; font-stretch: 75%; line-height: 1; }
@@ -1004,6 +1022,33 @@ function votersHtml(t) {
   }).join("") + `</span>`;
 }
 
+// Photos are stored as paths on rent.com.au's image server; the page shows them from there.
+const PHOTO_BASE = "https://cdn.rent.com.au/photos/images/";
+const phIdx = new Map();  // listing id -> photo being shown
+const photoUrl = p => /^https:\/\//.test(p) ? p : PHOTO_BASE + p;
+function mediaHtml(l, o) {
+  const ph = (l.photos || []).filter(Boolean), n = ph.length, i = Math.min(phIdx.get(l.id) || 0, Math.max(0, n - 1));
+  const badge = `<div class="score-badge" title="Overall score with your settings"><b style="color:${toneVar(o)}">${o ?? "–"}</b><span>score</span></div>`;
+  if (!n) return `<div class="media">${badge}<div class="ph none">${l.url ? `<a href="${esc(l.url)}" target="_blank" rel="noopener">Photos on the listing</a>` : "No photo"}</div></div>`;
+  const img = `<img src="${esc(photoUrl(ph[i]))}" alt="Photo ${i + 1} of ${n}: ${esc(l.street)}" loading="lazy" decoding="async" onerror="this.closest('.media').classList.add('broken')">`;
+  return `<div class="media" data-media="${esc(l.id)}">${badge}
+    ${l.url ? `<a class="ph" href="${esc(l.url)}" target="_blank" rel="noopener" title="Open the listing">${img}</a>` : `<div class="ph">${img}</div>`}
+    ${n > 1 ? `<button type="button" class="phnav prev" data-ph="-1" data-id="${esc(l.id)}" aria-label="Previous photo">‹</button>
+      <button type="button" class="phnav next" data-ph="1" data-id="${esc(l.id)}" aria-label="Next photo">›</button>
+      <span class="phcount">${i + 1}/${n}</span>` : ""}</div>`;
+}
+function stepPhoto(id, step) {  // swap the photo in place, without redrawing the list
+  const l = allListings().find(x => x.id === id); if (!l) return;
+  const ph = (l.photos || []).filter(Boolean), n = ph.length; if (n < 2) return;
+  const i = ((phIdx.get(id) || 0) + step + n) % n; phIdx.set(id, i);
+  document.querySelectorAll(`[data-media="${CSS.escape(id)}"]`).forEach(m => {
+    m.classList.remove("broken");
+    const img = m.querySelector("img"); img.src = photoUrl(ph[i]); img.alt = `Photo ${i + 1} of ${n}: ${l.street}`;
+    m.querySelector(".phcount").textContent = `${i + 1}/${n}`;
+  });
+  const next = new Image(); next.src = photoUrl(ph[(i + step + n) % n]);  // warm up the following one
+}
+
 function card(l) {
   const d = dims(l), o = overall(d), sh = shares(l.rent), mv = myVotes()[l.id], t = tally(l.id);
   const one = sh.rows.length === 1 && sh.rows[0].people === 1;
@@ -1018,7 +1063,7 @@ function card(l) {
   const gmaps = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((l.street || "") + ", " + l.suburb + " VIC")}`;
   const ro = !localMode() && !canWrite;
   return `<article class="card" id="card-${esc(l.id)}">
-    <div class="score" title="Overall score with your weights"><b style="color:${toneVar(o)}">${o ?? "–"}</b><span>score</span></div>
+    ${mediaHtml(l, o)}
     <div class="cbody">
       <div class="ctop">
         <div class="addr">${esc(l.street)}<small>${esc(l.suburb)} ${esc(l.postcode || "")}${l.region ? ` · ${esc(l.region)}` : ""}${l.cbd_km != null ? ` · ${l.cbd_km} km to CBD` : ""}</small></div>
@@ -1122,9 +1167,9 @@ function renderShort() {
   $("#c-short").textContent = rows.length || "";
   const el = $("#board");
   if (!rows.length) { el.innerHTML = `<div class="empty">Nothing shortlisted yet. Vote <b>Love it</b> or <b>Maybe</b> on a listing and it appears here, ranked by the whole group's votes.</div>`; return; }
-  el.innerHTML = `<div class="tw"><table><thead><tr><th>#</th><th>Place</th><th class="r">Rent</th><th class="r">${shares(0).mine ? "Your share" : "Per person"}</th><th class="r">Score</th><th>Votes</th><th class="r">Beds</th><th class="r">Train</th><th class="r">Safety</th><th>Built</th><th>Agency</th><th></th></tr></thead><tbody>
+  el.innerHTML = `<div class="tw"><table><thead><tr><th>#</th><th></th><th>Place</th><th class="r">Rent</th><th class="r">${shares(0).mine ? "Your share" : "Per person"}</th><th class="r">Score</th><th>Votes</th><th class="r">Beds</th><th class="r">Train</th><th class="r">Safety</th><th>Built</th><th>Agency</th><th></th></tr></thead><tbody>
     ${rows.map((r, i) => { const l = r.l, d = dims(l), o = overall(d);
-      return `<tr><td class="rk">${i + 1}</td><td><b>${esc(l.street)}</b><br><span class="src">${esc(l.suburb)}</span></td>
+      return `<tr><td class="rk">${i + 1}</td><td>${(l.photos || [])[0] ? `<img class="thumb" src="${esc(photoUrl(l.photos[0]))}" alt="" loading="lazy">` : ""}</td><td><b>${esc(l.street)}</b><br><span class="src">${esc(l.suburb)}</span></td>
       <td class="r num">${money(l.rent)}</td><td class="r num">${money(shares(l.rent).mine ? shares(l.rent).mine.amt : shares(l.rent).maxEach)}</td><td class="r num" style="color:${toneVar(o)}">${o ?? "–"}</td>
       <td>${votersHtml(r.t) || "–"}</td><td class="r num">${l.beds}/${l.baths ?? "?"}/${l.cars ?? 0}</td>
       <td class="r num">${l.near ? walkMin(l.near.train[0]) + " min" : "–"}</td><td class="r num">${d?.safety ?? "–"}</td>
@@ -1206,6 +1251,7 @@ function setTab(t) {
 }
 $("#tabs").addEventListener("click", e => { const b = e.target.closest(".tab"); if (b) { setTab(b.dataset.tab); if (b.dataset.tab === "map") fitTo(lastList); } });
 document.addEventListener("click", e => {
+  const ps = e.target.closest("[data-ph]"); if (ps) { stepPhoto(ps.dataset.id, +ps.dataset.ph); return; }
   const v = e.target.closest("[data-vote]"); if (v) { castVote(v.dataset.id, v.dataset.vote); return; }
   const m = e.target.closest("[data-more]"); if (m) { const id = m.dataset.more; open.has(id) ? open.delete(id) : open.add(id); render(); return; }
   const d = e.target.closest("[data-dot]"); if (d) { mapSel = d.dataset.dot; render(); return; }
