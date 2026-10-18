@@ -412,6 +412,7 @@
   "has_text": true
  },
  "5458144": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -419,8 +420,7 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6503988": {
   "lodging": null,
@@ -1225,6 +1225,7 @@
   "has_text": true
  },
  "6513308": {
+  "lodging": null,
   "year": 2012,
   "era": "Likely 2000s or newer (new-estate suburb)",
   "bucket": "modern",
@@ -1234,8 +1235,7 @@
   "comfort": [
    "Split system"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "5120620": {
   "lodging": null,
@@ -1584,6 +1584,7 @@
   "has_text": true
  },
  "6506372": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -1594,8 +1595,7 @@
    "Split system",
    "Hydronic heating"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6506267": {
   "lodging": null,
@@ -1622,6 +1622,7 @@
   "has_text": true
  },
  "6506055": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -1631,10 +1632,10 @@
   "comfort": [
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6505770": {
+  "lodging": null,
   "year": 2023,
   "era": "Near new (about 1\u20135 years)",
   "bucket": "new",
@@ -1644,8 +1645,7 @@
   "comfort": [
    "Solar"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "5425580": {
   "lodging": null,
@@ -1935,6 +1935,7 @@
   "has_text": true
  },
  "6507069": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -1946,8 +1947,7 @@
    "Split system",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6505223": {
   "lodging": null,
@@ -2017,6 +2017,7 @@
   "has_text": true
  },
  "6485005": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -2028,8 +2029,7 @@
    "Solar",
    "Hydronic heating"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6484293": {
   "lodging": null,
@@ -2113,6 +2113,7 @@
   "has_text": true
  },
  "6508330": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -2120,10 +2121,10 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6507571": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -2131,10 +2132,10 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6505654": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -2142,8 +2143,7 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6500371": {
   "lodging": null,
@@ -2217,6 +2217,7 @@
   "has_text": true
  },
  "5769062": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -2226,10 +2227,10 @@
   "comfort": [
    "Split system"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6510360": {
+  "lodging": null,
   "year": 2026,
   "era": "Brand new",
   "bucket": "new",
@@ -2240,8 +2241,7 @@
    "Solar",
    "6-star energy"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6175402": {
   "lodging": null,
@@ -2537,6 +2537,7 @@
   "has_text": true
  },
  "6514313": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -2546,8 +2547,7 @@
   "comfort": [
    "Ducted heating"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6464282": {
   "lodging": null,
@@ -2576,6 +2576,7 @@
   "has_text": true
  },
  "6512315": {
+  "lodging": null,
   "year": 2023,
   "era": "Near new (about 1\u20135 years)",
   "bucket": "new",
@@ -2585,8 +2586,7 @@
   "comfort": [
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6510456": {
   "lodging": null,
@@ -2613,6 +2613,7 @@
   "has_text": true
  },
  "6509682": {
+  "lodging": null,
   "year": 1910,
   "era": "Edwardian (1901\u20131918)",
   "bucket": "period",
@@ -2625,10 +2626,10 @@
    "Dishwasher",
    "Evaporative"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6507747": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -2641,10 +2642,10 @@
    "Evaporative cooling",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6153131": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -2656,10 +2657,10 @@
    "Evaporative cooling",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6507281": {
+  "lodging": null,
   "year": 2026,
   "era": "Brand new",
   "bucket": "new",
@@ -2671,10 +2672,10 @@
    "Split system",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "5370873": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -2686,10 +2687,10 @@
    "6-star energy",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6505659": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -2700,10 +2701,10 @@
    "Ducted heating",
    "Split system"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6505658": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -2714,10 +2715,10 @@
    "Ducted heating",
    "Split system"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "5067802": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -2730,8 +2731,7 @@
    "Dishwasher",
    "Air conditioning"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6505144": {
   "lodging": null,
@@ -3147,6 +3147,7 @@
   "has_text": true
  },
  "6515098": {
+  "lodging": null,
   "year": 2023,
   "era": "Near new (about 1\u20135 years)",
   "bucket": "new",
@@ -3157,10 +3158,10 @@
    "Dishwasher",
    "Fire place"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6512871": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -3171,10 +3172,10 @@
    "Double glazing",
    "Split system"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6159641": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -3184,8 +3185,7 @@
   "comfort": [
    "Split system"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "4795725": {
   "lodging": null,
@@ -3385,6 +3385,7 @@
   "has_text": true
  },
  "6514987": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -3394,10 +3395,10 @@
   "comfort": [
    "Ducted heating"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6477096": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -3408,10 +3409,10 @@
    "Ducted heating",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6509936": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -3423,10 +3424,10 @@
    "Ducted cooling",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6509815": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -3437,10 +3438,10 @@
    "Ducted heating",
    "Split system"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "5581558": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -3454,10 +3455,10 @@
    "Evaporative cooling",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6508520": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -3468,10 +3469,10 @@
    "Ducted heating",
    "Ducted cooling"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6508299": {
+  "lodging": null,
   "year": 2026,
   "era": "Brand new",
   "bucket": "new",
@@ -3482,10 +3483,10 @@
    "Double glazing",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "5313696": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -3495,10 +3496,10 @@
   "comfort": [
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6506450": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -3506,10 +3507,10 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "4880821": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -3521,10 +3522,10 @@
    "Ducted heating",
    "Evaporative cooling"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6505505": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -3532,8 +3533,7 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6503731": {
   "lodging": null,
@@ -3775,6 +3775,17 @@
   ],
   "has_text": true
  },
+ "6460912": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": true,
+  "comfort": [],
+  "has_text": true
+ },
  "6142658": {
   "lodging": null,
   "year": null,
@@ -3907,6 +3918,7 @@
   "has_text": true
  },
  "6513999": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -3916,10 +3928,10 @@
   "comfort": [
    "Double glazing"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6513640": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -3930,10 +3942,10 @@
    "Split system",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6511452": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -3943,8 +3955,7 @@
   "comfort": [
    "Split system"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6486514": {
   "lodging": null,
@@ -3993,6 +4004,7 @@
   "has_text": true
  },
  "6513747": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -4003,10 +4015,10 @@
    "Ducted heating",
    "Split system"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6512880": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -4019,10 +4031,10 @@
    "Ducted cooling",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6511550": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -4034,10 +4046,10 @@
    "Dishwasher",
    "Air conditioning"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6511332": {
+  "lodging": null,
   "year": 2023,
   "era": "Near new (about 1\u20135 years)",
   "bucket": "new",
@@ -4047,10 +4059,10 @@
   "comfort": [
    "6.7-star energy"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6510684": {
+  "lodging": null,
   "year": 2026,
   "era": "Brand new",
   "bucket": "new",
@@ -4060,8 +4072,7 @@
   "comfort": [
    "Split system"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6099949": {
   "lodging": null,
@@ -4337,6 +4348,7 @@
   "has_text": true
  },
  "6496012": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -4344,8 +4356,7 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6515176": {
   "lodging": null,
@@ -4448,6 +4459,7 @@
   "has_text": true
  },
  "6307486": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -4457,8 +4469,7 @@
   "comfort": [
    "Split system"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6502024": {
   "lodging": null,
@@ -5726,6 +5737,19 @@
   ],
   "has_text": true
  },
+ "5345467": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Dishwasher"
+  ],
+  "has_text": true
+ },
  "6516051": {
   "lodging": null,
   "year": null,
@@ -5805,19 +5829,6 @@
   "comfort": [
    "Ducted heating",
    "Split system",
-   "Dishwasher"
-  ],
-  "has_text": true
- },
- "5345467": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
    "Dishwasher"
   ],
   "has_text": true
@@ -9427,6 +9438,7 @@
   "has_text": true
  },
  "6472229": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -9436,8 +9448,7 @@
   "comfort": [
    "Solar"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "4269393": {
   "lodging": null,
@@ -10182,6 +10193,22 @@
   ],
   "has_text": true
  },
+ "6491229": {
+  "lodging": null,
+  "year": 2026,
+  "era": "Brand new",
+  "bucket": "new",
+  "confidence": "stated",
+  "evidence": "\u2026eas and premium modern inclusions, this brand-new home is an excellent opportunity for familie\u2026",
+  "renovated": false,
+  "comfort": [
+   "Ducted heating",
+   "Evaporative cooling",
+   "Dishwasher",
+   "Evaporative"
+  ],
+  "has_text": true
+ },
  "5567683": {
   "lodging": null,
   "year": 2012,
@@ -10858,22 +10885,6 @@
    "Double glazing",
    "Solar",
    "7-star energy"
-  ],
-  "has_text": true
- },
- "6491229": {
-  "lodging": null,
-  "year": 2026,
-  "era": "Brand new",
-  "bucket": "new",
-  "confidence": "stated",
-  "evidence": "\u2026eas and premium modern inclusions, this brand-new home is an excellent opportunity for familie\u2026",
-  "renovated": false,
-  "comfort": [
-   "Ducted heating",
-   "Evaporative cooling",
-   "Dishwasher",
-   "Evaporative"
   ],
   "has_text": true
  },
@@ -13286,6 +13297,7 @@
   "has_text": true
  },
  "6502394": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -13293,8 +13305,7 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6501278": {
   "lodging": null,
@@ -13407,6 +13418,7 @@
   "has_text": true
  },
  "6489016": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -13416,8 +13428,7 @@
   "comfort": [
    "Split system"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6488255": {
   "lodging": null,
@@ -13473,6 +13484,7 @@
   "has_text": true
  },
  "6481265": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -13482,8 +13494,7 @@
   "comfort": [
    "Split system"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6478481": {
   "lodging": null,
@@ -13497,6 +13508,7 @@
   "has_text": true
  },
  "6465098": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -13504,8 +13516,7 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6042293": {
   "lodging": null,
@@ -13778,6 +13789,7 @@
   "has_text": true
  },
  "3738543": {
+  "lodging": null,
   "year": 2012,
   "era": "Likely 2000s or newer (new-estate suburb)",
   "bucket": "modern",
@@ -13789,8 +13801,7 @@
    "Evaporative cooling",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6471787": {
   "lodging": null,
@@ -15013,6 +15024,7 @@
   "has_text": true
  },
  "5859722": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -15022,10 +15034,10 @@
   "comfort": [
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "5484374": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -15033,8 +15045,7 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "5691778": {
   "lodging": null,
@@ -19860,6 +19871,7 @@
   "has_text": true
  },
  "4801365": {
+  "lodging": null,
   "year": 2012,
   "era": "Likely 2000s or newer (new-estate suburb)",
   "bucket": "modern",
@@ -19871,8 +19883,7 @@
    "Evaporative cooling",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "4936884": {
   "lodging": null,
@@ -19929,6 +19940,7 @@
   "has_text": true
  },
  "6487975": {
+  "lodging": null,
   "year": 2012,
   "era": "Likely 2000s or newer (new-estate suburb)",
   "bucket": "modern",
@@ -19939,10 +19951,10 @@
    "Ducted heating",
    "Evaporative cooling"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6482989": {
+  "lodging": null,
   "year": 2012,
   "era": "Likely 2000s or newer (new-estate suburb)",
   "bucket": "modern",
@@ -19950,8 +19962,7 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6479627": {
   "lodging": null,
@@ -19997,6 +20008,7 @@
   "has_text": true
  },
  "6471426": {
+  "lodging": null,
   "year": 2012,
   "era": "Likely 2000s or newer (new-estate suburb)",
   "bucket": "modern",
@@ -20006,8 +20018,7 @@
   "comfort": [
    "Ducted heating"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6471388": {
   "lodging": null,
@@ -20051,6 +20062,7 @@
   "has_text": true
  },
  "6499305": {
+  "lodging": null,
   "year": 2012,
   "era": "Likely 2000s or newer (new-estate suburb)",
   "bucket": "modern",
@@ -20062,8 +20074,7 @@
    "Ducted heating",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6514474": {
   "lodging": null,
@@ -20659,6 +20670,7 @@
   "has_text": true
  },
  "6451356": {
+  "lodging": null,
   "year": 2012,
   "era": "Likely 2000s or newer (new-estate suburb)",
   "bucket": "modern",
@@ -20669,8 +20681,7 @@
    "Ducted heating",
    "Split system"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6446950": {
   "lodging": null,
@@ -22676,6 +22687,23 @@
    "Dishwasher"
   ],
   "has_text": true
+ },
+ "6517506": {
+  "year": 2026,
+  "era": "Brand new",
+  "bucket": "new",
+  "confidence": "stated",
+  "evidence": "\u2026(copy and paste link in your browser) Be the first to live in this brand-new, double-storey home i\u2026",
+  "renovated": false,
+  "comfort": [
+   "Ducted heating",
+   "Ducted cooling",
+   "Dishwasher",
+   "Split system",
+   "Air conditioning"
+  ],
+  "has_text": true,
+  "lodging": null
  },
  "6171878": {
   "lodging": null,
@@ -25086,6 +25114,7 @@
   "has_text": true
  },
  "6459577": {
+  "lodging": null,
   "year": 2012,
   "era": "Likely 2000s or newer (new-estate suburb)",
   "bucket": "modern",
@@ -25096,10 +25125,10 @@
    "Split system",
    "Air conditioning"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6457603": {
+  "lodging": null,
   "year": 2012,
   "era": "Likely 2000s or newer (new-estate suburb)",
   "bucket": "modern",
@@ -25111,8 +25140,7 @@
    "Split system",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "5229014": {
   "lodging": null,
@@ -26425,6 +26453,7 @@
   "has_text": false
  },
  "6509279": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -26435,8 +26464,7 @@
    "Split system",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6496889": {
   "lodging": null,
@@ -35643,106 +35671,6 @@
   ],
   "has_text": true
  },
- "6052791": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Ducted heating",
-   "Air conditioning"
-  ],
-  "has_text": true
- },
- "6490830": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [],
-  "has_text": true
- },
- "6481024": {
-  "lodging": null,
-  "year": 1890,
-  "era": "Victorian era (1850s\u20131901)",
-  "bucket": "period",
-  "confidence": "style",
-  "evidence": "\u2026iant Parkside position this magnificent Victorian terrace has been updated for modern living with\u2026",
-  "renovated": false,
-  "comfort": [
-   "Split system",
-   "Hydronic heating"
-  ],
-  "has_text": true
- },
- "6486367": {
-  "lodging": null,
-  "year": 2012,
-  "era": "Likely 2000s or newer (new-estate suburb)",
-  "bucket": "modern",
-  "confidence": "suburb guess",
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Ducted heating",
-   "Evaporative cooling"
-  ],
-  "has_text": true
- },
- "6474586": {
-  "lodging": null,
-  "year": 2012,
-  "era": "Likely 2000s or newer (new-estate suburb)",
-  "bucket": "modern",
-  "confidence": "suburb guess",
-  "evidence": null,
-  "renovated": false,
-  "comfort": [],
-  "has_text": true
- },
- "6484143": {
-  "lodging": null,
-  "year": 2012,
-  "era": "Likely 2000s or newer (new-estate suburb)",
-  "bucket": "modern",
-  "confidence": "suburb guess",
-  "evidence": null,
-  "renovated": false,
-  "comfort": [],
-  "has_text": true
- },
- "4902834": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Ducted heating",
-   "Split system"
-  ],
-  "has_text": true
- },
- "5314374": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [],
-  "has_text": true
- },
  "6493915": {
   "lodging": null,
   "year": null,
@@ -36397,6 +36325,19 @@
    "Dishwasher"
   ],
   "has_text": true
+ },
+ "6517457": {
+  "year": 2012,
+  "era": "Likely 2000s or newer (new-estate suburb)",
+  "bucket": "modern",
+  "confidence": "suburb guess",
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Gas"
+  ],
+  "has_text": true,
+  "lodging": null
  },
  "6515464": {
   "lodging": null,
@@ -39161,6 +39102,19 @@
    "Dishwasher"
   ],
   "has_text": true
+ },
+ "6517523": {
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Split system"
+  ],
+  "has_text": true,
+  "lodging": null
  },
  "6507537": {
   "lodging": null,
@@ -46751,6 +46705,20 @@
   "comfort": [],
   "has_text": true
  },
+ "6052791": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Ducted heating",
+   "Air conditioning"
+  ],
+  "has_text": true
+ },
  "5643578": {
   "lodging": null,
   "year": null,
@@ -49776,17 +49744,6 @@
    "Split system",
    "Dishwasher"
   ],
-  "has_text": true
- },
- "5673359": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": true,
-  "comfort": [],
   "has_text": true
  },
  "6502753": {
@@ -53537,20 +53494,6 @@
   "comfort": [],
   "has_text": true
  },
- "6512469": {
-  "lodging": null,
-  "year": 2026,
-  "era": "Brand new",
-  "bucket": "new",
-  "confidence": "stated",
-  "evidence": "\u2026Modern Style, Perfect Position - brand new townhouse!!! . Brand New 3-Bedroom Townhouse | St\u2026",
-  "renovated": false,
-  "comfort": [
-   "Split system",
-   "Dishwasher"
-  ],
-  "has_text": true
- },
  "6433634": {
   "lodging": null,
   "year": 2012,
@@ -54632,17 +54575,6 @@
    "Ducted heating",
    "Split system"
   ],
-  "has_text": true
- },
- "5887009": {
-  "lodging": null,
-  "year": 2014,
-  "era": "Built 2014",
-  "bucket": "modern",
-  "confidence": "stated",
-  "evidence": "\u2026ory. The two-storey townhouse was only completed in 2014. With low-maintenance landscaping, ampl\u2026",
-  "renovated": false,
-  "comfort": [],
   "has_text": true
  },
  "6199241": {
@@ -59240,6 +59172,20 @@
   ],
   "has_text": true
  },
+ "6517465": {
+  "year": 2023,
+  "era": "Near new (about 1\u20135 years)",
+  "bucket": "new",
+  "confidence": "stated",
+  "evidence": "\u2026This is a rare opportunity to secure a near-new townhouse finished to an exceptional st\u2026",
+  "renovated": false,
+  "comfort": [
+   "Split system",
+   "Dishwasher"
+  ],
+  "has_text": true,
+  "lodging": null
+ },
  "6046138": {
   "lodging": null,
   "year": null,
@@ -59451,6 +59397,20 @@
    "Dishwasher"
   ],
   "has_text": true
+ },
+ "6517452": {
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Ducted heating",
+   "Dishwasher"
+  ],
+  "has_text": true,
+  "lodging": null
  },
  "6501293": {
   "lodging": null,
@@ -60351,6 +60311,22 @@
   ],
   "has_text": true
  },
+ "6517496": {
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Double glazing",
+   "Solar",
+   "Ducted cooling",
+   "Dishwasher"
+  ],
+  "has_text": true,
+  "lodging": null
+ },
  "6513305": {
   "lodging": null,
   "year": null,
@@ -61016,20 +60992,6 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true
- },
- "6502952": {
-  "lodging": null,
-  "year": 2026,
-  "era": "Brand new",
-  "bucket": "new",
-  "confidence": "stated",
-  "evidence": "\u2026register for an inspection to view this brand-new home. Inspection times are subject to chang\u2026",
-  "renovated": false,
-  "comfort": [
-   "Ducted heating",
-   "Dishwasher"
-  ],
   "has_text": true
  },
  "5680050": {
@@ -62307,21 +62269,6 @@
   ],
   "has_text": true
  },
- "6508982": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Solar",
-   "Ducted heating",
-   "Ducted"
-  ],
-  "has_text": true
- },
  "6508485": {
   "lodging": null,
   "year": null,
@@ -62550,21 +62497,6 @@
   "evidence": null,
   "renovated": false,
   "comfort": [
-   "Dishwasher"
-  ],
-  "has_text": true
- },
- "6470770": {
-  "lodging": null,
-  "year": 2012,
-  "era": "Likely 2000s or newer (new-estate suburb)",
-  "bucket": "modern",
-  "confidence": "suburb guess",
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Ducted heating",
-   "Split system",
    "Dishwasher"
   ],
   "has_text": true
@@ -65081,6 +65013,86 @@
   "comfort": [],
   "has_text": true
  },
+ "5673359": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": true,
+  "comfort": [],
+  "has_text": true
+ },
+ "6512469": {
+  "lodging": null,
+  "year": 2026,
+  "era": "Brand new",
+  "bucket": "new",
+  "confidence": "stated",
+  "evidence": "\u2026Modern Style, Perfect Position - brand new townhouse!!! . Brand New 3-Bedroom Townhouse | St\u2026",
+  "renovated": false,
+  "comfort": [
+   "Split system",
+   "Dishwasher"
+  ],
+  "has_text": true
+ },
+ "5887009": {
+  "lodging": null,
+  "year": 2014,
+  "era": "Built 2014",
+  "bucket": "modern",
+  "confidence": "stated",
+  "evidence": "\u2026ory. The two-storey townhouse was only completed in 2014. With low-maintenance landscaping, ampl\u2026",
+  "renovated": false,
+  "comfort": [],
+  "has_text": true
+ },
+ "6502952": {
+  "lodging": null,
+  "year": 2026,
+  "era": "Brand new",
+  "bucket": "new",
+  "confidence": "stated",
+  "evidence": "\u2026register for an inspection to view this brand-new home. Inspection times are subject to chang\u2026",
+  "renovated": false,
+  "comfort": [
+   "Ducted heating",
+   "Dishwasher"
+  ],
+  "has_text": true
+ },
+ "6508982": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Solar",
+   "Ducted heating",
+   "Ducted"
+  ],
+  "has_text": true
+ },
+ "6470770": {
+  "lodging": null,
+  "year": 2012,
+  "era": "Likely 2000s or newer (new-estate suburb)",
+  "bucket": "modern",
+  "confidence": "suburb guess",
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Ducted heating",
+   "Split system",
+   "Dishwasher"
+  ],
+  "has_text": true
+ },
  "6267053": {
   "lodging": null,
   "year": null,
@@ -66368,20 +66380,6 @@
   "evidence": null,
   "renovated": false,
   "comfort": [
-   "Split system"
-  ],
-  "has_text": true
- },
- "6509362": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Ducted heating",
    "Split system"
   ],
   "has_text": true
@@ -67871,6 +67869,17 @@
   "comfort": [],
   "has_text": true
  },
+ "6517517": {
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [],
+  "has_text": true,
+  "lodging": null
+ },
  "6510379": {
   "lodging": null,
   "year": null,
@@ -67958,6 +67967,19 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
+  "has_text": true
+ },
+ "6091592": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Split system"
+  ],
   "has_text": true
  },
  "6026229": {
@@ -69895,19 +69917,6 @@
   ],
   "has_text": true
  },
- "6091592": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Split system"
-  ],
-  "has_text": true
- },
  "6504994": {
   "lodging": null,
   "year": null,
@@ -70988,20 +70997,6 @@
   "evidence": null,
   "renovated": false,
   "comfort": [
-   "Dishwasher"
-  ],
-  "has_text": true
- },
- "6494955": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Split system",
    "Dishwasher"
   ],
   "has_text": true
@@ -74112,6 +74107,7 @@
   "has_text": true
  },
  "6513993": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -74122,10 +74118,10 @@
    "Split system",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6511156": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -74136,8 +74132,7 @@
    "Split system",
    "Gas"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6498170": {
   "lodging": null,
@@ -74455,6 +74450,20 @@
   "renovated": true,
   "comfort": [],
   "has_text": true
+ },
+ "6517472": {
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": true,
+  "comfort": [
+   "Split system",
+   "Dishwasher"
+  ],
+  "has_text": true,
+  "lodging": null
  },
  "6516782": {
   "lodging": null,
@@ -80151,6 +80160,7 @@
   "has_text": true
  },
  "6514656": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -80160,8 +80170,7 @@
   "comfort": [
    "Split system"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6514333": {
   "lodging": null,
@@ -84127,6 +84136,7 @@
   "has_text": true
  },
  "1138993": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84134,10 +84144,10 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "4597304": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84147,10 +84157,14 @@
   "comfort": [
    "Double glazing"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "802441": {
+  "lodging": [
+   "student",
+   "Student accommodation",
+   "\u2026Student Accommodation in Footscray . **Shared Courtyard Unit - sharing\u2026"
+  ],
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84158,14 +84172,10 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": [
-   "student",
-   "Student accommodation",
-   "\u2026Student Accommodation in Footscray . **Shared Courtyard Unit - sharing\u2026"
-  ]
+  "has_text": true
  },
  "6510047": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84176,10 +84186,10 @@
    "Split system",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6510044": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84189,10 +84199,10 @@
   "comfort": [
    "Split system"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6509442": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84200,10 +84210,10 @@
   "evidence": null,
   "renovated": true,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6508811": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84211,8 +84221,7 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6486304": {
   "lodging": null,
@@ -84226,6 +84235,7 @@
   "has_text": true
  },
  "4903287": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84235,10 +84245,10 @@
   "comfort": [
    "Double glazing"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6456376": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84246,10 +84256,10 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6439970": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84257,10 +84267,10 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6181838": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84270,10 +84280,10 @@
   "comfort": [
    "Double glazing"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6507445": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84281,10 +84291,10 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6507347": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84295,10 +84305,10 @@
    "Split system",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6507319": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84309,10 +84319,10 @@
    "Split system",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6507308": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84322,10 +84332,10 @@
   "comfort": [
    "Split system"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6507280": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84335,10 +84345,10 @@
   "comfort": [
    "Split system"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6506741": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84348,10 +84358,10 @@
   "comfort": [
    "Split system"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6505977": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84359,10 +84369,10 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6505781": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84370,10 +84380,10 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6505729": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84383,10 +84393,10 @@
   "comfort": [
    "Split system"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "5655228": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84397,8 +84407,7 @@
    "Split system",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "2601439": {
   "lodging": [
@@ -84662,6 +84671,7 @@
   "has_text": true
  },
  "6068392": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -84671,8 +84681,7 @@
   "comfort": [
    "Double glazing"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6489033": {
   "lodging": null,
@@ -87118,20 +87127,6 @@
   ],
   "has_text": true
  },
- "6495206": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Split system",
-   "Dishwasher"
-  ],
-  "has_text": true
- },
  "6456042": {
   "lodging": null,
   "year": null,
@@ -87780,6 +87775,21 @@
   ],
   "has_text": true
  },
+ "6517488": {
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Split system",
+   "Dishwasher",
+   "Air conditioning"
+  ],
+  "has_text": true,
+  "lodging": null
+ },
  "6517314": {
   "lodging": null,
   "year": null,
@@ -87795,6 +87805,7 @@
   "has_text": true
  },
  "6511868": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -87805,10 +87816,10 @@
    "Split system",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6510398": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -87818,10 +87829,10 @@
   "comfort": [
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "5639625": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -87832,10 +87843,10 @@
    "Split system",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6104248": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -87846,10 +87857,10 @@
    "Split system",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6505751": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -87860,8 +87871,7 @@
    "Ducted heating",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6504077": {
   "lodging": null,
@@ -91042,6 +91052,7 @@
   "has_text": true
  },
  "3843418": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -91051,8 +91062,7 @@
   "comfort": [
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6503238": {
   "lodging": null,
@@ -91874,6 +91884,24 @@
   "comfort": [],
   "has_text": true
  },
+ "6492009": {
+  "lodging": [
+   "room",
+   "Room in a shared house",
+   "\u2026ll Utilities Included . Looking for a comfortable private room without the hassle of setting up a whole home? Pr\u2026"
+  ],
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Split system",
+   "Air conditioning"
+  ],
+  "has_text": true
+ },
  "6517431": {
   "lodging": [
    "rooming",
@@ -92068,24 +92096,6 @@
  },
  "6505909": {
   "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Split system",
-   "Air conditioning"
-  ],
-  "has_text": true
- },
- "6492009": {
-  "lodging": [
-   "room",
-   "Room in a shared house",
-   "\u2026ll Utilities Included . Looking for a comfortable private room without the hassle of setting up a whole home? Pr\u2026"
-  ],
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -94523,17 +94533,6 @@
   ],
   "has_text": true
  },
- "6496576": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [],
-  "has_text": true
- },
  "6496229": {
   "lodging": null,
   "year": null,
@@ -95077,17 +95076,6 @@
   ],
   "has_text": true
  },
- "6460912": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": true,
-  "comfort": [],
-  "has_text": true
- },
  "6494107": {
   "lodging": null,
   "year": 1930,
@@ -95282,6 +95270,19 @@
   "renovated": true,
   "comfort": [],
   "has_text": true
+ },
+ "6517455": {
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Ducted heating"
+  ],
+  "has_text": true,
+  "lodging": null
  },
  "6516649": {
   "lodging": null,
@@ -95525,6 +95526,7 @@
   "has_text": true
  },
  "6515686": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -95535,8 +95537,7 @@
    "Split system",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6503985": {
   "lodging": null,
@@ -96665,6 +96666,19 @@
   "comfort": [],
   "has_text": true
  },
+ "6517508": {
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Split system"
+  ],
+  "has_text": true,
+  "lodging": null
+ },
  "6515602": {
   "lodging": null,
   "year": 2023,
@@ -96992,6 +97006,7 @@
   "has_text": true
  },
  "6512619": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -97001,8 +97016,7 @@
   "comfort": [
    "Ducted heating"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6492010": {
   "lodging": null,
@@ -97869,6 +97883,11 @@
   "has_text": true
  },
  "4220972": {
+  "lodging": [
+   "student",
+   "Student accommodation",
+   "\u2026Student Accommodation . Sparkling as new Student Only studio apartments\u2026"
+  ],
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -97878,12 +97897,7 @@
   "comfort": [
    "Split system"
   ],
-  "has_text": true,
-  "lodging": [
-   "student",
-   "Student accommodation",
-   "\u2026Student Accommodation . Sparkling as new Student Only studio apartments\u2026"
-  ]
+  "has_text": true
  },
  "2473068": {
   "lodging": [
@@ -98516,6 +98530,17 @@
   "comfort": [],
   "has_text": true
  },
+ "6517519": {
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [],
+  "has_text": true,
+  "lodging": null
+ },
  "6517137": {
   "lodging": null,
   "year": null,
@@ -98614,17 +98639,6 @@
    "Split system",
    "Dishwasher"
   ],
-  "has_text": true
- },
- "6511100": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [],
   "has_text": true
  },
  "6510692": {
@@ -109517,19 +109531,6 @@
   ],
   "has_text": true
  },
- "6488692": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Ducted heating"
-  ],
-  "has_text": true
- },
  "6517056": {
   "lodging": null,
   "year": null,
@@ -110881,20 +110882,6 @@
   ],
   "has_text": true
  },
- "6509245": {
-  "lodging": null,
-  "year": 2012,
-  "era": "Likely 2000s or newer (new-estate suburb)",
-  "bucket": "modern",
-  "confidence": "suburb guess",
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Split system",
-   "Dishwasher"
-  ],
-  "has_text": true
- },
  "6395781": {
   "lodging": null,
   "year": 2012,
@@ -110907,6 +110894,20 @@
    "Split system",
    "Ducted heating",
    "Air conditioning"
+  ],
+  "has_text": true
+ },
+ "6509245": {
+  "lodging": null,
+  "year": 2012,
+  "era": "Likely 2000s or newer (new-estate suburb)",
+  "bucket": "modern",
+  "confidence": "suburb guess",
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Split system",
+   "Dishwasher"
   ],
   "has_text": true
  },
@@ -111317,17 +111318,6 @@
   "comfort": [],
   "has_text": true
  },
- "6506916": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [],
-  "has_text": true
- },
  "6505802": {
   "lodging": null,
   "year": null,
@@ -111410,17 +111400,6 @@
   "bucket": "modern",
   "confidence": "stated",
   "evidence": "\u2026e University! This boutique property built in 2006 and opened in 2007, consisting of: 4\u2026",
-  "renovated": false,
-  "comfort": [],
-  "has_text": true
- },
- "6065768": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
   "renovated": false,
   "comfort": [],
   "has_text": true
@@ -111696,6 +111675,20 @@
   "renovated": true,
   "comfort": [
    "Split system"
+  ],
+  "has_text": true
+ },
+ "6447888": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Split system",
+   "Dishwasher"
   ],
   "has_text": true
  },
@@ -112227,20 +112220,6 @@
   "evidence": null,
   "renovated": true,
   "comfort": [],
-  "has_text": true
- },
- "6447888": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Split system",
-   "Dishwasher"
-  ],
   "has_text": true
  },
  "6504395": {
@@ -112859,6 +112838,105 @@
   "confidence": "style",
   "evidence": "\u2026ight and bright, renovated ground floor Art Deco apartment is centrally located to the b\u2026",
   "renovated": true,
+  "comfort": [],
+  "has_text": true
+ },
+ "6509362": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Ducted heating",
+   "Split system"
+  ],
+  "has_text": true
+ },
+ "6494955": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Split system",
+   "Dishwasher"
+  ],
+  "has_text": true
+ },
+ "6495206": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Split system",
+   "Dishwasher"
+  ],
+  "has_text": true
+ },
+ "6496576": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [],
+  "has_text": true
+ },
+ "6511100": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [],
+  "has_text": true
+ },
+ "6488692": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Ducted heating"
+  ],
+  "has_text": true
+ },
+ "6506916": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [],
+  "has_text": true
+ },
+ "6065768": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
   "comfort": [],
   "has_text": true
  },
