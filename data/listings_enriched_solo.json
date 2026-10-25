@@ -2076,131 +2076,6 @@
   "first_seen": "2026-10-22"
  },
  {
-  "id": 6513957,
-  "url": "https://www.rent.com.au/property/103-2a-como-st-alphington-vic-3078-6513957",
-  "type": "Apartment",
-  "street": "103/2A Como Street",
-  "suburb": "Alphington",
-  "postcode": "3078",
-  "rent_text": "$715 pw",
-  "rent": 715,
-  "beds": 2,
-  "baths": 1,
-  "cars": 2,
-  "pets": true,
-  "lat": -37.780566,
-  "lng": 145.033709,
-  "available": "now",
-  "listed": "2026-10-21",
-  "walk_score": 64,
-  "transit_score": 50,
-  "agency": "PropertyNow",
-  "photos": [
-   "268293583/b46dc008f14cd0073cde0dfd-1676285748353_01_804HeidelbergRoad_027-1791933360-primary.jpg",
-   "268293585/6183641123662fad880459b4-1676285748363_302_804HeidelbergRoad_023-1791933394-primary.jpg",
-   "268293590/b88bb42fc211d4ce2dbe9ddd-1756183700046_4-1791933418-primary.jpg",
-   "268293584/8bb9c07a80551fddae61556c-1676285984316_103_804_HeidelbergRd_001-1791933387-primary.jpg"
-  ],
-  "region": "North",
-  "lga": "Darebin",
-  "cbd_km": 7.2,
-  "near": {
-   "supermarket": {
-    "m": 1746,
-    "name": "Woolworths"
-   },
-   "fresh": {
-    "m": 497,
-    "name": "Flinders Sourdough"
-   },
-   "pharmacy": {
-    "m": 1825,
-    "name": "Fairfield Pharmacy"
-   },
-   "gp": {
-    "m": 1139,
-    "name": "The Local Doctor"
-   },
-   "cafe": {
-    "m": 204,
-    "name": "Benjamin's Kitchen"
-   },
-   "park": {
-    "m": 396,
-    "name": ""
-   },
-   "gym": {
-    "m": 558,
-    "name": "Alphington Bowling Club"
-   },
-   "library": {
-    "m": 281,
-    "name": "1st Alphington Scout Group"
-   },
-   "train": {
-    "m": 418,
-    "name": "Alphington"
-   },
-   "tram": {
-    "m": 3294,
-    "name": "Stop 38: Victoria Park"
-   },
-   "bus": {
-    "m": 72,
-    "name": "Como Street/Heidelberg Road"
-   },
-   "bar": {
-    "m": 1776,
-    "name": "Wine Bar"
-   },
-   "cinema": {
-    "m": 4248,
-    "name": "Westgarth Cinema"
-   }
-  },
-  "counts": {
-   "cafe": 2,
-   "bar": 0,
-   "bus": 5,
-   "tram": 0,
-   "shops": 1
-  },
-  "met": [
-   "fresh",
-   "cafe",
-   "park",
-   "gym",
-   "library",
-   "pt"
-  ],
-  "twenty": 67,
-  "transit": 65,
-  "roads": {
-   "motorway": 1094,
-   "motorway_name": "Eastern Freeway",
-   "major": 31,
-   "major_name": "Heidelberg Road",
-   "rail": 301
-  },
-  "quiet": 70,
-  "noise_flags": [
-   "On or beside a main road (Heidelberg Road, 31 m)"
-  ],
-  "air": 75,
-  "air_flags": [
-   "Fronts a main road (Heidelberg Road)"
-  ],
-  "safety": 79,
-  "crime": {
-   "rate": 79.4,
-   "burglary": 6.3,
-   "assault": 2.3,
-   "offences": 453,
-   "population": 5702
-  },
-  "first_seen": "2026-10-15"
- },
- {
   "id": 6142427,
   "url": "https://www.rent.com.au/property/cg04-17-paper-trl-alphington-vic-3078-6142427",
   "type": "Apartment",
@@ -2321,6 +2196,127 @@
    "population": 5702
   },
   "first_seen": "2026-09-17"
+ },
+ {
+  "id": 4180354,
+  "url": "https://www.rent.com.au/property/3-14-aikman-cres-chadstone-vic-3148-4180354",
+  "type": "House",
+  "street": "3/14 Aikman Crescent",
+  "suburb": "Chadstone",
+  "postcode": "3148",
+  "rent_text": "$740 pw",
+  "rent": 740,
+  "beds": 2,
+  "baths": 1,
+  "cars": 2,
+  "pets": true,
+  "lat": -37.88714,
+  "lng": 145.097149,
+  "available": "now",
+  "listed": "2026-10-26",
+  "walk_score": 66,
+  "transit_score": 48,
+  "agency": "For Sale By Owner",
+  "photos": [
+   "268274552/13d38bde264aa77013a2f8c8-895ead5b4cc732b1c33e3017ead31778-1791850455-primary.",
+   "268274553/db7d12b498d7c262df2dfe90-06f14d9896012693cd7be421a379ab77-1791850459-primary.",
+   "267785386/2c390fa6c2ec3856770fe684-a4d1a82ac675bbd744091291b0da6d321fa84fbb-1788858134-primary.",
+   "267785382/86f4a8cbae6c00fe800ffbae-510f1af80fd2ba757a2d6225564c6be97d6dbc77-1788858133-primary."
+  ],
+  "region": "South-east",
+  "lga": "Monash",
+  "cbd_km": 13.7,
+  "near": {
+   "supermarket": {
+    "m": 1359,
+    "name": "Coles"
+   },
+   "fresh": {
+    "m": 1582,
+    "name": "Caramel Heaven Bakehouse"
+   },
+   "pharmacy": {
+    "m": 1044,
+    "name": "Chemist Warehouse"
+   },
+   "gp": {
+    "m": 1550,
+    "name": "Chadstone Clinic"
+   },
+   "cafe": {
+    "m": 1116,
+    "name": "2Q Rotary Hotpot"
+   },
+   "park": {
+    "m": 574,
+    "name": "Scotchman's Creek Linear Park"
+   },
+   "gym": {
+    "m": 754,
+    "name": ""
+   },
+   "library": {
+    "m": 1660,
+    "name": "Oakleigh Library (City Of Monash)"
+   },
+   "train": {
+    "m": 1979,
+    "name": "Holmesglen"
+   },
+   "tram": {
+    "m": 4609,
+    "name": "Stop 64: Darling Road"
+   },
+   "bus": {
+    "m": 846,
+    "name": "Hiscock St/Waverley Rd"
+   },
+   "bar": {
+    "m": 977,
+    "name": "Leighoak"
+   },
+   "cinema": {
+    "m": 1539,
+    "name": "Hoyts"
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "park",
+   "gym"
+  ],
+  "twenty": 22,
+  "transit": 15,
+  "roads": {
+   "motorway": 222,
+   "motorway_name": "Warrigal Road Off Ramp",
+   "major": 657,
+   "major_name": "Waverley Road",
+   "rail": 1463
+  },
+  "quiet": 75,
+  "noise_flags": [
+   "Freeway 222 m away (Warrigal Road Off Ramp)"
+  ],
+  "air": 80,
+  "air_flags": [
+   "Freeway 222 m away (Warrigal Road Off Ramp)"
+  ],
+  "safety": 55,
+  "crime": {
+   "rate": 121.3,
+   "burglary": 5.8,
+   "assault": 6.7,
+   "offences": 1159,
+   "population": 9552
+  },
+  "first_seen": "2026-10-15"
  },
  {
   "id": 6519251,
@@ -2445,127 +2441,6 @@
    "population": 9552
   },
   "first_seen": "2026-10-21"
- },
- {
-  "id": 4180354,
-  "url": "https://www.rent.com.au/property/3-14-aikman-cres-chadstone-vic-3148-4180354",
-  "type": "House",
-  "street": "3/14 Aikman Crescent",
-  "suburb": "Chadstone",
-  "postcode": "3148",
-  "rent_text": "$740 pw",
-  "rent": 740,
-  "beds": 2,
-  "baths": 1,
-  "cars": 2,
-  "pets": true,
-  "lat": -37.88714,
-  "lng": 145.097149,
-  "available": "now",
-  "listed": "2026-10-10",
-  "walk_score": 66,
-  "transit_score": 48,
-  "agency": "For Sale By Owner",
-  "photos": [
-   "268274552/13d38bde264aa77013a2f8c8-895ead5b4cc732b1c33e3017ead31778-1791850455-primary.",
-   "268274553/db7d12b498d7c262df2dfe90-06f14d9896012693cd7be421a379ab77-1791850459-primary.",
-   "267785386/2c390fa6c2ec3856770fe684-a4d1a82ac675bbd744091291b0da6d321fa84fbb-1788858134-primary.",
-   "267785382/86f4a8cbae6c00fe800ffbae-510f1af80fd2ba757a2d6225564c6be97d6dbc77-1788858133-primary."
-  ],
-  "region": "South-east",
-  "lga": "Monash",
-  "cbd_km": 13.7,
-  "near": {
-   "supermarket": {
-    "m": 1359,
-    "name": "Coles"
-   },
-   "fresh": {
-    "m": 1582,
-    "name": "Caramel Heaven Bakehouse"
-   },
-   "pharmacy": {
-    "m": 1044,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 1550,
-    "name": "Chadstone Clinic"
-   },
-   "cafe": {
-    "m": 1116,
-    "name": "2Q Rotary Hotpot"
-   },
-   "park": {
-    "m": 574,
-    "name": "Scotchman's Creek Linear Park"
-   },
-   "gym": {
-    "m": 754,
-    "name": ""
-   },
-   "library": {
-    "m": 1660,
-    "name": "Oakleigh Library (City Of Monash)"
-   },
-   "train": {
-    "m": 1979,
-    "name": "Holmesglen"
-   },
-   "tram": {
-    "m": 4609,
-    "name": "Stop 64: Darling Road"
-   },
-   "bus": {
-    "m": 846,
-    "name": "Hiscock St/Waverley Rd"
-   },
-   "bar": {
-    "m": 977,
-    "name": "Leighoak"
-   },
-   "cinema": {
-    "m": 1539,
-    "name": "Hoyts"
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "park",
-   "gym"
-  ],
-  "twenty": 22,
-  "transit": 15,
-  "roads": {
-   "motorway": 222,
-   "motorway_name": "Warrigal Road Off Ramp",
-   "major": 657,
-   "major_name": "Waverley Road",
-   "rail": 1463
-  },
-  "quiet": 75,
-  "noise_flags": [
-   "Freeway 222 m away (Warrigal Road Off Ramp)"
-  ],
-  "air": 80,
-  "air_flags": [
-   "Freeway 222 m away (Warrigal Road Off Ramp)"
-  ],
-  "safety": 55,
-  "crime": {
-   "rate": 121.3,
-   "burglary": 5.8,
-   "assault": 6.7,
-   "offences": 1159,
-   "population": 9552
-  },
-  "first_seen": "2026-10-15"
  },
  {
   "id": 6465426,
@@ -2702,7 +2577,7 @@
   "pets": false,
   "lat": -37.729283,
   "lng": 144.931075,
-  "available": "25th October 2026",
+  "available": "now",
   "listed": "2026-10-21",
   "walk_score": 57,
   "transit_score": 52,
@@ -14525,6 +14400,136 @@
   "first_seen": "2026-04-27"
  },
  {
+  "id": 6523648,
+  "url": "https://www.rent.com.au/property/6809d-648-lonsdale-st-melbourne-vic-3000-6523648",
+  "type": "Apartment",
+  "street": "6809D/648 Lonsdale Street",
+  "suburb": "Melbourne",
+  "postcode": "3000",
+  "rent_text": "$780 pw",
+  "rent": 780,
+  "beds": 1,
+  "baths": 1,
+  "cars": 1,
+  "pets": false,
+  "lat": -37.814299,
+  "lng": 144.953319,
+  "available": "9th November 2026",
+  "listed": "2026-10-25",
+  "walk_score": 100,
+  "transit_score": 100,
+  "agency": "Raeon international",
+  "photos": [
+   "268482144/da7f131503d0453a582cd67e-b8d3e247_2D292b_2D4dca_2D8542_2D9572f90bba2b-1792933381-primary.jpg",
+   "268482237/f0eca07a9da9b2cebe68c304-0cc5183e_2D2dc1_2D45be_2Dbca4_2D8a542906110c-1792933446-primary.jpg",
+   "268482238/042a75dc01a95664c1ddc71b-e94c153f_2Dd9df_2D48ee_2Da855_2Dfb1d94e61ce7-1792933446-primary.jpg",
+   "268482236/43e3a833f67c2b6673856394-c2382ba6_2D0948_2D47b3_2Db24b_2Debec49643370-1792933445-primary.jpg"
+  ],
+  "region": "Inner city",
+  "lga": "Melbourne",
+  "cbd_km": 1.3,
+  "near": {
+   "supermarket": {
+    "m": 173,
+    "name": "Crown Asian Supermarket"
+   },
+   "fresh": {
+    "m": 92,
+    "name": "Lune Croissanterie"
+   },
+   "pharmacy": {
+    "m": 181,
+    "name": "Spencer Street Pharmacy"
+   },
+   "gp": {
+    "m": 498,
+    "name": "Era Health"
+   },
+   "cafe": {
+    "m": 52,
+    "name": "Omo"
+   },
+   "park": {
+    "m": 152,
+    "name": "Angliss Rain Garden"
+   },
+   "gym": {
+    "m": 278,
+    "name": ""
+   },
+   "library": {
+    "m": 447,
+    "name": "Legal Aid public law library"
+   },
+   "train": {
+    "m": 1580,
+    "name": "North Melbourne"
+   },
+   "tram": {
+    "m": 150,
+    "name": "Stop 120: Lonsdale Street"
+   },
+   "bus": {
+    "m": 163,
+    "name": "Lonsdale Street/Spencer Street"
+   },
+   "bar": {
+    "m": 134,
+    "name": "The Golden Age"
+   },
+   "cinema": {
+    "m": 1303,
+    "name": "Hoyts Melbourne Central"
+   }
+  },
+  "counts": {
+   "cafe": 187,
+   "bar": 21,
+   "bus": 29,
+   "tram": 16,
+   "shops": 19
+  },
+  "met": [
+   "supermarket",
+   "fresh",
+   "pharmacy",
+   "gp",
+   "cafe",
+   "park",
+   "gym",
+   "library",
+   "pt"
+  ],
+  "twenty": 100,
+  "transit": 70,
+  "roads": {
+   "motorway": 1303,
+   "motorway_name": "Montague-West Gate In Ramp On",
+   "major": 112,
+   "major_name": "King Street",
+   "rail": 168
+  },
+  "quiet": 72,
+  "noise_flags": [
+   "Main road 112 m away (King Street)",
+   "Railway line 168 m away",
+   "1 pub/bar within 150 m"
+  ],
+  "air": 88,
+  "air_flags": [
+   "Main road 112 m away (King Street)"
+  ],
+  "safety": 0,
+  "crime": {
+   "rate": 457.6,
+   "burglary": 21.3,
+   "assault": 43.8,
+   "offences": 25139,
+   "population": 54941
+  },
+  "first_seen": "2026-10-26"
+ },
+ {
   "id": 6523403,
   "url": "https://www.rent.com.au/property/2708-127-abeckett-st-melbourne-vic-3000-6523403",
   "type": "Apartment",
@@ -25754,8 +25759,8 @@
   "street": "3110/560 Lonsdale Street",
   "suburb": "Melbourne",
   "postcode": "3000",
-  "rent_text": "$810 pw",
-  "rent": 810,
+  "rent_text": "$790 pw",
+  "rent": 790,
   "beds": 2,
   "baths": 2,
   "cars": 0,
@@ -38555,136 +38560,6 @@
   "first_seen": "2026-10-07"
  },
  {
-  "id": 6506479,
-  "url": "https://www.rent.com.au/property/3210-301-king-st-melbourne-vic-3000-6506479",
-  "type": "Apartment",
-  "street": "3210/301 King Street",
-  "suburb": "Melbourne",
-  "postcode": "3000",
-  "rent_text": "$850 pw",
-  "rent": 850,
-  "beds": 2,
-  "baths": 2,
-  "cars": 0,
-  "pets": false,
-  "lat": -37.813253,
-  "lng": 144.954004,
-  "available": "now",
-  "listed": "2026-10-06",
-  "walk_score": 99,
-  "transit_score": 100,
-  "agency": "MICM",
-  "photos": [
-   "268167282/6e784d6b3598bff357f241c6-01982380_img_01-1791255364-primary.jpg",
-   "268167326/bbf27b00a3e4d6533438045c-01982380_img_02-1791255440-primary.jpg",
-   "268167329/7404215fbfcc617fe16e76d0-01982380_img_03-1791255441-primary.jpg",
-   "268167328/7fc4459c48e27f298cae7260-01982380_img_04-1791255440-primary.jpg"
-  ],
-  "region": "Inner city",
-  "lga": "Melbourne",
-  "cbd_km": 1.3,
-  "near": {
-   "supermarket": {
-    "m": 322,
-    "name": "Crown Asian Supermarket"
-   },
-   "fresh": {
-    "m": 161,
-    "name": "Angliss Bake Shop"
-   },
-   "pharmacy": {
-    "m": 316,
-    "name": "Spencer Street Pharmacy"
-   },
-   "gp": {
-    "m": 542,
-    "name": "Era Health"
-   },
-   "cafe": {
-    "m": 75,
-    "name": "Cafe 555"
-   },
-   "park": {
-    "m": 169,
-    "name": "Angliss Rain Garden"
-   },
-   "gym": {
-    "m": 418,
-    "name": ""
-   },
-   "library": {
-    "m": 471,
-    "name": "Legal Aid public law library"
-   },
-   "train": {
-    "m": 1559,
-    "name": "North Melbourne"
-   },
-   "tram": {
-    "m": 153,
-    "name": "Stop 1: Spencer Street/La Trobe Street"
-   },
-   "bus": {
-    "m": 199,
-    "name": "King Street/Lonsdale Street"
-   },
-   "bar": {
-    "m": 62,
-    "name": "The Golden Age"
-   },
-   "cinema": {
-    "m": 1167,
-    "name": "Hoyts Melbourne Central"
-   }
-  },
-  "counts": {
-   "cafe": 181,
-   "bar": 27,
-   "bus": 13,
-   "tram": 15,
-   "shops": 24
-  },
-  "met": [
-   "supermarket",
-   "fresh",
-   "pharmacy",
-   "gp",
-   "cafe",
-   "park",
-   "gym",
-   "library",
-   "pt"
-  ],
-  "twenty": 100,
-  "transit": 70,
-  "roads": {
-   "motorway": 1433,
-   "motorway_name": "Montague-West Gate In Ramp On",
-   "major": 17,
-   "major_name": "King Street",
-   "rail": 80
-  },
-  "quiet": 45,
-  "noise_flags": [
-   "On or beside a main road (King Street, 17 m)",
-   "Railway line 80 m away",
-   "1 pub/bar within 150 m"
-  ],
-  "air": 75,
-  "air_flags": [
-   "Fronts a main road (King Street)"
-  ],
-  "safety": 0,
-  "crime": {
-   "rate": 457.6,
-   "burglary": 21.3,
-   "assault": 43.8,
-   "offences": 25139,
-   "population": 54941
-  },
-  "first_seen": "2026-10-15"
- },
- {
   "id": 6506383,
   "url": "https://www.rent.com.au/property/3805-318-russell-st-melbourne-vic-3000-6506383",
   "type": "Apartment",
@@ -38818,8 +38693,8 @@
   "street": "1703/371 Little Lonsdale Street",
   "suburb": "Melbourne",
   "postcode": "3000",
-  "rent_text": "$850/W Unfurnished",
-  "rent": 850,
+  "rent_text": "$830/W Unfurnished",
+  "rent": 830,
   "beds": 2,
   "baths": 2,
   "cars": 0,
@@ -69434,10 +69309,10 @@
   "transit_score": 100,
   "agency": "Cubbi",
   "photos": [
-   "268352864/d171c6318b5511eecfcaeaab-agent1151_extra_rental_5301565-1792226086-primary.jpg",
-   "268352866/3d7ac0f02e90175ac2d7f8a1-agent1151_extra_rental_5301566-1792226107-primary.jpg",
-   "268352865/06edf987b0f7fd77e980093f-agent1151_extra_rental_5301567-1792226106-primary.jpg",
-   "268352867/e286cb8ba9737e6b4f59e328-agent1151_extra_rental_5301568-1792226107-primary.jpg"
+   "268481355/996ffff6348cc9e08f021edf-agent1151_extra_rental_5307061-1792910687-primary.jpg",
+   "268481358/c182c2851f84e0fed3ad9f0e-agent1151_extra_rental_5307062-1792910704-primary.jpg",
+   "268481357/0d38b55f70175c6a9b23e5d2-agent1151_extra_rental_5307063-1792910702-primary.jpg",
+   "268481356/fe2c2ddfe84971d8f1c9c566-agent1151_extra_rental_5307064-1792910701-primary.jpg"
   ],
   "region": "Inner city",
   "lga": "Melbourne",
@@ -76021,7 +75896,7 @@
   "pets": false,
   "lat": -37.7376,
   "lng": 144.935195,
-  "available": "25th October 2026",
+  "available": "now",
   "listed": "2026-10-21",
   "walk_score": 52,
   "transit_score": 61,
@@ -84550,7 +84425,7 @@
   "pets": false,
   "lat": -37.824232,
   "lng": 144.963559,
-  "available": "25th October 2026",
+  "available": "now",
   "listed": "2026-10-19",
   "walk_score": 98,
   "transit_score": 100,
@@ -92069,7 +91944,7 @@
   "pets": false,
   "lat": -37.823119,
   "lng": 144.963784,
-  "available": "25th October 2026",
+  "available": "now",
   "listed": "2026-09-30",
   "walk_score": 98,
   "transit_score": 100,
@@ -110948,7 +110823,7 @@
   "pets": false,
   "lat": -37.737796,
   "lng": 145.053209,
-  "available": "25th October 2026",
+  "available": "now",
   "listed": "2026-10-01",
   "walk_score": 66,
   "transit_score": 51,
@@ -166924,19 +166799,19 @@
  {
   "id": 6494763,
   "url": "https://www.rent.com.au/property/15-14-macquarie-st-prahran-vic-3181-6494763",
-  "type": "Townhouse",
+  "type": "Apartment",
   "street": "15/14 Macquarie Street",
   "suburb": "Prahran",
   "postcode": "3181",
-  "rent_text": "$800 pw",
-  "rent": 800,
+  "rent_text": "$750 pw",
+  "rent": 750,
   "beds": 2,
   "baths": 2,
   "cars": 1,
   "pets": true,
   "lat": -37.850902,
   "lng": 144.992401,
-  "available": "now",
+  "available": "31st October 2026",
   "listed": "2026-09-22",
   "walk_score": 100,
   "transit_score": 92,
@@ -171895,7 +171770,7 @@
   "pets": false,
   "lat": -37.757279,
   "lng": 145.015252,
-  "available": "25th October 2026",
+  "available": "now",
   "listed": "2026-10-20",
   "walk_score": 52,
   "transit_score": 51,
@@ -174573,15 +174448,15 @@
   "street": "FLAT 4/110 Murrumbeena Road",
   "suburb": "Murrumbeena",
   "postcode": "3163",
-  "rent_text": "$431 pw",
-  "rent": 431,
+  "rent_text": "$459 pw",
+  "rent": 459,
   "beds": 1,
   "baths": 1,
   "cars": 1,
   "pets": null,
   "lat": -37.891747,
   "lng": 145.066309,
-  "available": "now",
+  "available": "18th November 2026",
   "listed": "2026-04-22",
   "walk_score": 83,
   "transit_score": 64,
@@ -180384,7 +180259,7 @@
   "pets": false,
   "lat": -37.800985,
   "lng": 144.893008,
-  "available": "25th October 2026",
+  "available": "now",
   "listed": "2026-09-29",
   "walk_score": 94,
   "transit_score": 80,
@@ -190119,130 +189994,6 @@
    "major": 177,
    "major_name": "Elizabeth Street",
    "rail": 303
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 11,
-  "crime": {
-   "rate": 197.7,
-   "burglary": 16.7,
-   "assault": 12.2,
-   "offences": 3174,
-   "population": 16055
-  },
-  "first_seen": "2026-10-21"
- },
- {
-  "id": 6519127,
-  "url": "https://www.rent.com.au/property/517-495-rathdowne-st-carlton-vic-3053-6519127",
-  "type": "Apartment",
-  "street": "517/495 Rathdowne Street",
-  "suburb": "Carlton",
-  "postcode": "3053",
-  "rent_text": "$550 pw",
-  "rent": 550,
-  "beds": 1,
-  "baths": 1,
-  "cars": 1,
-  "pets": false,
-  "lat": -37.794194,
-  "lng": 144.970809,
-  "available": "now",
-  "listed": "2026-10-20",
-  "walk_score": 98,
-  "transit_score": 96,
-  "agency": "ASK Property Partners Pty Ltd",
-  "photos": [
-   "268380729/798c77914f09d25221e70b78-uploads_2F1594079025839-6muzygyhaxf-d80508d68cee510494ee8a235fe08212_2FRath_hero-1792455078-primary.jpg",
-   "268380801/0414710215bb8db8c17bcaca-uploads_2F1696288354850-m95rk795kkr-86072b3bd745de04fd0ccd81cb413909_2F517-495-Rathdowne-2-1792455285-primary.jpg",
-   "268380802/3964994493c8756f83495594-uploads_2F1696288354837-zfeq6hwu1yg-86072b3bd745de04fd0ccd81cb413909_2F517-495-Rathdowne-4-1792455286-primary.jpg",
-   "268380803/6c639b000cf8581805d03996-uploads_2F1696288354841-n36wq5of8o-86072b3bd745de04fd0ccd81cb413909_2F517-495-Rathdowne-5-1792455290-primary.jpg"
-  ],
-  "region": "Inner city",
-  "lga": "Melbourne",
-  "cbd_km": 2.7,
-  "near": {
-   "supermarket": {
-    "m": 285,
-    "name": "Carlton Supermarket"
-   },
-   "fresh": {
-    "m": 513,
-    "name": "The French Lettuce"
-   },
-   "pharmacy": {
-    "m": 510,
-    "name": "Schneier Pharmacy"
-   },
-   "gp": {
-    "m": 518,
-    "name": "Elgin Medical Centre"
-   },
-   "cafe": {
-    "m": 133,
-    "name": "Bistro Two Dozen"
-   },
-   "park": {
-    "m": 99,
-    "name": "Reeves Street Park"
-   },
-   "gym": {
-    "m": 168,
-    "name": "Carlton Baths"
-   },
-   "library": {
-    "m": 558,
-    "name": "Carlton Neighbourhood Learning Centre"
-   },
-   "train": {
-    "m": 2791,
-    "name": "Victoria Park"
-   },
-   "tram": {
-    "m": 311,
-    "name": "Stop 113: Lytton Street"
-   },
-   "bus": {
-    "m": 84,
-    "name": "Carlton Baths/Rathdowne Street"
-   },
-   "bar": {
-    "m": 453,
-    "name": "The Motley Front Bar"
-   },
-   "cinema": {
-    "m": 610,
-    "name": "Cinema Nova"
-   }
-  },
-  "counts": {
-   "cafe": 57,
-   "bar": 10,
-   "bus": 7,
-   "tram": 7,
-   "shops": 16
-  },
-  "met": [
-   "supermarket",
-   "fresh",
-   "pharmacy",
-   "gp",
-   "cafe",
-   "park",
-   "gym",
-   "library",
-   "pt"
-  ],
-  "twenty": 100,
-  "transit": 55,
-  "roads": {
-   "motorway": 1609,
-   "motorway_name": "Alexandra Parade",
-   "major": 178,
-   "major_name": "Princes Street",
-   "rail": 994
   },
   "quiet": 100,
   "noise_flags": [],
@@ -215676,8 +215427,8 @@
   "transit_score": 97,
   "agency": "No Agent Property",
   "photos": [
-   "268474222/3cce912f72836dae238fb31e-9f4fb4c15f6515186b3cc1cb5c0f55a0fdafb467-1792746581-primary.",
-   "268474225/ab015c5fa3a50d3719ddceec-4926b3c36602a2d9cab36d1cd054b4f8603206b0-1792746596-primary.",
+   "268481078/49f0c985e5f81355b2ef0438-909244a90d6872bfd94a77649393ae3eefc5d252-1792905363-primary.",
+   "268481079/91b6c79a38fad0c4ddc47c99-45a2d7ae5e7f421cbc1842c0d22b504d9dcc65a8-1792905364-primary.",
    "268474224/f60991c34384d79dd87c3b7b-51102dc39837d70a6e3e73bec44e7c6700310958-1792746595-primary.",
    "268474226/b8d9f8c29312dc09859aa4d2-b408ceb64421c9fd08d15052234d9cd57bf20fd7-1792746596-primary."
   ],
@@ -244870,6 +244621,124 @@
   "first_seen": "2026-10-15"
  },
  {
+  "id": 6523612,
+  "url": "https://www.rent.com.au/property/4-46-taylor-st-ashburton-vic-3147-6523612",
+  "type": "Townhouse",
+  "street": "4/46 Taylor Street",
+  "suburb": "Ashburton",
+  "postcode": "3147",
+  "rent_text": "$850 pw",
+  "rent": 850,
+  "beds": 2,
+  "baths": 2,
+  "cars": 1,
+  "pets": true,
+  "lat": -37.872202,
+  "lng": 145.07238,
+  "available": "26th October 2026",
+  "listed": "2026-10-25",
+  "walk_score": 54,
+  "transit_score": 53,
+  "agency": "RentBetter",
+  "photos": [
+   "268481149/7446563eb14511cace12239c-03ccaceb2e3898e75e65dbd43c6ca41115e574811c0e46ac5cdcf5219525072d-1792907543-primary.jpg",
+   "268481150/c0294a8238124d7515ec3aa0-84aaaa7ef99ee28420175580d3bacf9b3cca4e7caf85499b7b41fa9075f25f14-1792907554-primary.jpg",
+   "268481151/4478373b1d47337d62e40dc5-c85f4929e7fc0c829c5dd44f9d3e9891f7094bb6ae55eed8ca3bc36638f95c60-1792907556-primary.jpg",
+   "268481152/14cd78bc34bb6bd8f03e685c-46b53bf8166e7234e5d8c9897d8bf45aca7bee27993a92ad93485dbe1d515d5a-1792907556-primary.jpg"
+  ],
+  "region": "East",
+  "lga": "Boroondara",
+  "cbd_km": 11.0,
+  "near": {
+   "supermarket": {
+    "m": 1076,
+    "name": "East Malvern IGA Xpress Plus Liquor"
+   },
+   "fresh": {
+    "m": 1431,
+    "name": "Bakers Delight"
+   },
+   "pharmacy": {
+    "m": 1419,
+    "name": "Ashburton Chemmart Pharmacy"
+   },
+   "gp": {
+    "m": 1365,
+    "name": "Glen Iris Medical Centre"
+   },
+   "cafe": {
+    "m": 1042,
+    "name": "Satsuki"
+   },
+   "park": {
+    "m": 80,
+    "name": ""
+   },
+   "gym": {
+    "m": 167,
+    "name": ""
+   },
+   "library": {
+    "m": 1079,
+    "name": "Alamein Neighbourhood and Learning"
+   },
+   "train": {
+    "m": 761,
+    "name": "East Malvern"
+   },
+   "tram": {
+    "m": 1716,
+    "name": "Stop 64: Darling Road"
+   },
+   "bus": {
+    "m": 1011,
+    "name": "Waverley Road on Malvern Road"
+   },
+   "bar": {
+    "m": 1515,
+    "name": "Two Doors Brewing"
+   },
+   "cinema": {
+    "m": 2228,
+    "name": "Hoyts"
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "park",
+   "gym",
+   "pt"
+  ],
+  "twenty": 33,
+  "transit": 45,
+  "roads": {
+   "motorway": 537,
+   "motorway_name": "Monash Freeway",
+   "major": 941,
+   "major_name": "Waverley Road",
+   "rail": 578
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 80,
+  "crime": {
+   "rate": 77.7,
+   "burglary": 7.2,
+   "assault": 4.9,
+   "offences": 618,
+   "population": 7952
+  },
+  "first_seen": "2026-10-26"
+ },
+ {
   "id": 6506751,
   "url": "https://www.rent.com.au/property/204-218-224-high-st-ashburton-vic-3147-6506751",
   "type": "Apartment",
@@ -245390,14 +245259,14 @@
   "pets": null,
   "lat": -37.873584,
   "lng": 145.148513,
-  "available": "26th October 2026",
+  "available": "30th October 2026",
   "listed": "2026-10-19",
   "walk_score": 80,
   "transit_score": 55,
   "agency": "Ausky Investment",
   "photos": [
-   "268474672/c7b986665026b3dbb3408ce8-01987045_img_08-1792755637-primary.jpg",
-   "268474673/1061b54a903bda2635ee22ef-01987045_img_07-1792755638-primary.jpg",
+   "268480522/3d2765904aecd50c73f6e0e4-01987045_img_08-1792890586-primary.jpg",
+   "268480523/e91be116a9ac06b361421fa6-01987045_img_07-1792890588-primary.jpg",
    "268420789/05a45c0202d9c33fa919edd7-01987045_img_06-1792631253-primary.jpg",
    "268420774/12af536d73b680a52630f177-01987045_img_04-1792631134-primary.jpg"
   ],
@@ -247096,10 +246965,10 @@
   "transit_score": 69,
   "agency": "OBrien Real Estate Bentleigh",
   "photos": [
-   "268404789/23a3f9449798f30d121132d0-179255003818424695-rsd-1792550476-primary.jpg",
-   "268404840/c4575313ae0ba61f33c0433b-179255003606941824-rsd-1792550561-primary.jpg",
-   "268404838/a01e65a313d7bda2b236af62-179255003629702078-rsd-1792550560-primary.jpg",
-   "268404839/c4264c3616efd48aac95399e-179255003638192894-rsd-1792550561-primary.jpg"
+   "268481990/5f20f595d1f963dab228c18c-179255003818424695-1792926591-primary.jpg",
+   "268481997/29909930250cf0e3c4f8566f-179255003606941824-1792926608-primary.jpg",
+   "268481999/1dfde2e60aa4592bfb9e3d5a-179255003629702078-1792926609-primary.jpg",
+   "268482000/411086308f7fb7471ba4c31f-179255003638192894-1792926608-primary.jpg"
   ],
   "region": "Bayside & peninsula",
   "lga": "Bayside",
@@ -248452,9 +248321,9 @@
   "agency": "Buxton Oakleigh Pty Ltd",
   "photos": [
    "268407783/e64abcab7ae5a730418b6166-01979235_img_01-1792555115-primary.jpg",
-   "268407814/536ec5c0dca166d6d26af88e-01979235_img_02-1792555165-primary.jpg",
-   "268407812/06f26a2b0f94e653a7ad3fcc-01979235_img_11-1792555164-primary.jpg",
-   "268407818/57581527428d91d37b4f5031-01979235_img_07-1792555183-primary.jpg"
+   "268481578/a10f2b84a24f323be02eea81-01979235_img_11-1792916981-primary.jpg",
+   "268481579/39a54ae12a2ad5d7cfeb9c9b-01979235_img_09-1792916983-primary.jpg",
+   "268481580/0a830ed74dbc5952c04136a3-01979235_img_10-1792916984-primary.jpg"
   ],
   "region": "South-east",
   "lga": "Monash",
@@ -250615,6 +250484,130 @@
    "population": 12766
   },
   "first_seen": "2026-08-18"
+ },
+ {
+  "id": 6523640,
+  "url": "https://www.rent.com.au/property/305-8-horizon-dr-maribyrnong-vic-3032-6523640",
+  "type": "Apartment",
+  "street": "305/8 Horizon Drive",
+  "suburb": "Maribyrnong",
+  "postcode": "3032",
+  "rent_text": "$600 pw",
+  "rent": 600,
+  "beds": 2,
+  "baths": 2,
+  "cars": 1,
+  "pets": true,
+  "lat": -37.775731,
+  "lng": 144.893055,
+  "available": "28th October 2026",
+  "listed": "2026-10-25",
+  "walk_score": 85,
+  "transit_score": 62,
+  "agency": "RentBetter",
+  "photos": [
+   "268482090/68ae8ae3515aad7b179f0236-1ac84cb03548a353795ffeb450acf7ccc8c1e83875383511375431b23bccba02-1792931436-primary.jpg",
+   "268482091/78c60b8e3b7a5da36727fc76-524df7c1a52f50ee61ee3a733b85d98c37488fd740247cd4eed903e794ca9bb6-1792931444-primary.jpg",
+   "268482092/6d156995a649807b576720af-a69996af2dd7d6baeea09a1dabd19d721546b09ea780695cf6ea4ff31066d61f-1792931444-primary.jpg",
+   "268482093/1f765feef537f208cd0b84d3-109d3397982bab0cbfcd3664426ef1ceea17191315000df23a74f12bf0d3729e-1792931445-primary.jpg"
+  ],
+  "region": "West",
+  "lga": "Maribyrnong",
+  "cbd_km": 8.0,
+  "near": {
+   "supermarket": {
+    "m": 520,
+    "name": "Woolworths"
+   },
+   "fresh": {
+    "m": 2350,
+    "name": "Gordon Street Bakery"
+   },
+   "pharmacy": {
+    "m": 587,
+    "name": "Chemist Warehouse"
+   },
+   "gp": {
+    "m": 1359,
+    "name": "Edgewater Medical Centre"
+   },
+   "cafe": {
+    "m": 530,
+    "name": "Max Brenner"
+   },
+   "park": {
+    "m": 63,
+    "name": ""
+   },
+   "gym": {
+    "m": 344,
+    "name": "Super Park Indoor Adventure Park"
+   },
+   "library": {
+    "m": 831,
+    "name": "Maribyrnong Library"
+   },
+   "train": {
+    "m": 2339,
+    "name": "Flemington Racecourse"
+   },
+   "tram": {
+    "m": 644,
+    "name": "Stop 54: Gordon Street"
+   },
+   "bus": {
+    "m": 529,
+    "name": "Highpoint Shopping Centre/Aquatic Drive"
+   },
+   "bar": {
+    "m": 1337,
+    "name": "Anglers Tavern"
+   },
+   "cinema": {
+    "m": 426,
+    "name": "Hoyts"
+   }
+  },
+  "counts": {
+   "cafe": 2,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 4
+  },
+  "met": [
+   "supermarket",
+   "pharmacy",
+   "cafe",
+   "park",
+   "gym"
+  ],
+  "twenty": 56,
+  "transit": 28,
+  "roads": {
+   "motorway": 3726,
+   "motorway_name": "Mackenzie Road Offramp",
+   "major": 21,
+   "major_name": "Van Ness Avenue",
+   "rail": 1776
+  },
+  "quiet": 70,
+  "noise_flags": [
+   "On or beside a main road (Van Ness Avenue, 21 m)"
+  ],
+  "air": 75,
+  "air_flags": [
+   "Fronts a main road (Van Ness Avenue)"
+  ],
+  "safety": 13,
+  "crime": {
+   "rate": 193.6,
+   "burglary": 11.7,
+   "assault": 8.3,
+   "offences": 2434,
+   "population": 12573
+  },
+  "first_seen": "2026-10-26"
  },
  {
   "id": 6522095,
@@ -258123,7 +258116,7 @@
   "pets": false,
   "lat": -37.893708,
   "lng": 144.64604,
-  "available": "now",
+  "available": "4th November 2026",
   "listed": "2026-07-16",
   "walk_score": 34,
   "transit_score": 48,
@@ -280202,10 +280195,10 @@
   "transit_score": 78,
   "agency": "Belle Property St Kilda",
   "photos": [
-   "268471883/14fcdb439d1c031dd9a7b679-179273709288179069-1792737743-primary.jpg",
-   "268471891/83a2737c0daadb8d3b264ef9-179273730422276344-1792737751-primary.jpg",
-   "268471889/9b834bd58685f502bcb34124-179273709279953514-1792737751-primary.jpg",
-   "268471890/c79197fd5eafa670e30d8873-179273709215600554-1792737751-primary.jpg"
+   "268481445/9db1c985b45a80918e2f527d-179291192732720003-1792913925-primary.jpg",
+   "268481453/60ce521d8adfbba3839cacf8-179291192888179069-1792913939-primary.jpg",
+   "268481454/779c3cb9c3000b705c75d2ba-179291192852324401-1792913940-primary.jpg",
+   "268481455/41d675593bf8b4b74eaddba7-179291192703229368-1792913941-primary.jpg"
   ],
   "region": "Inner city",
   "lga": "Port Phillip",
@@ -298579,130 +298572,6 @@
   "first_seen": "2026-10-15"
  },
  {
-  "id": 5111636,
-  "url": "https://www.rent.com.au/property/3-727-729-south-rd-bentleigh-east-vic-3165-5111636",
-  "type": "Unit",
-  "street": "3/727-729 South Road",
-  "suburb": "Bentleigh East",
-  "postcode": "3165",
-  "rent_text": "$565 pw",
-  "rent": 565,
-  "beds": 2,
-  "baths": 1,
-  "cars": 1,
-  "pets": false,
-  "lat": -37.936272,
-  "lng": 145.064071,
-  "available": "now",
-  "listed": "2026-09-29",
-  "walk_score": 76,
-  "transit_score": 42,
-  "agency": "Metropole Properties Melbourne Pty Ltd",
-  "photos": [
-   "268070483/b88a343d904528308aca84a6-584b9205_2D6fbd_2D8b40_2D5af8_2D98ebf1ec8825-1790644014-primary.jpg",
-   "268070819/21eb381992894ec4e5be6e50-b9759f66_2Df662_2Dce14_2D736f_2D4b6cbdd65c3e-1790644270-primary.jpg",
-   "268070821/c966609697d05df08bd3cd6d-52a21911_2D9cd3_2D9082_2D3759_2D7fb3a7ab45dc-1790644270-primary.jpg",
-   "268070822/96d1ef468b0bcbdc0185c6e1-c4dfd0a0_2D372e_2D9cee_2De63f_2De4ffa77cf7a3-1790644272-primary.jpg"
-  ],
-  "region": "South-east",
-  "lga": "Glen Eira",
-  "cbd_km": 15.6,
-  "near": {
-   "supermarket": {
-    "m": 327,
-    "name": "Foodworks"
-   },
-   "fresh": {
-    "m": 327,
-    "name": "Wonder Fresh"
-   },
-   "pharmacy": {
-    "m": 327,
-    "name": "Advantage Pharmacy"
-   },
-   "gp": {
-    "m": 1420,
-    "name": "4Cyte Pathology & PCR tests"
-   },
-   "cafe": {
-    "m": 217,
-    "name": "Cool Bean Kitchen Burger bar"
-   },
-   "park": {
-    "m": 58,
-    "name": ""
-   },
-   "gym": {
-    "m": 823,
-    "name": "The Sports Clinic of Football"
-   },
-   "library": {
-    "m": 1709,
-    "name": "1st Moorabbin Central Scout Hall"
-   },
-   "train": {
-    "m": 3081,
-    "name": "Highett"
-   },
-   "tram": {
-    "m": 6178,
-    "name": "Stop 68: Koornang Road"
-   },
-   "bus": {
-    "m": 97,
-    "name": "Sullivan St/South Rd"
-   },
-   "bar": {
-    "m": 519,
-    "name": "Sandbelt Hotel"
-   },
-   "cinema": {
-    "m": 3524,
-    "name": "Village Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 6,
-   "bar": 1,
-   "bus": 4,
-   "tram": 0,
-   "shops": 4
-  },
-  "met": [
-   "supermarket",
-   "fresh",
-   "pharmacy",
-   "cafe",
-   "park"
-  ],
-  "twenty": 56,
-  "transit": 20,
-  "roads": {
-   "motorway": 5460,
-   "motorway_name": "Mornington Peninsula Freeway",
-   "major": 43,
-   "major_name": "South Road",
-   "rail": 2355
-  },
-  "quiet": 70,
-  "noise_flags": [
-   "On or beside a main road (South Road, 43 m)"
-  ],
-  "air": 75,
-  "air_flags": [
-   "Fronts a main road (South Road)"
-  ],
-  "safety": 100,
-  "crime": {
-   "rate": 37.4,
-   "burglary": 2.8,
-   "assault": 3.8,
-   "offences": 1129,
-   "population": 30159
-  },
-  "first_seen": "2026-09-29"
- },
- {
   "id": 6500463,
   "url": "https://www.rent.com.au/property/2-26-pell-st-bentleigh-east-vic-3165-6500463",
   "type": "Unit",
@@ -302356,8 +302225,8 @@
   "first_seen": "2026-09-14"
  },
  {
-  "id": 6523203,
-  "url": "https://www.rent.com.au/property/1-45-army-rd-boronia-vic-3155-6523203",
+  "id": 6523585,
+  "url": "https://www.rent.com.au/property/1-45-army-rd-boronia-vic-3155-6523585",
   "type": "House",
   "street": "1/45 Army Road",
   "suburb": "Boronia",
@@ -302370,16 +302239,16 @@
   "pets": true,
   "lat": -37.842655,
   "lng": 145.292647,
-  "available": "12th November 2026",
-  "listed": "2026-10-23",
+  "available": "13th November 2026",
+  "listed": "2026-10-25",
   "walk_score": 46,
   "transit_score": 37,
   "agency": "OBrien Real Estate Wantirna ",
   "photos": [
-   "268468415/92f25fbef790bd6c21209ea9-1787615242251362875364792-1792733939-primary.jpg",
-   "268468578/45792c57f4a6ac715001e020-1787615284251184243605387-1792734092-primary.jpg",
-   "268468576/75750dc1a2fc7e6e220bc75f-1787615284919435283221081-1792734092-primary.jpg",
-   "268468579/29dbd68a56de2d78e87f53dc-1787615307866831789511393-1792734092-primary.jpg"
+   "268480294/4ac4823f95b2b4915c55f1d4-1787615242251362875364792-1792877692-primary.jpg",
+   "268480295/cd8df6c6db43fe4b90cddc72-1787615284251184243605387-1792877702-primary.jpg",
+   "268480296/f4d395bdfa2ccb280ce22e09-1787615284919435283221081-1792877702-primary.jpg",
+   "268480297/87e71b9249f4c70a5933d019-1787615307866831789511393-1792877703-primary.jpg"
   ],
   "region": "East",
   "lga": "Knox",
@@ -302471,7 +302340,7 @@
    "offences": 2028,
    "population": 23607
   },
-  "first_seen": "2026-10-24"
+  "first_seen": "2026-10-26"
  },
  {
   "id": 6520956,
@@ -321991,10 +321860,10 @@
   "transit_score": 67,
   "agency": "Barry Plant Inner City Group",
   "photos": [
-   "268270596/c8b532c38a8ebb7e0e740000-172532536710397073-rsd-1791813470-primary.jpg",
-   "268270598/e9a9de824566a81d84c825b7-172533713428195032-rsd-1791813482-primary.jpg",
-   "268270597/df5ae4a7480b7cf2e05e8fcc-172533713527186116-rsd-1791813482-primary.jpg",
-   "268270599/9540cfc828480b23839a2e20-172533854030574900-rsd-1791813482-primary.jpg"
+   "268481908/3dff31ebb978c9b7163555fa-172532536710397073-1792925544-primary.jpg",
+   "268481910/5036cc338ee33cf2241c4217-172533713428195032-1792925559-primary.jpg",
+   "268481909/06a58efd7f39276ddaf2d97a-172533713527186116-1792925558-primary.jpg",
+   "268481911/672e368b5d76203147cf10a3-172533854030574900-1792925559-primary.jpg"
   ],
   "region": "North",
   "lga": "Moonee Valley",
@@ -335513,6 +335382,126 @@
   "first_seen": "2026-10-15"
  },
  {
+  "id": 6523616,
+  "url": "https://www.rent.com.au/property/10-pace-cct-south-morang-vic-3752-6523616",
+  "type": "Townhouse",
+  "street": "10 Pace Circuit",
+  "suburb": "South Morang",
+  "postcode": "3752",
+  "rent_text": "$550 per week | $2,390 per calendar month",
+  "rent": 550,
+  "beds": 2,
+  "baths": 1,
+  "cars": 1,
+  "pets": false,
+  "lat": -37.648485,
+  "lng": 145.094247,
+  "available": "now",
+  "listed": "2026-10-25",
+  "walk_score": 24,
+  "transit_score": 51,
+  "agency": "Barry Plant Bundoora",
+  "photos": [
+   "268481327/fa14d1f7d36cdee38108dbd3-178598349964759880-1792910353-primary.jpg",
+   "268481330/e6899d90835da617f44b6c01-178598349844881669-1792910361-primary.jpg",
+   "268481328/becbf9dc27a644a903749722-178598349801530755-1792910361-primary.jpg",
+   "268481329/9012d501e5af604f3c39ddf7-178598349879131227-1792910361-primary.jpg"
+  ],
+  "region": "North",
+  "lga": "Whittlesea",
+  "cbd_km": 21.8,
+  "near": {
+   "supermarket": {
+    "m": 1876,
+    "name": "Woolworths"
+   },
+   "fresh": {
+    "m": 1900,
+    "name": "Bakers Delight"
+   },
+   "pharmacy": {
+    "m": 753,
+    "name": "Chemist Warehouse"
+   },
+   "gp": {
+    "m": 2628,
+    "name": "Lakes Boulevard Medical Centre"
+   },
+   "cafe": {
+    "m": 725,
+    "name": "Chungsan Chinese Restaurant"
+   },
+   "park": {
+    "m": 168,
+    "name": "Manna Gum Powerline Easement"
+   },
+   "gym": {
+    "m": 760,
+    "name": ""
+   },
+   "library": {
+    "m": 822,
+    "name": "Mill Park ATSS"
+   },
+   "train": {
+    "m": 668,
+    "name": "Middle Gorge"
+   },
+   "tram": {
+    "m": 5225,
+    "name": "Stop 71: RMIT Bundoora Campus"
+   },
+   "bus": {
+    "m": 270,
+    "name": ""
+   },
+   "bar": {
+    "m": 685,
+    "name": "Commercial Hotel"
+   },
+   "cinema": {
+    "m": 2866,
+    "name": "Village Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 4,
+   "bar": 1,
+   "bus": 2,
+   "tram": 0,
+   "shops": 1
+  },
+  "met": [
+   "pharmacy",
+   "cafe",
+   "park",
+   "gym",
+   "pt"
+  ],
+  "twenty": 56,
+  "transit": 65,
+  "roads": {
+   "motorway": 4563,
+   "motorway_name": "Metropolitan Ring Road",
+   "major": 218,
+   "major_name": "Plenty Road",
+   "rail": 462
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 96,
+  "crime": {
+   "rate": 50.6,
+   "burglary": 2.7,
+   "assault": 4.7,
+   "offences": 1265,
+   "population": 24989
+  },
+  "first_seen": "2026-10-26"
+ },
+ {
   "id": 6520891,
   "url": "https://www.rent.com.au/property/29-yellowstone-st-south-morang-vic-3752-6520891",
   "type": "Townhouse",
@@ -341060,134 +341049,6 @@
   "first_seen": "2026-10-23"
  },
  {
-  "id": 6517425,
-  "url": "https://www.rent.com.au/property/24-alexandra-pde-fitzroy-vic-3065-6517425",
-  "type": "House",
-  "street": "24 Alexandra Parade",
-  "suburb": "Fitzroy",
-  "postcode": "3065",
-  "rent_text": "$790 pw",
-  "rent": 790,
-  "beds": 2,
-  "baths": 1,
-  "cars": 1,
-  "pets": true,
-  "lat": -37.793393,
-  "lng": 144.976841,
-  "available": "now",
-  "listed": "2026-10-17",
-  "walk_score": 98,
-  "transit_score": 88,
-  "agency": "RentBetter",
-  "photos": [
-   "268352635/32104e2b1d09658d5b1a77fc-993194ebcfe3c1ff4a209ce2b403a33379a4a707218f18d96bb24329e1c4aa37-1792215378-primary.jpg",
-   "268352636/cba143f4c02412527f07961b-c4487db130433a56c463cab4a3fba7c607e2a974ec92a6cd1b84eab03b090572-1792215393-primary.jpg",
-   "268352637/3e1bfb8f2e1924d7f13c3e06-b6b31a405690f13766ff897ce247f4697003daec8f2a38e43eafd3086fae3166-1792215393-primary.jpg",
-   "268352638/31754b06d71c14720fe3fa17-0c03a6210009e8a9d1bb382e7d2faa3b97b83157cc98a70bc1423afeacbfaba7-1792215393-primary.jpg"
-  ],
-  "region": "Inner city",
-  "lga": "Yarra",
-  "cbd_km": 2.9,
-  "near": {
-   "supermarket": {
-    "m": 326,
-    "name": "Fitzroy IGA"
-   },
-   "fresh": {
-    "m": 232,
-    "name": "The French Lettuce"
-   },
-   "pharmacy": {
-    "m": 260,
-    "name": "Patel's Pharmacy"
-   },
-   "gp": {
-    "m": 506,
-    "name": "North Fitzroy Specialist Centre"
-   },
-   "cafe": {
-    "m": 247,
-    "name": "Industry Beans"
-   },
-   "park": {
-    "m": 91,
-    "name": "Father Little Reserve"
-   },
-   "gym": {
-    "m": 245,
-    "name": "Body Fit Training"
-   },
-   "library": {
-    "m": 211,
-    "name": "Carlton Neighbourhood Learning Centre"
-   },
-   "train": {
-    "m": 2172,
-    "name": "Victoria Park"
-   },
-   "tram": {
-    "m": 224,
-    "name": "Stop 15: Alexandra Parade"
-   },
-   "bus": {
-    "m": 89,
-    "name": "Nicholson Street/Alexandra Parade"
-   },
-   "bar": {
-    "m": 207,
-    "name": "Commercial Club Hotel"
-   },
-   "cinema": {
-    "m": 1192,
-    "name": "Cinema Nova"
-   }
-  },
-  "counts": {
-   "cafe": 71,
-   "bar": 33,
-   "bus": 3,
-   "tram": 10,
-   "shops": 16
-  },
-  "met": [
-   "supermarket",
-   "fresh",
-   "pharmacy",
-   "gp",
-   "cafe",
-   "park",
-   "gym",
-   "library",
-   "pt"
-  ],
-  "twenty": 100,
-  "transit": 55,
-  "roads": {
-   "motorway": 1082,
-   "motorway_name": "Alexandra Parade",
-   "major": 22,
-   "major_name": "Alexandra Parade",
-   "rail": 1450
-  },
-  "quiet": 70,
-  "noise_flags": [
-   "On or beside a main road (Alexandra Parade, 22 m)"
-  ],
-  "air": 75,
-  "air_flags": [
-   "Fronts a main road (Alexandra Parade)"
-  ],
-  "safety": 0,
-  "crime": {
-   "rate": 283.6,
-   "burglary": 20.6,
-   "assault": 25.5,
-   "offences": 2958,
-   "population": 10431
-  },
-  "first_seen": "2026-10-17"
- },
- {
   "id": 6514654,
   "url": "https://www.rent.com.au/property/504-81-argyle-st-fitzroy-vic-3065-6514654",
   "type": "Apartment",
@@ -342214,10 +342075,10 @@
   "transit_score": 68,
   "agency": "Barry Plant Inner City Group",
   "photos": [
-   "268329809/f2473210dfc90456afc7dc1d-170536833387490484-rsd-1792048438-primary.jpg",
-   "268329813/64282b151bb3c39876bbb1f3-170536833202678640-rsd-1792048469-primary.jpg",
-   "268329812/a7d9d174bd920b098b0c065c-170536832561823872-rsd-1792048467-primary.jpg",
-   "268329814/c3c0d013b43caaec7849ecd6-170536831252334022-rsd-1792048469-primary.jpg"
+   "268481961/8c45482768d440b859d7bc72-170536833387490484-1792926246-primary.jpg",
+   "268481974/286c431ddd8d766ea26a3c16-170536833202678640-1792926271-primary.jpg",
+   "268481975/e345d613374c0e46d25fa9de-170536832561823872-1792926271-primary.jpg",
+   "268481976/c1f37d35f4c80c4a8cdbe347-170536831252334022-1792926272-primary.jpg"
   ],
   "region": "North",
   "lga": "Merri-bek",
@@ -343211,10 +343072,10 @@
   "transit_score": 68,
   "agency": "Barry Plant Inner City Group",
   "photos": [
-   "267861777/36f732b48c91686a97934594-157532630972617693-rsd-1789361800-primary.jpg",
-   "268362875/1991432a4bb2fbf2260bd1cc-179237382907972988-rsd-1792374451-primary.jpg",
-   "268362873/a95d069aa02b080f8a9aa191-179237380978816103-rsd-1792374449-primary.jpg",
-   "268362872/c5ee014f8730882edd990c40-179237386454731538-rsd-1792374449-primary.jpg"
+   "268481962/9ee59b066d1a5ed85c8b0c43-157532630972617693-1792926257-primary.jpg",
+   "268481984/68676b50d2e489f64f572e84-179237382907972988-1792926276-primary.jpg",
+   "268481985/d33da6a67ea7afe717c0b15b-179237380978816103-1792926276-primary.jpg",
+   "268481986/b7547d0760f4ba488f940628-179237386454731538-1792926277-primary.jpg"
   ],
   "region": "North",
   "lga": "Merri-bek",
@@ -351332,131 +351193,6 @@
    "population": 21281
   },
   "first_seen": "2026-09-29"
- },
- {
-  "id": 6493371,
-  "url": "https://www.rent.com.au/property/49-bakewell-st-cranbourne-vic-3977-6493371",
-  "type": "House",
-  "street": "49 Bakewell Street",
-  "suburb": "Cranbourne",
-  "postcode": "3977",
-  "rent_text": "$500 pw",
-  "rent": 500,
-  "beds": 2,
-  "baths": 1,
-  "cars": 5,
-  "pets": null,
-  "lat": -38.111247,
-  "lng": 145.290003,
-  "available": "now",
-  "listed": "2026-09-20",
-  "walk_score": 66,
-  "transit_score": 49,
-  "agency": "PropertyNow",
-  "photos": [
-   "267951473/62b42100aa6d81bc39845d4e-1789823529210_IMG_0990-1789864165-primary.jpeg",
-   "267951480/a22f50e1121267dcfd7d928c-1789823529210_IMG_0964-1789864359-primary.jpeg",
-   "267951481/0058254eebec4f70c5b46f19-1789823529210_IMG_0965-1789864360-primary.jpeg",
-   "267951482/4a4d8d9272fe008637e5f8fe-1789823529210_IMG_0961-1789864361-primary.jpeg"
-  ],
-  "region": "South-east",
-  "lga": "Casey",
-  "cbd_km": 43.1,
-  "near": {
-   "supermarket": {
-    "m": 662,
-    "name": "Aldi"
-   },
-   "fresh": {
-    "m": 621,
-    "name": "Gold Sunshine Hot Bread"
-   },
-   "pharmacy": {
-    "m": 825,
-    "name": "Pharmacy 4 Less"
-   },
-   "gp": {
-    "m": 720,
-    "name": "Unique Medical Centre"
-   },
-   "cafe": {
-    "m": 739,
-    "name": "Bros Espresso Bar"
-   },
-   "park": {
-    "m": 924,
-    "name": "Casey Traffic School Park"
-   },
-   "gym": {
-    "m": 702,
-    "name": "Casey Stadium"
-   },
-   "library": {
-    "m": 735,
-    "name": "Cranbourne Library"
-   },
-   "train": {
-    "m": 1965,
-    "name": "Cranbourne"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 399,
-    "name": "Narre Warren-Cranbourne Rd/Berwick-Cranbourne Rd"
-   },
-   "bar": {
-    "m": 759,
-    "name": "Kelly's"
-   },
-   "cinema": {
-    "m": 9999,
-    "name": ""
-   }
-  },
-  "counts": {
-   "cafe": 8,
-   "bar": 1,
-   "bus": 1,
-   "tram": 0,
-   "shops": 4
-  },
-  "met": [
-   "supermarket",
-   "fresh",
-   "gp",
-   "cafe",
-   "gym",
-   "library"
-  ],
-  "twenty": 67,
-  "transit": 35,
-  "roads": {
-   "motorway": 8793,
-   "motorway_name": "Princes Freeway",
-   "major": 44,
-   "major_name": "Narre Warren Road",
-   "rail": 1350
-  },
-  "quiet": 70,
-  "noise_flags": [
-   "On or beside a main road (Narre Warren Road, 44 m)"
-  ],
-  "air": 75,
-  "air_flags": [
-   "Fronts a main road (Narre Warren Road)"
-  ],
-  "safety": 4,
-  "crime": {
-   "rate": 209.8,
-   "burglary": 9.2,
-   "assault": 20.8,
-   "offences": 4464,
-   "population": 21281
-  },
-  "first_seen": "2026-10-08"
  },
  {
   "id": 6491584,
@@ -375015,7 +374751,7 @@
   "pets": false,
   "lat": -37.946692,
   "lng": 145.13843,
-  "available": "25th October 2026",
+  "available": "now",
   "listed": "2026-09-23",
   "walk_score": 64,
   "transit_score": 53,
@@ -375737,6 +375473,131 @@
    "population": 14381
   },
   "first_seen": "2026-08-31"
+ },
+ {
+  "id": 6523625,
+  "url": "https://www.rent.com.au/property/203-1525-dandenong-rd-oakleigh-vic-3166-6523625",
+  "type": "Apartment",
+  "street": "203/1525 Dandenong Road",
+  "suburb": "Oakleigh",
+  "postcode": "3166",
+  "rent_text": "$600 pw",
+  "rent": 600,
+  "beds": 2,
+  "baths": 2,
+  "cars": 1,
+  "pets": null,
+  "lat": -37.892894,
+  "lng": 145.090513,
+  "available": "13th November 2026",
+  "listed": "2026-10-25",
+  "walk_score": 80,
+  "transit_score": 67,
+  "agency": "Buxton Oakleigh Pty Ltd",
+  "photos": [
+   "268481590/59afcf8ff719e1a2bb3f03ed-01988967_img_09-1792917412-primary.jpg",
+   "268481592/bd57dca106dd5b828f7742f4-01988967_img_02-1792917420-primary.jpg",
+   "268481591/14f05d0aa5495642b37f61c1-01988967_img_01-1792917418-primary.jpg",
+   "268481593/435d8062a768d1ba8b81962b-01988967_img_04-1792917418-primary.jpg"
+  ],
+  "region": "South-east",
+  "lga": "Monash",
+  "cbd_km": 13.6,
+  "near": {
+   "supermarket": {
+    "m": 837,
+    "name": "Friendly Cellars"
+   },
+   "fresh": {
+    "m": 850,
+    "name": "Fruit Barn"
+   },
+   "pharmacy": {
+    "m": 146,
+    "name": "Chemist Warehouse"
+   },
+   "gp": {
+    "m": 654,
+    "name": "Chadstone Clinic"
+   },
+   "cafe": {
+    "m": 6,
+    "name": "2Q Rotary Hotpot"
+   },
+   "park": {
+    "m": 528,
+    "name": "Scotchman's Creek Linear Park"
+   },
+   "gym": {
+    "m": 219,
+    "name": ""
+   },
+   "library": {
+    "m": 638,
+    "name": "Oakleigh Library (City Of Monash)"
+   },
+   "train": {
+    "m": 2642,
+    "name": "Holmesglen"
+   },
+   "tram": {
+    "m": 3985,
+    "name": "Stop 68: Koornang Road"
+   },
+   "bus": {
+    "m": 140,
+    "name": "Warrigal Rd/Princes Hwy"
+   },
+   "bar": {
+    "m": 307,
+    "name": "Leighoak"
+   },
+   "cinema": {
+    "m": 1399,
+    "name": "Hoyts"
+   }
+  },
+  "counts": {
+   "cafe": 7,
+   "bar": 1,
+   "bus": 6,
+   "tram": 0,
+   "shops": 1
+  },
+  "met": [
+   "pharmacy",
+   "gp",
+   "cafe",
+   "park",
+   "gym",
+   "library"
+  ],
+  "twenty": 67,
+  "transit": 20,
+  "roads": {
+   "motorway": 949,
+   "motorway_name": "Warrigal Road Off Ramp",
+   "major": 22,
+   "major_name": "Princes Highway",
+   "rail": 746
+  },
+  "quiet": 70,
+  "noise_flags": [
+   "On or beside a main road (Princes Highway, 22 m)"
+  ],
+  "air": 75,
+  "air_flags": [
+   "Fronts a main road (Princes Highway)"
+  ],
+  "safety": 0,
+  "crime": {
+   "rate": 233.5,
+   "burglary": 12.2,
+   "assault": 14.0,
+   "offences": 1971,
+   "population": 8442
+  },
+  "first_seen": "2026-10-26"
  },
  {
   "id": 6515885,
@@ -376634,8 +376495,8 @@
   "agency": "Buxton Oakleigh Pty Ltd",
   "photos": [
    "268186697/ab5c0fd62746ce38128a4988-01982042_img_07-1791336593-primary.jpg",
-   "268471422/120b58c19e6bdc7aa8dd587d-01982042_img_13-1792737119-primary.jpg",
-   "268471423/d9b73f00478cba7b43958374-01982042_img_12-1792737119-primary.jpg",
+   "268481602/e1c0b624d192d9c36e6cafe7-01982042_img_13-1792917449-primary.jpg",
+   "268481601/c068928c3b753b06e65afeb2-01982042_img_12-1792917449-primary.jpg",
    "268186940/d4bbe635db07e49aea33181c-01982042_img_09-1791336897-primary.jpg"
   ],
   "region": "South-east",
@@ -378354,15 +378215,15 @@
   "street": "3/11 Widford Street",
   "suburb": "Glenroy",
   "postcode": "3046",
-  "rent_text": "$560 pw Furnished",
-  "rent": 560,
+  "rent_text": "$570 pw Furnished",
+  "rent": 570,
   "beds": 2,
   "baths": 1,
   "cars": 2,
   "pets": false,
   "lat": -37.704355,
   "lng": 144.922692,
-  "available": "16th November 2026",
+  "available": "19th December 2026",
   "listed": "2026-10-15",
   "walk_score": 79,
   "transit_score": 51,
@@ -390212,8 +390073,8 @@
   "street": "8/10 South Avenue",
   "suburb": "Bentleigh",
   "postcode": "3204",
-  "rent_text": "$770 pw",
-  "rent": 770,
+  "rent_text": "$750 pw",
+  "rent": 750,
   "beds": 2,
   "baths": 2,
   "cars": 1,
@@ -390472,7 +390333,7 @@
   "pets": false,
   "lat": -37.933354,
   "lng": 145.039189,
-  "available": "25th October 2026",
+  "available": "now",
   "listed": "2026-09-23",
   "walk_score": 86,
   "transit_score": 57,
@@ -392907,10 +392768,10 @@
   "transit_score": 50,
   "agency": "PropertyNow",
   "photos": [
-   "268480052/aabc356e4f34718983fce54d-1792850427360_1c-1792854193-primary.jpg",
-   "268480056/d2a375204d6b2ffca0fe87d0-1792850461614_2-1792854283-primary.jpg",
-   "268480053/b770e5029831c61be3568c3d-1792850468797_3-1792854281-primary.jpg",
-   "268480054/6b277ee78810ea3880da892d-1792850475263_4-1792854281-primary.jpg"
+   "268481398/246c9405efd5a29be1d47efb-1792907254317_1-1792911024-primary.jpg",
+   "268481402/ff300023c3f0d90f0316f1ec-1792907271488_2-1792911113-primary.jpg",
+   "268481399/f36c6e3319bcbfcde4e0aab9-1792907277012_3-1792911110-primary.jpg",
+   "268481401/386d5828923ae1b3e0b91a5e-1792907285783_4-1792911112-primary.jpg"
   ],
   "region": "North",
   "lga": "Darebin",
@@ -414360,10 +414221,10 @@
   "transit_score": 50,
   "agency": "No Agent Property",
   "photos": [
-   "268389792/b35cb0606799a1cbcaf83ba6-24a1fa560595352756bd06702a80a827087b7801-1792471639-primary.",
-   "268389805/5c2e19a5fe77f2079f611bf5-89e3368082aaff8a61c72705f6beedea57b4383d-1792471644-primary.",
-   "268389807/1068eef052dbc6280b82bd99-d08901c84f426d26f4333b454009c548c8819625-1792471644-primary.",
-   "268389811/4259cd71c50edefab49ecdf1-d5c0dbd3ae24a371bc0a1b06898efa86c12024f3-1792471644-primary."
+   "268389792/56862280056110813ded42be-24a1fa560595352756bd06702a80a827087b7801-1792906762-primary.",
+   "268389805/6991a5df4fa2f6dfa5a6cbdc-89e3368082aaff8a61c72705f6beedea57b4383d-1792906764-primary.",
+   "268389807/a3bf8dd2d95932ae6fa56ba0-d08901c84f426d26f4333b454009c548c8819625-1792906765-primary.",
+   "268389811/6c5cb7b2a5b9e55f16a02f6c-d5c0dbd3ae24a371bc0a1b06898efa86c12024f3-1792906767-primary."
   ],
   "region": "North",
   "lga": "Hume",
@@ -415447,7 +415308,7 @@
   "beds": 2,
   "baths": 1,
   "cars": 1,
-  "pets": false,
+  "pets": true,
   "lat": -37.879249,
   "lng": 144.995081,
   "available": "now",
@@ -430818,7 +430679,7 @@
   "pets": false,
   "lat": -37.718422,
   "lng": 144.620246,
-  "available": "25th October 2026",
+  "available": "now",
   "listed": "2026-10-08",
   "walk_score": 94,
   "transit_score": 76,
@@ -443206,10 +443067,10 @@
   "transit_score": 89,
   "agency": "Belle Property St Kilda",
   "photos": [
-   "268413781/9062ba138d590c0b21f83b48-178961601151353847-rsd-1792564963-primary.jpg",
-   "268413794/1318299c09311dbcece1cd52-178961601103774176-rsd-1792564988-primary.jpg",
-   "268413795/dcd7f63643ca5d35564c520f-178961601083897834-rsd-1792564989-primary.jpg",
-   "268413796/53a374a37c00f6ac371d9237-178961601096737571-rsd-1792564989-primary.jpg"
+   "268481444/d5b10fd26cde1c51fc8adbc5-178961601151353847-1792913918-primary.jpg",
+   "268481446/9b86d99841bc558efcc40b1e-178961601103774176-1792913934-primary.jpg",
+   "268481448/747b1a745a4e5fe4a1e8d441-178961601083897834-1792913935-primary.jpg",
+   "268481447/b0d6db5fface085e7fb1f822-178961601096737571-1792913934-primary.jpg"
   ],
   "region": "Inner city",
   "lga": "Port Phillip",
@@ -453999,6 +453860,887 @@
    "population": 19490
   },
   "first_seen": "2026-04-28"
+ },
+ {
+  "id": 6513957,
+  "url": "https://www.rent.com.au/property/103-2a-como-st-alphington-vic-3078-6513957",
+  "type": "Apartment",
+  "street": "103/2A Como Street",
+  "suburb": "Alphington",
+  "postcode": "3078",
+  "rent_text": "$715 pw",
+  "rent": 715,
+  "beds": 2,
+  "baths": 1,
+  "cars": 2,
+  "pets": true,
+  "lat": -37.780566,
+  "lng": 145.033709,
+  "available": "now",
+  "listed": "2026-10-21",
+  "walk_score": 64,
+  "transit_score": 50,
+  "agency": "PropertyNow",
+  "photos": [
+   "268293583/b46dc008f14cd0073cde0dfd-1676285748353_01_804HeidelbergRoad_027-1791933360-primary.jpg",
+   "268293585/6183641123662fad880459b4-1676285748363_302_804HeidelbergRoad_023-1791933394-primary.jpg",
+   "268293590/b88bb42fc211d4ce2dbe9ddd-1756183700046_4-1791933418-primary.jpg",
+   "268293584/8bb9c07a80551fddae61556c-1676285984316_103_804_HeidelbergRd_001-1791933387-primary.jpg"
+  ],
+  "region": "North",
+  "lga": "Darebin",
+  "cbd_km": 7.2,
+  "near": {
+   "supermarket": {
+    "m": 1746,
+    "name": "Woolworths"
+   },
+   "fresh": {
+    "m": 497,
+    "name": "Flinders Sourdough"
+   },
+   "pharmacy": {
+    "m": 1825,
+    "name": "Fairfield Pharmacy"
+   },
+   "gp": {
+    "m": 1139,
+    "name": "The Local Doctor"
+   },
+   "cafe": {
+    "m": 204,
+    "name": "Benjamin's Kitchen"
+   },
+   "park": {
+    "m": 396,
+    "name": ""
+   },
+   "gym": {
+    "m": 558,
+    "name": "Alphington Bowling Club"
+   },
+   "library": {
+    "m": 281,
+    "name": "1st Alphington Scout Group"
+   },
+   "train": {
+    "m": 418,
+    "name": "Alphington"
+   },
+   "tram": {
+    "m": 3294,
+    "name": "Stop 38: Victoria Park"
+   },
+   "bus": {
+    "m": 72,
+    "name": "Como Street/Heidelberg Road"
+   },
+   "bar": {
+    "m": 1776,
+    "name": "Wine Bar"
+   },
+   "cinema": {
+    "m": 4248,
+    "name": "Westgarth Cinema"
+   }
+  },
+  "counts": {
+   "cafe": 2,
+   "bar": 0,
+   "bus": 5,
+   "tram": 0,
+   "shops": 1
+  },
+  "met": [
+   "fresh",
+   "cafe",
+   "park",
+   "gym",
+   "library",
+   "pt"
+  ],
+  "twenty": 67,
+  "transit": 65,
+  "roads": {
+   "motorway": 1094,
+   "motorway_name": "Eastern Freeway",
+   "major": 31,
+   "major_name": "Heidelberg Road",
+   "rail": 301
+  },
+  "quiet": 70,
+  "noise_flags": [
+   "On or beside a main road (Heidelberg Road, 31 m)"
+  ],
+  "air": 75,
+  "air_flags": [
+   "Fronts a main road (Heidelberg Road)"
+  ],
+  "safety": 79,
+  "crime": {
+   "rate": 79.4,
+   "burglary": 6.3,
+   "assault": 2.3,
+   "offences": 453,
+   "population": 5702
+  },
+  "first_seen": "2026-10-15",
+  "gone": "2026-10-26"
+ },
+ {
+  "id": 6506479,
+  "url": "https://www.rent.com.au/property/3210-301-king-st-melbourne-vic-3000-6506479",
+  "type": "Apartment",
+  "street": "3210/301 King Street",
+  "suburb": "Melbourne",
+  "postcode": "3000",
+  "rent_text": "$850 pw",
+  "rent": 850,
+  "beds": 2,
+  "baths": 2,
+  "cars": 0,
+  "pets": false,
+  "lat": -37.813253,
+  "lng": 144.954004,
+  "available": "now",
+  "listed": "2026-10-06",
+  "walk_score": 99,
+  "transit_score": 100,
+  "agency": "MICM",
+  "photos": [
+   "268167282/6e784d6b3598bff357f241c6-01982380_img_01-1791255364-primary.jpg",
+   "268167326/bbf27b00a3e4d6533438045c-01982380_img_02-1791255440-primary.jpg",
+   "268167329/7404215fbfcc617fe16e76d0-01982380_img_03-1791255441-primary.jpg",
+   "268167328/7fc4459c48e27f298cae7260-01982380_img_04-1791255440-primary.jpg"
+  ],
+  "region": "Inner city",
+  "lga": "Melbourne",
+  "cbd_km": 1.3,
+  "near": {
+   "supermarket": {
+    "m": 322,
+    "name": "Crown Asian Supermarket"
+   },
+   "fresh": {
+    "m": 161,
+    "name": "Angliss Bake Shop"
+   },
+   "pharmacy": {
+    "m": 316,
+    "name": "Spencer Street Pharmacy"
+   },
+   "gp": {
+    "m": 542,
+    "name": "Era Health"
+   },
+   "cafe": {
+    "m": 75,
+    "name": "Cafe 555"
+   },
+   "park": {
+    "m": 169,
+    "name": "Angliss Rain Garden"
+   },
+   "gym": {
+    "m": 418,
+    "name": ""
+   },
+   "library": {
+    "m": 471,
+    "name": "Legal Aid public law library"
+   },
+   "train": {
+    "m": 1559,
+    "name": "North Melbourne"
+   },
+   "tram": {
+    "m": 153,
+    "name": "Stop 1: Spencer Street/La Trobe Street"
+   },
+   "bus": {
+    "m": 199,
+    "name": "King Street/Lonsdale Street"
+   },
+   "bar": {
+    "m": 62,
+    "name": "The Golden Age"
+   },
+   "cinema": {
+    "m": 1167,
+    "name": "Hoyts Melbourne Central"
+   }
+  },
+  "counts": {
+   "cafe": 181,
+   "bar": 27,
+   "bus": 13,
+   "tram": 15,
+   "shops": 24
+  },
+  "met": [
+   "supermarket",
+   "fresh",
+   "pharmacy",
+   "gp",
+   "cafe",
+   "park",
+   "gym",
+   "library",
+   "pt"
+  ],
+  "twenty": 100,
+  "transit": 70,
+  "roads": {
+   "motorway": 1433,
+   "motorway_name": "Montague-West Gate In Ramp On",
+   "major": 17,
+   "major_name": "King Street",
+   "rail": 80
+  },
+  "quiet": 45,
+  "noise_flags": [
+   "On or beside a main road (King Street, 17 m)",
+   "Railway line 80 m away",
+   "1 pub/bar within 150 m"
+  ],
+  "air": 75,
+  "air_flags": [
+   "Fronts a main road (King Street)"
+  ],
+  "safety": 0,
+  "crime": {
+   "rate": 457.6,
+   "burglary": 21.3,
+   "assault": 43.8,
+   "offences": 25139,
+   "population": 54941
+  },
+  "first_seen": "2026-10-15",
+  "gone": "2026-10-26"
+ },
+ {
+  "id": 6519127,
+  "url": "https://www.rent.com.au/property/517-495-rathdowne-st-carlton-vic-3053-6519127",
+  "type": "Apartment",
+  "street": "517/495 Rathdowne Street",
+  "suburb": "Carlton",
+  "postcode": "3053",
+  "rent_text": "$550 pw",
+  "rent": 550,
+  "beds": 1,
+  "baths": 1,
+  "cars": 1,
+  "pets": false,
+  "lat": -37.794194,
+  "lng": 144.970809,
+  "available": "now",
+  "listed": "2026-10-20",
+  "walk_score": 98,
+  "transit_score": 96,
+  "agency": "ASK Property Partners Pty Ltd",
+  "photos": [
+   "268380729/798c77914f09d25221e70b78-uploads_2F1594079025839-6muzygyhaxf-d80508d68cee510494ee8a235fe08212_2FRath_hero-1792455078-primary.jpg",
+   "268380801/0414710215bb8db8c17bcaca-uploads_2F1696288354850-m95rk795kkr-86072b3bd745de04fd0ccd81cb413909_2F517-495-Rathdowne-2-1792455285-primary.jpg",
+   "268380802/3964994493c8756f83495594-uploads_2F1696288354837-zfeq6hwu1yg-86072b3bd745de04fd0ccd81cb413909_2F517-495-Rathdowne-4-1792455286-primary.jpg",
+   "268380803/6c639b000cf8581805d03996-uploads_2F1696288354841-n36wq5of8o-86072b3bd745de04fd0ccd81cb413909_2F517-495-Rathdowne-5-1792455290-primary.jpg"
+  ],
+  "region": "Inner city",
+  "lga": "Melbourne",
+  "cbd_km": 2.7,
+  "near": {
+   "supermarket": {
+    "m": 285,
+    "name": "Carlton Supermarket"
+   },
+   "fresh": {
+    "m": 513,
+    "name": "The French Lettuce"
+   },
+   "pharmacy": {
+    "m": 510,
+    "name": "Schneier Pharmacy"
+   },
+   "gp": {
+    "m": 518,
+    "name": "Elgin Medical Centre"
+   },
+   "cafe": {
+    "m": 133,
+    "name": "Bistro Two Dozen"
+   },
+   "park": {
+    "m": 99,
+    "name": "Reeves Street Park"
+   },
+   "gym": {
+    "m": 168,
+    "name": "Carlton Baths"
+   },
+   "library": {
+    "m": 558,
+    "name": "Carlton Neighbourhood Learning Centre"
+   },
+   "train": {
+    "m": 2791,
+    "name": "Victoria Park"
+   },
+   "tram": {
+    "m": 311,
+    "name": "Stop 113: Lytton Street"
+   },
+   "bus": {
+    "m": 84,
+    "name": "Carlton Baths/Rathdowne Street"
+   },
+   "bar": {
+    "m": 453,
+    "name": "The Motley Front Bar"
+   },
+   "cinema": {
+    "m": 610,
+    "name": "Cinema Nova"
+   }
+  },
+  "counts": {
+   "cafe": 57,
+   "bar": 10,
+   "bus": 7,
+   "tram": 7,
+   "shops": 16
+  },
+  "met": [
+   "supermarket",
+   "fresh",
+   "pharmacy",
+   "gp",
+   "cafe",
+   "park",
+   "gym",
+   "library",
+   "pt"
+  ],
+  "twenty": 100,
+  "transit": 55,
+  "roads": {
+   "motorway": 1609,
+   "motorway_name": "Alexandra Parade",
+   "major": 178,
+   "major_name": "Princes Street",
+   "rail": 994
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 11,
+  "crime": {
+   "rate": 197.7,
+   "burglary": 16.7,
+   "assault": 12.2,
+   "offences": 3174,
+   "population": 16055
+  },
+  "first_seen": "2026-10-21",
+  "gone": "2026-10-26"
+ },
+ {
+  "id": 5111636,
+  "url": "https://www.rent.com.au/property/3-727-729-south-rd-bentleigh-east-vic-3165-5111636",
+  "type": "Unit",
+  "street": "3/727-729 South Road",
+  "suburb": "Bentleigh East",
+  "postcode": "3165",
+  "rent_text": "$565 pw",
+  "rent": 565,
+  "beds": 2,
+  "baths": 1,
+  "cars": 1,
+  "pets": false,
+  "lat": -37.936272,
+  "lng": 145.064071,
+  "available": "now",
+  "listed": "2026-09-29",
+  "walk_score": 76,
+  "transit_score": 42,
+  "agency": "Metropole Properties Melbourne Pty Ltd",
+  "photos": [
+   "268070483/b88a343d904528308aca84a6-584b9205_2D6fbd_2D8b40_2D5af8_2D98ebf1ec8825-1790644014-primary.jpg",
+   "268070819/21eb381992894ec4e5be6e50-b9759f66_2Df662_2Dce14_2D736f_2D4b6cbdd65c3e-1790644270-primary.jpg",
+   "268070821/c966609697d05df08bd3cd6d-52a21911_2D9cd3_2D9082_2D3759_2D7fb3a7ab45dc-1790644270-primary.jpg",
+   "268070822/96d1ef468b0bcbdc0185c6e1-c4dfd0a0_2D372e_2D9cee_2De63f_2De4ffa77cf7a3-1790644272-primary.jpg"
+  ],
+  "region": "South-east",
+  "lga": "Glen Eira",
+  "cbd_km": 15.6,
+  "near": {
+   "supermarket": {
+    "m": 327,
+    "name": "Foodworks"
+   },
+   "fresh": {
+    "m": 327,
+    "name": "Wonder Fresh"
+   },
+   "pharmacy": {
+    "m": 327,
+    "name": "Advantage Pharmacy"
+   },
+   "gp": {
+    "m": 1420,
+    "name": "4Cyte Pathology & PCR tests"
+   },
+   "cafe": {
+    "m": 217,
+    "name": "Cool Bean Kitchen Burger bar"
+   },
+   "park": {
+    "m": 58,
+    "name": ""
+   },
+   "gym": {
+    "m": 823,
+    "name": "The Sports Clinic of Football"
+   },
+   "library": {
+    "m": 1709,
+    "name": "1st Moorabbin Central Scout Hall"
+   },
+   "train": {
+    "m": 3081,
+    "name": "Highett"
+   },
+   "tram": {
+    "m": 6178,
+    "name": "Stop 68: Koornang Road"
+   },
+   "bus": {
+    "m": 97,
+    "name": "Sullivan St/South Rd"
+   },
+   "bar": {
+    "m": 519,
+    "name": "Sandbelt Hotel"
+   },
+   "cinema": {
+    "m": 3524,
+    "name": "Village Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 6,
+   "bar": 1,
+   "bus": 4,
+   "tram": 0,
+   "shops": 4
+  },
+  "met": [
+   "supermarket",
+   "fresh",
+   "pharmacy",
+   "cafe",
+   "park"
+  ],
+  "twenty": 56,
+  "transit": 20,
+  "roads": {
+   "motorway": 5460,
+   "motorway_name": "Mornington Peninsula Freeway",
+   "major": 43,
+   "major_name": "South Road",
+   "rail": 2355
+  },
+  "quiet": 70,
+  "noise_flags": [
+   "On or beside a main road (South Road, 43 m)"
+  ],
+  "air": 75,
+  "air_flags": [
+   "Fronts a main road (South Road)"
+  ],
+  "safety": 100,
+  "crime": {
+   "rate": 37.4,
+   "burglary": 2.8,
+   "assault": 3.8,
+   "offences": 1129,
+   "population": 30159
+  },
+  "first_seen": "2026-09-29",
+  "gone": "2026-10-26"
+ },
+ {
+  "id": 6523203,
+  "url": "https://www.rent.com.au/property/1-45-army-rd-boronia-vic-3155-6523203",
+  "type": "House",
+  "street": "1/45 Army Road",
+  "suburb": "Boronia",
+  "postcode": "3155",
+  "rent_text": "$590 pw",
+  "rent": 590,
+  "beds": 2,
+  "baths": 1,
+  "cars": 1,
+  "pets": true,
+  "lat": -37.842655,
+  "lng": 145.292647,
+  "available": "12th November 2026",
+  "listed": "2026-10-23",
+  "walk_score": 46,
+  "transit_score": 37,
+  "agency": "OBrien Real Estate Wantirna ",
+  "photos": [
+   "268468415/92f25fbef790bd6c21209ea9-1787615242251362875364792-1792733939-primary.jpg",
+   "268468578/45792c57f4a6ac715001e020-1787615284251184243605387-1792734092-primary.jpg",
+   "268468576/75750dc1a2fc7e6e220bc75f-1787615284919435283221081-1792734092-primary.jpg",
+   "268468579/29dbd68a56de2d78e87f53dc-1787615307866831789511393-1792734092-primary.jpg"
+  ],
+  "region": "East",
+  "lga": "Knox",
+  "cbd_km": 28.7,
+  "near": {
+   "supermarket": {
+    "m": 807,
+    "name": "IGA"
+   },
+   "fresh": {
+    "m": 768,
+    "name": "Alchester Village Bakery"
+   },
+   "pharmacy": {
+    "m": 817,
+    "name": "Boronia Heights Pharmacy"
+   },
+   "gp": {
+    "m": 1977,
+    "name": "Colchester Medical Centre"
+   },
+   "cafe": {
+    "m": 727,
+    "name": "Lunch Shop"
+   },
+   "park": {
+    "m": 142,
+    "name": ""
+   },
+   "gym": {
+    "m": 2033,
+    "name": ""
+   },
+   "library": {
+    "m": 1567,
+    "name": "Miller's Homestead"
+   },
+   "train": {
+    "m": 2735,
+    "name": "Boronia"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 472,
+    "name": "Baldwin Ave/Mountain Hwy"
+   },
+   "bar": {
+    "m": 1777,
+    "name": "Hard Road Brewing"
+   },
+   "cinema": {
+    "m": 2873,
+    "name": "Metro Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 6,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 2
+  },
+  "met": [
+   "fresh",
+   "cafe",
+   "park"
+  ],
+  "twenty": 33,
+  "transit": 10,
+  "roads": {
+   "motorway": 9999,
+   "motorway_name": "",
+   "major": 370,
+   "major_name": "Mountain Highway",
+   "rail": 1639
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 76,
+  "crime": {
+   "rate": 85.9,
+   "burglary": 4.8,
+   "assault": 7.9,
+   "offences": 2028,
+   "population": 23607
+  },
+  "first_seen": "2026-10-24",
+  "gone": "2026-10-26"
+ },
+ {
+  "id": 6517425,
+  "url": "https://www.rent.com.au/property/24-alexandra-pde-fitzroy-vic-3065-6517425",
+  "type": "House",
+  "street": "24 Alexandra Parade",
+  "suburb": "Fitzroy",
+  "postcode": "3065",
+  "rent_text": "$790 pw",
+  "rent": 790,
+  "beds": 2,
+  "baths": 1,
+  "cars": 1,
+  "pets": true,
+  "lat": -37.793393,
+  "lng": 144.976841,
+  "available": "now",
+  "listed": "2026-10-17",
+  "walk_score": 98,
+  "transit_score": 88,
+  "agency": "RentBetter",
+  "photos": [
+   "268352635/32104e2b1d09658d5b1a77fc-993194ebcfe3c1ff4a209ce2b403a33379a4a707218f18d96bb24329e1c4aa37-1792215378-primary.jpg",
+   "268352636/cba143f4c02412527f07961b-c4487db130433a56c463cab4a3fba7c607e2a974ec92a6cd1b84eab03b090572-1792215393-primary.jpg",
+   "268352637/3e1bfb8f2e1924d7f13c3e06-b6b31a405690f13766ff897ce247f4697003daec8f2a38e43eafd3086fae3166-1792215393-primary.jpg",
+   "268352638/31754b06d71c14720fe3fa17-0c03a6210009e8a9d1bb382e7d2faa3b97b83157cc98a70bc1423afeacbfaba7-1792215393-primary.jpg"
+  ],
+  "region": "Inner city",
+  "lga": "Yarra",
+  "cbd_km": 2.9,
+  "near": {
+   "supermarket": {
+    "m": 326,
+    "name": "Fitzroy IGA"
+   },
+   "fresh": {
+    "m": 232,
+    "name": "The French Lettuce"
+   },
+   "pharmacy": {
+    "m": 260,
+    "name": "Patel's Pharmacy"
+   },
+   "gp": {
+    "m": 506,
+    "name": "North Fitzroy Specialist Centre"
+   },
+   "cafe": {
+    "m": 247,
+    "name": "Industry Beans"
+   },
+   "park": {
+    "m": 91,
+    "name": "Father Little Reserve"
+   },
+   "gym": {
+    "m": 245,
+    "name": "Body Fit Training"
+   },
+   "library": {
+    "m": 211,
+    "name": "Carlton Neighbourhood Learning Centre"
+   },
+   "train": {
+    "m": 2172,
+    "name": "Victoria Park"
+   },
+   "tram": {
+    "m": 224,
+    "name": "Stop 15: Alexandra Parade"
+   },
+   "bus": {
+    "m": 89,
+    "name": "Nicholson Street/Alexandra Parade"
+   },
+   "bar": {
+    "m": 207,
+    "name": "Commercial Club Hotel"
+   },
+   "cinema": {
+    "m": 1192,
+    "name": "Cinema Nova"
+   }
+  },
+  "counts": {
+   "cafe": 71,
+   "bar": 33,
+   "bus": 3,
+   "tram": 10,
+   "shops": 16
+  },
+  "met": [
+   "supermarket",
+   "fresh",
+   "pharmacy",
+   "gp",
+   "cafe",
+   "park",
+   "gym",
+   "library",
+   "pt"
+  ],
+  "twenty": 100,
+  "transit": 55,
+  "roads": {
+   "motorway": 1082,
+   "motorway_name": "Alexandra Parade",
+   "major": 22,
+   "major_name": "Alexandra Parade",
+   "rail": 1450
+  },
+  "quiet": 70,
+  "noise_flags": [
+   "On or beside a main road (Alexandra Parade, 22 m)"
+  ],
+  "air": 75,
+  "air_flags": [
+   "Fronts a main road (Alexandra Parade)"
+  ],
+  "safety": 0,
+  "crime": {
+   "rate": 283.6,
+   "burglary": 20.6,
+   "assault": 25.5,
+   "offences": 2958,
+   "population": 10431
+  },
+  "first_seen": "2026-10-17",
+  "gone": "2026-10-26"
+ },
+ {
+  "id": 6493371,
+  "url": "https://www.rent.com.au/property/49-bakewell-st-cranbourne-vic-3977-6493371",
+  "type": "House",
+  "street": "49 Bakewell Street",
+  "suburb": "Cranbourne",
+  "postcode": "3977",
+  "rent_text": "$500 pw",
+  "rent": 500,
+  "beds": 2,
+  "baths": 1,
+  "cars": 5,
+  "pets": null,
+  "lat": -38.111247,
+  "lng": 145.290003,
+  "available": "now",
+  "listed": "2026-09-20",
+  "walk_score": 66,
+  "transit_score": 49,
+  "agency": "PropertyNow",
+  "photos": [
+   "267951473/62b42100aa6d81bc39845d4e-1789823529210_IMG_0990-1789864165-primary.jpeg",
+   "267951480/a22f50e1121267dcfd7d928c-1789823529210_IMG_0964-1789864359-primary.jpeg",
+   "267951481/0058254eebec4f70c5b46f19-1789823529210_IMG_0965-1789864360-primary.jpeg",
+   "267951482/4a4d8d9272fe008637e5f8fe-1789823529210_IMG_0961-1789864361-primary.jpeg"
+  ],
+  "region": "South-east",
+  "lga": "Casey",
+  "cbd_km": 43.1,
+  "near": {
+   "supermarket": {
+    "m": 662,
+    "name": "Aldi"
+   },
+   "fresh": {
+    "m": 621,
+    "name": "Gold Sunshine Hot Bread"
+   },
+   "pharmacy": {
+    "m": 825,
+    "name": "Pharmacy 4 Less"
+   },
+   "gp": {
+    "m": 720,
+    "name": "Unique Medical Centre"
+   },
+   "cafe": {
+    "m": 739,
+    "name": "Bros Espresso Bar"
+   },
+   "park": {
+    "m": 924,
+    "name": "Casey Traffic School Park"
+   },
+   "gym": {
+    "m": 702,
+    "name": "Casey Stadium"
+   },
+   "library": {
+    "m": 735,
+    "name": "Cranbourne Library"
+   },
+   "train": {
+    "m": 1965,
+    "name": "Cranbourne"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 399,
+    "name": "Narre Warren-Cranbourne Rd/Berwick-Cranbourne Rd"
+   },
+   "bar": {
+    "m": 759,
+    "name": "Kelly's"
+   },
+   "cinema": {
+    "m": 9999,
+    "name": ""
+   }
+  },
+  "counts": {
+   "cafe": 8,
+   "bar": 1,
+   "bus": 1,
+   "tram": 0,
+   "shops": 4
+  },
+  "met": [
+   "supermarket",
+   "fresh",
+   "gp",
+   "cafe",
+   "gym",
+   "library"
+  ],
+  "twenty": 67,
+  "transit": 35,
+  "roads": {
+   "motorway": 8793,
+   "motorway_name": "Princes Freeway",
+   "major": 44,
+   "major_name": "Narre Warren Road",
+   "rail": 1350
+  },
+  "quiet": 70,
+  "noise_flags": [
+   "On or beside a main road (Narre Warren Road, 44 m)"
+  ],
+  "air": 75,
+  "air_flags": [
+   "Fronts a main road (Narre Warren Road)"
+  ],
+  "safety": 4,
+  "crime": {
+   "rate": 209.8,
+   "burglary": 9.2,
+   "assault": 20.8,
+   "offences": 4464,
+   "population": 21281
+  },
+  "first_seen": "2026-10-08",
+  "gone": "2026-10-26"
  },
  {
   "id": 5916511,
@@ -620398,1324 +621140,5 @@
   },
   "first_seen": "2026-09-07",
   "gone": "2026-10-12"
- },
- {
-  "id": 6487159,
-  "url": "https://www.rent.com.au/property/8-38-burke-rd-malvern-east-vic-3145-6487159",
-  "type": "Apartment",
-  "street": "8/38 Burke Road",
-  "suburb": "Malvern East",
-  "postcode": "3145",
-  "rent_text": "$495 pw",
-  "rent": 495,
-  "beds": 2,
-  "baths": 1,
-  "cars": 1,
-  "pets": true,
-  "lat": -37.874773,
-  "lng": 145.048596,
-  "available": "now",
-  "listed": "2026-09-13",
-  "walk_score": 91,
-  "transit_score": 77,
-  "agency": "Geoff Nixon Real Estate - Caulfield South",
-  "region": "Inner city",
-  "lga": "Stonnington",
-  "cbd_km": 9.5,
-  "near": {
-   "supermarket": {
-    "m": 1197,
-    "name": "Coles"
-   },
-   "fresh": {
-    "m": 196,
-    "name": ""
-   },
-   "pharmacy": {
-    "m": 1100,
-    "name": "Sophie Tanaghow"
-   },
-   "gp": {
-    "m": 1048,
-    "name": "Naturopath"
-   },
-   "cafe": {
-    "m": 164,
-    "name": "Indian Harvest Restaurant"
-   },
-   "park": {
-    "m": 654,
-    "name": "East Caulfield Reserve"
-   },
-   "gym": {
-    "m": 337,
-    "name": ""
-   },
-   "library": {
-    "m": 2101,
-    "name": "Carnegie Children's Multipurpose Centre"
-   },
-   "train": {
-    "m": 1841,
-    "name": "Darling"
-   },
-   "tram": {
-    "m": 179,
-    "name": "Stop 60: Burke Road"
-   },
-   "bus": {
-    "m": 153,
-    "name": "Waverley Road"
-   },
-   "bar": {
-    "m": 829,
-    "name": "Zagame's Caulfield Hotel"
-   },
-   "cinema": {
-    "m": 4292,
-    "name": "Hoyts"
-   }
-  },
-  "counts": {
-   "cafe": 25,
-   "bar": 0,
-   "bus": 2,
-   "tram": 6,
-   "shops": 2
-  },
-  "met": [
-   "fresh",
-   "cafe",
-   "park",
-   "gym",
-   "pt"
-  ],
-  "twenty": 56,
-  "transit": 70,
-  "roads": {
-   "motorway": 1429,
-   "motorway_name": "Monash Freeway",
-   "major": 17,
-   "major_name": "Burke Road",
-   "rail": 562
-  },
-  "quiet": 70,
-  "noise_flags": [
-   "On or beside a main road (Burke Road, 17 m)"
-  ],
-  "air": 75,
-  "air_flags": [
-   "Fronts a main road (Burke Road)"
-  ],
-  "safety": 53,
-  "crime": {
-   "rate": 125.7,
-   "burglary": 7.7,
-   "assault": 6.0,
-   "offences": 2803,
-   "population": 22296
-  },
-  "first_seen": "2026-09-13",
-  "gone": "2026-10-11"
- },
- {
-  "id": 6448069,
-  "url": "https://www.rent.com.au/property/2001-296-little-lonsdale-st-melbourne-vic-3000-6448069",
-  "type": "Apartment",
-  "street": "2001/296 Little Lonsdale Street",
-  "suburb": "Melbourne",
-  "postcode": "3000",
-  "rent_text": "$600 pw",
-  "rent": 600,
-  "beds": 1,
-  "baths": 1,
-  "cars": 0,
-  "pets": false,
-  "lat": -37.811516,
-  "lng": 144.960652,
-  "available": "now",
-  "listed": "2026-08-01",
-  "walk_score": 100,
-  "transit_score": 100,
-  "agency": "No Agent Property",
-  "region": "Inner city",
-  "lga": "Melbourne",
-  "cbd_km": 0.9,
-  "near": {
-   "supermarket": {
-    "m": 46,
-    "name": "Mr. Rhino Supermarket"
-   },
-   "fresh": {
-    "m": 122,
-    "name": "Azuo"
-   },
-   "pharmacy": {
-    "m": 36,
-    "name": "Urban Pharmacy"
-   },
-   "gp": {
-    "m": 530,
-    "name": "Medical Hub @ RMIT"
-   },
-   "cafe": {
-    "m": 31,
-    "name": "Sinjeon"
-   },
-   "park": {
-    "m": 468,
-    "name": ""
-   },
-   "gym": {
-    "m": 142,
-    "name": "F45 Training"
-   },
-   "library": {
-    "m": 465,
-    "name": "Law Library Victoria"
-   },
-   "train": {
-    "m": 1194,
-    "name": "Flinders Street"
-   },
-   "tram": {
-    "m": 138,
-    "name": "Stop 5: Melbourne Central Station"
-   },
-   "bus": {
-    "m": 163,
-    "name": "Hardware Lane/Lonsdale Street"
-   },
-   "bar": {
-    "m": 63,
-    "name": "La La Land"
-   },
-   "cinema": {
-    "m": 377,
-    "name": "Hoyts Melbourne Central"
-   }
-  },
-  "counts": {
-   "cafe": 506,
-   "bar": 67,
-   "bus": 10,
-   "tram": 21,
-   "shops": 68
-  },
-  "met": [
-   "supermarket",
-   "fresh",
-   "pharmacy",
-   "gp",
-   "cafe",
-   "park",
-   "gym",
-   "library",
-   "pt"
-  ],
-  "twenty": 100,
-  "transit": 85,
-  "roads": {
-   "motorway": 1556,
-   "motorway_name": "West Gate In - Power Ramp Of",
-   "major": 550,
-   "major_name": "32;55",
-   "rail": 99
-  },
-  "quiet": 70,
-  "noise_flags": [
-   "Railway line 99 m away",
-   "2 pub/bar within 150 m"
-  ],
-  "air": 100,
-  "air_flags": [],
-  "safety": 0,
-  "crime": {
-   "rate": 457.6,
-   "burglary": 21.3,
-   "assault": 43.8,
-   "offences": 25139,
-   "population": 54941
-  },
-  "first_seen": "2026-08-01",
-  "gone": "2026-10-11"
- },
- {
-  "id": 6470837,
-  "url": "https://www.rent.com.au/property/2-aston-pl-bayswater-vic-3153-6470837",
-  "type": "Townhouse",
-  "street": "2 Aston Place",
-  "suburb": "Bayswater",
-  "postcode": "3153",
-  "rent_text": "$545 pw",
-  "rent": 545,
-  "beds": 2,
-  "baths": 2,
-  "cars": 1,
-  "pets": false,
-  "lat": -37.842975,
-  "lng": 145.261695,
-  "available": "now",
-  "listed": "2026-08-25",
-  "walk_score": 82,
-  "transit_score": 47,
-  "agency": "Tran Real Estate",
-  "region": "East",
-  "lga": "Knox",
-  "cbd_km": 26.0,
-  "near": {
-   "supermarket": {
-    "m": 321,
-    "name": "Woolworths"
-   },
-   "fresh": {
-    "m": 608,
-    "name": "Swiss Cakes & Bread"
-   },
-   "pharmacy": {
-    "m": 438,
-    "name": "Amcal"
-   },
-   "gp": {
-    "m": 1580,
-    "name": "Mount Medical Centre"
-   },
-   "cafe": {
-    "m": 159,
-    "name": "Best Dumpling"
-   },
-   "park": {
-    "m": 511,
-    "name": ""
-   },
-   "gym": {
-    "m": 547,
-    "name": ""
-   },
-   "library": {
-    "m": 605,
-    "name": "Bayswater Library"
-   },
-   "train": {
-    "m": 755,
-    "name": "Bayswater"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 162,
-    "name": "Bayswater Uniting Church/Mountain Hwy"
-   },
-   "bar": {
-    "m": 890,
-    "name": "Bayswater Hotel"
-   },
-   "cinema": {
-    "m": 3890,
-    "name": "Metro Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 13,
-   "bar": 0,
-   "bus": 2,
-   "tram": 0,
-   "shops": 7
-  },
-  "met": [
-   "supermarket",
-   "fresh",
-   "pharmacy",
-   "cafe",
-   "park",
-   "gym",
-   "library",
-   "pt"
-  ],
-  "twenty": 89,
-  "transit": 65,
-  "roads": {
-   "motorway": 3817,
-   "motorway_name": "EastLink Onramp",
-   "major": 118,
-   "major_name": "Mountain Highway",
-   "rail": 531
-  },
-  "quiet": 85,
-  "noise_flags": [
-   "Main road 118 m away (Mountain Highway)"
-  ],
-  "air": 88,
-  "air_flags": [
-   "Main road 118 m away (Mountain Highway)"
-  ],
-  "safety": 71,
-  "crime": {
-   "rate": 93.9,
-   "burglary": 4.9,
-   "assault": 7.7,
-   "offences": 1152,
-   "population": 12262
-  },
-  "first_seen": "2026-08-25",
-  "gone": "2026-10-11"
- },
- {
-  "id": 5826559,
-  "url": "https://www.rent.com.au/property/1-6-henry-ave-hallam-vic-3803-5826559",
-  "type": "Unit",
-  "street": "1/6 Henry Avenue",
-  "suburb": "Hallam",
-  "postcode": "3803",
-  "rent_text": "$515 pw",
-  "rent": 515,
-  "beds": 2,
-  "baths": 1,
-  "cars": 2,
-  "pets": false,
-  "lat": -37.999515,
-  "lng": 145.2553,
-  "available": "now",
-  "listed": "2026-01-08",
-  "walk_score": 35,
-  "transit_score": 37,
-  "agency": "Raine & Horne Hallam",
-  "region": "South-east",
-  "lga": "Casey",
-  "cbd_km": 32.3,
-  "near": {
-   "supermarket": {
-    "m": 1154,
-    "name": "Woolworths"
-   },
-   "fresh": {
-    "m": 778,
-    "name": "Zoki's"
-   },
-   "pharmacy": {
-    "m": 1144,
-    "name": "Direct Chemist Outlet"
-   },
-   "gp": {
-    "m": 1124,
-    "name": "Dandenong Village Medical Centre"
-   },
-   "cafe": {
-    "m": 348,
-    "name": "Cup Cup And Away"
-   },
-   "park": {
-    "m": 203,
-    "name": "Kays Avenue Reserve"
-   },
-   "gym": {
-    "m": 729,
-    "name": "Freeway Sports"
-   },
-   "library": {
-    "m": 187,
-    "name": "Hallam Community Learning Centre"
-   },
-   "train": {
-    "m": 9999,
-    "name": ""
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 264,
-    "name": "Hallam Community Centre/Frawley Rd"
-   },
-   "bar": {
-    "m": 701,
-    "name": "Brownstone Micro Brewery"
-   },
-   "cinema": {
-    "m": 4639,
-    "name": "Reading Cinema"
-   }
-  },
-  "counts": {
-   "cafe": 2,
-   "bar": 1,
-   "bus": 4,
-   "tram": 0,
-   "shops": 1
-  },
-  "met": [
-   "fresh",
-   "cafe",
-   "park",
-   "gym",
-   "library"
-  ],
-  "twenty": 56,
-  "transit": 20,
-  "roads": {
-   "motorway": 242,
-   "motorway_name": "South Gippsland Freeway",
-   "major": 481,
-   "major_name": "Princes Highway",
-   "rail": 1487
-  },
-  "quiet": 75,
-  "noise_flags": [
-   "Freeway 242 m away (South Gippsland Freeway)"
-  ],
-  "air": 80,
-  "air_flags": [
-   "Freeway 242 m away (South Gippsland Freeway)"
-  ],
-  "safety": 40,
-  "crime": {
-   "rate": 147.9,
-   "burglary": 12.5,
-   "assault": 10.4,
-   "offences": 1679,
-   "population": 11355
-  },
-  "first_seen": "2026-01-08",
-  "gone": "2026-10-11"
- },
- {
-  "id": 6496369,
-  "url": "https://www.rent.com.au/property/2a-ananda-ct-watsonia-vic-3087-6496369",
-  "type": "House",
-  "street": "2A Ananda Court",
-  "suburb": "Watsonia",
-  "postcode": "3087",
-  "rent_text": "$550 pw",
-  "rent": 550,
-  "beds": 2,
-  "baths": 1,
-  "cars": 2,
-  "pets": false,
-  "lat": -37.714716,
-  "lng": 145.075553,
-  "available": "now",
-  "listed": "2026-09-23",
-  "walk_score": 48,
-  "transit_score": 49,
-  "agency": "iHomes Real Estate",
-  "region": "North",
-  "lga": "Banyule",
-  "cbd_km": 14.9,
-  "near": {
-   "supermarket": {
-    "m": 1143,
-    "name": "Andres SUPA IGA"
-   },
-   "fresh": {
-    "m": 946,
-    "name": "Watsonia Bake House"
-   },
-   "pharmacy": {
-    "m": 957,
-    "name": "Pharmacy 4 Less"
-   },
-   "gp": {
-    "m": 785,
-    "name": "Watsonia Central Medical Clinic"
-   },
-   "cafe": {
-    "m": 778,
-    "name": "Wish Upon a Cupcake"
-   },
-   "park": {
-    "m": 437,
-    "name": "Aminya Reserve"
-   },
-   "gym": {
-    "m": 65,
-    "name": ""
-   },
-   "library": {
-    "m": 1103,
-    "name": "Watsonia Library"
-   },
-   "train": {
-    "m": 1085,
-    "name": "Watsonia"
-   },
-   "tram": {
-    "m": 2737,
-    "name": "Stop 64: Mount Cooper Drive"
-   },
-   "bus": {
-    "m": 320,
-    "name": "Wungan Street/Dunvegan Crescent"
-   },
-   "bar": {
-    "m": 845,
-    "name": "Watsonia Wine Bar"
-   },
-   "cinema": {
-    "m": 3494,
-    "name": "Hoyts"
-   }
-  },
-  "counts": {
-   "cafe": 1,
-   "bar": 0,
-   "bus": 1,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "gp",
-   "cafe",
-   "park",
-   "gym"
-  ],
-  "twenty": 44,
-  "transit": 50,
-  "roads": {
-   "motorway": 2761,
-   "motorway_name": "Metropolitan Ring Road",
-   "major": 560,
-   "major_name": "Greensborough Highway",
-   "rail": 266
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 79,
-  "crime": {
-   "rate": 80.5,
-   "burglary": 7.1,
-   "assault": 4.5,
-   "offences": 431,
-   "population": 5352
-  },
-  "first_seen": "2026-09-23",
-  "gone": "2026-10-11"
- },
- {
-  "id": 6489290,
-  "url": "https://www.rent.com.au/property/3--4-19-cypress-ave-boronia-vic-3155-6489290",
-  "type": "Townhouse",
-  "street": "3 & 4/19 Cypress Avenue",
-  "suburb": "Boronia",
-  "postcode": "3155",
-  "rent_text": "$560 pw",
-  "rent": 560,
-  "beds": 2,
-  "baths": 1,
-  "cars": 1,
-  "pets": false,
-  "lat": -37.864547,
-  "lng": 145.281639,
-  "available": "now",
-  "listed": "2026-09-15",
-  "walk_score": 86,
-  "transit_score": 49,
-  "agency": "Tran Real Estate",
-  "region": "East",
-  "lga": "Knox",
-  "cbd_km": 28.1,
-  "near": {
-   "supermarket": {
-    "m": 497,
-    "name": "NQR Boronia"
-   },
-   "fresh": {
-    "m": 502,
-    "name": "Farmer Joe's Market"
-   },
-   "pharmacy": {
-    "m": 300,
-    "name": "PharmaSave"
-   },
-   "gp": {
-    "m": 693,
-    "name": "Myhealth"
-   },
-   "cafe": {
-    "m": 364,
-    "name": "Great Indian Wave"
-   },
-   "park": {
-    "m": 301,
-    "name": "Boronia Park"
-   },
-   "gym": {
-    "m": 307,
-    "name": "Body@Boronia"
-   },
-   "library": {
-    "m": 345,
-    "name": "Boronia Library"
-   },
-   "train": {
-    "m": 670,
-    "name": "Boronia"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 123,
-    "name": "Cypress Ave/Springfield Rd"
-   },
-   "bar": {
-    "m": 473,
-    "name": "Boronia RSL"
-   },
-   "cinema": {
-    "m": 623,
-    "name": "Metro Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 14,
-   "bar": 2,
-   "bus": 8,
-   "tram": 0,
-   "shops": 8
-  },
-  "met": [
-   "supermarket",
-   "fresh",
-   "pharmacy",
-   "gp",
-   "cafe",
-   "park",
-   "gym",
-   "library",
-   "pt"
-  ],
-  "twenty": 100,
-  "transit": 65,
-  "roads": {
-   "motorway": 7638,
-   "motorway_name": "",
-   "major": 249,
-   "major_name": "Boronia Road",
-   "rail": 402
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 76,
-  "crime": {
-   "rate": 85.9,
-   "burglary": 4.8,
-   "assault": 7.9,
-   "offences": 2028,
-   "population": 23607
-  },
-  "first_seen": "2026-09-15",
-  "gone": "2026-10-11"
- },
- {
-  "id": 6506228,
-  "url": "https://www.rent.com.au/property/10-edward-st-brunswick-vic-3056-6506228",
-  "type": "Townhouse",
-  "street": "10 Edward Street",
-  "suburb": "Brunswick",
-  "postcode": "3056",
-  "rent_text": "$605 pw",
-  "rent": 605,
-  "beds": 2,
-  "baths": 1,
-  "cars": 0,
-  "pets": true,
-  "lat": -37.774054,
-  "lng": 144.961549,
-  "available": "now",
-  "listed": "2026-10-06",
-  "walk_score": 98,
-  "transit_score": 74,
-  "agency": "Property Listings",
-  "region": "North",
-  "lga": "Merri-bek",
-  "cbd_km": 4.9,
-  "near": {
-   "supermarket": {
-    "m": 163,
-    "name": "Cheaper Buy Miles"
-   },
-   "fresh": {
-    "m": 256,
-    "name": "Iris The Bakery"
-   },
-   "pharmacy": {
-    "m": 87,
-    "name": "Better Leaf"
-   },
-   "gp": {
-    "m": 136,
-    "name": "Lotus Medical Centre"
-   },
-   "cafe": {
-    "m": 19,
-    "name": "Juanita Peaches"
-   },
-   "park": {
-    "m": 190,
-    "name": "Wilson Avenue Park"
-   },
-   "gym": {
-    "m": 51,
-    "name": "Good Times Pilates"
-   },
-   "library": {
-    "m": 344,
-    "name": "Brunswick Library"
-   },
-   "train": {
-    "m": 344,
-    "name": "Jewell"
-   },
-   "tram": {
-    "m": 111,
-    "name": "Stop 20: Barkly Square Shopping Centre"
-   },
-   "bus": {
-    "m": 219,
-    "name": "Barkly Square Shopping Centre/Weston Street"
-   },
-   "bar": {
-    "m": 129,
-    "name": "Cornish Arms Hotel"
-   },
-   "cinema": {
-    "m": 1151,
-    "name": "Brunswick Picture House"
-   }
-  },
-  "counts": {
-   "cafe": 56,
-   "bar": 17,
-   "bus": 5,
-   "tram": 6,
-   "shops": 17
-  },
-  "met": [
-   "supermarket",
-   "fresh",
-   "pharmacy",
-   "gp",
-   "cafe",
-   "park",
-   "gym",
-   "library",
-   "pt"
-  ],
-  "twenty": 100,
-  "transit": 100,
-  "roads": {
-   "motorway": 2077,
-   "motorway_name": "CityLink In-Flemington Ramp Of",
-   "major": 52,
-   "major_name": "Sydney Road",
-   "rail": 228
-  },
-  "quiet": 67,
-  "noise_flags": [
-   "Main road 52 m away (Sydney Road)",
-   "Railway line 228 m away",
-   "2 pub/bar within 150 m"
-  ],
-  "air": 88,
-  "air_flags": [
-   "Main road 52 m away (Sydney Road)"
-  ],
-  "safety": 65,
-  "crime": {
-   "rate": 104.9,
-   "burglary": 8.5,
-   "assault": 7.6,
-   "offences": 2611,
-   "population": 24896
-  },
-  "first_seen": "2026-10-07",
-  "gone": "2026-10-11"
- },
- {
-  "id": 4965211,
-  "url": "https://www.rent.com.au/property/5-117-kerr-st-fitzroy-vic-3065-4965211",
-  "type": "Apartment",
-  "street": "5/117 Kerr Street",
-  "suburb": "Fitzroy",
-  "postcode": "3065",
-  "rent_text": "$450 pw",
-  "rent": 450,
-  "beds": 1,
-  "baths": 1,
-  "cars": 1,
-  "pets": true,
-  "lat": -37.796647,
-  "lng": 144.979526,
-  "available": "now",
-  "listed": "2026-06-18",
-  "walk_score": 100,
-  "transit_score": 87,
-  "agency": "Lease a Property",
-  "region": "Inner city",
-  "lga": "Yarra",
-  "cbd_km": 2.6,
-  "near": {
-   "supermarket": {
-    "m": 238,
-    "name": "Cheaper Buy Miles"
-   },
-   "fresh": {
-    "m": 72,
-    "name": "Babka Bakery Cafe"
-   },
-   "pharmacy": {
-    "m": 424,
-    "name": "Patel's Pharmacy"
-   },
-   "gp": {
-    "m": 639,
-    "name": "Victorian Aboriginal Health Service"
-   },
-   "cafe": {
-    "m": 67,
-    "name": "Nico's Sandwich Deli"
-   },
-   "park": {
-    "m": 384,
-    "name": "Garryowen Park"
-   },
-   "gym": {
-    "m": 207,
-    "name": "Fitness 24 Hours"
-   },
-   "library": {
-    "m": 630,
-    "name": "Russian House Library"
-   },
-   "train": {
-    "m": 1740,
-    "name": "Victoria Park"
-   },
-   "tram": {
-    "m": 162,
-    "name": "Stop 17: Leicester Street"
-   },
-   "bus": {
-    "m": 269,
-    "name": "Brunswick Street/Johnston Street"
-   },
-   "bar": {
-    "m": 79,
-    "name": "G & Tea Gin Garden"
-   },
-   "cinema": {
-    "m": 1326,
-    "name": "Cinema Nova"
-   }
-  },
-  "counts": {
-   "cafe": 104,
-   "bar": 52,
-   "bus": 4,
-   "tram": 14,
-   "shops": 31
-  },
-  "met": [
-   "supermarket",
-   "fresh",
-   "pharmacy",
-   "gp",
-   "cafe",
-   "park",
-   "gym",
-   "library",
-   "pt"
-  ],
-  "twenty": 100,
-  "transit": 70,
-  "roads": {
-   "motorway": 888,
-   "motorway_name": "Alexandra Parade",
-   "major": 347,
-   "major_name": "Alexandra Parade",
-   "rail": 1333
-  },
-  "quiet": 85,
-  "noise_flags": [
-   "12 pub/bar within 150 m"
-  ],
-  "air": 100,
-  "air_flags": [],
-  "safety": 0,
-  "crime": {
-   "rate": 283.6,
-   "burglary": 20.6,
-   "assault": 25.5,
-   "offences": 2958,
-   "population": 10431
-  },
-  "first_seen": "2026-06-18",
-  "gone": "2026-10-11"
- },
- {
-  "id": 5294214,
-  "url": "https://www.rent.com.au/property/3-4-lithgow-ave-blackburn-vic-3130-5294214",
-  "type": "Unit",
-  "street": "3/4 Lithgow Avenue",
-  "suburb": "Blackburn",
-  "postcode": "3130",
-  "rent_text": "$500 pw",
-  "rent": 500,
-  "beds": 1,
-  "baths": 1,
-  "cars": 1,
-  "pets": null,
-  "lat": -37.819019,
-  "lng": 145.146157,
-  "available": "now",
-  "listed": "2026-01-08",
-  "walk_score": 82,
-  "transit_score": 64,
-  "agency": "Elite Real Estate",
-  "region": "East",
-  "lga": "Whitehorse",
-  "cbd_km": 15.7,
-  "near": {
-   "supermarket": {
-    "m": 570,
-    "name": "IGA"
-   },
-   "fresh": {
-    "m": 549,
-    "name": "Haru Bakery House"
-   },
-   "pharmacy": {
-    "m": 2486,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 1408,
-    "name": "Blackburn Clinic"
-   },
-   "cafe": {
-    "m": 414,
-    "name": "Enrik's"
-   },
-   "park": {
-    "m": 139,
-    "name": ""
-   },
-   "gym": {
-    "m": 431,
-    "name": ""
-   },
-   "library": {
-    "m": 841,
-    "name": "Blackburn Library"
-   },
-   "train": {
-    "m": 649,
-    "name": "Laburnum"
-   },
-   "tram": {
-    "m": 2756,
-    "name": "Stop 58: Box Hill Central"
-   },
-   "bus": {
-    "m": 197,
-    "name": "Downing St/Whitehorse Rd"
-   },
-   "bar": {
-    "m": 738,
-    "name": "Blackburn Hotel"
-   },
-   "cinema": {
-    "m": 3189,
-    "name": "Hoyts"
-   }
-  },
-  "counts": {
-   "cafe": 10,
-   "bar": 1,
-   "bus": 3,
-   "tram": 0,
-   "shops": 3
-  },
-  "met": [
-   "supermarket",
-   "fresh",
-   "cafe",
-   "park",
-   "gym",
-   "pt"
-  ],
-  "twenty": 67,
-  "transit": 65,
-  "roads": {
-   "motorway": 2108,
-   "motorway_name": "Eastern Freeway",
-   "major": 156,
-   "major_name": "Whitehorse Road",
-   "rail": 100
-  },
-  "quiet": 92,
-  "noise_flags": [
-   "Railway line 100 m away"
-  ],
-  "air": 100,
-  "air_flags": [],
-  "safety": 88,
-  "crime": {
-   "rate": 63.9,
-   "burglary": 6.6,
-   "assault": 4.7,
-   "offences": 925,
-   "population": 14478
-  },
-  "first_seen": "2026-01-08",
-  "gone": "2026-10-11"
- },
- {
-  "id": 5777073,
-  "url": "https://www.rent.com.au/property/1-88-murray-rd-preston-vic-3072-5777073",
-  "type": "Townhouse",
-  "street": "1/88 Murray Road",
-  "suburb": "Preston",
-  "postcode": "3072",
-  "rent_text": "$600 pw",
-  "rent": 600,
-  "beds": 2,
-  "baths": 1,
-  "cars": 1,
-  "pets": false,
-  "lat": -37.739796,
-  "lng": 145.021964,
-  "available": "20th October 2026",
-  "listed": "2026-09-04",
-  "walk_score": 74,
-  "transit_score": 64,
-  "agency": "Property Listings",
-  "region": "North",
-  "lga": "Darebin",
-  "cbd_km": 9.9,
-  "near": {
-   "supermarket": {
-    "m": 729,
-    "name": "Coles"
-   },
-   "fresh": {
-    "m": 779,
-    "name": "Bakers Delight"
-   },
-   "pharmacy": {
-    "m": 702,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 702,
-    "name": "Northland Medical Centre"
-   },
-   "cafe": {
-    "m": 238,
-    "name": "Pho Liem"
-   },
-   "park": {
-    "m": 434,
-    "name": "T.W. Blake Park"
-   },
-   "gym": {
-    "m": 600,
-    "name": ""
-   },
-   "library": {
-    "m": 1036,
-    "name": "East Preston Senior Citizens and Youth Club Centre"
-   },
-   "train": {
-    "m": 2636,
-    "name": "Bell"
-   },
-   "tram": {
-    "m": 1160,
-    "name": "Stop 50: Sylvester Grove"
-   },
-   "bus": {
-    "m": 30,
-    "name": "Kallista Court/Murray Road"
-   },
-   "bar": {
-    "m": 987,
-    "name": "Olympic Hotel"
-   },
-   "cinema": {
-    "m": 1051,
-    "name": "Hoyts"
-   }
-  },
-  "counts": {
-   "cafe": 3,
-   "bar": 0,
-   "bus": 6,
-   "tram": 0,
-   "shops": 6
-  },
-  "met": [
-   "supermarket",
-   "fresh",
-   "pharmacy",
-   "gp",
-   "cafe",
-   "park",
-   "gym"
-  ],
-  "twenty": 78,
-  "transit": 20,
-  "roads": {
-   "motorway": 5533,
-   "motorway_name": "Chandler Highway Offramp",
-   "major": 127,
-   "major_name": "Albert Street",
-   "rail": 1865
-  },
-  "quiet": 85,
-  "noise_flags": [
-   "Main road 127 m away (Albert Street)"
-  ],
-  "air": 88,
-  "air_flags": [
-   "Main road 127 m away (Albert Street)"
-  ],
-  "safety": 23,
-  "crime": {
-   "rate": 176.2,
-   "burglary": 9.0,
-   "assault": 10.5,
-   "offences": 5954,
-   "population": 33790
-  },
-  "first_seen": "2026-09-04",
-  "gone": "2026-10-11"
- },
- {
-  "id": 5728127,
-  "url": "https://www.rent.com.au/property/5-7-saltley-st-south-kingsville-vic-3015-5728127",
-  "type": "Apartment",
-  "street": "5/7 Saltley Street",
-  "suburb": "South Kingsville",
-  "postcode": "3015",
-  "rent_text": "$440 pw",
-  "rent": 440,
-  "beds": 2,
-  "baths": 1,
-  "cars": 1,
-  "pets": false,
-  "lat": -37.82704,
-  "lng": 144.868424,
-  "available": "now",
-  "listed": "2026-09-15",
-  "walk_score": 64,
-  "transit_score": 40,
-  "agency": "The Agency Albert Park",
-  "region": "West",
-  "lga": "Hobsons Bay",
-  "cbd_km": 8.7,
-  "near": {
-   "supermarket": {
-    "m": 1815,
-    "name": "Woolworths"
-   },
-   "fresh": {
-    "m": 549,
-    "name": "Bretzel Biz"
-   },
-   "pharmacy": {
-    "m": 532,
-    "name": "Scown's Pharmacy"
-   },
-   "gp": {
-    "m": 1950,
-    "name": "Inner West Medical Centre"
-   },
-   "cafe": {
-    "m": 517,
-    "name": "Tandoori Flames"
-   },
-   "park": {
-    "m": 201,
-    "name": "Edwards Reserve"
-   },
-   "gym": {
-    "m": 1377,
-    "name": "Footscray Lacrosse Club"
-   },
-   "library": {
-    "m": 1354,
-    "name": "Spotswood-Kingsville RSL"
-   },
-   "train": {
-    "m": 4035,
-    "name": "Tottenham"
-   },
-   "tram": {
-    "m": 5253,
-    "name": "Stop 64: Footscray Station"
-   },
-   "bus": {
-    "m": 250,
-    "name": "Paxton St/Brunel St"
-   },
-   "bar": {
-    "m": 2108,
-    "name": "Spottiswoode Hotel"
-   },
-   "cinema": {
-    "m": 2995,
-    "name": "Sun Theatre"
-   }
-  },
-  "counts": {
-   "cafe": 4,
-   "bar": 0,
-   "bus": 6,
-   "tram": 0,
-   "shops": 2
-  },
-  "met": [
-   "fresh",
-   "pharmacy",
-   "cafe",
-   "park"
-  ],
-  "twenty": 44,
-  "transit": 20,
-  "roads": {
-   "motorway": 277,
-   "motorway_name": "West Gate Freeway (Local)",
-   "major": 1097,
-   "major_name": "Melbourne Road",
-   "rail": 150
-  },
-  "quiet": 67,
-  "noise_flags": [
-   "Freeway 277 m away (West Gate Freeway (Local))",
-   "Railway line 150 m away"
-  ],
-  "air": 80,
-  "air_flags": [
-   "Freeway 277 m away (West Gate Freeway (Local))"
-  ],
-  "safety": 97,
-  "crime": {
-   "rate": 49.2,
-   "burglary": 5.1,
-   "assault": 2.8,
-   "offences": 106,
-   "population": 2156
-  },
-  "first_seen": "2026-09-15",
-  "gone": "2026-10-11"
  }
 ]
