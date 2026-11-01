@@ -44,11 +44,6 @@
   "cav": [],
   "listings": 9
  },
- "Absolute Agents": {
-  "reviews": null,
-  "cav": [],
-  "listings": 1
- },
  "Ace Real Estate": {
   "reviews": null,
   "cav": [],
@@ -427,7 +422,7 @@
     "context": "parate bank accounts not attached to the legitimate claimants kontossis was employed as an agent by national real estate aust pty ltd acn 005 500 541 trading as barry plant reservoir when the alleged conduct occurred it is not suggested that his employer was aware of these actions and the agency has since repaid the funds consumer affairs victoria has commen"
    }
   ],
-  "listings": 24
+  "listings": 25
  },
  "Barry Plant Rowville": {
   "reviews": {
@@ -658,7 +653,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 38
+  "listings": 39
  },
  "Belle Property Sandringham": {
   "reviews": {
@@ -1268,7 +1263,7 @@
  "Crane Real Estate Caroline Springs": {
   "reviews": null,
   "cav": [],
-  "listings": 3
+  "listings": 2
  },
  "Create Real Estate": {
   "reviews": null,
@@ -2202,7 +2197,7 @@
  "House N Keys Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 17
+  "listings": 18
  },
  "Housemark": {
   "reviews": null,
@@ -2460,6 +2455,11 @@
   "reviews": null,
   "cav": [],
   "listings": 7
+ },
+ "Krish Real Estate": {
+  "reviews": null,
+  "cav": [],
+  "listings": 1
  },
  "L Real Estate (Melbourne)": {
   "reviews": null,
@@ -2898,7 +2898,7 @@
    "level": "office"
   },
   "cav": [],
-  "listings": 190
+  "listings": 189
  },
  "Maddison Estate Agents": {
   "reviews": null,
@@ -2966,7 +2966,7 @@
  "Maxion Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 13
+  "listings": 12
  },
  "McDonald Upton Real Estate": {
   "reviews": {
@@ -3583,7 +3583,7 @@
  "P Di Natale Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 38
+  "listings": 37
  },
  "PROTIQUE Realty": {
   "reviews": null,
@@ -3623,7 +3623,7 @@
  "Pioneer Realty Australia": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 3
  },
  "Pivotal Property Management": {
   "reviews": null,
@@ -3661,7 +3661,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 22
+  "listings": 21
  },
  "Professionals A E Gibson & Co": {
   "reviews": {
@@ -3994,24 +3994,6 @@
   "listings": 1
  },
  "Raine & Horne Gisborne": {
-  "reviews": {
-   "slug": "raine-horne",
-   "name": "Raine & Horne",
-   "reviews": 369,
-   "rating": 1.8,
-   "dist": [
-    302,
-    11,
-    2,
-    6,
-    48
-   ],
-   "level": "brand"
-  },
-  "cav": [],
-  "listings": 1
- },
- "Raine & Horne Hallam": {
   "reviews": {
    "slug": "raine-horne",
    "name": "Raine & Horne",
@@ -4492,7 +4474,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 44
+  "listings": 46
  },
  "Ray White Macleod": {
   "reviews": {
@@ -4951,7 +4933,7 @@
    "level": "brand"
   },
   "cav": [],
-  "listings": 129
+  "listings": 128
  },
  "Richardson Property Group": {
   "reviews": null,
@@ -5498,7 +5480,7 @@
  "Winex Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 2
+  "listings": 1
  },
  "Wise Earth Property Group": {
   "reviews": null,
@@ -5518,7 +5500,7 @@
  "Wood n Bricks Real Estate": {
   "reviews": null,
   "cav": [],
-  "listings": 4
+  "listings": 3
  },
  "Woodards (South Eastern)": {
   "reviews": {

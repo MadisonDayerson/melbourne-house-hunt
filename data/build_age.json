@@ -2431,6 +2431,7 @@
   "has_text": true
  },
  "6529922": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -2442,8 +2443,7 @@
    "Split system",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6521790": {
   "lodging": null,
@@ -3201,6 +3201,20 @@
    "Gas"
   ],
   "has_text": true
+ },
+ "6529989": {
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Ducted heating",
+   "Split system"
+  ],
+  "has_text": true,
+  "lodging": null
  },
  "5738612": {
   "lodging": null,
@@ -6177,21 +6191,6 @@
   "comfort": [],
   "has_text": true
  },
- "5937012": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Ducted heating",
-   "Evaporative cooling",
-   "Dishwasher"
-  ],
-  "has_text": true
- },
  "6512148": {
   "lodging": null,
   "year": null,
@@ -7171,20 +7170,6 @@
   ],
   "has_text": true
  },
- "6487112": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Ducted heating",
-   "Evaporative cooling"
-  ],
-  "has_text": true
- },
  "6483688": {
   "lodging": null,
   "year": 2026,
@@ -7426,6 +7411,17 @@
   "renovated": false,
   "comfort": [],
   "has_text": true
+ },
+ "6530015": {
+  "year": 2012,
+  "era": "Likely 2000s or newer (new-estate suburb)",
+  "bucket": "modern",
+  "confidence": "suburb guess",
+  "evidence": null,
+  "renovated": false,
+  "comfort": [],
+  "has_text": true,
+  "lodging": null
  },
  "6529840": {
   "lodging": null,
@@ -8169,17 +8165,6 @@
   ],
   "has_text": true
  },
- "5576873": {
-  "lodging": null,
-  "year": 2012,
-  "era": "Likely 2000s or newer (new-estate suburb)",
-  "bucket": "modern",
-  "confidence": "suburb guess",
-  "evidence": null,
-  "renovated": false,
-  "comfort": [],
-  "has_text": true
- },
  "6415569": {
   "lodging": null,
   "year": null,
@@ -8786,17 +8771,6 @@
   "comfort": [],
   "has_text": true
  },
- "6505758": {
-  "lodging": null,
-  "year": 2026,
-  "era": "Brand new",
-  "bucket": "new",
-  "confidence": "stated",
-  "evidence": "\u2026Brand New Four-Bedroom Townhome Living in Avondal\u2026",
-  "renovated": false,
-  "comfort": [],
-  "has_text": true
- },
  "6501453": {
   "lodging": null,
   "year": null,
@@ -9124,6 +9098,7 @@
   "has_text": true
  },
  "6193051": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -9131,8 +9106,7 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6528995": {
   "lodging": null,
@@ -9724,22 +9698,6 @@
   ],
   "has_text": true
  },
- "6505831": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Solar",
-   "Ducted heating",
-   "Ducted cooling",
-   "Evaporative cooling"
-  ],
-  "has_text": true
- },
  "6505654": {
   "lodging": null,
   "year": null,
@@ -10285,17 +10243,6 @@
   "has_text": true
  },
  "5996818": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [],
-  "has_text": true
- },
- "6522600": {
   "lodging": null,
   "year": null,
   "era": "Unknown",
@@ -13542,6 +13489,7 @@
   "has_text": true
  },
  "6529901": {
+  "lodging": null,
   "year": 2026,
   "era": "Brand new",
   "bucket": "new",
@@ -13553,8 +13501,7 @@
    "Split system",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6528854": {
   "lodging": null,
@@ -21966,6 +21913,21 @@
   "comfort": [],
   "has_text": true
  },
+ "6530046": {
+  "year": 2026,
+  "era": "Brand new",
+  "bucket": "new",
+  "confidence": "stated",
+  "evidence": "\u2026Brand-New Home with Premium Features!!! . Be the first\u2026",
+  "renovated": false,
+  "comfort": [
+   "Solar",
+   "Ducted heating",
+   "Evaporative cooling"
+  ],
+  "has_text": true,
+  "lodging": null
+ },
  "6523135": {
   "lodging": null,
   "year": 2026,
@@ -23850,6 +23812,17 @@
   ],
   "has_text": true
  },
+ "5576873": {
+  "lodging": null,
+  "year": 2012,
+  "era": "Likely 2000s or newer (new-estate suburb)",
+  "bucket": "modern",
+  "confidence": "suburb guess",
+  "evidence": null,
+  "renovated": false,
+  "comfort": [],
+  "has_text": true
+ },
  "6474694": {
   "lodging": null,
   "year": 2012,
@@ -25299,6 +25272,73 @@
   "comfort": [
    "Dishwasher"
   ],
+  "has_text": true
+ },
+ "5937012": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Ducted heating",
+   "Evaporative cooling",
+   "Dishwasher"
+  ],
+  "has_text": true
+ },
+ "6487112": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Ducted heating",
+   "Evaporative cooling"
+  ],
+  "has_text": true
+ },
+ "6505758": {
+  "lodging": null,
+  "year": 2026,
+  "era": "Brand new",
+  "bucket": "new",
+  "confidence": "stated",
+  "evidence": "\u2026Brand New Four-Bedroom Townhome Living in Avondal\u2026",
+  "renovated": false,
+  "comfort": [],
+  "has_text": true
+ },
+ "6505831": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Solar",
+   "Ducted heating",
+   "Ducted cooling",
+   "Evaporative cooling"
+  ],
+  "has_text": true
+ },
+ "6522600": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [],
   "has_text": true
  },
  "6499090": {
@@ -35327,66 +35367,6 @@
   ],
   "has_text": true
  },
- "5932537": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [],
-  "has_text": false
- },
- "5352330": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Ducted heating",
-   "Evaporative cooling"
-  ],
-  "has_text": true
- },
- "6269026": {
-  "lodging": null,
-  "year": 2012,
-  "era": "Likely 2000s or newer (new-estate suburb)",
-  "bucket": "modern",
-  "confidence": "suburb guess",
-  "evidence": null,
-  "renovated": false,
-  "comfort": [],
-  "has_text": true
- },
- "6269348": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": true,
-  "comfort": [],
-  "has_text": true
- },
- "6480674": {
-  "lodging": null,
-  "year": 2026,
-  "era": "Brand new",
-  "bucket": "new",
-  "confidence": "stated",
-  "evidence": "\u2026, this beautiful home features: \u00f0\u009f\u008f\u00a1 Brand-new family home with a contemporary design. \u00f0\u009f\u009b\u008f Four\u2026",
-  "renovated": false,
-  "comfort": [
-   "Ducted cooling"
-  ],
-  "has_text": true
- },
  "6523884": {
   "lodging": null,
   "year": null,
@@ -37655,6 +37635,7 @@
   "has_text": true
  },
  "6529904": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -37662,8 +37643,7 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6517580": {
   "lodging": null,
@@ -39002,17 +38982,6 @@
   ],
   "has_text": true
  },
- "6481601": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [],
-  "has_text": true
- },
  "6465820": {
   "lodging": null,
   "year": null,
@@ -39051,6 +39020,19 @@
   "renovated": false,
   "comfort": [],
   "has_text": true
+ },
+ "6529985": {
+  "year": 2026,
+  "era": "Brand new",
+  "bucket": "new",
+  "confidence": "stated",
+  "evidence": "\u2026n crisp, neutral tones, complemented by brand-new, high-quality blinds and stylish, prem\u2026",
+  "renovated": false,
+  "comfort": [
+   "Split system"
+  ],
+  "has_text": true,
+  "lodging": null
  },
  "6524338": {
   "lodging": null,
@@ -42576,6 +42558,19 @@
    "Gas"
   ],
   "has_text": true
+ },
+ "6530012": {
+  "year": 1920,
+  "era": "Period home (before 1940)",
+  "bucket": "period",
+  "confidence": "style",
+  "evidence": "\u2026Combining spacious interiors, charming period features and a private outdoor retreat, this hom\u2026",
+  "renovated": false,
+  "comfort": [
+   "Split system"
+  ],
+  "has_text": true,
+  "lodging": null
  },
  "6527178": {
   "lodging": null,
@@ -53815,6 +53810,7 @@
   "has_text": true
  },
  "6529961": {
+  "lodging": null,
   "year": 2012,
   "era": "Likely 2000s or newer (new-estate suburb)",
   "bucket": "modern",
@@ -53825,8 +53821,7 @@
    "Split system",
    "Dishwasher"
   ],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6529028": {
   "lodging": null,
@@ -60163,17 +60158,6 @@
   ],
   "has_text": true
  },
- "6516158": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [],
-  "has_text": true
- },
  "6301392": {
   "lodging": null,
   "year": null,
@@ -65292,6 +65276,28 @@
   "comfort": [
    "Ducted heating"
   ],
+  "has_text": true
+ },
+ "6481601": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [],
+  "has_text": true
+ },
+ "6516158": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [],
   "has_text": true
  },
  "6505738": {
@@ -77531,21 +77537,6 @@
   ],
   "has_text": true
  },
- "6267053": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Ducted heating",
-   "Split system",
-   "Evaporative cooling"
-  ],
-  "has_text": true
- },
  "6433069": {
   "lodging": null,
   "year": null,
@@ -79488,19 +79479,6 @@
   "comfort": [
    "Split system",
    "Dishwasher"
-  ],
-  "has_text": true
- },
- "6522032": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Split system"
   ],
   "has_text": true
  },
@@ -84340,6 +84318,25 @@
   "comfort": [],
   "has_text": true
  },
+ "6429129": {
+  "lodging": [
+   "rooming",
+   "Rooming house",
+   "\u2026ringhill Estate, Cranbourne. This well-maintained rooming house offers a selection of private rooms, making it an\u2026"
+  ],
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Solar",
+   "Ducted heating",
+   "Dishwasher"
+  ],
+  "has_text": true
+ },
  "6529540": {
   "lodging": null,
   "year": null,
@@ -84426,25 +84423,6 @@
   "comfort": [
    "Solar",
    "Split system",
-   "Dishwasher"
-  ],
-  "has_text": true
- },
- "6429129": {
-  "lodging": [
-   "rooming",
-   "Rooming house",
-   "\u2026ringhill Estate, Cranbourne. This well-maintained rooming house offers a selection of private rooms, making it an\u2026"
-  ],
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Solar",
-   "Ducted heating",
    "Dishwasher"
   ],
   "has_text": true
@@ -84750,6 +84728,23 @@
   ],
   "has_text": true
  },
+ "6396487": {
+  "lodging": [
+   "rooming",
+   "Rooming house",
+   "\u2026e, and hassle-free living in this well-maintained rooming house perfectly positioned in the heart of Hoppers Cros\u2026"
+  ],
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Air conditioning"
+  ],
+  "has_text": true
+ },
  "6529547": {
   "lodging": null,
   "year": null,
@@ -84777,23 +84772,6 @@
   "renovated": false,
   "comfort": [
    "Split system",
-   "Air conditioning"
-  ],
-  "has_text": true
- },
- "6396487": {
-  "lodging": [
-   "rooming",
-   "Rooming house",
-   "\u2026e, and hassle-free living in this well-maintained rooming house perfectly positioned in the heart of Hoppers Cros\u2026"
-  ],
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
    "Air conditioning"
   ],
   "has_text": true
@@ -89818,6 +89796,21 @@
   "comfort": [],
   "has_text": true
  },
+ "6530075": {
+  "year": 2026,
+  "era": "Brand new",
+  "bucket": "new",
+  "confidence": "stated",
+  "evidence": "\u2026Located in the heart of town sits this brand new designer built 2 level Townhouse. Offe\u2026",
+  "renovated": false,
+  "comfort": [
+   "Split system",
+   "Dishwasher",
+   "Air conditioning"
+  ],
+  "has_text": true,
+  "lodging": null
+ },
  "6529097": {
   "lodging": null,
   "year": null,
@@ -90275,21 +90268,6 @@
   "renovated": false,
   "comfort": [
    "Split system"
-  ],
-  "has_text": true
- },
- "6483180": {
-  "lodging": null,
-  "year": 2023,
-  "era": "Near new (about 1\u20135 years)",
-  "bucket": "new",
-  "confidence": "stated",
-  "evidence": "\u2026cinct and Reservoir train station, this near new two bedroom unit is sure to impress.\u2026",
-  "renovated": false,
-  "comfort": [
-   "Ducted heating",
-   "Split system",
-   "Dishwasher"
   ],
   "has_text": true
  },
@@ -93640,20 +93618,6 @@
   "comfort": [],
   "has_text": true
  },
- "6491910": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Split system",
-   "Dishwasher"
-  ],
-  "has_text": true
- },
  "6490143": {
   "lodging": null,
   "year": null,
@@ -96261,19 +96225,6 @@
   "comfort": [],
   "has_text": true
  },
- "6180298": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Split system"
-  ],
-  "has_text": true
- },
  "6514395": {
   "lodging": null,
   "year": null,
@@ -96783,6 +96734,11 @@
   "has_text": true
  },
  "6118071": {
+  "lodging": [
+   "student",
+   "Student accommodation",
+   "\u2026Student Accommodation 800m to Monash University Clayton . Looking for s\u2026"
+  ],
   "year": 2026,
   "era": "Brand new",
   "bucket": "new",
@@ -96792,12 +96748,7 @@
   "comfort": [
    "Split system"
   ],
-  "has_text": true,
-  "lodging": [
-   "student",
-   "Student accommodation",
-   "\u2026Student Accommodation 800m to Monash University Clayton . Looking for s\u2026"
-  ]
+  "has_text": true
  },
  "6529537": {
   "lodging": null,
@@ -99091,17 +99042,6 @@
   ],
   "has_text": true
  },
- "6520112": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [],
-  "has_text": true
- },
  "6519154": {
   "lodging": null,
   "year": null,
@@ -100269,6 +100209,31 @@
   "comfort": [
    "Split system"
   ],
+  "has_text": true
+ },
+ "5934130": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Split system",
+   "Dishwasher"
+  ],
+  "has_text": true
+ },
+ "5951238": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [],
   "has_text": true
  },
  "6489959": {
@@ -102237,19 +102202,6 @@
   "comfort": [],
   "has_text": true
  },
- "6221161": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Split system"
-  ],
-  "has_text": true
- },
  "5550945": {
   "lodging": null,
   "year": null,
@@ -102297,31 +102249,6 @@
   "comfort": [
    "Dishwasher"
   ],
-  "has_text": true
- },
- "5934130": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Split system",
-   "Dishwasher"
-  ],
-  "has_text": true
- },
- "5951238": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [],
   "has_text": true
  },
  "6006892": {
@@ -106871,6 +106798,17 @@
   ],
   "has_text": true
  },
+ "6530022": {
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [],
+  "has_text": true,
+  "lodging": null
+ },
  "6529570": {
   "lodging": null,
   "year": null,
@@ -107020,6 +106958,19 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
+  "has_text": true
+ },
+ "5519173": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Split system"
+  ],
   "has_text": true
  },
  "6027453": {
@@ -107414,17 +107365,6 @@
   ],
   "has_text": true
  },
- "6521062": {
-  "lodging": null,
-  "year": 1930,
-  "era": "Interwar (1918\u20131940)",
-  "bucket": "period",
-  "confidence": "style",
-  "evidence": "\u2026et. It exudes the timeless charm of the art deco period and embodies the essence of St K\u2026",
-  "renovated": false,
-  "comfort": [],
-  "has_text": true
- },
  "6520996": {
   "lodging": null,
   "year": null,
@@ -107579,19 +107519,6 @@
   "comfort": [
    "Split system",
    "Dishwasher"
-  ],
-  "has_text": true
- },
- "5519173": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Split system"
   ],
   "has_text": true
  },
@@ -108041,21 +107968,6 @@
   "comfort": [
    "Split system",
    "Dishwasher"
-  ],
-  "has_text": true
- },
- "6490990": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": true,
-  "comfort": [
-   "Split system",
-   "Reverse cycle",
-   "Air conditioning"
   ],
   "has_text": true
  },
@@ -108951,19 +108863,6 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true
- },
- "4903287": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Double glazing"
-  ],
   "has_text": true
  },
  "6181838": {
@@ -110002,21 +109901,6 @@
   "has_text": true
  },
  "6521264": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": true,
-  "comfort": [
-   "Double glazing",
-   "Split system",
-   "Dishwasher"
-  ],
-  "has_text": true
- },
- "6521254": {
   "lodging": null,
   "year": null,
   "era": "Unknown",
@@ -111237,19 +111121,6 @@
   ],
   "has_text": true
  },
- "6520629": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Split system"
-  ],
-  "has_text": true
- },
  "6512763": {
   "lodging": null,
   "year": null,
@@ -112413,6 +112284,11 @@
   "has_text": true
  },
  "6529968": {
+  "lodging": [
+   "room",
+   "Room in a shared house",
+   "\u2026d paste link in your browser) This is an ensuite room in a sharehouse that is almost 20sqm located in one of the m\u2026"
+  ],
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -112420,12 +112296,7 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": [
-   "room",
-   "Room in a shared house",
-   "\u2026d paste link in your browser) This is an ensuite room in a sharehouse that is almost 20sqm located in one of the m\u2026"
-  ]
+  "has_text": true
  },
  "4718722": {
   "lodging": null,
@@ -117007,6 +116878,11 @@
   "has_text": true
  },
  "6529936": {
+  "lodging": [
+   "room",
+   "Room in a shared house",
+   "\u2026ished Ensuite Room near Glenroy Station | Premium Co-living . Phone enquiries - please call 1300 594 794 and\u2026"
+  ],
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -117016,12 +116892,7 @@
   "comfort": [
    "Split system"
   ],
-  "has_text": true,
-  "lodging": [
-   "room",
-   "Room in a shared house",
-   "\u2026ished Ensuite Room near Glenroy Station | Premium Co-living . Phone enquiries - please call 1300 594 794 and\u2026"
-  ]
+  "has_text": true
  },
  "6528377": {
   "lodging": null,
@@ -120262,19 +120133,6 @@
   "comfort": [],
   "has_text": true
  },
- "6522294": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": true,
-  "comfort": [
-   "Split system"
-  ],
-  "has_text": true
- },
  "6498881": {
   "lodging": null,
   "year": null,
@@ -121565,17 +121423,6 @@
   ],
   "has_text": true
  },
- "6499412": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [],
-  "has_text": true
- },
  "6448357": {
   "lodging": null,
   "year": null,
@@ -121864,6 +121711,7 @@
   "has_text": true
  },
  "5086496": {
+  "lodging": null,
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",
@@ -121871,8 +121719,7 @@
   "evidence": null,
   "renovated": false,
   "comfort": [],
-  "has_text": true,
-  "lodging": null
+  "has_text": true
  },
  "6529813": {
   "lodging": null,
@@ -122689,17 +122536,6 @@
   "comfort": [
    "Split system"
   ],
-  "has_text": true
- },
- "6509378": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [],
   "has_text": true
  },
  "6501759": {
@@ -124305,17 +124141,6 @@
   "comfort": [],
   "has_text": true
  },
- "6506778": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [],
-  "has_text": true
- },
  "802649": {
   "lodging": [
    "student",
@@ -124824,19 +124649,6 @@
   "renovated": false,
   "comfort": [
    "Ducted heating"
-  ],
-  "has_text": true
- },
- "6520472": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Split system"
   ],
   "has_text": true
  },
@@ -125456,17 +125268,6 @@
   ],
   "has_text": true
  },
- "6514180": {
-  "lodging": null,
-  "year": 2026,
-  "era": "Brand new",
-  "bucket": "new",
-  "confidence": "stated",
-  "evidence": "\u2026d on Melbournes most iconic curve, this brand new 2-bedroom residence at Trackside House\u2026",
-  "renovated": false,
-  "comfort": [],
-  "has_text": true
- },
  "6513508": {
   "lodging": null,
   "year": 2026,
@@ -126057,6 +125858,222 @@
   "comfort": [
    "Split system"
   ],
+  "has_text": true
+ },
+ "6522032": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Split system"
+  ],
+  "has_text": true
+ },
+ "6483180": {
+  "lodging": null,
+  "year": 2023,
+  "era": "Near new (about 1\u20135 years)",
+  "bucket": "new",
+  "confidence": "stated",
+  "evidence": "\u2026cinct and Reservoir train station, this near new two bedroom unit is sure to impress.\u2026",
+  "renovated": false,
+  "comfort": [
+   "Ducted heating",
+   "Split system",
+   "Dishwasher"
+  ],
+  "has_text": true
+ },
+ "6491910": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Split system",
+   "Dishwasher"
+  ],
+  "has_text": true
+ },
+ "6180298": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Split system"
+  ],
+  "has_text": true
+ },
+ "6520112": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [],
+  "has_text": true
+ },
+ "6221161": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Split system"
+  ],
+  "has_text": true
+ },
+ "6521062": {
+  "lodging": null,
+  "year": 1930,
+  "era": "Interwar (1918\u20131940)",
+  "bucket": "period",
+  "confidence": "style",
+  "evidence": "\u2026et. It exudes the timeless charm of the art deco period and embodies the essence of St K\u2026",
+  "renovated": false,
+  "comfort": [],
+  "has_text": true
+ },
+ "6490990": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": true,
+  "comfort": [
+   "Split system",
+   "Reverse cycle",
+   "Air conditioning"
+  ],
+  "has_text": true
+ },
+ "4903287": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Double glazing"
+  ],
+  "has_text": true
+ },
+ "6521254": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": true,
+  "comfort": [
+   "Double glazing",
+   "Split system",
+   "Dishwasher"
+  ],
+  "has_text": true
+ },
+ "6520629": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Split system"
+  ],
+  "has_text": true
+ },
+ "6522294": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": true,
+  "comfort": [
+   "Split system"
+  ],
+  "has_text": true
+ },
+ "6499412": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [],
+  "has_text": true
+ },
+ "6509378": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [],
+  "has_text": true
+ },
+ "6506778": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [],
+  "has_text": true
+ },
+ "6520472": {
+  "lodging": null,
+  "year": null,
+  "era": "Unknown",
+  "bucket": "unknown",
+  "confidence": null,
+  "evidence": null,
+  "renovated": false,
+  "comfort": [
+   "Split system"
+  ],
+  "has_text": true
+ },
+ "6514180": {
+  "lodging": null,
+  "year": 2026,
+  "era": "Brand new",
+  "bucket": "new",
+  "confidence": "stated",
+  "evidence": "\u2026d on Melbournes most iconic curve, this brand new 2-bedroom residence at Trackside House\u2026",
+  "renovated": false,
+  "comfort": [],
   "has_text": true
  },
  "6500484": {
@@ -144566,65 +144583,6 @@
  },
  "6065768": {
   "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [],
-  "has_text": true
- },
- "6269613": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Air conditioning"
-  ],
-  "has_text": true
- },
- "6266167": {
-  "lodging": null,
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Split system",
-   "Dishwasher"
-  ],
-  "has_text": true
- },
- "6264655": {
-  "lodging": [
-   "rooming",
-   "Rooming house",
-   "\u2026n a well-maintained home? . This spacious 9-room rooming house in Carrum Downs is perfect for students, working\u2026"
-  ],
-  "year": null,
-  "era": "Unknown",
-  "bucket": "unknown",
-  "confidence": null,
-  "evidence": null,
-  "renovated": false,
-  "comfort": [
-   "Split system"
-  ],
-  "has_text": true
- },
- "5625856": {
-  "lodging": [
-   "room",
-   "Room in a shared house",
-   "\u2026d and well kept property currently has a spacious room available. - Shared kitchen. - Shared bathroom facilities\u2026"
-  ],
   "year": null,
   "era": "Unknown",
   "bucket": "unknown",

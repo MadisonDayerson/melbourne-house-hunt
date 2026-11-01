@@ -1569,8 +1569,8 @@
   "street": "61 William Street",
   "suburb": "Newport",
   "postcode": "3015",
-  "rent_text": "$750 per week | $3,259 per calendar month",
-  "rent": 750,
+  "rent_text": "$700 per week | $3,041 per calendar month",
+  "rent": 700,
   "beds": 3,
   "baths": 1,
   "cars": 0,
@@ -10459,7 +10459,7 @@
   "pets": false,
   "lat": -37.840494,
   "lng": 145.002737,
-  "available": "1st November 2026",
+  "available": "now",
   "listed": "2026-10-29",
   "walk_score": 95,
   "transit_score": 85,
@@ -13285,7 +13285,7 @@
   "pets": false,
   "lat": -37.735393,
   "lng": 145.048033,
-  "available": "1st November 2026",
+  "available": "now",
   "listed": "2026-10-26",
   "walk_score": 72,
   "transit_score": 50,
@@ -21005,7 +21005,7 @@
   "pets": true,
   "lat": -37.79202,
   "lng": 145.001123,
-  "available": "1st November 2026",
+  "available": "now",
   "listed": "2026-10-05",
   "walk_score": 67,
   "transit_score": 73,
@@ -32770,127 +32770,6 @@
   "first_seen": "2026-09-11"
  },
  {
-  "id": 6481601,
-  "url": "https://www.rent.com.au/property/8-508-blackburn-rd-doncaster-east-vic-3109-6481601",
-  "type": "House",
-  "street": "8/508 Blackburn Road",
-  "suburb": "Doncaster East",
-  "postcode": "3109",
-  "rent_text": "$670 pw",
-  "rent": 670,
-  "beds": 3,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -37.761404,
-  "lng": 145.167264,
-  "available": "now",
-  "listed": "2026-09-07",
-  "walk_score": 87,
-  "transit_score": 58,
-  "agency": "Barry Plant - Eastern Group Rentals",
-  "photos": [
-   "267756935/f5defc0b223c2913fbd83e48-4fdbc6a6_2Ddde7_2Dba01_2D2337_2D687380c60490-1788757567-primary.jpg",
-   "267757226/21fafe10fc0c1df7a98628fe-001f70cb_2Dbc94_2D0909_2Dd598_2D5bc5f32ded66-1788757902-primary.jpg",
-   "267757231/773d5d971516db7688e7bf2e-84220924_2D6ea9_2Da490_2Dac5c_2D55b8dce04d46-1788757903-primary.jpg",
-   "267757232/158ab1bbcd499614ecf7864b-1a2b2b14_2D989e_2Db49f_2D30c4_2D3a411a25bf7c-1788757903-primary.jpg"
-  ],
-  "region": "East",
-  "lga": "Manningham",
-  "cbd_km": 18.7,
-  "near": {
-   "supermarket": {
-    "m": 140,
-    "name": "Woolworths"
-   },
-   "fresh": {
-    "m": 4012,
-    "name": "KFL Butchery & Seafood"
-   },
-   "pharmacy": {
-    "m": 227,
-    "name": "Priceline Pharmacy"
-   },
-   "gp": {
-    "m": 759,
-    "name": "Progress Medical Centre"
-   },
-   "cafe": {
-    "m": 226,
-    "name": "Three Red Stripes"
-   },
-   "park": {
-    "m": 216,
-    "name": "The Pines Reserve"
-   },
-   "gym": {
-    "m": 816,
-    "name": "Equilibrium Health & Fitness"
-   },
-   "library": {
-    "m": 279,
-    "name": "Pines Learning & Activity Centre"
-   },
-   "train": {
-    "m": 9999,
-    "name": ""
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 162,
-    "name": "The Pines SC (Bay 4)"
-   },
-   "bar": {
-    "m": 552,
-    "name": "Cherry Hill Tavern"
-   },
-   "cinema": {
-    "m": 5980,
-    "name": "Village Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 3,
-   "bar": 1,
-   "bus": 8,
-   "tram": 0,
-   "shops": 4
-  },
-  "met": [
-   "supermarket",
-   "pharmacy",
-   "gp",
-   "cafe",
-   "park",
-   "library"
-  ],
-  "twenty": 67,
-  "transit": 20,
-  "roads": {
-   "motorway": 4394,
-   "motorway_name": "Blackburn Road Offramp",
-   "major": 229,
-   "major_name": "Reynolds Road",
-   "rail": 5378
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 100,
-  "crime": {
-   "rate": 32.0,
-   "burglary": 3.4,
-   "assault": 2.8,
-   "offences": 990,
-   "population": 30926
-  },
-  "first_seen": "2026-09-07"
- },
- {
   "id": 6465820,
   "url": "https://www.rent.com.au/property/403-200-reynolds-rd-doncaster-east-vic-3109-6465820",
   "type": "Apartment",
@@ -33255,6 +33134,123 @@
    "population": 30926
   },
   "first_seen": "2026-07-23"
+ },
+ {
+  "id": 6529985,
+  "url": "https://www.rent.com.au/property/25-christopher-dr-frankston-south-vic-3199-6529985",
+  "type": "House",
+  "street": "25 Christopher Drive",
+  "suburb": "Frankston South",
+  "postcode": "3199",
+  "rent_text": "$650 pw",
+  "rent": 650,
+  "beds": 3,
+  "baths": 1,
+  "cars": 2,
+  "pets": false,
+  "lat": -38.179867,
+  "lng": 145.136015,
+  "available": "2nd November 2026",
+  "listed": "2026-11-01",
+  "walk_score": 20,
+  "transit_score": 29,
+  "agency": "Ray White Frankston",
+  "photos": [
+   "268633537/d28fbd651ee3ed7636ed12ee-226056077__1793237397-53833-25-Christopher-Drive01-1793490197-primary.jpg",
+   "268633540/a7b4e3bc7ac7ba97bdbbb1dc-226056158__1793237430-66440-25-Christopher-Drive06-1793490214-primary.jpg",
+   "268633538/23dbd00d504a2c4ace40d5ee-226056164__1793237436-66469-25-Christopher-Drive07-1793490211-primary.jpg",
+   "268633539/17eefe74210e57963655f657-226056172__1793237440-54139-25-Christopher-Drive08-1793490214-primary.jpg"
+  ],
+  "region": "Bayside & peninsula",
+  "lga": "Frankston",
+  "cbd_km": 42.6,
+  "near": {
+   "supermarket": {
+    "m": 2383,
+    "name": "Ritchies IGA"
+   },
+   "fresh": {
+    "m": 760,
+    "name": "Pie Face"
+   },
+   "pharmacy": {
+    "m": 923,
+    "name": "Chemist Warehouse"
+   },
+   "gp": {
+    "m": 967,
+    "name": "Baxter Park Medical Centre"
+   },
+   "cafe": {
+    "m": 1844,
+    "name": "Ernie's Cafe"
+   },
+   "park": {
+    "m": 232,
+    "name": ""
+   },
+   "gym": {
+    "m": 992,
+    "name": ""
+   },
+   "library": {
+    "m": 1355,
+    "name": "Robinsons Centre"
+   },
+   "train": {
+    "m": 3466,
+    "name": "Baxter"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 229,
+    "name": "Kia Rise/Rosedale Gr"
+   },
+   "bar": {
+    "m": 3770,
+    "name": "Baxter Tavern"
+   },
+   "cinema": {
+    "m": 5363,
+    "name": "Hoyts"
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 2,
+   "tram": 0,
+   "shops": 1
+  },
+  "met": [
+   "fresh",
+   "park"
+  ],
+  "twenty": 22,
+  "transit": 20,
+  "roads": {
+   "motorway": 1962,
+   "motorway_name": "Peninsula Link In-Golf Links Ramp Of",
+   "major": 268,
+   "major_name": "Frankston-Flinders Road",
+   "rail": 2421
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 100,
+  "crime": {
+   "rate": 39.1,
+   "burglary": 2.6,
+   "assault": 2.2,
+   "offences": 736,
+   "population": 18801
+  },
+  "first_seen": "2026-11-02"
  },
  {
   "id": 6524338,
@@ -65086,6 +65082,133 @@
   "first_seen": "2026-09-18"
  },
  {
+  "id": 6530012,
+  "url": "https://www.rent.com.au/property/424-victoria-st-richmond-vic-3121-6530012",
+  "type": "House",
+  "street": "424 Victoria Street",
+  "suburb": "Richmond",
+  "postcode": "3121",
+  "rent_text": "$900 pw",
+  "rent": 900,
+  "beds": 3,
+  "baths": 1,
+  "cars": 0,
+  "pets": true,
+  "lat": -37.811227,
+  "lng": 145.005845,
+  "available": "6th November 2026",
+  "listed": "2026-11-01",
+  "walk_score": 91,
+  "transit_score": 0,
+  "agency": "Belle Property Richmond",
+  "photos": [
+   "268634264/8d3cef2df0173520b68b35f6-179297215667768352-1793512721-primary.jpg",
+   "268634265/18e82e957c87a41c5a394ece-179297215628922719-1793512728-primary.jpg",
+   "268634267/12d9f4fec99cd3efa6392a04-179297215602821532-1793512729-primary.jpg",
+   "268634266/e63cf9ac53fc608135f8bef6-179297215650750278-1793512729-primary.jpg"
+  ],
+  "region": "Inner city",
+  "lga": "Yarra",
+  "cbd_km": 3.5,
+  "near": {
+   "supermarket": {
+    "m": 194,
+    "name": "Green Square IGA plus Liquor"
+   },
+   "fresh": {
+    "m": 776,
+    "name": "Mile End Bagels"
+   },
+   "pharmacy": {
+    "m": 734,
+    "name": "Richmond Pharmacy"
+   },
+   "gp": {
+    "m": 870,
+    "name": "The Melbourne Clinic Salisbury Street Consulting Suites"
+   },
+   "cafe": {
+    "m": 159,
+    "name": "8 Layers"
+   },
+   "park": {
+    "m": 359,
+    "name": "Williams Reserve"
+   },
+   "gym": {
+    "m": 61,
+    "name": "Dukes Gym"
+   },
+   "library": {
+    "m": 1049,
+    "name": "Belgium Avenue Neighbourhood House"
+   },
+   "train": {
+    "m": 1527,
+    "name": "North Richmond"
+   },
+   "tram": {
+    "m": 120,
+    "name": "Stop 23: Flockhart Street"
+   },
+   "bus": {
+    "m": 1254,
+    "name": "Walmer Street/Studley Park Road"
+   },
+   "bar": {
+    "m": 167,
+    "name": "Terminus Hotel"
+   },
+   "cinema": {
+    "m": 734,
+    "name": "Hoyts Victoria Gardens"
+   }
+  },
+  "counts": {
+   "cafe": 15,
+   "bar": 7,
+   "bus": 0,
+   "tram": 7,
+   "shops": 4
+  },
+  "met": [
+   "supermarket",
+   "fresh",
+   "pharmacy",
+   "cafe",
+   "park",
+   "gym",
+   "pt"
+  ],
+  "twenty": 78,
+  "transit": 50,
+  "roads": {
+   "motorway": 1788,
+   "motorway_name": "Eastern Freeway",
+   "major": 17,
+   "major_name": "Victoria Street",
+   "rail": 1172
+  },
+  "quiet": 65,
+  "noise_flags": [
+   "On or beside a main road (Victoria Street, 17 m)",
+   "1 pub/bar within 150 m"
+  ],
+  "air": 75,
+  "air_flags": [
+   "Fronts a main road (Victoria Street)"
+  ],
+  "safety": 23,
+  "crime": {
+   "rate": 176.3,
+   "burglary": 15.6,
+   "assault": 13.2,
+   "offences": 5039,
+   "population": 28587
+  },
+  "first_seen": "2026-11-02"
+ },
+ {
   "id": 6527178,
   "url": "https://www.rent.com.au/property/4-16-18-abinger-st-richmond-vic-3121-6527178",
   "type": "Apartment",
@@ -72144,7 +72267,7 @@
   "pets": false,
   "lat": -37.826746,
   "lng": 145.189146,
-  "available": "1st November 2026",
+  "available": "now",
   "listed": "2026-10-28",
   "walk_score": 63,
   "transit_score": 56,
@@ -89686,10 +89809,10 @@
   "transit_score": 63,
   "agency": "Hockingstuart Preston",
   "photos": [
-   "268457010/606e94afad3da8e311b9a52d-2017500342-1792721925-primary.jpg",
-   "268457258/692427ced674e38aae402fad-179272084591296350-1792722102-primary.jpg",
-   "268457267/decefadc4b2e907e03b9ec19-179272071637640270-1792722113-primary.jpg",
-   "268457265/cba668d9cf0209743c83e5dc-179272071602297671-1792722111-primary.jpg"
+   "268634352/b25f8e1d976ac995e0e27298-2017500342-1793518902-primary.jpg",
+   "268634367/80bb25ad5fa5c601614a36f7-179272084591296350-1793518920-primary.jpg",
+   "268634368/0a54a92721b6127ddbc9bbea-179272071637640270-1793518922-primary.jpg",
+   "268634369/8c9227fb45931b926acb02ad-179272071602297671-1793518922-primary.jpg"
   ],
   "region": "North",
   "lga": "Darebin",
@@ -105727,7 +105850,7 @@
   "pets": false,
   "lat": -37.8551,
   "lng": 144.819119,
-  "available": "1st November 2026",
+  "available": "now",
   "listed": "2026-10-01",
   "walk_score": 25,
   "transit_score": 38,
@@ -122237,7 +122360,7 @@
   "pets": false,
   "lat": -37.916936,
   "lng": 145.119899,
-  "available": "1st November 2026",
+  "available": "now",
   "listed": "2026-10-28",
   "walk_score": 73,
   "transit_score": 66,
@@ -139442,7 +139565,7 @@
   "pets": false,
   "lat": -37.71896,
   "lng": 144.929878,
-  "available": "1st November 2026",
+  "available": "now",
   "listed": "2026-10-26",
   "walk_score": 47,
   "transit_score": 0,
@@ -186691,10 +186814,10 @@
   "transit_score": 60,
   "agency": "Harcourts Berwick",
   "photos": [
-   "268546136/fb6b8b26fa60bc65bdf009a7-179176561372617693-1793144319-primary.jpg",
-   "268546292/47fc3b998589da6fcc26d5e5-179176591001379463-1793144409-primary.jpg",
-   "268546293/77318163aabdf7d77f1d9559-179176561119826694-1793144409-primary.jpg",
-   "268546294/7c7ce9b6073d45720c570dac-179176561215489954-1793144409-primary.jpg"
+   "268634700/c51681b7f83c0ae16d28fbd1-179176561372617693-1793531574-primary.jpg",
+   "268634701/60595767a07f62b4ebd30579-179353140122655687-1793531585-primary.jpg",
+   "268634702/d4c4305c77a3021395a65eb3-179353140154681204-1793531585-primary.jpg",
+   "268634703/2c47599e6926accb0ebf2799-179176591001379463-1793531588-primary.jpg"
   ],
   "region": "North",
   "lga": "Whittlesea",
@@ -217474,8 +217597,8 @@
   "street": "16 Harvest Court",
   "suburb": "Doncaster",
   "postcode": "3108",
-  "rent_text": "$825 pw",
-  "rent": 825,
+  "rent_text": "$800 pw",
+  "rent": 800,
   "beds": 3,
   "baths": 3,
   "cars": 2,
@@ -219671,7 +219794,7 @@
   "pets": true,
   "lat": -37.65939,
   "lng": 144.57701,
-  "available": "1st November 2026",
+  "available": "now",
   "listed": "2026-10-29",
   "walk_score": 3,
   "transit_score": 26,
@@ -224864,7 +224987,7 @@
   "pets": false,
   "lat": -37.71509,
   "lng": 144.790055,
-  "available": "1st November 2026",
+  "available": "now",
   "listed": "2026-10-22",
   "walk_score": 37,
   "transit_score": 23,
@@ -225212,125 +225335,6 @@
    "population": 15147
   },
   "first_seen": "2026-10-21"
- },
- {
-  "id": 6516158,
-  "url": "https://www.rent.com.au/property/7-20-22-hughes-st-burwood-vic-3125-6516158",
-  "type": "Townhouse",
-  "street": "7/20-22 Hughes Street",
-  "suburb": "Burwood",
-  "postcode": "3125",
-  "rent_text": "$780 pw",
-  "rent": 780,
-  "beds": 3,
-  "baths": 3,
-  "cars": 1,
-  "pets": false,
-  "lat": -37.852604,
-  "lng": 145.108677,
-  "available": "now",
-  "listed": "2026-10-15",
-  "walk_score": 60,
-  "transit_score": 56,
-  "agency": "Megadu Real Estate - BOX HILL SOUTH",
-  "photos": [
-   "268330142/b712c3a93ea093d9c04c9531-uploads_2F1582091900139-evbtcjrdxk8-944a7db25c26f3b2dea75901a43d226b_2FWM_living-1792050213-primary.jpg",
-   "268330144/23f79903e70fab1f19d17860-uploads_2F1582091900102-11tftbzp1k3-944a7db25c26f3b2dea75901a43d226b_2FWM_dinning-1792050221-primary.jpg",
-   "268330143/055310fe1a48c47def0b1293-uploads_2F1582091900129-v04w1q1fb2e-944a7db25c26f3b2dea75901a43d226b_2FWM_kitchen-1792050221-primary.jpg",
-   "268330145/03b470c980220babb98224e4-uploads_2F1582091900121-gl6w4pm8z5l-944a7db25c26f3b2dea75901a43d226b_2FWM_FRONT-1792050222-primary.jpg"
-  ],
-  "region": "East",
-  "lga": "Whitehorse",
-  "cbd_km": 13.0,
-  "near": {
-   "supermarket": {
-    "m": 1660,
-    "name": "IGA Local Grocer + Liquor Camberwell"
-   },
-   "fresh": {
-    "m": 2179,
-    "name": ""
-   },
-   "pharmacy": {
-    "m": 1576,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 1519,
-    "name": "Dr Susan Schlicht"
-   },
-   "cafe": {
-    "m": 293,
-    "name": "Bells and Whistles Cafe"
-   },
-   "park": {
-    "m": 65,
-    "name": "Gardiners Creek Reserve"
-   },
-   "gym": {
-    "m": 383,
-    "name": "Training Day"
-   },
-   "library": {
-    "m": 1063,
-    "name": "Deakin University Library"
-   },
-   "train": {
-    "m": 3054,
-    "name": "Jordanville"
-   },
-   "tram": {
-    "m": 436,
-    "name": "Stop 62: Elgar Road"
-   },
-   "bus": {
-    "m": 419,
-    "name": "McIntyre Street/Burwood Highway"
-   },
-   "bar": {
-    "m": 3692,
-    "name": "Two Doors Brewing"
-   },
-   "cinema": {
-    "m": 2927,
-    "name": "Reading Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 2,
-   "bar": 0,
-   "bus": 0,
-   "tram": 4,
-   "shops": 0
-  },
-  "met": [
-   "cafe",
-   "park",
-   "gym",
-   "pt"
-  ],
-  "twenty": 44,
-  "transit": 45,
-  "roads": {
-   "motorway": 3622,
-   "motorway_name": "Monash Freeway On Ramp",
-   "major": 252,
-   "major_name": "Highbury Road",
-   "rail": 2252
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 88,
-  "crime": {
-   "rate": 63.9,
-   "burglary": 6.1,
-   "assault": 4.2,
-   "offences": 968,
-   "population": 15147
-  },
-  "first_seen": "2026-10-15"
  },
  {
   "id": 6301392,
@@ -271749,6 +271753,248 @@
    "population": 26131
   },
   "first_seen": "2026-09-14"
+ },
+ {
+  "id": 6481601,
+  "url": "https://www.rent.com.au/property/8-508-blackburn-rd-doncaster-east-vic-3109-6481601",
+  "type": "House",
+  "street": "8/508 Blackburn Road",
+  "suburb": "Doncaster East",
+  "postcode": "3109",
+  "rent_text": "$670 pw",
+  "rent": 670,
+  "beds": 3,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -37.761404,
+  "lng": 145.167264,
+  "available": "now",
+  "listed": "2026-09-07",
+  "walk_score": 87,
+  "transit_score": 58,
+  "agency": "Barry Plant - Eastern Group Rentals",
+  "photos": [
+   "267756935/f5defc0b223c2913fbd83e48-4fdbc6a6_2Ddde7_2Dba01_2D2337_2D687380c60490-1788757567-primary.jpg",
+   "267757226/21fafe10fc0c1df7a98628fe-001f70cb_2Dbc94_2D0909_2Dd598_2D5bc5f32ded66-1788757902-primary.jpg",
+   "267757231/773d5d971516db7688e7bf2e-84220924_2D6ea9_2Da490_2Dac5c_2D55b8dce04d46-1788757903-primary.jpg",
+   "267757232/158ab1bbcd499614ecf7864b-1a2b2b14_2D989e_2Db49f_2D30c4_2D3a411a25bf7c-1788757903-primary.jpg"
+  ],
+  "region": "East",
+  "lga": "Manningham",
+  "cbd_km": 18.7,
+  "near": {
+   "supermarket": {
+    "m": 140,
+    "name": "Woolworths"
+   },
+   "fresh": {
+    "m": 4012,
+    "name": "KFL Butchery & Seafood"
+   },
+   "pharmacy": {
+    "m": 227,
+    "name": "Priceline Pharmacy"
+   },
+   "gp": {
+    "m": 759,
+    "name": "Progress Medical Centre"
+   },
+   "cafe": {
+    "m": 226,
+    "name": "Three Red Stripes"
+   },
+   "park": {
+    "m": 216,
+    "name": "The Pines Reserve"
+   },
+   "gym": {
+    "m": 816,
+    "name": "Equilibrium Health & Fitness"
+   },
+   "library": {
+    "m": 279,
+    "name": "Pines Learning & Activity Centre"
+   },
+   "train": {
+    "m": 9999,
+    "name": ""
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 162,
+    "name": "The Pines SC (Bay 4)"
+   },
+   "bar": {
+    "m": 552,
+    "name": "Cherry Hill Tavern"
+   },
+   "cinema": {
+    "m": 5980,
+    "name": "Village Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 3,
+   "bar": 1,
+   "bus": 8,
+   "tram": 0,
+   "shops": 4
+  },
+  "met": [
+   "supermarket",
+   "pharmacy",
+   "gp",
+   "cafe",
+   "park",
+   "library"
+  ],
+  "twenty": 67,
+  "transit": 20,
+  "roads": {
+   "motorway": 4394,
+   "motorway_name": "Blackburn Road Offramp",
+   "major": 229,
+   "major_name": "Reynolds Road",
+   "rail": 5378
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 100,
+  "crime": {
+   "rate": 32.0,
+   "burglary": 3.4,
+   "assault": 2.8,
+   "offences": 990,
+   "population": 30926
+  },
+  "first_seen": "2026-09-07",
+  "gone": "2026-11-02"
+ },
+ {
+  "id": 6516158,
+  "url": "https://www.rent.com.au/property/7-20-22-hughes-st-burwood-vic-3125-6516158",
+  "type": "Townhouse",
+  "street": "7/20-22 Hughes Street",
+  "suburb": "Burwood",
+  "postcode": "3125",
+  "rent_text": "$780 pw",
+  "rent": 780,
+  "beds": 3,
+  "baths": 3,
+  "cars": 1,
+  "pets": false,
+  "lat": -37.852604,
+  "lng": 145.108677,
+  "available": "now",
+  "listed": "2026-10-15",
+  "walk_score": 60,
+  "transit_score": 56,
+  "agency": "Megadu Real Estate - BOX HILL SOUTH",
+  "photos": [
+   "268330142/b712c3a93ea093d9c04c9531-uploads_2F1582091900139-evbtcjrdxk8-944a7db25c26f3b2dea75901a43d226b_2FWM_living-1792050213-primary.jpg",
+   "268330144/23f79903e70fab1f19d17860-uploads_2F1582091900102-11tftbzp1k3-944a7db25c26f3b2dea75901a43d226b_2FWM_dinning-1792050221-primary.jpg",
+   "268330143/055310fe1a48c47def0b1293-uploads_2F1582091900129-v04w1q1fb2e-944a7db25c26f3b2dea75901a43d226b_2FWM_kitchen-1792050221-primary.jpg",
+   "268330145/03b470c980220babb98224e4-uploads_2F1582091900121-gl6w4pm8z5l-944a7db25c26f3b2dea75901a43d226b_2FWM_FRONT-1792050222-primary.jpg"
+  ],
+  "region": "East",
+  "lga": "Whitehorse",
+  "cbd_km": 13.0,
+  "near": {
+   "supermarket": {
+    "m": 1660,
+    "name": "IGA Local Grocer + Liquor Camberwell"
+   },
+   "fresh": {
+    "m": 2179,
+    "name": ""
+   },
+   "pharmacy": {
+    "m": 1576,
+    "name": "Chemist Warehouse"
+   },
+   "gp": {
+    "m": 1519,
+    "name": "Dr Susan Schlicht"
+   },
+   "cafe": {
+    "m": 293,
+    "name": "Bells and Whistles Cafe"
+   },
+   "park": {
+    "m": 65,
+    "name": "Gardiners Creek Reserve"
+   },
+   "gym": {
+    "m": 383,
+    "name": "Training Day"
+   },
+   "library": {
+    "m": 1063,
+    "name": "Deakin University Library"
+   },
+   "train": {
+    "m": 3054,
+    "name": "Jordanville"
+   },
+   "tram": {
+    "m": 436,
+    "name": "Stop 62: Elgar Road"
+   },
+   "bus": {
+    "m": 419,
+    "name": "McIntyre Street/Burwood Highway"
+   },
+   "bar": {
+    "m": 3692,
+    "name": "Two Doors Brewing"
+   },
+   "cinema": {
+    "m": 2927,
+    "name": "Reading Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 2,
+   "bar": 0,
+   "bus": 0,
+   "tram": 4,
+   "shops": 0
+  },
+  "met": [
+   "cafe",
+   "park",
+   "gym",
+   "pt"
+  ],
+  "twenty": 44,
+  "transit": 45,
+  "roads": {
+   "motorway": 3622,
+   "motorway_name": "Monash Freeway On Ramp",
+   "major": 252,
+   "major_name": "Highbury Road",
+   "rail": 2252
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 88,
+  "crime": {
+   "rate": 63.9,
+   "burglary": 6.1,
+   "assault": 4.2,
+   "offences": 968,
+   "population": 15147
+  },
+  "first_seen": "2026-10-15",
+  "gone": "2026-11-02"
  },
  {
   "id": 6505738,
@@ -383924,123 +384170,5 @@
   },
   "first_seen": "2026-08-25",
   "gone": "2026-10-19"
- },
- {
-  "id": 6267053,
-  "url": "https://www.rent.com.au/property/3-charlesworth-cres-burnside-vic-3023-6267053",
-  "type": "House",
-  "street": "3 Charlesworth Crescent",
-  "suburb": "Burnside",
-  "postcode": "3023",
-  "rent_text": "$490 pw",
-  "rent": 490,
-  "beds": 3,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -37.748661,
-  "lng": 144.745519,
-  "available": "now",
-  "listed": "2026-01-15",
-  "walk_score": 30,
-  "transit_score": 40,
-  "agency": "Crane Real Estate Caroline Springs ",
-  "photos": [
-   "262361501/6bc80221f756094d4e454a4b-0101466082-rsd-1768431826-primary.jpg",
-   "262361629/e1f5f66c176da223d467f46a-0101467087-rsd-1768431885-primary.jpg",
-   "262361634/50205d5adc1e2048b43bc03e-0101467320-rsd-1768431886-primary.jpg",
-   "262361635/18a613395fe50d3117a23adc-0101467803-rsd-1768431886-primary.jpg"
-  ],
-  "region": "West",
-  "lga": "Melton",
-  "cbd_km": 20.9,
-  "near": {
-   "supermarket": {
-    "m": 1765,
-    "name": "Coles"
-   },
-   "fresh": {
-    "m": 1831,
-    "name": ""
-   },
-   "pharmacy": {
-    "m": 1138,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 2404,
-    "name": "NewSkin Laser Clinics"
-   },
-   "cafe": {
-    "m": 1037,
-    "name": "Izakaya Rin Japanese Restaurant & Bar"
-   },
-   "park": {
-    "m": 181,
-    "name": "Boyle Terrace Reserve"
-   },
-   "gym": {
-    "m": 743,
-    "name": ""
-   },
-   "library": {
-    "m": 1001,
-    "name": "Burnside Children's and Community Centre"
-   },
-   "train": {
-    "m": 2744,
-    "name": "Caroline Springs"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 401,
-    "name": ""
-   },
-   "bar": {
-    "m": 9999,
-    "name": ""
-   },
-   "cinema": {
-    "m": 9999,
-    "name": ""
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "park",
-   "gym"
-  ],
-  "twenty": 22,
-  "transit": 10,
-  "roads": {
-   "motorway": 931,
-   "motorway_name": "Caroline Springs Boulevard Offramp",
-   "major": 942,
-   "major_name": "Ballarat Road",
-   "rail": 2094
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 90,
-  "crime": {
-   "rate": 60.2,
-   "burglary": 4.5,
-   "assault": 2.2,
-   "offences": 349,
-   "population": 5800
-  },
-  "first_seen": "2026-01-15",
-  "gone": "2026-10-18"
  }
 ]
