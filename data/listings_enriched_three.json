@@ -10706,6 +10706,125 @@
   "first_seen": "2026-09-17"
  },
  {
+  "id": 6543703,
+  "url": "https://www.rent.com.au/property/33-baystone-rd-epping-vic-3076-6543703",
+  "type": "House",
+  "street": "33 Baystone Road",
+  "suburb": "Epping",
+  "postcode": "3076",
+  "rent_text": "$600 per week pw",
+  "rent": 600,
+  "beds": 3,
+  "baths": 2,
+  "cars": 4,
+  "pets": false,
+  "lat": -37.649523,
+  "lng": 145.04781,
+  "available": "16th November 2026",
+  "listed": "2026-11-15",
+  "walk_score": 23,
+  "transit_score": 46,
+  "agency": "Barry Plant Bundoora",
+  "photos": [
+   "268878466/f6aea590dde6ec18436a9856-179473042631625577-1794731264-primary.jpg",
+   "268878469/f1bed1eed82906f13df5bfa5-179473042314278366-1794731274-primary.jpg",
+   "268878467/8208f09ad466f36c60483df0-179473042143130799-1794731272-primary.jpg",
+   "268878471/1711d80f99329884ea75c53e-179473042943104197-1794731275-primary.jpg"
+  ],
+  "region": "North",
+  "lga": "Whittlesea",
+  "cbd_km": 20.0,
+  "near": {
+   "supermarket": {
+    "m": 2399,
+    "name": "Coles"
+   },
+   "fresh": {
+    "m": 2413,
+    "name": "Bakers Delight"
+   },
+   "pharmacy": {
+    "m": 2448,
+    "name": "Chemist Warehouse"
+   },
+   "gp": {
+    "m": 1861,
+    "name": "Mill Park Superclinic"
+   },
+   "cafe": {
+    "m": 2440,
+    "name": "Nando's"
+   },
+   "park": {
+    "m": 79,
+    "name": "Tarcoola Close Park"
+   },
+   "gym": {
+    "m": 626,
+    "name": ""
+   },
+   "library": {
+    "m": 3466,
+    "name": "Mill Park Library"
+   },
+   "train": {
+    "m": 4204,
+    "name": "Lalor"
+   },
+   "tram": {
+    "m": 4915,
+    "name": "Stop 71: RMIT Bundoora Campus"
+   },
+   "bus": {
+    "m": 442,
+    "name": "Pindari Avenue"
+   },
+   "bar": {
+    "m": 2460,
+    "name": "The Sporting Globe Bar & Grill"
+   },
+   "cinema": {
+    "m": 2449,
+    "name": "Village Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "park",
+   "gym"
+  ],
+  "twenty": 22,
+  "transit": 10,
+  "roads": {
+   "motorway": 4102,
+   "motorway_name": "Metropolitan Ring Road",
+   "major": 307,
+   "major_name": "McDonalds Road",
+   "rail": 218
+  },
+  "quiet": 92,
+  "noise_flags": [
+   "Railway line 218 m away"
+  ],
+  "air": 100,
+  "air_flags": [],
+  "safety": 50,
+  "crime": {
+   "rate": 129.4,
+   "burglary": 5.4,
+   "assault": 10.1,
+   "offences": 4334,
+   "population": 33489
+  },
+  "first_seen": "2026-11-16"
+ },
+ {
   "id": 6542271,
   "url": "https://www.rent.com.au/property/44-farmhouse-bvd-epping-vic-3076-6542271",
   "type": "House",
@@ -10955,7 +11074,7 @@
   "pets": false,
   "lat": -37.65017,
   "lng": 145.048224,
-  "available": "15th November 2026",
+  "available": "now",
   "listed": "2026-11-12",
   "walk_score": 32,
   "transit_score": 45,
@@ -16021,128 +16140,6 @@
   "first_seen": "2026-10-28"
  },
  {
-  "id": 6524744,
-  "url": "https://www.rent.com.au/property/3-creighton-way-craigieburn-vic-3064-6524744",
-  "type": "House",
-  "street": "3 Creighton Way",
-  "suburb": "Craigieburn",
-  "postcode": "3064",
-  "rent_text": "$500 P/Week",
-  "rent": 500,
-  "beds": 3,
-  "baths": 2,
-  "cars": 1,
-  "pets": false,
-  "lat": -37.578782,
-  "lng": 144.936675,
-  "available": "now",
-  "listed": "2026-10-26",
-  "walk_score": 31,
-  "transit_score": 30,
-  "agency": "YPA Craigieburn-Mickleham",
-  "photos": [
-   "268512162/fa51f242e866f757244b103e-main_watermarked_7dae-a406-7f01-772f-7192-eb1e-c3b2-51f0_20261026060354-1792995217-primary.jpg",
-   "268512312/56e46db7793f19918ccbfc25-image2_watermarked_188f-d3c2-abc9-7f44-53c7-de84-fe83-ae5a_20261026060346-1792995299-primary.jpg",
-   "268512304/60573e7e6c2992709f198fb7-image3_watermarked_8260-dbb4-279f-fe50-5569-8fa4-b0f1-64d7_20261026060347-1792995297-primary.jpg",
-   "268512308/867547b42d69725e78462c3d-image4_watermarked_797e-bc37-3609-fbe5-c98b-83a7-3071-86bd_20261026060348-1792995298-primary.jpg"
-  ],
-  "region": "North",
-  "lga": "Hume",
-  "cbd_km": 26.6,
-  "near": {
-   "supermarket": {
-    "m": 2004,
-    "name": "Woolworths"
-   },
-   "fresh": {
-    "m": 1150,
-    "name": "Zet and Zaatar"
-   },
-   "pharmacy": {
-    "m": 1964,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 2030,
-    "name": "Modern Medical Clinic"
-   },
-   "cafe": {
-    "m": 723,
-    "name": "Grand Boulevard Cafe"
-   },
-   "park": {
-    "m": 127,
-    "name": "Hamilton Hume Reserve"
-   },
-   "gym": {
-    "m": 90,
-    "name": ""
-   },
-   "library": {
-    "m": 3364,
-    "name": "Newbury Child and Community Centre"
-   },
-   "train": {
-    "m": 3453,
-    "name": "Craigieburn"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 481,
-    "name": "Explorers Place/Grand Boulevard"
-   },
-   "bar": {
-    "m": 6475,
-    "name": "Donnybrook Hotel"
-   },
-   "cinema": {
-    "m": 3396,
-    "name": "United Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 1,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "cafe",
-   "park",
-   "gym"
-  ],
-  "twenty": 33,
-  "transit": 10,
-  "roads": {
-   "motorway": 240,
-   "motorway_name": "Hume Freeway Onramp",
-   "major": 425,
-   "major_name": "Hume Highway",
-   "rail": 1385
-  },
-  "quiet": 75,
-  "noise_flags": [
-   "Freeway 240 m away (Hume Freeway Onramp)"
-  ],
-  "air": 80,
-  "air_flags": [
-   "Freeway 240 m away (Hume Freeway Onramp)"
-  ],
-  "safety": 85,
-  "crime": {
-   "rate": 68.7,
-   "burglary": 2.4,
-   "assault": 7.3,
-   "offences": 4479,
-   "population": 65178
-  },
-  "first_seen": "2026-10-27"
- },
- {
   "id": 6523868,
   "url": "https://www.rent.com.au/property/17-kelway-st-craigieburn-vic-3064-6523868",
   "type": "House",
@@ -16727,126 +16724,6 @@
    "population": 65178
   },
   "first_seen": "2026-10-15"
- },
- {
-  "id": 6514863,
-  "url": "https://www.rent.com.au/property/11-silverton-ct-craigieburn-vic-3064-6514863",
-  "type": "House",
-  "street": "11 Silverton Court",
-  "suburb": "Craigieburn",
-  "postcode": "3064",
-  "rent_text": "$490 pw",
-  "rent": 490,
-  "beds": 3,
-  "baths": 1,
-  "cars": 2,
-  "pets": false,
-  "lat": -37.592902,
-  "lng": 144.921355,
-  "available": "now",
-  "listed": "2026-10-14",
-  "walk_score": 51,
-  "transit_score": 35,
-  "agency": "Ray White - Craigieburn",
-  "photos": [
-   "268308393/a4b66b2dfc44ab1f1f7510ac-mydimport-1616584557-hires.16966-11Silverton-02-1791957673-primary.jpg",
-   "268308455/27e9ac702c115b467410db13-mydimport-1616584566-hires.10266-11Silverton-02-1791957876-primary.jpg",
-   "268308458/758e03fc8bfcb844aa6739b1-mydimport-1616584656-hires.5371-11Silverton-03-1791957884-primary.jpg",
-   "268308459/0191ba4872d5dae65616310e-mydimport-1616584756-hires.27704-11Silverton-01-1791957885-primary.jpg"
-  ],
-  "region": "North",
-  "lga": "Hume",
-  "cbd_km": 25.2,
-  "near": {
-   "supermarket": {
-    "m": 729,
-    "name": "Coles"
-   },
-   "fresh": {
-    "m": 742,
-    "name": "Bigfields"
-   },
-   "pharmacy": {
-    "m": 715,
-    "name": "Priceline Pharmacy"
-   },
-   "gp": {
-    "m": 1355,
-    "name": "Primary Medical Centre - Craigieburn"
-   },
-   "cafe": {
-    "m": 541,
-    "name": "Fieste"
-   },
-   "park": {
-    "m": 113,
-    "name": "Silverton-Dorchester-Bisley Walkway"
-   },
-   "gym": {
-    "m": 1152,
-    "name": "Splash Aqua Park and Leisure Centre"
-   },
-   "library": {
-    "m": 1363,
-    "name": "Craigieburn Library"
-   },
-   "train": {
-    "m": 2824,
-    "name": "Craigieburn"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 518,
-    "name": "Craigieburn Central Shopping Centre/Lygon Drive"
-   },
-   "bar": {
-    "m": 9999,
-    "name": ""
-   },
-   "cinema": {
-    "m": 939,
-    "name": "United Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 3,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 4
-  },
-  "met": [
-   "supermarket",
-   "fresh",
-   "pharmacy",
-   "cafe",
-   "park"
-  ],
-  "twenty": 56,
-  "transit": 10,
-  "roads": {
-   "motorway": 2042,
-   "motorway_name": "Hume Highway",
-   "major": 424,
-   "major_name": "Craigieburn Road",
-   "rail": 2150
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 85,
-  "crime": {
-   "rate": 68.7,
-   "burglary": 2.4,
-   "assault": 7.3,
-   "offences": 4479,
-   "population": 65178
-  },
-  "first_seen": "2026-10-14"
  },
  {
   "id": 6514529,
@@ -21325,7 +21202,7 @@
   "pets": false,
   "lat": -37.631524,
   "lng": 145.187392,
-  "available": "15th November 2026",
+  "available": "now",
   "listed": "2026-10-27",
   "walk_score": 15,
   "transit_score": 22,
@@ -25096,8 +24973,8 @@
   "street": "1 Lucerne Court",
   "suburb": "Narre Warren",
   "postcode": "3805",
-  "rent_text": "$585 pw",
-  "rent": 585,
+  "rent_text": "$570 pw",
+  "rent": 570,
   "beds": 3,
   "baths": 1,
   "cars": 2,
@@ -30562,6 +30439,122 @@
   "first_seen": "2026-08-06"
  },
  {
+  "id": 6191887,
+  "url": "https://www.rent.com.au/property/58-buckingham-bvd-strathtulloh-vic-3338-6191887",
+  "type": "House",
+  "street": "58 Buckingham Boulevard",
+  "suburb": "Strathtulloh",
+  "postcode": "3338",
+  "rent_text": "$500 pw",
+  "rent": 500,
+  "beds": 3,
+  "baths": 3,
+  "cars": 2,
+  "pets": false,
+  "lat": -37.725512,
+  "lng": 144.609807,
+  "available": "now",
+  "listed": "2026-11-16",
+  "walk_score": 0,
+  "transit_score": 0,
+  "agency": "The Agents Excellence In Real Estate ",
+  "photos": [
+   "268565744/50be066149383b0732342d04-179066614599026599-1793178483-primary.jpg",
+   "268565982/fcbc2957d9faa57413d07f79-175609139349921738-1793178649-primary.jpg",
+   "268565985/6cd9f4dc05b7e0eda08f68e6-175609139485266292-1793178651-primary.jpg",
+   "268565984/28d5477adc8c6161b1b7ed25-175609139378241091-1793178650-primary.jpg"
+  ],
+  "region": "West",
+  "lga": "Melton",
+  "cbd_km": 33.0,
+  "near": {
+   "supermarket": {
+    "m": 1862,
+    "name": "Coles"
+   },
+   "fresh": {
+    "m": 4436,
+    "name": "The Cheesecake Shop"
+   },
+   "pharmacy": {
+    "m": 4452,
+    "name": "Chemist Warehouse"
+   },
+   "gp": {
+    "m": 2668,
+    "name": "Thornhill Park Medical Centre and Dental Clinic"
+   },
+   "cafe": {
+    "m": 4431,
+    "name": "Kami"
+   },
+   "park": {
+    "m": 147,
+    "name": ""
+   },
+   "gym": {
+    "m": 1851,
+    "name": "Cobblebank Indoor Stadium"
+   },
+   "library": {
+    "m": 2565,
+    "name": "Thornhill Park Community Centre"
+   },
+   "train": {
+    "m": 1974,
+    "name": "Cobblebank"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 535,
+    "name": "Adelong Bvd/Alfred Rd"
+   },
+   "bar": {
+    "m": 6663,
+    "name": "Golden Fleece"
+   },
+   "cinema": {
+    "m": 7735,
+    "name": "Reading Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "park"
+  ],
+  "twenty": 11,
+  "transit": 25,
+  "roads": {
+   "motorway": 2546,
+   "motorway_name": "Western Freeway",
+   "major": 3155,
+   "major_name": "Melton Highway",
+   "rail": 1125
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 55,
+  "crime": {
+   "rate": 122.3,
+   "burglary": 9.0,
+   "assault": 13.5,
+   "offences": 489,
+   "population": 3997
+  },
+  "first_seen": "2026-10-15"
+ },
+ {
   "id": 6532555,
   "url": "https://www.rent.com.au/property/34-ruislip-ave-strathtulloh-vic-3338-6532555",
   "type": "House",
@@ -30676,122 +30669,6 @@
    "population": 3997
   },
   "first_seen": "2026-11-05"
- },
- {
-  "id": 6191887,
-  "url": "https://www.rent.com.au/property/58-buckingham-bvd-strathtulloh-vic-3338-6191887",
-  "type": "House",
-  "street": "58 Buckingham Boulevard",
-  "suburb": "Strathtulloh",
-  "postcode": "3338",
-  "rent_text": "$500 pw",
-  "rent": 500,
-  "beds": 3,
-  "baths": 3,
-  "cars": 2,
-  "pets": false,
-  "lat": -37.725512,
-  "lng": 144.609807,
-  "available": "now",
-  "listed": "2026-10-31",
-  "walk_score": 0,
-  "transit_score": 0,
-  "agency": "The Agents Excellence In Real Estate ",
-  "photos": [
-   "268565744/50be066149383b0732342d04-179066614599026599-1793178483-primary.jpg",
-   "268565982/fcbc2957d9faa57413d07f79-175609139349921738-1793178649-primary.jpg",
-   "268565985/6cd9f4dc05b7e0eda08f68e6-175609139485266292-1793178651-primary.jpg",
-   "268565984/28d5477adc8c6161b1b7ed25-175609139378241091-1793178650-primary.jpg"
-  ],
-  "region": "West",
-  "lga": "Melton",
-  "cbd_km": 33.0,
-  "near": {
-   "supermarket": {
-    "m": 1862,
-    "name": "Coles"
-   },
-   "fresh": {
-    "m": 4436,
-    "name": "The Cheesecake Shop"
-   },
-   "pharmacy": {
-    "m": 4452,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 2668,
-    "name": "Thornhill Park Medical Centre and Dental Clinic"
-   },
-   "cafe": {
-    "m": 4431,
-    "name": "Kami"
-   },
-   "park": {
-    "m": 147,
-    "name": ""
-   },
-   "gym": {
-    "m": 1851,
-    "name": "Cobblebank Indoor Stadium"
-   },
-   "library": {
-    "m": 2565,
-    "name": "Thornhill Park Community Centre"
-   },
-   "train": {
-    "m": 1974,
-    "name": "Cobblebank"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 535,
-    "name": "Adelong Bvd/Alfred Rd"
-   },
-   "bar": {
-    "m": 6663,
-    "name": "Golden Fleece"
-   },
-   "cinema": {
-    "m": 7735,
-    "name": "Reading Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "park"
-  ],
-  "twenty": 11,
-  "transit": 25,
-  "roads": {
-   "motorway": 2546,
-   "motorway_name": "Western Freeway",
-   "major": 3155,
-   "major_name": "Melton Highway",
-   "rail": 1125
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 55,
-  "crime": {
-   "rate": 122.3,
-   "burglary": 9.0,
-   "assault": 13.5,
-   "offences": 489,
-   "population": 3997
-  },
-  "first_seen": "2026-10-15"
  },
  {
   "id": 6524505,
@@ -35069,126 +34946,6 @@
    "population": 54118
   },
   "first_seen": "2026-10-20"
- },
- {
-  "id": 6516988,
-  "url": "https://www.rent.com.au/property/97-havana-pde-pakenham-vic-3810-6516988",
-  "type": "House",
-  "street": "97 Havana Parade",
-  "suburb": "Pakenham",
-  "postcode": "3810",
-  "rent_text": "$530 pw",
-  "rent": 530,
-  "beds": 3,
-  "baths": 2,
-  "cars": 1,
-  "pets": false,
-  "lat": -38.059229,
-  "lng": 145.455264,
-  "available": "now",
-  "listed": "2026-10-16",
-  "walk_score": 50,
-  "transit_score": 0,
-  "agency": "Ham Kerr Property - Balwyn",
-  "photos": [
-   "268344571/189e38d0ab3844db80cda9dd-68e2abf7-1792126216-primary.jpg",
-   "268344829/503bde468a6b0e14057e141c-8170ed56-1792126507-primary.jpg",
-   "268344830/4d44eef8095b15e0ebddabba-aa9d9f1a-1792126507-primary.jpg",
-   "268344831/7eeb749ea5474f2f0cddbf33-eeff1d8d-1792126507-primary.jpg"
-  ],
-  "region": "South-east",
-  "lga": "Cardinia",
-  "cbd_km": 50.5,
-  "near": {
-   "supermarket": {
-    "m": 590,
-    "name": "Coles"
-   },
-   "fresh": {
-    "m": 295,
-    "name": "The Cheesecake Shop"
-   },
-   "pharmacy": {
-    "m": 4151,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 2024,
-    "name": "Cardinia Medical Centre"
-   },
-   "cafe": {
-    "m": 289,
-    "name": "Steak House"
-   },
-   "park": {
-    "m": 781,
-    "name": ""
-   },
-   "gym": {
-    "m": 320,
-    "name": "Jetts Fitness"
-   },
-   "library": {
-    "m": 3766,
-    "name": "Living and Learning in Cardinia"
-   },
-   "train": {
-    "m": 4696,
-    "name": "Pakenham"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 386,
-    "name": "Michael St/Princes Hwy"
-   },
-   "bar": {
-    "m": 774,
-    "name": "Copper & Fox"
-   },
-   "cinema": {
-    "m": 9999,
-    "name": ""
-   }
-  },
-  "counts": {
-   "cafe": 7,
-   "bar": 1,
-   "bus": 1,
-   "tram": 0,
-   "shops": 4
-  },
-  "met": [
-   "supermarket",
-   "fresh",
-   "cafe",
-   "park",
-   "gym"
-  ],
-  "twenty": 56,
-  "transit": 20,
-  "roads": {
-   "motorway": 2697,
-   "motorway_name": "Princes Freeway On Ramp",
-   "major": 265,
-   "major_name": "Princes Highway",
-   "rail": 1650
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 73,
-  "crime": {
-   "rate": 90.8,
-   "burglary": 3.9,
-   "assault": 9.1,
-   "offences": 4912,
-   "population": 54118
-  },
-  "first_seen": "2026-10-17"
  },
  {
   "id": 6514787,
@@ -40376,7 +40133,7 @@
   "pets": false,
   "lat": -37.703342,
   "lng": 145.012776,
-  "available": "15th November 2026",
+  "available": "now",
   "listed": "2026-10-22",
   "walk_score": 45,
   "transit_score": 52,
@@ -44456,124 +44213,6 @@
   "first_seen": "2026-11-13"
  },
  {
-  "id": 6535356,
-  "url": "https://www.rent.com.au/property/76-faulkner-st-forest-hill-vic-3131-6535356",
-  "type": "House",
-  "street": "76 Faulkner Street",
-  "suburb": "Forest Hill",
-  "postcode": "3131",
-  "rent_text": "$530 pw",
-  "rent": 530,
-  "beds": 3,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -37.839313,
-  "lng": 145.163532,
-  "available": "now",
-  "listed": "2026-11-06",
-  "walk_score": 89,
-  "transit_score": 49,
-  "agency": "Eleven North",
-  "photos": [
-   "268735668/d1f1de0b3a4f6c609fc29e7e-a4f69008-1793921015-primary.jpeg",
-   "268735832/0605de382d3eb9aa694c3ae8-f6766dd5-1793921324-primary.jpeg",
-   "268735833/18f18762b79dc21e39adb60e-b80c4a50-1793921324-primary.jpeg",
-   "268735831/85130d2f14a0909d762548fb-f7ab0bba-1793921324-primary.jpeg"
-  ],
-  "region": "East",
-  "lga": "Whitehorse",
-  "cbd_km": 17.4,
-  "near": {
-   "supermarket": {
-    "m": 512,
-    "name": "Woolworths"
-   },
-   "fresh": {
-    "m": 2525,
-    "name": "Bakers Delight"
-   },
-   "pharmacy": {
-    "m": 1005,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 840,
-    "name": "Melbourne Pathology"
-   },
-   "cafe": {
-    "m": 501,
-    "name": "The Coffee Club"
-   },
-   "park": {
-    "m": 353,
-    "name": ""
-   },
-   "gym": {
-    "m": 1422,
-    "name": ""
-   },
-   "library": {
-    "m": 1301,
-    "name": "Forest Hill Hall"
-   },
-   "train": {
-    "m": 3725,
-    "name": "Laburnum"
-   },
-   "tram": {
-    "m": 2120,
-    "name": "Stop 71: Sevenoaks Road"
-   },
-   "bus": {
-    "m": 259,
-    "name": ""
-   },
-   "bar": {
-    "m": 2245,
-    "name": "Burvale Hotel"
-   },
-   "cinema": {
-    "m": 654,
-    "name": "Hoyts"
-   }
-  },
-  "counts": {
-   "cafe": 1,
-   "bar": 0,
-   "bus": 2,
-   "tram": 0,
-   "shops": 3
-  },
-  "met": [
-   "supermarket",
-   "cafe",
-   "park"
-  ],
-  "twenty": 33,
-  "transit": 20,
-  "roads": {
-   "motorway": 3974,
-   "motorway_name": "Eastern Freeway Onramp",
-   "major": 606,
-   "major_name": "Canterbury Road",
-   "rail": 1939
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 78,
-  "crime": {
-   "rate": 80.9,
-   "burglary": 5.3,
-   "assault": 5.8,
-   "offences": 872,
-   "population": 10780
-  },
-  "first_seen": "2026-11-06"
- },
- {
   "id": 6068630,
   "url": "https://www.rent.com.au/property/1-eden-ct-forest-hill-vic-3131-6068630",
   "type": "House",
@@ -46273,7 +45912,7 @@
   "pets": false,
   "lat": -37.978738,
   "lng": 145.215458,
-  "available": "15th November 2026",
+  "available": "now",
   "listed": "2026-11-04",
   "walk_score": 80,
   "transit_score": 58,
@@ -65225,8 +64864,8 @@
   "street": "2401/8 Sutherland Street",
   "suburb": "Melbourne",
   "postcode": "3000",
-  "rent_text": "$1,100 pw",
-  "rent": 1100,
+  "rent_text": "$1,050 pw",
+  "rent": 1050,
   "beds": 3,
   "baths": 2,
   "cars": 2,
@@ -69057,7 +68696,7 @@
   "pets": false,
   "lat": -37.951857,
   "lng": 145.143626,
-  "available": "15th November 2026",
+  "available": "now",
   "listed": "2026-11-10",
   "walk_score": 76,
   "transit_score": 0,
@@ -74554,7 +74193,7 @@
   "pets": false,
   "lat": -38.093628,
   "lng": 145.193885,
-  "available": "2nd December 2026",
+  "available": "8th December 2026",
   "listed": "2026-10-26",
   "walk_score": 36,
   "transit_score": 34,
@@ -83519,6 +83158,123 @@
   "first_seen": "2026-08-19"
  },
  {
+  "id": 6543681,
+  "url": "https://www.rent.com.au/property/3-ulysses-st-clyde-north-vic-3978-6543681",
+  "type": "House",
+  "street": "3 Ulysses Street",
+  "suburb": "Clyde North",
+  "postcode": "3978",
+  "rent_text": "$620 pw",
+  "rent": 620,
+  "beds": 3,
+  "baths": 3,
+  "cars": 3,
+  "pets": false,
+  "lat": -38.117928,
+  "lng": 145.373342,
+  "available": "26th November 2026",
+  "listed": "2026-11-15",
+  "walk_score": 0,
+  "transit_score": 0,
+  "agency": "Thomas Wong Real Estate",
+  "photos": [
+   "268878015/39537cff33eea4059b69e99e-uploads_2F1794714732582-v78iy6qa3is-36b92d8e6b6666457488ff0fce56cb3e_2FGemini_Generated_Image_r3od5rr3od5rr3od-1794717001-primary.jpg",
+   "268878016/e45adab17e84ebf8f4e4e441-uploads_2F1794714732578-pzgs6ihbg2b-36b92d8e6b6666457488ff0fce56cb3e_2FGemini_Generated_Image_5q3ugm5q3ugm5q3u-1794717009-primary.jpg",
+   "268878019/5375cc1b00353eb4a50d8ca9-uploads_2F1794714732576-aukdeq9eipi-36b92d8e6b6666457488ff0fce56cb3e_2FGemini_Generated_Image_4xfgh14xfgh14xfg-1794717012-primary.jpg",
+   "268878017/af2b1aa616e38793f8c80445-uploads_2F1794714732573-6mf7t8124q9-36b92d8e6b6666457488ff0fce56cb3e_2FGemini_Generated_Image_3i96fw3i96fw3i96-1794717010-primary.jpg"
+  ],
+  "region": "South-east",
+  "lga": "Casey",
+  "cbd_km": 48.7,
+  "near": {
+   "supermarket": {
+    "m": 1172,
+    "name": "Coles"
+   },
+   "fresh": {
+    "m": 3494,
+    "name": "The Cheesecake Shop"
+   },
+   "pharmacy": {
+    "m": 3491,
+    "name": "Priceline Pharmacy"
+   },
+   "gp": {
+    "m": 7397,
+    "name": "Doctors on Clyde"
+   },
+   "cafe": {
+    "m": 711,
+    "name": "Humble Merchant at Orana"
+   },
+   "park": {
+    "m": 795,
+    "name": ""
+   },
+   "gym": {
+    "m": 3093,
+    "name": ""
+   },
+   "library": {
+    "m": 4789,
+    "name": "Eliston Family & Community Centre"
+   },
+   "train": {
+    "m": 9999,
+    "name": ""
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 941,
+    "name": "Watercolour Bvd/Pattersons Rd"
+   },
+   "bar": {
+    "m": 9999,
+    "name": ""
+   },
+   "cinema": {
+    "m": 9999,
+    "name": ""
+   }
+  },
+  "counts": {
+   "cafe": 1,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "cafe",
+   "park"
+  ],
+  "twenty": 22,
+  "transit": 0,
+  "roads": {
+   "motorway": 5217,
+   "motorway_name": "Service Centre Offramp",
+   "major": 4732,
+   "major_name": "C407",
+   "rail": 6337
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 75,
+  "crime": {
+   "rate": 87.1,
+   "burglary": 5.9,
+   "assault": 10.6,
+   "offences": 2760,
+   "population": 31681
+  },
+  "first_seen": "2026-11-16"
+ },
+ {
   "id": 6543282,
   "url": "https://www.rent.com.au/property/33-trainers-way-clyde-north-vic-3978-6543282",
   "type": "House",
@@ -91079,129 +90835,6 @@
   "first_seen": "2026-10-14"
  },
  {
-  "id": 6499244,
-  "url": "https://www.rent.com.au/property/1-20-22-linacre-rd-hampton-vic-3188-6499244",
-  "type": "House",
-  "street": "1/20-22 Linacre Road",
-  "suburb": "Hampton",
-  "postcode": "3188",
-  "rent_text": "$1,090 pw",
-  "rent": 1090,
-  "beds": 3,
-  "baths": 2,
-  "cars": 2,
-  "pets": null,
-  "lat": -37.942464,
-  "lng": 145.004089,
-  "available": "now",
-  "listed": "2026-09-28",
-  "walk_score": 87,
-  "transit_score": 56,
-  "agency": "Buxton Brighton",
-  "photos": [
-   "268049878/24c156679ee2208f041047f2-01977372_img_09-1790550746-primary.jpg",
-   "268505513/36355efacf752d00ca79b1e3-01977372_img_14-1792988869-primary.jpg",
-   "268049882/4c1644cd9f54a30d4a9adf0d-01977372_img_04-1790550766-primary.jpg",
-   "268049880/131f6de2c677bbbbccab47d4-01977372_img_05-1790550764-primary.jpg"
-  ],
-  "region": "Bayside & peninsula",
-  "lga": "Bayside",
-  "cbd_km": 14.1,
-  "near": {
-   "supermarket": {
-    "m": 801,
-    "name": "Woolworths"
-   },
-   "fresh": {
-    "m": 1024,
-    "name": "Sandringham Fruit Market"
-   },
-   "pharmacy": {
-    "m": 860,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 390,
-    "name": "Southend Medical Centre"
-   },
-   "cafe": {
-    "m": 579,
-    "name": "Merrymen"
-   },
-   "park": {
-    "m": 360,
-    "name": "Triangle Gardens"
-   },
-   "gym": {
-    "m": 339,
-    "name": "Train-Rec 24/7"
-   },
-   "library": {
-    "m": 573,
-    "name": "Hampton Library"
-   },
-   "train": {
-    "m": 693,
-    "name": "Hampton"
-   },
-   "tram": {
-    "m": 4319,
-    "name": "Stop 68: Nepean Highway"
-   },
-   "bus": {
-    "m": 275,
-    "name": "Triangle Gardens/Hampton St"
-   },
-   "bar": {
-    "m": 1133,
-    "name": "Side Hussle Wine Bar"
-   },
-   "cinema": {
-    "m": 5289,
-    "name": "Palace Brighton Bay"
-   }
-  },
-  "counts": {
-   "cafe": 1,
-   "bar": 0,
-   "bus": 2,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "gp",
-   "cafe",
-   "park",
-   "gym",
-   "library",
-   "pt"
-  ],
-  "twenty": 67,
-  "transit": 65,
-  "roads": {
-   "motorway": 9999,
-   "motorway_name": "",
-   "major": 283,
-   "major_name": "Beach Road",
-   "rail": 109
-  },
-  "quiet": 92,
-  "noise_flags": [
-   "Railway line 109 m away"
-  ],
-  "air": 100,
-  "air_flags": [],
-  "safety": 99,
-  "crime": {
-   "rate": 45.4,
-   "burglary": 4.7,
-   "assault": 2.9,
-   "offences": 614,
-   "population": 13518
-  },
-  "first_seen": "2026-09-28"
- },
- {
   "id": 6543249,
   "url": "https://www.rent.com.au/property/1-19-dobson-st-ferntree-gully-vic-3156-6543249",
   "type": "Unit",
@@ -94095,126 +93728,6 @@
    "population": 42642
   },
   "first_seen": "2026-10-28"
- },
- {
-  "id": 6274048,
-  "url": "https://www.rent.com.au/property/2-9-folkestone-rd-glen-waverley-vic-3150-6274048",
-  "type": "Townhouse",
-  "street": "2/9 Folkestone Road",
-  "suburb": "Glen Waverley",
-  "postcode": "3150",
-  "rent_text": "$820 pw",
-  "rent": 820,
-  "beds": 3,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -37.860551,
-  "lng": 145.152153,
-  "available": "3rd December 2026",
-  "listed": "2026-10-08",
-  "walk_score": 69,
-  "transit_score": 53,
-  "agency": "Biggin & Scott Glen Waverley",
-  "photos": [
-   "268306211/3d44c613b79b761e118d34a7-223581120__1791954219-90568-GeminiGeneratedImagepuzlsapuzlsapuzl-1791954347-primary.jpeg",
-   "262899061/03f14a415bd77da9f46b75e3-184931172__1769753237-184931172__1769753229-100374-Lounge-room-Overall-1-of-2-2-LivingRoom-Standard-1769753565-primary.jpg",
-   "262899062/7587f2fe411c13d7a5e12621-184931158__1769753237-184931158__1769753221-100206-Kitchen-1769753565-primary.jpg",
-   "262899058/44acb3a8fed3afc0bb518f8f-184931168__1769753237-184931168__1769753227-100388-Bedroom-1-Overall-1-of-2-2-Bedroom-Modern-1769753551-primary.jpg"
-  ],
-  "region": "South-east",
-  "lga": "Monash",
-  "cbd_km": 16.9,
-  "near": {
-   "supermarket": {
-    "m": 989,
-    "name": "ALDI"
-   },
-   "fresh": {
-    "m": 1024,
-    "name": "Bakers Delight"
-   },
-   "pharmacy": {
-    "m": 1077,
-    "name": "Amcal"
-   },
-   "gp": {
-    "m": 1578,
-    "name": "Burwood Specialist Care"
-   },
-   "cafe": {
-    "m": 924,
-    "name": "Caf\u00e9 1809"
-   },
-   "park": {
-    "m": 350,
-    "name": "Melbourne Water Pipe Reserve"
-   },
-   "gym": {
-    "m": 1473,
-    "name": "Nunawading Basketball Stadium"
-   },
-   "library": {
-    "m": 2526,
-    "name": "Mount Waverley Secondary College Senior Library"
-   },
-   "train": {
-    "m": 2276,
-    "name": "Syndal"
-   },
-   "tram": {
-    "m": 1131,
-    "name": "Stop 70: Blackburn Road"
-   },
-   "bus": {
-    "m": 120,
-    "name": ""
-   },
-   "bar": {
-    "m": 2321,
-    "name": "Burvale Hotel"
-   },
-   "cinema": {
-    "m": 2692,
-    "name": "Reading Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 4,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "park"
-  ],
-  "twenty": 11,
-  "transit": 20,
-  "roads": {
-   "motorway": 3687,
-   "motorway_name": "Blackburn Road Off Ramp",
-   "major": 67,
-   "major_name": "Highbury Road",
-   "rail": 1745
-  },
-  "quiet": 85,
-  "noise_flags": [
-   "Main road 67 m away (Highbury Road)"
-  ],
-  "air": 88,
-  "air_flags": [
-   "Main road 67 m away (Highbury Road)"
-  ],
-  "safety": 86,
-  "crime": {
-   "rate": 67.3,
-   "burglary": 5.9,
-   "assault": 4.8,
-   "offences": 2870,
-   "population": 42642
-  },
-  "first_seen": "2026-10-08"
  },
  {
   "id": 6509052,
@@ -99448,7 +98961,7 @@
   "pets": true,
   "lat": -37.832258,
   "lng": 145.031947,
-  "available": "15th November 2026",
+  "available": "now",
   "listed": "2026-09-30",
   "walk_score": 68,
   "transit_score": 69,
@@ -102153,125 +101666,6 @@
    "population": 11177
   },
   "first_seen": "2026-10-22"
- },
- {
-  "id": 5580005,
-  "url": "https://www.rent.com.au/property/3-trickett-st-clyde-vic-3978-5580005",
-  "type": "House",
-  "street": "3 Trickett Street",
-  "suburb": "Clyde",
-  "postcode": "3978",
-  "rent_text": "$550 pw",
-  "rent": 550,
-  "beds": 3,
-  "baths": 2,
-  "cars": 1,
-  "pets": false,
-  "lat": -38.121936,
-  "lng": 145.325338,
-  "available": "now",
-  "listed": "2026-08-17",
-  "walk_score": 14,
-  "transit_score": 30,
-  "agency": "Ray White Cranbourne",
-  "photos": [
-   "248252600/a235e97eae15b19b77645505-48808545__1644187610-12744-trickett2-1708302578-primary.jpg",
-   "248252786/61cf6fc21314da3001ee8e15-48808550__1644187615-10837-trickett5-1708303040-primary.jpg",
-   "248252788/3bec66a7d3430635a0ea9b55-48808562__1644187619-29753-trickett6-1708303041-primary.jpg",
-   "248252785/526095b01144f27e920d8a28-48808552__1644187617-12542-trickett3-1708303040-primary.jpg"
-  ],
-  "region": "South-east",
-  "lga": "Casey",
-  "cbd_km": 46.0,
-  "near": {
-   "supermarket": {
-    "m": 685,
-    "name": "Coles"
-   },
-   "fresh": {
-    "m": 4896,
-    "name": "Gold Sunshine Hot Bread"
-   },
-   "pharmacy": {
-    "m": 5065,
-    "name": "TerryWhite Chemmart"
-   },
-   "gp": {
-    "m": 1456,
-    "name": "Valetta Street Medical Centre"
-   },
-   "cafe": {
-    "m": 799,
-    "name": "Wok on Clyde"
-   },
-   "park": {
-    "m": 107,
-    "name": ""
-   },
-   "gym": {
-    "m": 1843,
-    "name": "City Football Academy - ctrl:cyber"
-   },
-   "library": {
-    "m": 691,
-    "name": ""
-   },
-   "train": {
-    "m": 6014,
-    "name": "Cranbourne"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 505,
-    "name": "Clyde-Five Ways Rd/Berwick-Cranbourne Rd"
-   },
-   "bar": {
-    "m": 5020,
-    "name": "Kelly's"
-   },
-   "cinema": {
-    "m": 9999,
-    "name": ""
-   }
-  },
-  "counts": {
-   "cafe": 1,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 1
-  },
-  "met": [
-   "supermarket",
-   "cafe",
-   "park",
-   "library"
-  ],
-  "twenty": 44,
-  "transit": 10,
-  "roads": {
-   "motorway": 7571,
-   "motorway_name": "O'Shea Road Offramp",
-   "major": 2631,
-   "major_name": "South Gippsland Highway",
-   "rail": 4451
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 65,
-  "crime": {
-   "rate": 104.3,
-   "burglary": 7.5,
-   "assault": 13.0,
-   "offences": 1166,
-   "population": 11177
-  },
-  "first_seen": "2026-08-17"
  },
  {
   "id": 6542777,
@@ -105203,127 +104597,6 @@
   "first_seen": "2026-10-31"
  },
  {
-  "id": 6175424,
-  "url": "https://www.rent.com.au/property/44-dodson-rd-officer-vic-3809-6175424",
-  "type": "House",
-  "street": "44 Dodson Road",
-  "suburb": "Officer",
-  "postcode": "3809",
-  "rent_text": "$560 pw",
-  "rent": 560,
-  "beds": 3,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -38.062723,
-  "lng": 145.38981,
-  "available": "now",
-  "listed": "2026-10-16",
-  "walk_score": 5,
-  "transit_score": 0,
-  "agency": "Ray White Pakenham",
-  "photos": [
-   "259475655/4cce5715658244c9bec407d6-166792145__1759801128-52128-44DodsonrdOfficer-11-1759802080-primary.JPG",
-   "259476083/4d0bc187d0f4dc98a58ce216-166792050__1759801114-51623-44DodsonrdOfficer-7-1759802865-primary.JPG",
-   "259476081/44b78dfd0b3580e309e7125b-166792083__1759801120-64830-44DodsonrdOfficer-8-1759802864-primary.JPG",
-   "259476085/aef7c384bb418c7fdb6a17e9-166792090__1759801124-51569-44DodsonrdOfficer-9-1759802865-primary.JPG"
-  ],
-  "region": "South-east",
-  "lga": "Cardinia",
-  "cbd_km": 45.9,
-  "near": {
-   "supermarket": {
-    "m": 559,
-    "name": "IGA Local Grocer Officer"
-   },
-   "fresh": {
-    "m": 3491,
-    "name": "The Gourmet Butchershop"
-   },
-   "pharmacy": {
-    "m": 1282,
-    "name": "TerryWhite Chemmart"
-   },
-   "gp": {
-    "m": 1004,
-    "name": "Rise Medical Centre"
-   },
-   "cafe": {
-    "m": 530,
-    "name": "Blondie's Kafe"
-   },
-   "park": {
-    "m": 223,
-    "name": ""
-   },
-   "gym": {
-    "m": 748,
-    "name": ""
-   },
-   "library": {
-    "m": 846,
-    "name": "Toun-Nun Child And Family Centre"
-   },
-   "train": {
-    "m": 9999,
-    "name": ""
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 427,
-    "name": "Rix Rd/Brunt Rd"
-   },
-   "bar": {
-    "m": 1475,
-    "name": "Pink Hill Hotel"
-   },
-   "cinema": {
-    "m": 9999,
-    "name": ""
-   }
-  },
-  "counts": {
-   "cafe": 1,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 1
-  },
-  "met": [
-   "supermarket",
-   "cafe",
-   "park",
-   "gym"
-  ],
-  "twenty": 44,
-  "transit": 10,
-  "roads": {
-   "motorway": 899,
-   "motorway_name": "Service Centre Offramp",
-   "major": 669,
-   "major_name": "Princes Highway",
-   "rail": 65
-  },
-  "quiet": 80,
-  "noise_flags": [
-   "Railway line 65 m away"
-  ],
-  "air": 100,
-  "air_flags": [],
-  "safety": 78,
-  "crime": {
-   "rate": 81.2,
-   "burglary": 7.1,
-   "assault": 7.7,
-   "offences": 1502,
-   "population": 18503
-  },
-  "first_seen": "2026-10-17"
- },
- {
   "id": 6500105,
   "url": "https://www.rent.com.au/property/20-sable-cct-officer-vic-3809-6500105",
   "type": "Townhouse",
@@ -107578,123 +106851,6 @@
    "population": 1023
   },
   "first_seen": "2026-11-10"
- },
- {
-  "id": 6482952,
-  "url": "https://www.rent.com.au/property/19-muirfield-dr-sunbury-vic-3429-6482952",
-  "type": "House",
-  "street": "19 Muirfield Drive",
-  "suburb": "Sunbury",
-  "postcode": "3429",
-  "rent_text": "$490 pw",
-  "rent": 490,
-  "beds": 3,
-  "baths": 2,
-  "cars": 6,
-  "pets": false,
-  "lat": -37.584424,
-  "lng": 144.755658,
-  "available": "now",
-  "listed": "2026-11-14",
-  "walk_score": 19,
-  "transit_score": 27,
-  "agency": "O\u00e2\u0080\u0099Brien Real Estate St Albans/Sunshine",
-  "photos": [
-   "268500903/8d824d386c83d5873b4c0ee6-178876155421286055-1792984050-primary.jpg",
-   "268500911/aa4a789a8619e52886c879c6-178876157674879107-1792984099-primary.jpg",
-   "268500910/bf1a1cc40f0137e292000df4-178876159824519243-1792984099-primary.jpg",
-   "268500912/4c57b7321ebd3c4c0aea818a-178876162066416360-1792984099-primary.jpg"
-  ],
-  "region": "North",
-  "lga": "Hume",
-  "cbd_km": 31.8,
-  "near": {
-   "supermarket": {
-    "m": 3083,
-    "name": "Morgan's IGA"
-   },
-   "fresh": {
-    "m": 3119,
-    "name": "Sunbury's Quality Fruit & Vegetable"
-   },
-   "pharmacy": {
-    "m": 3097,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 3102,
-    "name": "Evans Street Clinic"
-   },
-   "cafe": {
-    "m": 2910,
-    "name": ""
-   },
-   "park": {
-    "m": 35,
-    "name": ""
-   },
-   "gym": {
-    "m": 324,
-    "name": ""
-   },
-   "library": {
-    "m": 973,
-    "name": "Goonawarra Community Centre"
-   },
-   "train": {
-    "m": 3252,
-    "name": "Sunbury Station"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 830,
-    "name": "Francis Boulevard/Sunbury Road"
-   },
-   "bar": {
-    "m": 3064,
-    "name": "Royal Hotel"
-   },
-   "cinema": {
-    "m": 3323,
-    "name": "Reading Cinema"
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "park",
-   "gym"
-  ],
-  "twenty": 22,
-  "transit": 0,
-  "roads": {
-   "motorway": 4851,
-   "motorway_name": "Calder Freeway Onramp",
-   "major": 542,
-   "major_name": "Sunbury Road",
-   "rail": 2131
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 83,
-  "crime": {
-   "rate": 73.6,
-   "burglary": 4.3,
-   "assault": 7.0,
-   "offences": 2860,
-   "population": 38851
-  },
-  "first_seen": "2026-10-13"
  },
  {
   "id": 6280775,
@@ -111558,6 +110714,125 @@
   "first_seen": "2026-10-06"
  },
  {
+  "id": 6543656,
+  "url": "https://www.rent.com.au/property/26-leslie-st-frankston-south-vic-3199-6543656",
+  "type": "House",
+  "street": "26 Leslie Street",
+  "suburb": "Frankston South",
+  "postcode": "3199",
+  "rent_text": "$685 pw",
+  "rent": 685,
+  "beds": 3,
+  "baths": 1,
+  "cars": 2,
+  "pets": false,
+  "lat": -38.164889,
+  "lng": 145.114516,
+  "available": "15th December 2026",
+  "listed": "2026-11-15",
+  "walk_score": 10,
+  "transit_score": 0,
+  "agency": "Ray White Frankston",
+  "photos": [
+   "268877323/67b1251ca187d8d53f7d29d6-228731551__1794696578-184944-6-Facade-1794697165-primary.jpg",
+   "268877324/827aab4a2e095e19eb0a333d-228731548__1794696547-81612-3-Other-1794697170-primary.jpg",
+   "268877327/bd5067ee4cae47e316310dbc-228731549__1794696554-81588-4-Kitchen-1794697173-primary.jpg",
+   "268877328/2b4314442e6e95af9faa2c8b-228731554__1794696605-101374-1-Other-1794697173-primary.jpg"
+  ],
+  "region": "Bayside & peninsula",
+  "lga": "Frankston",
+  "cbd_km": 40.4,
+  "near": {
+   "supermarket": {
+    "m": 717,
+    "name": "Foodworks"
+   },
+   "fresh": {
+    "m": 722,
+    "name": "Bakery Made"
+   },
+   "pharmacy": {
+    "m": 2641,
+    "name": "Hildebrand's Compounding Pharmacy"
+   },
+   "gp": {
+    "m": 2291,
+    "name": ""
+   },
+   "cafe": {
+    "m": 724,
+    "name": "Mr Frankie"
+   },
+   "park": {
+    "m": 213,
+    "name": ""
+   },
+   "gym": {
+    "m": 2073,
+    "name": "Curves"
+   },
+   "library": {
+    "m": 2576,
+    "name": "Frankston Men's Shed"
+   },
+   "train": {
+    "m": 3395,
+    "name": "Leawarra"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 976,
+    "name": "Hamilton Gr/Yuille St"
+   },
+   "bar": {
+    "m": 2871,
+    "name": "The Cheeky Squire"
+   },
+   "cinema": {
+    "m": 3148,
+    "name": "Hoyts"
+   }
+  },
+  "counts": {
+   "cafe": 3,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 2
+  },
+  "met": [
+   "supermarket",
+   "fresh",
+   "cafe",
+   "park"
+  ],
+  "twenty": 44,
+  "transit": 0,
+  "roads": {
+   "motorway": 2917,
+   "motorway_name": "Frankston Freeway",
+   "major": 1050,
+   "major_name": "Nepean Highway",
+   "rail": 2117
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 100,
+  "crime": {
+   "rate": 39.1,
+   "burglary": 2.6,
+   "assault": 2.2,
+   "offences": 736,
+   "population": 18801
+  },
+  "first_seen": "2026-11-16"
+ },
+ {
   "id": 6534370,
   "url": "https://www.rent.com.au/property/22-tristania-st-frankston-south-vic-3199-6534370",
   "type": "House",
@@ -112146,6 +111421,130 @@
    "population": 18801
   },
   "first_seen": "2026-10-05"
+ },
+ {
+  "id": 6543717,
+  "url": "https://www.rent.com.au/property/623-bell-st-pascoe-vale-south-vic-3044-6543717",
+  "type": "House",
+  "street": "623 Bell Street",
+  "suburb": "Pascoe Vale South",
+  "postcode": "3044",
+  "rent_text": "$595 pw",
+  "rent": 595,
+  "beds": 3,
+  "baths": 2,
+  "cars": 3,
+  "pets": null,
+  "lat": -37.738283,
+  "lng": 144.936733,
+  "available": "18th November 2026",
+  "listed": "2026-11-15",
+  "walk_score": 60,
+  "transit_score": 62,
+  "agency": "PropertyNow",
+  "photos": [
+   "268878978/bf9d38152ed271f2dddfb493-1794735559249_IMG_3830-1794757886-primary.jpeg",
+   "268879005/2b822cfb7b7e87b46d82b77d-1794735559249_IMG_3745-1794757948-primary.jpeg",
+   "268879006/ad22ea8c841617e02b42f0ca-1794735559249_IMG_3746-1794757948-primary.jpeg",
+   "268879007/e450107131be1a7f18b7f615-1794735559249_IMG_3747-1794757949-primary.jpeg"
+  ],
+  "region": "North",
+  "lga": "Merri-bek",
+  "cbd_km": 9.2,
+  "near": {
+   "supermarket": {
+    "m": 1107,
+    "name": "Pascoe Vale Mini Mart"
+   },
+   "fresh": {
+    "m": 878,
+    "name": "Pascoe Vale Hot Bread"
+   },
+   "pharmacy": {
+    "m": 1756,
+    "name": "UFS"
+   },
+   "gp": {
+    "m": 1047,
+    "name": ""
+   },
+   "cafe": {
+    "m": 932,
+    "name": "N'Joy Cafe on Cumberland"
+   },
+   "park": {
+    "m": 270,
+    "name": "Brearley Reserve"
+   },
+   "gym": {
+    "m": 274,
+    "name": ""
+   },
+   "library": {
+    "m": 1297,
+    "name": "Sussex Neighbourhood House"
+   },
+   "train": {
+    "m": 1385,
+    "name": "Strathmore"
+   },
+   "tram": {
+    "m": 1041,
+    "name": "Stop 45: Bell Street"
+   },
+   "bus": {
+    "m": 115,
+    "name": "Bell Street/Cumberland Road"
+   },
+   "bar": {
+    "m": 1017,
+    "name": "Bar Tobal\u00e1"
+   },
+   "cinema": {
+    "m": 924,
+    "name": "Bofa Theatre"
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 4,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "park",
+   "gym"
+  ],
+  "twenty": 22,
+  "transit": 35,
+  "roads": {
+   "motorway": 383,
+   "motorway_name": "Bell Street Offramp",
+   "major": 19,
+   "major_name": "Bell Street",
+   "rail": 639
+  },
+  "quiet": 54,
+  "noise_flags": [
+   "Freeway within 500 m (Bell Street Offramp)",
+   "On or beside a main road (Bell Street, 19 m)",
+   "Essendon Fields airport 3.3 km away"
+  ],
+  "air": 67,
+  "air_flags": [
+   "Freeway 383 m away",
+   "Fronts a main road (Bell Street)"
+  ],
+  "safety": 93,
+  "crime": {
+   "rate": 54.9,
+   "burglary": 4.9,
+   "assault": 4.3,
+   "offences": 549,
+   "population": 10006
+  },
+  "first_seen": "2026-11-16"
  },
  {
   "id": 6541967,
@@ -115252,6 +114651,125 @@
    "population": 1009
   },
   "first_seen": "2026-10-24"
+ },
+ {
+  "id": 6009971,
+  "url": "https://www.rent.com.au/property/257-toyon-rd-donnybrook-vic-3064-6009971",
+  "type": "Townhouse",
+  "street": "257 Toyon Road",
+  "suburb": "Donnybrook",
+  "postcode": "3064",
+  "rent_text": "$500 pw",
+  "rent": 500,
+  "beds": 3,
+  "baths": 2,
+  "cars": 1,
+  "pets": false,
+  "lat": -37.538605,
+  "lng": 144.970671,
+  "available": "15th December 2026",
+  "listed": "2026-11-16",
+  "walk_score": 14,
+  "transit_score": 0,
+  "agency": "Bombay Real Estate",
+  "photos": [
+   "256363634/7c283b8450de86f90834d517-139204275__1741738544-129932-image2-1744677204-primary.jpg",
+   "256363815/a6328ca25f20f87a26cf84a9-139204279__1741738549-142903-image3-1744677377-primary.jpg",
+   "256363814/0a80dd429540533de7b22efe-139204306__1741738555-142684-image4-1744677377-primary.jpg",
+   "256363818/ee30ff6e2ae06b41f85bb86e-139204323__1741738558-142692-image5-1744677378-primary.jpg"
+  ],
+  "region": "North",
+  "lga": "Whittlesea",
+  "cbd_km": 30.9,
+  "near": {
+   "supermarket": {
+    "m": 1283,
+    "name": "Woolworths"
+   },
+   "fresh": {
+    "m": 9999,
+    "name": ""
+   },
+   "pharmacy": {
+    "m": 9999,
+    "name": ""
+   },
+   "gp": {
+    "m": 9999,
+    "name": ""
+   },
+   "cafe": {
+    "m": 1800,
+    "name": "Dyer Street Cafe"
+   },
+   "park": {
+    "m": 303,
+    "name": "Platform Park"
+   },
+   "gym": {
+    "m": 5793,
+    "name": ""
+   },
+   "library": {
+    "m": 1445,
+    "name": "Kalkallo Community Centre"
+   },
+   "train": {
+    "m": 489,
+    "name": "Donnybrook"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 426,
+    "name": "Donnybrook Station"
+   },
+   "bar": {
+    "m": 568,
+    "name": "Donnybrook Hotel"
+   },
+   "cinema": {
+    "m": 9999,
+    "name": ""
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 1,
+   "bus": 0,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "park",
+   "pt"
+  ],
+  "twenty": 22,
+  "transit": 55,
+  "roads": {
+   "motorway": 1974,
+   "motorway_name": "Hume Freeway Onramp",
+   "major": 2157,
+   "major_name": "Hume Freeway",
+   "rail": 114
+  },
+  "quiet": 92,
+  "noise_flags": [
+   "Railway line 114 m away"
+  ],
+  "air": 100,
+  "air_flags": [],
+  "safety": 0,
+  "crime": {
+   "rate": 299.5,
+   "burglary": 21.4,
+   "assault": 33.8,
+   "offences": 629,
+   "population": 2100
+  },
+  "first_seen": "2026-11-16"
  },
  {
   "id": 6181628,
@@ -121707,122 +121225,6 @@
   "first_seen": "2026-09-30"
  },
  {
-  "id": 5764221,
-  "url": "https://www.rent.com.au/property/66-monaco-cct-wollert-vic-3750-5764221",
-  "type": "House",
-  "street": "66 Monaco Circuit",
-  "suburb": "Wollert",
-  "postcode": "3750",
-  "rent_text": "$480 pw",
-  "rent": 480,
-  "beds": 3,
-  "baths": 1,
-  "cars": 2,
-  "pets": false,
-  "lat": -37.616419,
-  "lng": 145.021715,
-  "available": "now",
-  "listed": "2026-09-29",
-  "walk_score": 9,
-  "transit_score": 0,
-  "agency": "Ray White Mill Park",
-  "photos": [
-   "268871515/b2e8e1d02f92284b3e8d7901-228679727__1794550978-281088-UnderApplication1-1794551146-primary.png",
-   "251878226/297b43000fd3b3990541024b-103776382__1723505460-25544-front-1723505751-primary.png",
-   "251878239/44c0f9ac0d25e7eddae4b3c8-103776405__1723505463-25634-lounge-1723505759-primary.png",
-   "251878243/e087e988424f9f1ea3c23598-103776384__1723505461-25301-kitchen-1723505759-primary.png"
-  ],
-  "region": "North",
-  "lga": "Whittlesea",
-  "cbd_km": 22.8,
-  "near": {
-   "supermarket": {
-    "m": 1760,
-    "name": "Woolworths"
-   },
-   "fresh": {
-    "m": 5412,
-    "name": ""
-   },
-   "pharmacy": {
-    "m": 5270,
-    "name": "Priceline Pharmacy"
-   },
-   "gp": {
-    "m": 3830,
-    "name": "Epping Clinic"
-   },
-   "cafe": {
-    "m": 1775,
-    "name": "Aurora Cafe"
-   },
-   "park": {
-    "m": 48,
-    "name": ""
-   },
-   "gym": {
-    "m": 2166,
-    "name": ""
-   },
-   "library": {
-    "m": 1947,
-    "name": "Galada Community Centre"
-   },
-   "train": {
-    "m": 9999,
-    "name": ""
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 1267,
-    "name": "High Park Drive/Craigieburn Road"
-   },
-   "bar": {
-    "m": 5345,
-    "name": "Epping Plaza Hotel"
-   },
-   "cinema": {
-    "m": 5231,
-    "name": "Reading Epping Cinema"
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "park"
-  ],
-  "twenty": 11,
-  "transit": 0,
-  "roads": {
-   "motorway": 2631,
-   "motorway_name": "Hume Freeway",
-   "major": 715,
-   "major_name": "Epping Road",
-   "rail": 4032
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 91,
-  "crime": {
-   "rate": 58.5,
-   "burglary": 4.5,
-   "assault": 5.9,
-   "offences": 1429,
-   "population": 24407
-  },
-  "first_seen": "2026-09-29"
- },
- {
   "id": 6495069,
   "url": "https://www.rent.com.au/property/6-moondarra-rd-wollert-vic-3750-6495069",
   "type": "House",
@@ -122287,131 +121689,6 @@
    "population": 24407
   },
   "first_seen": "2026-08-28"
- },
- {
-  "id": 6538435,
-  "url": "https://www.rent.com.au/property/6-545-toorak-rd-toorak-vic-3142-6538435",
-  "type": "Apartment",
-  "street": "6/545 Toorak Road",
-  "suburb": "Toorak",
-  "postcode": "3142",
-  "rent_text": "$1,250 pw",
-  "rent": 1250,
-  "beds": 3,
-  "baths": 2,
-  "cars": 2,
-  "pets": true,
-  "lat": -37.841235,
-  "lng": 145.011554,
-  "available": "27th November 2026",
-  "listed": "2026-11-10",
-  "walk_score": 91,
-  "transit_score": 73,
-  "agency": "Marshall White & Co",
-  "photos": [
-   "268788667/909ee3268251b2538496a656-01994480_img_01-1794267152-primary.jpg",
-   "268788708/154a5e1dc47fad72e3b9daa2-01994480_img_02-1794267179-primary.jpg",
-   "268788703/d2c191bfadf87760971650e5-01994480_img_03-1794267176-primary.jpg",
-   "268788709/f9518c83640268f4f8fefa44-01994480_img_04-1794267180-primary.jpg"
-  ],
-  "region": "Inner city",
-  "lga": "Stonnington",
-  "cbd_km": 4.7,
-  "near": {
-   "supermarket": {
-    "m": 265,
-    "name": "Coles Local"
-   },
-   "fresh": {
-    "m": 2012,
-    "name": "N. Tran"
-   },
-   "pharmacy": {
-    "m": 1309,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 357,
-    "name": "Toorak Medical Centre"
-   },
-   "cafe": {
-    "m": 114,
-    "name": "Yuca Melbourne"
-   },
-   "park": {
-    "m": 371,
-    "name": "Carters Avenue Reserve"
-   },
-   "gym": {
-    "m": 643,
-    "name": ""
-   },
-   "library": {
-    "m": 1394,
-    "name": "Toorak/South Yarra Library"
-   },
-   "train": {
-    "m": 2471,
-    "name": "Kooyong"
-   },
-   "tram": {
-    "m": 77,
-    "name": "Stop 133: Grange Road"
-   },
-   "bus": {
-    "m": 78,
-    "name": "Toorak Road/Grange Road"
-   },
-   "bar": {
-    "m": 1352,
-    "name": "Bush Inn Hotel"
-   },
-   "cinema": {
-    "m": 1685,
-    "name": "Palace Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 2,
-   "bar": 0,
-   "bus": 8,
-   "tram": 6,
-   "shops": 2
-  },
-  "met": [
-   "supermarket",
-   "gp",
-   "cafe",
-   "park",
-   "gym",
-   "pt"
-  ],
-  "twenty": 67,
-  "transit": 55,
-  "roads": {
-   "motorway": 1083,
-   "motorway_name": "CityLink On Ramp",
-   "major": 18,
-   "major_name": "Toorak Road",
-   "rail": 693
-  },
-  "quiet": 70,
-  "noise_flags": [
-   "On or beside a main road (Toorak Road, 18 m)"
-  ],
-  "air": 75,
-  "air_flags": [
-   "Fronts a main road (Toorak Road)"
-  ],
-  "safety": 81,
-  "crime": {
-   "rate": 75.8,
-   "burglary": 9.1,
-   "assault": 4.2,
-   "offences": 972,
-   "population": 12817
-  },
-  "first_seen": "2026-11-10"
  },
  {
   "id": 6529799,
@@ -122916,7 +122193,7 @@
   "pets": false,
   "lat": -37.965064,
   "lng": 145.155235,
-  "available": "15th November 2026",
+  "available": "now",
   "listed": "2026-11-10",
   "walk_score": 47,
   "transit_score": 39,
@@ -130743,122 +130020,6 @@
   "first_seen": "2026-10-28"
  },
  {
-  "id": 6518352,
-  "url": "https://www.rent.com.au/property/2-66-mcburnie-dr-kurunjang-vic-3337-6518352",
-  "type": "Unit",
-  "street": "2/66 Mcburnie Drive",
-  "suburb": "Kurunjang",
-  "postcode": "3337",
-  "rent_text": "$420 pw",
-  "rent": 420,
-  "beds": 3,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -37.669318,
-  "lng": 144.576369,
-  "available": "now",
-  "listed": "2026-10-19",
-  "walk_score": 13,
-  "transit_score": 34,
-  "agency": "YPA Estate Agents - Melton",
-  "photos": [
-   "268368379/6682db2a4bb87a9fb79da73f-1-8b59-de7e-ecae-a41_84d8-9585-c5b9-28b8-8e0a-e2e2-eed2-372d_20261019032900_original-1792383117-primary.jpg",
-   "268368483/47aed1be0a676445b0e9753d-2-bce2-cd37-5b41-503_b852-72f8-564c-a923-aad7-42f2-4c2d-6ab6_20261019032901_original-1792383581-primary.jpg",
-   "268368484/bd2391e855cbea3508a200ea-3-7e9e-8af0-7763-41d_7f1b-b9d7-38c5-43bb-6f37-fcf5-8a16-44e4_20261019032902_original-1792383581-primary.jpg",
-   "268368485/ad1054e5913c709fe0cfa26e-7-bb92-6286-5584-06f_bfe6-9229-b12d-c182-6f23-f279-f930-6aa1_20261019032904_original-1792383581-primary.jpg"
-  ],
-  "region": "West",
-  "lga": "Melton",
-  "cbd_km": 38.1,
-  "near": {
-   "supermarket": {
-    "m": 1989,
-    "name": "Aldi"
-   },
-   "fresh": {
-    "m": 2313,
-    "name": ""
-   },
-   "pharmacy": {
-    "m": 2535,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 2198,
-    "name": "Melton Medical and Dental Centre"
-   },
-   "cafe": {
-    "m": 2524,
-    "name": "PM's Coffee"
-   },
-   "park": {
-    "m": 288,
-    "name": ""
-   },
-   "gym": {
-    "m": 1474,
-    "name": ""
-   },
-   "library": {
-    "m": 1237,
-    "name": "Kurunjang Community Hub"
-   },
-   "train": {
-    "m": 4940,
-    "name": "Melton"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 230,
-    "name": "Lagarna Dr/Adam Way"
-   },
-   "bar": {
-    "m": 2091,
-    "name": "Macs Hotel"
-   },
-   "cinema": {
-    "m": 2859,
-    "name": "Reading Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 4,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "park"
-  ],
-  "twenty": 11,
-  "transit": 20,
-  "roads": {
-   "motorway": 2202,
-   "motorway_name": "Western Freeway Onramp",
-   "major": 3158,
-   "major_name": "C754",
-   "rail": 3764
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 93,
-  "crime": {
-   "rate": 55.1,
-   "burglary": 3.1,
-   "assault": 7.0,
-   "offences": 590,
-   "population": 10711
-  },
-  "first_seen": "2026-10-20"
- },
- {
   "id": 4731487,
   "url": "https://www.rent.com.au/property/62-smoult-dr-kurunjang-vic-3337-4731487",
   "type": "House",
@@ -135582,7 +134743,7 @@
   "rent_text": "$500 pw",
   "rent": 500,
   "beds": 3,
-  "baths": 2,
+  "baths": 1,
   "cars": 2,
   "pets": false,
   "lat": -37.683573,
@@ -138033,123 +137194,6 @@
    "population": 36305
   },
   "first_seen": "2026-11-03"
- },
- {
-  "id": 6529961,
-  "url": "https://www.rent.com.au/property/9-4-narada-rd-truganina-vic-3029-6529961",
-  "type": "Townhouse",
-  "street": "9/4 Narada Road",
-  "suburb": "Truganina",
-  "postcode": "3029",
-  "rent_text": "$560 pw",
-  "rent": 560,
-  "beds": 3,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -37.830181,
-  "lng": 144.721382,
-  "available": "now",
-  "listed": "2026-10-31",
-  "walk_score": 7,
-  "transit_score": 0,
-  "agency": "McMullan & Bird Portfolio Management Pty Ltd",
-  "photos": [
-   "268632813/39a0f0c78f0fd71427ca8b71-76bf5059_2D7a39_2D239e_2Daaf0_2D89b12b7cb821-1793430279-primary.jpg",
-   "268632814/1437a40b6b2bd80bd293e1b1-634fdb3f_2D22f3_2D9154_2Df661_2Db4b2fca6b759-1793430299-primary.jpg",
-   "268632815/c3b985c6045db046f001b8f7-37def259_2Db482_2D847d_2Dcb32_2D20b02f9da289-1793430300-primary.jpg",
-   "268632816/42c6fc4332f9669e4c3ecee7-f6d9384f_2D0a93_2D5def_2D391c_2D5bbfd9f027ae-1793430301-primary.jpg"
-  ],
-  "region": "West",
-  "lga": "Wyndham",
-  "cbd_km": 21.6,
-  "near": {
-   "supermarket": {
-    "m": 1435,
-    "name": "Coles"
-   },
-   "fresh": {
-    "m": 3451,
-    "name": "Madina Halal Meats"
-   },
-   "pharmacy": {
-    "m": 1464,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 3406,
-    "name": ""
-   },
-   "cafe": {
-    "m": 1573,
-    "name": "Pie Face"
-   },
-   "park": {
-    "m": 473,
-    "name": ""
-   },
-   "gym": {
-    "m": 382,
-    "name": "Alcock Road Reserve"
-   },
-   "library": {
-    "m": 1580,
-    "name": ""
-   },
-   "train": {
-    "m": 3071,
-    "name": "Tarneit"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 966,
-    "name": "Alcock Rd/Leakes Rd"
-   },
-   "bar": {
-    "m": 2363,
-    "name": "Club Tarneit"
-   },
-   "cinema": {
-    "m": 8006,
-    "name": "VIllage Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "park",
-   "gym"
-  ],
-  "twenty": 22,
-  "transit": 0,
-  "roads": {
-   "motorway": 4601,
-   "motorway_name": "Western Freeway Onramp",
-   "major": 751,
-   "major_name": "Leakes Road",
-   "rail": 287
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 74,
-  "crime": {
-   "rate": 88.0,
-   "burglary": 7.8,
-   "assault": 6.3,
-   "offences": 3196,
-   "population": 36305
-  },
-  "first_seen": "2026-11-01"
  },
  {
   "id": 6529028,
@@ -149709,6 +148753,125 @@
   "first_seen": "2026-08-12"
  },
  {
+  "id": 5467258,
+  "url": "https://www.rent.com.au/property/19-cooinda-cres-watsonia-vic-3087-5467258",
+  "type": "House",
+  "street": "19 Cooinda Crescent",
+  "suburb": "Watsonia",
+  "postcode": "3087",
+  "rent_text": "$580 pw",
+  "rent": 580,
+  "beds": 3,
+  "baths": 1,
+  "cars": 2,
+  "pets": false,
+  "lat": -37.713526,
+  "lng": 145.091168,
+  "available": "21st November 2026",
+  "listed": "2026-11-16",
+  "walk_score": 76,
+  "transit_score": 49,
+  "agency": "Ray White Macleod",
+  "photos": [
+   "246102481/5b7727c931da4835a90cf772-74584095__1698032119-1642-Mainpng-1698790994-primary.png",
+   "246102576/39487d6ad8464a987fc37dc4-74584097__1698032123-2197-Living-1698791167-primary.png",
+   "246102573/b9284dd4949fc7841f612ebb-74584099__1698032127-32268-Dining-1698791165-primary.png",
+   "246102574/8b87c8f8cd60bb852854af81-74584102__1698032131-4530-Kitchen-1698791165-primary.png"
+  ],
+  "region": "North",
+  "lga": "Banyule",
+  "cbd_km": 15.9,
+  "near": {
+   "supermarket": {
+    "m": 202,
+    "name": "IGA"
+   },
+   "fresh": {
+    "m": 1072,
+    "name": "Watsonia Bake House"
+   },
+   "pharmacy": {
+    "m": 312,
+    "name": "Care Pharmacy"
+   },
+   "gp": {
+    "m": 1056,
+    "name": "Watsonia Road Medical Centre"
+   },
+   "cafe": {
+    "m": 1050,
+    "name": "Watsonia Pizza"
+   },
+   "park": {
+    "m": 224,
+    "name": ""
+   },
+   "gym": {
+    "m": 150,
+    "name": "Watsonia Tennis Club"
+   },
+   "library": {
+    "m": 981,
+    "name": "Watsonia Library"
+   },
+   "train": {
+    "m": 922,
+    "name": "Watsonia"
+   },
+   "tram": {
+    "m": 4229,
+    "name": "Stop 65: Grimshaw Street"
+   },
+   "bus": {
+    "m": 125,
+    "name": "Elder Street Reserve/Elder Street"
+   },
+   "bar": {
+    "m": 1043,
+    "name": "Watsonia Wine Bar"
+   },
+   "cinema": {
+    "m": 1933,
+    "name": "Hoyts"
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 8,
+   "tram": 0,
+   "shops": 2
+  },
+  "met": [
+   "supermarket",
+   "pharmacy",
+   "park",
+   "gym"
+  ],
+  "twenty": 44,
+  "transit": 50,
+  "roads": {
+   "motorway": 2241,
+   "motorway_name": "Metropolitan Ring Road",
+   "major": 599,
+   "major_name": "Greensborough Highway",
+   "rail": 675
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 79,
+  "crime": {
+   "rate": 80.5,
+   "burglary": 7.1,
+   "assault": 4.5,
+   "offences": 431,
+   "population": 5352
+  },
+  "first_seen": "2026-11-16"
+ },
+ {
   "id": 6542646,
   "url": "https://www.rent.com.au/property/3-278-nell-street-w-watsonia-vic-3087-6542646",
   "type": "Townhouse",
@@ -153814,10 +152977,10 @@
   "transit_score": 68,
   "agency": "Buxton Oakleigh Pty Ltd",
   "photos": [
-   "268836775/7d69b28574a2cde401dd7495-01985789_img_13-1794439082-primary.jpg",
-   "268836778/fa8776405b829608dabd99ec-01985789_img_14-1794439088-primary.jpg",
-   "268836780/b1cfdcfbe4092bd8b6dbc36c-01985789_img_15-1794439089-primary.jpg",
-   "268836777/326d3b879cad2847c8c93a5f-01985789_img_16-1794439088-primary.jpg"
+   "268878902/eb36307a13e04334eea06c46-01985789_img_13-1794745446-primary.jpg",
+   "268878906/71c4aa608a1683247589cf78-01985789_img_14-1794745456-primary.jpg",
+   "268878905/69c81b2ff76f56e43072e215-01985789_img_15-1794745455-primary.jpg",
+   "268878903/733263e69a35102f3af86172-01985789_img_16-1794745454-primary.jpg"
   ],
   "region": "Bayside & peninsula",
   "lga": "Frankston",
@@ -156371,6 +155534,125 @@
   "first_seen": "2026-10-22"
  },
  {
+  "id": 5113674,
+  "url": "https://www.rent.com.au/property/132-market-st-newport-vic-3015-5113674",
+  "type": "Townhouse",
+  "street": "132 Market Street",
+  "suburb": "Newport",
+  "postcode": "3015",
+  "rent_text": "$800 pw",
+  "rent": 800,
+  "beds": 3,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -37.84814,
+  "lng": 144.875331,
+  "available": "18th December 2026",
+  "listed": "2026-11-16",
+  "walk_score": 61,
+  "transit_score": 50,
+  "agency": "Jas Stephens Real Estate",
+  "photos": [
+   "239399797/c4727f05dfb5b71ffc3a90a8-ec5eefb2_2D3560_2Deba3_2Dac59_2D1d52d641c1da-1669867681-primary.jpg",
+   "239399826/3fdfaeb076b79e07a2442a7c-ca6d81d7_2Da425_2D03a0_2D663c_2D5415d116828c-1669867715-primary.jpg",
+   "239399827/1fa12061be955595ccdab3ba-bf5e9770_2D5e13_2D3ba5_2Dca88_2Db72006b5c386-1669867716-primary.jpg",
+   "239399824/275cfd7b8f9034387187a7db-3a9ffd51_2D2641_2Ddd4c_2D4938_2D38e0de1e2beb-1669867714-primary.jpg"
+  ],
+  "region": "West",
+  "lga": "Hobsons Bay",
+  "cbd_km": 8.7,
+  "near": {
+   "supermarket": {
+    "m": 1612,
+    "name": "Woolworths"
+   },
+   "fresh": {
+    "m": 1064,
+    "name": "Eddie the Butcher"
+   },
+   "pharmacy": {
+    "m": 1057,
+    "name": "Newport Pharmacy"
+   },
+   "gp": {
+    "m": 1000,
+    "name": "Mason St Medical Centre"
+   },
+   "cafe": {
+    "m": 468,
+    "name": "Searz Cafe"
+   },
+   "park": {
+    "m": 227,
+    "name": ""
+   },
+   "gym": {
+    "m": 1197,
+    "name": "Yoga Path"
+   },
+   "library": {
+    "m": 996,
+    "name": "Newport Community Education Centre"
+   },
+   "train": {
+    "m": 4430,
+    "name": "Williamstown"
+   },
+   "tram": {
+    "m": 7353,
+    "name": "Stop 64: Footscray Station"
+   },
+   "bus": {
+    "m": 370,
+    "name": "Jack St/Woods St"
+   },
+   "bar": {
+    "m": 1090,
+    "name": "Newport social club"
+   },
+   "cinema": {
+    "m": 3769,
+    "name": "Reading Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 2,
+   "bar": 0,
+   "bus": 3,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "cafe",
+   "park"
+  ],
+  "twenty": 22,
+  "transit": 20,
+  "roads": {
+   "motorway": 2442,
+   "motorway_name": "West Gate Freeway Onramp",
+   "major": 865,
+   "major_name": "Melbourne Road",
+   "rail": 65
+  },
+  "quiet": 80,
+  "noise_flags": [
+   "Railway line 65 m away"
+  ],
+  "air": 100,
+  "air_flags": [],
+  "safety": 90,
+  "crime": {
+   "rate": 60.0,
+   "burglary": 3.0,
+   "assault": 5.3,
+   "offences": 820,
+   "population": 13658
+  },
+  "first_seen": "2026-11-16"
+ },
+ {
   "id": 6539582,
   "url": "https://www.rent.com.au/property/245a-douglas-pde-newport-vic-3015-6539582",
   "type": "House",
@@ -156604,124 +155886,6 @@
    "population": 13658
   },
   "first_seen": "2026-11-10"
- },
- {
-  "id": 6533459,
-  "url": "https://www.rent.com.au/property/1-2-crawford-st-newport-vic-3015-6533459",
-  "type": "House",
-  "street": "1/2 Crawford Street",
-  "suburb": "Newport",
-  "postcode": "3015",
-  "rent_text": "$900 per week | $3,911 per calendar month",
-  "rent": 900,
-  "beds": 3,
-  "baths": 2,
-  "cars": 0,
-  "pets": false,
-  "lat": -37.849301,
-  "lng": 144.890412,
-  "available": "4th January 2027",
-  "listed": "2026-11-04",
-  "walk_score": 63,
-  "transit_score": 52,
-  "agency": "Williams Real Estate",
-  "photos": [
-   "268701756/854529ce5b36773546860481-cba3a794-1793770179-primary.jpg",
-   "268701829/2fa6eff646e34b12da56f543-a1373f53-1793770412-primary.jpg",
-   "268701827/c5bb35266cc1c35db78d63d7-a0a112be-1793770411-primary.jpg",
-   "268701828/b803042058cdf5241335a503-84775032-1793770412-primary.jpg"
-  ],
-  "region": "West",
-  "lga": "Hobsons Bay",
-  "cbd_km": 7.6,
-  "near": {
-   "supermarket": {
-    "m": 1439,
-    "name": "Coles"
-   },
-   "fresh": {
-    "m": 1069,
-    "name": "Pham Bakery Cafe"
-   },
-   "pharmacy": {
-    "m": 1055,
-    "name": "Kofoed Pharmacy"
-   },
-   "gp": {
-    "m": 822,
-    "name": "Westgate Health Cooperative"
-   },
-   "cafe": {
-    "m": 406,
-    "name": "Jackies Pizza"
-   },
-   "park": {
-    "m": 367,
-    "name": ""
-   },
-   "gym": {
-    "m": 590,
-    "name": ""
-   },
-   "library": {
-    "m": 1349,
-    "name": "Newport Community Hub"
-   },
-   "train": {
-    "m": 3141,
-    "name": "Williamstown"
-   },
-   "tram": {
-    "m": 5006,
-    "name": "Stop 129: Beacon Cove"
-   },
-   "bus": {
-    "m": 271,
-    "name": "Jackson Reserve/Melbourne Rd"
-   },
-   "bar": {
-    "m": 874,
-    "name": "Prince Albert Hotel"
-   },
-   "cinema": {
-    "m": 4788,
-    "name": "Sun Theatre"
-   }
-  },
-  "counts": {
-   "cafe": 2,
-   "bar": 0,
-   "bus": 6,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "cafe",
-   "park",
-   "gym"
-  ],
-  "twenty": 33,
-  "transit": 20,
-  "roads": {
-   "motorway": 2164,
-   "motorway_name": "West Gate Freeway",
-   "major": 206,
-   "major_name": "Melbourne Road",
-   "rail": 433
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 90,
-  "crime": {
-   "rate": 60.0,
-   "burglary": 3.0,
-   "assault": 5.3,
-   "offences": 820,
-   "population": 13658
-  },
-  "first_seen": "2026-11-05"
  },
  {
   "id": 6239588,
@@ -171409,7 +170573,7 @@
   "pets": true,
   "lat": -37.688494,
   "lng": 144.578743,
-  "available": "15th November 2026",
+  "available": "now",
   "listed": "2026-10-23",
   "walk_score": 68,
   "transit_score": 36,
@@ -173180,6 +172344,124 @@
   "first_seen": "2026-08-25"
  },
  {
+  "id": 6543766,
+  "url": "https://www.rent.com.au/property/31-welcome-pde-wyndham-vale-vic-3024-6543766",
+  "type": "House",
+  "street": "31 Welcome Parade",
+  "suburb": "Wyndham Vale",
+  "postcode": "3024",
+  "rent_text": "$450 pw",
+  "rent": 450,
+  "beds": 3,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -37.853979,
+  "lng": 144.592282,
+  "available": "20th November 2026",
+  "listed": "2026-11-16",
+  "walk_score": 1,
+  "transit_score": 0,
+  "agency": "Milrose Real Estate ",
+  "photos": [
+   "268879957/f5fb4d1159963afe6389ceb7-ab05d830_2Dfcee_2D2bf0_2De729_2Da074ee4b4a69-1794781975-primary.jpg",
+   "268880080/57afd1d6d8278eaf494d9575-7002ed20_2Dfaff_2Df490_2D81af_2Dc9ec19d4f92e-1794781978-primary.jpg",
+   "268880081/a8f2f7c17967b0931a4ee37a-5ab022f0_2Dbd51_2D3839_2De5aa_2D7c87ecbb97d7-1794781977-primary.jpg",
+   "268880082/e7a5a851be1d677675958085-611abde8_2D7abb_2D3a08_2D0838_2Dbe56d9661431-1794781978-primary.jpg"
+  ],
+  "region": "West",
+  "lga": "Wyndham",
+  "cbd_km": 33.2,
+  "near": {
+   "supermarket": {
+    "m": 316,
+    "name": "IGA Jubilee Plus"
+   },
+   "fresh": {
+    "m": 9999,
+    "name": ""
+   },
+   "pharmacy": {
+    "m": 9999,
+    "name": ""
+   },
+   "gp": {
+    "m": 3460,
+    "name": "Wyndham Vale GP Super Clinic IPC Health"
+   },
+   "cafe": {
+    "m": 3862,
+    "name": "Kesari Indian"
+   },
+   "park": {
+    "m": 278,
+    "name": ""
+   },
+   "gym": {
+    "m": 301,
+    "name": "Club Jubilee"
+   },
+   "library": {
+    "m": 2072,
+    "name": "Birnbial Family Centre"
+   },
+   "train": {
+    "m": 3208,
+    "name": "Wyndham Vale"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 176,
+    "name": "Memory Crescent/Welcome Parade"
+   },
+   "bar": {
+    "m": 9999,
+    "name": ""
+   },
+   "cinema": {
+    "m": 9999,
+    "name": ""
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 4,
+   "tram": 0,
+   "shops": 1
+  },
+  "met": [
+   "supermarket",
+   "park",
+   "gym"
+  ],
+  "twenty": 33,
+  "transit": 20,
+  "roads": {
+   "motorway": 9255,
+   "motorway_name": "Princes Freeway",
+   "major": 281,
+   "major_name": "Ballan Road",
+   "rail": 1331
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 76,
+  "crime": {
+   "rate": 85.3,
+   "burglary": 6.6,
+   "assault": 9.3,
+   "offences": 1751,
+   "population": 20518
+  },
+  "first_seen": "2026-11-16"
+ },
+ {
   "id": 6542298,
   "url": "https://www.rent.com.au/property/22-woolspinner-cres-wyndham-vale-vic-3024-6542298",
   "type": "House",
@@ -174572,122 +173854,6 @@
    "major": 1106,
    "major_name": "Ballan Road",
    "rail": 989
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 76,
-  "crime": {
-   "rate": 85.3,
-   "burglary": 6.6,
-   "assault": 9.3,
-   "offences": 1751,
-   "population": 20518
-  },
-  "first_seen": "2026-10-27"
- },
- {
-  "id": 6523796,
-  "url": "https://www.rent.com.au/property/8-fawkner-rd-wyndham-vale-vic-3024-6523796",
-  "type": "House",
-  "street": "8 Fawkner Road",
-  "suburb": "Wyndham Vale",
-  "postcode": "3024",
-  "rent_text": "$395 pw",
-  "rent": 395,
-  "beds": 3,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -37.869356,
-  "lng": 144.602413,
-  "available": "now",
-  "listed": "2026-10-26",
-  "walk_score": 15,
-  "transit_score": 45,
-  "agency": "My Agent Real Estate",
-  "photos": [
-   "268486867/8c2d6fbdb03b92bfbbcdba8c-b4eb010c-758a-45ea-bd70-c01a543b5fc0-1792970740-primary.jpg",
-   "268486929/340b2ad9a5897d77e974a32d-b4eb010c-7a74-41ad-a0ec-a0e13cba3b22-1792970783-primary.jpg",
-   "268486930/f7de5418bc5b11a7865a0ae1-b4eb010c-827a-4627-b26e-ca31133ecebb-1792970784-primary.jpg",
-   "268486931/3871fc61b5fe2a559229a9d0-b4eb010c-89b8-452f-85bd-e5afbe855922-1792970784-primary.jpg"
-  ],
-  "region": "West",
-  "lga": "Wyndham",
-  "cbd_km": 32.5,
-  "near": {
-   "supermarket": {
-    "m": 1661,
-    "name": "Coles"
-   },
-   "fresh": {
-    "m": 9999,
-    "name": ""
-   },
-   "pharmacy": {
-    "m": 9999,
-    "name": ""
-   },
-   "gp": {
-    "m": 1245,
-    "name": "Wyndham Vale GP Super Clinic IPC Health"
-   },
-   "cafe": {
-    "m": 1485,
-    "name": "Kesari Indian"
-   },
-   "park": {
-    "m": 205,
-    "name": ""
-   },
-   "gym": {
-    "m": 913,
-    "name": ""
-   },
-   "library": {
-    "m": 1009,
-    "name": "Wyndham Library Service - Manor Lakes Branch"
-   },
-   "train": {
-    "m": 802,
-    "name": "Wyndham Vale"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 442,
-    "name": "Finsbury Crescent/Kinglake Drive"
-   },
-   "bar": {
-    "m": 9999,
-    "name": ""
-   },
-   "cinema": {
-    "m": 9999,
-    "name": ""
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "park"
-  ],
-  "twenty": 11,
-  "transit": 40,
-  "roads": {
-   "motorway": 6808,
-   "motorway_name": "Princes Fwy On-ramp",
-   "major": 442,
-   "major_name": "Ballan Road",
-   "rail": 563
   },
   "quiet": 100,
   "noise_flags": [],
@@ -177663,126 +176829,6 @@
    "population": 13947
   },
   "first_seen": "2026-11-10"
- },
- {
-  "id": 6536138,
-  "url": "https://www.rent.com.au/property/38-rosemary-rd-beaumaris-vic-3193-6536138",
-  "type": "Townhouse",
-  "street": "38 Rosemary Road",
-  "suburb": "Beaumaris",
-  "postcode": "3193",
-  "rent_text": "$975 pw",
-  "rent": 975,
-  "beds": 3,
-  "baths": 2,
-  "cars": 2,
-  "pets": null,
-  "lat": -37.978746,
-  "lng": 145.040473,
-  "available": "now",
-  "listed": "2026-11-06",
-  "walk_score": 73,
-  "transit_score": 38,
-  "agency": "Hodges - Beaumaris",
-  "photos": [
-   "268748542/9af4e032c54be53b1fca12ad-01993762_img_03-1793941480-primary.jpg",
-   "268748653/260c2be42e2f7f8d6d181abf-01993762_img_07-1793941592-primary.jpg",
-   "268748654/4f49773b0ff0016fb98c70af-01993762_img_05-1793941593-primary.jpg",
-   "268748656/4a0b342cfd881c2555f8806f-01993762_img_04-1793941594-primary.jpg"
-  ],
-  "region": "Bayside & peninsula",
-  "lga": "Bayside",
-  "cbd_km": 18.9,
-  "near": {
-   "supermarket": {
-    "m": 1368,
-    "name": "IGA"
-   },
-   "fresh": {
-    "m": 1328,
-    "name": "Hagens"
-   },
-   "pharmacy": {
-    "m": 628,
-    "name": "Amcal"
-   },
-   "gp": {
-    "m": 1167,
-    "name": "Beaumaris Medical Centre"
-   },
-   "cafe": {
-    "m": 1139,
-    "name": "The Parlor Milkbar & Kitchen"
-   },
-   "park": {
-    "m": 808,
-    "name": ""
-   },
-   "gym": {
-    "m": 1081,
-    "name": ""
-   },
-   "library": {
-    "m": 909,
-    "name": "Beaumaris Community Centre"
-   },
-   "train": {
-    "m": 2342,
-    "name": "Cheltenham"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 114,
-    "name": "Coreen Ave/Balcombe Rd"
-   },
-   "bar": {
-    "m": 1166,
-    "name": "Beaumaris Concourse Hotel"
-   },
-   "cinema": {
-    "m": 3189,
-    "name": "Village Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 4,
-   "tram": 0,
-   "shops": 1
-  },
-  "met": [
-   "pharmacy"
-  ],
-  "twenty": 11,
-  "transit": 20,
-  "roads": {
-   "motorway": 9999,
-   "motorway_name": "",
-   "major": 49,
-   "major_name": "Balcombe Road",
-   "rail": 1730
-  },
-  "quiet": 70,
-  "noise_flags": [
-   "On or beside a main road (Balcombe Road, 49 m)"
-  ],
-  "air": 75,
-  "air_flags": [
-   "Fronts a main road (Balcombe Road)"
-  ],
-  "safety": 100,
-  "crime": {
-   "rate": 27.2,
-   "burglary": 2.9,
-   "assault": 1.5,
-   "offences": 379,
-   "population": 13947
-  },
-  "first_seen": "2026-11-07"
  },
  {
   "id": 6531156,
@@ -185490,127 +184536,6 @@
   "first_seen": "2026-11-10"
  },
  {
-  "id": 6532606,
-  "url": "https://www.rent.com.au/property/8-bessie-dr-cranbourne-west-vic-3977-6532606",
-  "type": "House",
-  "street": "8 Bessie Drive",
-  "suburb": "Cranbourne West",
-  "postcode": "3977",
-  "rent_text": "$575 pw",
-  "rent": 575,
-  "beds": 3,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -38.107497,
-  "lng": 145.246052,
-  "available": "now",
-  "listed": "2026-11-04",
-  "walk_score": 3,
-  "transit_score": 29,
-  "agency": "Ray White Cranbourne",
-  "photos": [
-   "268685569/8f9241d1da76205159e4735e-226963683__1793748087-45227-WEB-8BessieDriveCranbourneWestVIC3977-Photo01-1793749429-primary.jpg",
-   "268685582/8618023c5a3d4487a7cb9a25-226964153__1793748114-33110-WEB-8BessieDriveCranbourneWestVIC3977-Photo17-1793749435-primary.jpg",
-   "268685586/c0591ad702f22519ae26ad4c-226964048__1793748109-32958-WEB-8BessieDriveCranbourneWestVIC3977-Photo12-1793749436-primary.jpg",
-   "268685583/1bbf358f25ad1da179766d57-226963737__1793748092-93144-WEB-8BessieDriveCranbourneWestVIC3977-Photo04-1793749435-primary.jpg"
-  ],
-  "region": "South-east",
-  "lga": "Casey",
-  "cbd_km": 40.3,
-  "near": {
-   "supermarket": {
-    "m": 530,
-    "name": "Woolworths"
-   },
-   "fresh": {
-    "m": 2073,
-    "name": "Balay's Specials Bakery"
-   },
-   "pharmacy": {
-    "m": 622,
-    "name": "Pharmacy 4 Less"
-   },
-   "gp": {
-    "m": 655,
-    "name": "Cranbourne West Medical Centre"
-   },
-   "cafe": {
-    "m": 544,
-    "name": "The Rasoi"
-   },
-   "park": {
-    "m": 324,
-    "name": "Tony Way Reserve"
-   },
-   "gym": {
-    "m": 534,
-    "name": "Jetts Fitness"
-   },
-   "library": {
-    "m": 9999,
-    "name": ""
-   },
-   "train": {
-    "m": 4116,
-    "name": "Cranbourne"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 210,
-    "name": "Bradman Dr/Hall Rd"
-   },
-   "bar": {
-    "m": 4041,
-    "name": "Trios"
-   },
-   "cinema": {
-    "m": 9999,
-    "name": ""
-   }
-  },
-  "counts": {
-   "cafe": 3,
-   "bar": 0,
-   "bus": 2,
-   "tram": 0,
-   "shops": 4
-  },
-  "met": [
-   "supermarket",
-   "pharmacy",
-   "gp",
-   "cafe",
-   "park",
-   "gym"
-  ],
-  "twenty": 67,
-  "transit": 20,
-  "roads": {
-   "motorway": 6660,
-   "motorway_name": "EastLink",
-   "major": 600,
-   "major_name": "Hall Road",
-   "rail": 2934
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 81,
-  "crime": {
-   "rate": 75.5,
-   "burglary": 5.4,
-   "assault": 8.8,
-   "offences": 1508,
-   "population": 19969
-  },
-  "first_seen": "2026-11-05"
- },
- {
   "id": 6532468,
   "url": "https://www.rent.com.au/property/17-hebrides-cl-cranbourne-west-vic-3977-6532468",
   "type": "Townhouse",
@@ -191838,7 +190763,7 @@
   "pets": false,
   "lat": -37.696695,
   "lng": 144.926069,
-  "available": "15th November 2026",
+  "available": "now",
   "listed": "2026-10-26",
   "walk_score": 62,
   "transit_score": 49,
@@ -204871,7 +203796,7 @@
   "pets": false,
   "lat": -37.883229,
   "lng": 144.985678,
-  "available": "15th November 2026",
+  "available": "now",
   "listed": "2026-11-11",
   "walk_score": 91,
   "transit_score": 63,
@@ -207742,7 +206667,7 @@
   "pets": false,
   "lat": -37.896786,
   "lng": 144.636237,
-  "available": "15th November 2026",
+  "available": "now",
   "listed": "2026-11-05",
   "walk_score": 26,
   "transit_score": 39,
@@ -220310,6 +219235,122 @@
   "first_seen": "2026-09-04"
  },
  {
+  "id": 6543675,
+  "url": "https://www.rent.com.au/property/4-lawrence-ave-harkness-vic-3337-6543675",
+  "type": "House",
+  "street": "4 Lawrence Avenue",
+  "suburb": "Harkness",
+  "postcode": "3337",
+  "rent_text": "$460 pw",
+  "rent": 460,
+  "beds": 3,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -37.665116,
+  "lng": 144.548392,
+  "available": "5th December 2026",
+  "listed": "2026-11-15",
+  "walk_score": 23,
+  "transit_score": 26,
+  "agency": "YPA Estate Agents - Melton",
+  "photos": [
+   "268877805/7d0b0dcfea46ab3999fb4094-Front_7bd3-3b63-cebc-f24d-dba2-ed49-a74d-024c_20261115020802_original-1794709125-primary.jpg",
+   "268877806/d9f461c12e00ca4a653aa045-Kitchen_8b17-5330-ed63-d55c-b2e1-01cd-2386-922e_20261115020855_original-1794709133-primary.jpg",
+   "268877807/ebea77aa52911bcd51ea2f53-Family_7504-0a78-7d98-c925-79ba-8f56-67b0-f76f_20261115020847_original-1794709133-primary.jpg",
+   "268877809/ff1aba3c39c38f8939b8851f-Bedroom-1_b809-ba8a-f1cd-0816-7ef3-6573-d7b4-60eb_20261115020827_original-1794709134-primary.jpg"
+  ],
+  "region": "West",
+  "lga": "Melton",
+  "cbd_km": 40.5,
+  "near": {
+   "supermarket": {
+    "m": 3416,
+    "name": "Aldi"
+   },
+   "fresh": {
+    "m": 3427,
+    "name": "BonBons Bakery"
+   },
+   "pharmacy": {
+    "m": 3228,
+    "name": "Guardian Pharmacy"
+   },
+   "gp": {
+    "m": 3236,
+    "name": "Westcare Medical Centre"
+   },
+   "cafe": {
+    "m": 3398,
+    "name": "Chatime"
+   },
+   "park": {
+    "m": 98,
+    "name": ""
+   },
+   "gym": {
+    "m": 3143,
+    "name": "Melton Waves"
+   },
+   "library": {
+    "m": 3525,
+    "name": "Youth Services Melton City Council"
+   },
+   "train": {
+    "m": 6073,
+    "name": "Melton"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 306,
+    "name": "Leafy View Esp/Claret Ash Bvd"
+   },
+   "bar": {
+    "m": 4689,
+    "name": "Macs Hotel"
+   },
+   "cinema": {
+    "m": 3498,
+    "name": "Reading Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 2,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "park"
+  ],
+  "twenty": 11,
+  "transit": 20,
+  "roads": {
+   "motorway": 2525,
+   "motorway_name": "Western Freeway",
+   "major": 5552,
+   "major_name": "C754",
+   "rail": 4509
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 96,
+  "crime": {
+   "rate": 50.0,
+   "burglary": 2.2,
+   "assault": 6.5,
+   "offences": 623,
+   "population": 12463
+  },
+  "first_seen": "2026-11-16"
+ },
+ {
   "id": 6530548,
   "url": "https://www.rent.com.au/property/3-hadfield-rd-harkness-vic-3337-6530548",
   "type": "House",
@@ -224926,6 +223967,127 @@
   "first_seen": "2026-10-28"
  },
  {
+  "id": 6543658,
+  "url": "https://www.rent.com.au/property/30-petrie-st-frankston-vic-3199-6543658",
+  "type": "House",
+  "street": "30 Petrie Street",
+  "suburb": "Frankston",
+  "postcode": "3199",
+  "rent_text": "$580 pw",
+  "rent": 580,
+  "beds": 3,
+  "baths": 1,
+  "cars": 2,
+  "pets": false,
+  "lat": -38.139549,
+  "lng": 145.130868,
+  "available": "now",
+  "listed": "2026-11-15",
+  "walk_score": 75,
+  "transit_score": 64,
+  "agency": "Ray White Frankston",
+  "photos": [
+   "268877361/ae461fb9e75ced4baa832529-228732724__1794698388-4837-facade-1794698725-primary.jpg",
+   "268877362/efee79e13398c464d179837d-228732720__1794698371-84903-living-1794698729-primary.jpeg",
+   "268877363/c75fd165b7237d15eba4634e-228732718__1794698363-104570-kitchen-1794698729-primary.jpeg",
+   "268877364/c0d4ce35829ed51b4498a20d-228732719__1794698368-104348-laundry-1794698732-primary.jpeg"
+  ],
+  "region": "Bayside & peninsula",
+  "lga": "Frankston",
+  "cbd_km": 38.3,
+  "near": {
+   "supermarket": {
+    "m": 518,
+    "name": "Woolworths"
+   },
+   "fresh": {
+    "m": 1019,
+    "name": "Tasman Meats"
+   },
+   "pharmacy": {
+    "m": 372,
+    "name": ""
+   },
+   "gp": {
+    "m": 404,
+    "name": "Capital Radiology Frankston"
+   },
+   "cafe": {
+    "m": 370,
+    "name": "Degani Cafe"
+   },
+   "park": {
+    "m": 451,
+    "name": ""
+   },
+   "gym": {
+    "m": 714,
+    "name": "Frankston Skate Park"
+   },
+   "library": {
+    "m": 1220,
+    "name": "Frankston Library"
+   },
+   "train": {
+    "m": 2041,
+    "name": "Leawarra"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 245,
+    "name": "Burrow St/Stanley St"
+   },
+   "bar": {
+    "m": 622,
+    "name": "B'Artiste"
+   },
+   "cinema": {
+    "m": 1112,
+    "name": "Hoyts"
+   }
+  },
+  "counts": {
+   "cafe": 4,
+   "bar": 1,
+   "bus": 2,
+   "tram": 0,
+   "shops": 4
+  },
+  "met": [
+   "supermarket",
+   "pharmacy",
+   "gp",
+   "cafe",
+   "park",
+   "gym"
+  ],
+  "twenty": 67,
+  "transit": 20,
+  "roads": {
+   "motorway": 504,
+   "motorway_name": "Frankston Freeway",
+   "major": 292,
+   "major_name": "Dandenong Road West",
+   "rail": 269
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 0,
+  "crime": {
+   "rate": 241.5,
+   "burglary": 10.2,
+   "assault": 17.6,
+   "offences": 9015,
+   "population": 37331
+  },
+  "first_seen": "2026-11-16"
+ },
+ {
   "id": 6541479,
   "url": "https://www.rent.com.au/property/8-nirvana-ct-frankston-vic-3199-6541479",
   "type": "House",
@@ -228615,7 +227777,7 @@
   "pets": false,
   "lat": -37.733912,
   "lng": 145.041782,
-  "available": "15th November 2026",
+  "available": "now",
   "listed": "2026-11-05",
   "walk_score": 64,
   "transit_score": 53,
@@ -240804,7 +239966,7 @@
   "pets": false,
   "lat": -37.822295,
   "lng": 144.965355,
-  "available": "15th November 2026",
+  "available": "now",
   "listed": "2026-10-15",
   "walk_score": 98,
   "transit_score": 100,
@@ -245446,124 +244608,6 @@
    "population": 37216
   },
   "first_seen": "2026-10-30"
- },
- {
-  "id": 6527174,
-  "url": "https://www.rent.com.au/property/23-bellbridge-dr-hoppers-crossing-vic-3029-6527174",
-  "type": "House",
-  "street": "23 Bellbridge Drive",
-  "suburb": "Hoppers Crossing",
-  "postcode": "3029",
-  "rent_text": "$480 pw",
-  "rent": 480,
-  "beds": 3,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -37.874623,
-  "lng": 144.705655,
-  "available": "now",
-  "listed": "2026-10-28",
-  "walk_score": 42,
-  "transit_score": 41,
-  "agency": "Ray White Werribee",
-  "photos": [
-   "268561277/ada968539492ff32affc5129-224994507__1792644627-86204-23BellbridgeDriveHoppersCrossing-1-1793166131-primary.jpg",
-   "268561509/3cf0088ac52d5a01b0671e5f-224994514__1792644632-273943-23BellbridgeDriveHoppersCrossing-2-1793166288-primary.jpg",
-   "268561507/57aaa3cf9062be6866f8ae42-224994627__1792644683-98271-23BellbridgeDriveHoppersCrossing-4-1793166286-primary.jpg",
-   "268561506/a00d6b79c40313be09b4f82a-224994594__1792644680-86069-23BellbridgeDriveHoppersCrossing-3-1793166286-primary.jpg"
-  ],
-  "region": "West",
-  "lga": "Wyndham",
-  "cbd_km": 23.8,
-  "near": {
-   "supermarket": {
-    "m": 1038,
-    "name": "Coles"
-   },
-   "fresh": {
-    "m": 987,
-    "name": "The Baker's Son"
-   },
-   "pharmacy": {
-    "m": 1798,
-    "name": "Pharmacy Select Hoppers Lane"
-   },
-   "gp": {
-    "m": 1318,
-    "name": "Denture Clinic"
-   },
-   "cafe": {
-    "m": 759,
-    "name": "Sottile's Pizza & Family Restaurant"
-   },
-   "park": {
-    "m": 361,
-    "name": "Aitken Avenue Park"
-   },
-   "gym": {
-    "m": 969,
-    "name": ""
-   },
-   "library": {
-    "m": 505,
-    "name": "Central Park Community Centre"
-   },
-   "train": {
-    "m": 1343,
-    "name": "Hoppers Crossing"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 420,
-    "name": "Gambier Ct/Morris Rd"
-   },
-   "bar": {
-    "m": 1669,
-    "name": "Hoppers Club"
-   },
-   "cinema": {
-    "m": 2732,
-    "name": "VIllage Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 1,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "cafe",
-   "park",
-   "library"
-  ],
-  "twenty": 33,
-  "transit": 25,
-  "roads": {
-   "motorway": 740,
-   "motorway_name": "Princes Freeway Onramp",
-   "major": 514,
-   "major_name": "Old Geelong Road",
-   "rail": 665
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 65,
-  "crime": {
-   "rate": 104.9,
-   "burglary": 6.2,
-   "assault": 7.7,
-   "offences": 3903,
-   "population": 37216
-  },
-  "first_seen": "2026-10-29"
  },
  {
   "id": 6526929,
@@ -280207,125 +279251,6 @@
   "first_seen": "2026-10-30"
  },
  {
-  "id": 6521550,
-  "url": "https://www.rent.com.au/property/30-abercrombie-st-oakleigh-south-vic-3167-6521550",
-  "type": "House",
-  "street": "30 Abercrombie Street",
-  "suburb": "Oakleigh South",
-  "postcode": "3167",
-  "rent_text": "$695 pw",
-  "rent": 695,
-  "beds": 3,
-  "baths": 1,
-  "cars": 5,
-  "pets": false,
-  "lat": -37.930362,
-  "lng": 145.083377,
-  "available": "now",
-  "listed": "2026-10-22",
-  "walk_score": 40,
-  "transit_score": 47,
-  "agency": "Ray White - Carnegie",
-  "photos": [
-   "268423096/52ab345d9b7a2ed356d26501-224953153__1792636355-75697-IMG6504007-1792636897-primary.jpg",
-   "268423092/707d8cce67b654c9a951bdd1-224953066__1792636334-251924-IMG6546002-1792636851-primary.jpg",
-   "268423088/ae43197dc6a0b43407883db9-224952931__1792636323-63619-IMG6577003-1792636837-primary.jpg",
-   "268423080/92cdf0f0e903515b135deef8-224952469__1792636297-63536-IMG6659006-1792636793-primary.jpg"
-  ],
-  "region": "South-east",
-  "lga": "Monash",
-  "cbd_km": 16.1,
-  "near": {
-   "supermarket": {
-    "m": 1216,
-    "name": "Woolworths"
-   },
-   "fresh": {
-    "m": 290,
-    "name": "Continental Bake House"
-   },
-   "pharmacy": {
-    "m": 1213,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 910,
-    "name": ""
-   },
-   "cafe": {
-    "m": 290,
-    "name": "Jangdalk"
-   },
-   "park": {
-    "m": 286,
-    "name": ""
-   },
-   "gym": {
-    "m": 622,
-    "name": ""
-   },
-   "library": {
-    "m": 1605,
-    "name": "1st Moorabbin Central Scout Hall"
-   },
-   "train": {
-    "m": 5407,
-    "name": "Highett"
-   },
-   "tram": {
-    "m": 6134,
-    "name": "Stop 68: Koornang Road"
-   },
-   "bus": {
-    "m": 247,
-    "name": "Old Dandenong Rd/Warrigal Rd"
-   },
-   "bar": {
-    "m": 2077,
-    "name": "Sandbelt Hotel"
-   },
-   "cinema": {
-    "m": 5336,
-    "name": "Village Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 1,
-   "bar": 0,
-   "bus": 4,
-   "tram": 0,
-   "shops": 1
-  },
-  "met": [
-   "fresh",
-   "cafe",
-   "park",
-   "gym"
-  ],
-  "twenty": 44,
-  "transit": 20,
-  "roads": {
-   "motorway": 4518,
-   "motorway_name": "Mornington Peninsula Freeway",
-   "major": 190,
-   "major_name": "Warrigal Road",
-   "rail": 2700
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 87,
-  "crime": {
-   "rate": 66.7,
-   "burglary": 5.9,
-   "assault": 4.8,
-   "offences": 657,
-   "population": 9851
-  },
-  "first_seen": "2026-10-23"
- },
- {
   "id": 6515601,
   "url": "https://www.rent.com.au/property/82-amara-cct-oakleigh-south-vic-3167-6515601",
   "type": "Townhouse",
@@ -281568,6 +280493,2291 @@
    "population": 15197
   },
   "first_seen": "2026-10-20"
+ },
+ {
+  "id": 6524744,
+  "url": "https://www.rent.com.au/property/3-creighton-way-craigieburn-vic-3064-6524744",
+  "type": "House",
+  "street": "3 Creighton Way",
+  "suburb": "Craigieburn",
+  "postcode": "3064",
+  "rent_text": "$500 P/Week",
+  "rent": 500,
+  "beds": 3,
+  "baths": 2,
+  "cars": 1,
+  "pets": false,
+  "lat": -37.578782,
+  "lng": 144.936675,
+  "available": "now",
+  "listed": "2026-10-26",
+  "walk_score": 31,
+  "transit_score": 30,
+  "agency": "YPA Craigieburn-Mickleham",
+  "photos": [
+   "268512162/fa51f242e866f757244b103e-main_watermarked_7dae-a406-7f01-772f-7192-eb1e-c3b2-51f0_20261026060354-1792995217-primary.jpg",
+   "268512312/56e46db7793f19918ccbfc25-image2_watermarked_188f-d3c2-abc9-7f44-53c7-de84-fe83-ae5a_20261026060346-1792995299-primary.jpg",
+   "268512304/60573e7e6c2992709f198fb7-image3_watermarked_8260-dbb4-279f-fe50-5569-8fa4-b0f1-64d7_20261026060347-1792995297-primary.jpg",
+   "268512308/867547b42d69725e78462c3d-image4_watermarked_797e-bc37-3609-fbe5-c98b-83a7-3071-86bd_20261026060348-1792995298-primary.jpg"
+  ],
+  "region": "North",
+  "lga": "Hume",
+  "cbd_km": 26.6,
+  "near": {
+   "supermarket": {
+    "m": 2004,
+    "name": "Woolworths"
+   },
+   "fresh": {
+    "m": 1150,
+    "name": "Zet and Zaatar"
+   },
+   "pharmacy": {
+    "m": 1964,
+    "name": "Chemist Warehouse"
+   },
+   "gp": {
+    "m": 2030,
+    "name": "Modern Medical Clinic"
+   },
+   "cafe": {
+    "m": 723,
+    "name": "Grand Boulevard Cafe"
+   },
+   "park": {
+    "m": 127,
+    "name": "Hamilton Hume Reserve"
+   },
+   "gym": {
+    "m": 90,
+    "name": ""
+   },
+   "library": {
+    "m": 3364,
+    "name": "Newbury Child and Community Centre"
+   },
+   "train": {
+    "m": 3453,
+    "name": "Craigieburn"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 481,
+    "name": "Explorers Place/Grand Boulevard"
+   },
+   "bar": {
+    "m": 6475,
+    "name": "Donnybrook Hotel"
+   },
+   "cinema": {
+    "m": 3396,
+    "name": "United Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 1,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "cafe",
+   "park",
+   "gym"
+  ],
+  "twenty": 33,
+  "transit": 10,
+  "roads": {
+   "motorway": 240,
+   "motorway_name": "Hume Freeway Onramp",
+   "major": 425,
+   "major_name": "Hume Highway",
+   "rail": 1385
+  },
+  "quiet": 75,
+  "noise_flags": [
+   "Freeway 240 m away (Hume Freeway Onramp)"
+  ],
+  "air": 80,
+  "air_flags": [
+   "Freeway 240 m away (Hume Freeway Onramp)"
+  ],
+  "safety": 85,
+  "crime": {
+   "rate": 68.7,
+   "burglary": 2.4,
+   "assault": 7.3,
+   "offences": 4479,
+   "population": 65178
+  },
+  "first_seen": "2026-10-27",
+  "gone": "2026-11-16"
+ },
+ {
+  "id": 6514863,
+  "url": "https://www.rent.com.au/property/11-silverton-ct-craigieburn-vic-3064-6514863",
+  "type": "House",
+  "street": "11 Silverton Court",
+  "suburb": "Craigieburn",
+  "postcode": "3064",
+  "rent_text": "$490 pw",
+  "rent": 490,
+  "beds": 3,
+  "baths": 1,
+  "cars": 2,
+  "pets": false,
+  "lat": -37.592902,
+  "lng": 144.921355,
+  "available": "now",
+  "listed": "2026-10-14",
+  "walk_score": 51,
+  "transit_score": 35,
+  "agency": "Ray White - Craigieburn",
+  "photos": [
+   "268308393/a4b66b2dfc44ab1f1f7510ac-mydimport-1616584557-hires.16966-11Silverton-02-1791957673-primary.jpg",
+   "268308455/27e9ac702c115b467410db13-mydimport-1616584566-hires.10266-11Silverton-02-1791957876-primary.jpg",
+   "268308458/758e03fc8bfcb844aa6739b1-mydimport-1616584656-hires.5371-11Silverton-03-1791957884-primary.jpg",
+   "268308459/0191ba4872d5dae65616310e-mydimport-1616584756-hires.27704-11Silverton-01-1791957885-primary.jpg"
+  ],
+  "region": "North",
+  "lga": "Hume",
+  "cbd_km": 25.2,
+  "near": {
+   "supermarket": {
+    "m": 729,
+    "name": "Coles"
+   },
+   "fresh": {
+    "m": 742,
+    "name": "Bigfields"
+   },
+   "pharmacy": {
+    "m": 715,
+    "name": "Priceline Pharmacy"
+   },
+   "gp": {
+    "m": 1355,
+    "name": "Primary Medical Centre - Craigieburn"
+   },
+   "cafe": {
+    "m": 541,
+    "name": "Fieste"
+   },
+   "park": {
+    "m": 113,
+    "name": "Silverton-Dorchester-Bisley Walkway"
+   },
+   "gym": {
+    "m": 1152,
+    "name": "Splash Aqua Park and Leisure Centre"
+   },
+   "library": {
+    "m": 1363,
+    "name": "Craigieburn Library"
+   },
+   "train": {
+    "m": 2824,
+    "name": "Craigieburn"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 518,
+    "name": "Craigieburn Central Shopping Centre/Lygon Drive"
+   },
+   "bar": {
+    "m": 9999,
+    "name": ""
+   },
+   "cinema": {
+    "m": 939,
+    "name": "United Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 3,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 4
+  },
+  "met": [
+   "supermarket",
+   "fresh",
+   "pharmacy",
+   "cafe",
+   "park"
+  ],
+  "twenty": 56,
+  "transit": 10,
+  "roads": {
+   "motorway": 2042,
+   "motorway_name": "Hume Highway",
+   "major": 424,
+   "major_name": "Craigieburn Road",
+   "rail": 2150
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 85,
+  "crime": {
+   "rate": 68.7,
+   "burglary": 2.4,
+   "assault": 7.3,
+   "offences": 4479,
+   "population": 65178
+  },
+  "first_seen": "2026-10-14",
+  "gone": "2026-11-16"
+ },
+ {
+  "id": 6516988,
+  "url": "https://www.rent.com.au/property/97-havana-pde-pakenham-vic-3810-6516988",
+  "type": "House",
+  "street": "97 Havana Parade",
+  "suburb": "Pakenham",
+  "postcode": "3810",
+  "rent_text": "$530 pw",
+  "rent": 530,
+  "beds": 3,
+  "baths": 2,
+  "cars": 1,
+  "pets": false,
+  "lat": -38.059229,
+  "lng": 145.455264,
+  "available": "now",
+  "listed": "2026-10-16",
+  "walk_score": 50,
+  "transit_score": 0,
+  "agency": "Ham Kerr Property - Balwyn",
+  "photos": [
+   "268344571/189e38d0ab3844db80cda9dd-68e2abf7-1792126216-primary.jpg",
+   "268344829/503bde468a6b0e14057e141c-8170ed56-1792126507-primary.jpg",
+   "268344830/4d44eef8095b15e0ebddabba-aa9d9f1a-1792126507-primary.jpg",
+   "268344831/7eeb749ea5474f2f0cddbf33-eeff1d8d-1792126507-primary.jpg"
+  ],
+  "region": "South-east",
+  "lga": "Cardinia",
+  "cbd_km": 50.5,
+  "near": {
+   "supermarket": {
+    "m": 590,
+    "name": "Coles"
+   },
+   "fresh": {
+    "m": 295,
+    "name": "The Cheesecake Shop"
+   },
+   "pharmacy": {
+    "m": 4151,
+    "name": "Chemist Warehouse"
+   },
+   "gp": {
+    "m": 2024,
+    "name": "Cardinia Medical Centre"
+   },
+   "cafe": {
+    "m": 289,
+    "name": "Steak House"
+   },
+   "park": {
+    "m": 781,
+    "name": ""
+   },
+   "gym": {
+    "m": 320,
+    "name": "Jetts Fitness"
+   },
+   "library": {
+    "m": 3766,
+    "name": "Living and Learning in Cardinia"
+   },
+   "train": {
+    "m": 4696,
+    "name": "Pakenham"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 386,
+    "name": "Michael St/Princes Hwy"
+   },
+   "bar": {
+    "m": 774,
+    "name": "Copper & Fox"
+   },
+   "cinema": {
+    "m": 9999,
+    "name": ""
+   }
+  },
+  "counts": {
+   "cafe": 7,
+   "bar": 1,
+   "bus": 1,
+   "tram": 0,
+   "shops": 4
+  },
+  "met": [
+   "supermarket",
+   "fresh",
+   "cafe",
+   "park",
+   "gym"
+  ],
+  "twenty": 56,
+  "transit": 20,
+  "roads": {
+   "motorway": 2697,
+   "motorway_name": "Princes Freeway On Ramp",
+   "major": 265,
+   "major_name": "Princes Highway",
+   "rail": 1650
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 73,
+  "crime": {
+   "rate": 90.8,
+   "burglary": 3.9,
+   "assault": 9.1,
+   "offences": 4912,
+   "population": 54118
+  },
+  "first_seen": "2026-10-17",
+  "gone": "2026-11-16"
+ },
+ {
+  "id": 6535356,
+  "url": "https://www.rent.com.au/property/76-faulkner-st-forest-hill-vic-3131-6535356",
+  "type": "House",
+  "street": "76 Faulkner Street",
+  "suburb": "Forest Hill",
+  "postcode": "3131",
+  "rent_text": "$530 pw",
+  "rent": 530,
+  "beds": 3,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -37.839313,
+  "lng": 145.163532,
+  "available": "now",
+  "listed": "2026-11-06",
+  "walk_score": 89,
+  "transit_score": 49,
+  "agency": "Eleven North",
+  "photos": [
+   "268735668/d1f1de0b3a4f6c609fc29e7e-a4f69008-1793921015-primary.jpeg",
+   "268735832/0605de382d3eb9aa694c3ae8-f6766dd5-1793921324-primary.jpeg",
+   "268735833/18f18762b79dc21e39adb60e-b80c4a50-1793921324-primary.jpeg",
+   "268735831/85130d2f14a0909d762548fb-f7ab0bba-1793921324-primary.jpeg"
+  ],
+  "region": "East",
+  "lga": "Whitehorse",
+  "cbd_km": 17.4,
+  "near": {
+   "supermarket": {
+    "m": 512,
+    "name": "Woolworths"
+   },
+   "fresh": {
+    "m": 2525,
+    "name": "Bakers Delight"
+   },
+   "pharmacy": {
+    "m": 1005,
+    "name": "Chemist Warehouse"
+   },
+   "gp": {
+    "m": 840,
+    "name": "Melbourne Pathology"
+   },
+   "cafe": {
+    "m": 501,
+    "name": "The Coffee Club"
+   },
+   "park": {
+    "m": 353,
+    "name": ""
+   },
+   "gym": {
+    "m": 1422,
+    "name": ""
+   },
+   "library": {
+    "m": 1301,
+    "name": "Forest Hill Hall"
+   },
+   "train": {
+    "m": 3725,
+    "name": "Laburnum"
+   },
+   "tram": {
+    "m": 2120,
+    "name": "Stop 71: Sevenoaks Road"
+   },
+   "bus": {
+    "m": 259,
+    "name": ""
+   },
+   "bar": {
+    "m": 2245,
+    "name": "Burvale Hotel"
+   },
+   "cinema": {
+    "m": 654,
+    "name": "Hoyts"
+   }
+  },
+  "counts": {
+   "cafe": 1,
+   "bar": 0,
+   "bus": 2,
+   "tram": 0,
+   "shops": 3
+  },
+  "met": [
+   "supermarket",
+   "cafe",
+   "park"
+  ],
+  "twenty": 33,
+  "transit": 20,
+  "roads": {
+   "motorway": 3974,
+   "motorway_name": "Eastern Freeway Onramp",
+   "major": 606,
+   "major_name": "Canterbury Road",
+   "rail": 1939
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 78,
+  "crime": {
+   "rate": 80.9,
+   "burglary": 5.3,
+   "assault": 5.8,
+   "offences": 872,
+   "population": 10780
+  },
+  "first_seen": "2026-11-06",
+  "gone": "2026-11-16"
+ },
+ {
+  "id": 6499244,
+  "url": "https://www.rent.com.au/property/1-20-22-linacre-rd-hampton-vic-3188-6499244",
+  "type": "House",
+  "street": "1/20-22 Linacre Road",
+  "suburb": "Hampton",
+  "postcode": "3188",
+  "rent_text": "$1,090 pw",
+  "rent": 1090,
+  "beds": 3,
+  "baths": 2,
+  "cars": 2,
+  "pets": null,
+  "lat": -37.942464,
+  "lng": 145.004089,
+  "available": "now",
+  "listed": "2026-09-28",
+  "walk_score": 87,
+  "transit_score": 56,
+  "agency": "Buxton Brighton",
+  "photos": [
+   "268049878/24c156679ee2208f041047f2-01977372_img_09-1790550746-primary.jpg",
+   "268505513/36355efacf752d00ca79b1e3-01977372_img_14-1792988869-primary.jpg",
+   "268049882/4c1644cd9f54a30d4a9adf0d-01977372_img_04-1790550766-primary.jpg",
+   "268049880/131f6de2c677bbbbccab47d4-01977372_img_05-1790550764-primary.jpg"
+  ],
+  "region": "Bayside & peninsula",
+  "lga": "Bayside",
+  "cbd_km": 14.1,
+  "near": {
+   "supermarket": {
+    "m": 801,
+    "name": "Woolworths"
+   },
+   "fresh": {
+    "m": 1024,
+    "name": "Sandringham Fruit Market"
+   },
+   "pharmacy": {
+    "m": 860,
+    "name": "Chemist Warehouse"
+   },
+   "gp": {
+    "m": 390,
+    "name": "Southend Medical Centre"
+   },
+   "cafe": {
+    "m": 579,
+    "name": "Merrymen"
+   },
+   "park": {
+    "m": 360,
+    "name": "Triangle Gardens"
+   },
+   "gym": {
+    "m": 339,
+    "name": "Train-Rec 24/7"
+   },
+   "library": {
+    "m": 573,
+    "name": "Hampton Library"
+   },
+   "train": {
+    "m": 693,
+    "name": "Hampton"
+   },
+   "tram": {
+    "m": 4319,
+    "name": "Stop 68: Nepean Highway"
+   },
+   "bus": {
+    "m": 275,
+    "name": "Triangle Gardens/Hampton St"
+   },
+   "bar": {
+    "m": 1133,
+    "name": "Side Hussle Wine Bar"
+   },
+   "cinema": {
+    "m": 5289,
+    "name": "Palace Brighton Bay"
+   }
+  },
+  "counts": {
+   "cafe": 1,
+   "bar": 0,
+   "bus": 2,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "gp",
+   "cafe",
+   "park",
+   "gym",
+   "library",
+   "pt"
+  ],
+  "twenty": 67,
+  "transit": 65,
+  "roads": {
+   "motorway": 9999,
+   "motorway_name": "",
+   "major": 283,
+   "major_name": "Beach Road",
+   "rail": 109
+  },
+  "quiet": 92,
+  "noise_flags": [
+   "Railway line 109 m away"
+  ],
+  "air": 100,
+  "air_flags": [],
+  "safety": 99,
+  "crime": {
+   "rate": 45.4,
+   "burglary": 4.7,
+   "assault": 2.9,
+   "offences": 614,
+   "population": 13518
+  },
+  "first_seen": "2026-09-28",
+  "gone": "2026-11-16"
+ },
+ {
+  "id": 6274048,
+  "url": "https://www.rent.com.au/property/2-9-folkestone-rd-glen-waverley-vic-3150-6274048",
+  "type": "Townhouse",
+  "street": "2/9 Folkestone Road",
+  "suburb": "Glen Waverley",
+  "postcode": "3150",
+  "rent_text": "$820 pw",
+  "rent": 820,
+  "beds": 3,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -37.860551,
+  "lng": 145.152153,
+  "available": "3rd December 2026",
+  "listed": "2026-10-08",
+  "walk_score": 69,
+  "transit_score": 53,
+  "agency": "Biggin & Scott Glen Waverley",
+  "photos": [
+   "268306211/3d44c613b79b761e118d34a7-223581120__1791954219-90568-GeminiGeneratedImagepuzlsapuzlsapuzl-1791954347-primary.jpeg",
+   "262899061/03f14a415bd77da9f46b75e3-184931172__1769753237-184931172__1769753229-100374-Lounge-room-Overall-1-of-2-2-LivingRoom-Standard-1769753565-primary.jpg",
+   "262899062/7587f2fe411c13d7a5e12621-184931158__1769753237-184931158__1769753221-100206-Kitchen-1769753565-primary.jpg",
+   "262899058/44acb3a8fed3afc0bb518f8f-184931168__1769753237-184931168__1769753227-100388-Bedroom-1-Overall-1-of-2-2-Bedroom-Modern-1769753551-primary.jpg"
+  ],
+  "region": "South-east",
+  "lga": "Monash",
+  "cbd_km": 16.9,
+  "near": {
+   "supermarket": {
+    "m": 989,
+    "name": "ALDI"
+   },
+   "fresh": {
+    "m": 1024,
+    "name": "Bakers Delight"
+   },
+   "pharmacy": {
+    "m": 1077,
+    "name": "Amcal"
+   },
+   "gp": {
+    "m": 1578,
+    "name": "Burwood Specialist Care"
+   },
+   "cafe": {
+    "m": 924,
+    "name": "Caf\u00e9 1809"
+   },
+   "park": {
+    "m": 350,
+    "name": "Melbourne Water Pipe Reserve"
+   },
+   "gym": {
+    "m": 1473,
+    "name": "Nunawading Basketball Stadium"
+   },
+   "library": {
+    "m": 2526,
+    "name": "Mount Waverley Secondary College Senior Library"
+   },
+   "train": {
+    "m": 2276,
+    "name": "Syndal"
+   },
+   "tram": {
+    "m": 1131,
+    "name": "Stop 70: Blackburn Road"
+   },
+   "bus": {
+    "m": 120,
+    "name": ""
+   },
+   "bar": {
+    "m": 2321,
+    "name": "Burvale Hotel"
+   },
+   "cinema": {
+    "m": 2692,
+    "name": "Reading Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 4,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "park"
+  ],
+  "twenty": 11,
+  "transit": 20,
+  "roads": {
+   "motorway": 3687,
+   "motorway_name": "Blackburn Road Off Ramp",
+   "major": 67,
+   "major_name": "Highbury Road",
+   "rail": 1745
+  },
+  "quiet": 85,
+  "noise_flags": [
+   "Main road 67 m away (Highbury Road)"
+  ],
+  "air": 88,
+  "air_flags": [
+   "Main road 67 m away (Highbury Road)"
+  ],
+  "safety": 86,
+  "crime": {
+   "rate": 67.3,
+   "burglary": 5.9,
+   "assault": 4.8,
+   "offences": 2870,
+   "population": 42642
+  },
+  "first_seen": "2026-10-08",
+  "gone": "2026-11-16"
+ },
+ {
+  "id": 5580005,
+  "url": "https://www.rent.com.au/property/3-trickett-st-clyde-vic-3978-5580005",
+  "type": "House",
+  "street": "3 Trickett Street",
+  "suburb": "Clyde",
+  "postcode": "3978",
+  "rent_text": "$550 pw",
+  "rent": 550,
+  "beds": 3,
+  "baths": 2,
+  "cars": 1,
+  "pets": false,
+  "lat": -38.121936,
+  "lng": 145.325338,
+  "available": "now",
+  "listed": "2026-08-17",
+  "walk_score": 14,
+  "transit_score": 30,
+  "agency": "Ray White Cranbourne",
+  "photos": [
+   "248252600/a235e97eae15b19b77645505-48808545__1644187610-12744-trickett2-1708302578-primary.jpg",
+   "248252786/61cf6fc21314da3001ee8e15-48808550__1644187615-10837-trickett5-1708303040-primary.jpg",
+   "248252788/3bec66a7d3430635a0ea9b55-48808562__1644187619-29753-trickett6-1708303041-primary.jpg",
+   "248252785/526095b01144f27e920d8a28-48808552__1644187617-12542-trickett3-1708303040-primary.jpg"
+  ],
+  "region": "South-east",
+  "lga": "Casey",
+  "cbd_km": 46.0,
+  "near": {
+   "supermarket": {
+    "m": 685,
+    "name": "Coles"
+   },
+   "fresh": {
+    "m": 4896,
+    "name": "Gold Sunshine Hot Bread"
+   },
+   "pharmacy": {
+    "m": 5065,
+    "name": "TerryWhite Chemmart"
+   },
+   "gp": {
+    "m": 1456,
+    "name": "Valetta Street Medical Centre"
+   },
+   "cafe": {
+    "m": 799,
+    "name": "Wok on Clyde"
+   },
+   "park": {
+    "m": 107,
+    "name": ""
+   },
+   "gym": {
+    "m": 1843,
+    "name": "City Football Academy - ctrl:cyber"
+   },
+   "library": {
+    "m": 691,
+    "name": ""
+   },
+   "train": {
+    "m": 6014,
+    "name": "Cranbourne"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 505,
+    "name": "Clyde-Five Ways Rd/Berwick-Cranbourne Rd"
+   },
+   "bar": {
+    "m": 5020,
+    "name": "Kelly's"
+   },
+   "cinema": {
+    "m": 9999,
+    "name": ""
+   }
+  },
+  "counts": {
+   "cafe": 1,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 1
+  },
+  "met": [
+   "supermarket",
+   "cafe",
+   "park",
+   "library"
+  ],
+  "twenty": 44,
+  "transit": 10,
+  "roads": {
+   "motorway": 7571,
+   "motorway_name": "O'Shea Road Offramp",
+   "major": 2631,
+   "major_name": "South Gippsland Highway",
+   "rail": 4451
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 65,
+  "crime": {
+   "rate": 104.3,
+   "burglary": 7.5,
+   "assault": 13.0,
+   "offences": 1166,
+   "population": 11177
+  },
+  "first_seen": "2026-08-17",
+  "gone": "2026-11-16"
+ },
+ {
+  "id": 6175424,
+  "url": "https://www.rent.com.au/property/44-dodson-rd-officer-vic-3809-6175424",
+  "type": "House",
+  "street": "44 Dodson Road",
+  "suburb": "Officer",
+  "postcode": "3809",
+  "rent_text": "$560 pw",
+  "rent": 560,
+  "beds": 3,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -38.062723,
+  "lng": 145.38981,
+  "available": "now",
+  "listed": "2026-10-16",
+  "walk_score": 5,
+  "transit_score": 0,
+  "agency": "Ray White Pakenham",
+  "photos": [
+   "259475655/4cce5715658244c9bec407d6-166792145__1759801128-52128-44DodsonrdOfficer-11-1759802080-primary.JPG",
+   "259476083/4d0bc187d0f4dc98a58ce216-166792050__1759801114-51623-44DodsonrdOfficer-7-1759802865-primary.JPG",
+   "259476081/44b78dfd0b3580e309e7125b-166792083__1759801120-64830-44DodsonrdOfficer-8-1759802864-primary.JPG",
+   "259476085/aef7c384bb418c7fdb6a17e9-166792090__1759801124-51569-44DodsonrdOfficer-9-1759802865-primary.JPG"
+  ],
+  "region": "South-east",
+  "lga": "Cardinia",
+  "cbd_km": 45.9,
+  "near": {
+   "supermarket": {
+    "m": 559,
+    "name": "IGA Local Grocer Officer"
+   },
+   "fresh": {
+    "m": 3491,
+    "name": "The Gourmet Butchershop"
+   },
+   "pharmacy": {
+    "m": 1282,
+    "name": "TerryWhite Chemmart"
+   },
+   "gp": {
+    "m": 1004,
+    "name": "Rise Medical Centre"
+   },
+   "cafe": {
+    "m": 530,
+    "name": "Blondie's Kafe"
+   },
+   "park": {
+    "m": 223,
+    "name": ""
+   },
+   "gym": {
+    "m": 748,
+    "name": ""
+   },
+   "library": {
+    "m": 846,
+    "name": "Toun-Nun Child And Family Centre"
+   },
+   "train": {
+    "m": 9999,
+    "name": ""
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 427,
+    "name": "Rix Rd/Brunt Rd"
+   },
+   "bar": {
+    "m": 1475,
+    "name": "Pink Hill Hotel"
+   },
+   "cinema": {
+    "m": 9999,
+    "name": ""
+   }
+  },
+  "counts": {
+   "cafe": 1,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 1
+  },
+  "met": [
+   "supermarket",
+   "cafe",
+   "park",
+   "gym"
+  ],
+  "twenty": 44,
+  "transit": 10,
+  "roads": {
+   "motorway": 899,
+   "motorway_name": "Service Centre Offramp",
+   "major": 669,
+   "major_name": "Princes Highway",
+   "rail": 65
+  },
+  "quiet": 80,
+  "noise_flags": [
+   "Railway line 65 m away"
+  ],
+  "air": 100,
+  "air_flags": [],
+  "safety": 78,
+  "crime": {
+   "rate": 81.2,
+   "burglary": 7.1,
+   "assault": 7.7,
+   "offences": 1502,
+   "population": 18503
+  },
+  "first_seen": "2026-10-17",
+  "gone": "2026-11-16"
+ },
+ {
+  "id": 6482952,
+  "url": "https://www.rent.com.au/property/19-muirfield-dr-sunbury-vic-3429-6482952",
+  "type": "House",
+  "street": "19 Muirfield Drive",
+  "suburb": "Sunbury",
+  "postcode": "3429",
+  "rent_text": "$490 pw",
+  "rent": 490,
+  "beds": 3,
+  "baths": 2,
+  "cars": 6,
+  "pets": false,
+  "lat": -37.584424,
+  "lng": 144.755658,
+  "available": "now",
+  "listed": "2026-11-14",
+  "walk_score": 19,
+  "transit_score": 27,
+  "agency": "O\u00e2\u0080\u0099Brien Real Estate St Albans/Sunshine",
+  "photos": [
+   "268500903/8d824d386c83d5873b4c0ee6-178876155421286055-1792984050-primary.jpg",
+   "268500911/aa4a789a8619e52886c879c6-178876157674879107-1792984099-primary.jpg",
+   "268500910/bf1a1cc40f0137e292000df4-178876159824519243-1792984099-primary.jpg",
+   "268500912/4c57b7321ebd3c4c0aea818a-178876162066416360-1792984099-primary.jpg"
+  ],
+  "region": "North",
+  "lga": "Hume",
+  "cbd_km": 31.8,
+  "near": {
+   "supermarket": {
+    "m": 3083,
+    "name": "Morgan's IGA"
+   },
+   "fresh": {
+    "m": 3119,
+    "name": "Sunbury's Quality Fruit & Vegetable"
+   },
+   "pharmacy": {
+    "m": 3097,
+    "name": "Chemist Warehouse"
+   },
+   "gp": {
+    "m": 3102,
+    "name": "Evans Street Clinic"
+   },
+   "cafe": {
+    "m": 2910,
+    "name": ""
+   },
+   "park": {
+    "m": 35,
+    "name": ""
+   },
+   "gym": {
+    "m": 324,
+    "name": ""
+   },
+   "library": {
+    "m": 973,
+    "name": "Goonawarra Community Centre"
+   },
+   "train": {
+    "m": 3252,
+    "name": "Sunbury Station"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 830,
+    "name": "Francis Boulevard/Sunbury Road"
+   },
+   "bar": {
+    "m": 3064,
+    "name": "Royal Hotel"
+   },
+   "cinema": {
+    "m": 3323,
+    "name": "Reading Cinema"
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "park",
+   "gym"
+  ],
+  "twenty": 22,
+  "transit": 0,
+  "roads": {
+   "motorway": 4851,
+   "motorway_name": "Calder Freeway Onramp",
+   "major": 542,
+   "major_name": "Sunbury Road",
+   "rail": 2131
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 83,
+  "crime": {
+   "rate": 73.6,
+   "burglary": 4.3,
+   "assault": 7.0,
+   "offences": 2860,
+   "population": 38851
+  },
+  "first_seen": "2026-10-13",
+  "gone": "2026-11-16"
+ },
+ {
+  "id": 5764221,
+  "url": "https://www.rent.com.au/property/66-monaco-cct-wollert-vic-3750-5764221",
+  "type": "House",
+  "street": "66 Monaco Circuit",
+  "suburb": "Wollert",
+  "postcode": "3750",
+  "rent_text": "$480 pw",
+  "rent": 480,
+  "beds": 3,
+  "baths": 1,
+  "cars": 2,
+  "pets": false,
+  "lat": -37.616419,
+  "lng": 145.021715,
+  "available": "now",
+  "listed": "2026-09-29",
+  "walk_score": 9,
+  "transit_score": 0,
+  "agency": "Ray White Mill Park",
+  "photos": [
+   "268871515/b2e8e1d02f92284b3e8d7901-228679727__1794550978-281088-UnderApplication1-1794551146-primary.png",
+   "251878226/297b43000fd3b3990541024b-103776382__1723505460-25544-front-1723505751-primary.png",
+   "251878239/44c0f9ac0d25e7eddae4b3c8-103776405__1723505463-25634-lounge-1723505759-primary.png",
+   "251878243/e087e988424f9f1ea3c23598-103776384__1723505461-25301-kitchen-1723505759-primary.png"
+  ],
+  "region": "North",
+  "lga": "Whittlesea",
+  "cbd_km": 22.8,
+  "near": {
+   "supermarket": {
+    "m": 1760,
+    "name": "Woolworths"
+   },
+   "fresh": {
+    "m": 5412,
+    "name": ""
+   },
+   "pharmacy": {
+    "m": 5270,
+    "name": "Priceline Pharmacy"
+   },
+   "gp": {
+    "m": 3830,
+    "name": "Epping Clinic"
+   },
+   "cafe": {
+    "m": 1775,
+    "name": "Aurora Cafe"
+   },
+   "park": {
+    "m": 48,
+    "name": ""
+   },
+   "gym": {
+    "m": 2166,
+    "name": ""
+   },
+   "library": {
+    "m": 1947,
+    "name": "Galada Community Centre"
+   },
+   "train": {
+    "m": 9999,
+    "name": ""
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 1267,
+    "name": "High Park Drive/Craigieburn Road"
+   },
+   "bar": {
+    "m": 5345,
+    "name": "Epping Plaza Hotel"
+   },
+   "cinema": {
+    "m": 5231,
+    "name": "Reading Epping Cinema"
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "park"
+  ],
+  "twenty": 11,
+  "transit": 0,
+  "roads": {
+   "motorway": 2631,
+   "motorway_name": "Hume Freeway",
+   "major": 715,
+   "major_name": "Epping Road",
+   "rail": 4032
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 91,
+  "crime": {
+   "rate": 58.5,
+   "burglary": 4.5,
+   "assault": 5.9,
+   "offences": 1429,
+   "population": 24407
+  },
+  "first_seen": "2026-09-29",
+  "gone": "2026-11-16"
+ },
+ {
+  "id": 6538435,
+  "url": "https://www.rent.com.au/property/6-545-toorak-rd-toorak-vic-3142-6538435",
+  "type": "Apartment",
+  "street": "6/545 Toorak Road",
+  "suburb": "Toorak",
+  "postcode": "3142",
+  "rent_text": "$1,250 pw",
+  "rent": 1250,
+  "beds": 3,
+  "baths": 2,
+  "cars": 2,
+  "pets": true,
+  "lat": -37.841235,
+  "lng": 145.011554,
+  "available": "27th November 2026",
+  "listed": "2026-11-10",
+  "walk_score": 91,
+  "transit_score": 73,
+  "agency": "Marshall White & Co",
+  "photos": [
+   "268788667/909ee3268251b2538496a656-01994480_img_01-1794267152-primary.jpg",
+   "268788708/154a5e1dc47fad72e3b9daa2-01994480_img_02-1794267179-primary.jpg",
+   "268788703/d2c191bfadf87760971650e5-01994480_img_03-1794267176-primary.jpg",
+   "268788709/f9518c83640268f4f8fefa44-01994480_img_04-1794267180-primary.jpg"
+  ],
+  "region": "Inner city",
+  "lga": "Stonnington",
+  "cbd_km": 4.7,
+  "near": {
+   "supermarket": {
+    "m": 265,
+    "name": "Coles Local"
+   },
+   "fresh": {
+    "m": 2012,
+    "name": "N. Tran"
+   },
+   "pharmacy": {
+    "m": 1309,
+    "name": "Chemist Warehouse"
+   },
+   "gp": {
+    "m": 357,
+    "name": "Toorak Medical Centre"
+   },
+   "cafe": {
+    "m": 114,
+    "name": "Yuca Melbourne"
+   },
+   "park": {
+    "m": 371,
+    "name": "Carters Avenue Reserve"
+   },
+   "gym": {
+    "m": 643,
+    "name": ""
+   },
+   "library": {
+    "m": 1394,
+    "name": "Toorak/South Yarra Library"
+   },
+   "train": {
+    "m": 2471,
+    "name": "Kooyong"
+   },
+   "tram": {
+    "m": 77,
+    "name": "Stop 133: Grange Road"
+   },
+   "bus": {
+    "m": 78,
+    "name": "Toorak Road/Grange Road"
+   },
+   "bar": {
+    "m": 1352,
+    "name": "Bush Inn Hotel"
+   },
+   "cinema": {
+    "m": 1685,
+    "name": "Palace Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 2,
+   "bar": 0,
+   "bus": 8,
+   "tram": 6,
+   "shops": 2
+  },
+  "met": [
+   "supermarket",
+   "gp",
+   "cafe",
+   "park",
+   "gym",
+   "pt"
+  ],
+  "twenty": 67,
+  "transit": 55,
+  "roads": {
+   "motorway": 1083,
+   "motorway_name": "CityLink On Ramp",
+   "major": 18,
+   "major_name": "Toorak Road",
+   "rail": 693
+  },
+  "quiet": 70,
+  "noise_flags": [
+   "On or beside a main road (Toorak Road, 18 m)"
+  ],
+  "air": 75,
+  "air_flags": [
+   "Fronts a main road (Toorak Road)"
+  ],
+  "safety": 81,
+  "crime": {
+   "rate": 75.8,
+   "burglary": 9.1,
+   "assault": 4.2,
+   "offences": 972,
+   "population": 12817
+  },
+  "first_seen": "2026-11-10",
+  "gone": "2026-11-16"
+ },
+ {
+  "id": 6518352,
+  "url": "https://www.rent.com.au/property/2-66-mcburnie-dr-kurunjang-vic-3337-6518352",
+  "type": "Unit",
+  "street": "2/66 Mcburnie Drive",
+  "suburb": "Kurunjang",
+  "postcode": "3337",
+  "rent_text": "$420 pw",
+  "rent": 420,
+  "beds": 3,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -37.669318,
+  "lng": 144.576369,
+  "available": "now",
+  "listed": "2026-10-19",
+  "walk_score": 13,
+  "transit_score": 34,
+  "agency": "YPA Estate Agents - Melton",
+  "photos": [
+   "268368379/6682db2a4bb87a9fb79da73f-1-8b59-de7e-ecae-a41_84d8-9585-c5b9-28b8-8e0a-e2e2-eed2-372d_20261019032900_original-1792383117-primary.jpg",
+   "268368483/47aed1be0a676445b0e9753d-2-bce2-cd37-5b41-503_b852-72f8-564c-a923-aad7-42f2-4c2d-6ab6_20261019032901_original-1792383581-primary.jpg",
+   "268368484/bd2391e855cbea3508a200ea-3-7e9e-8af0-7763-41d_7f1b-b9d7-38c5-43bb-6f37-fcf5-8a16-44e4_20261019032902_original-1792383581-primary.jpg",
+   "268368485/ad1054e5913c709fe0cfa26e-7-bb92-6286-5584-06f_bfe6-9229-b12d-c182-6f23-f279-f930-6aa1_20261019032904_original-1792383581-primary.jpg"
+  ],
+  "region": "West",
+  "lga": "Melton",
+  "cbd_km": 38.1,
+  "near": {
+   "supermarket": {
+    "m": 1989,
+    "name": "Aldi"
+   },
+   "fresh": {
+    "m": 2313,
+    "name": ""
+   },
+   "pharmacy": {
+    "m": 2535,
+    "name": "Chemist Warehouse"
+   },
+   "gp": {
+    "m": 2198,
+    "name": "Melton Medical and Dental Centre"
+   },
+   "cafe": {
+    "m": 2524,
+    "name": "PM's Coffee"
+   },
+   "park": {
+    "m": 288,
+    "name": ""
+   },
+   "gym": {
+    "m": 1474,
+    "name": ""
+   },
+   "library": {
+    "m": 1237,
+    "name": "Kurunjang Community Hub"
+   },
+   "train": {
+    "m": 4940,
+    "name": "Melton"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 230,
+    "name": "Lagarna Dr/Adam Way"
+   },
+   "bar": {
+    "m": 2091,
+    "name": "Macs Hotel"
+   },
+   "cinema": {
+    "m": 2859,
+    "name": "Reading Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 4,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "park"
+  ],
+  "twenty": 11,
+  "transit": 20,
+  "roads": {
+   "motorway": 2202,
+   "motorway_name": "Western Freeway Onramp",
+   "major": 3158,
+   "major_name": "C754",
+   "rail": 3764
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 93,
+  "crime": {
+   "rate": 55.1,
+   "burglary": 3.1,
+   "assault": 7.0,
+   "offences": 590,
+   "population": 10711
+  },
+  "first_seen": "2026-10-20",
+  "gone": "2026-11-16"
+ },
+ {
+  "id": 6529961,
+  "url": "https://www.rent.com.au/property/9-4-narada-rd-truganina-vic-3029-6529961",
+  "type": "Townhouse",
+  "street": "9/4 Narada Road",
+  "suburb": "Truganina",
+  "postcode": "3029",
+  "rent_text": "$560 pw",
+  "rent": 560,
+  "beds": 3,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -37.830181,
+  "lng": 144.721382,
+  "available": "now",
+  "listed": "2026-10-31",
+  "walk_score": 7,
+  "transit_score": 0,
+  "agency": "McMullan & Bird Portfolio Management Pty Ltd",
+  "photos": [
+   "268632813/39a0f0c78f0fd71427ca8b71-76bf5059_2D7a39_2D239e_2Daaf0_2D89b12b7cb821-1793430279-primary.jpg",
+   "268632814/1437a40b6b2bd80bd293e1b1-634fdb3f_2D22f3_2D9154_2Df661_2Db4b2fca6b759-1793430299-primary.jpg",
+   "268632815/c3b985c6045db046f001b8f7-37def259_2Db482_2D847d_2Dcb32_2D20b02f9da289-1793430300-primary.jpg",
+   "268632816/42c6fc4332f9669e4c3ecee7-f6d9384f_2D0a93_2D5def_2D391c_2D5bbfd9f027ae-1793430301-primary.jpg"
+  ],
+  "region": "West",
+  "lga": "Wyndham",
+  "cbd_km": 21.6,
+  "near": {
+   "supermarket": {
+    "m": 1435,
+    "name": "Coles"
+   },
+   "fresh": {
+    "m": 3451,
+    "name": "Madina Halal Meats"
+   },
+   "pharmacy": {
+    "m": 1464,
+    "name": "Chemist Warehouse"
+   },
+   "gp": {
+    "m": 3406,
+    "name": ""
+   },
+   "cafe": {
+    "m": 1573,
+    "name": "Pie Face"
+   },
+   "park": {
+    "m": 473,
+    "name": ""
+   },
+   "gym": {
+    "m": 382,
+    "name": "Alcock Road Reserve"
+   },
+   "library": {
+    "m": 1580,
+    "name": ""
+   },
+   "train": {
+    "m": 3071,
+    "name": "Tarneit"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 966,
+    "name": "Alcock Rd/Leakes Rd"
+   },
+   "bar": {
+    "m": 2363,
+    "name": "Club Tarneit"
+   },
+   "cinema": {
+    "m": 8006,
+    "name": "VIllage Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "park",
+   "gym"
+  ],
+  "twenty": 22,
+  "transit": 0,
+  "roads": {
+   "motorway": 4601,
+   "motorway_name": "Western Freeway Onramp",
+   "major": 751,
+   "major_name": "Leakes Road",
+   "rail": 287
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 74,
+  "crime": {
+   "rate": 88.0,
+   "burglary": 7.8,
+   "assault": 6.3,
+   "offences": 3196,
+   "population": 36305
+  },
+  "first_seen": "2026-11-01",
+  "gone": "2026-11-16"
+ },
+ {
+  "id": 6533459,
+  "url": "https://www.rent.com.au/property/1-2-crawford-st-newport-vic-3015-6533459",
+  "type": "House",
+  "street": "1/2 Crawford Street",
+  "suburb": "Newport",
+  "postcode": "3015",
+  "rent_text": "$900 per week | $3,911 per calendar month",
+  "rent": 900,
+  "beds": 3,
+  "baths": 2,
+  "cars": 0,
+  "pets": false,
+  "lat": -37.849301,
+  "lng": 144.890412,
+  "available": "4th January 2027",
+  "listed": "2026-11-04",
+  "walk_score": 63,
+  "transit_score": 52,
+  "agency": "Williams Real Estate",
+  "photos": [
+   "268701756/854529ce5b36773546860481-cba3a794-1793770179-primary.jpg",
+   "268701829/2fa6eff646e34b12da56f543-a1373f53-1793770412-primary.jpg",
+   "268701827/c5bb35266cc1c35db78d63d7-a0a112be-1793770411-primary.jpg",
+   "268701828/b803042058cdf5241335a503-84775032-1793770412-primary.jpg"
+  ],
+  "region": "West",
+  "lga": "Hobsons Bay",
+  "cbd_km": 7.6,
+  "near": {
+   "supermarket": {
+    "m": 1439,
+    "name": "Coles"
+   },
+   "fresh": {
+    "m": 1069,
+    "name": "Pham Bakery Cafe"
+   },
+   "pharmacy": {
+    "m": 1055,
+    "name": "Kofoed Pharmacy"
+   },
+   "gp": {
+    "m": 822,
+    "name": "Westgate Health Cooperative"
+   },
+   "cafe": {
+    "m": 406,
+    "name": "Jackies Pizza"
+   },
+   "park": {
+    "m": 367,
+    "name": ""
+   },
+   "gym": {
+    "m": 590,
+    "name": ""
+   },
+   "library": {
+    "m": 1349,
+    "name": "Newport Community Hub"
+   },
+   "train": {
+    "m": 3141,
+    "name": "Williamstown"
+   },
+   "tram": {
+    "m": 5006,
+    "name": "Stop 129: Beacon Cove"
+   },
+   "bus": {
+    "m": 271,
+    "name": "Jackson Reserve/Melbourne Rd"
+   },
+   "bar": {
+    "m": 874,
+    "name": "Prince Albert Hotel"
+   },
+   "cinema": {
+    "m": 4788,
+    "name": "Sun Theatre"
+   }
+  },
+  "counts": {
+   "cafe": 2,
+   "bar": 0,
+   "bus": 6,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "cafe",
+   "park",
+   "gym"
+  ],
+  "twenty": 33,
+  "transit": 20,
+  "roads": {
+   "motorway": 2164,
+   "motorway_name": "West Gate Freeway",
+   "major": 206,
+   "major_name": "Melbourne Road",
+   "rail": 433
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 90,
+  "crime": {
+   "rate": 60.0,
+   "burglary": 3.0,
+   "assault": 5.3,
+   "offences": 820,
+   "population": 13658
+  },
+  "first_seen": "2026-11-05",
+  "gone": "2026-11-16"
+ },
+ {
+  "id": 6523796,
+  "url": "https://www.rent.com.au/property/8-fawkner-rd-wyndham-vale-vic-3024-6523796",
+  "type": "House",
+  "street": "8 Fawkner Road",
+  "suburb": "Wyndham Vale",
+  "postcode": "3024",
+  "rent_text": "$395 pw",
+  "rent": 395,
+  "beds": 3,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -37.869356,
+  "lng": 144.602413,
+  "available": "now",
+  "listed": "2026-10-26",
+  "walk_score": 15,
+  "transit_score": 45,
+  "agency": "My Agent Real Estate",
+  "photos": [
+   "268486867/8c2d6fbdb03b92bfbbcdba8c-b4eb010c-758a-45ea-bd70-c01a543b5fc0-1792970740-primary.jpg",
+   "268486929/340b2ad9a5897d77e974a32d-b4eb010c-7a74-41ad-a0ec-a0e13cba3b22-1792970783-primary.jpg",
+   "268486930/f7de5418bc5b11a7865a0ae1-b4eb010c-827a-4627-b26e-ca31133ecebb-1792970784-primary.jpg",
+   "268486931/3871fc61b5fe2a559229a9d0-b4eb010c-89b8-452f-85bd-e5afbe855922-1792970784-primary.jpg"
+  ],
+  "region": "West",
+  "lga": "Wyndham",
+  "cbd_km": 32.5,
+  "near": {
+   "supermarket": {
+    "m": 1661,
+    "name": "Coles"
+   },
+   "fresh": {
+    "m": 9999,
+    "name": ""
+   },
+   "pharmacy": {
+    "m": 9999,
+    "name": ""
+   },
+   "gp": {
+    "m": 1245,
+    "name": "Wyndham Vale GP Super Clinic IPC Health"
+   },
+   "cafe": {
+    "m": 1485,
+    "name": "Kesari Indian"
+   },
+   "park": {
+    "m": 205,
+    "name": ""
+   },
+   "gym": {
+    "m": 913,
+    "name": ""
+   },
+   "library": {
+    "m": 1009,
+    "name": "Wyndham Library Service - Manor Lakes Branch"
+   },
+   "train": {
+    "m": 802,
+    "name": "Wyndham Vale"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 442,
+    "name": "Finsbury Crescent/Kinglake Drive"
+   },
+   "bar": {
+    "m": 9999,
+    "name": ""
+   },
+   "cinema": {
+    "m": 9999,
+    "name": ""
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "park"
+  ],
+  "twenty": 11,
+  "transit": 40,
+  "roads": {
+   "motorway": 6808,
+   "motorway_name": "Princes Fwy On-ramp",
+   "major": 442,
+   "major_name": "Ballan Road",
+   "rail": 563
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 76,
+  "crime": {
+   "rate": 85.3,
+   "burglary": 6.6,
+   "assault": 9.3,
+   "offences": 1751,
+   "population": 20518
+  },
+  "first_seen": "2026-10-27",
+  "gone": "2026-11-16"
+ },
+ {
+  "id": 6536138,
+  "url": "https://www.rent.com.au/property/38-rosemary-rd-beaumaris-vic-3193-6536138",
+  "type": "Townhouse",
+  "street": "38 Rosemary Road",
+  "suburb": "Beaumaris",
+  "postcode": "3193",
+  "rent_text": "$975 pw",
+  "rent": 975,
+  "beds": 3,
+  "baths": 2,
+  "cars": 2,
+  "pets": null,
+  "lat": -37.978746,
+  "lng": 145.040473,
+  "available": "now",
+  "listed": "2026-11-06",
+  "walk_score": 73,
+  "transit_score": 38,
+  "agency": "Hodges - Beaumaris",
+  "photos": [
+   "268748542/9af4e032c54be53b1fca12ad-01993762_img_03-1793941480-primary.jpg",
+   "268748653/260c2be42e2f7f8d6d181abf-01993762_img_07-1793941592-primary.jpg",
+   "268748654/4f49773b0ff0016fb98c70af-01993762_img_05-1793941593-primary.jpg",
+   "268748656/4a0b342cfd881c2555f8806f-01993762_img_04-1793941594-primary.jpg"
+  ],
+  "region": "Bayside & peninsula",
+  "lga": "Bayside",
+  "cbd_km": 18.9,
+  "near": {
+   "supermarket": {
+    "m": 1368,
+    "name": "IGA"
+   },
+   "fresh": {
+    "m": 1328,
+    "name": "Hagens"
+   },
+   "pharmacy": {
+    "m": 628,
+    "name": "Amcal"
+   },
+   "gp": {
+    "m": 1167,
+    "name": "Beaumaris Medical Centre"
+   },
+   "cafe": {
+    "m": 1139,
+    "name": "The Parlor Milkbar & Kitchen"
+   },
+   "park": {
+    "m": 808,
+    "name": ""
+   },
+   "gym": {
+    "m": 1081,
+    "name": ""
+   },
+   "library": {
+    "m": 909,
+    "name": "Beaumaris Community Centre"
+   },
+   "train": {
+    "m": 2342,
+    "name": "Cheltenham"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 114,
+    "name": "Coreen Ave/Balcombe Rd"
+   },
+   "bar": {
+    "m": 1166,
+    "name": "Beaumaris Concourse Hotel"
+   },
+   "cinema": {
+    "m": 3189,
+    "name": "Village Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 0,
+   "bar": 0,
+   "bus": 4,
+   "tram": 0,
+   "shops": 1
+  },
+  "met": [
+   "pharmacy"
+  ],
+  "twenty": 11,
+  "transit": 20,
+  "roads": {
+   "motorway": 9999,
+   "motorway_name": "",
+   "major": 49,
+   "major_name": "Balcombe Road",
+   "rail": 1730
+  },
+  "quiet": 70,
+  "noise_flags": [
+   "On or beside a main road (Balcombe Road, 49 m)"
+  ],
+  "air": 75,
+  "air_flags": [
+   "Fronts a main road (Balcombe Road)"
+  ],
+  "safety": 100,
+  "crime": {
+   "rate": 27.2,
+   "burglary": 2.9,
+   "assault": 1.5,
+   "offences": 379,
+   "population": 13947
+  },
+  "first_seen": "2026-11-07",
+  "gone": "2026-11-16"
+ },
+ {
+  "id": 6532606,
+  "url": "https://www.rent.com.au/property/8-bessie-dr-cranbourne-west-vic-3977-6532606",
+  "type": "House",
+  "street": "8 Bessie Drive",
+  "suburb": "Cranbourne West",
+  "postcode": "3977",
+  "rent_text": "$575 pw",
+  "rent": 575,
+  "beds": 3,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -38.107497,
+  "lng": 145.246052,
+  "available": "now",
+  "listed": "2026-11-04",
+  "walk_score": 3,
+  "transit_score": 29,
+  "agency": "Ray White Cranbourne",
+  "photos": [
+   "268685569/8f9241d1da76205159e4735e-226963683__1793748087-45227-WEB-8BessieDriveCranbourneWestVIC3977-Photo01-1793749429-primary.jpg",
+   "268685582/8618023c5a3d4487a7cb9a25-226964153__1793748114-33110-WEB-8BessieDriveCranbourneWestVIC3977-Photo17-1793749435-primary.jpg",
+   "268685586/c0591ad702f22519ae26ad4c-226964048__1793748109-32958-WEB-8BessieDriveCranbourneWestVIC3977-Photo12-1793749436-primary.jpg",
+   "268685583/1bbf358f25ad1da179766d57-226963737__1793748092-93144-WEB-8BessieDriveCranbourneWestVIC3977-Photo04-1793749435-primary.jpg"
+  ],
+  "region": "South-east",
+  "lga": "Casey",
+  "cbd_km": 40.3,
+  "near": {
+   "supermarket": {
+    "m": 530,
+    "name": "Woolworths"
+   },
+   "fresh": {
+    "m": 2073,
+    "name": "Balay's Specials Bakery"
+   },
+   "pharmacy": {
+    "m": 622,
+    "name": "Pharmacy 4 Less"
+   },
+   "gp": {
+    "m": 655,
+    "name": "Cranbourne West Medical Centre"
+   },
+   "cafe": {
+    "m": 544,
+    "name": "The Rasoi"
+   },
+   "park": {
+    "m": 324,
+    "name": "Tony Way Reserve"
+   },
+   "gym": {
+    "m": 534,
+    "name": "Jetts Fitness"
+   },
+   "library": {
+    "m": 9999,
+    "name": ""
+   },
+   "train": {
+    "m": 4116,
+    "name": "Cranbourne"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 210,
+    "name": "Bradman Dr/Hall Rd"
+   },
+   "bar": {
+    "m": 4041,
+    "name": "Trios"
+   },
+   "cinema": {
+    "m": 9999,
+    "name": ""
+   }
+  },
+  "counts": {
+   "cafe": 3,
+   "bar": 0,
+   "bus": 2,
+   "tram": 0,
+   "shops": 4
+  },
+  "met": [
+   "supermarket",
+   "pharmacy",
+   "gp",
+   "cafe",
+   "park",
+   "gym"
+  ],
+  "twenty": 67,
+  "transit": 20,
+  "roads": {
+   "motorway": 6660,
+   "motorway_name": "EastLink",
+   "major": 600,
+   "major_name": "Hall Road",
+   "rail": 2934
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 81,
+  "crime": {
+   "rate": 75.5,
+   "burglary": 5.4,
+   "assault": 8.8,
+   "offences": 1508,
+   "population": 19969
+  },
+  "first_seen": "2026-11-05",
+  "gone": "2026-11-16"
+ },
+ {
+  "id": 6527174,
+  "url": "https://www.rent.com.au/property/23-bellbridge-dr-hoppers-crossing-vic-3029-6527174",
+  "type": "House",
+  "street": "23 Bellbridge Drive",
+  "suburb": "Hoppers Crossing",
+  "postcode": "3029",
+  "rent_text": "$480 pw",
+  "rent": 480,
+  "beds": 3,
+  "baths": 2,
+  "cars": 2,
+  "pets": false,
+  "lat": -37.874623,
+  "lng": 144.705655,
+  "available": "now",
+  "listed": "2026-10-28",
+  "walk_score": 42,
+  "transit_score": 41,
+  "agency": "Ray White Werribee",
+  "photos": [
+   "268561277/ada968539492ff32affc5129-224994507__1792644627-86204-23BellbridgeDriveHoppersCrossing-1-1793166131-primary.jpg",
+   "268561509/3cf0088ac52d5a01b0671e5f-224994514__1792644632-273943-23BellbridgeDriveHoppersCrossing-2-1793166288-primary.jpg",
+   "268561507/57aaa3cf9062be6866f8ae42-224994627__1792644683-98271-23BellbridgeDriveHoppersCrossing-4-1793166286-primary.jpg",
+   "268561506/a00d6b79c40313be09b4f82a-224994594__1792644680-86069-23BellbridgeDriveHoppersCrossing-3-1793166286-primary.jpg"
+  ],
+  "region": "West",
+  "lga": "Wyndham",
+  "cbd_km": 23.8,
+  "near": {
+   "supermarket": {
+    "m": 1038,
+    "name": "Coles"
+   },
+   "fresh": {
+    "m": 987,
+    "name": "The Baker's Son"
+   },
+   "pharmacy": {
+    "m": 1798,
+    "name": "Pharmacy Select Hoppers Lane"
+   },
+   "gp": {
+    "m": 1318,
+    "name": "Denture Clinic"
+   },
+   "cafe": {
+    "m": 759,
+    "name": "Sottile's Pizza & Family Restaurant"
+   },
+   "park": {
+    "m": 361,
+    "name": "Aitken Avenue Park"
+   },
+   "gym": {
+    "m": 969,
+    "name": ""
+   },
+   "library": {
+    "m": 505,
+    "name": "Central Park Community Centre"
+   },
+   "train": {
+    "m": 1343,
+    "name": "Hoppers Crossing"
+   },
+   "tram": {
+    "m": 9999,
+    "name": ""
+   },
+   "bus": {
+    "m": 420,
+    "name": "Gambier Ct/Morris Rd"
+   },
+   "bar": {
+    "m": 1669,
+    "name": "Hoppers Club"
+   },
+   "cinema": {
+    "m": 2732,
+    "name": "VIllage Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 1,
+   "bar": 0,
+   "bus": 0,
+   "tram": 0,
+   "shops": 0
+  },
+  "met": [
+   "cafe",
+   "park",
+   "library"
+  ],
+  "twenty": 33,
+  "transit": 25,
+  "roads": {
+   "motorway": 740,
+   "motorway_name": "Princes Freeway Onramp",
+   "major": 514,
+   "major_name": "Old Geelong Road",
+   "rail": 665
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 65,
+  "crime": {
+   "rate": 104.9,
+   "burglary": 6.2,
+   "assault": 7.7,
+   "offences": 3903,
+   "population": 37216
+  },
+  "first_seen": "2026-10-29",
+  "gone": "2026-11-16"
+ },
+ {
+  "id": 6521550,
+  "url": "https://www.rent.com.au/property/30-abercrombie-st-oakleigh-south-vic-3167-6521550",
+  "type": "House",
+  "street": "30 Abercrombie Street",
+  "suburb": "Oakleigh South",
+  "postcode": "3167",
+  "rent_text": "$695 pw",
+  "rent": 695,
+  "beds": 3,
+  "baths": 1,
+  "cars": 5,
+  "pets": false,
+  "lat": -37.930362,
+  "lng": 145.083377,
+  "available": "now",
+  "listed": "2026-10-22",
+  "walk_score": 40,
+  "transit_score": 47,
+  "agency": "Ray White - Carnegie",
+  "photos": [
+   "268423096/52ab345d9b7a2ed356d26501-224953153__1792636355-75697-IMG6504007-1792636897-primary.jpg",
+   "268423092/707d8cce67b654c9a951bdd1-224953066__1792636334-251924-IMG6546002-1792636851-primary.jpg",
+   "268423088/ae43197dc6a0b43407883db9-224952931__1792636323-63619-IMG6577003-1792636837-primary.jpg",
+   "268423080/92cdf0f0e903515b135deef8-224952469__1792636297-63536-IMG6659006-1792636793-primary.jpg"
+  ],
+  "region": "South-east",
+  "lga": "Monash",
+  "cbd_km": 16.1,
+  "near": {
+   "supermarket": {
+    "m": 1216,
+    "name": "Woolworths"
+   },
+   "fresh": {
+    "m": 290,
+    "name": "Continental Bake House"
+   },
+   "pharmacy": {
+    "m": 1213,
+    "name": "Chemist Warehouse"
+   },
+   "gp": {
+    "m": 910,
+    "name": ""
+   },
+   "cafe": {
+    "m": 290,
+    "name": "Jangdalk"
+   },
+   "park": {
+    "m": 286,
+    "name": ""
+   },
+   "gym": {
+    "m": 622,
+    "name": ""
+   },
+   "library": {
+    "m": 1605,
+    "name": "1st Moorabbin Central Scout Hall"
+   },
+   "train": {
+    "m": 5407,
+    "name": "Highett"
+   },
+   "tram": {
+    "m": 6134,
+    "name": "Stop 68: Koornang Road"
+   },
+   "bus": {
+    "m": 247,
+    "name": "Old Dandenong Rd/Warrigal Rd"
+   },
+   "bar": {
+    "m": 2077,
+    "name": "Sandbelt Hotel"
+   },
+   "cinema": {
+    "m": 5336,
+    "name": "Village Cinemas"
+   }
+  },
+  "counts": {
+   "cafe": 1,
+   "bar": 0,
+   "bus": 4,
+   "tram": 0,
+   "shops": 1
+  },
+  "met": [
+   "fresh",
+   "cafe",
+   "park",
+   "gym"
+  ],
+  "twenty": 44,
+  "transit": 20,
+  "roads": {
+   "motorway": 4518,
+   "motorway_name": "Mornington Peninsula Freeway",
+   "major": 190,
+   "major_name": "Warrigal Road",
+   "rail": 2700
+  },
+  "quiet": 100,
+  "noise_flags": [],
+  "air": 100,
+  "air_flags": [],
+  "safety": 87,
+  "crime": {
+   "rate": 66.7,
+   "burglary": 5.9,
+   "assault": 4.8,
+   "offences": 657,
+   "population": 9851
+  },
+  "first_seen": "2026-10-23",
+  "gone": "2026-11-16"
  },
  {
   "id": 6294403,
@@ -392890,1086 +394100,5 @@
   },
   "first_seen": "2026-10-15",
   "gone": "2026-11-02"
- },
- {
-  "id": 6505738,
-  "url": "https://www.rent.com.au/property/1-peter-ct-saint-albans-vic-3021-6505738",
-  "type": "House",
-  "street": "1 Peter Court",
-  "suburb": "St Albans",
-  "postcode": "3021",
-  "rent_text": "$560 pw",
-  "rent": 560,
-  "beds": 3,
-  "baths": 2,
-  "cars": 3,
-  "pets": false,
-  "lat": -37.730572,
-  "lng": 144.798395,
-  "available": "now",
-  "listed": "2026-10-05",
-  "walk_score": 60,
-  "transit_score": 50,
-  "agency": "RentBetter",
-  "photos": [
-   "268155986/0f9e7dc7efc553bca6523021-e7760d692dc666d2a152a53c97b1556d7780a50a6e8e5d946000145031aeae37-1791181556-primary.jpg",
-   "268155990/1fe91e7ae1dcabbf03ed35a2-e3acfa23a2d5baffb91f6aeed4631a40449b4fe18e3610c983b2dd8baebc8e6b-1791181583-primary.jpg",
-   "268155991/1e61d54512c0ed2ddcc86c07-92df64fafb28072f3a2604d6a3b42867400dd7e92cc739b2f78aaf09164b6ecf-1791181583-primary.jpg",
-   "268155992/53623be10c73e54f22256c36-e2a0e1cd55439d1a39aeffaa6c35acd563783583f81aa87ad9dbe5cae86cfcb9-1791181583-primary.jpg"
-  ],
-  "region": "West",
-  "lga": "Brimbank",
-  "cbd_km": 17.7,
-  "near": {
-   "supermarket": {
-    "m": 1030,
-    "name": "Foodworks"
-   },
-   "fresh": {
-    "m": 991,
-    "name": "Brimbank Butchers & Seafood"
-   },
-   "pharmacy": {
-    "m": 1680,
-    "name": "Ren Jih Tang"
-   },
-   "gp": {
-    "m": 1085,
-    "name": "Plaza Medical Centre"
-   },
-   "cafe": {
-    "m": 1490,
-    "name": "Taco Bill"
-   },
-   "park": {
-    "m": 87,
-    "name": ""
-   },
-   "gym": {
-    "m": 775,
-    "name": "Warm Water"
-   },
-   "library": {
-    "m": 374,
-    "name": ""
-   },
-   "train": {
-    "m": 543,
-    "name": "Keilor Plains"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 384,
-    "name": "Theodore St/Taylors Rd"
-   },
-   "bar": {
-    "m": 1827,
-    "name": "Pool Bar"
-   },
-   "cinema": {
-    "m": 5283,
-    "name": "Hoyts"
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 2,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "park",
-   "gym",
-   "library",
-   "pt"
-  ],
-  "twenty": 44,
-  "transit": 65,
-  "roads": {
-   "motorway": 3124,
-   "motorway_name": "Calder Freeway",
-   "major": 273,
-   "major_name": "Taylors Road",
-   "rail": 362
-  },
-  "quiet": 90,
-  "noise_flags": [
-   "Melbourne Airport 7.8 km away (flight paths)"
-  ],
-  "air": 100,
-  "air_flags": [],
-  "safety": 65,
-  "crime": {
-   "rate": 103.4,
-   "burglary": 7.5,
-   "assault": 10.4,
-   "offences": 3935,
-   "population": 38042
-  },
-  "first_seen": "2026-10-05",
-  "gone": "2026-11-01"
- },
- {
-  "id": 6528756,
-  "url": "https://www.rent.com.au/property/21-amaryllis-pde-tarneit-vic-3029-6528756",
-  "type": "House",
-  "street": "21 Amaryllis Parade",
-  "suburb": "Tarneit",
-  "postcode": "3029",
-  "rent_text": "$570 pw",
-  "rent": 570,
-  "beds": 3,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -37.847223,
-  "lng": 144.664917,
-  "available": "now",
-  "listed": "2026-10-30",
-  "walk_score": 39,
-  "transit_score": 33,
-  "agency": "YPA Tarneit - Truganina",
-  "photos": [
-   "268604512/d26a7a6fce74fce20c29ea77-fDeQx-T1_1xzs-kWXkkra6z0FfZk72oDt3q2gsv8eE4-1793312993-primary.jpg",
-   "268604656/71b6ff3212d8ddf6a1343dbc-E3K7BW7hf-tQl1I66B3aCvWvZG_L0LAG3be1yA9ItMM-1793313511-primary.jpg",
-   "268604659/6dfcf5ae005d8d76a4918ba2-m8EWtf8CDcn-S5lHZEiUMNsygqMoEPRTYXpxU2ZHtdM-1793313514-primary.jpg",
-   "268604657/b8ec4dc6939637e9e4e1d84a-SxUkNwpRHHHmT5dB0YMxTy8QuNwJ0qBzcE3BPrTH4r4-1793313514-primary.jpg"
-  ],
-  "region": "West",
-  "lga": "Wyndham",
-  "cbd_km": 26.8,
-  "near": {
-   "supermarket": {
-    "m": 1452,
-    "name": "Woolworths"
-   },
-   "fresh": {
-    "m": 2275,
-    "name": "Poppie's Bakery"
-   },
-   "pharmacy": {
-    "m": 1195,
-    "name": "Adam's Chemist"
-   },
-   "gp": {
-    "m": 873,
-    "name": ""
-   },
-   "cafe": {
-    "m": 1502,
-    "name": "Bubba Pizza Tarneit"
-   },
-   "park": {
-    "m": 156,
-    "name": "Farfalla Way Park"
-   },
-   "gym": {
-    "m": 584,
-    "name": "Club Claremont"
-   },
-   "library": {
-    "m": 1750,
-    "name": "Penrose Promenade Community Hub"
-   },
-   "train": {
-    "m": 2875,
-    "name": "West Tarneit"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 514,
-    "name": "Abbotswood Drive/Tarneit Road"
-   },
-   "bar": {
-    "m": 4498,
-    "name": "Hoppers Club"
-   },
-   "cinema": {
-    "m": 4585,
-    "name": "VIllage Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "park",
-   "gym"
-  ],
-  "twenty": 22,
-  "transit": 10,
-  "roads": {
-   "motorway": 5385,
-   "motorway_name": "Princes Freeway Offramp",
-   "major": 2030,
-   "major_name": "Derrimut Road",
-   "rail": 2121
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 77,
-  "crime": {
-   "rate": 83.5,
-   "burglary": 6.2,
-   "assault": 7.3,
-   "offences": 4707,
-   "population": 56370
-  },
-  "first_seen": "2026-10-30",
-  "gone": "2026-11-01"
- },
- {
-  "id": 6518905,
-  "url": "https://www.rent.com.au/property/8-13a-kent-st-braybrook-vic-3019-6518905",
-  "type": "Townhouse",
-  "street": "8/13A Kent Street",
-  "suburb": "Braybrook",
-  "postcode": "3019",
-  "rent_text": "$680 pw",
-  "rent": 680,
-  "beds": 3,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -37.792275,
-  "lng": 144.849608,
-  "available": "5th November 2026",
-  "listed": "2026-10-20",
-  "walk_score": 60,
-  "transit_score": 55,
-  "agency": "Melo Real Estate",
-  "photos": [
-   "268417393/792d997c4eee1c170429cb2d-uploads_2F1792617834809-pl6dzutu5i-5a6558eddc9bdefa33cb7538d87e206e_2F2-1792618346-primary.jpg",
-   "268417394/df347d9bee6d7e57ec1bfe1b-uploads_2F1792617840698-vllxsh7kng-5a6558eddc9bdefa33cb7538d87e206e_2F3-1792618357-primary.jpg",
-   "268417395/199e325a1ae0e132aa08e623-uploads_2F1792617845930-05n3weqcb47w-5a6558eddc9bdefa33cb7538d87e206e_2F8-1792618357-primary.jpg",
-   "268417396/4e05e1f7cc5c25a9dbf920e3-uploads_2F1792617853449-ordyawag8t-5a6558eddc9bdefa33cb7538d87e206e_2F1-1792618358-primary.jpg"
-  ],
-  "region": "West",
-  "lga": "Maribyrnong",
-  "cbd_km": 10.7,
-  "near": {
-   "supermarket": {
-    "m": 1245,
-    "name": "Coles"
-   },
-   "fresh": {
-    "m": 1615,
-    "name": "Cupcakes by Paolo"
-   },
-   "pharmacy": {
-    "m": 1515,
-    "name": ""
-   },
-   "gp": {
-    "m": 1305,
-    "name": "Maxwell Medical Group"
-   },
-   "cafe": {
-    "m": 1002,
-    "name": "Petit Cafe"
-   },
-   "park": {
-    "m": 150,
-    "name": "Pritchard Reserve"
-   },
-   "gym": {
-    "m": 123,
-    "name": ""
-   },
-   "library": {
-    "m": 979,
-    "name": "Braybrook Community Hub"
-   },
-   "train": {
-    "m": 1850,
-    "name": "Tottenham"
-   },
-   "tram": {
-    "m": 4521,
-    "name": "Stop 50: Williamson Road"
-   },
-   "bus": {
-    "m": 554,
-    "name": "Rochester Street/South Road"
-   },
-   "bar": {
-    "m": 1831,
-    "name": "Braybrook Hotel"
-   },
-   "cinema": {
-    "m": 2525,
-    "name": "Village Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "park",
-   "gym"
-  ],
-  "twenty": 22,
-  "transit": 25,
-  "roads": {
-   "motorway": 3467,
-   "motorway_name": "West Gate Freeway Onramp",
-   "major": 640,
-   "major_name": "Sunshine Road",
-   "rail": 566
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 27,
-  "crime": {
-   "rate": 169.9,
-   "burglary": 12.4,
-   "assault": 9.1,
-   "offences": 1645,
-   "population": 9682
-  },
-  "first_seen": "2026-10-20",
-  "gone": "2026-11-01"
- },
- {
-  "id": 6453161,
-  "url": "https://www.rent.com.au/property/100-bluebell-dr-craigieburn-vic-3064-6453161",
-  "type": "House",
-  "street": "100 Bluebell Drive",
-  "suburb": "Craigieburn",
-  "postcode": "3064",
-  "rent_text": "$500 P/Week",
-  "rent": 500,
-  "beds": 3,
-  "baths": 2,
-  "cars": 1,
-  "pets": false,
-  "lat": -37.566992,
-  "lng": 144.907365,
-  "available": "now",
-  "listed": "2026-08-06",
-  "walk_score": 10,
-  "transit_score": 30,
-  "agency": "YPA Craigieburn-Mickleham",
-  "photos": [
-   "267297949/db3ea2712cef707ae07f0d6b-ab5875f0-4b67-4fe8-8_7bd5-2a40-9ffa-41c7-777d-cf9d-c0ea-4cd5_20260806112106-1786017390-primary.jpg",
-   "267297951/fe371cbf25b34410f2591a32-image2_57ae-1cca-d38e-df68-6406-56fd-bbc7-0f3e_20260806112134-1786017400-primary.jpg",
-   "267297950/dec2bbcb000c9d1e8a2e0c98-image3_cca9-dda7-db7f-c439-b87e-f3f4-1fc2-8815_20260806112135-1786017400-primary.jpg",
-   "267297952/6f4749b1f25bed45168f0e20-image5_ea29-a0ea-6302-65b4-36e3-2f90-351a-ad8c_20260806112136-1786017402-primary.jpg"
-  ],
-  "region": "North",
-  "lga": "Hume",
-  "cbd_km": 28.3,
-  "near": {
-   "supermarket": {
-    "m": 1291,
-    "name": "Coles"
-   },
-   "fresh": {
-    "m": 3958,
-    "name": "Bigfields"
-   },
-   "pharmacy": {
-    "m": 1857,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 2707,
-    "name": "Modern Medical Clinic"
-   },
-   "cafe": {
-    "m": 1276,
-    "name": "Earl of Brew"
-   },
-   "park": {
-    "m": 398,
-    "name": ""
-   },
-   "gym": {
-    "m": 936,
-    "name": ""
-   },
-   "library": {
-    "m": 617,
-    "name": "Newbury Child and Community Centre"
-   },
-   "train": {
-    "m": 6508,
-    "name": "Craigieburn"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 603,
-    "name": "Clapham Way/Grand Boulevard"
-   },
-   "bar": {
-    "m": 7430,
-    "name": "Kalkallo Hotel"
-   },
-   "cinema": {
-    "m": 3827,
-    "name": "United Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "park",
-   "library"
-  ],
-  "twenty": 22,
-  "transit": 10,
-  "roads": {
-   "motorway": 2927,
-   "motorway_name": "Hume Freeway Onramp",
-   "major": 2870,
-   "major_name": "Craigieburn Road",
-   "rail": 4245
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 85,
-  "crime": {
-   "rate": 68.7,
-   "burglary": 2.4,
-   "assault": 7.3,
-   "offences": 4479,
-   "population": 65178
-  },
-  "first_seen": "2026-08-06",
-  "gone": "2026-11-01"
- },
- {
-  "id": 6515752,
-  "url": "https://www.rent.com.au/property/14-mcnamara-ct-pakenham-vic-3810-6515752",
-  "type": "House",
-  "street": "14 Mcnamara Court",
-  "suburb": "Pakenham",
-  "postcode": "3810",
-  "rent_text": "$540 pw",
-  "rent": 540,
-  "beds": 3,
-  "baths": 2,
-  "cars": 1,
-  "pets": false,
-  "lat": -38.071819,
-  "lng": 145.465743,
-  "available": "now",
-  "listed": "2026-10-15",
-  "walk_score": 22,
-  "transit_score": 29,
-  "agency": "LJ Hooker Pakenham",
-  "photos": [
-   "268323028/0a1883d935b04ea7a4a738db-0007984957-1792036056-primary.JPG",
-   "268323030/4ecfc932d61f9cdd7c2f88bd-0007984959-1792036059-primary.JPG",
-   "268331878/e2ade94a9cdb486d4f86089a-0007985858-1792073153-primary.JPG"
-  ],
-  "region": "South-east",
-  "lga": "Cardinia",
-  "cbd_km": 52.0,
-  "near": {
-   "supermarket": {
-    "m": 1635,
-    "name": "Aldi"
-   },
-   "fresh": {
-    "m": 1731,
-    "name": "Pie and Mighty"
-   },
-   "pharmacy": {
-    "m": 2025,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 557,
-    "name": "Pakenham Health Centre"
-   },
-   "cafe": {
-    "m": 1294,
-    "name": "Pakenham Inn"
-   },
-   "park": {
-    "m": 427,
-    "name": ""
-   },
-   "gym": {
-    "m": 376,
-    "name": ""
-   },
-   "library": {
-    "m": 1932,
-    "name": "Living and Learning in Cardinia"
-   },
-   "train": {
-    "m": 2671,
-    "name": "Pakenham"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 786,
-    "name": "Pakenham Rd/Princes Hwy"
-   },
-   "bar": {
-    "m": 1125,
-    "name": "Castellos"
-   },
-   "cinema": {
-    "m": 9999,
-    "name": ""
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "gp",
-   "park",
-   "gym"
-  ],
-  "twenty": 33,
-  "transit": 10,
-  "roads": {
-   "motorway": 1941,
-   "motorway_name": "Princes Freeway",
-   "major": 553,
-   "major_name": "Princes Highway",
-   "rail": 511
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 73,
-  "crime": {
-   "rate": 90.8,
-   "burglary": 3.9,
-   "assault": 9.1,
-   "offences": 4912,
-   "population": 54118
-  },
-  "first_seen": "2026-10-15",
-  "gone": "2026-11-01"
- },
- {
-  "id": 6502418,
-  "url": "https://www.rent.com.au/property/19a-hazelwood-rd-boronia-vic-3155-6502418",
-  "type": "House",
-  "street": "19A Hazelwood Road",
-  "suburb": "Boronia",
-  "postcode": "3155",
-  "rent_text": "$620 pw",
-  "rent": 620,
-  "beds": 3,
-  "baths": 2,
-  "cars": 2,
-  "pets": false,
-  "lat": -37.869323,
-  "lng": 145.281723,
-  "available": "now",
-  "listed": "2026-09-30",
-  "walk_score": 54,
-  "transit_score": 46,
-  "agency": "Knox Property Agents",
-  "photos": [
-   "268098714/b9adcabdd074e487a22e133d-b4cf0073-26c8-46b8-8256-443cfca71aa8-1790744928-primary.jpg",
-   "268098740/e3c6321078769c0da9ff24e4-b4cf0073-0431-4bb8-ad7d-6e520033179e-1790744945-primary.png",
-   "268098741/46e8ec0c21c8d8131c277746-b4cf0073-0a85-437a-9c69-1122447bb407-1790744945-primary.png",
-   "268098746/7e1a45fdb3c74c07a60b2ec2-b4cf0073-0eb7-4450-8eb0-91662587cca3-1790744948-primary.png"
-  ],
-  "region": "East",
-  "lga": "Knox",
-  "cbd_km": 28.2,
-  "near": {
-   "supermarket": {
-    "m": 1142,
-    "name": "Woolworths"
-   },
-   "fresh": {
-    "m": 1130,
-    "name": "Bakers Delight"
-   },
-   "pharmacy": {
-    "m": 947,
-    "name": "PharmaSave"
-   },
-   "gp": {
-    "m": 867,
-    "name": "Healthy Life Clinic"
-   },
-   "cafe": {
-    "m": 775,
-    "name": "Gloria\u2019s Cafe"
-   },
-   "park": {
-    "m": 166,
-    "name": ""
-   },
-   "gym": {
-    "m": 63,
-    "name": ""
-   },
-   "library": {
-    "m": 852,
-    "name": "Boronia Library"
-   },
-   "train": {
-    "m": 1297,
-    "name": "Boronia"
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 425,
-    "name": "Sutton Ave/Dorset Rd"
-   },
-   "bar": {
-    "m": 808,
-    "name": "Boronia RSL"
-   },
-   "cinema": {
-    "m": 1168,
-    "name": "Metro Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 1,
-   "bar": 0,
-   "bus": 0,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "cafe",
-   "park",
-   "gym"
-  ],
-  "twenty": 33,
-  "transit": 25,
-  "roads": {
-   "motorway": 8061,
-   "motorway_name": "",
-   "major": 308,
-   "major_name": "Dorset Road",
-   "rail": 515
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 76,
-  "crime": {
-   "rate": 85.9,
-   "burglary": 4.8,
-   "assault": 7.9,
-   "offences": 2028,
-   "population": 23607
-  },
-  "first_seen": "2026-09-30",
-  "gone": "2026-11-01"
- },
- {
-  "id": 4336833,
-  "url": "https://www.rent.com.au/property/7-675-centre-rd-bentleigh-east-vic-3165-4336833",
-  "type": "Townhouse",
-  "street": "7/675 Centre Road",
-  "suburb": "Bentleigh East",
-  "postcode": "3165",
-  "rent_text": "$680 pw",
-  "rent": 680,
-  "beds": 3,
-  "baths": 1,
-  "cars": 2,
-  "pets": false,
-  "lat": -37.920326,
-  "lng": 145.053895,
-  "available": "now",
-  "listed": "2026-10-26",
-  "walk_score": 85,
-  "transit_score": 39,
-  "agency": "For Sale By Owner",
-  "photos": [
-   "268027258/01c6b5d6f8b5524fe3c1da15-42da2acc082ea7235bacd6ba5769abc1bae72276-1790230458-primary.",
-   "268027260/afcfdd9231149304078571d0-c372c18237207905d3ffdc5e9d91fba4e8efeca6-1790230478-primary.",
-   "268027259/94f135e65257ebb317ec098d-a61b84fa43f0fa9eef85e42902ed88c4e46fb146-1790230477-primary.",
-   "268027262/4b47558115f44450c42964a4-ddbcd4e2d6f0e63042f933f2de8a32f5219212eb-1790230488-primary."
-  ],
-  "region": "South-east",
-  "lga": "Glen Eira",
-  "cbd_km": 13.6,
-  "near": {
-   "supermarket": {
-    "m": 492,
-    "name": "Ritchies"
-   },
-   "fresh": {
-    "m": 419,
-    "name": "Fresh Fruit & Vegies"
-   },
-   "pharmacy": {
-    "m": 471,
-    "name": "Community Pharmacy East Bentleigh"
-   },
-   "gp": {
-    "m": 545,
-    "name": "Eastbound Medical Clinic"
-   },
-   "cafe": {
-    "m": 15,
-    "name": "Oriental Kitchen"
-   },
-   "park": {
-    "m": 557,
-    "name": ""
-   },
-   "gym": {
-    "m": 203,
-    "name": "Jetts Fitness"
-   },
-   "library": {
-    "m": 1223,
-    "name": "Bentleigh Senior Citizens Centre"
-   },
-   "train": {
-    "m": 1979,
-    "name": "Bentleigh"
-   },
-   "tram": {
-    "m": 3816,
-    "name": "Stop 68: Koornang Road"
-   },
-   "bus": {
-    "m": 15,
-    "name": "Alexander Street/Centre Road"
-   },
-   "bar": {
-    "m": 129,
-    "name": "Roo Baa Functions"
-   },
-   "cinema": {
-    "m": 5647,
-    "name": "Village Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 20,
-   "bar": 3,
-   "bus": 8,
-   "tram": 0,
-   "shops": 6
-  },
-  "met": [
-   "supermarket",
-   "fresh",
-   "pharmacy",
-   "gp",
-   "cafe",
-   "park",
-   "gym"
-  ],
-  "twenty": 78,
-  "transit": 35,
-  "roads": {
-   "motorway": 5004,
-   "motorway_name": "Monash Freeway",
-   "major": 1593,
-   "major_name": "North Road",
-   "rail": 1510
-  },
-  "quiet": 95,
-  "noise_flags": [
-   "1 pub/bar within 150 m"
-  ],
-  "air": 100,
-  "air_flags": [],
-  "safety": 100,
-  "crime": {
-   "rate": 37.4,
-   "burglary": 2.8,
-   "assault": 3.8,
-   "offences": 1129,
-   "population": 30159
-  },
-  "first_seen": "2026-10-10",
-  "gone": "2026-11-01"
- },
- {
-  "id": 6278587,
-  "url": "https://www.rent.com.au/property/376-elgar-rd-box-hill-vic-3128-6278587",
-  "type": "House",
-  "street": "376 Elgar Road",
-  "suburb": "Box Hill",
-  "postcode": "3128",
-  "rent_text": "$620 pw",
-  "rent": 620,
-  "beds": 3,
-  "baths": 1,
-  "cars": 1,
-  "pets": false,
-  "lat": -37.823681,
-  "lng": 145.113949,
-  "available": "now",
-  "listed": "2026-01-27",
-  "walk_score": 55,
-  "transit_score": 71,
-  "agency": "The One Real Estate",
-  "photos": [
-   "262779803/ee425d604a5610a17d2e3b98-uploads_2F1715081878589-eidn8vs0muq-99fba72dd0ac73c3ed1a93acdb48f46a_2FIMG_4590-1769488812-primary.jpg",
-   "262780248/5211941ed2ee95654ca953f7-uploads_2F1715081880798-1poa3u4k1vm-99fba72dd0ac73c3ed1a93acdb48f46a_2FIMG_4571-1769489075-primary.jpg",
-   "262780247/1c409bb7d5a06252cdbcd8e5-uploads_2F1714987816171-fd4ykvcqpo-0465ebd84819c78fc1954e0e2f2bcde2_2F2-1769489075-primary.jpg",
-   "262780258/b70ebf0ac61145ff6dd73e56-uploads_2F1714987970527-y0wtg8qex1-0465ebd84819c78fc1954e0e2f2bcde2_2F5-1769489081-primary.jpg"
-  ],
-  "region": "East",
-  "lga": "Whitehorse",
-  "cbd_km": 12.9,
-  "near": {
-   "supermarket": {
-    "m": 936,
-    "name": "Coles"
-   },
-   "fresh": {
-    "m": 1023,
-    "name": "Le Petit Tour"
-   },
-   "pharmacy": {
-    "m": 969,
-    "name": "Chemist Warehouse"
-   },
-   "gp": {
-    "m": 626,
-    "name": ""
-   },
-   "cafe": {
-    "m": 859,
-    "name": "Chinese Restaurant Land Kitchen"
-   },
-   "park": {
-    "m": 258,
-    "name": "Surrey Hills Park"
-   },
-   "gym": {
-    "m": 539,
-    "name": ""
-   },
-   "library": {
-    "m": 808,
-    "name": "Greek Orthodox Community of Box Hill & Districts Cultural & Community Centre"
-   },
-   "train": {
-    "m": 1444,
-    "name": "Union"
-   },
-   "tram": {
-    "m": 985,
-    "name": "Stop 56: Elgar Road"
-   },
-   "bus": {
-    "m": 18,
-    "name": "Blenheim Ave/Elgar Rd"
-   },
-   "bar": {
-    "m": 3243,
-    "name": "Bin 3 Cafe And Wine Bar"
-   },
-   "cinema": {
-    "m": 4263,
-    "name": "Reading Cinemas"
-   }
-  },
-  "counts": {
-   "cafe": 0,
-   "bar": 0,
-   "bus": 5,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "gp",
-   "park",
-   "gym"
-  ],
-  "twenty": 33,
-  "transit": 53,
-  "roads": {
-   "motorway": 2966,
-   "motorway_name": "Eastern Freeway Onramp",
-   "major": 20,
-   "major_name": "Elgar Road",
-   "rail": 597
-  },
-  "quiet": 70,
-  "noise_flags": [
-   "On or beside a main road (Elgar Road, 20 m)"
-  ],
-  "air": 75,
-  "air_flags": [
-   "Fronts a main road (Elgar Road)"
-  ],
-  "safety": 23,
-  "crime": {
-   "rate": 176.3,
-   "burglary": 10.5,
-   "assault": 13.3,
-   "offences": 2530,
-   "population": 14353
-  },
-  "first_seen": "2026-01-27",
-  "gone": "2026-11-01"
- },
- {
-  "id": 6501455,
-  "url": "https://www.rent.com.au/property/26-kinsfolk-cct-doveton-vic-3177-6501455",
-  "type": "Townhouse",
-  "street": "26 Kinsfolk Circuit",
-  "suburb": "Doveton",
-  "postcode": "3177",
-  "rent_text": "$590 pw",
-  "rent": 590,
-  "beds": 3,
-  "baths": 2,
-  "cars": 2,
-  "pets": null,
-  "lat": -37.992945,
-  "lng": 145.234221,
-  "available": "now",
-  "listed": "2026-09-29",
-  "walk_score": 62,
-  "transit_score": 41,
-  "agency": "Ausky Investment",
-  "photos": [
-   "268082702/1ea16002356ae713762497dd-01971804_img_12-1790664423-primary.jpg",
-   "268082709/216c7a354e58de605da6f587-01971804_img_02-1790664427-primary.jpg",
-   "268082704/e2aa64edfcb5fc1f2c91c484-01971804_img_04-1790664425-primary.jpg",
-   "268082703/71ddca47d4235015e261f4ce-01971804_img_05-1790664425-primary.jpg"
-  ],
-  "region": "South-east",
-  "lga": "Casey",
-  "cbd_km": 30.4,
-  "near": {
-   "supermarket": {
-    "m": 1233,
-    "name": ""
-   },
-   "fresh": {
-    "m": 1276,
-    "name": ""
-   },
-   "pharmacy": {
-    "m": 1257,
-    "name": ""
-   },
-   "gp": {
-    "m": 2140,
-    "name": "Langton Medical Centre"
-   },
-   "cafe": {
-    "m": 404,
-    "name": "Petaling Jaya"
-   },
-   "park": {
-    "m": 384,
-    "name": ""
-   },
-   "gym": {
-    "m": 794,
-    "name": ""
-   },
-   "library": {
-    "m": 552,
-    "name": ""
-   },
-   "train": {
-    "m": 9999,
-    "name": ""
-   },
-   "tram": {
-    "m": 9999,
-    "name": ""
-   },
-   "bus": {
-    "m": 364,
-    "name": "Chestnut Road/Box Street"
-   },
-   "bar": {
-    "m": 1129,
-    "name": "Prince Mark"
-   },
-   "cinema": {
-    "m": 2055,
-    "name": "Reading Cinema"
-   }
-  },
-  "counts": {
-   "cafe": 1,
-   "bar": 0,
-   "bus": 3,
-   "tram": 0,
-   "shops": 0
-  },
-  "met": [
-   "cafe",
-   "park",
-   "gym",
-   "library"
-  ],
-  "twenty": 44,
-  "transit": 20,
-  "roads": {
-   "motorway": 1497,
-   "motorway_name": "Monash Freeway",
-   "major": 925,
-   "major_name": "Princes Highway",
-   "rail": 1205
-  },
-  "quiet": 100,
-  "noise_flags": [],
-  "air": 100,
-  "air_flags": [],
-  "safety": 22,
-  "crime": {
-   "rate": 178.3,
-   "burglary": 11.0,
-   "assault": 18.1,
-   "offences": 1712,
-   "population": 9603
-  },
-  "first_seen": "2026-09-29",
-  "gone": "2026-11-01"
  }
 ]
